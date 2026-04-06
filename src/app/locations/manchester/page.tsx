@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
@@ -44,7 +42,7 @@ export default function LocationManchester() {
               Underground Utility Training in Manchester and the North West
             </h1>
             <p className="text-lg text-slate-300">
-              Sygma's Wigan training centre is in the heart of the North West, 20 minutes from Manchester city centre. We also deliver on-site training at client premises across the region. Travel is always included.
+              {"Sygma's Wigan training centre is in the heart of the North West, 20 minutes from Manchester city centre. We also deliver on-site training at client premises across the region. Travel is always included."}
             </p>
           </div>
         </section>
