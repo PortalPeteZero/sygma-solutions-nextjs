@@ -5,24 +5,44 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 const faqs = [
             {
+              q: "What is CAT and Genny training?",
+              a: "CAT and Genny training teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to detect buried utilities before excavation. It is the core cable avoidance training required to meet HSG47 obligations and ensure operatives are competent before breaking ground near underground services. The course covers electromagnetic theory, all four locating modes (Power, Radio, Genny and Avoidance), signal interpretation, depth estimation and practical on-site assessment. Sygma delivers CAT and Genny training with a Genny-First methodology, meaning operatives learn to connect the signal generator before relying on passive detection modes. Successful delegates can be assessed for an EUS/EUSR CAT1 accredited card, a ProQual CAT1 certificate or a Sygma in-house certification depending on the route chosen.",
+            },
+            {
+              q: "How much does a CAT and Genny course cost?",
+              a: "CAT and Genny training is available as an in-house day rate for up to 8 delegates, delivered at your site. The exact cost depends on the format you choose (in-house certified, EUSR CAT1 accredited or ProQual CAT1 accredited) and whether you need a one-day or two-day programme. Travel is included in the day rate with no hidden extras. We also run regular open courses at venues across the UK, priced per person -- get in touch via our live chat to ask about upcoming dates. Employers who pay the CITB levy may be eligible for training funding support through the CITB Employer Network. Contact Sygma for a tailored quote.",
+            },
+            {
+              q: "Do you need to be trained to use a CAT scanner?",
+              a: "Yes. HSG47, the Health and Safety Executive's guidance on avoiding danger from underground services, requires that anyone using cable and pipe locating equipment must be trained and competent. Using a CAT locator without proper cable avoidance training increases the risk of striking buried services, which can result in cable strikes, gas leaks and serious injury. Most principal contractors and utility companies require operatives to hold a recognised qualification such as EUSR CAT1 or ProQual CAT1 before being allowed to use locating equipment on site.",
+            },
+            {
+              q: "How long is CAT and Genny training valid for?",
+              a: "It depends on the qualification route. The EUSR CAT1 card is valid for 3 years from the date of issue. ProQual CAT1 certificates are also valid for 3 years. The Sygma in-house certificate does not have a fixed expiry but most employers and frameworks require refresher training every 3 years to maintain competency. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.",
+            },
+            {
+              q: "What is the difference between EUSR CAT1 and EUSR CAT1?",
+              a: "They are the same qualification. EUS stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUS. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.",
+            },
+            {
               q: "What equipment do our operatives need to bring?",
               a: "Each operative should bring the locator and signal generator they use on site. Sygma provide Radiodetection CAT4 and Genny4 as backup equipment to run a standard course if delegates do not have their own. Any manufacturer's locator is suitable, including Vivax-Metrotech vLoc, Leica DSX, and Radiodetection RD8200/RD8100. If sharing equipment, a minimum ratio of one locator per three delegates is recommended.",
             },
             {
-              q: "Can the cable avoidance course be tailored to our specific sites and risk profile?",
+              q: "Can the course be tailored to our specific sites and risk profile?",
               a: "Yes. Bespoke elements can include your company's specific permit to dig, your strike history and lessons learned, your site-specific hazards and your documentation. The QTS surface laid cables programme is an example of how the course can be customised around a client's exact needs.",
             },
             {
-              q: "What is the difference between cable avoidance training and EUS CAT1?",
-              a: "The EUS CAT1 is an EUSR-registered qualification with fixed assessment criteria. The cable avoidance course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the cable avoidance course for bulk refresher training and the EUS CAT1 for formal qualification.",
+              q: "What is the difference between CAT and Genny training and EUSR CAT1?",
+              a: "The EUSR CAT1 is an EUSR-registered qualification with fixed assessment criteria. The Genny & CAT course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the Genny & CAT course for bulk refresher training and the EUSR CAT1 for formal qualification.",
             },
             {
               q: "Is the course suitable for delegates with no previous locating experience?",
               a: "Yes. The course is designed to be accessible to delegates at any level. For delegates who are completely new to utility locating, the two-day format is recommended to allow sufficient time on the practical site.",
             },
             {
-              q: "Can we combine this course with EUS CAT1 or CAT2?",
-              a: "Yes. Sygma offers combined course formats that incorporate EUS CAT1, CAT2 Safe Dig and cable avoidance training content in a single programme. Contact us to discuss combined booking options.",
+              q: "Can we combine this course with EUSR CAT1 or CAT2?",
+              a: "Yes. Sygma offers combined course formats that incorporate EUSR CAT1, CAT2 Safe Dig and Genny & CAT training content in a single programme. Contact us to discuss combined booking options.",
             },
             {
               q: "What qualifications do the Sygma trainers hold?",
@@ -32,27 +52,26 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
-  description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses. Specialist utility avoidance trainers delivering nationwide.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-training' },
+  title: 'Cat and Genny Training | Cable Avoidance Courses | Sygma',
+  description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
+  alternates: { canonical: 'https://sygma-solutions.com/courses/genny-cat-training' },
 };
 
-export default function CableAvoidanceTraining() {
+export default function GennyCatTraining() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cable Avoidance Training', description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses delivered nationwide by specialist utility avoidance trainers.', url: '/courses/cable-avoidance-training', duration: '1-2 days', mode: ['onsite'] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cable Avoidance Training' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cat and Genny Training', description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide by specialist utility avoidance trainers.', url: '/courses/genny-cat-training', duration: '1-2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cat and Genny Training' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="Cable Avoidance Training: The Course That Changes How Your Team Works on Site"
-        sub="Not just CAT and Genny equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
+        headline="CAT and Genny Training: The Course That Changes How Your Team Works on Site"
+        sub="Not just Genny & CAT equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
         image="/images/courses/CAT4-and-Genny-68.webp"
-        alt="CAT and Genny cable avoidance training equipment laid out for a practical session"
+        alt="Genny and CAT training course showing hands-on cable detection practice"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
-          { label: "Cable Avoidance Training" },
+          { label: "CAT and Genny Training" },
         ]}
       />
 
@@ -88,11 +107,11 @@ export default function CableAvoidanceTraining() {
             {[
               {
                 title: "Complete Beginners",
-                desc: "No prior experience with CAT and Genny equipment needed.",
+                desc: "No prior experience with Genny or CAT equipment needed. This safety training is designed to take someone from zero to competent.",
               },
               {
                 title: "Site Operatives and Groundworkers",
-                desc: "Anyone who needs to locate buried services before excavation.",
+                desc: "Anyone who needs to locate underground services and underground utilities before excavation. If your team breaks ground near buried infrastructure, they need this safety training.",
               },
               {
                 title: "Supervisors Wanting Awareness",
@@ -100,7 +119,7 @@ export default function CableAvoidanceTraining() {
               },
               {
                 title: "Organisations Introducing Genny-First",
-                desc: "Companies transitioning to full cable avoidance training use across their workforce, embedding the Genny-First approach.",
+                desc: "Companies across the construction industry transitioning to full CAT and Genny training use across their workforce, embedding the Genny-First approach.",
               },
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
@@ -135,26 +154,26 @@ export default function CableAvoidanceTraining() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why This Course Exists</p>
-            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard Cable Avoidance Training</h2>
+            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard CAT and Genny Training</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Most standard cable avoidance training courses teach operatives to press the on button and walk over the area. They know what the beep means. They do not know why the signal behaves the way it does in different soil conditions, what happens to accuracy near a joint, or why their passive Power mode reading is not telling them what they think it is.
+                Most standard CAT and Genny training courses teach operatives to press the on button and walk over the area. They know what the beep means. They do not know why the signal behaves the way it does in different soil conditions, what happens to accuracy near a joint, or why their passive Power mode reading is not telling them what they think it is.
               </p>
               <p>
-                The Sygma cable avoidance training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
+                The Sygma CAT and Genny training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
               </p>
               <p>
-                This cable avoidance course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the confirmation biases and pressure shortcuts that cause strikes. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives' own working environment.
+                This course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the confirmation biases and pressure shortcuts that cause strikes. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives' own working environment.
               </p>
               <p>
-                The result is a cable avoidance training course with a proven track record of reducing service strikes for organisations across the UK construction, utilities and infrastructure sectors.
+                The result is a cable avoidance training course with a proven track record of reducing underground utility strikes for organisations across the UK construction, utilities and infrastructure sectors. When your operatives understand how to locate underground utilities and underground services properly, the safety improvements follow.
               </p>
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
             {[
-              ["Format", "Choice of: 1-day in-house certified, 1-day EUS CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)"],
+              ["Format", "Choice of: 1-day in-house certified, 1-day EUSR CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)"],
               ["Location", "Delivered at your site nationwide | Wigan HQ available as alternative"],
               ["Max Delegates", "8 (all formats)"],
               ["Assessment", "Written MCQ (70% pass) + practical assessment on site"],
@@ -176,17 +195,36 @@ export default function CableAvoidanceTraining() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why We Say It Differently</p>
           <h2 className="text-xl font-black mb-4 text-foreground">Genny & CAT, Not CAT & Genny</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training" or "cable avoidance training". We call it Genny & CAT. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every cable avoidance course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive readings alone.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training". We call it Genny & CAT. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive readings alone.</p>
           <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first and exhaust all transmitter connection opportunities before moving to induction." That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
+        </div>
+      </section>
+
+      {/* Why Cable Avoidance Tool Training Matters */}
+      <section className="bg-background py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Safety Case</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why Cable Avoidance Tool Training Is Not Optional</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Every year across the UK construction industry, thousands of underground services are struck during excavation work. Cable strikes on buried electricity cables can cause fatal arc flash injuries, while hitting gas mains or high-pressure water pipes puts entire construction sites at risk. The Health and Safety Executive's guidance document HSG47 is clear: anyone who may be required to locate underground utilities before or during excavation work must be properly trained and assessed as competent. Cable avoidance tool training is not a nice to have. It is a legal and practical requirement for safe working on any construction site where underground services are present.
+            </p>
+            <p>
+              The consequences of inadequate cat and genny training go beyond the immediate safety risk. HSE prosecutions for cable strikes and utility damage carry significant fines, and organisations have faced enforcement action where operatives were found to be untrained or using equipment without understanding its limitations. Costly disruptions to street works and excavation programmes follow every strike, and the reputational damage to contractors can affect future tender opportunities. Without proper safety training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. The result is predictable: cable strikes, service damage and project delays that were entirely preventable with the right cat and genny training.
+            </p>
+            <p>
+              Proper cat and genny training, whether delivered as an EUSR CAT1 accredited course or a certified in-house programme, teaches operatives to locate underground utilities systematically. That means starting with buried service plans, progressing through visual site checks, and using the cable avoidance tool in all four detection modes with the signal generator connected first. This is not just about knowing which button to press. It is about understanding why passive modes alone are not enough, why locating underground services requires a Genny-First approach, and why health and safety guidelines exist to protect everyone on site and the public beyond the hoarding. Construction sites that invest in proper cable avoidance training and safety training for their workforce see measurable reductions in underground utility strikes, fewer costly disruptions, and a team that understands the obligations that come with working around buried cables and underground utilities.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Cable avoidance training outdoors with Sygma" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Genny & CAT training outdoors with Sygma" className="rounded-lg object-cover aspect-[4/3] w-full" />
           <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Delegates using locating equipment on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-09.webp" alt="Practical cable avoidance and excavation training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="/images/courses/Safe-Dig-09.webp" alt="Practical utility location and excavation training" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
 
@@ -194,7 +232,7 @@ export default function CableAvoidanceTraining() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Cable Avoidance Training: On Your Ground</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Cat and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Theory */}
             <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -205,7 +243,7 @@ export default function CableAvoidanceTraining() {
               <div className="p-6">
                 <ul className="space-y-2">
                   {[
-                    "Reasons for cable avoidance: HSG47 and the legal, financial and human consequences of service strikes",
+                    "Reasons for using Genny & CAT: HSG47 and the legal, financial and human consequences of service strikes",
                     "Legislation and guidance: HSG47, relevant national legislation, client and designer responsibilities",
                     "Overview of utility networks: cable and pipe types, materials and connectivity",
                     "Buried service plans (STATS): how to interpret plans including inaccuracies and limitations",
@@ -237,7 +275,7 @@ export default function CableAvoidanceTraining() {
               </div>
               <div className="p-6">
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  The practical session takes delegates outside onto a real site to prove every principle taught in the classroom. Sygma uses your own site wherever possible, which means operatives are training on the same ground and the same utility types they will encounter daily.
+                  The practical session takes delegates outside onto a real site to prove every safety principle taught in the classroom. Sygma uses your own site wherever possible, which means operatives are locating underground utilities on the same ground and the same utility types they will encounter daily.
                 </p>
                 <ul className="space-y-2">
                   {[
@@ -266,31 +304,34 @@ export default function CableAvoidanceTraining() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-79.jpg" alt="Cable avoidance training on a live utility site" className="w-full h-full object-cover" />
+        <img loading="lazy" src="/images/courses/CAT4-and-Genny-79.jpg" alt="Genny & CAT training on a live utility site" className="w-full h-full object-cover" />
       </div>
 
       {/* What You Get */}
       <section className="bg-background py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">What You Get</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">At the End of This Course</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">Cat and Genny Certificate and Qualification Routes</h2>
+          <p className="text-muted-foreground mb-6 leading-relaxed">
+            On successful completion of your cat and genny training, the certification you receive depends on the course format chosen. All routes include written and practical assessment, and all are delivered to the same Sygma standard. The difference is in the awarding body and the type of ID card or certificate issued.
+          </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Certificate of Attendance",
-                desc: "Confirmation of completion of Sygma cable avoidance training"
+                title: "EUSR CAT1 Accredited",
+                desc: "The industry-standard EUSR CAT1 qualification. On successful completion, your cat and genny certificate is registered on the EUSR database and you receive an EUSR ID card valid for 3 years. Widely recognised across UK construction sites and required by most principal contractors and utility companies."
               },
               {
-                title: "Practical Skills Record",
-                desc: "Detailed record of all hands-on exercises completed during the course"
+                title: "ProQual CAT1 Accredited",
+                desc: "An externally accredited cat and genny qualification through ProQual, with all four EML modes assessed in the practical element. You receive a ProQual CAT1 certificate valid for 3 years. The ProQual CAT1 Plus two-day route includes the Genny-First methodology in its formal assessment criteria."
               },
               {
-                title: "Equipment Confidence",
-                desc: "Practical experience with Genny signal generator and CAT locator in real conditions"
+                title: "NPORS CAT Assessment",
+                desc: "For organisations that use the NPORS card scheme, Sygma can deliver cat and genny training assessed to NPORS CAT standards. The NPORS CAT card is accepted on many construction sites as an alternative to EUSR CAT1, particularly where NPORS CAT is the primary competence card scheme in use."
               },
               {
-                title: "Pathway Guidance",
-                desc: "Personalised advice on which qualification pathway to progress to next"
+                title: "Sygma In-House Certified",
+                desc: "Sygma's own cat and genny certificate of completion, covering the same comprehensive content as accredited routes but without awarding body fees. Includes written and practical assessment results, a detailed skills record, and personalised pathway guidance on which qualification to progress to next."
               },
             ].map((item, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
@@ -308,7 +349,7 @@ export default function CableAvoidanceTraining() {
           <img loading="lazy" src="/images/courses/CAT4-and-Genny-41.webp" alt="Genny4 signal generator practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="Cable avoidance training assessment on buried services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="Genny & CAT training assessment on buried services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <img loading="lazy" src="/images/courses/CAT4-and-Genny-63.webp" alt="Hands-on Genny signal application demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -318,7 +359,7 @@ export default function CableAvoidanceTraining() {
       {/* Course formats */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Formats Available</p>
-        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Cable Avoidance Course Formats</h2>
+        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Course Formats</h2>
         <div className="overflow-x-auto rounded-xl border border-border">
           <table className="w-full text-sm">
             <thead>
@@ -332,7 +373,7 @@ export default function CableAvoidanceTraining() {
             <tbody>
               {[
                 ["One-day in-house (certified)", "1 day", "8", "Written + practical"],
-                ["One-day EUS CAT1 (accredited)", "1 day", "8", "Written + practical"],
+                ["One-day EUSR CAT1 (accredited)", "1 day", "8", "Written + practical"],
                 ["One-day ProQual CAT1 (accredited)", "1 day", "8", "Written + practical"],
                 ["Two-day in-house (certified)", "2 days", "8", "Written + practical"],
                 ["Two-day ProQual CAT1 Plus (accredited)", "2 days", "8", "Written + practical"],
@@ -352,7 +393,7 @@ export default function CableAvoidanceTraining() {
           The two-day split format is particularly valuable where operatives benefit from applying classroom learning in real working conditions before returning for their assessed practical day. The gap of approximately three months allows behaviours to bed in and any gaps to be identified and corrected.
         </p>
         <p className="text-sm text-muted-foreground mt-2">
-          All cable avoidance courses delivered by a CITB Approved Training Organisation.
+          All courses delivered by a CITB Approved Training Organisation.
         </p>
       </section>
 
@@ -404,13 +445,13 @@ export default function CableAvoidanceTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-43.webp" alt="CAT4 locator cable avoidance practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="/images/courses/CAT4-and-Genny-43.webp" alt="CAT4 locator training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Delegates practising cable avoidance techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Delegates practising utility location techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-58.webp" alt="On-site cable avoidance training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="/images/courses/CAT4-and-Genny-58.webp" alt="On-site Genny & CAT training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -442,7 +483,7 @@ export default function CableAvoidanceTraining() {
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
         <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
-        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
+        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions About CAT and Genny Training</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (
             <div key={q} className="border border-border rounded-lg p-6">
@@ -458,17 +499,17 @@ export default function CableAvoidanceTraining() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">The cable avoidance course addresses all key elements of HSG47 guidance on preventing strikes on underground services.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">The course addresses all key elements of HSG47 health and safety guidance on preventing strikes on underground services. Every element of this safety training maps back to a specific HSG47 requirement.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
               <h3 className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Formal assessment ensures operatives meet competence standards for cable avoidance work.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Formal safety assessment ensures operatives meet competence standards for cable avoidance work.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Process</p>
               <h3 className="text-base font-bold text-foreground mb-2">Safe System of Work</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Classroom and practical training covers systematic approach to service location.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Classroom and practical safety training covers systematic approach to underground service location.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Planning</p>
@@ -494,12 +535,12 @@ export default function CableAvoidanceTraining() {
         </div>
       </section>
 
-      {/* Why Sygma for Cable Avoidance Training */}
+      {/* Why Sygma for Genny & CAT Training */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Why Choose Sygma</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Why Sygma for Cable Avoidance Training</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">We go beyond qualification specifications. Our methodology is built on years of strike investigations, real-world field experience and proven results.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Why Sygma for Genny & CAT Training</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl">We go beyond qualification specifications. Our safety methodology is built on years of strike investigations, real-world field experience and proven safety results.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Content</p>
@@ -544,7 +585,7 @@ export default function CableAvoidanceTraining() {
           <div className="grid md:grid-cols-3 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Qualification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">EUSR-registered qualification for operatives who need a formal card.</p>
               <Link href="/courses/eus-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -593,12 +634,12 @@ export default function CableAvoidanceTraining() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">See It In Action</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">The Genny First Approach on Site</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-            Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma cable avoidance training course.
+            Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma CAT and Genny training course.
           </p>
           <div className="rounded-xl overflow-hidden border border-border mb-6 aspect-video w-full">
             <iframe
               src="https://www.youtube.com/embed/IgxGksU3WQ4"
-              title="Cable Avoidance Training: The Genny First Approach Explained"
+              title="CAT and Genny Training: The Genny First Approach Explained"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
@@ -616,7 +657,7 @@ export default function CableAvoidanceTraining() {
       {/* CTA */}
       <section className="bg-primary/5 border-y border-border py-14">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-black mb-4 text-foreground">Book Your Cable Avoidance Training</h2>
+          <h2 className="text-2xl font-black mb-4 text-foreground">Book Your CAT and Genny Training</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Site-based delivery available nationwide, bespoke to your equipment, your plans and your risk profile. Contact us for a tailored quote.
           </p>
