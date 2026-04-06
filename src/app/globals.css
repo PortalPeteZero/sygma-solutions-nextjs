@@ -1,1 +1,37 @@
-@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: 0 0% 98%;\n    --foreground: 220 20% 10%;\n    --card: 0 0% 100%;\n    --card-foreground: 220 20% 10%;\n    --popover: 0 0% 100%;\n    --popover-foreground: 220 20% 10%;\n    --primary: 215 80% 50%;\n    --primary-foreground: 0 0% 100%;\n    --secondary: 15 80% 50%;\n    --secondary-foreground: 0 0% 100%;\n    --muted: 220 15% 92%;\n    --muted-foreground: 220 10% 40%;\n    --accent: 15 80% 50%;\n    --accent-foreground: 0 0% 100%;\n    --destructive: 0 84.2% 60.2%;\n    --destructive-foreground: 0 0% 100%;\n    --border: 220 15% 88%;\n    --input: 220 15% 88%;\n    --ring: 215 80% 50%;\n    --radius: 0.5rem;\n  }\n}\n\n@layer base {\n  * { @apply border-border; }\n  body {\n    @apply bg-background text-foreground font-sans;\n    overflow-x: hidden;\n  }\n  html { scroll-behavior: smooth; }\n}\n
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 215 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 15 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 15 80% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 215 80% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: hidden;
+  }
+  html { scroll-behavior: smooth; }
+}
