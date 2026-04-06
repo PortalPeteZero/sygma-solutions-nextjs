@@ -47,93 +47,86 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Preconnect to third-party domains */}
+        {/* Preconnect hints */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://cdn.cookieyes.com" />
-        <link rel="preconnect" href="https://clarity.microsoft.com" />
+        <link rel="preconnect" href="https://cdn-cookieyes.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://code.tidio.co" />
+        <link rel="preconnect" href="https://socket.tidio.co" />
 
-        {/* Google Analytics 4 - CookieYes beforeInteractive */}
+        {/* CookieYes consent banner -- must be first script, before any tracking fires */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/b21bb8dfe40e34c0c373fb68597800de/script.js"
           strategy="beforeInteractive"
         />
-        <Script id="ga4-init" strategy="beforeInteractive">
+
+        {/* Google Consent Mode v2 defaults -- must be set before GTM loads */}
+        <Script id="consent-defaults" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
-              'anonymize_ip': true,
-              'cookie_flags': 'SameSite=None;Secure'
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'granted',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted',
+              'wait_for_update': 2000
             });
-          `}
-        </Script>
-
-        {/* CookieYes Consent Management */}
-        <Script
-          src="https://cdn.cookieyes.com/client_data/[COOKIEYES_CLIENT_ID].js"
-          strategy="beforeInteractive"
-          data-cookieyes="true"
-        />
-
-        {/* Google Analytics (after consent) - afterInteractive */}
-        <Script id="ga-conditional" strategy="afterInteractive">
-          {`
-            if (window.location.hostname === 'sygma-solutions.com') {
-              window.gtag = window.gtag || function(){(window.dataLayer=window.dataLayer||[]).push(arguments)};
-              gtag.l=new Date().getTime();
-              gtag('config', 'G-XXXXXXXXXX');
-            }
-          `}
-        </Script>
-
-        {/* Google Ads Conversion Tracking - afterInteractive */}
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            if (window.location.hostname === 'sygma-solutions.com') {
-              window.gtag = window.gtag || function(){(window.dataLayer=window.dataLayer||[]).push(arguments)};
-              gtag('event', 'page_view');
-            }
-          `}
-        </Script>
-
-        {/* Microsoft Clarity */}
-        <Script id="clarity-init" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "[CLARITY_PROJECT_ID]");
-          `}
-        </Script>
-
-        {/* Tidio Chat Widget */}
-        <Script id="tidio-init" strategy="afterInteractive">
-          {`
-            (function() {
-              var s1=document.createElement("script");
-              s1.async=true;
-              s1.src='https://code.tidio.co/[TIDIO_PROJECT_ID].js';
-              var s0=document.getElementsByTagName("script")[0];
-              s0.parentNode.insertBefore(s1,s0);
-              
-              // Track chat_started event when chat is opened
-              window.tidioChatApi.onChat('open', function() {
-                if (window.gtag) {
-                  gtag('event', 'chat_started', {
-                    'event_category': 'engagement',
-                    'event_label': 'tidio_widget'
-                  });
-                }
-              });
-            })();
+            gtag('set', 'url_passthrough', true);
           `}
         </Script>
       </head>
       <body className={montserrat.variable}>
+        {/* Google Tag Manager -- loads GA4, Google Ads, Clarity via container */}
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WNXQHCB9');
+          `}
+        </Script>
+
+        {/* Tidio Chat Widget -- deferred to window.load to avoid blocking LCP */}
+        <Script id="tidio-init" strategy="afterInteractive">
+          {`
+            window.addEventListener('load', function() {
+              var s = document.createElement('script');
+              s.src = '//code.tidio.co/ewldfgxizw0monjg2sil4mgyklrzneom.js';
+              s.async = true;
+              document.body.appendChild(s);
+            });
+            document.addEventListener('tidioChat-open', function() {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'chat_started',
+                event_category: 'engagement',
+                event_label: 'tidio_chat'
+              });
+            });
+          `}
+        </Script>
+
+        {/* GTM noscript fallback */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WNXQHCB9"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
         <Providers>
           <Navbar />
           <main className="min-h-screen">

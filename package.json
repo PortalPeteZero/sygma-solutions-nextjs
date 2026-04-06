@@ -1,1 +1,54 @@
-{\n  \"name\": \"sygma-solutions-nextjs\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"next build && next-sitemap\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\",\n    \"postbuild\": \"next-sitemap\"\n  },\n  \"dependencies\": {\n    \"next\": \"14.2.35\",\n    \"react\": \"^18.3.1\",\n    \"react-dom\": \"^18.3.1\",\n    \"@supabase/supabase-js\": \"^2.98.0\",\n    \"@tanstack/react-query\": \"^5.0.0\",\n    \"@hookform/resolvers\": \"^3.10.0\",\n    \"react-hook-form\": \"^7.61.1\",\n    \"zod\": \"^3.25.0\",\n    \"sonner\": \"^1.7.4\",\n    \"framer-motion\": \"11.18.2\",\n    \"embla-carousel-react\": \"^8.6.0\",\n    \"embla-carousel-autoplay\": \"^8.6.0\",\n    \"lucide-react\": \"^0.462.0\",\n    \"class-variance-authority\": \"^0.7.1\",\n    \"clsx\": \"^2.1.1\",\n    \"tailwind-merge\": \"^2.6.0\",\n    \"tailwindcss-animate\": \"^1.0.7\",\n    \"next-sitemap\": \"^4.2.3\",\n    \"@radix-ui/react-label\": \"^2.1.7\",\n    \"@radix-ui/react-select\": \"^2.2.5\",\n    \"@radix-ui/react-slot\": \"^1.2.3\",\n    \"@radix-ui/react-toast\": \"^1.2.14\",\n    \"@radix-ui/react-accordion\": \"^1.2.11\",\n    \"@radix-ui/react-dialog\": \"^1.1.14\",\n    \"@radix-ui/react-dropdown-menu\": \"^2.1.15\",\n    \"@radix-ui/react-tooltip\": \"^1.2.7\",\n    \"@radix-ui/react-separator\": \"^1.1.7\",\n    \"@radix-ui/react-navigation-menu\": \"^1.2.13\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"^5.8.3\",\n    \"@types/node\": \"^22.0.0\",\n    \"@types/react\": \"^18.3.0\",\n    \"@types/react-dom\": \"^18.3.0\",\n    \"tailwindcss\": \"^3.4.17\",\n    \"autoprefixer\": \"^10.4.21\",\n    \"postcss\": \"^8.5.6\"\n  }\n}\n
+{
+  "name": "sygma-solutions-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@supabase/supabase-js": "^2.98.0",
+    "@tanstack/react-query": "^5.0.0",
+    "@hookform/resolvers": "^3.10.0",
+    "react-hook-form": "^7.61.1",
+    "zod": "^3.25.0",
+    "sonner": "^1.7.4",
+    "framer-motion": "11.18.2",
+    "embla-carousel-react": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "lucide-react": "^0.462.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "next-sitemap": "^4.2.3",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-toast": "^1.2.14",
+    "@radix-ui/react-accordion": "^1.2.11",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-dropdown-menu": "^2.1.15",
+    "@radix-ui/react-tooltip": "^1.2.7",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-navigation-menu": "^1.2.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.17",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  }
+}
