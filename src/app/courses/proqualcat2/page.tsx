@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     q: "Is ProQual CAT2 better than EUS CAT2?",
-    a: "Neither is universally better. The right qualification depends on the competence framework your organisation uses. ProQual tends to be preferred in regulated sectors where independent certification matters. EUS is widely recognised across utility companies and private contractors. Both meet BS 8475:2015 standard. Discuss with your training provider which suits your team's needs.",
+    a: "Neither is universally better. The right qualification depends on the competence framework your organisation uses. ProQual tends to be preferred in regulated sectors where independent certification matters. EUS is widely recognised across utility companies and private contractors. Both meet BS 8475:2015 standard. Discuss with your training provider which suits your team\u2019s needs.",
   },
   {
     q: "What practical assessment is involved?",
-    a: "ProQual CAT2 includes an on-site practical assessment that covers safe digging technique, hazard identification, and CAT/Genny operation. Delegates must demonstrate competence across multiple real-world scenarios. The practical element runs concurrently with the theory delivery. You'll be assessed using the CAT and Genny in a controlled field setting.",
+    a: "ProQual CAT2 includes an on-site practical assessment that covers safe digging technique, hazard identification, and CAT/Genny operation. Delegates must demonstrate competence across multiple real-world scenarios. The practical element runs concurrently with the theory delivery. You\u2019ll be assessed using the CAT and Genny in a controlled field setting.",
   },
   {
     q: "How long does ProQual CAT2 take?",
@@ -61,7 +61,7 @@ export default function ProQualCat2Page() {
     description:
       "ProQual CAT2 is a comprehensive two-day qualification covering safe excavation practice, utility avoidance, and hazard management. It meets the BS 8475:2015 standard for independent certification. The course includes both theory and on-site practical assessment, ensuring delegates are truly competent to plan and manage safe dig operations.",
     about:
-      "ProQual CAT2 is one of the UK's most comprehensive safe excavation qualifications. It goes deeper than the entry-level CAT1, covering advanced hazard identification, safe dig planning, and utility company liaison. Every criterion is assessed independently - there is no aggregate pass mark that allows weaker areas to be masked by strong performance elsewhere.",
+      "ProQual CAT2 is one of the UK\u2019s most comprehensive safe excavation qualifications. It goes deeper than the entry-level CAT1, covering advanced hazard identification, safe dig planning, and utility company liaison. Every criterion is assessed independently - there is no aggregate pass mark that allows weaker areas to be masked by strong performance elsewhere.",
     highlights: [
       "24 individual theory criteria assessed (T1-T24)",
       "15 individual practical criteria across four assessment stages",
@@ -94,7 +94,11 @@ export default function ProQualCat2Page() {
   ]);
 
   return (
-          <InnerPageHero
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaData }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchemaData }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbs }} />
+      <InnerPageHero
         headline={course.title}
         sub={course.tagline}
         image={course.image}
@@ -144,11 +148,11 @@ export default function ProQualCat2Page() {
           </div>
 
           <div className="bg-light p-8 rounded-lg mb-12">
-            <h3 className="text-xl font-semibold mb-6">What You'll Learn</h3>
+            <h3 className="text-xl font-semibold mb-6">What You\u2019ll Learn</h3>
             <ul className="grid md:grid-cols-2 gap-4">
               {course.highlights.map((highlight, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">✓</span>
+                  <span className="text-primary font-bold mt-1">&#x2713;</span>
                   <span>{highlight}</span>
                 </li>
               ))}
@@ -266,5 +270,6 @@ export default function ProQualCat2Page() {
           </div>
         </div>
       </section>
+    </>
   );
 }
