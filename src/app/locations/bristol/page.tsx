@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
@@ -31,7 +29,7 @@ export default function LocationBristol() {
   ];
 
   const sectors = [
-    { sector: 'Water and Sewerage', desc: 'Wessex Water, South West Water, Bristol Water, and their supply chain contractors operating across the region\'s water and sewerage networks.' },
+    { sector: 'Water and Sewerage', desc: "Wessex Water, South West Water, Bristol Water, and their supply chain contractors operating across the region's water and sewerage networks." },
     { sector: 'Energy Distribution', desc: 'Western Power Distribution, Wales and West Utilities, and contractors managing gas and electricity assets across the South West.' },
     { sector: 'Highways and Infrastructure', desc: 'Highways England, local authority, and PFI contractors working on the M4, M5, M32, and A-road networks.' },
     { sector: 'Construction and Development', desc: 'Groundworkers, piling contractors, and site teams on commercial, residential, and mixed-use development projects across the region.' },
