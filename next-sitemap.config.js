@@ -1,1 +1,13 @@
-/** @type {import('next-sitemap').IConfig} */\nmodule.exports = {\n  siteUrl: 'https://sygma-solutions.com',\n  generateRobotsTxt: true,\n  robotsTxtOptions: {\n    policies: [{ userAgent: '*', allow: '/' }],\n    additionalSitemaps: [],\n  },\n  exclude: ['/thank-you'],\n  changefreq: 'weekly',\n  priority: 0.7,\n  sitemapSize: 5000,\n};\n
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
+  siteUrl: 'https://sygma-solutions.com',
+  generateRobotsTxt: true,
+  robotsTxtOptions: {
+    policies: [{ userAgent: '*', allow: '/' }],
+    additionalSitemaps: [],
+  },
+  exclude: ['/thank-you'],
+  changefreq: 'weekly',
+  priority: 0.7,
+  sitemapSize: 5000,
+};
