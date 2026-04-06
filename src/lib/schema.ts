@@ -1,1 +1,183 @@
-const SITE_URL = \"https://sygma-solutions.com\";\n\nconst ORG = {\n  \"@type\": \"Organization\",\n  \"@id\": `${SITE_URL}/#organization`,\n  \"name\": \"Sygma Solutions\",\n  \"url\": SITE_URL,\n};\n\nexport function faqPageSchema(faqs: Array<{ q: string; a: string }>): string {\n  return JSON.stringify({\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"FAQPage\",\n    \"mainEntity\": faqs.map(({ q, a }) => ({\n      \"@type\": \"Question\",\n      \"name\": q,\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": a,\n      },\n    })),\n  });\n}\n\nexport function breadcrumbSchema(\n  items: Array<{ label: string; to?: string }>\n): string {\n  const allItems = [{ label: \"Home\", to: \"/\" }, ...items];\n  return JSON.stringify({\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"BreadcrumbList\",\n    \"itemListElement\": allItems.map((item, index) => ({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"name\": item.label,\n      ...(item.to ? { \"item\": `${SITE_URL}${item.to}` } : {}),\n    })),\n  });\n}\n\nexport function courseSchema(params: {\n  name: string;\n  description: string;\n  url: string;\n  credential?: string;\n  duration?: string;\n  mode?: string[];\n}): string {\n  return JSON.stringify({\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Course\",\n    \"name\": params.name,\n    \"description\": params.description,\n    \"url\": `${SITE_URL}${params.url}`,\n    \"provider\": ORG,\n    ...(params.credential\n      ? { \"educationalCredentialAwarded\": params.credential }\n      : {}),\n    \"hasCourseInstance\": {\n      \"@type\": \"CourseInstance\",\n      \"courseMode\": params.mode ?? [\"onsite\"],\n      \"instructor\": ORG,\n    },\n  });\n}\n\nexport function localBusinessSchema(): Record<string, unknown> {\n  return {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"LocalBusiness\",\n    \"@id\": `${SITE_URL}/#localbusiness`,\n    \"name\": \"Sygma Solutions\",\n    \"description\": \"UK specialist in underground utility location and avoidance training. EUS, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2004.\",\n    \"url\": SITE_URL,\n    \"telephone\": \"+442039718252\",\n    \"email\": \"info@sygma-solutions.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"addressLocality\": \"Wigan\",\n      \"addressRegion\": \"Greater Manchester\",\n      \"addressCountry\": \"GB\",\n    },\n    \"geo\": {\n      \"@type\": \"GeoCoordinates\",\n      \"latitude\": 53.5448,\n      \"longitude\": -2.6318,\n    },\n    \"openingHoursSpecification\": {\n      \"@type\": \"OpeningHoursSpecification\",\n      \"dayOfWeek\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"],\n      \"opens\": \"08:30\",\n      \"closes\": \"17:00\",\n    },\n    \"areaServed\": {\n      \"@type\": \"Country\",\n      \"name\": \"United Kingdom\",\n    },\n    \"priceRange\": \"$$\",\n    \"image\": `${SITE_URL}/images/homepage/CAT4-and-Genny-54.webp`,\n    \"sameAs\": [\n      \"https://www.linkedin.com/company/sygma-solutions\",\n    ],\n  };\n}\n\nexport function organizationSchema(): Record<string, unknown> {\n  return {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Organization\",\n    \"@id\": `${SITE_URL}/#organization`,\n    \"name\": \"Sygma Solutions\",\n    \"url\": SITE_URL,\n    \"logo\": `${SITE_URL}/images/sygma-logo.png`,\n    \"description\": \"The UK's only independent specialist in underground utility location and avoidance training. Delivering accredited courses nationwide since 2004.\",\n    \"telephone\": \"+442039718252\",\n    \"email\": \"info@sygma-solutions.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"addressLocality\": \"Wigan\",\n      \"addressRegion\": \"Greater Manchester\",\n      \"addressCountry\": \"GB\",\n    },\n    \"areaServed\": {\n      \"@type\": \"Country\",\n      \"name\": \"United Kingdom\",\n    },\n    \"foundingDate\": \"2004\",\n    \"numberOfEmployees\": {\n      \"@type\": \"QuantitativeValue\",\n      \"minValue\": 5,\n      \"maxValue\": 20,\n    },\n    \"sameAs\": [\n      \"https://www.linkedin.com/company/sygma-solutions\",\n    ],\n  };\n}\n\nexport function articleSchema(params: {\n  headline: string;\n  description: string;\n  url: string;\n  datePublished?: string;\n  dateModified?: string;\n  image?: string;\n}): string {\n  return JSON.stringify({\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": params.headline,\n    \"description\": params.description,\n    \"url\": `${SITE_URL}${params.url}`,\n    \"author\": ORG,\n    \"publisher\": ORG,\n    ...(params.datePublished ? { \"datePublished\": params.datePublished } : {}),\n    ...(params.dateModified ? { \"dateModified\": params.dateModified } : {}),\n    ...(params.image ? { \"image\": `${SITE_URL}${params.image}` } : {}),\n  });\n}\n\nexport function videoObjectSchema(params: {\n  name: string;\n  description: string;\n  url: string;\n  youtubeId: string;\n  uploadDate: string;\n  duration: string;\n  thumbnailUrl: string;\n}): string {\n  return JSON.stringify({\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"VideoObject\",\n    \"name\": params.name,\n    \"description\": params.description,\n    \"url\": `${SITE_URL}${params.url}`,\n    \"embedUrl\": `https://www.youtube.com/embed/${params.youtubeId}`,\n    \"contentUrl\": `https://www.youtube.com/watch?v=${params.youtubeId}`,\n    \"thumbnailUrl\": params.thumbnailUrl,\n    \"uploadDate\": params.uploadDate,\n    \"duration\": params.duration,\n    \"publisher\": ORG,\n  });\n}\n
+const SITE_URL = \"https://sygma-solutions.com\";
+
+const ORG = {
+  \"@type\": \"Organization\",
+  \"@id\": `${SITE_URL}/#organization`,
+  \"name\": \"Sygma Solutions\",
+  \"url\": SITE_URL,
+};
+
+export function faqPageSchema(faqs: Array<{ q: string; a: string }>): string {
+  return JSON.stringify({
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"FAQPage\",
+    \"mainEntity\": faqs.map(({ q, a }) => ({
+      \"@type\": \"Question\",
+      \"name\": q,
+      \"acceptedAnswer\": {
+        \"@type\": \"Answer\",
+        \"text\": a,
+      },
+    })),
+  });
+}
+
+export function breadcrumbSchema(
+  items: Array<{ label: string; to?: string }>
+): string {
+  const allItems = [{ label: \"Home\", to: \"/\" }, ...items];
+  return JSON.stringify({
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"BreadcrumbList\",
+    \"itemListElement\": allItems.map((item, index) => ({
+      \"@type\": \"ListItem\",
+      \"position\": index + 1,
+      \"name\": item.label,
+      ...(item.to ? { \"item\": `${SITE_URL}${item.to}` } : {}),
+    })),
+  });
+}
+
+export function courseSchema(params: {
+  name: string;
+  description: string;
+  url: string;
+  credential?: string;
+  duration?: string;
+  mode?: string[];
+}): string {
+  return JSON.stringify({
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"Course\",
+    \"name\": params.name,
+    \"description\": params.description,
+    \"url\": `${SITE_URL}${params.url}`,
+    \"provider\": ORG,
+    ...(params.credential
+      ? { \"educationalCredentialAwarded\": params.credential }
+      : {}),
+    \"hasCourseInstance\": {
+      \"@type\": \"CourseInstance\",
+      \"courseMode\": params.mode ?? [\"onsite\"],
+      \"instructor\": ORG,
+    },
+  });
+}
+
+export function localBusinessSchema(): Record<string, unknown> {
+  return {
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"LocalBusiness\",
+    \"@id\": `${SITE_URL}/#localbusiness`,
+    \"name\": \"Sygma Solutions\",
+    \"description\": \"UK specialist in underground utility location and avoidance training. EUS, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2004.\",
+    \"url\": SITE_URL,
+    \"telephone\": \"+442039718252\",
+    \"email\": \"info@sygma-solutions.com\",
+    \"address\": {
+      \"@type\": \"PostalAddress\",
+      \"addressLocality\": \"Wigan\",
+      \"addressRegion\": \"Greater Manchester\",
+      \"addressCountry\": \"GB\",
+    },
+    \"geo\": {
+      \"@type\": \"GeoCoordinates\",
+      \"latitude\": 53.5448,
+      \"longitude\": -2.6318,
+    },
+    \"openingHoursSpecification\": {
+      \"@type\": \"OpeningHoursSpecification\",
+      \"dayOfWeek\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"],
+      \"opens\": \"08:30\",
+      \"closes\": \"17:00\",
+    },
+    \"areaServed\": {
+      \"@type\": \"Country\",
+      \"name\": \"United Kingdom\",
+    },
+    \"priceRange\": \"$$\",
+    \"image\": `${SITE_URL}/images/homepage/CAT4-and-Genny-54.webp`,
+    \"sameAs\": [
+      \"https://www.linkedin.com/company/sygma-solutions\",
+    ],
+  };
+}
+
+export function organizationSchema(): Record<string, unknown> {
+  return {
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"Organization\",
+    \"@id\": `${SITE_URL}/#organization`,
+    \"name\": \"Sygma Solutions\",
+    \"url\": SITE_URL,
+    \"logo\": `${SITE_URL}/images/sygma-logo.png`,
+    \"description\": \"The UK's only independent specialist in underground utility location and avoidance training. Delivering accredited courses nationwide since 2004.\",
+    \"telephone\": \"+442039718252\",
+    \"email\": \"info@sygma-solutions.com\",
+    \"address\": {
+      \"@type\": \"PostalAddress\",
+      \"addressLocality\": \"Wigan\",
+      \"addressRegion\": \"Greater Manchester\",
+      \"addressCountry\": \"GB\",
+    },
+    \"areaServed\": {
+      \"@type\": \"Country\",
+      \"name\": \"United Kingdom\",
+    },
+    \"foundingDate\": \"2004\",
+    \"numberOfEmployees\": {
+      \"@type\": \"QuantitativeValue\",
+      \"minValue\": 5,
+      \"maxValue\": 20,
+    },
+    \"sameAs\": [
+      \"https://www.linkedin.com/company/sygma-solutions\",
+    ],
+  };
+}
+
+export function articleSchema(params: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+  image?: string;
+}): string {
+  return JSON.stringify({
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"Article\",
+    \"headline\": params.headline,
+    \"description\": params.description,
+    \"url\": `${SITE_URL}${params.url}`,
+    \"author\": ORG,
+    \"publisher\": ORG,
+    ...(params.datePublished ? { \"datePublished\": params.datePublished } : {}),
+    ...(params.dateModified ? { \"dateModified\": params.dateModified } : {}),
+    ...(params.image ? { \"image\": `${SITE_URL}${params.image}` } : {}),
+  });
+}
+
+export function videoObjectSchema(params: {
+  name: string;
+  description: string;
+  url: string;
+  youtubeId: string;
+  uploadDate: string;
+  duration: string;
+  thumbnailUrl: string;
+}): string {
+  return JSON.stringify({
+    \"@context\": \"https://schema.org\",
+    \"@type\": \"VideoObject\",
+    \"name\": params.name,
+    \"description\": params.description,
+    \"url\": `${SITE_URL}${params.url}`,
+    \"embedUrl\": `https://www.youtube.com/embed/${params.youtubeId}`,
+    \"contentUrl\": `https://www.youtube.com/watch?v=${params.youtubeId}`,
+    \"thumbnailUrl\": params.thumbnailUrl,
+    \"uploadDate\": params.uploadDate,
+    \"duration\": params.duration,
+    \"publisher\": ORG,
+  });
+}
