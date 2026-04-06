@@ -1,15 +1,15 @@
-import { Link } from 'next/link';
+import Link from 'next/link';
 import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 
 export const metadata: Metadata = {
   title: 'Utility Mapping & Survey Courses | PAS128 | Sygma',
-  description: 'Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK\'s leading specialist provider.',
-  canonical: 'https://sygma-solutions.vercel.app/training/utility-mapping-surveying',
+  description: "Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK's leading specialist provider.",
+  alternates: { canonical: 'https://sygma-solutions.com/training/utility-mapping-surveying' },
   openGraph: {
     title: 'Utility Mapping & Survey Courses | PAS128 | Sygma',
-    description: 'Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK\'s leading specialist provider.',
-    url: 'https://sygma-solutions.vercel.app/training/utility-mapping-surveying',
+    description: "Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK's leading specialist provider.",
+    url: 'https://sygma-solutions.com/training/utility-mapping-surveying',
     type: 'website',
   },
 };
@@ -20,7 +20,7 @@ export default function UtilityMappingHub() {
       <InnerPageHero
         eyebrow="Utility Mapping"
         headline="Utility Mapping and Surveying Training: The Complete Career Pathway"
-        sub="The UK\'s most complete PAS128 utility mapping training pathway. From introductory training courses through to a ProQual Level 6 Management Diploma: everything a utility mapping professional needs to locate buried services safely and build a credible, certified career."
+        sub="The UK's most complete PAS128 utility mapping training pathway. From introductory training courses through to a ProQual Level 6 Management Diploma: everything a utility mapping professional needs to locate buried services safely and build a credible, certified career."
         image="/images/courses/Utility-Mapping-03.webp"
         breadcrumbs={[
           { label: 'Training', href: '/training' },
@@ -33,7 +33,7 @@ export default function UtilityMappingHub() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl font-black mb-4 text-foreground">Complete Utility Mapping Training Pathway</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            From PAS128 awareness through to Level 6 Diploma. All courses delivered by the UK\'s leading utility surveying specialist provider.
+            From PAS128 awareness through to Level 6 Diploma. All courses delivered by the UK's leading utility surveying specialist provider.
           </p>
         </div>
       </section>
