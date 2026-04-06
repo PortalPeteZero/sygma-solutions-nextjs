@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 export default function PlansAndProcess() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "Plans and Process Training", description: "Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.", url: "/courses/plans-and-process", credential: "Plans and Process Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -480,6 +481,7 @@ export default function PlansAndProcess() {
           </div>
         </div>
       </section>
+    </>
   );
 }
 

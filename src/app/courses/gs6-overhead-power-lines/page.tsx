@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 export default function Gs6OverheadPowerLines() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "GS6 Overhead Power Lines Training", description: "GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.", url: "/courses/gs6-overhead-power-lines", credential: "GS6 Overhead Power Lines Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -471,6 +472,7 @@ export default function Gs6OverheadPowerLines() {
           </div>
         </div>
       </section>
+    </>
   );
 }
 

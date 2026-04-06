@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 export default function ServiceCoordinatorUsc() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "Service Coordinator (USC) Training", description: "Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.", url: "/courses/service-coordinator-usc", credential: "USC Appointment Training Certificate", duration: "1-3 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -460,6 +461,7 @@ export default function ServiceCoordinatorUsc() {
           </div>
         </div>
       </section>
+    </>
   );
 }
 

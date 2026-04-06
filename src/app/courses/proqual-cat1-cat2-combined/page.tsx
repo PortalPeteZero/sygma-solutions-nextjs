@@ -47,6 +47,7 @@ export const metadata: Metadata = {
 
 export default function ProqualCat1Cat2Combined() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual CAT1 and CAT2 Combined Course", description: "Two-day combined ProQual CAT1 and CAT2 course covering utility avoidance and safe excavation. ProQual-accredited outcomes with CAT and Genny practical assessment.", url: "/courses/proqual-cat1-cat2-combined", credential: "ProQual CAT1 and CAT2", duration: "2 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -553,5 +554,6 @@ export default function ProqualCat1Cat2Combined() {
           </div>
         </div>
       </section>
+    </>
   );
 }

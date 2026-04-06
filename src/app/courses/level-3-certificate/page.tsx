@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 export default function Level3Certificate() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual Level 3 Certificate in Utility Mapping and Surveying", description: "The nationally recognised, Ofqual-regulated entry qualification for utility surveyors. Full assessor support throughout. Contact us to discuss enrolment and pricing.", url: "/courses/level-3-certificate", credential: "Level 3 Certificate in Utility Mapping", duration: "Part-time", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -601,6 +602,7 @@ export default function Level3Certificate() {
           </div>
         </div>
       </section>
+    </>
   );
 }
 

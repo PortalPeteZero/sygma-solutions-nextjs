@@ -51,6 +51,7 @@ export const metadata: Metadata = {
 
 export default function ProQualCat1Plus() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({
             name: "ProQual CAT1 Plus Advanced Utility Locating Course",
@@ -600,5 +601,6 @@ export default function ProQualCat1Plus() {
           </div>
         </div>
       </section>
+    </>
   );
 }

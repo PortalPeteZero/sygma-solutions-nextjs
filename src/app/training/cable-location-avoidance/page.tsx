@@ -163,6 +163,7 @@ export const metadata: Metadata = {
 
 export default function UtilityAvoidanceHub() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Cable Avoidance Training" }]) }} />
@@ -615,5 +616,6 @@ export default function UtilityAvoidanceHub() {
           </div>
         </div>
       </section>
+    </>
   );
 }

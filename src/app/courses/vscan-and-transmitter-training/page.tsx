@@ -47,6 +47,7 @@ export const metadata: Metadata = {
 
 export default function VscanTransmitterTraining() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "vScan and Transmitter Training Course", description: "vScan and transmitter training that changes how your team works on site. Delivered by the UK's only independent specialist in underground utility location and avoidance.", url: "/courses/vscan-and-transmitter-training", credential: "vScan and Transmitter Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -590,5 +591,6 @@ export default function VscanTransmitterTraining() {
           </div>
         </div>
       </section>
+    </>
   );
 }

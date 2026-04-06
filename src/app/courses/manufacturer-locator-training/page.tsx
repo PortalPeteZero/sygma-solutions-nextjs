@@ -48,6 +48,7 @@ export const metadata: Metadata = {
 
 export default function ManufacturerLocatorTraining() {
   return (
+    <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "Manufacturer-Specific Locator Training: vScan, CScope, and Other Pipe Locators", description: "One day. Up to eight delegates. Theory and practical training tailored to your specific pipe and cable locating equipment, using your own kit on a representative site. Multiple certification options available.", url: "/courses/manufacturer-locator-training", credential: "Manufacturer Locator Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
@@ -448,6 +449,7 @@ export default function ManufacturerLocatorTraining() {
           </div>
         </div>
       </section>
+    </>
   );
 }
 
