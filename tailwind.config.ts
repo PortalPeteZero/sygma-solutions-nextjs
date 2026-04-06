@@ -1,1 +1,47 @@
-import type { Config } from \"tailwindcss\";\n\nexport default {\n  darkMode: [\"class\"],\n  content: [\"./src/**/*.{ts,tsx}\"],\n  prefix: \"\",\n  theme: {\n    container: {\n      center: true,\n      padding: \"2rem\",\n      screens: { \"2xl\": \"1400px\" },\n    },\n    extend: {\n      fontFamily: {\n        sans: [\"var(--font-montserrat)\", \"sans-serif\"],\n      },\n      colors: {\n        border: \"hsl(var(--border))\",\n        input: \"hsl(var(--input))\",\n        ring: \"hsl(var(--ring))\",\n        background: \"hsl(var(--background))\",\n        foreground: \"hsl(var(--foreground))\",\n        primary: { DEFAULT: \"hsl(var(--primary))\", foreground: \"hsl(var(--primary-foreground))\" },\n        secondary: { DEFAULT: \"hsl(var(--secondary))\", foreground: \"hsl(var(--secondary-foreground))\" },\n        destructive: { DEFAULT: \"hsl(var(--destructive))\", foreground: \"hsl(var(--destructive-foreground))\" },\n        muted: { DEFAULT: \"hsl(var(--muted))\", foreground: \"hsl(var(--muted-foreground))\" },\n        accent: { DEFAULT: \"hsl(var(--accent))\", foreground: \"hsl(var(--accent-foreground))\" },\n        popover: { DEFAULT: \"hsl(var(--popover))\", foreground: \"hsl(var(--popover-foreground))\" },\n        card: { DEFAULT: \"hsl(var(--card))\", foreground: \"hsl(var(--card-foreground))\" },\n      },\n      borderRadius: {\n        lg: \"var(--radius)\",\n        md: \"calc(var(--radius) - 2px)\",\n        sm: \"calc(var(--radius) - 4px)\",\n      },\n      keyframes: {\n        \"accordion-down\": { from: { height: \"0\" }, to: { height: \"var(--radix-accordion-content-height)\" } },\n        \"accordion-up\": { from: { height: \"var(--radix-accordion-content-height)\" }, to: { height: \"0\" } },\n      },\n      animation: {\n        \"accordion-down\": \"accordion-down 0.2s ease-out\",\n        \"accordion-up\": \"accordion-up 0.2s ease-out\",\n      },\n    },\n  },\n  plugins: [require(\"tailwindcss-animate\")],\n} satisfies Config;\n
+import type { Config } from \"tailwindcss\";
+
+export default {
+  darkMode: [\"class\"],
+  content: [\"./src/**/*.{ts,tsx}\"],
+  prefix: \"\",
+  theme: {
+    container: {
+      center: true,
+      padding: \"2rem\",
+      screens: { \"2xl\": \"1400px\" },
+    },
+    extend: {
+      fontFamily: {
+        sans: [\"var(--font-montserrat)\", \"sans-serif\"],
+      },
+      colors: {
+        border: \"hsl(var(--border))\",
+        input: \"hsl(var(--input))\",
+        ring: \"hsl(var(--ring))\",
+        background: \"hsl(var(--background))\",
+        foreground: \"hsl(var(--foreground))\",
+        primary: { DEFAULT: \"hsl(var(--primary))\", foreground: \"hsl(var(--primary-foreground))\" },
+        secondary: { DEFAULT: \"hsl(var(--secondary))\", foreground: \"hsl(var(--secondary-foreground))\" },
+        destructive: { DEFAULT: \"hsl(var(--destructive))\", foreground: \"hsl(var(--destructive-foreground))\" },
+        muted: { DEFAULT: \"hsl(var(--muted))\", foreground: \"hsl(var(--muted-foreground))\" },
+        accent: { DEFAULT: \"hsl(var(--accent))\", foreground: \"hsl(var(--accent-foreground))\" },
+        popover: { DEFAULT: \"hsl(var(--popover))\", foreground: \"hsl(var(--popover-foreground))\" },
+        card: { DEFAULT: \"hsl(var(--card))\", foreground: \"hsl(var(--card-foreground))\" },
+      },
+      borderRadius: {
+        lg: \"var(--radius)\",
+        md: \"calc(var(--radius) - 2px)\",
+        sm: \"calc(var(--radius) - 4px)\",
+      },
+      keyframes: {
+        \"accordion-down\": { from: { height: \"0\" }, to: { height: \"var(--radix-accordion-content-height)\" } },
+        \"accordion-up\": { from: { height: \"var(--radix-accordion-content-height)\" }, to: { height: \"0\" } },
+      },
+      animation: {
+        \"accordion-down\": \"accordion-down 0.2s ease-out\",
+        \"accordion-up\": \"accordion-up 0.2s ease-out\",
+      },
+    },
+  },
+  plugins: [require(\"tailwindcss-animate\")],
+} satisfies Config;
