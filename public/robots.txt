@@ -1,0 +1,1 @@
+User-agent: *\nAllow: /\nSitemap: https://sygma-solutions.com/sitemap.xml\n
