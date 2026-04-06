@@ -1,0 +1,1 @@
+/** @type {import('next-sitemap').IConfig} */\nmodule.exports = {\n  siteUrl: 'https://sygma-solutions.com',\n  generateRobotsTxt: true,\n  robotsTxtOptions: {\n    policies: [{ userAgent: '*', allow: '/' }],\n    additionalSitemaps: [],\n  },\n  exclude: ['/thank-you'],\n  changefreq: 'weekly',\n  priority: 0.7,\n  sitemapSize: 5000,\n};\n
