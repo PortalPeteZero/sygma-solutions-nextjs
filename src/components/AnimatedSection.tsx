@@ -1,1 +1,17 @@
-'use client';\nimport { motion } from \"framer-motion\";\nimport { ReactNode } from \"react\";\n\nconst AnimatedSection = ({ children, className = \"\", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) => (\n  <motion.section\n    initial={{ opacity: 0, y: 40 }}\n    whileInView={{ opacity: 1, y: 0 }}\n    viewport={{ once: true, margin: \"-80px\" }}\n    transition={{ duration: 0.6, delay, ease: \"easeOut\" }}\n    className={className}\n  >\n    {children}\n  </motion.section>\n);\n\nexport default AnimatedSection;\n
+'use client';
+import { motion } from \"framer-motion\";
+import { ReactNode } from \"react\";
+
+const AnimatedSection = ({ children, className = \"\", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) => (
+  <motion.section
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: \"-80px\" }}
+    transition={{ duration: 0.6, delay, ease: \"easeOut\" }}
+    className={className}
+  >
+    {children}
+  </motion.section>
+);
+
+export default AnimatedSection;
