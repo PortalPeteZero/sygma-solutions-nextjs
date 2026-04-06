@@ -72,45 +72,45 @@ const courseMatrix = [
 export default function Locations() {
   return (
     <>
-      <div className=\"min-h-screen bg-white\">
+      <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className=\"bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4\">
-          <div className=\"max-w-4xl mx-auto\">
-            <p className=\"text-sm font-semibold text-blue-300 mb-2\">Training Locations</p>
-            <h1 className=\"text-4xl md:text-5xl font-bold mb-4\">We Come to You. Or You Come to Us.</h1>
-            <p className=\"text-lg text-slate-300\">
+        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-sm font-semibold text-blue-300 mb-2">Training Locations</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">We Come to You. Or You Come to Us.</h1>
+            <p className="text-lg text-slate-300">
               Sygma delivers training from two fixed training centres, on client sites nationwide, and virtually via MS Teams. The standard of training is the same regardless of where it is delivered.
             </p>
           </div>
         </section>
 
         {/* Image Break */}
-        <div className=\"w-full h-64 md:h-80 overflow-hidden\">
-          <img loading=\"lazy\" src=\"/images/about/CAT4-and-Genny-47.webp\" alt=\"Sygma training locations nationwide\" className=\"w-full h-full object-cover\" />
+        <div className="w-full h-64 md:h-80 overflow-hidden">
+          <img loading="lazy" src="/images/about/CAT4-and-Genny-47.webp" alt="Sygma training locations nationwide" className="w-full h-full object-cover" />
         </div>
 
         {/* Location Cards */}
-        <section className=\"py-16 px-4\">
-          <div className=\"max-w-4xl mx-auto\">
-            <div className=\"space-y-6\">
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
               {locations.map((loc) => (
-                <div key={loc.name} className=\"border border-slate-300 rounded-xl bg-white p-6 md:p-8\">
-                  <div className=\"flex items-start gap-3 mb-4\">
-                    <MapPin size={20} className=\"text-blue-600 shrink-0 mt-0.5\" />
+                <div key={loc.name} className="border border-slate-300 rounded-xl bg-white p-6 md:p-8">
+                  <div className="flex items-start gap-3 mb-4">
+                    <MapPin size={20} className="text-blue-600 shrink-0 mt-0.5" />
                     <div>
-                      <h2 className=\"text-xl font-bold text-slate-900\">{loc.name}</h2>
-                      <p className=\"text-sm text-slate-600 font-medium mt-0.5\">{loc.address}</p>
+                      <h2 className="text-xl font-bold text-slate-900">{loc.name}</h2>
+                      <p className="text-sm text-slate-600 font-medium mt-0.5">{loc.address}</p>
                     </div>
                   </div>
-                  <p className=\"text-slate-700 leading-relaxed mb-4\">{loc.desc}</p>
-                  <div className=\"grid md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-slate-200\">
+                  <p className="text-slate-700 leading-relaxed mb-4">{loc.desc}</p>
+                  <div className="grid md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-slate-200">
                     <div>
-                      <p className=\"text-xs font-bold uppercase tracking-widest text-blue-600 mb-2\">Courses Available</p>
-                      <p className=\"text-sm text-slate-700\">{loc.courses}</p>
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Courses Available</p>
+                      <p className="text-sm text-slate-700">{loc.courses}</p>
                     </div>
                     <div>
-                      <p className=\"text-xs font-bold uppercase tracking-widest text-blue-600 mb-2\">Notes</p>
-                      <p className=\"text-sm text-slate-700\">{loc.notes}</p>
+                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Notes</p>
+                      <p className="text-sm text-slate-700">{loc.notes}</p>
                     </div>
                   </div>
                 </div>
@@ -120,21 +120,21 @@ export default function Locations() {
         </section>
 
         {/* Image Break */}
-        <div className=\"w-full h-64 md:h-80 overflow-hidden\">
-          <img loading=\"lazy\" src=\"/images/about/CAT4-and-Genny-48.webp\" alt=\"Training centre facilities and equipment\" className=\"w-full h-full object-cover\" />
+        <div className="w-full h-64 md:h-80 overflow-hidden">
+          <img loading="lazy" src="/images/about/CAT4-and-Genny-48.webp" alt="Training centre facilities and equipment" className="w-full h-full object-cover" />
         </div>
 
         {/* Regional Training Guides */}
-        <section className=\"py-16 px-4\">
-          <div className=\"max-w-4xl mx-auto\">
-            <p className=\"text-xs font-bold uppercase tracking-widest text-blue-600 mb-3\">On-Site Training by Region</p>
-            <h2 className=\"text-3xl font-bold mb-4 text-slate-900\">Regional Training Guides</h2>
-            <p className=\"text-slate-700 leading-relaxed mb-8\">We deliver cable avoidance and utility training at client sites across the UK. These guides cover what we offer in each region, including course availability, travel arrangements, and local client references.</p>
-            <div className=\"grid sm:grid-cols-2 gap-4\">
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">On-Site Training by Region</p>
+            <h2 className="text-3xl font-bold mb-4 text-slate-900">Regional Training Guides</h2>
+            <p className="text-slate-700 leading-relaxed mb-8">We deliver cable avoidance and utility training at client sites across the UK. These guides cover what we offer in each region, including course availability, travel arrangements, and local client references.</p>
+            <div className="grid sm:grid-cols-2 gap-4">
               {regionalGuides.map((loc) => (
-                <Link key={loc.name} href={loc.to} className=\"border border-slate-300 rounded-lg bg-white p-5 hover:border-blue-600 hover:shadow-md transition-all block\">
-                  <h3 className=\"font-bold text-slate-900 mb-2\">{loc.name}</h3>
-                  <p className=\"text-sm text-slate-700\">{loc.desc}</p>
+                <Link key={loc.name} href={loc.to} className="border border-slate-300 rounded-lg bg-white p-5 hover:border-blue-600 hover:shadow-md transition-all block">
+                  <h3 className="font-bold text-slate-900 mb-2">{loc.name}</h3>
+                  <p className="text-sm text-slate-700">{loc.desc}</p>
                 </Link>
               ))}
             </div>
@@ -142,29 +142,29 @@ export default function Locations() {
         </section>
 
         {/* Course Matrix */}
-        <section className=\"bg-slate-50 py-16 px-4\">
-          <div className=\"max-w-4xl mx-auto\">
-            <p className=\"text-xs font-bold uppercase tracking-widest text-blue-600 mb-3\">Quick Reference</p>
-            <h2 className=\"text-3xl font-bold mb-6 text-slate-900\">Which Location for Which Course?</h2>
-            <div className=\"overflow-x-auto rounded-lg border border-slate-300\">
-              <table className=\"w-full text-sm\">
+        <section className="bg-slate-50 py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Quick Reference</p>
+            <h2 className="text-3xl font-bold mb-6 text-slate-900">Which Location for Which Course?</h2>
+            <div className="overflow-x-auto rounded-lg border border-slate-300">
+              <table className="w-full text-sm">
                 <thead>
-                  <tr className=\"bg-blue-600 text-white\">
-                    <th className=\"text-left px-5 py-3 font-bold\">Course Type</th>
-                    <th className=\"text-left px-5 py-3 font-bold\">Wigan</th>
-                    <th className=\"text-left px-5 py-3 font-bold\">Worcester</th>
-                    <th className=\"text-left px-5 py-3 font-bold\">Your Site</th>
-                    <th className=\"text-left px-5 py-3 font-bold\">Online</th>
+                  <tr className="bg-blue-600 text-white">
+                    <th className="text-left px-5 py-3 font-bold">Course Type</th>
+                    <th className="text-left px-5 py-3 font-bold">Wigan</th>
+                    <th className="text-left px-5 py-3 font-bold">Worcester</th>
+                    <th className="text-left px-5 py-3 font-bold">Your Site</th>
+                    <th className="text-left px-5 py-3 font-bold">Online</th>
                   </tr>
                 </thead>
                 <tbody>
                   {courseMatrix.map(({ type, wigan, worcester, site, online }, i) => (
                     <tr key={type} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                      <td className=\"px-5 py-3 font-semibold text-slate-900\">{type}</td>
-                      <td className=\"px-5 py-3 text-slate-700\">{wigan}</td>
-                      <td className=\"px-5 py-3 text-slate-700\">{worcester}</td>
-                      <td className=\"px-5 py-3 text-slate-700\">{site}</td>
-                      <td className=\"px-5 py-3 text-slate-700\">{online}</td>
+                      <td className="px-5 py-3 font-semibold text-slate-900">{type}</td>
+                      <td className="px-5 py-3 text-slate-700">{wigan}</td>
+                      <td className="px-5 py-3 text-slate-700">{worcester}</td>
+                      <td className="px-5 py-3 text-slate-700">{site}</td>
+                      <td className="px-5 py-3 text-slate-700">{online}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -174,28 +174,28 @@ export default function Locations() {
         </section>
 
         {/* Image Break */}
-        <div className=\"w-full h-64 md:h-80 overflow-hidden\">
-          <img loading=\"lazy\" src=\"/images/about/CAT4-and-Genny-49.webp\" alt=\"Sygma on-site training UK delivery\" className=\"w-full h-full object-cover\" />
+        <div className="w-full h-64 md:h-80 overflow-hidden">
+          <img loading="lazy" src="/images/about/CAT4-and-Genny-49.webp" alt="Sygma on-site training UK delivery" className="w-full h-full object-cover" />
         </div>
 
         {/* CTA */}
-        <section className=\"bg-blue-50 border-y border-blue-200 py-16 px-4\">
-          <div className=\"max-w-4xl mx-auto\">
-            <div className=\"flex flex-wrap items-center justify-between gap-6\">
+        <section className="bg-blue-50 border-y border-blue-200 py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-wrap items-center justify-between gap-6">
               <div>
-                <h2 className=\"text-2xl font-bold mb-2 text-slate-900\">Book a Course at Your Preferred Location</h2>
-                <p className=\"text-slate-700\">Contact us to discuss dates, location, and group requirements.</p>
+                <h2 className="text-2xl font-bold mb-2 text-slate-900">Book a Course at Your Preferred Location</h2>
+                <p className="text-slate-700">Contact us to discuss dates, location, and group requirements.</p>
               </div>
-              <div className=\"flex flex-wrap gap-4\">
+              <div className="flex flex-wrap gap-4">
                 <Link
-                  href=\"/contact\"
-                  className=\"inline-flex items-center px-6 py-3 rounded-md bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-colors\"
+                  href="/contact"
+                  className="inline-flex items-center px-6 py-3 rounded-md bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-colors"
                 >
                   Get in Touch
                 </Link>
                 <a
-                  href=\"tel:+442039718252\"
-                  className=\"inline-flex items-center gap-2 px-6 py-3 rounded-md border border-blue-600 text-blue-600 font-semibold text-sm hover:bg-blue-50 transition-colors\"
+                  href="tel:+442039718252"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-blue-600 text-blue-600 font-semibold text-sm hover:bg-blue-50 transition-colors"
                 >
                   <Phone size={16} /> 0203 971 8252
                 </a>
