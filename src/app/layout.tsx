@@ -45,15 +45,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={montserrat.variable} suppressHydrationWarning>
       <head>
         {/* Preconnect hints */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdn-cookieyes.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
         <link rel="preconnect" href="https://code.tidio.co" />
         <link rel="preconnect" href="https://socket.tidio.co" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
 
         {/* CookieYes consent banner -- must be first script, before any tracking fires */}
         <Script
@@ -82,38 +83,46 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={montserrat.variable}>
-        {/* Google Tag Manager -- loads GA4, Google Ads, Clarity via container */}
+        {/* Google Tag Manager -- loads GA4 (G-QVFF0DPG6X), Google Ads (AW-946109130), Clarity (w1gqd45rnu) via container */}
+        {/* Hostname-gated: only fires on sygma-solutions.com to prevent staging from polluting analytics */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){
-              w[l]=w[l]||[];
-              w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-              var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-              j.async=true;
-              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-              f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WNXQHCB9');
+            if (window.location.hostname === 'sygma-solutions.com' ||
+                window.location.hostname === 'www.sygma-solutions.com') {
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-WNXQHCB9');
+            }
           `}
         </Script>
 
         {/* Tidio Chat Widget -- deferred to window.load to avoid blocking LCP */}
+        {/* Hostname-gated: only loads on production */}
         <Script id="tidio-init" strategy="afterInteractive">
           {`
-            window.addEventListener('load', function() {
-              var s = document.createElement('script');
-              s.src = '//code.tidio.co/ewldfgxizw0monjg2sil4mgyklrzneom.js';
-              s.async = true;
-              document.body.appendChild(s);
-            });
-            document.addEventListener('tidioChat-open', function() {
-              window.dataLayer = window.dataLayer || [];
-              window.dataLayer.push({
-                event: 'chat_started',
-                event_category: 'engagement',
-                event_label: 'tidio_chat'
+            if (window.location.hostname === 'sygma-solutions.com' ||
+                window.location.hostname === 'www.sygma-solutions.com') {
+              window.addEventListener('load', function() {
+                var s = document.createElement('script');
+                s.src = '//code.tidio.co/ewldfgxizw0monjg2sil4mgyklrzneom.js';
+                s.async = true;
+                document.body.appendChild(s);
               });
-            });
+              document.addEventListener('tidioChat-open', function() {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  event: 'chat_started',
+                  event_category: 'engagement',
+                  event_label: 'tidio_chat'
+                });
+              });
+            }
           `}
         </Script>
 

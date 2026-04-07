@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { Facebook, Linkedin, Twitter } from 'lucide-react'
+import { Facebook, Linkedin, Twitter, Phone, Mail } from 'lucide-react'
+import { trackPhoneClick, trackEmailClick } from '@/lib/analytics'
 
 interface FooterLink {
   label: string
@@ -54,8 +55,8 @@ const footerColumns: FooterColumn[] = [
 
 export function Footer() {
   const handleCookieSettings = () => {
-    if (typeof window !== 'undefined' && (window as Window & { CookieYes?: { showConsentForm: () => void } }).CookieYes) {
-      (window as Window & { CookieYes?: { showConsentForm: () => void } }).CookieYes!.showConsentForm()
+    if (typeof window !== 'undefined' && typeof (window as any).revisitCkyConsent === 'function') {
+      (window as any).revisitCkyConsent()
     }
   }
 
@@ -73,8 +74,27 @@ export function Footer() {
               <span>Sygma</span>
             </Link>
             <p className="text-sm text-slate-400">
-              Leading provider of utility avoidance, mapping, and OSCA services across the UK.
+              The UK&apos;s only independent specialist in underground utility location and avoidance training. Accredited courses nationwide since 2004.
             </p>
+            {/* Contact links with tracking */}
+            <div className="space-y-2 pt-2">
+              <a
+                href="tel:02039718252"
+                onClick={() => trackPhoneClick('02039718252')}
+                className="flex items-center gap-2 text-sm text-slate-400 hover:text-primary transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                020 3971 8252
+              </a>
+              <a
+                href="mailto:enquiries@sygma-solutions.com"
+                onClick={() => trackEmailClick('enquiries@sygma-solutions.com')}
+                className="flex items-center gap-2 text-sm text-slate-400 hover:text-primary transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                enquiries@sygma-solutions.com
+              </a>
+            </div>
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <a
