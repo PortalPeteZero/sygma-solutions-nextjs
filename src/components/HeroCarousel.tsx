@@ -78,7 +78,7 @@ export default function HeroCarousel() {
           {slides.map((slide, i) => (
             <div key={i} className="relative flex-[0_0_100%] h-full">
               {/* Background image */}
-              <Image src={slide.image} alt={slide.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0 object-cover object-center" />
+              <Image src={slide.image} alt={slide.alt} fill sizes="100vw" priority={i === 0} className="absolute inset-0 object-cover object-center" />
               {/* Gradient overlay - stronger on left for text legibility */}
               <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
 
