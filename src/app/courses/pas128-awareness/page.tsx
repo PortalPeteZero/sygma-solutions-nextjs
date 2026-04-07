@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -109,7 +110,7 @@ export default function Pas128Awareness() {
         eyebrow="Utility Mapping"
         headline="PAS128 Awareness Training: Understand Utility Survey Drawings and the Survey Process"
         sub="PAS128 is the British Standard for utility surveys and mapping. If your team works near buried services, manages utility survey contracts or needs to read and act on PAS128 survey drawings, this awareness course gives them the knowledge to do that confidently. Classroom delivery with an optional practical element."
-        image="/images/courses/Utility-Mapping-02.webp"
+        image="Utility-Mapping-02"
         breadcrumbs={[
           { label: 'Training', href: '/training/utility-mapping-surveying' },
           { label: 'PAS128 Awareness' },
@@ -133,24 +134,9 @@ export default function Pas128Awareness() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-05.webp"
-            alt="PAS128 awareness training - practical session"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
-          <img
-            loading="lazy"
-            src="/images/courses/CAT4-and-Genny-03.webp"
-            alt="PAS128 awareness training - electromagnetic locator practical"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-13.webp"
-            alt="PAS128 awareness training - on-site delivery"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
+          <Image src="MALA-GPR-05" alt="PAS128 awareness training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-03" alt="PAS128 awareness training - electromagnetic locator practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-13" alt="PAS128 awareness training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -361,28 +347,13 @@ export default function Pas128Awareness() {
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-07.webp"
-            alt="PAS128 awareness training with GPR equipment"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-07" alt="PAS128 awareness training with GPR equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-15.webp"
-            alt="Utility survey awareness classroom session"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-15" alt="Utility survey awareness classroom session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Utility-Mapping-03.webp"
-            alt="PAS128 utility mapping demonstration"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Utility-Mapping-03" alt="PAS128 utility mapping demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -571,28 +542,13 @@ export default function Pas128Awareness() {
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-22.webp"
-            alt="Ground penetrating radar survey demonstration"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-22" alt="Ground penetrating radar survey demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-28.webp"
-            alt="PAS128 utility detection practical training"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-28" alt="PAS128 utility detection practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Utility-Mapping-05.webp"
-            alt="Utility mapping equipment training session"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Utility-Mapping-05" alt="Utility mapping equipment training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

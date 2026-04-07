@@ -25,9 +25,9 @@ export default function Level4Diploma() {
         headline="ProQual RQF Level 4 Diploma in Utility Mapping and Surveying"
         sub="Formal recognition of specialist technical competency in utility mapping and surveying. Work at your own pace with full assessor support and mentoring throughout. Portfolio-based assessment drawing on your existing professional experience. No written exam. No fixed time limits. Contact us to discuss enrolment and pricing."
         images={[
-          "/images/courses/MALA-GPR-06.webp",
-          "/images/courses/MALA-GPR-11.webp",
-          "/images/courses/Advanced-EM-04.webp",
+          "MALA-GPR-06",
+          "MALA-GPR-11",
+          "Advanced-EM-04",
         ]}
         alts={[
           "Advanced utility mapping training for Level 4 qualification",

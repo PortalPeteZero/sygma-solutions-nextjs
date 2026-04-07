@@ -4,10 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from 'next/image';
 
 const slides = [
   {
-    image: "/images/courses/CAT4-and-Genny-15.webp",
+    image: "CAT4-and-Genny-15",
     alt: "Trainee using a CAT4 cable avoidance tool during hands-on field training",
     eyebrow: "21 Years. One Specialism.",
     headline: "The UK's Only Independent Specialist in Underground Utility Location and Avoidance Training.",
@@ -16,7 +17,7 @@ const slides = [
     secondaryCta: { label: "Book a Course", href: "/contact" },
   },
   {
-    image: "/images/homepage/Advanced-EM-01.webp",
+    image: "Advanced-EM-01",
     alt: "Advanced electromagnetic locating equipment used in Sygma utility detection training",
     eyebrow: "Proven Record in Reducing Strikes and Increasing Genny Usage.",
     headline: "We Teach Operatives to Locate Services, Not Just Avoid Them.",
@@ -25,7 +26,7 @@ const slides = [
     secondaryCta: { label: "Talk to Us", href: "/contact" },
   },
   {
-    image: "/images/homepage/CAT4-and-Genny-30.webp",
+    image: "CAT4-and-Genny-30",
     alt: "Instructor demonstrating Genny signal generator connection techniques on site",
     eyebrow: "Every Trainer. A Specialist.",
     headline: "All Our Trainers Are Experienced Utility Mapping Professionals. That Is What Makes the Difference.",
@@ -34,7 +35,7 @@ const slides = [
     secondaryCta: { label: "About Sygma", href: "/about" },
   },
   {
-    image: "/images/courses/CAT4-and-Genny-63.webp",
+    image: "CAT4-and-Genny-63",
     alt: "Hands-on Genny signal application demonstration during a Sygma training course",
     eyebrow: "On-Site. Nationwide.",
     headline: "We Come to Your Site. Any Location on the UK Mainland.",
@@ -77,14 +78,7 @@ export default function HeroCarousel() {
           {slides.map((slide, i) => (
             <div key={i} className="relative flex-[0_0_100%] h-full">
               {/* Background image */}
-              <img
-                src={slide.image}
-                alt={slide.alt}
-                className="absolute inset-0 h-full w-full object-cover object-center"
-                loading={i === 0 ? "eager" : "lazy"}
-                fetchPriority={i === 0 ? "high" : "auto"}
-                decoding={i === 0 ? "sync" : "async"}
-              />
+              <Image src={slide.image} alt={slide.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0 object-cover object-center" />
               {/* Gradient overlay - stronger on left for text legibility */}
               <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
 

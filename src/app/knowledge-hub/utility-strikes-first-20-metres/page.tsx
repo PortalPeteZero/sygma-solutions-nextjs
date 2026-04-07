@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: '4 Behaviours That Can Cause Cable Strikes on Site | Sygma',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: '/images/courses/Safe-Dig-12.webp',
+        url: 'Safe-Dig-12',
         width: 1200,
         height: 630,
         alt: 'Utility strike prevention',
@@ -44,7 +45,7 @@ export default function UtilityStrikesFirst20Metres() {
             description: 'Most cable strikes trace back to the same four behaviours in the pre-excavation survey. Understanding what can cause a cable strike is the first step to preventing one.',
             url: '/knowledge-hub/utility-strikes-first-20-metres',
             datePublished: '2026-03-09',
-            image: '/images/courses/Safe-Dig-12.webp',
+            image: 'Safe-Dig-12',
           }),
         }}
       />
@@ -56,7 +57,7 @@ export default function UtilityStrikesFirst20Metres() {
       />
 
       <InnerPageHero
-        image="/images/courses/Safe-Dig-12.webp"
+        image="Safe-Dig-12"
         alt="Utility strike risks in the first 20 metres of excavation work"
         eyebrow="Knowledge Hub"
         headline="4 Behaviours That Can Cause Cable Strikes on Site"
@@ -92,13 +93,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-07.webp" alt="Excavation near buried utility services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-07" alt="Excavation near buried utility services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="Cable detection equipment in use on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-47" alt="Cable detection equipment in use on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="Safe digging practices on construction site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-15" alt="Safe digging practices on construction site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -156,13 +157,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-62.webp" alt="Utility avoidance training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-62" alt="Utility avoidance training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-06.webp" alt="Hand tools used for safe excavation near services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-06" alt="Hand tools used for safe excavation near services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-48.webp" alt="Team completing cable avoidance training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-48" alt="Team completing cable avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -61,7 +62,7 @@ export default function CatManager() {
         eyebrow="CAT Manager Online Training"
         headline="CAT Manager Online Training Course: Make Your Cat and Genny Data Work for You"
         sub="Cat manager online training for managers and supervisors. Your cat and genny equipment records every locate. This half day course teaches you to use c.a.t manager online as a remote management tool to transfer usage data, check work quality across your entire team, identify training needs, and build the audit trail that protects your organisation from utility strikes."
-        image="/images/courses/CAT4-and-Genny-46.webp"
+        image="CAT4-and-Genny-46"
         alt="CAT Manager online training showing data management from CAT and Genny surveys"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -92,9 +93,9 @@ export default function CatManager() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-07.webp" alt="CAT Manager training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="CAT Manager training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-63.webp" alt="CAT Manager training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-07" alt="CAT Manager training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-50" alt="CAT Manager training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-63" alt="CAT Manager training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About section */}
@@ -235,19 +236,19 @@ export default function CatManager() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-49.webp" alt="CAT Manager training session in classroom" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-49" alt="CAT Manager training session in classroom" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-58.webp" alt="Managing CAT and Genny operations training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-58" alt="Managing CAT and Genny operations training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-49.webp" alt="CAT Manager competency assessment demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-49" alt="CAT Manager competency assessment demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="CAT Manager training - live training environment" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-47" alt="CAT Manager training - live training environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Who should attend */}
@@ -275,13 +276,13 @@ export default function CatManager() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Utility management training practical" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-54" alt="Utility management training practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-69.webp" alt="CAT Manager delegates reviewing procedures" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-69" alt="CAT Manager delegates reviewing procedures" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-60.webp" alt="On-site CAT Manager assessment training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-60" alt="On-site CAT Manager assessment training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

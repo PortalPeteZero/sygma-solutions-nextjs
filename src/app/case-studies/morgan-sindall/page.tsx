@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Morgan Sindall PAS128 Training Case Study | Sygma Solutions',
@@ -37,7 +38,7 @@ export default function CaseStudyMorganSindall() {
     <>
       <InnerPageHero
         eyebrow="Case Study"
-        image="/images/courses/Safe-Dig-07.webp"
+        image="Safe-Dig-07"
         alt="Morgan Sindall safe digging and cable avoidance training case study"
         headline="Morgan Sindall: PAS128 Leadership Briefings for Project Managers"
         sub="How Sygma designed PAS128 utility survey training at the leadership level, giving Morgan Sindall's project management teams the knowledge to specify, commission, and verify PAS128-compliant utility surveys on major construction and infrastructure projects."
@@ -70,7 +71,7 @@ export default function CaseStudyMorganSindall() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/about/CAT4-and-Genny-03.webp" alt="Morgan Sindall CAT and Genny training for project managers" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-03" alt="Morgan Sindall CAT and Genny training for project managers" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -134,9 +135,9 @@ export default function CaseStudyMorganSindall() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-04.webp" alt="Morgan Sindall project managers in PAS128 briefing classroom" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-05.webp" alt="Morgan Sindall delegates discussing PAS128 requirements" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-06.webp" alt="Morgan Sindall leadership team in training session" className="rounded-lg object-cover aspect-[4/3] w-full" />
+            <Image src="CAT4-and-Genny-04" alt="Morgan Sindall project managers in PAS128 briefing classroom" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-05" alt="Morgan Sindall delegates discussing PAS128 requirements" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-06" alt="Morgan Sindall leadership team in training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -179,13 +180,13 @@ export default function CaseStudyMorganSindall() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Morgan Sindall project team in utility training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="Morgan Sindall project team in utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/MALA-GPR-09.webp" alt="Utility survey equipment demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-09" alt="Utility survey equipment demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-64.webp" alt="PAS128 awareness training practical" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-64" alt="PAS128 awareness training practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

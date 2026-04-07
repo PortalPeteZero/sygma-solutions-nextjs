@@ -2,6 +2,7 @@ import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
               {
@@ -54,7 +55,7 @@ export default function ProqualCat1Cat2Combined() {
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 and CAT2 Combined: Two-Day Utility Avoidance and Safe Dig Training"
         sub="One programme. Two ProQual-recognised qualifications. Both CAT1 and CAT2 completed in two days at your site, with full theory, Genny-First practical, and a live safe dig assessment."
-        image="/images/courses/CAT4-and-Genny-64.webp"
+        image="CAT4-and-Genny-64"
         alt="Combined ProQual CAT1 and CAT2 cable avoidance and safe digging training"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -106,9 +107,9 @@ export default function ProqualCat1Cat2Combined() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-09.webp" alt="ProQual CAT1 and CAT2 combined training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="ProQual CAT1 and CAT2 combined training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-05.webp" alt="ProQual CAT1 and CAT2 combined training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-09" alt="ProQual CAT1 and CAT2 combined training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-51" alt="ProQual CAT1 and CAT2 combined training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-05" alt="ProQual CAT1 and CAT2 combined training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* Who This Course Is For */}
@@ -266,13 +267,13 @@ export default function ProqualCat1Cat2Combined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="ProQual CAT1 and CAT2 combined training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-10" alt="ProQual CAT1 and CAT2 combined training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-08.webp" alt="Safe dig technique demonstration during CAT2 training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-08" alt="Safe dig technique demonstration during CAT2 training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Cable avoidance and safe excavation combined assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-54" alt="Cable avoidance and safe excavation combined assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -358,7 +359,7 @@ export default function ProqualCat1Cat2Combined() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="ProQual CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" className="w-full h-full object-cover object-center" />
+        <Image src="Safe-Dig-15" alt="ProQual CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -485,13 +486,13 @@ export default function ProqualCat1Cat2Combined() {
       {/* Image strip before FAQs */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-67.webp" alt="Utility avoidance practical training on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-67" alt="Utility avoidance practical training on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-22.webp" alt="Safe excavation assessment during ProQual CAT2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-22" alt="Safe excavation assessment during ProQual CAT2" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Combined CAT1 and CAT2 certificate training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" alt="Combined CAT1 and CAT2 certificate training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

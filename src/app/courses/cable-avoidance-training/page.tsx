@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -48,7 +49,7 @@ export default function CableAvoidanceTraining() {
         eyebrow="Utility Avoidance"
         headline="Cable Avoidance Training: The Course That Changes How Your Team Works on Site"
         sub="Not just CAT and Genny equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
-        image="/images/courses/CAT4-and-Genny-68.webp"
+        image="CAT4-and-Genny-68"
         alt="CAT and Genny cable avoidance training equipment laid out for a practical session"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -184,9 +185,9 @@ export default function CableAvoidanceTraining() {
       {/* Photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Cable avoidance training outdoors with Sygma" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Delegates using locating equipment on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-09.webp" alt="Practical cable avoidance and excavation training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-50" alt="Cable avoidance training outdoors with Sygma" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-56" alt="Delegates using locating equipment on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-09" alt="Practical cable avoidance and excavation training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -266,7 +267,7 @@ export default function CableAvoidanceTraining() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-79.jpg" alt="Cable avoidance training on a live utility site" className="w-full h-full object-cover" />
+        <Image src="CAT4-and-Genny-79" alt="Cable avoidance training on a live utility site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
       </div>
 
       {/* What You Get */}
@@ -305,13 +306,13 @@ export default function CableAvoidanceTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-41.webp" alt="Genny4 signal generator practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-41" alt="Genny4 signal generator practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="Cable avoidance training assessment on buried services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-51" alt="Cable avoidance training assessment on buried services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-63.webp" alt="Hands-on Genny signal application demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-63" alt="Hands-on Genny signal application demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -404,13 +405,13 @@ export default function CableAvoidanceTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-43.webp" alt="CAT4 locator cable avoidance practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-43" alt="CAT4 locator cable avoidance practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Delegates practising cable avoidance techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-52" alt="Delegates practising cable avoidance techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-58.webp" alt="On-site cable avoidance training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-58" alt="On-site cable avoidance training assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

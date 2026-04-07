@@ -2,6 +2,7 @@ import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -54,7 +55,7 @@ export default function ProQualCat1() {
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 Training: The Most Rigorous Utility Locating Qualification"
         sub="14 theory criteria. 8 practical criteria. Every one must be met. A full written theory assessment and a full hands-on practical assessment covering all four locating modes and every Genny signal application method, mapped to HSG47, GS6, and CDM Regulations. Accredited by ProQual Accreditations."
-        image="/images/courses/CAT4-and-Genny-08.webp"
+        image="CAT4-and-Genny-08"
         alt="ProQual CAT1 cable avoidance training with practical locator exercises"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -217,9 +218,9 @@ export default function ProQualCat1() {
       {/* Photo Strip */}
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-06.webp" alt="ProQual CAT1 training" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Hands-on practical assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-03.webp" alt="Practical site assessment during utility avoidance training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-06" alt="ProQual CAT1 training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-46" alt="Hands-on practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-03" alt="Practical site assessment during utility avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -298,7 +299,7 @@ export default function ProQualCat1() {
 
       {/* Full-width image break */}
       <div className="w-full h-56 md:h-80 overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-40.webp" alt="ProQual CAT1 hands-on training" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-40" alt="ProQual CAT1 hands-on training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Practical Criteria */}
@@ -371,13 +372,13 @@ export default function ProQualCat1() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-09.webp" alt="CAT4 locator practical assessment during ProQual training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-09" alt="CAT4 locator practical assessment during ProQual training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Delegates learning signal application techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-52" alt="Delegates learning signal application techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-09.webp" alt="Hands-on utility avoidance practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-09" alt="Hands-on utility avoidance practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -570,13 +571,13 @@ export default function ProQualCat1() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-65.webp" alt="ProQual CAT1 practical assessment on training rig" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-65" alt="ProQual CAT1 practical assessment on training rig" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Genny4 signal generator training demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="Genny4 signal generator training demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-16.webp" alt="On-site utility location survey training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-16" alt="On-site utility location survey training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

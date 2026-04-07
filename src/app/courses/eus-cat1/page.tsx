@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import { courseSchema, faqPageSchema, breadcrumbSchema } from '@/lib/schema';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
@@ -64,14 +65,14 @@ export default function EusCat1Page() {
         headline="EUSR CAT1: EUSR-Registered Utility Avoidance Training"
         sub="EUSR CAT1 and EUSR Category 1 training from the UK's only independent specialist. Full electromagnetic theory, practical Genny & CAT assessment, and written paper. HSG47 compliant. Recognised across the water, gas, electricity, and telecoms sectors."
         images={[
-          '/images/courses/landscape/landscape-01.webp',
-          '/images/courses/landscape/landscape-02.webp',
-          '/images/courses/landscape/landscape-03.webp',
-          '/images/courses/landscape/landscape-04.webp',
-          '/images/courses/landscape/landscape-05.webp',
-          '/images/courses/landscape/landscape-06.webp',
-          '/images/courses/landscape/landscape-07.webp',
-          '/images/courses/landscape/landscape-08.webp',
+          'landscape-01',
+          'landscape-02',
+          'landscape-03',
+          'landscape-04',
+          'landscape-05',
+          'landscape-06',
+          'landscape-07',
+          'landscape-08',
         ]}
         alts={['Trainee scanning for underground utilities with a CAT4 locator', 'Genny signal generator being connected to a utility service point', 'Practical cable avoidance exercise on a live training site', 'Instructor guiding a trainee through CAT4 signal interpretation', 'Close-up of CAT4 display showing utility signal detection', 'Overhead view of a marked utility survey area during training', 'Group of trainees practising cable avoidance techniques outdoors', 'CAT4 and Genny equipment used during EUSR CAT1 accredited training']}
         breadcrumbs={[
@@ -158,9 +159,9 @@ export default function EusCat1Page() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/on-site/on-site-training-03.webp" alt="EUSR CAT1 training delegates using Genny & CAT on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/on-site/on-site-training-05.webp" alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/on-site/on-site-training-01.webp" alt="On-site practical cable avoidance training with signal generator" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="on-site-training-03" alt="EUSR CAT1 training delegates using Genny & CAT on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-05" alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-01" alt="On-site practical cable avoidance training with signal generator" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -223,7 +224,7 @@ export default function EusCat1Page() {
       </section>
 
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/on-site/on-site-training-panoramic-02.webp" alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" className="w-full h-full object-cover object-center" />
+        <Image src="on-site-training-panoramic-02" alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       <section className="bg-muted/20 py-14">

@@ -3,6 +3,7 @@ import InnerPageHero from "@/components/InnerPageHero";
 import Link from "next/link";
 import { knowledgeHubItems } from "@/data/knowledgeHubItems";
 import KnowledgeHubClient from './KnowledgeHubClient';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Utility Training Guides & Articles | Sygma Solutions',
@@ -34,7 +35,7 @@ export default function KnowledgeHub() {
         }
       }) }} />
       <InnerPageHero
-        image="/images/courses/CAT4-and-Genny-61.webp"
+        image="CAT4-and-Genny-61"
         alt="Sygma Solutions knowledge hub covering cable avoidance and utility mapping guidance"
         eyebrow="Knowledge Hub"
         headline="Practical Knowledge for Underground Utility Professionals"
@@ -47,52 +48,22 @@ export default function KnowledgeHub() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <img
-              loading="lazy"
-              src="/images/about/CAT4-and-Genny-46.webp"
-              alt="Underground utility training knowledge resources"
-              className="rounded-lg object-cover aspect-[4/3] w-full"
-            />
-            <img
-              loading="lazy"
-              src="/images/about/Safe-Dig-01.webp"
-              alt="Safe digging practices training materials"
-              className="rounded-lg object-cover aspect-[4/3] w-full"
-            />
-            <img
-              loading="lazy"
-              src="/images/about/MALA-GPR-05.webp"
-              alt="Utility location knowledge and technical expertise"
-              className="rounded-lg object-cover aspect-[4/3] w-full"
-            />
+            <Image src="CAT4-and-Genny-46" alt="Underground utility training knowledge resources" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-01" alt="Safe digging practices training materials" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="MALA-GPR-05" alt="Utility location knowledge and technical expertise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/CAT4-and-Genny-10.webp"
-            alt="Cable avoidance training knowledge resources"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="CAT4-and-Genny-10" alt="Cable avoidance training knowledge resources" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-11.webp"
-            alt="Utility mapping and GPR survey expertise"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-11" alt="Utility mapping and GPR survey expertise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Safe-Dig-10.webp"
-            alt="Safe excavation practice and guidance"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Safe-Dig-10" alt="Safe excavation practice and guidance" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

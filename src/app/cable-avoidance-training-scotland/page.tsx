@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Scotland | Sygma Solutions',
@@ -79,13 +80,13 @@ export default function CableAvoidanceScotland() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-48.webp" alt="Cable avoidance training exercise Scotland" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-62.webp" alt="Genny signal tracing practical Scottish site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/Safe-Dig-13.webp" alt="Safe excavation demonstration during training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-48" alt="Cable avoidance training exercise Scotland" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-62" alt="Genny signal tracing practical Scottish site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-13" alt="Safe excavation demonstration during training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/courses/CAT4-and-Genny-64.webp" alt="CAT and Genny training in Scotland" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-64" alt="CAT and Genny training in Scotland" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
@@ -101,7 +102,7 @@ export default function CableAvoidanceScotland() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/about/CAT4-and-Genny-45.webp" alt="Scotland cable location equipment training" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-45" alt="Scotland cable location equipment training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -115,13 +116,13 @@ export default function CableAvoidanceScotland() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Scottish team completing utility avoidance assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-04.webp" alt="Advanced locator training Central Belt Scotland" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Practical utility detection assessment completion" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-46" alt="Scottish team completing utility avoidance assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-04" alt="Advanced locator training Central Belt Scotland" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-54" alt="Practical utility detection assessment completion" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/about/CAT4-and-Genny-09.webp" alt="Scottish utility avoidance training site assessment" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-09" alt="Scottish utility avoidance training site assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* FAQs */}
       <section className="bg-gray-50 py-14">

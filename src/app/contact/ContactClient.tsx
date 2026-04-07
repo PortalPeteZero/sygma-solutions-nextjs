@@ -7,6 +7,7 @@ import { createClient } from '@supabase/supabase-js';
 import InnerPageHero from '@/components/InnerPageHero';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { trackFormSubmit, trackPhoneClick, trackEmailClick, trackEvent } from '@/lib/analytics';
+import Image from 'next/image';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -68,7 +69,7 @@ export default function ContactClient() {
   return (
     <>
       <InnerPageHero
-        image="/images/courses/New-Landscape-01.webp"
+        image="New-Landscape-01"
         alt="Contact Sygma Solutions for cable avoidance and utility mapping training enquiries"
         eyebrow="Contact Sygma Solutions"
         headline="Get in Touch"
@@ -206,19 +207,19 @@ export default function ContactClient() {
 
       {/* Image Break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-64.webp" alt="Sygma Solutions on-site utility avoidance training" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-64" alt="Sygma Solutions on-site utility avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Sygma Solutions training facility" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" alt="Sygma Solutions training facility" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Contact Sygma for training enquiries" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-46" alt="Contact Sygma for training enquiries" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-01.webp" alt="Sygma Solutions nationwide training delivery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-01" alt="Sygma Solutions nationwide training delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
     </>

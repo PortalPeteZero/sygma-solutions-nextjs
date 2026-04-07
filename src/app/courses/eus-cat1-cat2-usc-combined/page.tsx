@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import Image from 'next/image';
 
 const faqs = [
               {
@@ -48,7 +49,7 @@ export default function EusCat12UscCombined() {
         eyebrow="Utility Avoidance"
         headline="EUS CAT1 CAT and Genny Training with CAT2 Safe Dig and USC Combined"
         sub="Three qualifications and responsibilities in a single two-day CAT and Genny training programme. EUS CAT1 location training, EUS CAT2 Safe Dig assessment, and Underground Service Coordinator content delivered in-house by Sygma Solutions, tailored to your organisation's permit systems and documentation."
-        image="/images/courses/CAT4-and-Genny-63.webp"
+        image="CAT4-and-Genny-63"
         alt="Combined EUS CAT1, CAT2 and USC utility service coordinator training session"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -102,9 +103,9 @@ export default function EusCat12UscCombined() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="EUS CAT1 CAT2 and USC combined training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="EUS CAT1 CAT2 and USC combined training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-06.webp" alt="EUS CAT1 CAT2 and USC combined training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-10" alt="EUS CAT1 CAT2 and USC combined training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-52" alt="EUS CAT1 CAT2 and USC combined training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-06" alt="EUS CAT1 CAT2 and USC combined training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* Who This Course Is For */}
@@ -308,13 +309,13 @@ export default function EusCat12UscCombined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Combined EUS CAT1, CAT2 and USC training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="Combined EUS CAT1, CAT2 and USC training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-10.webp" alt="Safe excavation demonstration during combined utility training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" alt="Safe excavation demonstration during combined utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-60.webp" alt="On-site utility avoidance and safe dig combined assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-60" alt="On-site utility avoidance and safe dig combined assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -387,7 +388,7 @@ export default function EusCat12UscCombined() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/Safe-Dig-18.webp" alt="Combined EUS CAT1, CAT2 and USC on-site training delivery" className="w-full h-full object-cover object-center" />
+        <Image src="Safe-Dig-18" alt="Combined EUS CAT1, CAT2 and USC on-site training delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -578,13 +579,13 @@ export default function EusCat12UscCombined() {
       {/* Image strip before FAQs */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Utility location practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-46" alt="Utility location practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-09.webp" alt="Safe dig practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-09" alt="Safe dig practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="Combined utility avoidance course completion" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" alt="Combined utility avoidance course completion" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

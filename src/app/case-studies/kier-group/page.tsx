@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Kier Group | Bespoke Training Case Study | Sygma',
@@ -38,7 +39,7 @@ export default function CaseStudyKier() {
     <>
       <InnerPageHero
         eyebrow="Case Study"
-        image="/images/courses/CAT4-and-Genny-43.webp"
+        image="CAT4-and-Genny-43"
         alt="Kier Group cable avoidance training case study with Sygma Solutions"
         headline="Kier Group: Bespoke Utility Avoidance Refresher"
         sub="How Sygma built a 1-day refresher programme around Kier's own systems, policies, and incident data."
@@ -71,7 +72,7 @@ export default function CaseStudyKier() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/about/Safe-Dig-01.webp" alt="Kier Group safe digging training operations" className="w-full h-full object-cover object-center" />
+        <Image src="Safe-Dig-01" alt="Kier Group safe digging training operations" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -123,9 +124,9 @@ export default function CaseStudyKier() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-01.webp" alt="Kier Group CAT and Genny training with operatives" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-02.webp" alt="Kier Group delegates practising CAT and Genny equipment operation" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/Safe-Dig-02.webp" alt="Kier Group safe digging practical assessment session" className="rounded-lg object-cover aspect-[4/3] w-full" />
+            <Image src="CAT4-and-Genny-01" alt="Kier Group CAT and Genny training with operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-02" alt="Kier Group delegates practising CAT and Genny equipment operation" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-02" alt="Kier Group safe digging practical assessment session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -146,13 +147,13 @@ export default function CaseStudyKier() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Kier Group utility avoidance field training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" alt="Kier Group utility avoidance field training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-11.webp" alt="Practical safe digging assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-11" alt="Practical safe digging assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-40.webp" alt="Cable detection equipment in bespoke training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-40" alt="Cable detection equipment in bespoke training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

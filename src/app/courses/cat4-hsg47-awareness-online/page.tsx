@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -49,7 +50,7 @@ export default function Cat4HsgAwarenessOnline() {
         eyebrow="Utility Avoidance"
         headline="CAT4 HSG47 Awareness Online: Theory Refresher and Data Download Training"
         sub="Half a day via Microsoft Teams. Up to 12 delegates. Full HSG47 theory, electromagnetic science, PAS128 drawing interpretation, and optional CAT Manager data download, without your team leaving the site."
-        image="/images/courses/New-Landscape-06.webp"
+        image="New-Landscape-06"
         alt="Online CAT4 and HSG47 awareness training course overview"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -80,9 +81,9 @@ export default function Cat4HsgAwarenessOnline() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-06.webp" alt="HSG47 awareness - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-48.webp" alt="HSG47 awareness - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-62.webp" alt="HSG47 awareness - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-06" alt="HSG47 awareness - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-48" alt="HSG47 awareness - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-62" alt="HSG47 awareness - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About section */}
@@ -286,13 +287,13 @@ export default function Cat4HsgAwarenessOnline() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-06.webp" alt="CAT4 HSG awareness training equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-06" alt="CAT4 HSG awareness training equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Online HSG47 awareness training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" alt="Online HSG47 awareness training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-10.webp" alt="HSG awareness practical demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" alt="HSG awareness practical demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -313,13 +314,13 @@ export default function Cat4HsgAwarenessOnline() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-65.webp" alt="CAT4 and Genny training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-65" alt="CAT4 and Genny training assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Utility avoidance awareness training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-52" alt="Utility avoidance awareness training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-07.webp" alt="On-site CAT4 HSG awareness session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-07" alt="On-site CAT4 HSG awareness session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

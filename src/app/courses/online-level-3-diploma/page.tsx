@@ -25,9 +25,9 @@ export default function OnlineLevel3Diploma() {
         headline="Online Level 3 Diploma in Utility Mapping and Surveying"
         sub="Entry-level RQF qualification delivered entirely online via Microsoft Teams. For operatives who want formal recognition of their utility mapping competency. Self-paced learning with live tutor support sessions throughout. No classroom attendance required."
         images={[
-          "/images/courses/MALA-GPR-06.webp",
-          "/images/courses/MALA-GPR-11.webp",
-          "/images/courses/Advanced-EM-04.webp",
+          "MALA-GPR-06",
+          "MALA-GPR-11",
+          "Advanced-EM-04",
         ]}
         alts={[
           "Online Level 3 utility mapping training",

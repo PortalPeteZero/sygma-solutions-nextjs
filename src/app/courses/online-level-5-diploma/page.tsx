@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -111,9 +112,9 @@ export default function OnlineLevel5Diploma() {
         headline="ProQual RQF Level 5 Diploma in Utility Mapping and Surveying (Online)"
         sub="Formal recognition of senior-level competency in utility mapping and surveying. Work at your own pace with full assessor support and mentoring throughout, delivered via MS Teams. No hidden fees. No extra charges for additional assessments. Contact us to discuss enrolment and pricing."
         images={[
-          '/images/courses/MALA-GPR-06.webp',
-          '/images/courses/MALA-GPR-11.webp',
-          '/images/courses/Advanced-EM-04.webp',
+          'MALA-GPR-06',
+          'MALA-GPR-11',
+          'Advanced-EM-04',
         ]}
         alts={[
           'Advanced EM locating methods taught in the online Level 5 diploma programme',
@@ -144,24 +145,9 @@ export default function OnlineLevel5Diploma() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-06.webp"
-            alt="Online Level 5 Diploma - practical session"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
-          <img
-            loading="lazy"
-            src="/images/courses/Advanced-EM-08.webp"
-            alt="Online Level 5 Diploma - hands-on assessment"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-32.webp"
-            alt="Online Level 5 Diploma - electromagnetic survey practical"
-            className="rounded-lg object-cover aspect-[4/3] w-full"
-          />
+          <Image src="MALA-GPR-06" alt="Online Level 5 Diploma - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Advanced-EM-08" alt="Online Level 5 Diploma - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-32" alt="Online Level 5 Diploma - electromagnetic survey practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -383,28 +369,13 @@ export default function OnlineLevel5Diploma() {
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Advanced-EM-01.webp"
-            alt="Online Level 5 Diploma training support"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Advanced-EM-01" alt="Online Level 5 Diploma training support" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-17.webp"
-            alt="Utility survey training for Level 5 qualification"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-17" alt="Utility survey training for Level 5 qualification" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Utility-Mapping-02.webp"
-            alt="Level 5 qualification practical demonstration"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Utility-Mapping-02" alt="Level 5 qualification practical demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -594,28 +565,13 @@ export default function OnlineLevel5Diploma() {
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-33.webp"
-            alt="Level 5 Diploma training with equipment"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-33" alt="Level 5 Diploma training with equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/MALA-GPR-29.webp"
-            alt="GPR survey training for online Level 5"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="MALA-GPR-29" alt="GPR survey training for online Level 5" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img
-            loading="lazy"
-            src="/images/courses/Utility-Mapping-02.webp"
-            alt="Online Level 5 qualification assessment"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          />
+          <Image src="Utility-Mapping-02" alt="Online Level 5 qualification assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

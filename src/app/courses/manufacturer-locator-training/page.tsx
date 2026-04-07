@@ -3,6 +3,7 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -55,7 +56,7 @@ export default function ManufacturerLocatorTraining() {
         eyebrow="Utility Avoidance"
         headline="Manufacturer-Specific Locator Training: vScan, CScope, and Other Pipe Locators"
         sub="One day. Up to eight delegates. Theory and practical training tailored to your specific pipe and cable locating equipment, using your own kit on a representative site. Multiple certification options available."
-        image="/images/courses/CAT4-and-Genny-50.webp"
+        image="CAT4-and-Genny-50"
         alt="Manufacturer-specific cable locator training with CAT4 and Genny equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -117,9 +118,9 @@ export default function ManufacturerLocatorTraining() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-41.webp" alt="Manufacturer-specific locator training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="Manufacturer-specific locator training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-65.webp" alt="Manufacturer-specific locator training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-41" alt="Manufacturer-specific locator training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-55" alt="Manufacturer-specific locator training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-65" alt="Manufacturer-specific locator training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About */}
@@ -292,13 +293,13 @@ export default function ManufacturerLocatorTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="Manufacturer locator training practical demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-10" alt="Manufacturer locator training practical demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Locator equipment training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="Locator equipment training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-60.webp" alt="Hands-on manufacturer locator assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-60" alt="Hands-on manufacturer locator assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -319,13 +320,13 @@ export default function ManufacturerLocatorTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Utility locator training with electromagnetic equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-46" alt="Utility locator training with electromagnetic equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="On-site locator training practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" alt="On-site locator training practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-61.webp" alt="Manufacturer-specific locator training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-61" alt="Manufacturer-specific locator training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

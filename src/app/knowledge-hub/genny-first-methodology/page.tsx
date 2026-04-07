@@ -3,6 +3,7 @@ import Link from "next/link";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import KnowledgeHubSidebar from "@/components/KnowledgeHubSidebar";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Why Connect the Genny First | Training Guide | Sygma',
@@ -25,14 +26,14 @@ export default function GennyFirstMethodology() {
         description: "Passive detection alone is not enough to identify buried services. Sygma's Genny-First methodology and why it produces measurable improvements in site safety.",
         url: "/knowledge-hub/genny-first-methodology",
         datePublished: "2026-03-09",
-        image: "/images/courses/CAT4-and-Genny-10.webp",
+        image: "CAT4-and-Genny-10",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
         { label: "Why You Should Always Connect the Genny First" },
       ]) }} />
       <InnerPageHero
-        image="/images/courses/CAT4-and-Genny-41.webp"
+        image="CAT4-and-Genny-41"
         alt="Genny-first methodology for effective underground utility signal tracing"
         eyebrow="Knowledge Hub"
         headline="Why You Should Always Connect the Genny First"
@@ -92,13 +93,13 @@ export default function GennyFirstMethodology() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-77.jpg" alt="Genny and CAT training on a live utility site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-77" alt="Genny and CAT training on a live utility site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-86.jpg" alt="CAT and Genny training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-86" alt="CAT and Genny training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-79.jpg" alt="Signal generator application during CAT and Genny training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-79" alt="Signal generator application during CAT and Genny training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -128,13 +129,13 @@ export default function GennyFirstMethodology() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-87.jpg" alt="Genny signal application on a live utility site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-87" alt="Genny signal application on a live utility site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Active detection with Genny signal generator" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-50" alt="Active detection with Genny signal generator" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <img loading="lazy" src="/images/courses/CAT4-and-Genny-77.jpg" alt="CAT and Genny training in practice" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="CAT4-and-Genny-77" alt="CAT and Genny training in practice" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -68,7 +69,7 @@ export default function ProQualCat1Plus() {
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 Plus: The Most Advanced Utility Locating Qualification Available"
         sub="Two days. Forty-two individually assessed practical criteria. Seven advanced theory papers. Two qualifications. Built for operatives who need to locate in the conditions that basic training does not prepare them for."
-        image="/images/courses/CAT4-and-Genny-40.webp"
+        image="CAT4-and-Genny-40"
         alt="ProQual CAT1 Plus advanced cable avoidance training course"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -182,9 +183,9 @@ export default function ProQualCat1Plus() {
       {/* Photo Strip */}
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="ProQual CAT1 Plus advanced training practical" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Advanced-EM-08.webp" alt="Advanced electromagnetic locator techniques" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-62.webp" alt="Hands-on practical assessment on training rig" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-10" alt="ProQual CAT1 Plus advanced training practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Advanced-EM-08" alt="Advanced electromagnetic locator techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-62" alt="Hands-on practical assessment on training rig" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -258,7 +259,7 @@ export default function ProQualCat1Plus() {
 
       {/* Full-width image */}
       <div className="w-full h-56 md:h-80 overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-67.webp" alt="ProQual CAT1 Plus hands-on practical training" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-67" alt="ProQual CAT1 Plus hands-on practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Practical Outcomes */}
@@ -370,13 +371,13 @@ export default function ProQualCat1Plus() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="Advanced CAT4 locator techniques during ProQual Plus training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-47" alt="Advanced CAT4 locator techniques during ProQual Plus training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-03.webp" alt="Advanced electromagnetic locator practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-03" alt="Advanced electromagnetic locator practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-61.webp" alt="Delegates practising signal clamp and capacitance techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-61" alt="Delegates practising signal clamp and capacitance techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -512,13 +513,13 @@ export default function ProQualCat1Plus() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="ProQual CAT1 Plus practical training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-47" alt="ProQual CAT1 Plus practical training assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Advanced-EM-07.webp" alt="Advanced locator training with depth verification" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-07" alt="Advanced locator training with depth verification" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-53.webp" alt="Hands-on Genny & CAT training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-53" alt="Hands-on Genny & CAT training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -29,7 +29,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Most cable strikes trace back to the same four failure patterns in the pre-excavation survey. Understanding them is the first step to preventing them.",
     href: "/knowledge-hub/utility-strikes-first-20-metres",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-61.webp",
+    image: "CAT4-and-Genny-61",
   },
   {
     category: "CAT and Genny",
@@ -37,7 +37,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Passive detection alone is not enough. Sygma's Genny-First methodology and why it produces measurable improvements in site safety.",
     href: "/knowledge-hub/genny-first-methodology",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-46.webp",
+    image: "CAT4-and-Genny-46",
   },
   {
     category: "CAT and Genny",
@@ -53,7 +53,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "A three-year certificate confirms an operative passed a course. It does not confirm what they are doing on site today. How OSCA fills that gap.",
     href: "/osca",
     type: "article",
-    image: "/images/about/Safe-Dig-01.webp",
+    image: "Safe-Dig-01",
   },
   {
     category: "Qualifications",
@@ -61,7 +61,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "These are not equivalent qualifications. This guide explains why ProQual CAT1 is a significantly more thorough assessment and helps you choose the right one for your team.",
     href: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-10.webp",
+    image: "CAT4-and-Genny-10",
   },
   {
     category: "CITB Funding",
@@ -69,7 +69,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.",
     href: "/contact",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-10.webp",
+    image: "CAT4-and-Genny-10",
   },
   {
     category: "PAS 128",
@@ -77,7 +77,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.",
     href: "/knowledge-hub/understanding-pas-128",
     type: "article",
-    image: "/images/courses/Utility-Mapping-03.webp",
+    image: "Utility-Mapping-03",
   },
   {
     category: "HSG47",
@@ -85,7 +85,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "HSG47 is the principal guidance document for avoiding danger from underground services. This guide explains the key requirements and how Sygma's training maps to them.",
     href: "/knowledge-hub/hsg47-explained",
     type: "article",
-    image: "/images/courses/Safe-Dig-10.webp",
+    image: "Safe-Dig-10",
   },
   {
     category: "Bespoke Training",
@@ -93,7 +93,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Standard courses solve generic problems. Bespoke programmes solve specific ones. This piece explains how to tell the difference and when to invest in a bespoke approach.",
     href: "/bespoke-training",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-61.webp",
+    image: "CAT4-and-Genny-61",
   },
   {
     category: "EUSR",
@@ -101,7 +101,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Your EUSR card has expired or is about to expire. This guide explains the EUS card renewal process, what happens if your card lapses, and how to rebook your training.",
     href: "/knowledge-hub/eusr-card-renewal",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-61.webp",
+    image: "CAT4-and-Genny-61",
   },
   {
     category: "Qualifications",
@@ -109,7 +109,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.",
     href: "/knowledge-hub/npors-vs-eusr-cable-avoidance",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-01.webp",
+    image: "CAT4-and-Genny-01",
   },
   {
     category: "Site Safety",
@@ -117,6 +117,6 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Most utility strikes are preventable. Practical guidance on pre-dig procedures, training requirements, supervision, and building a culture that prioritises doing it right.",
     href: "/knowledge-hub/strike-prevention-site-managers",
     type: "article",
-    image: "/images/courses/CAT4-and-Genny-46.webp",
+    image: "CAT4-and-Genny-46",
   },
 ];

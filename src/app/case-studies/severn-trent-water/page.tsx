@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Severn Trent | EUS Training Case Study | Sygma',
@@ -71,7 +72,7 @@ export default function CaseStudySevernTrent() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-96 overflow-hidden">
-        <img loading="lazy" src="/images/about/Safe-Dig-05.webp" alt="Severn Trent Water manager-level training on utility avoidance" className="w-full h-full object-cover object-center" />
+        <Image src="Safe-Dig-05" alt="Severn Trent Water manager-level training on utility avoidance" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -124,9 +125,9 @@ export default function CaseStudySevernTrent() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-06.webp" alt="Severn Trent Water managers during practical assessment session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/Safe-Dig-10.webp" alt="Severn Trent Water managers learning safe digging procedures" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-07.webp" alt="Severn Trent Water group discussion in training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+            <Image src="CAT4-and-Genny-06" alt="Severn Trent Water managers during practical assessment session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-10" alt="Severn Trent Water managers learning safe digging procedures" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-07" alt="Severn Trent Water group discussion in training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -147,13 +148,13 @@ export default function CaseStudySevernTrent() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-14.webp" alt="Severn Trent Water utility avoidance site training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-14" alt="Severn Trent Water utility avoidance site training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Manager-level cable detection demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" alt="Manager-level cable detection demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-02.webp" alt="Safe digging practices water network training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-02" alt="Safe digging practices water network training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

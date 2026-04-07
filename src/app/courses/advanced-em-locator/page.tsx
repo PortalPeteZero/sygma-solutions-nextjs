@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import Image from 'next/image';
 
 const faqs = [
               {
@@ -61,7 +62,7 @@ export default function AdvancedEmLocator() {
         eyebrow="Utility Avoidance"
         headline="Advanced EM Locator Training: High-End Electromagnetic Location for Specialists"
         sub="Advanced training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot."
-        image="/images/courses/Advanced-EM-07.webp"
+        image="Advanced-EM-07"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
           { label: "Advanced EM Locator" },
@@ -171,9 +172,9 @@ export default function AdvancedEmLocator() {
       {/* Photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
-          <img loading="lazy" src="/images/courses/Advanced-EM-08.webp" alt="Advanced EM locator training" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-02.webp" alt="RD8100 locating equipment in field" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-04.webp" alt="On-site practical near substation" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="Advanced-EM-08" alt="Advanced EM locator training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-02" alt="RD8100 locating equipment in field" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-04" alt="On-site practical near substation" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -285,7 +286,7 @@ export default function AdvancedEmLocator() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/Advanced-EM-07.webp" alt="Advanced EM locator practical training on site" className="w-full h-full object-cover" />
+        <Image src="Advanced-EM-07" alt="Advanced EM locator practical training on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
       </div>
 
       {/* Course formats */}
@@ -350,13 +351,13 @@ export default function AdvancedEmLocator() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Advanced-EM-07.webp" alt="Advanced electromagnetic locator practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-07" alt="Advanced electromagnetic locator practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-02.webp" alt="Advanced EM locator techniques demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-02" alt="Advanced EM locator techniques demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-53.webp" alt="Hands-on advanced utility locating assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-53" alt="Hands-on advanced utility locating assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -409,13 +410,13 @@ export default function AdvancedEmLocator() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Advanced-EM-08.webp" alt="Advanced locator training with depth verification" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-08" alt="Advanced locator training with depth verification" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-66.webp" alt="Electromagnetic locator practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-66" alt="Electromagnetic locator practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-05.webp" alt="Advanced EM training equipment and techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-05" alt="Advanced EM training equipment and techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

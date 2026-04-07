@@ -3,6 +3,7 @@ import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -55,7 +56,7 @@ export default function ServiceCoordinatorUsc() {
         eyebrow="Utility Avoidance"
         headline="Service Coordinator (USC) Training: Understanding the Role and Responsibilities"
         sub="The Underground Service Coordinator (USC) is an appointment made by the employer, not a qualification. This course prepares your appointed USC to source and review utility plans, interpret survey data, and complete the documentation the role demands."
-        image="/images/courses/CAT4-and-Genny-55.webp"
+        image="CAT4-and-Genny-55"
         alt="Utility service coordinator training covering safe excavation planning and supervision"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -83,9 +84,9 @@ export default function ServiceCoordinatorUsc() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="Service Coordinator USC training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-59.webp" alt="Service Coordinator USC training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-07.webp" alt="Service Coordinator USC training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-47" alt="Service Coordinator USC training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-59" alt="Service Coordinator USC training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-07" alt="Service Coordinator USC training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About USC role */}
@@ -249,7 +250,7 @@ export default function ServiceCoordinatorUsc() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Service Coordinator USC training - live training environment" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-54" alt="Service Coordinator USC training - live training environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* What You Get */}
@@ -275,13 +276,13 @@ export default function ServiceCoordinatorUsc() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-09.webp" alt="Service coordinator utility awareness training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-09" alt="Service coordinator utility awareness training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-07.webp" alt="USC qualification practical demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-07" alt="USC qualification practical demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-59.webp" alt="Service coordination training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-59" alt="Service coordination training assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -317,13 +318,13 @@ export default function ServiceCoordinatorUsc() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="USC training with utility location equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="USC training with utility location equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-18.webp" alt="Service coordinator on-site assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-18" alt="Service coordinator on-site assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Utility service coordination practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" alt="Utility service coordination practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

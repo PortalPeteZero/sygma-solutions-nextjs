@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'HSG47 Explained | Underground Services Guide | Sygma',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: '/images/courses/Safe-Dig-02.webp',
+        url: 'Safe-Dig-02',
         width: 1200,
         height: 630,
         alt: 'HSG47 safe digging practices',
@@ -44,7 +45,7 @@ export default function Hsg47Explained() {
             description: 'What is HSG47 and what training does it require? The HSE guidance for avoiding danger from underground services explained, with how cable avoidance training maps to its requirements.',
             url: '/knowledge-hub/hsg47-explained',
             datePublished: '2026-03-09',
-            image: '/images/courses/Safe-Dig-02.webp',
+            image: 'Safe-Dig-02',
           }),
         }}
       />
@@ -56,7 +57,7 @@ export default function Hsg47Explained() {
       />
 
       <InnerPageHero
-        image="/images/courses/Safe-Dig-01.webp"
+        image="Safe-Dig-01"
         alt="HSG47 safe digging practices explained with practical excavation guidance"
         eyebrow="Knowledge Hub"
         headline="HSG47 Training: What It Requires and How Training Aligns"
@@ -117,13 +118,13 @@ export default function Hsg47Explained() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-08.webp" alt="Safe digging near buried utilities" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-08" alt="Safe digging near buried utilities" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-40.webp" alt="CAT and Genny used for utility detection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-40" alt="CAT and Genny used for utility detection" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-03.webp" alt="Hand digging within proximity zone" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-03" alt="Hand digging within proximity zone" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -148,13 +149,13 @@ export default function Hsg47Explained() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-61.webp" alt="Practical cable avoidance training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-61" alt="Practical cable avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-07.webp" alt="Excavation safety assessment session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-07" alt="Excavation safety assessment session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="Team completing utility avoidance course" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-47" alt="Team completing utility avoidance course" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

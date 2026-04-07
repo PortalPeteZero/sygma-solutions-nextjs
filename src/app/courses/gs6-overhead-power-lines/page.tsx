@@ -3,6 +3,7 @@ import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
               {
@@ -55,7 +56,7 @@ export default function Gs6OverheadPowerLines() {
         eyebrow="Utility Avoidance"
         headline="GS6 Overhead Power Lines: Awareness and Safe Working Training"
         sub="Half-day classroom awareness or full-day with practical site element. Written assessment with 70% pass mark. GS6 fourth edition and ENATS 43-8. Delivered in-house at your site, nationwide UK."
-        image="/images/courses/CAT4-and-Genny-45.webp"
+        image="CAT4-and-Genny-45"
         alt="GS6 overhead power lines awareness training for safe working near electrical hazards"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -84,9 +85,9 @@ export default function Gs6OverheadPowerLines() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="GS6 overhead power lines training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-58.webp" alt="GS6 overhead power lines training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="GS6 overhead power lines safety training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-46" alt="GS6 overhead power lines training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-58" alt="GS6 overhead power lines training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-15" alt="GS6 overhead power lines safety training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About */}
@@ -273,19 +274,19 @@ export default function Gs6OverheadPowerLines() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-41.webp" alt="GS6 overhead power lines awareness training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-41" alt="GS6 overhead power lines awareness training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="Overhead power line safety practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" alt="Overhead power line safety practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="GS6 compliance training demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-15" alt="GS6 compliance training demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-53.webp" alt="GS6 overhead power lines training - live training environment" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-53" alt="GS6 overhead power lines training - live training environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Assessment */}
@@ -326,13 +327,13 @@ export default function Gs6OverheadPowerLines() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-43.webp" alt="GS6 training with site safety equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-43" alt="GS6 training with site safety equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="Overhead power lines safety assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" alt="Overhead power lines safety assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-10.webp" alt="On-site GS6 compliance practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" alt="On-site GS6 compliance practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Birmingham | Sygma Solutions',
@@ -67,13 +68,13 @@ export default function LocationBirmingham() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Cable avoidance training in the Midlands" className="w-full h-full object-cover" />
+            <Image src="CAT4-and-Genny-45" alt="Cable avoidance training in the Midlands" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/MALA-GPR-10.webp" alt="GPR survey training at Worcester facility" className="w-full h-full object-cover" />
+            <Image src="MALA-GPR-10" alt="GPR survey training at Worcester facility" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-63.webp" alt="Utility detection practical exercise Birmingham" className="w-full h-full object-cover" />
+            <Image src="CAT4-and-Genny-63" alt="Utility detection practical exercise Birmingham" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
         </div>
 
@@ -128,13 +129,13 @@ export default function LocationBirmingham() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="Safe excavation training West Midlands site" className="w-full h-full object-cover" />
+            <Image src="Safe-Dig-15" alt="Safe excavation training West Midlands site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-49.webp" alt="On-site cable avoidance assessment Midlands" className="w-full h-full object-cover" />
+            <Image src="CAT4-and-Genny-49" alt="On-site cable avoidance assessment Midlands" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-01.webp" alt="Advanced electromagnetic location equipment training" className="w-full h-full object-cover" />
+            <Image src="CAT4-and-Genny-01" alt="Advanced electromagnetic location equipment training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
         </div>
 

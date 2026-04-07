@@ -2,10 +2,8 @@
 const nextConfig = {
   trailingSlash: false,
   images: {
-    remotePatterns: [
-      { protocol: 'https', hostname: 'res.cloudinary.com' },
-      { protocol: 'https', hostname: 'sygma-solutions.com' },
-    ],
+    loader: 'custom',
+    loaderFile: './src/lib/cloudinary.ts',
   },
   async redirects() {
     return [

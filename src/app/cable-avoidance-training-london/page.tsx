@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training London | CAT and Genny Courses',
@@ -80,13 +81,13 @@ export default function CableAvoidanceLondon() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-46.webp" alt="Operative scanning with CAT4 on London site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-60.webp" alt="Genny signal application during cable avoidance training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/Safe-Dig-14.webp" alt="Safe digging practice near London underground services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-46" alt="Operative scanning with CAT4 on London site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-60" alt="Genny signal application during cable avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-14" alt="Safe digging practice near London underground services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/courses/CAT4-and-Genny-06.webp" alt="CAT and Genny training in London" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-06" alt="CAT and Genny training in London" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
@@ -102,7 +103,7 @@ export default function CableAvoidanceLondon() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/courses/CAT4-and-Genny-07.webp" alt="London utility avoidance training site conditions" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-07" alt="London utility avoidance training site conditions" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

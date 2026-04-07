@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'QTS Group | Utility Training Case Study | Sygma',
@@ -74,7 +75,7 @@ export default function CaseStudyQts() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-96 overflow-hidden">
-        <img loading="lazy" src="/images/about/CAT4-and-Genny-07.webp" alt="QTS Group surface laid cables training in rail environment" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-07" alt="QTS Group surface laid cables training in rail environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -129,9 +130,9 @@ export default function CaseStudyQts() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-08.webp" alt="QTS Group operatives practising CAT and Genny in rail environment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-09.webp" alt="QTS Group rail infrastructure utility avoidance training" className="rounded-lg object-cover aspect-[4/3] w-full" />
-            <img loading="lazy" src="/images/about/CAT4-and-Genny-10.webp" alt="QTS Group delegates in written assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
+            <Image src="CAT4-and-Genny-08" alt="QTS Group operatives practising CAT and Genny in rail environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-09" alt="QTS Group rail infrastructure utility avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-10" alt="QTS Group delegates in written assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -152,13 +153,13 @@ export default function CaseStudyQts() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-48.webp" alt="Rail environment utility avoidance training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-48" alt="Rail environment utility avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-62.webp" alt="Cable detection equipment used in rail infrastructure" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-62" alt="Cable detection equipment used in rail infrastructure" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Safe-Dig-16.webp" alt="Safe excavation training for rail contractors" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-16" alt="Safe excavation training for rail contractors" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

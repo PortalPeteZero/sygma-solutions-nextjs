@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
+import Image from 'next/image';
 
 type FilterType = "all" | "article" | "video";
 
@@ -60,23 +61,13 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
               className="border border-border rounded-xl bg-card flex flex-col overflow-hidden"
             >
               {item.type === "article" && item.image && (
-                <Link href={item.href} className="block">
-                  <img
-                    loading="lazy"
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full aspect-video object-cover"
-                  />
+                <Link href={item.href} className="relative block aspect-video">
+                  <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                 </Link>
               )}
               {item.type === "video" && item.youtubeId && (
-                <Link href={item.href} className="relative block">
-                  <img
-                    loading="lazy"
-                    src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`}
-                    alt={item.title}
-                    className="w-full aspect-video object-cover"
-                  />
+                <Link href={item.href} className="relative block aspect-video">
+                  <img loading="lazy" src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`} alt={item.title} className="w-full aspect-video object-cover" />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center">
                       <Play

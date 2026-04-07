@@ -3,6 +3,7 @@ import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -55,7 +56,7 @@ export default function PlansAndProcess() {
         eyebrow="Utility Avoidance"
         headline="Plans and Process Training: Read Utility Plans Properly and Survey More Safely"
         sub="Most operatives can get hold of a utility plan. Far fewer can read one properly. From STATS and LSBUD to keys, scales, and regional network differences, delegates leave able to extract the right information from any plan and use it correctly on site."
-        image="/images/courses/CAT4-and-Genny-55.webp"
+        image="CAT4-and-Genny-55"
         alt="Plans and process training covering utility survey planning and documentation"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -84,9 +85,9 @@ export default function PlansAndProcess() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Plans and process training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-56.webp" alt="Plans and process training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-13.webp" alt="Plans and process training with practical site element" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-45" alt="Plans and process training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-56" alt="Plans and process training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-13" alt="Plans and process training with practical site element" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* About */}
@@ -290,19 +291,19 @@ export default function PlansAndProcess() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-47.webp" alt="Plans and process training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-47" alt="Plans and process training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/MALA-GPR-04.webp" alt="Utility plans interpretation training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-04" alt="Utility plans interpretation training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-66.webp" alt="Understanding utility drawings and records" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-66" alt="Understanding utility drawings and records" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Plans and process training - live training environment" className="w-full h-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-52" alt="Plans and process training - live training environment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Who should attend */}
@@ -337,13 +338,13 @@ export default function PlansAndProcess() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Plans and process qualification assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" alt="Plans and process qualification assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/MALA-GPR-02.webp" alt="Utility mapping and plans training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-02" alt="Utility mapping and plans training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-61.webp" alt="On-site plans and process practical" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-61" alt="On-site plans and process practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

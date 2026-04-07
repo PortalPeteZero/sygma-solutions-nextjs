@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: '/images/courses/CAT4-and-Genny-52.webp',
+        url: 'CAT4-and-Genny-52',
         width: 1200,
         height: 630,
         alt: 'NPORS versus EUSR qualification',
@@ -63,7 +64,7 @@ export default function NporsVsEusr() {
             description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
             url: '/knowledge-hub/npors-vs-eusr',
             datePublished: '2026-03-10',
-            image: '/images/courses/CAT4-and-Genny-52.webp',
+            image: 'CAT4-and-Genny-52',
           }),
         }}
       />
@@ -81,7 +82,7 @@ export default function NporsVsEusr() {
       />
 
       <InnerPageHero
-        image="/images/courses/CAT4-and-Genny-61.webp"
+        image="CAT4-and-Genny-61"
         alt="NPORS versus EUSR cable avoidance training accreditation comparison"
         eyebrow="Knowledge Hub"
         headline="NPORS vs EUSR Cable Avoidance"
@@ -129,13 +130,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-06.webp" alt="Cable avoidance equipment in use during training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-06" alt="Cable avoidance equipment in use during training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-52.webp" alt="Practical utility detection demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-52" alt="Practical utility detection demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-04.webp" alt="Safe excavation near underground services" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-04" alt="Safe excavation near underground services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -183,13 +184,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-65.webp" alt="Delegates using CAT and Genny equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-65" alt="Delegates using CAT and Genny equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="Utility avoidance assessment exercise" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-51" alt="Utility avoidance assessment exercise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <img loading="lazy" src="/images/courses/Safe-Dig-04.webp" alt="Team training on safe digging practices" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-04" alt="Team training on safe digging practices" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

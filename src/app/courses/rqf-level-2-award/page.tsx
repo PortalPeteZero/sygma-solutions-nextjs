@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -104,7 +105,7 @@ export default function RqfLevel2Award() {
         eyebrow="Utility Avoidance"
         headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
-        image="/images/courses/Advanced-EM-07.webp"
+        image="Advanced-EM-07"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
           { label: 'Training', href: '/training/cable-location-avoidance' },
@@ -155,9 +156,9 @@ export default function RqfLevel2Award() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-15.webp" alt="RQF Level 2 Award training - practical session with CAT and Genny" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-35.webp" alt="RQF Level 2 Award training - hands-on assessment on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="RQF Level 2 Award - Genny signal application training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-15" alt="RQF Level 2 Award training - practical session with CAT and Genny" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-35" alt="RQF Level 2 Award training - hands-on assessment on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-55" alt="RQF Level 2 Award - Genny signal application training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 

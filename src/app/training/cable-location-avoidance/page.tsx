@@ -2,6 +2,7 @@ import InnerPageHero from "@/components/InnerPageHero";
 import Link from 'next/link';
 import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const courseCards = [
   {
@@ -10,7 +11,7 @@ const courseCards = [
     desc: "1-day HSG47-compliant course. CAT and Genny practical assessment. Sygma in-house certificate issued same day. Maximum 8 delegates.",
     duration: "1 Day",
     qualification: "Sygma Certificate",
-    image: "/images/courses/CAT4-and-Genny-25.webp",
+    image: "CAT4-and-Genny-25",
   },
   {
     to: "/courses/vscan-and-transmitter-training",
@@ -18,7 +19,7 @@ const courseCards = [
     desc: "1-day HSG47-compliant course for Vivax-Metrotech vScan and transmitter. Transmitter-First methodology, practical assessment. Sygma in-house certificate. Maximum 8 delegates.",
     duration: "1 Day",
     qualification: "Sygma Certificate",
-    image: "/images/courses/CAT4-and-Genny-25.webp",
+    image: "CAT4-and-Genny-25",
   },
   {
     to: "/courses/eus-cat1",
@@ -26,7 +27,7 @@ const courseCards = [
     desc: "EUSR-registered CAT1 qualification. Full electromagnetic theory, practical CAT and Genny assessment, and written paper. Recognised across the utility sector.",
     duration: "1-2 Days",
     qualification: "EUSR CAT1 Certificate",
-    image: "/images/courses/CAT4-and-Genny-35.webp",
+    image: "CAT4-and-Genny-35",
   },
   {
     to: "/courses/proqualcat1-training",
@@ -34,7 +35,7 @@ const courseCards = [
     desc: "ProQual Accreditations award. One of only a handful of accredited centres in the UK. Includes all four EML modes individually assessed.",
     duration: "1-2 Days",
     qualification: "ProQual CAT1 Award",
-    image: "/images/courses/CAT4-and-Genny-48.webp",
+    image: "CAT4-and-Genny-48",
   },
   {
     to: "/courses/proqualcat1plus",
@@ -42,7 +43,7 @@ const courseCards = [
     desc: "Extended ProQual CAT1 award with additional competency units. Covers data download, advanced interpretation, and supervisor-level service plan skills.",
     duration: "2 Days",
     qualification: "ProQual CAT1 Plus Award",
-    image: "/images/courses/CAT4-and-Genny-52.webp",
+    image: "CAT4-and-Genny-52",
   },
   {
     to: "/courses/eus-cat2-safe-dig",
@@ -50,7 +51,7 @@ const courseCards = [
     desc: "For lead operatives and site supervisors. Covers multi-utility site management, advanced plan interpretation, and supervising avoidance strategy. EUSR CAT2 certificate.",
     duration: "1 Day",
     qualification: "EUSR CAT2 Certificate",
-    image: "/images/courses/CAT4-and-Genny-56.webp",
+    image: "CAT4-and-Genny-56",
   },
   {
     to: "/courses/proqualcat2",
@@ -58,7 +59,7 @@ const courseCards = [
     desc: "ProQual-accredited Level 3 certificate for experienced supervisors and advanced operatives. Full practical assessment against ProQual CAT2 criteria.",
     duration: "2 Days",
     qualification: "ProQual CAT2 Certificate",
-    image: "/images/courses/CAT4-and-Genny-61.webp",
+    image: "CAT4-and-Genny-61",
   },
   {
     to: "/courses/proqual-cat1-cat2-combined",
@@ -66,7 +67,7 @@ const courseCards = [
     desc: "Two-day combined ProQual CAT1 and CAT2 course. Utility avoidance and safe excavation in a single programme. ProQual-accredited outcomes. Maximum 8 delegates.",
     duration: "2 Days",
     qualification: "ProQual Certificates",
-    image: "/images/courses/CAT4-and-Genny-64.webp",
+    image: "CAT4-and-Genny-64",
   },
   {
     to: "/courses/advanced-em-locator",
@@ -74,7 +75,7 @@ const courseCards = [
     desc: "For experienced locators working with Radiodetection RD8200, RD8000, or Vivax equipment. Covers advanced signal interpretation, frequency theory, and problem service strategies.",
     duration: "1-2 Days",
     qualification: "Sygma Advanced EM Certificate",
-    image: "/images/courses/Advanced-EM-07.webp",
+    image: "Advanced-EM-07",
   },
   {
     to: "/courses/rqf-level-2-award",
@@ -82,7 +83,7 @@ const courseCards = [
     desc: "Nationally recognised qualification for operatives locating and avoiding buried services. Three delivery formats. Theory and practical assessment included.",
     duration: "1-2 Days",
     qualification: "RQF Level 2 Award",
-    image: "/images/courses/CAT4-and-Genny-40.webp",
+    image: "CAT4-and-Genny-40",
   },
 ];
 
@@ -169,7 +170,7 @@ export default function UtilityAvoidanceHub() {
         eyebrow="Utility Avoidance"
         headline="Cable Avoidance Training That Changes How Your Operatives Work"
         sub="EUSR CAT1, ProQual, and in-house certificate courses. All underpinned by electromagnetic theory, Genny-First methodology, and 21 years of specialist field experience."
-        image="/images/courses/CAT4-and-Genny-65.webp"
+        image="CAT4-and-Genny-65"
         alt="Cable location and avoidance training courses overview showing CAT and Genny equipment"
         breadcrumbs={[{ label: "Cable Avoidance Training" }]}
       />
@@ -200,9 +201,9 @@ export default function UtilityAvoidanceHub() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/on-site/on-site-training-panoramic-01.webp" alt="Utility avoidance training group session on site - Sygma Solutions" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/on-site/on-site-training-02.webp" alt="Utility avoidance training delegates walking site with locator" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/on-site/on-site-training-05.webp" alt="Utility avoidance training practical on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="on-site-training-panoramic-01" alt="Utility avoidance training group session on site - Sygma Solutions" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-02" alt="Utility avoidance training delegates walking site with locator" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-05" alt="Utility avoidance training practical on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -244,7 +245,7 @@ export default function UtilityAvoidanceHub() {
             </div>
           </div>
           <div className="rounded-xl overflow-hidden">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-05.webp" alt="CAT and Genny training practical on site" className="w-full h-80 object-cover" />
+            <Image src="CAT4-and-Genny-05" alt="CAT and Genny training practical on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-80 object-cover" />
           </div>
         </div>
       </section>
@@ -297,7 +298,7 @@ export default function UtilityAvoidanceHub() {
           {courseCards.map((card) => (
             <div key={card.to} className="rounded-xl border border-border overflow-hidden flex flex-col group">
               <div className="relative h-44 overflow-hidden">
-                <img loading="lazy" src={card.image} alt={card.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={card.image} alt={card.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="flex gap-2 flex-wrap">
@@ -366,7 +367,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* Full-width image break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <img loading="lazy" src="/images/on-site/on-site-training-panoramic-01.webp" alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" className="w-full h-full object-cover object-center" />
+        <Image src="on-site-training-panoramic-01" alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Genny-First methodology */}
@@ -435,13 +436,13 @@ export default function UtilityAvoidanceHub() {
       {/* Image strip before Why Sygma */}
       <div className="grid grid-cols-3 gap-3 h-56 md:h-72">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-40.webp" alt="CAT and Genny training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-40" alt="CAT and Genny training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-45.webp" alt="Utility avoidance training on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" alt="Utility avoidance training on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Underground service detection training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" alt="Underground service detection training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

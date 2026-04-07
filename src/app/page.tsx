@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Phone } from 'lucide-react';
 import HeroCarousel from '@/components/HeroCarousel';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
@@ -24,10 +25,10 @@ const whyPoints = [
 ];
 
 const pathways = [
-  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUS accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: '/images/homepage/CAT4-and-Genny-54.webp' },
-  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: '/images/homepage/MALA-GPR-08.webp' },
-  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: '/images/homepage/CAT4-and-Genny-01.webp' },
-  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: '/images/homepage/Safe-Dig-16.webp' },
+  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUS accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'CAT4-and-Genny-54' },
+  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'MALA-GPR-08' },
+  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'CAT4-and-Genny-01' },
+  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'Safe-Dig-16' },
 ];
 
 const faqs = [
@@ -202,7 +203,7 @@ export default function Home() {
             {pathways.map((p) => (
               <div key={p.title} className="relative overflow-hidden rounded-xl border border-border bg-card group">
                 <div className="relative h-48 overflow-hidden">
-                  <img loading="lazy" src={p.image} alt={p.title} className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                  <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
                 </div>
                 <div className="p-6">
@@ -232,7 +233,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="rounded-xl overflow-hidden border border-border">
-              <img loading="lazy" src="/images/homepage/CAT4-and-Genny-54.webp" alt="Genny & CAT training" className="w-full h-64 object-cover" />
+              <Image src="CAT4-and-Genny-54" alt="Genny & CAT training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-64 object-cover" />
               <div className="p-6 bg-accent/10 border-t border-border">
                 <p className="text-2xl font-black text-accent">70 to 80%</p>
                 <p className="text-sm text-muted-foreground mt-1">measurable increase in Genny usage among trained operatives. On live sites.</p>
@@ -261,10 +262,10 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="rounded-lg overflow-hidden aspect-square">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="On-site utility training" className="w-full h-full object-cover" />
+                <Image src="CAT4-and-Genny-54" alt="On-site utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden aspect-square">
-                <img loading="lazy" src="/images/courses/CAT4-and-Genny-60.webp" alt="Genny & CAT practical training" className="w-full h-full object-cover" />
+                <Image src="CAT4-and-Genny-60" alt="Genny & CAT practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
               </div>
             </div>
           </div>
@@ -324,7 +325,7 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-lg overflow-hidden">
-              <img loading="lazy" src="/images/on-site/on-site-training-01.webp" alt="On-site training delivery" className="w-full h-56 object-cover" />
+              <Image src="on-site-training-01" alt="On-site training delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-56 object-cover" />
             </div>
           </div>
         </div>

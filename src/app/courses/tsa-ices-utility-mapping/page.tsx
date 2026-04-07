@@ -116,7 +116,7 @@ export default function TsaIcesUtilityMapping() {
         eyebrow="Utility Mapping"
         headline="TSA and ICES Utility Mapping Training Programme: Seven Modules to Full Professional Competency"
         sub="The UK's most comprehensive utility surveyor training programme. Seven modules. Seventeen-plus days. Every ICES competency from desktop survey and PAS128 reconnaissance through to advanced GPR post processing, total stations, GNSS, geometric principles and CAD. Approved by TSA and mapped to ICES competencies across GEUS01, GEUS02, GEUS03 and GEUS04. The pathway to ProQual Level 4 and Level 5 for professional utility surveyors."
-        image="/images/courses/Utility-Mapping-01.webp"
+        image="Utility-Mapping-01"
         alt="TSA ICES utility mapping training with professional survey equipment"
         breadcrumbs={[
           { label: 'Training', href: '/training/utility-mapping-surveying' },

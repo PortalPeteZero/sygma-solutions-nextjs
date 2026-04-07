@@ -3,6 +3,7 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import InnerPageHero from "@/components/InnerPageHero";
 import { CheckCircle } from "lucide-react";
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 const faqs = [
             {
@@ -56,9 +57,9 @@ export default function Level3Certificate() {
         headline="ProQual Level 3 Certificate in Utility Mapping and Surveying"
         sub="The nationally recognised, Ofqual-regulated entry qualification for utility surveyors. Full assessor support throughout. Contact us to discuss enrolment and pricing."
         images={[
-          "/images/courses/MALA-GPR-01.webp",
-          "/images/courses/MALA-GPR-03.webp",
-          "/images/courses/Advanced-EM-01.webp",
+          "MALA-GPR-01",
+          "MALA-GPR-03",
+          "Advanced-EM-01",
         ]}
         alts={["Advanced electromagnetic locating techniques during ProQual Level 3 training", "MALA ground penetrating radar unit used in Level 3 utility mapping coursework", "Advanced electromagnetic locating techniques during ProQual Level 3 training"]}
         breadcrumbs={[
@@ -88,9 +89,9 @@ export default function Level3Certificate() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/MALA-GPR-16.webp" alt="Level 3 Certificate utility mapping - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/MALA-GPR-01.webp" alt="Level 3 Certificate utility mapping - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Advanced-EM-07.webp" alt="Level 3 Certificate utility mapping - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="MALA-GPR-16" alt="Level 3 Certificate utility mapping - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-01" alt="Level 3 Certificate utility mapping - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Advanced-EM-07" alt="Level 3 Certificate utility mapping - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* What is it */}
@@ -145,7 +146,7 @@ export default function Level3Certificate() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/MALA-GPR-18.webp" alt="Level 3 Certificate utility mapping - electromagnetic locator training" className="w-full h-full object-cover object-center" />
+        <Image src="MALA-GPR-18" alt="Level 3 Certificate utility mapping - electromagnetic locator training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       {/* Who it's for */}
@@ -250,13 +251,13 @@ export default function Level3Certificate() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Advanced-EM-02.webp" alt="Level 3 Certificate practical training assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-02" alt="Level 3 Certificate practical training assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/MALA-GPR-06.webp" alt="Utility survey equipment training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-06" alt="Utility survey equipment training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Utility-Mapping-01.webp" alt="Level 3 qualification hands-on demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-01" alt="Level 3 qualification hands-on demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -464,13 +465,13 @@ export default function Level3Certificate() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Advanced-EM-04.webp" alt="Level 3 Certificate training with equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-04" alt="Level 3 Certificate training with equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/MALA-GPR-14.webp" alt="Utility detection practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-14" alt="Utility detection practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="/images/courses/Utility-Mapping-01.webp" alt="On-site Level 3 qualification training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-01" alt="On-site Level 3 qualification training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

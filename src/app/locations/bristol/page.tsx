@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Utility Training Bristol & South West | Sygma Solutions',
@@ -67,13 +68,13 @@ export default function LocationBristol() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/MALA-GPR-12.webp" alt="GPR utility survey training South West" className="w-full h-full object-cover" />
+            <Image src="MALA-GPR-12" alt="GPR utility survey training South West" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/Utility-Mapping-02.webp" alt="Utility mapping field work Bristol region" className="w-full h-full object-cover" />
+            <Image src="Utility-Mapping-02" alt="Utility mapping field work Bristol region" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/MALA-GPR-25.webp" alt="Ground penetrating radar practical exercise" className="w-full h-full object-cover" />
+            <Image src="MALA-GPR-25" alt="Ground penetrating radar practical exercise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
         </div>
 
@@ -128,13 +129,13 @@ export default function LocationBristol() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/CAT4-and-Genny-50.webp" alt="Cable avoidance training on South West site" className="w-full h-full object-cover" />
+            <Image src="CAT4-and-Genny-50" alt="Cable avoidance training on South West site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/MALA-GPR-19.webp" alt="PAS128 survey assessment South West" className="w-full h-full object-cover" />
+            <Image src="MALA-GPR-19" alt="PAS128 survey assessment South West" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img loading="lazy" src="/images/courses/Safe-Dig-02.webp" alt="Safe excavation practices training Bristol" className="w-full h-full object-cover" />
+            <Image src="Safe-Dig-02" alt="Safe excavation practices training Bristol" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
           </div>
         </div>
 

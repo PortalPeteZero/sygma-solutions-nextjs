@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Birmingham | Sygma Solutions',
@@ -79,13 +80,13 @@ export default function CableAvoidanceBirmingham() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="Operative using CAT4 locator during training in Birmingham" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/Safe-Dig-12.webp" alt="Safe excavation practice near buried utilities" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Signal tracing practical exercise West Midlands" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-10" alt="Operative using CAT4 locator during training in Birmingham" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-12" alt="Safe excavation practice near buried utilities" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-54" alt="Signal tracing practical exercise West Midlands" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/about/CAT4-and-Genny-03.webp" alt="CAT and Genny training in Birmingham" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-03" alt="CAT and Genny training in Birmingham" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
@@ -101,7 +102,7 @@ export default function CableAvoidanceBirmingham() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/about/CAT4-and-Genny-43.webp" alt="Cable avoidance training Birmingham ground assessment" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-43" alt="Cable avoidance training Birmingham ground assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -115,13 +116,13 @@ export default function CableAvoidanceBirmingham() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-67.webp" alt="Cable avoidance assessment Birmingham training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/Safe-Dig-22.webp" alt="Excavation safety training with hand tools" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-55.webp" alt="Team completing CAT and Genny certification" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-67" alt="Cable avoidance assessment Birmingham training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-22" alt="Excavation safety training with hand tools" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-55" alt="Team completing CAT and Genny certification" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><img loading="lazy" src="/images/about/CAT4-and-Genny-05.webp" alt="Utility location training equipment CAT and Genny" className="w-full h-full object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-05" alt="Utility location training equipment CAT and Genny" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
 
       {/* FAQs */}
       <section className="bg-gray-50 py-14">

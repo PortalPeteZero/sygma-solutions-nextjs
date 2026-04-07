@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import { courseSchema, faqPageSchema, breadcrumbSchema } from '@/lib/schema';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -47,7 +48,7 @@ export default function EusCat12CombinedPage() {
         eyebrow="Utility Avoidance"
         headline="EUSR CAT1 and CAT2 Combined: Two-Day Utility Avoidance and Safe Dig Training"
         sub="One programme. Two EUSR-recognised qualifications. Both CAT1 and CAT2 completed in two days at your site, with full theory, Genny-First practical, and a live safe dig assessment."
-        image="/images/courses/CAT4-and-Genny-64.webp"
+        image="CAT4-and-Genny-64"
         alt="Combined EUSR CAT1 and CAT2 cable avoidance training with practical field exercises"
         breadcrumbs={[
           { label: 'Training', href: '/training/cable-location-avoidance' },
@@ -96,9 +97,9 @@ export default function EusCat12CombinedPage() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-09.webp" alt="EUSR CAT1 and CAT2 combined training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/CAT4-and-Genny-51.webp" alt="EUSR CAT1 and CAT2 combined training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="/images/courses/Safe-Dig-05.webp" alt="EUSR CAT1 and CAT2 combined training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-09" alt="EUSR CAT1 and CAT2 combined training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-51" alt="EUSR CAT1 and CAT2 combined training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-05" alt="EUSR CAT1 and CAT2 combined training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -228,9 +229,9 @@ export default function EusCat12CombinedPage() {
       </section>
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-10.webp" alt="EUSR CAT1 and CAT2 combined training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/Safe-Dig-08.webp" alt="Safe dig technique demonstration during CAT2 training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><img loading="lazy" src="/images/courses/CAT4-and-Genny-54.webp" alt="Cable avoidance and safe excavation combined assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-10" alt="EUSR CAT1 and CAT2 combined training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-08" alt="Safe dig technique demonstration during CAT2 training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-54" alt="Cable avoidance and safe excavation combined assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       <section className="bg-muted/20 py-14">
@@ -265,7 +266,7 @@ export default function EusCat12CombinedPage() {
       </section>
 
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="/images/courses/Safe-Dig-15.webp" alt="EUSR CAT1 and CAT2 on-site combined training" className="w-full h-full object-cover object-center" />
+        <Image src="Safe-Dig-15" alt="EUSR CAT1 and CAT2 on-site combined training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
       </div>
 
       <section className="py-16 bg-muted/30">
