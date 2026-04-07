@@ -9,6 +9,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
 
 interface NavItem {
@@ -26,36 +27,37 @@ const mainNav: NavMenu[] = [
   {
     title: 'Utility Avoidance',
     items: [
-      { title: 'Utility Avoidance Services', href: '/services/utility-avoidance', description: 'Cable and pipe location services' },
-      { title: 'CAT Scanning', href: '/services/utility-avoidance/cat-scanning', description: 'Electromagnetic and inductance scanning' },
-      { title: 'GPR (Ground Penetrating Radar)', href: '/services/utility-avoidance/gpr', description: 'Subsurface imaging and utility detection' },
-      { title: 'Potholing', href: '/services/utility-avoidance/potholing', description: 'Precise utility exposure and verification' },
+      { title: 'Cable Avoidance Training', href: '/training/cable-location-avoidance', description: 'CAT and Genny courses and qualifications' },
+      { title: 'Cable Avoidance Course', href: '/courses/cable-avoidance-training', description: 'One-day CAT and Genny training' },
+      { title: 'ProQual CAT1', href: '/courses/proqualcat1-training', description: 'The most rigorous utility locating qualification' },
+      { title: 'EUS CAT1', href: '/courses/eus-cat1', description: 'EUSR-registered cable avoidance course' },
+      { title: 'Course Comparison', href: '/courses/cable-avoidance-course-comparison', description: 'Compare all CAT and Genny qualifications' },
     ],
   },
   {
     title: 'Utility Mapping',
     items: [
-      { title: 'Utility Mapping Services', href: '/services/utility-mapping', description: 'Comprehensive utility record mapping' },
-      { title: 'MALA GPR Mapping', href: '/services/utility-mapping/mala-gpr', description: 'Advanced ground penetrating radar mapping' },
-      { title: 'Record Searches', href: '/services/utility-mapping/record-searches', description: 'Utility authority records integration' },
-      { title: 'Borehole Surveys', href: '/services/utility-mapping/borehole-surveys', description: 'Subsurface investigation services' },
+      { title: 'Utility Mapping Training', href: '/training/utility-mapping-surveying', description: 'PAS 128, GPR, and surveyor qualifications' },
+      { title: 'PAS 128 Surveyor Course', href: '/courses/5-day-pas128-surveyor', description: 'Five-day accredited surveyor training' },
+      { title: 'GPR Training', href: '/courses/gpr-training', description: 'Ground penetrating radar operation' },
+      { title: 'TSA/ICES Mapping', href: '/courses/tsa-ices-utility-mapping', description: 'TSA Approved utility mapping course' },
     ],
   },
   {
     title: 'OSCA',
     items: [
-      { title: 'OSCA Services', href: '/services/osca', description: 'One Stop Cable Avoidance' },
-      { title: 'OSCA Training', href: '/services/osca/training', description: 'Professional OSCA operative training' },
-      { title: 'OSCA Certification', href: '/services/osca/certification', description: 'Industry-recognised qualifications' },
+      { title: 'OSCA Overview', href: '/osca', description: 'On-Site Competency Assessment' },
+      { title: 'Bespoke Training', href: '/bespoke-training', description: 'Tailored programmes for your team' },
+      { title: 'All Courses', href: '/courses', description: 'View the full course catalogue' },
     ],
   },
   {
     title: 'Knowledge Hub',
     items: [
       { title: 'All Articles', href: '/knowledge-hub', description: 'Browse our knowledge base' },
-      { title: 'Cable Strikes', href: '/knowledge-hub/cable-strikes', description: 'Prevention and avoidance' },
-      { title: 'Training & Certification', href: '/knowledge-hub/training', description: 'Professional development' },
-      { title: 'Industry Standards', href: '/knowledge-hub/standards', description: 'HSG47, EUSR, and more' },
+      { title: 'HSG47 Explained', href: '/knowledge-hub/hsg47-explained', description: 'Safe digging guidance for excavation' },
+      { title: 'EUS vs ProQual CAT1', href: '/knowledge-hub/eus-cat1-vs-proqual-cat1', description: 'Comparing the two main qualifications' },
+      { title: 'Genny-First Methodology', href: '/knowledge-hub/genny-first-methodology', description: 'Why we always start with the Genny' },
     ],
   },
 ]
@@ -104,6 +106,7 @@ export function Navbar() {
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
+              <NavigationMenuViewport />
             </NavigationMenu>
           </div>
 

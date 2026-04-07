@@ -35,7 +35,7 @@ export default function NotFound() {
 
         <div className="pt-8 border-t border-slate-700">
           <p className="text-sm text-slate-500">
-            Try visiting our <Link href="/knowledge-hub" className="text-primary hover:underline">Knowledge Hub</Link> or <Link href="/services/utility-avoidance" className="text-primary hover:underline">Services</Link> pages
+            Try visiting our <Link href="/knowledge-hub" className="text-primary hover:underline">Knowledge Hub</Link> or <Link href="/courses" className="text-primary hover:underline">Courses</Link> pages
           </p>
         </div>
       </div>

@@ -47,7 +47,7 @@ export default function CoursesPage() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4">CAT and Genny Training Courses</h1>
-          <p className="text-xl mb-8">Cable avoidance training, utility mapping qualifications, and specialist locator courses. Delivered by the UK\'s only independent underground utility training provider.</p>
+          <p className="text-xl mb-8">Cable avoidance training, utility mapping qualifications, and specialist locator courses. Delivered by the UK&apos;s only independent underground utility training provider.</p>
         </div>
       </section>
 
