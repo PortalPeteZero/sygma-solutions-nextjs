@@ -54,8 +54,8 @@ const footerColumns: FooterColumn[] = [
 
 export function Footer() {
   const handleCookieSettings = () => {
-    if (typeof window !== 'undefined' && window.CookieYes) {
-      window.CookieYes.showConsentForm()
+    if (typeof window !== 'undefined' && (window as Window & { CookieYes?: { showConsentForm: () => void } }).CookieYes) {
+      (window as Window & { CookieYes?: { showConsentForm: () => void } }).CookieYes!.showConsentForm()
     }
   }
 

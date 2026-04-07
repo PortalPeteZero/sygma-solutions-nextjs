@@ -1,6 +1,7 @@
 import InnerPageHero from "@/components/InnerPageHero";
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { breadcrumbSchema } from '@/lib/schema';
 
 
 export const metadata: Metadata = {

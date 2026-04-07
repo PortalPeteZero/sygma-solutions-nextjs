@@ -4,13 +4,16 @@ import { ChevronRight } from 'lucide-react';
 interface Breadcrumb {
   label: string;
   to?: string;
+  href?: string;
 }
 
 interface InnerPageHeroProps {
   headline: string;
   sub?: string;
   image?: string;
+  images?: string[];
   alt?: string;
+  alts?: string[];
   eyebrow?: string;
   breadcrumbs?: Breadcrumb[];
 }
@@ -19,10 +22,12 @@ export default function InnerPageHero({
   headline,
   sub,
   image,
+  images,
   eyebrow,
   breadcrumbs = [],
 }: InnerPageHeroProps) {
-  const hasImage = Boolean(image);
+  const resolvedImage = image || (images && images[0]);
+  const hasImage = Boolean(resolvedImage);
 
   return (
     <section
@@ -30,7 +35,7 @@ export default function InnerPageHero({
       style={
         hasImage
           ? {
-              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.88)), url(${image})`,
+              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.88)), url(${resolvedImage})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }
@@ -54,9 +59,9 @@ export default function InnerPageHero({
           >
             {breadcrumbs.map((crumb, i) => (
               <div key={i} className="flex items-center gap-1.5">
-                {crumb.to ? (
+                {crumb.to || crumb.href ? (
                   <Link
-                    href={crumb.to}
+                    href={crumb.to || crumb.href || '#'}
                     className="hover:text-white transition-colors"
                   >
                     {crumb.label}
