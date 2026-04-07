@@ -10,9 +10,7 @@ const YOUTUBE_ID = "IgxGksU3WQ4";
 export const metadata: Metadata = {
   title: 'CAT and Genny Training: The Genny First Approach | Sygma',
   description: 'Watch Sygma\'s CAT and Genny training video: why connecting the signal generator first is the correct approach to underground utility location.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/knowledge-hub/genny-first-in-practice-video',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/genny-first-in-practice-video' },
   openGraph: {
     title: 'CAT and Genny Training: The Genny First Approach | Sygma',
     description: 'Watch Sygma\'s CAT and Genny training video: why connecting the signal generator first is the correct approach to underground utility location.',

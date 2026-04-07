@@ -8,7 +8,7 @@ const faqs = [{q: "What is the difference between the in-person fast-track route
 export const metadata: Metadata = {
   title: 'ProQual Level 5 Diploma in Utility Mapping | Sygma Solutions',
   description: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Senior-level professional qualification. In-person or online delivery available.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/level-5-diploma',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/level-5-diploma' },
   openGraph: {
     title: 'ProQual Level 5 Diploma in Utility Mapping | Sygma Solutions',
     description: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Senior-level qualification.',

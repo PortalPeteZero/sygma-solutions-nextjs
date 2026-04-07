@@ -34,9 +34,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'Plans and Process Training Course | Sygma Solutions',
   description: 'Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/courses/plans-and-process',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/plans-and-process' },
   openGraph: {
     title: 'Plans and Process Training Course | Sygma Solutions',
     description: 'Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.',

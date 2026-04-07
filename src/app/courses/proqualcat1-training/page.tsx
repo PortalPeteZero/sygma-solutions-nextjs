@@ -33,9 +33,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'ProQual CAT1 Training | Accredited Course | Sygma',
   description: 'ProQual-accredited CAT1 utility locating course with full theory and practical assessment. 14 theory, 8 practical criteria. UK-wide delivery.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/courses/proqualcat1-training',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/proqualcat1-training' },
   openGraph: {
     title: 'ProQual CAT1 Training | Accredited Course | Sygma',
     description: 'ProQual-accredited CAT1 utility locating course with full theory and practical assessment. 14 theory, 8 practical criteria. UK-wide delivery.',

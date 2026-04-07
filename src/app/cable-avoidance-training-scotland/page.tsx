@@ -4,9 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Scotland | Sygma Solutions',
   description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUS CAT1, ProQual qualifications.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/cable-avoidance-training-scotland',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/cable-avoidance-training-scotland' },
   openGraph: {
     title: 'Cable Avoidance Training Scotland | Sygma Solutions',
     description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUS CAT1, ProQual qualifications.',

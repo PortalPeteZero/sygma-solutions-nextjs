@@ -7,9 +7,7 @@ import KnowledgeHubClient from './KnowledgeHubClient';
 export const metadata: Metadata = {
   title: 'Utility Training Guides & Articles | Sygma Solutions',
   description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/knowledge-hub',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub' },
   robots: { index: false, follow: true },
   openGraph: {
     title: 'Utility Training Guides & Articles | Sygma Solutions',

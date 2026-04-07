@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   title: 'PAS 128 Awareness Training Course | Sygma Solutions',
   description:
     'PAS 128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, drawings, and specifications.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/pas128-awareness',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/pas128-awareness' },
   openGraph: {
     title: 'PAS 128 Awareness Training Course | Sygma Solutions',
     description:

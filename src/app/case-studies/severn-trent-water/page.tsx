@@ -4,9 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Severn Trent | EUS Training Case Study | Sygma',
   description: 'How Sygma designed a 2-day bespoke manager training programme for Severn Trent Water built around their policies, procedures, and operational requirements.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/case-studies/severn-trent-water',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/case-studies/severn-trent-water' },
   openGraph: {
     title: 'Severn Trent | EUS Training Case Study | Sygma',
     description: 'How Sygma designed a 2-day bespoke manager training programme for Severn Trent Water built around their policies, procedures, and operational requirements.',

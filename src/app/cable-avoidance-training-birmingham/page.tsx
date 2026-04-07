@@ -4,9 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Birmingham | Sygma Solutions',
   description: 'Cable avoidance training in Birmingham and the West Midlands. EUSR, ProQual and CAT and Genny courses delivered at your site. Independent specialist.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/cable-avoidance-training-birmingham',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/cable-avoidance-training-birmingham' },
   openGraph: {
     title: 'Cable Avoidance Training Birmingham | Sygma Solutions',
     description: 'Cable avoidance training in Birmingham and the West Midlands. EUSR, ProQual and CAT and Genny courses delivered at your site. Independent specialist.',

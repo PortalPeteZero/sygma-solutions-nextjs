@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'CITB Approved, EUSR & ProQual Accredited | Sygma Solutions',
   description: 'Sygma is CITB approved, EUSR registered and ProQual accredited. Find out what each means for your qualification, funding eligibility, and training record.',
-  canonical: 'https://sygma-solutions.com/accreditations',
+  alternates: { canonical: 'https://sygma-solutions.com/accreditations' },
   openGraph: {
     title: 'CITB Approved, EUSR & ProQual Accredited | Sygma Solutions',
     description: 'Sygma is CITB approved, EUSR registered and ProQual accredited.',

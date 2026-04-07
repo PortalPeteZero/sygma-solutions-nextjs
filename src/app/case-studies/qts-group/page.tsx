@@ -4,9 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'QTS Group | Utility Training Case Study | Sygma',
   description: 'How Sygma designed a rail-specific CAT4 training programme for QTS Group, incorporating surface laid cables and ZSI Super User Coach training.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/case-studies/qts-group',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/case-studies/qts-group' },
   openGraph: {
     title: 'QTS Group | Utility Training Case Study | Sygma',
     description: 'How Sygma designed a rail-specific CAT4 training programme for QTS Group, incorporating surface laid cables and ZSI Super User Coach training.',

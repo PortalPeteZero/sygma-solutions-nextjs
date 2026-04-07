@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'On-Site Competency Assessment | OSCA | Sygma Solutions',
   description: 'OSCA provides digital, GPS-stamped on-site competency assessments for utility location operatives. Real evidence of what your team can do in the field.',
-  canonical: 'https://sygma-solutions.com/osca',
+  alternates: { canonical: 'https://sygma-solutions.com/osca' },
   openGraph: {
     title: 'On-Site Competency Assessment | OSCA | Sygma Solutions',
     description: 'OSCA provides digital, GPS-stamped on-site competency assessments for utility location operatives.',

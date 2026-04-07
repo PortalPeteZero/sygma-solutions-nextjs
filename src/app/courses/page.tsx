@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
   description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUS CAT1, ProQual, PAS 128, GPR. On-site delivery, CITB approved.',
-  canonical: 'https://sygma-solutions.com/courses',
+  alternates: { canonical: 'https://sygma-solutions.com/courses' },
   openGraph: {
     title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
     description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist.',

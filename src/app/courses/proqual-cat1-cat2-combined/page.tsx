@@ -33,9 +33,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'ProQual CAT1 and CAT2 Combined Course | Sygma Solutions',
   description: 'Two-day combined ProQual CAT1 and CAT2 course. Utility avoidance and safe excavation with ProQual-accredited assessment. UK-wide delivery.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/courses/proqual-cat1-cat2-combined',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/proqual-cat1-cat2-combined' },
   openGraph: {
     title: 'ProQual CAT1 and CAT2 Combined Course | Sygma Solutions',
     description: 'Two-day combined ProQual CAT1 and CAT2 course. Utility avoidance and safe excavation with ProQual-accredited assessment. UK-wide delivery.',

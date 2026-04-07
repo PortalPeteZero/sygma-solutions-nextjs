@@ -7,7 +7,7 @@ import { articleSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: '4 Behaviours That Can Cause Cable Strikes on Site | Sygma',
   description: 'Most cable strikes trace back to four key behaviours in the pre-excavation survey. Knowing what causes them is the first step to preventing one.',
-  canonical: 'https://sygma-solutions.co.uk/knowledge-hub/utility-strikes-first-20-metres',
+  alternates: { canonical: 'https://sygma-solutions.co.uk/knowledge-hub/utility-strikes-first-20-metres' },
   openGraph: {
     title: '4 Behaviours That Can Cause Cable Strikes on Site',
     description: 'Most cable strikes trace back to the same four behaviours in the pre-excavation survey. Understanding what can cause a cable strike is the first step to preventing one.',

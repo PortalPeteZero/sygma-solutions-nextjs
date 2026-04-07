@@ -41,9 +41,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'ProQual CAT2 | Safe Excavation Qualification',
   description: 'ProQual CAT2 safe excavation qualification. BS 8475:2015 certified. Two-day course covering 24 theory and 15 practical criteria. Book your training.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/courses/proqualcat2',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/proqualcat2' },
   openGraph: {
     title: 'ProQual CAT2 | Safe Excavation Qualification',
     description: 'ProQual CAT2 safe excavation qualification. BS 8475:2015 certified. Two-day course covering 24 theory and 15 practical criteria. Book your training.',

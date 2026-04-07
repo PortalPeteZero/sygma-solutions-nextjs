@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
   description:
     'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/online-level-5-diploma',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/online-level-5-diploma' },
   openGraph: {
     title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
     description:

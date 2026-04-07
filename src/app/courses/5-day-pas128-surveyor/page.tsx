@@ -9,7 +9,7 @@ const faqs = [{q: "What is the maximum number of delegates per 5 Day course?",a:
 export const metadata: Metadata = {
   title: '5-Day PAS128 Surveyor Course | Sygma Solutions',
   description: 'Intensive PAS128 surveyor training: PAS128 D, C, B, EM locating, GPR, written exam and practical assessments. The UK\'s most comprehensive utility surveyor course.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/5-day-pas128-surveyor',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/5-day-pas128-surveyor' },
   openGraph: {
     title: '5-Day PAS128 Surveyor Course | Sygma Solutions',
     description: 'Intensive PAS128 surveyor training: PAS128 D, C, B, EM locating, GPR, written exam and practical assessments.',

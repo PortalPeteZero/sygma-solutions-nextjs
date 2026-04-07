@@ -7,9 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'EUS CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
   description: 'EUS CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1' },
   openGraph: {
     title: 'EUS CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
     description: 'EUS CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.',

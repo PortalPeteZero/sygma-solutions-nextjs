@@ -32,7 +32,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'RQF Level 2 Utility Location Award | Sygma Solutions',
   description: 'RQF Level 2 Award in Utility Location and Avoidance. Nationally recognised, Ofqual-regulated qualification for formal recognition of competency.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/rqf-level-2-award',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/rqf-level-2-award' },
   openGraph: {
     title: 'RQF Level 2 Utility Location Award | Sygma Solutions',
     description: 'RQF Level 2 Award in Utility Location and Avoidance. Nationally recognised, Ofqual-regulated qualification for formal recognition of competency.',

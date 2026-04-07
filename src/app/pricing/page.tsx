@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Training Course Prices & Booking | Sygma Solutions',
   description: 'Sygma charges one course fee per group, not per person. Travel is included. Find out how our per-course pricing model works and get a quote.',
-  canonical: 'https://sygma-solutions.com/pricing',
+  alternates: { canonical: 'https://sygma-solutions.com/pricing' },
   openGraph: {
     title: 'Training Course Prices & Booking | Sygma Solutions',
     description: 'Sygma charges one course fee per group, not per person. Travel is included.',

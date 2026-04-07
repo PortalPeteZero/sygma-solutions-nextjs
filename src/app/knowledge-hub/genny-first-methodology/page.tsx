@@ -7,9 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Why Connect the Genny First | Training Guide | Sygma',
   description: 'Passive detection alone is not enough to identify buried services. Sygma\'s Genny-First methodology and why it produces measurable improvements in site safety.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/knowledge-hub/genny-first-methodology',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/genny-first-methodology' },
   openGraph: {
     title: 'Why Connect the Genny First | Training Guide | Sygma',
     description: 'Passive detection alone is not enough to identify buried services. Sygma\'s Genny-First methodology and why it produces measurable improvements in site safety.',

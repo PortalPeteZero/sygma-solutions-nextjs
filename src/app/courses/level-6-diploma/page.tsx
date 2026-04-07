@@ -8,7 +8,7 @@ const faqs = [{q: "What does Level 6 cover that is different from Level 5?",a: "
 export const metadata: Metadata = {
   title: 'ProQual Level 6 Diploma in Utility Mapping Management | Sygma Solutions',
   description: 'ProQual RQF Level 6 Diploma in Utility Mapping and Surveying Management. Management-level qualification for senior leaders.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/level-6-diploma',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/level-6-diploma' },
   openGraph: {
     title: 'ProQual Level 6 Diploma in Utility Mapping Management | Sygma Solutions',
     description: 'ProQual RQF Level 6 Diploma. Management-level utility mapping qualification.',

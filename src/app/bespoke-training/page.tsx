@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Bespoke Utility Training Programmes | Sygma Solutions',
   description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Priced per programme, not per head. Built around your sites and procedures.',
-  canonical: 'https://sygma-solutions.com/bespoke-training',
+  alternates: { canonical: 'https://sygma-solutions.com/bespoke-training' },
   openGraph: {
     title: 'Bespoke Utility Training Programmes | Sygma Solutions',
     description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide.',

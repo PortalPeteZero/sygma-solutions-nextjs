@@ -48,7 +48,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'ZS Superuser Cat and Genny | Scottish Water | Sygma',
   description: 'Super user cat and genny training for the Scottish Water supply chain. Advanced location, strike investigation and coaching assessment.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/zs-superuser-scottish-water',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/zs-superuser-scottish-water' },
   openGraph: {
     title: 'ZS Superuser Cat and Genny | Scottish Water | Sygma',
     description: 'Super user cat and genny training for the Scottish Water supply chain. Advanced location, strike investigation and coaching assessment.',

@@ -37,9 +37,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'ProQual CAT1 Plus Training | Accredited | Sygma',
   description: 'ProQual CAT1 Plus: the most advanced utility avoidance qualification. 2-day course covering all CAT1 plus 7 advanced theory and 34 practical criteria.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/courses/proqualcat1plus',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/proqualcat1plus' },
   openGraph: {
     title: 'ProQual CAT1 Plus Training | Accredited | Sygma',
     description: 'ProQual CAT1 Plus: the most advanced utility avoidance qualification. 2-day course covering all CAT1 plus 7 advanced theory and 34 practical criteria.',

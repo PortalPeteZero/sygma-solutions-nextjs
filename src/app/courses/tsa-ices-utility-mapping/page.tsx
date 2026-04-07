@@ -44,7 +44,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'TSA and ICES Utility Mapping Programme | Sygma Solutions',
   description: 'The most comprehensive utility mapping programme in the UK. Seven modules, 17 plus days, covering every ICES competency from PAS 128 to GPR and CAD.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/tsa-ices-utility-mapping',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/tsa-ices-utility-mapping' },
   openGraph: {
     title: 'TSA and ICES Utility Mapping Programme | Sygma Solutions',
     description: 'The most comprehensive utility mapping programme in the UK. Seven modules, 17 plus days, covering every ICES competency from PAS 128 to GPR and CAD.',

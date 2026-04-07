@@ -8,7 +8,7 @@ const faqs = [{q: "How long does Level 4 take to complete?",a: "Most candidates 
 export const metadata: Metadata = {
   title: 'ProQual Level 4 Diploma in Utility Mapping | Sygma Solutions',
   description: 'ProQual Level 4 Diploma in Utility Mapping and Surveying. Portfolio-based advanced qualification. Ofqual-regulated. For specialist technical practitioners.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/level-4-diploma',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/level-4-diploma' },
   openGraph: {
     title: 'ProQual Level 4 Diploma in Utility Mapping | Sygma Solutions',
     description: 'ProQual RQF Level 4 Diploma in Utility Mapping and Surveying. Advanced technical qualification.',

@@ -26,9 +26,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR Card Renewal Guide | How to Renew | Sygma',
   description: 'Your EUSR card has expired or is about to expire. This guide explains the renewal process, what happens if your card lapses, and how to rebook.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/knowledge-hub/eusr-card-renewal',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/eusr-card-renewal' },
   openGraph: {
     title: 'EUSR Card Renewal Guide | How to Renew | Sygma',
     description: 'Your EUSR card has expired or is about to expire. This guide explains the renewal process, what happens if your card lapses, and how to rebook.',

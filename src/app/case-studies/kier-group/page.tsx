@@ -5,9 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Kier Group | Bespoke Training Case Study | Sygma',
   description: 'How Sygma built a bespoke utility avoidance training programme around Kier Group\'s systems, policies, and incident data.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/case-studies/kier-group',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/case-studies/kier-group' },
   openGraph: {
     title: 'Kier Group | Bespoke Training Case Study | Sygma',
     description: 'How Sygma built a bespoke utility avoidance training programme around Kier Group\'s systems, policies, and incident data.',

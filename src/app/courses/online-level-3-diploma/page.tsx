@@ -8,7 +8,7 @@ const faqs = [{q: "How is the online Level 3 delivered?",a: "Live sessions via M
 export const metadata: Metadata = {
   title: 'Online Level 3 Diploma in Utility Mapping | Sygma Solutions',
   description: 'Online Level 3 Diploma in Utility Mapping and Surveying. Flexible online delivery with live tutor support via MS Teams. Entry-level qualification.',
-  canonical: 'https://sygma-solutions.vercel.app/courses/online-level-3-diploma',
+  alternates: { canonical: 'https://sygma-solutions.vercel.app/courses/online-level-3-diploma' },
   openGraph: {
     title: 'Online Level 3 Diploma in Utility Mapping | Sygma Solutions',
     description: 'Online Level 3 Diploma in Utility Mapping and Surveying. Flexible online delivery.',

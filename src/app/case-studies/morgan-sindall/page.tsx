@@ -5,9 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Morgan Sindall PAS128 Training Case Study | Sygma Solutions',
   description: 'PAS128 utility survey training case study. How Sygma designed leadership briefings for Morgan Sindall on survey specification, quality levels, and compliance.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/case-studies/morgan-sindall',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/case-studies/morgan-sindall' },
   openGraph: {
     title: 'Morgan Sindall PAS128 Training Case Study | Sygma Solutions',
     description: 'PAS128 utility survey training case study. How Sygma designed leadership briefings for Morgan Sindall on survey specification, quality levels, and compliance.',

@@ -4,9 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training London | CAT and Genny Courses',
   description: 'Cable avoidance training in London. CAT and Genny courses at your site. Half day and full day options. EUSR, ProQual accredited. CITB ATO.',
-  alternates: {
-    canonical: 'https://sygma-solutions.com/cable-avoidance-training-london',
-  },
+  alternates: { canonical: 'https://sygma-solutions.com/cable-avoidance-training-london' },
   openGraph: {
     title: 'Cable Avoidance Training London | CAT and Genny Courses',
     description: 'Cable avoidance training in London. CAT and Genny courses at your site. Half day and full day options. EUSR, ProQual accredited. CITB ATO.',
