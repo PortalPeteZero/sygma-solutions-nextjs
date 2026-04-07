@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 
 interface Breadcrumb {
@@ -23,41 +24,53 @@ export default function InnerPageHero({
   sub,
   image,
   images,
+  alt,
+  alts,
   eyebrow,
   breadcrumbs = [],
 }: InnerPageHeroProps) {
   const resolvedImage = image || (images && images[0]);
+  const resolvedAlt = alt || (alts && alts[0]) || '';
   const hasImage = Boolean(resolvedImage);
 
+  /* Always prepend "Home" breadcrumb if not already present */
+  const fullBreadcrumbs =
+    breadcrumbs.length > 0 && breadcrumbs[0].label !== 'Home'
+      ? [{ label: 'Home', href: '/' }, ...breadcrumbs]
+      : breadcrumbs;
+
   return (
-    <section
-      className="relative bg-slate-900 py-20 md:py-28 overflow-hidden"
-      style={
-        hasImage
-          ? {
-              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.88)), url(${resolvedImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }
-          : undefined
-      }
-    >
-      {/* Subtle gradient overlay for non-image variant */}
-      {!hasImage && (
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"
-          aria-hidden="true"
+    <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] lg:min-h-[520px] bg-foreground">
+      {/* Background image */}
+      {hasImage && (
+        <Image
+          src={resolvedImage!}
+          alt={resolvedAlt}
+          fill
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          priority
+          sizes="100vw"
         />
       )}
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* Gradient overlay -- left-to-right to match live site */}
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30"
+        aria-hidden="true"
+      />
+
+      {/* Accent bar at top */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-accent" aria-hidden="true" />
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 md:px-8 pt-10 pb-12 md:pb-16">
         {/* Breadcrumbs */}
-        {breadcrumbs.length > 0 && (
+        {fullBreadcrumbs.length > 0 && (
           <nav
             aria-label="Breadcrumb"
             className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-slate-300"
           >
-            {breadcrumbs.map((crumb, i) => (
+            {fullBreadcrumbs.map((crumb, i) => (
               <div key={i} className="flex items-center gap-1.5">
                 {crumb.to || crumb.href ? (
                   <Link
@@ -69,7 +82,7 @@ export default function InnerPageHero({
                 ) : (
                   <span className="text-slate-100 font-medium">{crumb.label}</span>
                 )}
-                {i < breadcrumbs.length - 1 && (
+                {i < fullBreadcrumbs.length - 1 && (
                   <ChevronRight className="w-4 h-4 text-slate-500 shrink-0" />
                 )}
               </div>
