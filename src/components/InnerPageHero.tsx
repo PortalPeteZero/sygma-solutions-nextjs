@@ -1,121 +1,96 @@
-'use client'
-
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { ChevronRight } from 'lucide-react'
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
 interface Breadcrumb {
-  label: string
-  href?: string
+  label: string;
+  to?: string;
 }
 
 interface InnerPageHeroProps {
-  title: string
-  description?: string
-  breadcrumbs?: Breadcrumb[]
-  backgroundImage?: string
+  headline: string;
+  sub?: string;
+  image?: string;
+  alt?: string;
+  eyebrow?: string;
+  breadcrumbs?: Breadcrumb[];
 }
 
-export function InnerPageHero({
-  title,
-  description,
-  breadcrumbs = [{ label: 'Home', href: '/' }],
-  backgroundImage,
+export default function InnerPageHero({
+  headline,
+  sub,
+  image,
+  eyebrow,
+  breadcrumbs = [],
 }: InnerPageHeroProps) {
+  const hasImage = Boolean(image);
+
   return (
     <section
-      className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800"
+      className="relative bg-slate-900 py-20 md:py-28 overflow-hidden"
       style={
-        backgroundImage
+        hasImage
           ? {
-              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url(${backgroundImage})`,
+              backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.88)), url(${image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }
           : undefined
       }
     >
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, 50, 0],
-            y: [0, 30, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
+      {/* Subtle gradient overlay for non-image variant */}
+      {!hasImage && (
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"
+          aria-hidden="true"
         />
-        <motion.div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, -50, 0],
-            y: [0, -30, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
-        />
-      </div>
+      )}
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
-        {breadcrumbs && breadcrumbs.length > 0 && (
-          <motion.div
-            className="mb-8 flex items-center gap-2 text-sm text-slate-300"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+        {breadcrumbs.length > 0 && (
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-slate-300"
           >
-            {breadcrumbs.map((breadcrumb, index) => (
-              <div key={index} className="flex items-center gap-2">
-                {breadcrumb.href ? (
+            {breadcrumbs.map((crumb, i) => (
+              <div key={i} className="flex items-center gap-1.5">
+                {crumb.to ? (
                   <Link
-                    href={breadcrumb.href}
+                    href={crumb.to}
                     className="hover:text-white transition-colors"
                   >
-                    {breadcrumb.label}
+                    {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-slate-100 font-medium">{breadcrumb.label}</span>
+                  <span className="text-slate-100 font-medium">{crumb.label}</span>
                 )}
-                {index < breadcrumbs.length - 1 && (
-                  <ChevronRight className="w-4 h-4 text-slate-500" />
+                {i < breadcrumbs.length - 1 && (
+                  <ChevronRight className="w-4 h-4 text-slate-500 shrink-0" />
                 )}
               </div>
             ))}
-          </motion.div>
+          </nav>
         )}
 
-        {/* Title */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            {title}
-          </h1>
-        </motion.div>
+        {/* Eyebrow label */}
+        {eyebrow && (
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
+            {eyebrow}
+          </p>
+        )}
 
-        {/* Description */}
-        {description && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
-              {description}
-            </p>
-          </motion.div>
+        {/* Headline */}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-4xl">
+          {headline}
+        </h1>
+
+        {/* Subtitle */}
+        {sub && (
+          <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+            {sub}
+          </p>
         )}
       </div>
     </section>
-  )
+  );
 }
