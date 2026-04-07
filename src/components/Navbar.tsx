@@ -119,14 +119,27 @@ const topBarLinks = [
 /*  MegaMenu dropdown                                                 */
 /* ------------------------------------------------------------------ */
 
-function MegaMenuDropdown({ menu, open, onClose }: { menu: NavMenu; open: boolean; onClose: () => void }) {
+function MegaMenuDropdown({
+  menu,
+  open,
+  onClose,
+  onMouseEnter,
+  onMouseLeave,
+}: {
+  menu: NavMenu
+  open: boolean
+  onClose: () => void
+  onMouseEnter: () => void
+  onMouseLeave: () => void
+}) {
   if (!open || !menu.children) return null
   const cols = menu.children.length
 
   return (
     <div
       className="absolute left-0 right-0 top-full z-50 border-b border-border bg-white shadow-lg"
-      onMouseLeave={onClose}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         <div className={`grid gap-8 ${cols === 1 ? 'grid-cols-1 max-w-xs' : cols === 2 ? 'grid-cols-2 max-w-lg' : cols === 3 ? 'grid-cols-3 max-w-3xl' : 'grid-cols-4'}`}>
@@ -311,6 +324,10 @@ export function Navbar() {
             menu={menu}
             open={openMenu === menu.label}
             onClose={() => setOpenMenu(null)}
+            onMouseEnter={() => {
+              if (timeoutRef.current) clearTimeout(timeoutRef.current)
+            }}
+            onMouseLeave={handleMouseLeave}
           />
         ))}
 
