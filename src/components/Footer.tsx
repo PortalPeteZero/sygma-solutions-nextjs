@@ -18,17 +18,17 @@ const footerColumns: FooterColumn[] = [
   {
     title: 'Services',
     links: [
-      { label: 'Utility Avoidance', href: '/services/utility-avoidance' },
-      { label: 'Utility Mapping', href: '/services/utility-mapping' },
-      { label: 'OSCA Training', href: '/services/osca' },
-      { label: 'Borehole Surveys', href: '/services/utility-mapping/borehole-surveys' },
+      { label: 'Cable Avoidance Training', href: '/training/cable-location-avoidance' },
+      { label: 'Utility Mapping Training', href: '/training/utility-mapping-surveying' },
+      { label: 'OSCA Training', href: '/osca' },
+      { label: 'Bespoke Training', href: '/bespoke-training' },
     ],
   },
   {
     title: 'Company',
     links: [
       { label: 'About Us', href: '/about' },
-      { label: 'Case Studies', href: '/case-studies' },
+      { label: 'Accreditations', href: '/accreditations' },
       { label: 'Knowledge Hub', href: '/knowledge-hub' },
       { label: 'Contact', href: '/contact' },
     ],
@@ -36,19 +36,16 @@ const footerColumns: FooterColumn[] = [
   {
     title: 'Resources',
     links: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Training', href: '/training' },
-      { label: 'Certification', href: '/certification' },
-      { label: 'Industry Standards', href: '/knowledge-hub/standards' },
+      { label: 'All Courses', href: '/courses' },
+      { label: 'Course Comparison', href: '/courses/cable-avoidance-course-comparison' },
+      { label: 'Locations', href: '/locations' },
+      { label: 'Pricing', href: '/pricing' },
     ],
   },
   {
     title: 'Legal',
     links: [
-      { label: 'Privacy Policy', href: '/privacy' },
-      { label: 'Terms & Conditions', href: '/terms' },
-      { label: 'Cookie Policy', href: '/cookies' },
-      { label: 'Accessibility', href: '/accessibility' },
+      { label: 'Privacy Policy', href: '/privacy-policy' },
     ],
   },
 ]

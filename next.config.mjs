@@ -9,6 +9,19 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // === SERVICE PAGES (redirect to training category pages) ===
+      { source: '/services/utility-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/services/utility-mapping', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/services/osca', destination: '/osca', permanent: true },
+      { source: '/services/utility-mapping/borehole-surveys', destination: '/contact', permanent: true },
+      // === FOOTER/LEGACY LINK REDIRECTS ===
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/blog', destination: '/knowledge-hub', permanent: true },
+      { source: '/training', destination: '/courses', permanent: true },
+      { source: '/certification', destination: '/accreditations', permanent: true },
+      { source: '/case-studies', destination: '/about', permanent: true },
+      // === KNOWLEDGE HUB CLIENT-SIDE REDIRECT (from Lovable Navigate) ===
+      { source: '/knowledge-hub/what-is-cat-and-genny', destination: '/knowledge-hub/genny-first-methodology', permanent: true },
       // === OLD SITE COURSE PAGES ===
       { source: '/courses/cat-genny-training', destination: '/courses/genny-cat-training', permanent: true },
       { source: '/courses/rd8000-training-courses', destination: '/courses/manufacturer-locator-training', permanent: true },
