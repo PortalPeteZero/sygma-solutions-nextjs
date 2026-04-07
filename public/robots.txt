@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://sygma-solutions.com
+
+# Sitemaps
 Sitemap: https://sygma-solutions.com/sitemap.xml

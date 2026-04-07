@@ -6,7 +6,7 @@ module.exports = {
     policies: [{ userAgent: '*', allow: '/' }],
     additionalSitemaps: [],
   },
-  exclude: ['/thank-you'],
+  exclude: ['/thank-you', '/design-your-programme', '/designyourprogramme'],
   changefreq: 'weekly',
   priority: 0.7,
   sitemapSize: 5000,

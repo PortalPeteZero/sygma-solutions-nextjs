@@ -126,6 +126,20 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Ahrefs Web Analytics -- hostname-gated to production only */}
+        <Script id="ahrefs-analytics" strategy="afterInteractive">
+          {`
+            if (window.location.hostname === 'sygma-solutions.com' ||
+                window.location.hostname === 'www.sygma-solutions.com') {
+              var s = document.createElement('script');
+              s.src = 'https://analytics.ahrefs.com/analytics.js';
+              s.setAttribute('data-key', 'OdKozkoe51M3JvY/HGHkMA');
+              s.async = true;
+              document.head.appendChild(s);
+            }
+          `}
+        </Script>
+
         {/* GTM noscript fallback */}
         <noscript>
           <iframe
