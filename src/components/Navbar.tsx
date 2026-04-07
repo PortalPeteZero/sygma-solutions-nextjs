@@ -137,23 +137,22 @@ function MegaMenuDropdown({
 
   return (
     <div
-      className="absolute left-0 right-0 top-full z-50 border-b border-border bg-white shadow-lg"
+      className="absolute left-0 top-full z-50 mt-2 min-w-[640px] rounded-lg border border-border bg-card shadow-xl"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-        <div className={`grid gap-8 ${cols === 1 ? 'grid-cols-1 max-w-xs' : cols === 2 ? 'grid-cols-2 max-w-lg' : cols === 3 ? 'grid-cols-3 max-w-3xl' : 'grid-cols-4'}`}>
+      <div className={`grid gap-6 p-6 ${cols >= 4 ? 'grid-cols-4' : cols === 3 ? 'grid-cols-3' : cols === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
           {menu.children.map((group) => (
             <div key={group.group}>
-              <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
+              <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">
                 {group.group}
               </p>
-              <ul className="space-y-1">
+              <ul className="space-y-1.5">
                 {group.items.map((item) => (
                   <li key={item.to}>
                     <Link
                       href={item.to}
-                      className="block py-1.5 text-sm text-foreground hover:text-primary transition-colors"
+                      className="block text-sm text-muted-foreground transition-colors hover:text-primary"
                       onClick={onClose}
                     >
                       {item.label}
@@ -164,15 +163,14 @@ function MegaMenuDropdown({
             </div>
           ))}
         </div>
-        <div className="mt-4 pt-4 border-t border-border">
-          <Link
-            href={menu.href}
-            className="text-sm font-semibold text-primary hover:underline"
-            onClick={onClose}
-          >
-            View all {menu.label} &rarr;
-          </Link>
-        </div>
+      <div className="border-t border-border bg-muted/30 px-6 py-3">
+        <Link
+          href={menu.href}
+          className="text-sm font-semibold text-primary hover:underline"
+          onClick={onClose}
+        >
+          View all {menu.label} &rarr;
+        </Link>
       </div>
     </div>
   )
@@ -209,40 +207,38 @@ export function Navbar() {
   }
 
   return (
-    <header>
+    <header className="fixed left-0 right-0 top-0 z-50">
       {/* Top utility bar */}
-      <div className="border-b border-border/50 bg-muted/80 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="hidden md:flex h-9 items-center justify-between text-xs">
-            <nav className="flex items-center gap-4">
-              {topBarLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex items-center gap-4">
-              <a
-                href="tel:+442039718252"
-                onClick={() => trackPhoneClick('02039718252')}
-                className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
+      <div className="border-b border-border/50 bg-muted/80 backdrop-blur-md">
+        <div className="container mx-auto flex h-9 items-center justify-between px-4">
+          <div className="hidden items-center gap-6 md:flex">
+            {topBarLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-xs font-medium text-muted-foreground transition-colors hover:text-primary"
               >
-                <Phone size={12} />
-                <span className="font-medium">0203 971 8252</span>
-              </a>
-              <a
-                href="mailto:enquiries@sygma-solutions.com"
-                onClick={() => trackEmailClick('enquiries@sygma-solutions.com')}
-                className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Mail size={12} />
-                <span>enquiries@sygma-solutions.com</span>
-              </a>
-            </div>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-4 ml-auto">
+            <a
+              href="tel:+442039718252"
+              onClick={() => trackPhoneClick('02039718252')}
+              className="flex items-center gap-1.5 text-xs font-bold text-foreground transition-colors hover:text-primary"
+            >
+              <Phone size={11} />
+              0203 971 8252
+            </a>
+            <a
+              href="mailto:enquiries@sygma-solutions.com"
+              onClick={() => trackEmailClick('enquiries@sygma-solutions.com')}
+              className="hidden items-center gap-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
+            >
+              <Mail size={11} />
+              enquiries@sygma-solutions.com
+            </a>
           </div>
         </div>
       </div>
@@ -250,10 +246,9 @@ export function Navbar() {
       {/* Main nav */}
       <nav
         ref={navRef}
-        className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm"
+        className="border-b border-border bg-background/95 backdrop-blur-md"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
             {/* Logo */}
             <Link href="/" className="shrink-0">
               <Image
@@ -267,7 +262,7 @@ export function Navbar() {
             </Link>
 
             {/* Desktop navigation */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden items-center gap-8 lg:flex">
               {mainNav.map((menu) => (
                 <div
                   key={menu.label}
@@ -276,8 +271,8 @@ export function Navbar() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <button
-                    className={`flex items-center gap-1 px-3 py-2 text-sm font-semibold uppercase tracking-wide transition-colors ${
-                      openMenu === menu.label ? 'text-primary' : 'text-foreground hover:text-primary'
+                    className={`flex items-center gap-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-primary ${
+                      openMenu === menu.label ? 'text-primary' : 'text-foreground'
                     }`}
                     onClick={() => setOpenMenu(openMenu === menu.label ? null : menu.label)}
                   >
@@ -297,10 +292,10 @@ export function Navbar() {
             </div>
 
             {/* CTA button */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden items-center gap-3 lg:flex">
               <Link
                 href="/contact#enquiry-form"
-                className="inline-flex items-center justify-center px-6 py-2 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center px-5 py-2 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
               >
                 Get in Touch
               </Link>
@@ -314,7 +309,6 @@ export function Navbar() {
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
-          </div>
         </div>
 
         {/* Mega menu dropdowns (desktop) */}
@@ -362,7 +356,7 @@ export function Navbar() {
                   <div className="space-y-3 pl-3">
                     {menu.children.map((group) => (
                       <div key={group.group}>
-                        <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">{group.group}</p>
+                        <p className="mb-2 text-xs font-bold uppercase tracking-widest text-accent">{group.group}</p>
                         <div className="space-y-0.5">
                           {group.items.map((item) => (
                             <Link

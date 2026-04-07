@@ -68,10 +68,11 @@ export default function InnerPageHero({
         {fullBreadcrumbs.length > 0 && (
           <nav
             aria-label="Breadcrumb"
-            className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-slate-300"
+            className="mb-5 flex items-center gap-1 text-xs text-white/50"
           >
             {fullBreadcrumbs.map((crumb, i) => (
-              <div key={i} className="flex items-center gap-1.5">
+              <span key={i} className="flex items-center gap-1">
+                {i > 0 && <ChevronRight size={12} />}
                 {crumb.to || crumb.href ? (
                   <Link
                     href={crumb.to || crumb.href || '#'}
@@ -80,12 +81,9 @@ export default function InnerPageHero({
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-slate-100 font-medium">{crumb.label}</span>
+                  <span>{crumb.label}</span>
                 )}
-                {i < fullBreadcrumbs.length - 1 && (
-                  <ChevronRight className="w-4 h-4 text-slate-500 shrink-0" />
-                )}
-              </div>
+              </span>
             ))}
           </nav>
         )}
@@ -104,7 +102,7 @@ export default function InnerPageHero({
 
         {/* Subtitle */}
         {sub && (
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-white/75 max-w-xl leading-relaxed">
             {sub}
           </p>
         )}
