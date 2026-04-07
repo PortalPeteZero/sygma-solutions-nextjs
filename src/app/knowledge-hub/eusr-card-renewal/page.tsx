@@ -162,7 +162,7 @@ export default function EusrCardRenewal() {
           <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
             <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/knowledge-hub/npors-vs-eusr-cable-avoidance" className="text-primary hover:underline">NPORS vs EUSR: Which Qualification Do You Need?</Link></li>
+              <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which Qualification Do You Need?</Link></li>
               <li><Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUS CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
             </ul>
           </div>

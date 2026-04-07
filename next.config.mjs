@@ -29,6 +29,7 @@ const nextConfig = {
       { source: '/case-studies', destination: '/about', permanent: true },
       // === KNOWLEDGE HUB CLIENT-SIDE REDIRECT (from Lovable Navigate) ===
       { source: '/knowledge-hub/what-is-cat-and-genny', destination: '/knowledge-hub/genny-first-methodology', permanent: true },
+      { source: '/knowledge-hub/npors-vs-eusr-cable-avoidance', destination: '/knowledge-hub/npors-vs-eusr', permanent: true },
       { source: '/knowledge-hub/cable-strikes', destination: '/knowledge-hub', permanent: true },
       { source: '/knowledge-hub/training', destination: '/knowledge-hub', permanent: true },
       { source: '/knowledge-hub/standards', destination: '/knowledge-hub/hsg47-explained', permanent: true },

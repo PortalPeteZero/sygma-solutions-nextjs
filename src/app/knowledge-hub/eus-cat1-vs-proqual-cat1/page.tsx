@@ -139,7 +139,7 @@ export default function EusCat1VsProQualCat1() {
             <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
-              <li><Link href="/knowledge-hub/npors-vs-eusr-cable-avoidance" className="text-primary hover:underline">NPORS vs EUSR: Which Qualification Do You Need?</Link></li>
+              <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which Qualification Do You Need?</Link></li>
             </ul>
           </div>
 

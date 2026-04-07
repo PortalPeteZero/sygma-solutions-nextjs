@@ -473,7 +473,7 @@ export default function GennyCatTraining() {
               <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
               <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
             </Link>
-            <Link href="/knowledge-hub/npors-vs-eusr-cable-avoidance" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+            <Link href="/knowledge-hub/npors-vs-eusr" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
               <h3 className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</h3>
               <p className="text-sm text-muted-foreground">How the two main accreditation schemes compare for cable avoidance training.</p>
             </Link>

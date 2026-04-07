@@ -107,7 +107,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     category: "Qualifications",
     title: "NPORS vs EUSR Cable Avoidance: Which Qualification Do You Need?",
     desc: "NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.",
-    href: "/knowledge-hub/npors-vs-eusr-cable-avoidance",
+    href: "/knowledge-hub/npors-vs-eusr",
     type: "article",
     image: "CAT4-and-Genny-01",
   },
