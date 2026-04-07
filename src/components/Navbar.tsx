@@ -290,7 +290,7 @@ export function Navbar() {
               {/* Knowledge Hub -- outlined button, no dropdown */}
               <Link
                 href="/knowledge-hub"
-                className="ml-2 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide border-2 border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
+                className="ml-2 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider border border-accent/50 text-accent rounded-full hover:border-accent hover:bg-accent/10 transition-colors"
               >
                 Knowledge Hub
               </Link>
@@ -385,7 +385,7 @@ export function Navbar() {
             {/* Knowledge Hub */}
             <Link
               href="/knowledge-hub"
-              className="block text-center px-4 py-2 border-2 border-primary text-primary font-semibold text-sm uppercase rounded-md"
+              className="inline-flex mx-6 my-4 border border-accent/50 text-accent rounded-full px-3 py-1.5 text-sm font-semibold uppercase tracking-wider hover:border-accent hover:bg-accent/10 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Knowledge Hub

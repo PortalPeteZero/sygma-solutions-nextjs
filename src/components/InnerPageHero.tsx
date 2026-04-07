@@ -92,13 +92,13 @@ export default function InnerPageHero({
 
         {/* Eyebrow label */}
         {eyebrow && (
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">
             {eyebrow}
           </p>
         )}
 
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-4xl">
+        <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-white max-w-4xl">
           {headline}
         </h1>
 
