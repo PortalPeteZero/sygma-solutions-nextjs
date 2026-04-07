@@ -48,22 +48,22 @@ export default function KnowledgeHub() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <Image src="CAT4-and-Genny-46" alt="Underground utility training knowledge resources" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="Safe-Dig-01" alt="Safe digging practices training materials" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="MALA-GPR-05" alt="Utility location knowledge and technical expertise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-01" width={1200} height={800} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="MALA-GPR-05" width={1200} height={800} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-10" alt="Cable avoidance training knowledge resources" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-10" width={1200} height={800} alt="Cable avoidance training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-11" alt="Utility mapping and GPR survey expertise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-10" alt="Safe excavation practice and guidance" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" width={1200} height={800} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

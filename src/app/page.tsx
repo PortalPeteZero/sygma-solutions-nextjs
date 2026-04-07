@@ -203,7 +203,7 @@ export default function Home() {
             {pathways.map((p) => (
               <div key={p.title} className="relative overflow-hidden rounded-xl border border-border bg-card group">
                 <div className="relative h-48 overflow-hidden">
-                  <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                  <Image src={p.image} width={1200} height={800} alt={p.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
                 </div>
                 <div className="p-6">
@@ -233,7 +233,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="rounded-xl overflow-hidden border border-border">
-              <Image src="CAT4-and-Genny-54" alt="Genny & CAT training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-64 object-cover" />
+              <Image src="CAT4-and-Genny-54" width={1200} height={800} alt="Genny & CAT training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-64 object-cover" />
               <div className="p-6 bg-accent/10 border-t border-border">
                 <p className="text-2xl font-black text-accent">70 to 80%</p>
                 <p className="text-sm text-muted-foreground mt-1">measurable increase in Genny usage among trained operatives. On live sites.</p>
@@ -262,10 +262,10 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="rounded-lg overflow-hidden aspect-square">
-                <Image src="CAT4-and-Genny-54" alt="On-site utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+                <Image src="CAT4-and-Genny-54" width={1200} height={800} alt="On-site utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden aspect-square">
-                <Image src="CAT4-and-Genny-60" alt="Genny & CAT practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+                <Image src="CAT4-and-Genny-60" width={1200} height={800} alt="Genny & CAT practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
               </div>
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-lg overflow-hidden">
-              <Image src="on-site-training-01" alt="On-site training delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-56 object-cover" />
+              <Image src="on-site-training-01" width={1200} height={800} alt="On-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-56 object-cover" />
             </div>
           </div>
         </div>

@@ -63,9 +63,9 @@ export default function Pas128Surveyor() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="MALA-GPR-06" alt="5 Day PAS128 surveyor course - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Advanced-EM-08" alt="PAS128 surveyor training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="MALA-GPR-32" alt="5 Day PAS128 surveyor course - electromagnetic survey practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-06" width={1200} height={800} alt="5 Day PAS128 surveyor course - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Advanced-EM-08" width={1200} height={800} alt="PAS128 surveyor training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-32" width={1200} height={800} alt="5 Day PAS128 surveyor course - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 

@@ -218,9 +218,9 @@ export default function ProQualCat1() {
       {/* Photo Strip */}
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-06" alt="ProQual CAT1 training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-46" alt="Hands-on practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-03" alt="Practical site assessment during utility avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-06" width={1200} height={800} alt="ProQual CAT1 training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Hands-on practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-03" width={1200} height={800} alt="Practical site assessment during utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -299,7 +299,7 @@ export default function ProQualCat1() {
 
       {/* Full-width image break */}
       <div className="w-full h-56 md:h-80 overflow-hidden">
-        <Image src="CAT4-and-Genny-40" alt="ProQual CAT1 hands-on training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="ProQual CAT1 hands-on training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* Practical Criteria */}
@@ -372,13 +372,13 @@ export default function ProQualCat1() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-09" alt="CAT4 locator practical assessment during ProQual training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-09" width={1200} height={800} alt="CAT4 locator practical assessment during ProQual training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-52" alt="Delegates learning signal application techniques" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-52" width={1200} height={800} alt="Delegates learning signal application techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-09" alt="Hands-on utility avoidance practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-09" width={1200} height={800} alt="Hands-on utility avoidance practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -571,13 +571,13 @@ export default function ProQualCat1() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-65" alt="ProQual CAT1 practical assessment on training rig" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-65" width={1200} height={800} alt="ProQual CAT1 practical assessment on training rig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-45" alt="Genny4 signal generator training demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Genny4 signal generator training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-16" alt="On-site utility location survey training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-16" width={1200} height={800} alt="On-site utility location survey training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

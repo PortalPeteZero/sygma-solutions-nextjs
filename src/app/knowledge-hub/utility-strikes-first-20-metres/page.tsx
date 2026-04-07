@@ -93,13 +93,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-07" alt="Excavation near buried utility services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-07" width={1200} height={800} alt="Excavation near buried utility services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-47" alt="Cable detection equipment in use on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Cable detection equipment in use on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-15" alt="Safe digging practices on construction site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-15" width={1200} height={800} alt="Safe digging practices on construction site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -157,13 +157,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-62" alt="Utility avoidance training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-62" width={1200} height={800} alt="Utility avoidance training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-06" alt="Hand tools used for safe excavation near services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-06" width={1200} height={800} alt="Hand tools used for safe excavation near services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-48" alt="Team completing cable avoidance training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="Team completing cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

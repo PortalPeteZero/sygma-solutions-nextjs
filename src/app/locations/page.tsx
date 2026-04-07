@@ -85,7 +85,7 @@ export default function Locations() {
 
         {/* Image Break */}
         <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-47" alt="Sygma training locations nationwide" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+          <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
         </div>
 
         {/* Location Cards */}
@@ -120,7 +120,7 @@ export default function Locations() {
 
         {/* Image Break */}
         <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-48" alt="Training centre facilities and equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+          <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
         </div>
 
         {/* Regional Training Guides */}
@@ -174,7 +174,7 @@ export default function Locations() {
 
         {/* Image Break */}
         <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-49" alt="Sygma on-site training UK delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+          <Image src="CAT4-and-Genny-49" width={1200} height={800} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
         </div>
 
         {/* CTA */}

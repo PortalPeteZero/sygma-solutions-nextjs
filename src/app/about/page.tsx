@@ -75,7 +75,7 @@ export default function About() {
               </blockquote>
             </div>
             <div>
-              <Image src="CAT4-and-Genny-02" alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/5]" />
+              <Image src="CAT4-and-Genny-02" width={1200} height={800} alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/5]" />
             </div>
           </div>
         </div>
@@ -97,12 +97,12 @@ export default function About() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <Image src="CAT4-and-Genny-01" alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-02" alt="Genny & CAT specialist training session with field operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-03" alt="Hands-on Genny & CAT practical training demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-04" alt="Operative using CAT locator during utility location training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-05" alt="Genny signal source being connected during underground utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-06" alt="Field training session for cable avoidance operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-01" width={1200} height={800} alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-02" width={1200} height={800} alt="Genny & CAT specialist training session with field operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-03" width={1200} height={800} alt="Hands-on Genny & CAT practical training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-04" width={1200} height={800} alt="Operative using CAT locator during utility location training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-05" width={1200} height={800} alt="Genny signal source being connected during underground utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-06" width={1200} height={800} alt="Field training session for cable avoidance operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function About() {
               <p className="text-muted-foreground leading-relaxed">Sygma's training methodology addresses all of these. We do not simply teach operatives how to turn on a locator. We teach them why the signal behaves the way it does, what to do when the environment distorts it, and how to recognise the moment when they need to stop and call for a re-survey.</p>
             </div>
             <div>
-              <Image src="CAT4-and-Genny-04" alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+              <Image src="CAT4-and-Genny-04" width={1200} height={800} alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
             </div>
           </div>
           <h3 className="text-lg font-black text-foreground mb-6">The Four Failure Patterns We Systematically Address</h3>

@@ -68,13 +68,13 @@ export default function LocationBirmingham() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-45" alt="Cable avoidance training in the Midlands" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Cable avoidance training in the Midlands" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="MALA-GPR-10" alt="GPR survey training at Worcester facility" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="MALA-GPR-10" width={1200} height={800} alt="GPR survey training at Worcester facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-63" alt="Utility detection practical exercise Birmingham" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-63" width={1200} height={800} alt="Utility detection practical exercise Birmingham" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
         </div>
 
@@ -129,13 +129,13 @@ export default function LocationBirmingham() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-15" alt="Safe excavation training West Midlands site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="Safe-Dig-15" width={1200} height={800} alt="Safe excavation training West Midlands site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-49" alt="On-site cable avoidance assessment Midlands" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-49" width={1200} height={800} alt="On-site cable avoidance assessment Midlands" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-01" alt="Advanced electromagnetic location equipment training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-01" width={1200} height={800} alt="Advanced electromagnetic location equipment training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
         </div>
 

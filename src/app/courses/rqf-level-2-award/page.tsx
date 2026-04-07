@@ -156,9 +156,9 @@ export default function RqfLevel2Award() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-15" alt="RQF Level 2 Award training - practical session with CAT and Genny" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-35" alt="RQF Level 2 Award training - hands-on assessment on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-55" alt="RQF Level 2 Award - Genny signal application training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-15" width={1200} height={800} alt="RQF Level 2 Award training - practical session with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-35" width={1200} height={800} alt="RQF Level 2 Award training - hands-on assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="RQF Level 2 Award - Genny signal application training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 

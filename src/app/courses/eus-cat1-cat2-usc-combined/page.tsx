@@ -103,9 +103,9 @@ export default function EusCat12UscCombined() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-10" alt="EUS CAT1 CAT2 and USC combined training - practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-52" alt="EUS CAT1 CAT2 and USC combined training - hands-on assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-06" alt="EUS CAT1 CAT2 and USC combined training - on-site delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-10" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-52" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-06" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* Who This Course Is For */}
@@ -309,13 +309,13 @@ export default function EusCat12UscCombined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-45" alt="Combined EUS CAT1, CAT2 and USC training practical session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Combined EUS CAT1, CAT2 and USC training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-10" alt="Safe excavation demonstration during combined utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" width={1200} height={800} alt="Safe excavation demonstration during combined utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-60" alt="On-site utility avoidance and safe dig combined assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-60" width={1200} height={800} alt="On-site utility avoidance and safe dig combined assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -388,7 +388,7 @@ export default function EusCat12UscCombined() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="Safe-Dig-18" alt="Combined EUS CAT1, CAT2 and USC on-site training delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="Safe-Dig-18" width={1200} height={800} alt="Combined EUS CAT1, CAT2 and USC on-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -579,13 +579,13 @@ export default function EusCat12UscCombined() {
       {/* Image strip before FAQs */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-46" alt="Utility location practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Utility location practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-09" alt="Safe dig practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-09" width={1200} height={800} alt="Safe dig practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-55" alt="Combined utility avoidance course completion" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="Combined utility avoidance course completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

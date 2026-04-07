@@ -71,7 +71,7 @@ export default function CaseStudyMorganSindall() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="CAT4-and-Genny-03" alt="Morgan Sindall CAT and Genny training for project managers" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="CAT4-and-Genny-03" width={1200} height={800} alt="Morgan Sindall CAT and Genny training for project managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -135,9 +135,9 @@ export default function CaseStudyMorganSindall() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <Image src="CAT4-and-Genny-04" alt="Morgan Sindall project managers in PAS128 briefing classroom" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-05" alt="Morgan Sindall delegates discussing PAS128 requirements" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-06" alt="Morgan Sindall leadership team in training session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-04" width={1200} height={800} alt="Morgan Sindall project managers in PAS128 briefing classroom" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-05" width={1200} height={800} alt="Morgan Sindall delegates discussing PAS128 requirements" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-06" width={1200} height={800} alt="Morgan Sindall leadership team in training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -180,13 +180,13 @@ export default function CaseStudyMorganSindall() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-45" alt="Morgan Sindall project team in utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Morgan Sindall project team in utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-09" alt="Utility survey equipment demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-09" width={1200} height={800} alt="Utility survey equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-64" alt="PAS128 awareness training practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="PAS128 awareness training practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

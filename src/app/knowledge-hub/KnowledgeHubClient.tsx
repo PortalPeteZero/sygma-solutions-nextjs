@@ -62,7 +62,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
             >
               {item.type === "article" && item.image && (
                 <Link href={item.href} className="relative block aspect-video">
-                  <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+                  <Image src={item.image} width={1200} height={800} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
                 </Link>
               )}
               {item.type === "video" && item.youtubeId && (

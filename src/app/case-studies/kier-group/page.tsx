@@ -72,7 +72,7 @@ export default function CaseStudyKier() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="Safe-Dig-01" alt="Kier Group safe digging training operations" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="Safe-Dig-01" width={1200} height={800} alt="Kier Group safe digging training operations" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -124,9 +124,9 @@ export default function CaseStudyKier() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <Image src="CAT4-and-Genny-01" alt="Kier Group CAT and Genny training with operatives" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-02" alt="Kier Group delegates practising CAT and Genny equipment operation" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="Safe-Dig-02" alt="Kier Group safe digging practical assessment session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-01" width={1200} height={800} alt="Kier Group CAT and Genny training with operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-02" width={1200} height={800} alt="Kier Group delegates practising CAT and Genny equipment operation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-02" width={1200} height={800} alt="Kier Group safe digging practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -147,13 +147,13 @@ export default function CaseStudyKier() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-50" alt="Kier Group utility avoidance field training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-50" width={1200} height={800} alt="Kier Group utility avoidance field training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-11" alt="Practical safe digging assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-11" width={1200} height={800} alt="Practical safe digging assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-40" alt="Cable detection equipment in bespoke training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="Cable detection equipment in bespoke training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -129,13 +129,13 @@ export default function StrikePreventionSiteManagers() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-03" alt="Strike prevention training for site managers" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-03" width={1200} height={800} alt="Strike prevention training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-09" alt="Utility locator equipment demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-09" width={1200} height={800} alt="Utility locator equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-09" alt="Safe digging procedures near buried services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-09" width={1200} height={800} alt="Safe digging procedures near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -191,13 +191,13 @@ export default function StrikePreventionSiteManagers() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-60" alt="On-site cable avoidance assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-60" width={1200} height={800} alt="On-site cable avoidance assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-01" alt="Excavation safety management training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-01" width={1200} height={800} alt="Excavation safety management training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-45" alt="Site managers reviewing utility avoidance procedures" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Site managers reviewing utility avoidance procedures" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

@@ -80,13 +80,13 @@ export default function CableAvoidanceManchester() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-41" alt="Locator training practical exercise Manchester" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-10" alt="Safe excavation techniques North West training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-56" alt="Signal identification during cable avoidance course" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-41" width={1200} height={800} alt="Locator training practical exercise Manchester" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-10" width={1200} height={800} alt="Safe excavation techniques North West training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-56" width={1200} height={800} alt="Signal identification during cable avoidance course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-09" alt="CAT and Genny training in Manchester" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-09" width={1200} height={800} alt="CAT and Genny training in Manchester" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" /></div>
 
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
@@ -103,7 +103,7 @@ export default function CableAvoidanceManchester() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-10" alt="Utility detection Manchester North West training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-10" width={1200} height={800} alt="Utility detection Manchester North West training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -117,13 +117,13 @@ export default function CableAvoidanceManchester() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-68" alt="Assessment exercise Manchester cable avoidance" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-18" alt="Digging safely near buried services practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-52" alt="North West team completing utility training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-68" width={1200} height={800} alt="Assessment exercise Manchester cable avoidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-18" width={1200} height={800} alt="Digging safely near buried services practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-52" width={1200} height={800} alt="North West team completing utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-06" alt="Manchester team cable avoidance practical assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-06" width={1200} height={800} alt="Manchester team cable avoidance practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" /></div>
 
       {/* FAQs */}
       <section className="bg-gray-50 py-14">

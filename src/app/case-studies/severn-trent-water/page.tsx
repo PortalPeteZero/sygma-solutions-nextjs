@@ -72,7 +72,7 @@ export default function CaseStudySevernTrent() {
 
       {/* Image Break */}
       <div className="w-full h-80 md:h-96 overflow-hidden">
-        <Image src="Safe-Dig-05" alt="Severn Trent Water manager-level training on utility avoidance" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="Safe-Dig-05" width={1200} height={800} alt="Severn Trent Water manager-level training on utility avoidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* The Brief */}
@@ -125,9 +125,9 @@ export default function CaseStudySevernTrent() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <Image src="CAT4-and-Genny-06" alt="Severn Trent Water managers during practical assessment session" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="Safe-Dig-10" alt="Severn Trent Water managers learning safe digging procedures" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-            <Image src="CAT4-and-Genny-07" alt="Severn Trent Water group discussion in training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-06" width={1200} height={800} alt="Severn Trent Water managers during practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="Safe-Dig-10" width={1200} height={800} alt="Severn Trent Water managers learning safe digging procedures" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="CAT4-and-Genny-07" width={1200} height={800} alt="Severn Trent Water group discussion in training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -148,13 +148,13 @@ export default function CaseStudySevernTrent() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-14" alt="Severn Trent Water utility avoidance site training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-14" width={1200} height={800} alt="Severn Trent Water utility avoidance site training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-56" alt="Manager-level cable detection demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="Manager-level cable detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-02" alt="Safe digging practices water network training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-02" width={1200} height={800} alt="Safe digging practices water network training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -159,9 +159,9 @@ export default function EusCat1Page() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="on-site-training-03" alt="EUSR CAT1 training delegates using Genny & CAT on site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="on-site-training-05" alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="on-site-training-01" alt="On-site practical cable avoidance training with signal generator" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-03" width={1200} height={800} alt="EUSR CAT1 training delegates using Genny & CAT on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-05" width={1200} height={800} alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="on-site-training-01" width={1200} height={800} alt="On-site practical cable avoidance training with signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -224,7 +224,7 @@ export default function EusCat1Page() {
       </section>
 
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="on-site-training-panoramic-02" alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="on-site-training-panoramic-02" width={1200} height={800} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       <section className="bg-muted/20 py-14">

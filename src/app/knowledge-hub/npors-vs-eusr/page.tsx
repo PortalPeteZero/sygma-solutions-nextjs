@@ -130,13 +130,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-06" alt="Cable avoidance equipment in use during training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-06" width={1200} height={800} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-52" alt="Practical utility detection demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-52" width={1200} height={800} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-04" alt="Safe excavation near underground services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-04" width={1200} height={800} alt="Safe excavation near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -184,13 +184,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-65" alt="Delegates using CAT and Genny equipment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-65" width={1200} height={800} alt="Delegates using CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-51" alt="Utility avoidance assessment exercise" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="CAT4-and-Genny-51" width={1200} height={800} alt="Utility avoidance assessment exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Safe-Dig-04" alt="Team training on safe digging practices" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="Safe-Dig-04" width={1200} height={800} alt="Team training on safe digging practices" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

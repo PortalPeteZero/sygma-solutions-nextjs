@@ -145,9 +145,9 @@ export default function EusCat2SafeDig() {
       {/* Photo Strip */}
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="Safe-Dig-05" alt="Safe dig training in progress" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-12" alt="On-site practical dig" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-02" alt="Service exposure technique" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-05" width={1200} height={800} alt="Safe dig training in progress" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-12" width={1200} height={800} alt="On-site practical dig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-02" width={1200} height={800} alt="Service exposure technique" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
 
@@ -249,7 +249,7 @@ export default function EusCat2SafeDig() {
 
       {/* Full-width image */}
       <div className="w-full h-56 md:h-80 overflow-hidden">
-        <Image src="Safe-Dig-06" alt="EUSR CAT2 Safe Dig live excavation" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover object-center" />
+        <Image src="Safe-Dig-06" width={1200} height={800} alt="EUSR CAT2 Safe Dig live excavation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* What You Get */}
@@ -289,13 +289,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-07" alt="EUSR CAT2 safe dig practical training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-07" width={1200} height={800} alt="EUSR CAT2 safe dig practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-14" alt="Safe excavation technique demonstration" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-14" width={1200} height={800} alt="Safe excavation technique demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-03" alt="Hand dig assessment near buried services" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-03" width={1200} height={800} alt="Hand dig assessment near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>
@@ -481,13 +481,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-08" alt="Service exposure during safe dig training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-08" width={1200} height={800} alt="Service exposure during safe dig training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-31" alt="EUSR CAT2 on-site excavation assessment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-31" width={1200} height={800} alt="EUSR CAT2 on-site excavation assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-34" alt="Sygma safe dig training completion" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="Safe-Dig-34" width={1200} height={800} alt="Sygma safe dig training completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>

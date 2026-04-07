@@ -68,13 +68,13 @@ export default function LocationLondon() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-08" alt="Cable avoidance training on London construction site" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-08" width={1200} height={800} alt="Cable avoidance training on London construction site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-53" alt="Utility detection equipment in use South East" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-53" width={1200} height={800} alt="Utility detection equipment in use South East" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-07" alt="Safe excavation near buried services London" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="Safe-Dig-07" width={1200} height={800} alt="Safe excavation near buried services London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
         </div>
 
@@ -114,13 +114,13 @@ export default function LocationLondon() {
         {/* Image Strip */}
         <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-40" alt="On-site utility avoidance assessment London" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="On-site utility avoidance assessment London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-05" alt="Advanced electromagnetic location training practical" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-05" width={1200} height={800} alt="Advanced electromagnetic location training practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="CAT4-and-Genny-50" alt="Team completing cable detection certification" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+            <Image src="CAT4-and-Genny-50" width={1200} height={800} alt="Team completing cable detection certification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
           </div>
         </div>
 
