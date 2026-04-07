@@ -152,7 +152,7 @@ export default function RootLayout({
 
         <Providers>
           <Navbar />
-          <main className="min-h-screen">
+          <main className="flex-1 min-h-screen pt-[100px]">
             {children}
           </main>
           <Footer />
