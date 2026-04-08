@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Advanced EM Locator Training | CICES Accredited | Sygma',
     description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/advanced-em-locator' },
+    openGraph: {
+      title: 'Advanced EM Locator Training | CICES Accredited | Sygma',
+      description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
+      url: 'https://sygma-solutions.com/courses/advanced-em-locator',
+      type: 'website',
+    },
   },
 
   hero: {

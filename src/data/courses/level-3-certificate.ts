@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'ProQual Level 3 Utility Mapping Course | Sygma Solutions',
     description: 'ProQual Level 3 Certificate in Utility Mapping and Surveying. Ofqual-regulated qualification to locate underground utilities and buried services.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/level-3-certificate' },
+    openGraph: {
+      title: 'ProQual Level 3 Utility Mapping Course | Sygma Solutions',
+      description: 'ProQual Level 3 Certificate in Utility Mapping and Surveying. Ofqual-regulated qualification to locate underground utilities and buried services.',
+      url: 'https://sygma-solutions.com/courses/level-3-certificate',
+      type: 'website',
+    },
   },
 
   hero: {

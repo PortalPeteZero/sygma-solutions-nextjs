@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'CAT Manager Online Training | Cat and Genny Data | Sygma',
     description: 'CAT Manager online training course. Learn to use c.a.t manager online for cat and genny data, check work quality and reduce utility strikes.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/cat-manager' },
+    openGraph: {
+      title: 'CAT Manager Online Training | Cat and Genny Data | Sygma',
+      description: 'CAT Manager online training course. Learn to use c.a.t manager online for cat and genny data, check work quality and reduce utility strikes.',
+      url: 'https://sygma-solutions.com/courses/cat-manager',
+      type: 'website',
+    },
   },
 
   hero: {

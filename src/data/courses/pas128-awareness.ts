@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'PAS 128 Awareness Training Course | Sygma Solutions',
     description: 'PAS 128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, drawings, and specifications.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/pas128-awareness' },
+    openGraph: {
+      title: 'PAS 128 Awareness Training Course | Sygma Solutions',
+      description: 'PAS 128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, drawings, and specifications.',
+      url: 'https://sygma-solutions.com/courses/pas128-awareness',
+      type: 'website',
+    },
   },
 
   hero: {

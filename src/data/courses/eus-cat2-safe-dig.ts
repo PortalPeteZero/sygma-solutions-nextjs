@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
     description: 'EUSR CAT2 safe excavation training course. Safe Dig certification and advanced utility avoidance for excavation supervisors and site managers.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig' },
+    openGraph: {
+      title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
+      description: 'EUSR CAT2 safe excavation training course. Safe Dig certification and advanced utility avoidance for excavation supervisors and site managers.',
+      url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
+      type: 'website',
+    },
   },
 
   hero: {

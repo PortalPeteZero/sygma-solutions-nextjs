@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Service Coordinator USC Training | PAS128 | Sygma',
     description: 'Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/service-coordinator-usc' },
+    openGraph: {
+      title: 'Service Coordinator USC Training | PAS128 | Sygma',
+      description: 'Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.',
+      url: 'https://sygma-solutions.com/courses/service-coordinator-usc',
+      type: 'website',
+    },
   },
 
   hero: {

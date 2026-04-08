@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
     description: 'Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined' },
+    openGraph: {
+      title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
+      description: 'Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
+      url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined',
+      type: 'website',
+    },
   },
 
   hero: {

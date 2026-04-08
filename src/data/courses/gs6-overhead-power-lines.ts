@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'GS6 Overhead Power Lines Training | Sygma Solutions',
     description: 'GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/gs6-overhead-power-lines' },
+    openGraph: {
+      title: 'GS6 Overhead Power Lines Training | Sygma Solutions',
+      description: 'GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.',
+      url: 'https://sygma-solutions.com/courses/gs6-overhead-power-lines',
+      type: 'website',
+    },
   },
 
   hero: {

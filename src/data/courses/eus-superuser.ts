@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'EUS Super User Cat and Genny | EUSR Accredited | Sygma',
     description: 'EUS super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-superuser' },
+    openGraph: {
+      title: 'EUS Super User Cat and Genny | EUSR Accredited | Sygma',
+      description: 'EUS super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
+      url: 'https://sygma-solutions.com/courses/eus-superuser',
+      type: 'website',
+    },
   },
 
   hero: {

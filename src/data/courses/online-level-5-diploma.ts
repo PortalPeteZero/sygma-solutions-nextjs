@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
     description: 'Online ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Nationally recognised qualification delivered online with flexible study.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/online-level-5-diploma' },
+    openGraph: {
+      title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
+      description: 'Online ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Nationally recognised qualification delivered online with flexible study.',
+      url: 'https://sygma-solutions.com/courses/online-level-5-diploma',
+      type: 'website',
+    },
   },
 
   hero: {

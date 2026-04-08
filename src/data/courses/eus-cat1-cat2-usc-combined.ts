@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'EUS CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
     description: 'EUS CAT1 and CAT2 combined utility avoidance training with USC Safe Dig. EUSR-registered accreditation. Cable location and safe excavation in one programme.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined' },
+    openGraph: {
+      title: 'EUS CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
+      description: 'EUS CAT1 and CAT2 combined utility avoidance training with USC Safe Dig. EUSR-registered accreditation. Cable location and safe excavation in one programme.',
+      url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined',
+      type: 'website',
+    },
   },
 
   hero: {

@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'ProQual CAT1 Training | Accredited Course | Sygma',
     description: 'ProQual-accredited CAT1 utility location training. Accredited cable avoidance course with all four EML modes assessed. Nationwide delivery.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/proqualcat1-training' },
+    openGraph: {
+      title: 'ProQual CAT1 Training | Accredited Course | Sygma',
+      description: 'ProQual-accredited CAT1 utility location training. Accredited cable avoidance course with all four EML modes assessed. Nationwide delivery.',
+      url: 'https://sygma-solutions.com/courses/proqualcat1-training',
+      type: 'website',
+    },
   },
 
   hero: {

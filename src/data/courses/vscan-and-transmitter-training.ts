@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'vScan & Transmitter Training | Sygma Solutions',
     description: 'vScan and transmitter training with HSG47 built in. Transmitter-First methodology covering all four locating modes. UK-wide delivery.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/vscan-and-transmitter-training' },
+    openGraph: {
+      title: 'vScan & Transmitter Training | Sygma Solutions',
+      description: 'vScan and transmitter training with HSG47 built in. Transmitter-First methodology covering all four locating modes. UK-wide delivery.',
+      url: 'https://sygma-solutions.com/courses/vscan-and-transmitter-training',
+      type: 'website',
+    },
   },
 
   hero: {

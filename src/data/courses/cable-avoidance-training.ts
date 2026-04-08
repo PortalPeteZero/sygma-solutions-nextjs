@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
     description: 'Cable avoidance training and EUSR / ProQual accredited CAT1 training for underground utility detection. EUSR-registered qualification and ProQual accreditation available.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-training' },
+    openGraph: {
+      title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
+      description: 'Cable avoidance training and EUSR / ProQual accredited CAT1 training for underground utility detection. EUSR-registered qualification and ProQual accreditation available.',
+      url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
+      type: 'website',
+    },
   },
 
   hero: {

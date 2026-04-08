@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Cable Avoidance Course Comparison | EUS vs ProQual | Sygma',
     description: 'Cable avoidance course comparison: EUS CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus. Choose the right accreditation for your team.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison' },
+    openGraph: {
+      title: 'Cable Avoidance Course Comparison | EUS vs ProQual | Sygma',
+      description: 'Cable avoidance course comparison: EUS CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus. Choose the right accreditation for your team.',
+      url: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison',
+      type: 'website',
+    },
   },
 
   hero: {

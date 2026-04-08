@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
     description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1' },
+    openGraph: {
+      title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
+      description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
+      url: 'https://sygma-solutions.com/courses/eus-cat1',
+      type: 'website',
+    },
   },
 
   hero: {

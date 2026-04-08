@@ -7,6 +7,12 @@ export const courseData: CoursePageData = {
     title: 'Manufacturer Locator Training Course | Sygma Solutions',
     description: 'One day, up to eight delegates. Theory and practical training tailored to your pipe and cable locating equipment, using your own kit on a representative site.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/manufacturer-locator-training' },
+    openGraph: {
+      title: 'Manufacturer Locator Training Course | Sygma Solutions',
+      description: 'One day, up to eight delegates. Theory and practical training tailored to your pipe and cable locating equipment, using your own kit on a representative site.',
+      url: 'https://sygma-solutions.com/courses/manufacturer-locator-training',
+      type: 'website',
+    },
   },
 
   hero: {
