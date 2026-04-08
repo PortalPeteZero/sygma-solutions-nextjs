@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'eus-superuser',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'EUS super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
       url: 'https://sygma-solutions.com/courses/eus-superuser',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'proqualcat1plus',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'ProQual CAT1 Plus: the most advanced utility avoidance qualification. 2-day course covering all CAT1 plus 7 advanced theory and 34 practical criteria.',
       url: 'https://sygma-solutions.com/courses/proqualcat1plus',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

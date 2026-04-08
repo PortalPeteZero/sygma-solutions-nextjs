@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'online-level-5-diploma',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Online ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Nationally recognised qualification delivered online with flexible study.',
       url: 'https://sygma-solutions.com/courses/online-level-5-diploma',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

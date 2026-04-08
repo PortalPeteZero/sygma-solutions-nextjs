@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'cable-avoidance-training',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Cable avoidance training and EUSR / ProQual accredited CAT1 training for underground utility detection. EUSR-registered qualification and ProQual accreditation available.',
       url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'advanced-em-locator',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
       url: 'https://sygma-solutions.com/courses/advanced-em-locator',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

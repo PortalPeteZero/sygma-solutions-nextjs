@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'tsa-ices-utility-mapping',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'The most comprehensive utility mapping programme in the UK. Seven modules, 17 plus days, covering every ICES competency from PAS 128 to GPR and CAD.',
       url: 'https://sygma-solutions.com/courses/tsa-ices-utility-mapping',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

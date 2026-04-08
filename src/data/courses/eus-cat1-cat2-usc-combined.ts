@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'eus-cat1-cat2-usc-combined',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'EUS CAT1 and CAT2 combined utility avoidance training with USC Safe Dig. EUSR-registered accreditation. Cable location and safe excavation in one programme.',
       url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

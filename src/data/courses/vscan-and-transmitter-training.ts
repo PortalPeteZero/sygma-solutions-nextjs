@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'vscan-and-transmitter-training',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'vScan and transmitter training with HSG47 built in. Transmitter-First methodology covering all four locating modes. UK-wide delivery.',
       url: 'https://sygma-solutions.com/courses/vscan-and-transmitter-training',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

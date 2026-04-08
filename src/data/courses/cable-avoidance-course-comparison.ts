@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'cable-avoidance-course-comparison',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Cable avoidance course comparison: EUS CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus. Choose the right accreditation for your team.',
       url: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'proqual-cat1-cat2-combined',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Two-day combined ProQual CAT1 and CAT2 course. Utility avoidance and safe excavation with ProQual-accredited assessment. UK-wide delivery.',
       url: 'https://sygma-solutions.com/courses/proqual-cat1-cat2-combined',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

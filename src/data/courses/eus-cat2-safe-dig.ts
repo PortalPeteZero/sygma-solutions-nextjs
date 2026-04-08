@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'eus-cat2-safe-dig',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'EUSR CAT2 safe excavation training course. Safe Dig certification and advanced utility avoidance for excavation supervisors and site managers.',
       url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

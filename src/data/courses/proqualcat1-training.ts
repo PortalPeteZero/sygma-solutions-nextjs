@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'proqualcat1-training',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'ProQual-accredited CAT1 utility location training. Accredited cable avoidance course with all four EML modes assessed. Nationwide delivery.',
       url: 'https://sygma-solutions.com/courses/proqualcat1-training',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 

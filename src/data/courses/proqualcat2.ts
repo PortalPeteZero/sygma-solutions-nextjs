@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'proqualcat2',
@@ -11,8 +12,9 @@ export const courseData: CoursePageData = {
       title: 'ProQual CAT2 | Safe Excavation Qualification',
       description: 'ProQual CAT2 safe excavation qualification. BS 8475:2015 certified. Two-day course covering 24 theory and 15 practical criteria. Book your training.',
       url: 'https://sygma-solutions.com/courses/proqualcat2',
-      siteName: 'Sygma Solutions',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
