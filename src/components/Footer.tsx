@@ -1,26 +1,18 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Linkedin, Phone, Mail, MapPin } from 'lucide-react'
-import { trackPhoneClick, trackEmailClick } from '@/lib/analytics'
+import { Facebook, Linkedin, MapPin } from 'lucide-react'
 import {
   footerUtilityAvoidanceLinks as utilityAvoidanceLinks,
   footerUtilityMappingLinks as utilityMappingLinks,
   footerCompanyLinks as companyLinks,
 } from '@/data/navigation'
+import { TrackedPhoneLink, TrackedEmailLink, CookieSettingsButton } from './FooterClientIslands'
 
 /* ------------------------------------------------------------------ */
-/*  Footer component                                                  */
+/*  Footer component (server component -- client islands for tracking) */
 /* ------------------------------------------------------------------ */
 
 export function Footer() {
-  const handleCookieSettings = () => {
-    if (typeof window !== 'undefined') {
-      window.revisitCkyConsent?.();
-    }
-  }
-
   return (
     <footer className="border-t border-border bg-card">
       <div className="container mx-auto px-4 py-14">
@@ -43,24 +35,10 @@ export function Footer() {
             </p>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a
-                  href="tel:02039718252"
-                  onClick={() => trackPhoneClick('02039718252')}
-                  className="flex items-center gap-2 hover:text-primary transition-colors"
-                >
-                  <Phone size={13} className="text-accent shrink-0" />
-                  0203 971 8252
-                </a>
+                <TrackedPhoneLink />
               </li>
               <li>
-                <a
-                  href="mailto:enquiries@sygma-solutions.com"
-                  onClick={() => trackEmailClick('enquiries@sygma-solutions.com')}
-                  className="flex items-center gap-2 hover:text-primary transition-colors"
-                >
-                  <Mail size={13} className="text-accent shrink-0" />
-                  enquiries@sygma-solutions.com
-                </a>
+                <TrackedEmailLink />
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={13} className="text-accent shrink-0 mt-0.5" />
@@ -163,7 +141,7 @@ export function Footer() {
             {' '}&middot;{' '}
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             {' '}&middot;{' '}
-            <button type="button" onClick={handleCookieSettings} className="hover:text-primary transition-colors">Cookie Settings</button>
+            <CookieSettingsButton />
           </p>
         </div>
       </div>
