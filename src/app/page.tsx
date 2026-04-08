@@ -46,30 +46,32 @@ const faqs = [
 export default function Home() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.q,
-          acceptedAnswer: { '@type': 'Answer', text: faq.a }
-        }))
-      }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'Sygma Solutions',
-        telephone: '02039718252',
-        address: { '@type': 'PostalAddress', streetAddress: 'Platt Lane, Hindley', addressLocality: 'Wigan', postalCode: 'WN2 3PA', addressCountry: 'GB' }
-      }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'Sygma Solutions',
-        url: 'https://sygma-solutions.com',
-        logo: 'https://sygma-solutions.com/logo.png',
-        sameAs: ['https://www.linkedin.com/company/sygma-solutions']
-      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a }
+          }))
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'Sygma Solutions',
+          telephone: '02039718252',
+          address: { '@type': 'PostalAddress', streetAddress: 'Platt Lane, Hindley', addressLocality: 'Wigan', postalCode: 'WN2 3PA', addressCountry: 'GB' }
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Sygma Solutions',
+          url: 'https://sygma-solutions.com',
+          logo: { '@type': 'ImageObject', url: 'https://sygma-solutions.com/logo.webp', width: 200, height: 50 },
+          sameAs: ['https://www.linkedin.com/company/sygma-solutions']
+        }
+      ]) }} />
 
       <h1 className="sr-only">Cable Avoidance Training and CAT & Genny Courses - UK Specialist Since 2004</h1>
       <HeroCarousel />

@@ -4,47 +4,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Facebook, Linkedin, Phone, Mail, MapPin } from 'lucide-react'
 import { trackPhoneClick, trackEmailClick } from '@/lib/analytics'
-
-/* ------------------------------------------------------------------ */
-/*  Footer data -- matches the live Lovable site exactly              */
-/* ------------------------------------------------------------------ */
-
-interface FooterLink {
-  label: string
-  href: string
-}
-
-const utilityAvoidanceLinks: FooterLink[] = [
-  { label: 'Cable Avoidance Training', href: '/courses/cable-avoidance-training' },
-  { label: 'EUS CAT1', href: '/courses/eus-cat1' },
-  { label: 'EUS CAT2 Safe Dig', href: '/courses/eus-cat2-safe-dig' },
-  { label: 'EUS CAT1 & CAT2 Combined', href: '/courses/eus-cat1-cat2-combined' },
-  { label: 'ProQual CAT1 & CAT2 Combined', href: '/courses/proqual-cat1-cat2-combined' },
-  { label: 'CAT & Genny Training', href: '/courses/genny-cat-training' },
-  { label: 'vScan & Tx Training', href: '/courses/vscan-and-transmitter-training' },
-  { label: 'Advanced EM Locator', href: '/courses/advanced-em-locator' },
-  { label: 'CAT Manager', href: '/courses/cat-manager' },
-]
-
-const utilityMappingLinks: FooterLink[] = [
-  { label: '5-Day PAS128 Surveyor', href: '/courses/5-day-pas128-surveyor' },
-  { label: 'GPR Training', href: '/courses/gpr-training' },
-  { label: 'RQF Level 2 Award', href: '/courses/rqf-level-2-award' },
-  { label: 'Level 3 Certificate', href: '/courses/level-3-certificate' },
-  { label: 'Level 4 Diploma', href: '/courses/level-4-diploma' },
-  { label: 'Level 6 Diploma', href: '/courses/level-6-diploma' },
-]
-
-const companyLinks: FooterLink[] = [
-  { label: 'About Sygma', href: '/about' },
-  { label: 'OSCA', href: '/osca' },
-  { label: 'Bespoke Training', href: '/bespoke-training' },
-  { label: 'Accreditations & Partners', href: '/accreditations' },
-  { label: 'Knowledge Hub', href: '/knowledge-hub' },
-  { label: 'Locations', href: '/locations' },
-  { label: 'Pricing & Availability', href: '/pricing' },
-  { label: 'Contact Us', href: '/contact' },
-]
+import {
+  footerUtilityAvoidanceLinks as utilityAvoidanceLinks,
+  footerUtilityMappingLinks as utilityMappingLinks,
+  footerCompanyLinks as companyLinks,
+} from '@/data/navigation'
 
 /* ------------------------------------------------------------------ */
 /*  Footer component                                                  */
