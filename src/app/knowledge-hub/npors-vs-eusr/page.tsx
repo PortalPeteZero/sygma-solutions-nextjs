@@ -27,11 +27,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'NPORS vs EUSR | Which Qualification to Choose | Sygma',
   description: 'NPORS and EUSR both offer cable avoidance qualifications but serve different purposes. This guide explains the differences and how to choose.',
-  alternates: { canonical: 'https://sygma-solutions.co.uk/knowledge-hub/npors-vs-eusr' },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/npors-vs-eusr' },
   openGraph: {
     title: 'NPORS vs EUSR Cable Avoidance: Which Qualification Do You Need?',
     description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
-    url: 'https://sygma-solutions.co.uk/knowledge-hub/npors-vs-eusr',
+    url: 'https://sygma-solutions.com/knowledge-hub/npors-vs-eusr',
     type: 'article',
     images: [
       {

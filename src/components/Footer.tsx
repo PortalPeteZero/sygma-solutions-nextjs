@@ -52,8 +52,8 @@ const companyLinks: FooterLink[] = [
 
 export function Footer() {
   const handleCookieSettings = () => {
-    if (typeof window !== 'undefined' && typeof (window as any).revisitCkyConsent === 'function') {
-      (window as any).revisitCkyConsent()
+    if (typeof window !== 'undefined') {
+      window.revisitCkyConsent?.();
     }
   }
 

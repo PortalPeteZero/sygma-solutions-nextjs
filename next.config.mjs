@@ -330,6 +330,58 @@ const nextConfig = {
       // news/page
       { source: '/news/page/24', destination: '/knowledge-hub', permanent: true },
       { source: '/news/page/31', destination: '/knowledge-hub', permanent: true },
+
+      // === PHASE 9.1: COURSE URL VARIANTS (pre-cutover audit + LovableHTML 680-path analysis) ===
+      { source: '/courses/cable-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
+      { source: '/courses/gpr-survey-training', destination: '/courses/utility-mapping-surveying', permanent: true },
+      { source: '/courses/gpr-training-course', destination: '/courses/gpr-training', permanent: true },
+      { source: '/courses/level3-certificate', destination: '/courses/level-3-certificate', permanent: true },
+      { source: '/courses/mala-core', destination: '/courses/gpr-training', permanent: true },
+      { source: '/courses/mala-hdr-wideband', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/courses/eus-cat2', destination: '/courses/eus-cat2-safe-dig', permanent: true },
+      { source: '/courses/proqual-cat1', destination: '/courses/proqualcat1-training', permanent: true },
+      { source: '/courses/cable-locating-specialist', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/courses/page/2', destination: '/courses', permanent: true },
+      { source: '/courses/proqual-eusr', destination: '/courses/proqualcat1-training', permanent: true },
+      { source: '/courses/eusrcat1plus', destination: '/courses/eus-cat1', permanent: true },
+      { source: '/courses/qcf-level-5-utility-mapping-surveyor', destination: '/courses/level-5-diploma', permanent: true },
+      { source: '/courses/proqual-cat2', destination: '/courses/proqualcat2', permanent: true },
+
+      // === PHASE 9.2: CATEGORY REDIRECTS (old WordPress /category/ structure) ===
+      { source: '/category/underground-utility-surveyor-course', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/category/mala-gpr-training', destination: '/courses/gpr-training', permanent: true },
+      { source: '/category/cable-avoidance-training', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/category/vivax-training', destination: '/courses/vscan-and-transmitter-training', permanent: true },
+      { source: '/category/utility-surveyor-course', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/category/pas128-utility-surveyor-training', destination: '/courses/5-day-pas128-surveyor', permanent: true },
+      { source: '/category/mala', destination: '/courses/gpr-training', permanent: true },
+      { source: '/category/pa256-course', destination: '/courses/5-day-pas128-surveyor', permanent: true },
+      { source: '/category/:path*', destination: '/courses', permanent: true },
+
+      // === PHASE 9.3: TOP WORDPRESS BLOG POST REDIRECTS (highest-crawled slugs) ===
+      { source: '/what-is-eusr-cat-and-genny-training-and-why-do-you-need-it', destination: '/courses/genny-cat-training', permanent: true },
+      { source: '/cable-strikes-occur-far-too-often-and-can-be-fatal', destination: '/knowledge-hub', permanent: true },
+      { source: '/what-is-a-utility-mapping-course', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/eusr-cat-and-genny-vs-standard-cable-avoidance-training-whats-the-difference', destination: '/courses/cable-avoidance-course-comparison', permanent: true },
+      { source: '/our-courses-teach-everything-you-need-to-know-about-underground-surveying', destination: '/courses', permanent: true },
+      { source: '/importance-of-proper-cable-avoidance-training-and-techniques', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/our-courses-enable-you-to-obtain-your-qualification-in-cable-avoidance', destination: '/courses', permanent: true },
+      { source: '/hsg47-training-from-sygma-solutions-2', destination: '/knowledge-hub/hsg47-explained', permanent: true },
+      { source: '/what-does-being-a-utility-surveyor-involve', destination: '/training/utility-mapping-surveying', permanent: true },
+      { source: '/cable-avoidance-tips-avoid-errors-with-expert-cat-genny-use', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/our-courses-include-limitations-of-cable-avoidance-tools', destination: '/courses', permanent: true },
+      { source: '/demystifying-hsg47-breaking-down-complex-concepts', destination: '/knowledge-hub/hsg47-explained', permanent: true },
+      { source: '/checking-for-underground-services-before-digging-is-essential', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/follow-best-practice-when-carrying-out-any-excavation-work', destination: '/knowledge-hub', permanent: true },
+      { source: '/whatever-you-do-dont-rely-on-stats-when-excavating', destination: '/knowledge-hub', permanent: true },
+      { source: '/is-cable-avoidance-training-worth-the-cost', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/cat-training-safely-trace-and-avoid-underground-utilities', destination: '/courses/genny-cat-training', permanent: true },
+      { source: '/the-importance-of-cat-courses-and-how-they-work', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/how-can-excavators-cause-cable-strikes', destination: '/knowledge-hub', permanent: true },
+      { source: '/interpreting-cat-genny-readings-like-a-pro', destination: '/courses/genny-cat-training', permanent: true },
+
+      // === PHASE 9.5: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
+      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr).+)', destination: '/knowledge-hub', permanent: true },
     ];
   },
 };

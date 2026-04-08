@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Sygma Solutions',
     images: [
       {
-        url: 'https://sygma-solutions.com/og-image.png',
+        url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo',
         width: 1200,
         height: 630,
       },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sygma Solutions | Utility Avoidance & Mapping Services',
     description: 'Leading provider of utility avoidance, mapping, and OSCA services across the UK.',
-    images: ['https://sygma-solutions.com/og-image.png'],
+    images: ['https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo'],
   },
 }
 

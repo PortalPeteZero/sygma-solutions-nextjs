@@ -8,11 +8,11 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Understanding PAS128 | Utility Survey Guide | Sygma',
   description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
-  alternates: { canonical: 'https://sygma-solutions.co.uk/knowledge-hub/understanding-pas-128' },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/understanding-pas-128' },
   openGraph: {
     title: 'Understanding PAS 128: A Guide for Contractors and Clients',
     description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
-    url: 'https://sygma-solutions.co.uk/knowledge-hub/understanding-pas-128',
+    url: 'https://sygma-solutions.com/knowledge-hub/understanding-pas-128',
     type: 'article',
     images: [
       {

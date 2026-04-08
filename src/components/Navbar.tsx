@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, memo } from 'react'
 import { ChevronDown, Menu, X, Phone, Mail } from 'lucide-react'
 import { trackPhoneClick, trackEmailClick } from '@/lib/analytics'
 
@@ -119,7 +119,7 @@ const topBarLinks = [
 /*  MegaMenu dropdown                                                 */
 /* ------------------------------------------------------------------ */
 
-function MegaMenuDropdown({
+const MegaMenuDropdown = memo(function MegaMenuDropdown({
   menu,
   open,
   onClose,
@@ -174,7 +174,7 @@ function MegaMenuDropdown({
       </div>
     </div>
   )
-}
+})
 
 /* ------------------------------------------------------------------ */
 /*  Navbar component                                                  */

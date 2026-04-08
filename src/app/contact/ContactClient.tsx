@@ -9,10 +9,12 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { trackFormSubmit, trackPhoneClick, trackEmailClick, trackEvent } from '@/lib/analytics';
 import Image from 'next/image';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+function getSupabaseClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !key) throw new Error('Supabase env vars not configured');
+  return createClient(url, key);
+}
 
 const quickLinks = [
   { label: 'Browse all Utility Avoidance courses', href: '/training/cable-location-avoidance' },
@@ -48,6 +50,7 @@ export default function ContactClient() {
     };
 
     try {
+      const supabase = getSupabaseClient();
       const { error } = await supabase.functions.invoke('send-contact-email', {
         body: payload,
       });
@@ -55,6 +58,7 @@ export default function ContactClient() {
       if (error) throw error;
 
       setSubmitted(true);
+      form.reset();
       trackFormSubmit(payload.enquiry_type);
       trackEvent('thank_you');
       router.push('/thank-you');

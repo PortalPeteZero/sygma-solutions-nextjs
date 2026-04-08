@@ -110,7 +110,12 @@ export function organizationSchema(): Record<string, unknown> {
     "@id": `${SITE_URL}/#organization`,
     "name": "Sygma Solutions",
     "url": SITE_URL,
-    "logo": `${SITE_URL}/icon-192.png`,
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${SITE_URL}/logo.webp`,
+      "width": 200,
+      "height": 50,
+    },
     "description": "The UK's only independent specialist in underground utility location and avoidance training. Delivering accredited courses nationwide since 2004.",
     "telephone": "+442039718252",
     "email": "info@sygma-solutions.com",

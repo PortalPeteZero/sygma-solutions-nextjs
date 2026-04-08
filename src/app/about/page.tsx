@@ -1,12 +1,18 @@
-'use client';
-
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import Image from 'next/image';
 
-// Note: Metadata export cannot be used in client components
-// This should be handled via a layout or moved to a server component
+export const metadata: Metadata = {
+  title: 'About Sygma Solutions | UK Cable Avoidance Training Specialist',
+  description: 'Sygma Solutions is the UK\'s only independent cable avoidance training specialist. 21 years. One subject. Expert trainers. Not tied to any manufacturer.',
+  alternates: { canonical: 'https://sygma-solutions.com/about' },
+  openGraph: {
+    title: 'About Sygma Solutions | UK Cable Avoidance Training Specialist',
+    description: 'Sygma Solutions is the UK\'s only independent cable avoidance training specialist. 21 years. One subject. Expert trainers. Not tied to any manufacturer.',
+    url: 'https://sygma-solutions.com/about',
+  },
+};
 
 const stats = [
   { number: '21', label: 'Years established' },

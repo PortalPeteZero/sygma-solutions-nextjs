@@ -8,11 +8,11 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'HSG47 Explained | Underground Services Guide | Sygma',
   description: 'What is HSG47 and what training does it require? HSE guidance for avoiding danger from underground services explained.',
-  alternates: { canonical: 'https://sygma-solutions.co.uk/knowledge-hub/hsg47-explained' },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained' },
   openGraph: {
     title: 'HSG47 Training: What HSG47 Requires and How Cable Avoidance Training Aligns',
     description: 'What is HSG47 and what training does it require? The HSE guidance for avoiding danger from underground services explained, with how cable avoidance training maps to its requirements.',
-    url: 'https://sygma-solutions.co.uk/knowledge-hub/hsg47-explained',
+    url: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained',
     type: 'article',
     images: [
       {

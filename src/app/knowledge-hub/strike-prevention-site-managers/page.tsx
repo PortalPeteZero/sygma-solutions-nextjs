@@ -27,11 +27,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'Cable Strike Prevention for Site Managers | Sygma',
   description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training, supervision, and response.',
-  alternates: { canonical: 'https://sygma-solutions.co.uk/knowledge-hub/strike-prevention-site-managers' },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/strike-prevention-site-managers' },
   openGraph: {
     title: 'Utility Strike Prevention: A Guide for Site Managers',
     description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training requirements, supervision, and what to do when things go wrong.',
-    url: 'https://sygma-solutions.co.uk/knowledge-hub/strike-prevention-site-managers',
+    url: 'https://sygma-solutions.com/knowledge-hub/strike-prevention-site-managers',
     type: 'article',
     images: [
       {
