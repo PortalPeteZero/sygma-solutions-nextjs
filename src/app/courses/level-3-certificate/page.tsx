@@ -79,7 +79,7 @@ export default function Level3Certificate() {
             ["Delivery", "Wigan centre, online and in-house"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -98,7 +98,7 @@ export default function Level3Certificate() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Qualification</p>
+            <p className="eyebrow mb-3">The Qualification</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What Is the ProQual Level 3 Certificate?</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -123,7 +123,7 @@ export default function Level3Certificate() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Qualification at a Glance</p>
+            <p className="eyebrow mb-4">Qualification at a Glance</p>
             {[
               ["Awarding Body", "ProQual Awarding Body"],
               ["Regulation", "Ofqual-regulated (RQF)"],
@@ -136,7 +136,7 @@ export default function Level3Certificate() {
               ["Prerequisite for", "ProQual Level 4 and Level 5 Diploma"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-32 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-32 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -152,7 +152,7 @@ export default function Level3Certificate() {
       {/* Who it's for */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+          <p className="eyebrow mb-3">Audience</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Who Is This Qualification For?</h2>
           <div className="grid md:grid-cols-3 gap-5">
             {[
@@ -191,7 +191,7 @@ export default function Level3Certificate() {
 
       {/* Assessment process */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Assessment</p>
+        <p className="eyebrow mb-3">Assessment</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Assessment Process: No Exams, No Surprises</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The Level 3 Certificate is assessed through work-based evidence and a structured knowledge questions book. There is no formal written exam. The assessment process is designed to be achievable alongside normal working activity.
@@ -264,7 +264,7 @@ export default function Level3Certificate() {
       {/* Pricing */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What Is Included</p>
+          <p className="eyebrow mb-3">What Is Included</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Full Assessment Support, No Hidden Fees</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             Sygma charges a fixed assessment fee per candidate (plus ProQual registration fees). This is an all-in fee with no additional charges for extra assessments, re-submissions, or extended support. Contact us for a quote.
@@ -295,7 +295,7 @@ export default function Level3Certificate() {
 
       {/* Qualification pathway */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Qualification Pathway</p>
+        <p className="eyebrow mb-3">Qualification Pathway</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">The Level 3 Is Just the Start</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The ProQual Level 3 Certificate in Utility Mapping and Surveying is the mandatory entry point to the full ProQual utility mapping qualification pathway. There is no Level 3 Diploma at this stage. The Level 3 Certificate is the required qualification before progressing to the Level 4 Diploma and Level 5 Diploma. Sygma provides a structured training programme and assessment support at every level, helping engineers and surveyors locate underground utilities and build their utility surveying careers.
@@ -369,7 +369,7 @@ export default function Level3Certificate() {
       {/* Accreditation */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Accreditation</p>
+          <p className="eyebrow mb-3">Accreditation</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">ProQual Awarding Body and Ofqual Regulation</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -384,7 +384,7 @@ export default function Level3Certificate() {
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Wigan Training and Assessment Centre</p>
+              <p className="eyebrow mb-3">Wigan Training and Assessment Centre</p>
               <h3 className="text-xl font-black mb-4 text-foreground">The UK's Only Dedicated Utility Mapping Assessment Centre</h3>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed">
                 <p>
@@ -401,7 +401,7 @@ export default function Level3Certificate() {
 
       {/* Training links */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Training and Assessment</p>
+        <p className="eyebrow mb-3">Training and Assessment</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Need Training Before Assessment?</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The ProQual Level 3 Certificate in Utility Mapping and Surveying can be achieved through the assessment-only route using workplace evidence, or combined with structured training courses for the fastest route to certification. Both routes cover how to locate underground utilities and buried services in construction and utility surveying environments.
@@ -429,7 +429,7 @@ export default function Level3Certificate() {
       {/* Comparison */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Comparison</p>
+          <p className="eyebrow mb-3">Comparison</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Level 3 Certificate vs Other Entry Options</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-border rounded-xl overflow-hidden">
@@ -477,7 +477,7 @@ export default function Level3Certificate() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (
@@ -491,7 +491,7 @@ export default function Level3Certificate() {
 
       {/* Why Sygma */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma</p>
+        <p className="eyebrow mb-3">Why Sygma</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Complete Your Level 3 With Sygma</h2>
         <div className="grid md:grid-cols-2 gap-4">
           {[
@@ -542,7 +542,7 @@ export default function Level3Certificate() {
 
       {/* Related Courses */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Courses</p>
+        <p className="eyebrow mb-3">Related Courses</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Advance Your Skills</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <Link href="/courses/level-4-diploma" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">

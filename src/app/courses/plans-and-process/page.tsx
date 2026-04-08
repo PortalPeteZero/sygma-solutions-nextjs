@@ -75,7 +75,7 @@ export default function PlansAndProcess() {
             ["Delivery", "Online or in-house, nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -94,7 +94,7 @@ export default function PlansAndProcess() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Problem With Plans</p>
+            <p className="eyebrow mb-3">The Problem With Plans</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Having the Plan Is Not the Same as Understanding It</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -109,7 +109,7 @@ export default function PlansAndProcess() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Online Format", "Live session via Microsoft Teams, approximately 90 minutes. Webcam and microphone required."],
               ["In-Person Format", "Classroom session plus practical site competence check"],
@@ -120,7 +120,7 @@ export default function PlansAndProcess() {
               ["Pricing", "By quotation (contact Sygma for a tailored quote)"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-32 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-32 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -131,7 +131,7 @@ export default function PlansAndProcess() {
       {/* Course content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+          <p className="eyebrow mb-3">Course Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Course Covers</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The course covers utility plan reading from first principles through to practical site application. The same content applies to both formats.
@@ -216,7 +216,7 @@ export default function PlansAndProcess() {
 
       {/* Practical element - in-person */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">In-Person Format</p>
+        <p className="eyebrow mb-3">In-Person Format</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Practical Element and Competence Check</h2>
         <p className="text-muted-foreground mb-6 max-w-2xl">
           When delivered in person, the course adds a practical element where delegates apply what they have learned in a real or representative site environment. This includes working with real plans, identifying utility routes, checking scales, and then using a locator in conjunction with the plan.
@@ -309,7 +309,7 @@ export default function PlansAndProcess() {
       {/* Who should attend */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+          <p className="eyebrow mb-3">Audience</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Who Should Attend</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -350,7 +350,7 @@ export default function PlansAndProcess() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

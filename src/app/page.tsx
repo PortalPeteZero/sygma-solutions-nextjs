@@ -258,7 +258,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap gap-3">
                 {['CITB ATO', 'ProQual', 'EUSR/EUS', 'TSA', 'CICES'].map((a) => (
-                  <div key={a} className="px-4 py-2 bg-accent/10 rounded-full text-xs font-bold uppercase tracking-widest text-accent">{a}</div>
+                  <div key={a} className="px-4 py-2 bg-accent/10 rounded-full eyebrow">{a}</div>
                 ))}
               </div>
             </div>

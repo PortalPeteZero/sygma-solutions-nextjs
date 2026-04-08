@@ -70,7 +70,7 @@ export default function Level6Diploma() {
       />
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Management-Level Qualification</p>
+        <p className="eyebrow mb-3">Management-Level Qualification</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">ProQual Level 6 Diploma in Utility Mapping and Surveying Management</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">The Level 6 Diploma recognises management-level competency in utility surveying operations. Portfolio-based, with full assessor support throughout your journey to qualification.</p>
       </section>

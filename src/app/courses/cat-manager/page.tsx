@@ -81,7 +81,7 @@ export default function CatManager() {
             ["Certificate", "Certificate of attendance"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -102,7 +102,7 @@ export default function CatManager() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Cat Manager Online Training Matters</p>
+            <p className="eyebrow mb-3">Why Cat Manager Online Training Matters</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Your Cat and Genny Usage Data Is Currently Invisible to You</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -117,7 +117,7 @@ export default function CatManager() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "Half day training course (approximately 4 hours)"],
               ["Delivery", "In person (Wigan HQ) or online cat manager training via Microsoft Teams"],
@@ -128,7 +128,7 @@ export default function CatManager() {
               ["Availability", "Contact us to arrange a cat manager online training session"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -139,7 +139,7 @@ export default function CatManager() {
       {/* Course content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Cat Manager Online Training Course Content</p>
+          <p className="eyebrow mb-3">Cat Manager Online Training Course Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Cat Manager Training Course Covers</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             This training course covers both the practical operation of the c.a.t manager online system and the strategic use of the usage data it produces. Managers and supervisors work through the cat manager software using real data from cat and genny equipment throughout the session, learning essential knowledge for structured analysis of work quality across their entire team.
@@ -169,7 +169,7 @@ export default function CatManager() {
 
       {/* Delivery formats */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Cat Manager Online Training Delivery Options</p>
+        <p className="eyebrow mb-3">Cat Manager Online Training Delivery Options</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">In Person or Online Training Course</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-border overflow-hidden">
@@ -185,7 +185,7 @@ export default function CatManager() {
                 ["Location", "Sygma Solutions HQ, Wigan, or on-site at your premises by arrangement"],
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-24 shrink-0 pt-0.5">{k}</span>
+                  <span className="eyebrow text-muted-foreground w-24 shrink-0 pt-0.5">{k}</span>
                   <span className="text-sm text-foreground">{v}</span>
                 </div>
               ))}
@@ -204,7 +204,7 @@ export default function CatManager() {
                 ["Location", "Anywhere (delegates join from their own location)"],
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-24 shrink-0 pt-0.5">{k}</span>
+                  <span className="eyebrow text-muted-foreground w-24 shrink-0 pt-0.5">{k}</span>
                   <span className="text-sm text-foreground">{v}</span>
                 </div>
               ))}
@@ -254,7 +254,7 @@ export default function CatManager() {
       {/* Who should attend */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+          <p className="eyebrow mb-3">Audience</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Who Should Attend?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
@@ -288,7 +288,7 @@ export default function CatManager() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (
@@ -344,7 +344,7 @@ export default function CatManager() {
       {/* CITB Employer Network */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Approved Training</p>
+          <p className="eyebrow mb-3">CITB Approved Training</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">CITB Employer Network Support for Cat Manager Training</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             Sygma Solutions is a CITB Approved Training Organisation and member of the CITB Employer Network. Employers registered with CITB may be able to access Employer Network funding towards cat manager online training course costs for their managers and supervisors.
@@ -378,7 +378,7 @@ export default function CatManager() {
 
       {/* Why Sygma */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma Solutions</p>
+        <p className="eyebrow mb-3">Why Sygma Solutions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Choose Sygma for Cat Manager Online Training?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[

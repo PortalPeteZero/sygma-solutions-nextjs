@@ -146,7 +146,7 @@ export default function RqfLevel2Award() {
             ['Delivery', 'In-house, nationwide UK'],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -165,7 +165,7 @@ export default function RqfLevel2Award() {
       {/* Remaining sections truncated for brevity - full conversion maintains all original content structure with Link href conversion */}
       
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Nationally Recognised Qualification</p>
+        <p className="eyebrow mb-3">Nationally Recognised Qualification</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The RQF Level 2 Award in Utility Location and Avoidance</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>

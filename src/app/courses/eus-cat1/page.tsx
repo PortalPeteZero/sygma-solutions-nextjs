@@ -134,7 +134,7 @@ export default function EusCat1Page() {
             { label: 'Assessment', value: 'Practical + Written' },
           ].map(({ label, value }) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -286,25 +286,25 @@ export default function EusCat1Page() {
           <h2 className="text-2xl font-black mb-6 text-foreground">Upgrade Your Qualification</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-background border border-border rounded-lg p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Next Step</p>
+              <p className="eyebrow mb-2">Next Step</p>
               <h3 className="font-black text-foreground mb-2">ProQual CAT1 Plus</h3>
               <p className="text-muted-foreground text-sm mb-4">Upgrade your EUSR CAT1 to include additional locating techniques under ProQual accreditation.</p>
               <Link href="/courses/proqualcat1plus" className="text-primary font-semibold text-sm hover:underline">View ProQual CAT1 Plus &rsaquo;</Link>
             </div>
             <div className="bg-background border border-border rounded-lg p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">On-Site Competency</p>
+              <p className="eyebrow mb-2">On-Site Competency</p>
               <h3 className="font-black text-foreground mb-2">OSCA Assessment</h3>
               <p className="text-muted-foreground text-sm mb-4">The OSCA on-site competency assessment verifies your operatives are competent in live conditions.</p>
               <Link href="/osca" className="text-primary font-semibold text-sm hover:underline">View OSCA Assessment &rsaquo;</Link>
             </div>
             <div className="bg-background border border-border rounded-lg p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Bespoke Programme</p>
+              <p className="eyebrow mb-2">Bespoke Programme</p>
               <h3 className="font-black text-foreground mb-2">Bespoke Training</h3>
               <p className="text-muted-foreground text-sm mb-4">If your organisation needs more than a standard EUSR course, we design the programme from the ground up.</p>
               <Link href="/bespoke-training" className="text-primary font-semibold text-sm hover:underline">View Bespoke Training &rsaquo;</Link>
             </div>
             <div className="bg-background border border-border rounded-lg p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Course Comparison</p>
+              <p className="eyebrow mb-2">Course Comparison</p>
               <h3 className="font-black text-foreground mb-2">Cable Avoidance Course Comparison</h3>
               <p className="text-muted-foreground text-sm mb-4">Compare all cable avoidance courses side by side.</p>
               <Link href="/courses/cable-avoidance-course-comparison" className="text-primary font-semibold text-sm hover:underline">View Comparison &rsaquo;</Link>

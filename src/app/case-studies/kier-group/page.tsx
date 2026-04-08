@@ -62,7 +62,7 @@ export default function CaseStudyKier() {
               { label: 'Key elements', value: 'Kier permit, company policies, CAT Manager data, strike investigation, peer assessment' },
             ].map((item) => (
               <div key={item.label} className="rounded-lg border border-border bg-background p-4">
-                <p className="mb-1 text-xs font-bold uppercase tracking-widest text-accent">{item.label}</p>
+                <p className="mb-1 eyebrow">{item.label}</p>
                 <p className="text-sm font-medium text-foreground">{item.value}</p>
               </div>
             ))}
@@ -78,7 +78,7 @@ export default function CaseStudyKier() {
       {/* The Brief */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">The Brief</p>
+          <p className="mb-3 eyebrow">The Brief</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">The Brief from Kier Group</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>Kier Group is one of the UK's leading infrastructure, construction, and services businesses. With large numbers of operatives working on sites where buried utilities are a constant presence, Kier's H&S and L&D teams needed more than a standard refresher course.</p>
@@ -91,7 +91,7 @@ export default function CaseStudyKier() {
       {/* What Sygma Designed */}
       <section className="border-t border-border bg-muted/30 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">What Sygma Designed</p>
+          <p className="mb-3 eyebrow">What Sygma Designed</p>
           <h2 className="mb-4 text-3xl font-black tracking-tight text-foreground">What Sygma Designed</h2>
           <p className="mb-8 text-muted-foreground leading-relaxed">Sygma Solutions worked with Kier's L&D and H&S teams to design a 1-day bespoke refresher programme built specifically for Kier operatives. The programme is structured in two halves: a morning classroom session focused on Kier-specific policies, procedures, and data analysis, followed by an afternoon practical coaching and peer assessment block.</p>
 
@@ -134,7 +134,7 @@ export default function CaseStudyKier() {
       {/* How it works */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">How It Works</p>
+          <p className="mb-3 eyebrow">How It Works</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">How It Works in Practice</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>The programme can be delivered at Kier's own facilities, at a Kier site, or at Sygma's Wigan Training Centre. Delivery location is agreed in advance based on which practical assessment environment is most appropriate for the delegate group.</p>
@@ -160,7 +160,7 @@ export default function CaseStudyKier() {
       {/* Outcomes */}
       <section className="border-t border-border bg-muted/30 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">Outcomes</p>
+          <p className="mb-3 eyebrow">Outcomes</p>
           <h2 className="mb-4 text-3xl font-black tracking-tight text-foreground">Key Outcomes for Kier Group</h2>
           <p className="mb-8 text-muted-foreground">The Kier bespoke programme delivers outcomes that a generic refresher course cannot match.</p>
           <div className="overflow-x-auto rounded-xl border border-border bg-background">

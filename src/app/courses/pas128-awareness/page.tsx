@@ -125,7 +125,7 @@ export default function Pas128Awareness() {
             ['In-House Delivery Available', 'Delivered at your premises or Sygma\'s Wigan training centre'],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -142,7 +142,7 @@ export default function Pas128Awareness() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why PAS128 Awareness Matters</p>
+            <p className="eyebrow mb-3">Why PAS128 Awareness Matters</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Standard That Governs Utility Surveys</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -157,7 +157,7 @@ export default function Pas128Awareness() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">PAS128 Awareness vs Plans and Process Training</p>
+            <p className="eyebrow mb-4">PAS128 Awareness vs Plans and Process Training</p>
             <div className="space-y-4">
               <div className="border-b border-border pb-4">
                 <p className="text-sm font-bold text-foreground mb-1">PAS128 Awareness</p>
@@ -182,7 +182,7 @@ export default function Pas128Awareness() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+          <p className="eyebrow mb-3">Audience</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Designed For</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-border rounded-xl overflow-hidden">
@@ -227,7 +227,7 @@ export default function Pas128Awareness() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+        <p className="eyebrow mb-3">Course Content</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Session Covers</h2>
         <p className="text-muted-foreground mb-10 max-w-2xl">
           The classroom content is structured across four areas, taking delegates from legal context through to understanding what a completed PAS128 survey deliverable should contain.
@@ -287,7 +287,7 @@ export default function Pas128Awareness() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Optional Practical Element</p>
+          <p className="eyebrow mb-3">Optional Practical Element</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Hands-On Learning in the Field</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The classroom session can be supplemented with an optional practical site element. Sygma will identify a suitable practical area close to the training venue.
@@ -358,7 +358,7 @@ export default function Pas128Awareness() {
       </div>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Delivery Format</p>
+        <p className="eyebrow mb-3">Delivery Format</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Classroom-Based with Optional Site</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The course is available as an in-house delivery at your premises or at Sygma's Wigan training centre. It can also be delivered as part of a wider training programme for teams who need broader utility survey awareness.
@@ -397,7 +397,7 @@ export default function Pas128Awareness() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Training Pathway</p>
+          <p className="eyebrow mb-3">Training Pathway</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Start Here or Build on It</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             PAS128 Awareness is designed as a standalone session, but it also sits at the entry point to the utility mapping training pathway. Delegates who want to develop beyond awareness into practical surveying skills have a clear route through the Sygma training programme.
@@ -449,7 +449,7 @@ export default function Pas128Awareness() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Training</p>
+        <p className="eyebrow mb-3">Related Training</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Courses That Complement This One</h2>
         <div className="grid md:grid-cols-3 gap-5">
           {[
@@ -492,7 +492,7 @@ export default function Pas128Awareness() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma</p>
+        <p className="eyebrow mb-3">Why Sygma</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Train With Sygma?</h2>
         <div className="grid md:grid-cols-2 gap-5">
           {[
@@ -554,7 +554,7 @@ export default function Pas128Awareness() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

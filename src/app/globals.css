@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-widest text-accent;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 98%;

@@ -61,7 +61,7 @@ export default function CaseStudyMorganSindall() {
               { label: 'Key elements', value: 'PAS128 quality levels, legal duty of care, survey specification, how to verify compliant survey work' },
             ].map((item) => (
               <div key={item.label} className="rounded-lg border border-border bg-background p-4">
-                <p className="mb-1 text-xs font-bold uppercase tracking-widest text-accent">{item.label}</p>
+                <p className="mb-1 eyebrow">{item.label}</p>
                 <p className="text-sm font-medium text-foreground">{item.value}</p>
               </div>
             ))}
@@ -77,7 +77,7 @@ export default function CaseStudyMorganSindall() {
       {/* The Brief */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">The Brief</p>
+          <p className="mb-3 eyebrow">The Brief</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">The Brief from Morgan Sindall</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>Morgan Sindall is one of the UK's leading construction and infrastructure companies, delivering major projects across sectors including utilities, highways, rail, and public infrastructure. On large infrastructure projects, PAS128-compliant utility surveys are increasingly specified by clients and required by CDM regulations and framework conditions.</p>
@@ -91,7 +91,7 @@ export default function CaseStudyMorganSindall() {
       {/* Understanding PAS128 */}
       <section className="border-t border-border bg-muted/30 py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">Context</p>
+          <p className="mb-3 eyebrow">Context</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">What is PAS128 and Why Does It Matter?</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>PAS128 is the UK standard for underground utility detection, verification, and location. Published by the British Standards Institution, PAS128 defines the methodology and quality levels that govern how buried utilities and buried services are located, mapped, and recorded on construction and infrastructure projects. It exists because inaccurate or incomplete utility mapping is one of the most common causes of project delays, cost overruns, and safety incidents on UK construction sites.</p>
@@ -105,7 +105,7 @@ export default function CaseStudyMorganSindall() {
       {/* What Sygma Designed */}
       <section className="border-t border-border bg-muted/30 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">What Sygma Designed</p>
+          <p className="mb-3 eyebrow">What Sygma Designed</p>
           <h2 className="mb-4 text-3xl font-black tracking-tight text-foreground">What Sygma Designed</h2>
           <p className="mb-4 text-muted-foreground leading-relaxed">Sygma Solutions designed a series of PAS128 leadership briefings for Morgan Sindall's project management teams. These are not operative-level CAT and Genny training courses. There is no locating equipment in the room, no practical fieldwork session, no site assessment. The briefings are designed for people who commission and manage utility surveys on major construction and infrastructure projects, not people who conduct them.</p>
           <p className="mb-8 text-muted-foreground leading-relaxed">The programme covers the core elements of PAS128 that project managers need to understand: how PAS128 survey types and quality levels work, what detection methods are used at each level, how to write a survey specification that ensures compliance, what a compliant survey report should contain, and where legal liability sits when utility mapping data is incomplete or inaccurate. Each briefing module is designed to give Morgan Sindall's project leadership teams practical, usable knowledge they can apply immediately on site.</p>
@@ -145,7 +145,7 @@ export default function CaseStudyMorganSindall() {
       {/* PAS128 Quality Levels in Practice */}
       <section className="border-t border-border py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">PAS128 Framework</p>
+          <p className="mb-3 eyebrow">PAS128 Framework</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">PAS128 Survey Types and Quality Levels</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>A significant part of the Morgan Sindall briefing programme focuses on PAS128 survey types and the quality levels they produce. Understanding these levels is essential for any project manager who commissions utility surveys or accepts survey deliverables on construction projects.</p>
@@ -165,7 +165,7 @@ export default function CaseStudyMorganSindall() {
       {/* How it works */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">How It Works</p>
+          <p className="mb-3 eyebrow">How It Works</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">How It Works in Practice</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>The briefing sessions are designed to fit into a project manager's working schedule. They are not full-day courses. Each module can be delivered as a standalone briefing or as part of a structured half-day or full-day programme depending on Morgan Sindall's scheduling requirements and the depth of knowledge the team needs.</p>
@@ -193,7 +193,7 @@ export default function CaseStudyMorganSindall() {
       {/* Outcomes */}
       <section className="border-t border-border bg-muted/30 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">Outcomes</p>
+          <p className="mb-3 eyebrow">Outcomes</p>
           <h2 className="mb-8 text-3xl font-black tracking-tight text-foreground">Key Outcomes for Morgan Sindall</h2>
           <div className="overflow-x-auto rounded-xl border border-border bg-background">
             <table className="w-full text-sm">
@@ -219,7 +219,7 @@ export default function CaseStudyMorganSindall() {
       {/* How PAS128 Briefings Connect to Utility Survey Training */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">The Bigger Picture</p>
+          <p className="mb-3 eyebrow">The Bigger Picture</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-foreground">How PAS128 Leadership Briefings Connect to Utility Survey Training</h2>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>PAS128 utility survey training operates at multiple levels within an organisation. At the operative level, locating operatives and utility surveyors attend training courses that teach them to use electromagnetic locating equipment, signal generators, and ground penetrating radar to detect, locate, and map buried utilities and buried services on construction sites. These training courses cover detection methods, surveying methodology, data collection, and the practical skills needed to produce reliable survey data that meets PAS128 requirements.</p>

@@ -70,7 +70,7 @@ export default function OnlineLevel3Diploma() {
       />
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Entry-Level Online Qualification</p>
+        <p className="eyebrow mb-3">Entry-Level Online Qualification</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online Level 3 Diploma in Utility Mapping and Surveying</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">The Online Level 3 Diploma is entry-level RQF qualification delivered fully online. Perfect for operatives who prefer flexible, self-paced learning with live tutor support via Microsoft Teams.</p>
       </section>

@@ -45,7 +45,7 @@ export default function CourseComparison() {
 
       {/* Who is this page for */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Who This Is For</p>
+        <p className="eyebrow mb-3">Who This Is For</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Who Is This Page For?</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mb-8">
           <p>
@@ -114,7 +114,7 @@ export default function CourseComparison() {
       {/* What this comparison covers */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Context</p>
+          <p className="eyebrow mb-3">Context</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What This Comparison Covers</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mb-8">
             <p>
@@ -142,7 +142,7 @@ export default function CourseComparison() {
 
       {/* The Comparison: three tables */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-6xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Side by Side</p>
+        <p className="eyebrow mb-3">Side by Side</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">The Comparison</h2>
 
         {/* Basics */}
@@ -368,7 +368,7 @@ export default function CourseComparison() {
       {/* Which qualification is right for your team */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Decision Guide</p>
+          <p className="eyebrow mb-3">Decision Guide</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Which Qualification Is Right for Your Team?</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
             Use this guide to match the qualification to your organisation's requirements.
@@ -441,7 +441,7 @@ export default function CourseComparison() {
 
       {/* Why assessment method matters */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Not All CAT1 Courses Are Created Equal</p>
+        <p className="eyebrow mb-3">Not All CAT1 Courses Are Created Equal</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why ProQual CAT1 Is a Significantly Higher Standard</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl">
           <p>
@@ -484,7 +484,7 @@ export default function CourseComparison() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[

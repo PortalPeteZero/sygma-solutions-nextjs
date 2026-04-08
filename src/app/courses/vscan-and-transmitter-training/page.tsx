@@ -130,7 +130,7 @@ export default function VscanTransmitterTraining() {
             ["Delivery", "At your site, nationwide"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -141,7 +141,7 @@ export default function VscanTransmitterTraining() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why This Course Exists</p>
+            <p className="eyebrow mb-3">Why This Course Exists</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard vScan and Transmitter Training</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -159,7 +159,7 @@ export default function VscanTransmitterTraining() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Format", "Choice of: 1-day in-house certified, 2-day in-house certified, 2-day split certified (3 months apart)"],
               ["Location", "Delivered at your site nationwide | Wigan HQ available as alternative"],
@@ -171,7 +171,7 @@ export default function VscanTransmitterTraining() {
               ["Pricing", "Contact us for a tailored quote"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -182,7 +182,7 @@ export default function VscanTransmitterTraining() {
       {/* Terminology Callout */}
       <section className="bg-accent/5 border-y border-accent/20 py-10">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why We Say It Differently</p>
+          <p className="eyebrow mb-3">Why We Say It Differently</p>
           <h2 className="text-xl font-black mb-4 text-foreground">Tx & vScan, Not vScan & Tx</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "vScan and transmitter training". We call it Tx & vScan. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the transmitter and rely on passive readings alone.</p>
           <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first and exhaust all transmitter connection opportunities before moving to induction." That is the Transmitter-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
@@ -201,7 +201,7 @@ export default function VscanTransmitterTraining() {
       {/* Theory content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+          <p className="eyebrow mb-3">Course Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Two Days. On Your Ground.</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Theory */}
@@ -324,7 +324,7 @@ export default function VscanTransmitterTraining() {
 
       {/* Course formats */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Formats Available</p>
+        <p className="eyebrow mb-3">Formats Available</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Course Formats</h2>
         <div className="overflow-x-auto rounded-xl border border-border">
           <table className="w-full text-sm">
@@ -365,7 +365,7 @@ export default function VscanTransmitterTraining() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-10">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+              <p className="eyebrow mb-3">Site Requirements</p>
               <h2 className="text-xl font-black mb-6 text-foreground">What You Need to Provide</h2>
               <div className="space-y-3">
                 {[
@@ -390,7 +390,7 @@ export default function VscanTransmitterTraining() {
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+              <p className="eyebrow mb-3">CITB Funding</p>
               <h3 className="text-xl font-black mb-4 text-foreground">CITB Approved Training Organisation</h3>
               <div className="bg-background rounded-xl border border-border p-5">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -420,7 +420,7 @@ export default function VscanTransmitterTraining() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

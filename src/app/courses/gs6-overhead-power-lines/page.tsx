@@ -75,7 +75,7 @@ export default function Gs6OverheadPowerLines() {
             ["Delivery", "In-house, nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -94,7 +94,7 @@ export default function Gs6OverheadPowerLines() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Overhead Line Hazard Training</p>
+            <p className="eyebrow mb-3">Overhead Line Hazard Training</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Understanding the Risk Above the Ground</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -109,7 +109,7 @@ export default function Gs6OverheadPowerLines() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Formats", "Half-day (classroom + assessment) or Full-day (classroom + site practical + assessment)"],
               ["Standards", "GS6 fourth edition and ENATS 43-8"],
@@ -120,7 +120,7 @@ export default function Gs6OverheadPowerLines() {
               ["Pricing", "Contact Sygma for a tailored quotation"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -131,7 +131,7 @@ export default function Gs6OverheadPowerLines() {
       {/* Two formats comparison */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Formats</p>
+          <p className="eyebrow mb-3">Course Formats</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Choose the Format That Fits Your Needs</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-xl border border-border overflow-hidden">
@@ -190,7 +190,7 @@ export default function Gs6OverheadPowerLines() {
 
       {/* Classroom content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Classroom Content</p>
+        <p className="eyebrow mb-3">Classroom Content</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Classroom Element Covers</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The classroom programme is common to both formats. It covers the legislative context, the technical content of GS6 and ENATS 43-8, and the practical control measures required before any work near overhead lines can take place.
@@ -220,7 +220,7 @@ export default function Gs6OverheadPowerLines() {
       {/* Practical site element */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Practical (Full-Day Format)</p>
+          <p className="eyebrow mb-3">Site Practical (Full-Day Format)</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Applying the Theory on Site</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The full-day programme adds a practical element where delegates apply what they have learned in a real or representative outdoor environment. Sygma trainers use a flexible approach, adapting site activities to the location available.
@@ -293,7 +293,7 @@ export default function Gs6OverheadPowerLines() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Assessment</p>
+            <p className="eyebrow mb-3">Assessment</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Written Assessment: 70% Pass Mark</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Both formats conclude with a written assessment. Delegates must achieve a minimum of 70% to receive the certificate of attendance. The assessment is completed at the end of the classroom programme, before the practical element on the full-day course.
@@ -303,7 +303,7 @@ export default function Gs6OverheadPowerLines() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Who Should Attend</p>
+            <p className="eyebrow mb-3">Who Should Attend</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Audience</h2>
             <div className="space-y-2">
               {[
@@ -340,7 +340,7 @@ export default function Gs6OverheadPowerLines() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

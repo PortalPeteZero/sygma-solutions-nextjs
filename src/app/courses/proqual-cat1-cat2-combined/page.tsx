@@ -97,7 +97,7 @@ export default function ProqualCat1Cat2Combined() {
             ["Delivery", "Nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -149,7 +149,7 @@ export default function ProqualCat1Cat2Combined() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT1 and CAT2?</p>
+            <p className="eyebrow mb-3">Why Combine CAT1 and CAT2?</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full ProQual Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -164,7 +164,7 @@ export default function ProqualCat1Cat2Combined() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "2 days (classroom and on-site)"],
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
@@ -177,7 +177,7 @@ export default function ProqualCat1Cat2Combined() {
               ["Pricing", "Contact Sygma for a tailored quote"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default function ProqualCat1Cat2Combined() {
       {/* Day 1 content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day One</p>
+          <p className="eyebrow mb-3">Day One</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Theory Foundation: Legislation, Equipment Science, and Genny-First Practice</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The classroom element covers the complete theoretical foundation required for both qualifications. Delegates work through the underpinning knowledge before the practical site element on day two.
@@ -218,7 +218,7 @@ export default function ProqualCat1Cat2Combined() {
 
       {/* Day 2 content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day Two</p>
+        <p className="eyebrow mb-3">Day Two</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Practical Application and Safe Dig Assessment</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The site element moves delegates from knowledge into application. All site work takes place at the client's premises or a pre-agreed location with suitable underground utilities.
@@ -247,7 +247,7 @@ export default function ProqualCat1Cat2Combined() {
 
       {/* What You Get */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What You Get</p>
+        <p className="eyebrow mb-3">What You Get</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -280,7 +280,7 @@ export default function ProqualCat1Cat2Combined() {
       {/* Site requirements */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+          <p className="eyebrow mb-3">Site Requirements</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Your Site Must Provide</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-xl border border-border p-5 bg-background">
@@ -341,14 +341,14 @@ export default function ProqualCat1Cat2Combined() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+            <p className="eyebrow mb-3">CITB Funding</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Funding Support</h2>
             <p className="text-muted-foreground leading-relaxed">
               Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.
             </p>
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Equipment</p>
+            <p className="eyebrow mb-3">Equipment</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Equipment Provision</h2>
             <p className="text-muted-foreground leading-relaxed">
               Sygma provides Radiodetection CAT4 and Genny4 as standard equipment. If delegates use a different manufacturer's locator or signal generator, they must bring their own equipment at a minimum ratio of one locator per three delegates. Each delegate bringing their own equipment is strongly encouraged as it allows the practical element to be conducted using the tools they will use on site. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.
@@ -499,7 +499,7 @@ export default function ProqualCat1Cat2Combined() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

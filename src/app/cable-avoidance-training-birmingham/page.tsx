@@ -20,7 +20,7 @@ export default function CableAvoidanceBirmingham() {
     <>
       <div className="relative w-full h-96 overflow-hidden bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
         <div className="flex flex-col justify-end p-8 md:p-12 h-full">
-          <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Utility Avoidance</div>
+          <div className="eyebrow text-blue-400 mb-2">Utility Avoidance</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">Cable Avoidance Training Birmingham | Nationwide Delivery, West Midlands Experience</h1>
           <p className="text-lg text-gray-300 max-w-3xl">Sygma Solutions delivers cable avoidance and utility location training at your site in Birmingham and across the West Midlands. With a partner training venue at The Survey School in Worcester and 21 years delivering on sites nationwide, our specialist trainers come to you. No travel costs for your team, no lost site time.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
@@ -47,7 +47,7 @@ export default function CableAvoidanceBirmingham() {
 
       {/* Courses section */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">What We Deliver</p>
+        <p className="eyebrow text-blue-600 mb-3">What We Deliver</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">Courses We Deliver in Birmingham and the West Midlands</h2>
         <p className="text-gray-600 mb-8 max-w-3xl leading-relaxed">We deliver the following courses at your premises across Birmingham, Coventry, Wolverhampton, Solihull, Walsall and the wider West Midlands area. All courses are private, in-house sessions. You choose the date. We bring the equipment and assessors.</p>
         <div className="overflow-x-auto rounded-xl border border-gray-200">
@@ -91,7 +91,7 @@ export default function CableAvoidanceBirmingham() {
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">On-Site Delivery</p>
+          <p className="eyebrow text-blue-600 mb-3">On-Site Delivery</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Why Birmingham Teams Choose On-Site Training</h2>
           <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
             <p>Birmingham has some of the highest infrastructure investment and development activity in the UK. High volumes of utility work, HS2 enabling works and ongoing network upgrades mean the demand for competent, assessed utility location operatives is significant.</p>
@@ -106,7 +106,7 @@ export default function CableAvoidanceBirmingham() {
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Funding</p>
+        <p className="eyebrow text-blue-600 mb-3">Funding</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">CITB Funding for West Midlands Contractors</h2>
         <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
           <p>Sygma Solutions is a CITB Approved Training Organisation. If your business is registered with CITB, you may be able to access funding support towards eligible training costs through the CITB Employer Network model.</p>
@@ -127,7 +127,7 @@ export default function CableAvoidanceBirmingham() {
       {/* FAQs */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Common Questions</p>
+          <p className="eyebrow text-blue-600 mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Questions About Training in Birmingham</h2>
           <div className="space-y-4">
             {[
@@ -147,7 +147,7 @@ export default function CableAvoidanceBirmingham() {
 
       {/* Training in Other Regions */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Other Regions</p>
+        <p className="eyebrow text-blue-600 mb-3">Other Regions</p>
         <h2 className="text-2xl font-black mb-6 text-gray-900">Cable Avoidance Training Across the UK</h2>
         <p className="text-gray-600 mb-6 max-w-3xl leading-relaxed">Sygma delivers on-site cable avoidance and CAT and Genny training UK-wide. See our regional training guides:</p>
         <div className="flex flex-wrap gap-3">

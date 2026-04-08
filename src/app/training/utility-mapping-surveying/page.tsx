@@ -40,7 +40,7 @@ export default function UtilityMappingHub() {
 
       {/* Training Modules Overview */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Training Pathway</p>
+        <p className="eyebrow mb-3">Training Pathway</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Utility Mapping Courses at All Levels</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
@@ -100,7 +100,7 @@ export default function UtilityMappingHub() {
       {/* Why Sygma */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma</p>
+          <p className="eyebrow mb-3">Why Sygma</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Train With Sygma?</h2>
           <div className="grid md:grid-cols-2 gap-5">
             {[

@@ -69,7 +69,7 @@ export default function Cat4HsgAwarenessOnline() {
             ["Certificate", "Certificate of attendance"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -90,7 +90,7 @@ export default function Cat4HsgAwarenessOnline() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">HSG47 Theory Without Stopping Production</p>
+            <p className="eyebrow mb-3">HSG47 Theory Without Stopping Production</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Targeted Awareness Without a Full Day Off Site</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -105,7 +105,7 @@ export default function Cat4HsgAwarenessOnline() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "Half a day (approximately 9:00am to 12:30pm)"],
               ["Format", "Online via Microsoft Teams"],
@@ -117,7 +117,7 @@ export default function Cat4HsgAwarenessOnline() {
               ["Pricing", "Contact Sygma for a quote based on delegate numbers"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -128,7 +128,7 @@ export default function Cat4HsgAwarenessOnline() {
       {/* Course content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Session Content</p>
+          <p className="eyebrow mb-3">Session Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Course Covers</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             Course content is fluid and can be shaped around the specific areas your team most needs to cover. Core topics include:
@@ -210,7 +210,7 @@ export default function Cat4HsgAwarenessOnline() {
 
       {/* Who should attend */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+        <p className="eyebrow mb-3">Audience</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Who Benefits From This Course?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
@@ -233,7 +233,7 @@ export default function Cat4HsgAwarenessOnline() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Technical Requirements</p>
+              <p className="eyebrow mb-3">Technical Requirements</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">What Each Delegate Needs</h2>
               <div className="space-y-3">
                 {[
@@ -251,7 +251,7 @@ export default function Cat4HsgAwarenessOnline() {
               </div>
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What Comes Next</p>
+              <p className="eyebrow mb-3">What Comes Next</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">From Awareness to Full Qualification</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 This online awareness course provides the theoretical grounding that makes in-person training more effective. Delegates who complete this course and go on to attend a full EUS CAT1 programme or CAT and Genny training will arrive with the electromagnetic theory already in place.
@@ -299,7 +299,7 @@ export default function Cat4HsgAwarenessOnline() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

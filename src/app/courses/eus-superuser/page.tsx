@@ -140,7 +140,7 @@ export default function EusSuperuser() {
             ["Prerequisite", "EUSR category EUS CAT1 and EUS CAT2"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -160,7 +160,7 @@ export default function EusSuperuser() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">EUS Super User Cat and Genny Training Course</p>
+            <p className="eyebrow mb-3">EUS Super User Cat and Genny Training Course</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Teaching Others to Locate Underground Services Safely</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -175,7 +175,7 @@ export default function EusSuperuser() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "2 days (classroom and site, flexible approach)"],
               ["Format", "In-house cat and genny training at your site or Sygma's Wigan training centre"],
@@ -188,7 +188,7 @@ export default function EusSuperuser() {
               ["Pricing", "Contact Sygma for a tailored quotation"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -199,7 +199,7 @@ export default function EusSuperuser() {
       {/* Assessments table */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Assessment</p>
+          <p className="eyebrow mb-3">Assessment</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Three Formal Assessments for Cat and Genny Competency</h2>
           <div className="space-y-4">
             {[
@@ -231,7 +231,7 @@ export default function EusSuperuser() {
 
       {/* Classroom content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Classroom Content</p>
+        <p className="eyebrow mb-3">Classroom Content</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Advanced Cat and Genny Theory, Calibration, and Strike Investigation</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The classroom element of this cat and genny training course revisits the theoretical foundations from CAT1 and CAT2 at an advanced level, with additional content around equipment calibration, data analysis, utility strike investigation, and the principles of coaching for safe digging practice.
@@ -261,7 +261,7 @@ export default function EusSuperuser() {
       {/* Site content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Work</p>
+          <p className="eyebrow mb-3">Site Work</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Advanced Cat and Genny Location Practice and Coaching Assessment</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The site element of this training course covers advanced cat and genny location practice, calibration checks, and the coaching assessment. Delegates use cable avoidance tools and signal generators to locate underground services and buried utilities in real conditions. Sygma's trainers use a flexible approach across the two days, spending more time outdoors when site conditions are good.
@@ -310,7 +310,7 @@ export default function EusSuperuser() {
 
       {/* What You Get */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What You Get</p>
+        <p className="eyebrow mb-3">What You Get</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -344,7 +344,7 @@ export default function EusSuperuser() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+            <p className="eyebrow mb-3">Site Requirements</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">What Your Site Must Provide</h2>
             <div className="space-y-2">
               {[
@@ -365,7 +365,7 @@ export default function EusSuperuser() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+            <p className="eyebrow mb-3">CITB Funding</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Funding Support</h2>
             <p className="text-muted-foreground leading-relaxed">
               Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers in construction and civil engineering may be able to access training funding support for cat and genny training course costs through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.
@@ -377,7 +377,7 @@ export default function EusSuperuser() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

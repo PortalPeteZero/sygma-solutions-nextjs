@@ -143,7 +143,7 @@ export default function ProQualCat1() {
             ["Assessment", "Theory paper + hands-on practical"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -551,7 +551,7 @@ export default function ProQualCat1() {
             <p className="text-muted-foreground text-sm leading-relaxed">CITB-registered employers can access funding through the CITB Employer Network. Contact your Employer Network lead to confirm availability before booking.</p>
           </div>
           <div className="md:w-64 bg-white rounded-xl border border-border p-5 text-center">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Need Funding Advice?</p>
+            <p className="eyebrow mb-2">Need Funding Advice?</p>
             <p className="text-sm text-muted-foreground mb-4">We help clients navigate CITB funding enquiries as part of every booking.</p>
             <Link href="/contact#enquiry-form" className="inline-flex items-center px-5 py-2 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
               Ask About Funding

@@ -88,7 +88,7 @@ export default function EusCat12CombinedPage() {
             ["Delivery", "Nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -126,7 +126,7 @@ export default function EusCat12CombinedPage() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT1 and CAT2?</p>
+            <p className="eyebrow mb-3">Why Combine CAT1 and CAT2?</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUS Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>Most organisations that send operatives for CAT1 training will eventually need CAT2 as well. CAT1 covers the detection side: electromagnetic theory, equipment operation, Genny application, and plan interpretation. CAT2 adds the excavation element: the safe dig, the permit to dig, the correct handling of exposed services, and the documented assessment that proves your operatives can work safely in proximity to live utilities.</p>
@@ -135,7 +135,7 @@ export default function EusCat12CombinedPage() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "2 days (classroom and on-site)"],
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
@@ -148,7 +148,7 @@ export default function EusCat12CombinedPage() {
               ["Pricing", "Contact Sygma for a tailored quote"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -158,7 +158,7 @@ export default function EusCat12CombinedPage() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day One</p>
+          <p className="eyebrow mb-3">Day One</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Theory Foundation: Legislation, Equipment Science, and Genny-First Practice</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">The classroom element covers the complete theoretical foundation required for both qualifications.</p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -185,7 +185,7 @@ export default function EusCat12CombinedPage() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day Two</p>
+        <p className="eyebrow mb-3">Day Two</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Practical Application and Safe Dig Assessment</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">The site element moves delegates from knowledge into application. All site work takes place at the client's premises or a pre-agreed location with suitable underground utilities.</p>
         <div className="grid md:grid-cols-2 gap-4">
@@ -211,7 +211,7 @@ export default function EusCat12CombinedPage() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What You Get</p>
+        <p className="eyebrow mb-3">What You Get</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -236,7 +236,7 @@ export default function EusCat12CombinedPage() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+          <p className="eyebrow mb-3">Site Requirements</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Your Site Must Provide</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-xl border border-border p-5 bg-background">
@@ -312,7 +312,7 @@ export default function EusCat12CombinedPage() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

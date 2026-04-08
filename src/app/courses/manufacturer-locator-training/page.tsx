@@ -108,7 +108,7 @@ export default function ManufacturerLocatorTraining() {
             ["Delivery", "In-house, nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -127,7 +127,7 @@ export default function ManufacturerLocatorTraining() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Training for Your Specific Equipment</p>
+            <p className="eyebrow mb-3">Training for Your Specific Equipment</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">When Generic CAT Training Is Not Enough</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -145,7 +145,7 @@ export default function ManufacturerLocatorTraining() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "1 day (09:00 to approximately 15:30, including breaks)"],
               ["Format", "In-house at your site"],
@@ -157,7 +157,7 @@ export default function ManufacturerLocatorTraining() {
               ["Pricing", "Contact Sygma for a tailored quotation"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -168,7 +168,7 @@ export default function ManufacturerLocatorTraining() {
       {/* Theory content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Classroom Content</p>
+          <p className="eyebrow mb-3">Classroom Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Theory Built Around Your Equipment</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The classroom programme covers the electromagnetic theory that underpins how your locator works, the specific controls and modes on your make and model, and the practical knowledge delegates need to use it correctly in the field.
@@ -197,7 +197,7 @@ export default function ManufacturerLocatorTraining() {
 
       {/* Practical content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Practical</p>
+        <p className="eyebrow mb-3">Site Practical</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Hands-On With Your Own Equipment</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The practical element takes place at or near the training room on a representative site with buried metallic utilities present. Delegates work with their own locator throughout, building competence with the kit they will use on site after the course.
@@ -224,7 +224,7 @@ export default function ManufacturerLocatorTraining() {
       {/* Equipment and site requirements */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Requirements</p>
+          <p className="eyebrow mb-3">Requirements</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What You Need to Provide</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -305,7 +305,7 @@ export default function ManufacturerLocatorTraining() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

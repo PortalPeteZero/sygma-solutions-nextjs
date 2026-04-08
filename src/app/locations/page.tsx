@@ -104,11 +104,11 @@ export default function Locations() {
                   <p className="text-slate-700 leading-relaxed mb-4">{loc.desc}</p>
                   <div className="grid md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-slate-200">
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Courses Available</p>
+                      <p className="eyebrow text-blue-600 mb-2">Courses Available</p>
                       <p className="text-sm text-slate-700">{loc.courses}</p>
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Notes</p>
+                      <p className="eyebrow text-blue-600 mb-2">Notes</p>
                       <p className="text-sm text-slate-700">{loc.notes}</p>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function Locations() {
         {/* Regional Training Guides */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">On-Site Training by Region</p>
+            <p className="eyebrow text-blue-600 mb-3">On-Site Training by Region</p>
             <h2 className="text-3xl font-bold mb-4 text-slate-900">Regional Training Guides</h2>
             <p className="text-slate-700 leading-relaxed mb-8">We deliver cable avoidance and utility training at client sites across the UK. These guides cover what we offer in each region, including course availability, travel arrangements, and local client references.</p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -143,7 +143,7 @@ export default function Locations() {
         {/* Course Matrix */}
         <section className="bg-slate-50 py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Quick Reference</p>
+            <p className="eyebrow text-blue-600 mb-3">Quick Reference</p>
             <h2 className="text-3xl font-bold mb-6 text-slate-900">Which Location for Which Course?</h2>
             <div className="overflow-x-auto rounded-lg border border-slate-300">
               <table className="w-full text-sm">

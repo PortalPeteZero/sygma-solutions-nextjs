@@ -228,7 +228,7 @@ export default function UtilityAvoidanceHub() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why This Matters</p>
+            <p className="eyebrow mb-3">Why This Matters</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">
               Most Cable Avoidance Training Teaches Operatives to Turn the Kit On. We Teach Them Why It Works.
             </h2>
@@ -253,7 +253,7 @@ export default function UtilityAvoidanceHub() {
       {/* Course finder table */}
       <section id="course-finder" className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Finder</p>
+          <p className="eyebrow mb-3">Course Finder</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">A Course for Every Role and Qualification Pathway</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The right course depends on the role your operative needs to fill, the qualification body they need to satisfy, and whether you need a short-duration certificate or a nationally recognised qualification.
@@ -289,7 +289,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* Course cards */}
       <section id="course-cards" className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">All Courses</p>
+        <p className="eyebrow mb-3">All Courses</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Our Cable Avoidance Training Courses</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           Each course below has its own dedicated page with full learning outcomes, assessment criteria, agenda, and booking information. All are available as EUS, ProQual, or in-house certificate routes for buried services training and cable detection training needs.
@@ -333,7 +333,7 @@ export default function UtilityAvoidanceHub() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">On-Site Delivery</p>
+              <p className="eyebrow mb-3">On-Site Delivery</p>
               <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">
                 We Train at Your Site, Anywhere in the UK
               </h2>
@@ -373,7 +373,7 @@ export default function UtilityAvoidanceHub() {
       {/* Genny-First methodology */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Genny-First Methodology</p>
+          <p className="eyebrow mb-3">Genny-First Methodology</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">
             Why We Start Every Course with the Genny, Not the CAT
           </h2>
@@ -400,7 +400,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* Core curriculum */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Core Curriculum</p>
+        <p className="eyebrow mb-3">Core Curriculum</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">
           The Core Curriculum Across All Utility Avoidance Courses
         </h2>
@@ -448,7 +448,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* Why Sygma */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma</p>
+        <p className="eyebrow mb-3">Why Sygma</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Train With Sygma</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
@@ -488,7 +488,7 @@ export default function UtilityAvoidanceHub() {
       {/* CITB Funding */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+          <p className="eyebrow mb-3">CITB Funding</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">CITB Funding: What Changed in January 2026</h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -511,7 +511,7 @@ export default function UtilityAvoidanceHub() {
               </div>
             </div>
             <div className="bg-background rounded-xl border border-border p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">CITB at a Glance</p>
+              <p className="eyebrow mb-4">CITB at a Glance</p>
               {[
                 ["ATO Status", "Sygma Solutions is a CITB Approved Training Organisation"],
                 ["CITB Employer Network", "Contact your CITB adviser for eligibility"],
@@ -520,7 +520,7 @@ export default function UtilityAvoidanceHub() {
                 ["Documentation", "Sygma can provide all course docs to support your application"],
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-4 py-2 border-b border-border last:border-0">
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-36 shrink-0">{k}</span>
+                  <span className="eyebrow text-muted-foreground w-36 shrink-0">{k}</span>
                   <span className="text-sm text-foreground">{v}</span>
                 </div>
               ))}
@@ -531,7 +531,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

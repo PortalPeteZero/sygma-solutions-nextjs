@@ -143,7 +143,7 @@ export default function GennyCatTraining() {
             ["Delivery", "At your site, nationwide"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -154,7 +154,7 @@ export default function GennyCatTraining() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why This Course Exists</p>
+            <p className="eyebrow mb-3">Why This Course Exists</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard CAT and Genny Training</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -172,7 +172,7 @@ export default function GennyCatTraining() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Format", "Choice of: 1-day in-house certified, 1-day EUSR CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)"],
               ["Location", "Delivered at your site nationwide | Wigan HQ available as alternative"],
@@ -183,7 +183,7 @@ export default function GennyCatTraining() {
               ["CITB", "CITB Approved Training Organisation"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -194,7 +194,7 @@ export default function GennyCatTraining() {
       {/* Genny & CAT Terminology Callout */}
       <section className="bg-accent/5 border-y border-accent/20 py-10">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why We Say It Differently</p>
+          <p className="eyebrow mb-3">Why We Say It Differently</p>
           <h2 className="text-xl font-black mb-4 text-foreground">Genny & CAT, Not CAT & Genny</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training". We call it Genny & CAT. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive readings alone.</p>
           <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first and exhaust all transmitter connection opportunities before moving to induction." That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
@@ -204,7 +204,7 @@ export default function GennyCatTraining() {
       {/* Why Cable Avoidance Tool Training Matters */}
       <section className="bg-background py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Safety Case</p>
+          <p className="eyebrow mb-3">The Safety Case</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why Cable Avoidance Tool Training Is Not Optional</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
@@ -232,7 +232,7 @@ export default function GennyCatTraining() {
       {/* Theory content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+          <p className="eyebrow mb-3">Course Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Cat and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Theory */}
@@ -359,7 +359,7 @@ export default function GennyCatTraining() {
 
       {/* Course formats */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Formats Available</p>
+        <p className="eyebrow mb-3">Formats Available</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Course Formats</h2>
         <div className="overflow-x-auto rounded-xl border border-border">
           <table className="w-full text-sm">
@@ -403,7 +403,7 @@ export default function GennyCatTraining() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-10">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+              <p className="eyebrow mb-3">Site Requirements</p>
               <h2 className="text-xl font-black mb-6 text-foreground">What You Need to Provide</h2>
               <div className="space-y-3">
                 {[
@@ -428,7 +428,7 @@ export default function GennyCatTraining() {
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+              <p className="eyebrow mb-3">CITB Funding</p>
               <h3 className="text-xl font-black mb-4 text-foreground">CITB Approved Training Organisation</h3>
               <div className="bg-background rounded-xl border border-border p-5">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -483,7 +483,7 @@ export default function GennyCatTraining() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions About CAT and Genny Training</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (
@@ -632,7 +632,7 @@ export default function GennyCatTraining() {
       {/* See It In Action */}
       <section className="bg-muted/20 border-y border-border py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">See It In Action</p>
+          <p className="eyebrow mb-3">See It In Action</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">The Genny First Approach on Site</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
             Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma CAT and Genny training course.

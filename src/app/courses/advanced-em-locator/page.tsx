@@ -103,7 +103,7 @@ export default function AdvancedEmLocator() {
             ["Level 4/5 Learners", "Free of charge"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -126,7 +126,7 @@ export default function AdvancedEmLocator() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What Is Advanced EM Locator Training?</p>
+            <p className="eyebrow mb-3">What Is Advanced EM Locator Training?</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Beyond Standard CAT1 Competency</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -142,7 +142,7 @@ export default function AdvancedEmLocator() {
           </div>
           <div className="space-y-4">
             <div className="bg-muted/30 rounded-xl border border-border p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+              <p className="eyebrow mb-4">Course at a Glance</p>
               {[
                 ["Format", "2 days: 1 day theory + 1 day practical on a live site"],
                 ["Equipment", "Radiodetection RD8100, Vivax VLOC, Leica Ultra"],
@@ -154,7 +154,7 @@ export default function AdvancedEmLocator() {
                 ["Venues", "Sygma HQ Wigan | The Survey School Worcester | Private courses"],
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                  <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                   <span className="text-sm text-foreground text-right">{v}</span>
                 </div>
               ))}
@@ -181,7 +181,7 @@ export default function AdvancedEmLocator() {
       {/* Two-day course content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+          <p className="eyebrow mb-3">Course Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Two Days. One Subject. No Shortcuts.</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -248,7 +248,7 @@ export default function AdvancedEmLocator() {
 
       {/* Who should attend */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+        <p className="eyebrow mb-3">Audience</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Who Should Attend Advanced EM Training?</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           This course is not entry-level. It requires a working knowledge of CAT and Genny cable avoidance tools and is designed for operators who want to move from competent to expert. Delegates learn to use precision locators safely, with accuracy and confidence, following a safe system of work.
@@ -292,7 +292,7 @@ export default function AdvancedEmLocator() {
       {/* Course formats */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Training Formats</p>
+          <p className="eyebrow mb-3">Training Formats</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Available Course Formats</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The right format depends on your team's existing knowledge level and time availability. Not sure which is right? Contact Sygma and we will advise honestly.
@@ -365,7 +365,7 @@ export default function AdvancedEmLocator() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Professional Recognition</p>
+            <p className="eyebrow mb-3">Professional Recognition</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">CICES Competency Mapping: GEUS01 Item E</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -380,7 +380,7 @@ export default function AdvancedEmLocator() {
             </div>
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Pricing</p>
+            <p className="eyebrow mb-3">Pricing</p>
             <h3 className="text-xl font-black mb-4 text-foreground">Course Fees</h3>
             <div className="rounded-xl border border-border overflow-hidden">
               <table className="w-full text-sm">
@@ -423,7 +423,7 @@ export default function AdvancedEmLocator() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

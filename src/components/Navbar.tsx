@@ -37,7 +37,7 @@ const MegaMenuDropdown = memo(function MegaMenuDropdown({
       <div className={`grid gap-6 p-6 ${cols >= 4 ? 'grid-cols-4' : cols === 3 ? 'grid-cols-3' : cols === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
           {menu.children.map((group) => (
             <div key={group.group}>
-              <p className="mb-3 text-xs font-bold uppercase tracking-widest text-accent">
+              <p className="mb-3 eyebrow">
                 {group.group}
               </p>
               <ul className="space-y-1.5">
@@ -249,7 +249,7 @@ export function Navbar() {
                   <div className="space-y-3 pl-3">
                     {menu.children.map((group) => (
                       <div key={group.group}>
-                        <p className="mb-2 text-xs font-bold uppercase tracking-widest text-accent">{group.group}</p>
+                        <p className="mb-2 eyebrow">{group.group}</p>
                         <div className="space-y-0.5">
                           {group.items.map((item) => (
                             <Link

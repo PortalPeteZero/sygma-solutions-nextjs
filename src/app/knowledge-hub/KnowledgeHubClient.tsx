@@ -80,7 +80,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
                 </Link>
               )}
               <div className="p-6 flex flex-col flex-1">
-                <div className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
+                <div className="eyebrow mb-3">
                   {item.category}
                 </div>
                 <h3 className="font-black text-foreground mb-3 leading-snug">

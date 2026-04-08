@@ -20,7 +20,7 @@ export default function CableAvoidanceScotland() {
     <>
       <div className="relative w-full h-96 overflow-hidden bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
         <div className="flex flex-col justify-end p-8 md:p-12 h-full">
-          <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Utility Avoidance</div>
+          <div className="eyebrow text-blue-400 mb-2">Utility Avoidance</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">Cable Avoidance Training Scotland | Nationwide Delivery, Scottish Experience</h1>
           <p className="text-lg text-gray-300 max-w-3xl">Sygma Solutions delivers cable avoidance and utility location training at your site across Scotland, including Edinburgh, Glasgow and the Central Belt. With 21 years delivering on infrastructure, utilities and construction sites nationwide, our specialist trainers come to you. No travel costs for your team, no lost site time.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
@@ -47,7 +47,7 @@ export default function CableAvoidanceScotland() {
 
       {/* Courses section */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">What We Deliver</p>
+        <p className="eyebrow text-blue-600 mb-3">What We Deliver</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">Courses We Deliver Across Scotland</h2>
         <p className="text-gray-600 mb-8 max-w-3xl leading-relaxed">We deliver the following courses at your premises across Scotland, including Edinburgh, Glasgow, Aberdeen, Dundee and the Central Belt. All courses are private, in-house sessions. You choose the date. We bring the equipment and assessors.</p>
         <div className="overflow-x-auto rounded-xl border border-gray-200">
@@ -91,7 +91,7 @@ export default function CableAvoidanceScotland() {
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">On-Site Delivery</p>
+          <p className="eyebrow text-blue-600 mb-3">On-Site Delivery</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Why Scottish Teams Choose On-Site Training</h2>
           <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
             <p>Scotland has significant and sustained infrastructure investment, from water network upgrades and energy distribution to road and rail schemes across the Central Belt and beyond. The demand for assessed, competent utility location operatives is as pressing in Scotland as anywhere in the UK.</p>
@@ -106,7 +106,7 @@ export default function CableAvoidanceScotland() {
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Funding</p>
+        <p className="eyebrow text-blue-600 mb-3">Funding</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">CITB Funding for Scottish Contractors</h2>
         <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
           <p>Sygma Solutions is a CITB Approved Training Organisation. If your business is registered with CITB, you may be able to access funding support towards eligible training costs through the CITB Employer Network model.</p>
@@ -127,7 +127,7 @@ export default function CableAvoidanceScotland() {
       {/* FAQs */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Common Questions</p>
+          <p className="eyebrow text-blue-600 mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Questions About Training in Scotland</h2>
           <div className="space-y-4">
             {[

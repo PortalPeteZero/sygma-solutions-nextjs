@@ -20,7 +20,7 @@ export default function CableAvoidanceLondon() {
     <>
       <div className="relative w-full h-96 overflow-hidden bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
         <div className="flex flex-col justify-end p-8 md:p-12 h-full">
-          <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Utility Avoidance</div>
+          <div className="eyebrow text-blue-400 mb-2">Utility Avoidance</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">Cable Avoidance Training London | Nationwide Delivery, London Experienced</h1>
           <p className="text-lg text-gray-300 max-w-3xl">Sygma Solutions delivers cable avoidance training and practical CAT and Genny equipment instruction at your site in London and across the South East. With 21 years delivering on capital projects, infrastructure sites and contractor premises nationwide, our specialist trainers come to you. Choose full day or half day training to suit your schedule. No travel costs for your team, no lost site time.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
@@ -47,7 +47,7 @@ export default function CableAvoidanceLondon() {
 
       {/* Courses section */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">What We Deliver</p>
+        <p className="eyebrow text-blue-600 mb-3">What We Deliver</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">Courses We Deliver in London and the South East</h2>
         <p className="text-gray-600 mb-8 max-w-3xl leading-relaxed">We deliver the following genny training courses and cable avoidance instruction at your premises across London, the M25 corridor and the wider South East. All courses are private, in-house sessions delivered with hands-on practical training using genuine CAT and Genny equipment. You choose the date. We bring the cable avoidance tools, signal generators and assessors. Each course teaches your operatives to correctly operate underground service detection equipment in real site conditions.</p>
         <div className="overflow-x-auto rounded-xl border border-gray-200">
@@ -92,7 +92,7 @@ export default function CableAvoidanceLondon() {
       {/* Why on-site */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">On-Site Delivery</p>
+          <p className="eyebrow text-blue-600 mb-3">On-Site Delivery</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Why London Teams Choose On-Site Training</h2>
           <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
             <p>London has the most complex underground utility infrastructure in the UK. The sheer density of buried services beneath every street, combined with ongoing capital investment in construction projects across the city, means the consequences of a utility strike are severe and the demand for properly competent operatives and trained cable avoidance operators is constant. Locating underground services safely is non-negotiable on any London construction site.</p>
@@ -107,7 +107,7 @@ export default function CableAvoidanceLondon() {
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Funding</p>
+        <p className="eyebrow text-blue-600 mb-3">Funding</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-gray-900">CITB Funding for Cable Avoidance Training in London</h2>
         <div className="space-y-4 text-gray-600 leading-relaxed max-w-3xl">
           <p>Sygma Solutions is a CITB Approved Training Organisation. If your construction business is registered with CITB, you may be able to access funding support towards eligible cable avoidance training and genny training course costs through the CITB Employer Network model.</p>
@@ -118,7 +118,7 @@ export default function CableAvoidanceLondon() {
       {/* FAQs */}
       <section className="bg-gray-50 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Common Questions</p>
+          <p className="eyebrow text-blue-600 mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-gray-900">Questions About CAT and Genny Training in London</h2>
           <div className="space-y-4">
             {[
@@ -140,7 +140,7 @@ export default function CableAvoidanceLondon() {
 
       {/* Training in Other Regions */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">Other Regions</p>
+        <p className="eyebrow text-blue-600 mb-3">Other Regions</p>
         <h2 className="text-2xl font-black mb-6 text-gray-900">Cable Avoidance Training Across the UK</h2>
         <p className="text-gray-600 mb-6 max-w-3xl leading-relaxed">Sygma delivers on-site cable avoidance and CAT and Genny training UK-wide. See our regional training guides:</p>
         <div className="flex flex-wrap gap-3">

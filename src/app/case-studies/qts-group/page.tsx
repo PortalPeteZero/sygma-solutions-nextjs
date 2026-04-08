@@ -40,7 +40,7 @@ export default function CaseStudyQts() {
     <>
       <div className="relative w-full h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 flex flex-col justify-end p-8 md:p-12">
-          <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Case Study</div>
+          <div className="eyebrow text-blue-400 mb-2">Case Study</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">QTS Group: CAT4, Surface Laid Cables and ZSI Super User Training</h1>
           <p className="text-lg text-gray-300 max-w-3xl">How Sygma designed a rail-specific CAT4 programme incorporating QTS's own toolbox talk materials, a specialist surface laid cables module, and ZSI Super User Coach delivery.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
@@ -65,7 +65,7 @@ export default function CaseStudyQts() {
               { label: "Key elements", value: "Surface laid cable risks, QTS toolbox talk integration, ZSI procedures, MCQ assessment with 70% pass mark" },
             ].map((item) => (
               <div key={item.label} className="rounded-lg border border-gray-200 bg-white p-4">
-                <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600">{item.label}</p>
+                <p className="mb-1 eyebrow text-blue-600">{item.label}</p>
                 <p className="text-sm font-medium text-gray-900">{item.value}</p>
               </div>
             ))}
@@ -81,7 +81,7 @@ export default function CaseStudyQts() {
       {/* The Brief */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">The Brief</p>
+          <p className="mb-3 eyebrow text-blue-600">The Brief</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-gray-900">The Brief from QTS Group</h2>
           <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>QTS Group is a major rail infrastructure contractor operating across the UK. Like all rail contractors working on or near live infrastructure, QTS operatives work in an environment where buried utilities and surface laid cables are a constant presence, often in conditions that are very different from standard civil engineering or construction sites.</p>
@@ -94,7 +94,7 @@ export default function CaseStudyQts() {
       {/* What Sygma Designed */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">What Sygma Designed</p>
+          <p className="mb-3 eyebrow text-blue-600">What Sygma Designed</p>
           <h2 className="mb-4 text-3xl font-black tracking-tight text-gray-900">What Sygma Designed</h2>
           <p className="mb-4 text-gray-600 leading-relaxed">Sygma Solutions designed a 1-day bespoke programme for QTS combining the full CAT4 and Genny4 operational training with a specialist surface laid cables module. The programme runs across classroom and site practical sessions and includes a written assessment with a minimum pass mark of 70 per cent.</p>
           <p className="mb-8 text-gray-600 leading-relaxed">Separately, Sygma delivered ZSI Super User Coach training for QTS's internal ZSI champions, ensuring QTS has the capability to administer, configure, and support the ZSI system internally, and to coach operatives in correct ZSI procedures.</p>
@@ -119,7 +119,7 @@ export default function CaseStudyQts() {
           </div>
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
-            <p className="mb-2 text-xs font-bold uppercase tracking-widest text-blue-600">ZSI Super User Coach Delivery</p>
+            <p className="mb-2 eyebrow text-blue-600">ZSI Super User Coach Delivery</p>
             <p className="text-sm text-gray-700 leading-relaxed">Sygma also delivered ZSI Super User Coach training for QTS's internal champions. This component covered ZSI system administration and configuration, ZoneSafe clampon golden rules for operatives, the Super User Coach role in supporting operatives and reporting faults, record keeping and fleet audit requirements, and how to brief and re-brief operatives on ZSI procedures.</p>
             <p className="mt-3 text-sm text-gray-700 leading-relaxed">Super User Coaches are the internal backbone of a ZSI deployment. Without trained coaches who understand the system deeply enough to support, troubleshoot, and audit it, ZSI systems underperform and the safety benefits are not fully realised.</p>
           </div>
@@ -140,7 +140,7 @@ export default function CaseStudyQts() {
       {/* How it works */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">How It Works</p>
+          <p className="mb-3 eyebrow text-blue-600">How It Works</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-gray-900">How It Works in Practice</h2>
           <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>The surface laid cables course is delivered across one day, typically starting at 9:00 am and finishing at approximately 3:30 pm. Course timings remain fluid based on delegate group needs and site access conditions.</p>
@@ -166,7 +166,7 @@ export default function CaseStudyQts() {
       {/* Outcomes */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">Outcomes</p>
+          <p className="mb-3 eyebrow text-blue-600">Outcomes</p>
           <h2 className="mb-8 text-3xl font-black tracking-tight text-gray-900">Key Outcomes for QTS Group</h2>
           <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
             <table className="w-full text-sm">

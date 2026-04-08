@@ -136,7 +136,7 @@ export default function OnlineLevel5Diploma() {
             ['Pricing', 'Fixed (contact us)'],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -173,7 +173,7 @@ export default function OnlineLevel5Diploma() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Who This Is For</p>
+            <p className="eyebrow mb-3">Who This Is For</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">This Course Is for You If...</h2>
             <div className="space-y-4">
               {[
@@ -190,7 +190,7 @@ export default function OnlineLevel5Diploma() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Typical Candidates</p>
+            <p className="eyebrow mb-4">Typical Candidates</p>
             <div className="space-y-2">
               {[
                 'Experienced utility surveyors with several years of professional practice',
@@ -211,7 +211,7 @@ export default function OnlineLevel5Diploma() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Qualification Content</p>
+          <p className="eyebrow mb-3">Qualification Content</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What the Level 5 Covers</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mb-8">
             <p>
@@ -280,7 +280,7 @@ export default function OnlineLevel5Diploma() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Online Delivery</p>
+        <p className="eyebrow mb-3">Online Delivery</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">How the Online Route Works</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
           The online route allows you to work through the Level 5 Diploma at your own pace, using your existing professional experience as the foundation for your evidence portfolio. You are supported throughout by a Sygma assessor via MS Teams.
@@ -381,7 +381,7 @@ export default function OnlineLevel5Diploma() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Choosing Your Route</p>
+          <p className="eyebrow mb-3">Choosing Your Route</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Online Route or Fast-Track In-Person?</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
             The Level 5 Diploma is available via two routes. The online route is typically well-suited to experienced practitioners who can draw on substantial existing workplace evidence:
@@ -436,7 +436,7 @@ export default function OnlineLevel5Diploma() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Our Approach</p>
+          <p className="eyebrow mb-3">Our Approach</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Study With Sygma?</h2>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
@@ -482,7 +482,7 @@ export default function OnlineLevel5Diploma() {
 
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Pathway</p>
+          <p className="eyebrow mb-3">Pathway</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Where Level 5 Sits in the Pathway</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
             The Level 5 Diploma is the fourth level in the ProQual utility mapping and surveying qualification pathway. Sygma offers every level from Level 3 to Level 6 within the same pathway, with the same assessors and the same fixed pricing model.
@@ -576,7 +576,7 @@ export default function OnlineLevel5Diploma() {
       </div>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Sygma</p>
+        <p className="eyebrow mb-3">Why Sygma</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Why Study With Sygma?</h2>
         <div className="grid md:grid-cols-2 gap-5">
           {[
@@ -640,7 +640,7 @@ export default function OnlineLevel5Diploma() {
       </section>
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Courses</p>
+        <p className="eyebrow mb-3">Related Courses</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Other Qualifications in the Pathway</h2>
         <div className="grid md:grid-cols-3 gap-5">
           {[

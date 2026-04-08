@@ -37,7 +37,7 @@ export default function CaseStudySevernTrent() {
     <>
       <div className="relative w-full h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 flex flex-col justify-end p-8 md:p-12">
-          <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Case Study</div>
+          <div className="eyebrow text-blue-400 mb-2">Case Study</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">Severn Trent Water: 2-Day Bespoke Manager Training</h1>
           <p className="text-lg text-gray-300 max-w-3xl">How Sygma designed and delivered a 2-day management training and assessment programme built around Severn Trent's own policies and procedures.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
@@ -62,7 +62,7 @@ export default function CaseStudySevernTrent() {
               { label: "Key elements", value: "Severn Trent-specific policies, strike investigation, USAG form, CAT Manager data analysis" },
             ].map((item) => (
               <div key={item.label} className="rounded-lg border border-gray-200 bg-white p-4">
-                <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600">{item.label}</p>
+                <p className="mb-1 eyebrow text-blue-600">{item.label}</p>
                 <p className="text-sm font-medium text-gray-900">{item.value}</p>
               </div>
             ))}
@@ -78,7 +78,7 @@ export default function CaseStudySevernTrent() {
       {/* The Brief */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">The Brief</p>
+          <p className="mb-3 eyebrow text-blue-600">The Brief</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-gray-900">The Brief from Severn Trent Water</h2>
           <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>Severn Trent Water is one of the UK's largest water and wastewater companies, responsible for a vast network of buried infrastructure across the Midlands and beyond. With contractors and internal teams regularly working in proximity to these assets, utility avoidance at the management level is not just a training requirement. It is a critical operational and legal responsibility.</p>
@@ -91,7 +91,7 @@ export default function CaseStudySevernTrent() {
       {/* What Sygma Designed */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">What Sygma Designed</p>
+          <p className="mb-3 eyebrow text-blue-600">What Sygma Designed</p>
           <h2 className="mb-4 text-3xl font-black tracking-tight text-gray-900">What Sygma Designed</h2>
           <p className="mb-4 text-gray-600 leading-relaxed">Sygma Solutions worked with Severn Trent's H&S and L&D teams to design a 2-day manager training and assessment programme. The programme uses a flexible classroom and practical split: the balance of time spent in each environment is adapted based on the delegate group and the site conditions available on the delivery dates.</p>
           <p className="mb-8 text-gray-600 leading-relaxed">Across the two days, managers progress through Severn Trent-specific content, practical review sessions, and structured assessment activities that produce documented competency evidence.</p>
@@ -135,7 +135,7 @@ export default function CaseStudySevernTrent() {
       {/* How it works */}
       <section className="py-16">
         <div className="container mx-auto max-w-3xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">How It Works</p>
+          <p className="mb-3 eyebrow text-blue-600">How It Works</p>
           <h2 className="mb-6 text-3xl font-black tracking-tight text-gray-900">How It Works in Practice</h2>
           <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>The flexible classroom and practical split means the programme adapts to what is available on the delivery dates. Where a suitable practical site or training yard is accessible, more time is allocated to practical assessment. Where classroom delivery is the only option, the balance shifts accordingly, without losing the assessment rigour.</p>
@@ -161,7 +161,7 @@ export default function CaseStudySevernTrent() {
       {/* Outcomes */}
       <section className="border-t border-gray-200 bg-gray-50 py-16">
         <div className="container mx-auto max-w-4xl px-4">
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-600">Outcomes</p>
+          <p className="mb-3 eyebrow text-blue-600">Outcomes</p>
           <h2 className="mb-8 text-3xl font-black tracking-tight text-gray-900">Key Outcomes for Severn Trent Water</h2>
           <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
             <table className="w-full text-sm">

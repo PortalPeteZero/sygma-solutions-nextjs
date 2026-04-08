@@ -53,7 +53,7 @@ export default function Pas128Surveyor() {
             ["Delivery", "In-house or open courses"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -102,7 +102,7 @@ export default function Pas128Surveyor() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Five-Day Programme</p>
+            <p className="eyebrow mb-3">The Five-Day Programme</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Intensive Training From PAS128 Theory Through to Practical Surveying</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>The 5 Day PAS128 Surveyor Course is the comprehensive entry point to professional utility surveying. In five intensive days, delegates progress from PAS128 theory (types D, C and B, detection methods, and deliverables) through advanced EM locating techniques to GPR theory and practical operation, all completed with a written knowledge exam and individual practical assessments on real buried services.</p>
@@ -111,7 +111,7 @@ export default function Pas128Surveyor() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">What the Course Covers</p>
+            <p className="eyebrow mb-4">What the Course Covers</p>
             {[
               ["Day 1", "PAS128 standard and types D, C, B. Site reconnaissance (visual survey). Plans and preparation."],
               ["Day 2", "EM locating theory. Equipment operation. Introduction to practical site work."],

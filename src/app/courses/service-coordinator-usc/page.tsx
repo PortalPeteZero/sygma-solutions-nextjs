@@ -74,7 +74,7 @@ export default function ServiceCoordinatorUsc() {
             ["Delivery", "In-house, nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -93,7 +93,7 @@ export default function ServiceCoordinatorUsc() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What Is the USC Role?</p>
+            <p className="eyebrow mb-3">What Is the USC Role?</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">An Appointment, Not a Qualification</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -108,7 +108,7 @@ export default function ServiceCoordinatorUsc() {
             </div>
           </div>
           <div className="bg-amber-50 dark:bg-amber-950/20 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Important</p>
+            <p className="eyebrow mb-3">Important</p>
             <p className="text-sm font-bold text-foreground mb-3">The USC is an appointment, not a qualification.</p>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
               Your company appoints the USC. Sygma trains them to carry out that role correctly. Completing the USC course does not register your delegate on the EUSR or any other qualification register (it trains the person your organisation has chosen to fill the role).
@@ -123,7 +123,7 @@ export default function ServiceCoordinatorUsc() {
       {/* Two formats */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Course Formats</p>
+          <p className="eyebrow mb-3">Course Formats</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Two Ways to Deliver the USC Training</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-xl border border-border overflow-hidden">
@@ -181,7 +181,7 @@ export default function ServiceCoordinatorUsc() {
 
       {/* 1-day content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">1-Day Standalone Content</p>
+        <p className="eyebrow mb-3">1-Day Standalone Content</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Standalone USC Day Covers</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The 1-day standalone course focuses on the USC-specific content. The EUS CAT1 theory is not repeated. Both a classroom session and a short site practical are included.
@@ -289,7 +289,7 @@ export default function ServiceCoordinatorUsc() {
       {/* Who should attend */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Audience</p>
+          <p className="eyebrow mb-3">Audience</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Who Should Attend</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -330,7 +330,7 @@ export default function ServiceCoordinatorUsc() {
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+        <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (

@@ -85,7 +85,7 @@ export function Footer() {
             <Link href="/courses" className="inline-block mb-4 text-sm font-bold text-primary hover:underline">
               Browse All Training Courses &rarr;
             </Link>
-            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-accent">
+            <p className="mb-4 eyebrow">
               Utility Avoidance
             </p>
             <ul className="space-y-2 text-sm">
@@ -106,7 +106,7 @@ export function Footer() {
 
           {/* Utility Mapping column */}
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-accent">
+            <p className="mb-4 eyebrow">
               Utility Mapping
             </p>
             <ul className="space-y-2 text-sm">
@@ -127,7 +127,7 @@ export function Footer() {
 
           {/* Company column */}
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-accent">Company</p>
+            <p className="mb-4 eyebrow">Company</p>
             <ul className="space-y-2 text-sm">
               {companyLinks.map((link) => (
                 <li key={link.href}>

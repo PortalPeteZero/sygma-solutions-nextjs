@@ -91,7 +91,7 @@ export default function EusCat12UscCombined() {
             ["Delivery", "Nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
+              <p className="eyebrow mb-1">{label}</p>
               <p className="text-sm font-semibold text-foreground">{value}</p>
             </div>
           ))}
@@ -145,7 +145,7 @@ export default function EusCat12UscCombined() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">The Most Complete Single Programme</p>
+            <p className="eyebrow mb-3">The Most Complete Single Programme</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">CAT and Genny Training Course: CAT1, CAT2 and Service Coordination in One Programme</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -160,7 +160,7 @@ export default function EusCat12UscCombined() {
             </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">Course at a Glance</p>
+            <p className="eyebrow mb-4">Course at a Glance</p>
             {[
               ["Duration", "2 days (classroom and on-site)"],
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
@@ -173,7 +173,7 @@ export default function EusCat12UscCombined() {
               ["Pricing", "Contact Sygma for a tailored quotation"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-4 py-2 border-b border-border last:border-0">
-                <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground w-28 shrink-0">{k}</span>
+                <span className="eyebrow text-muted-foreground w-28 shrink-0">{k}</span>
                 <span className="text-sm text-foreground text-right">{v}</span>
               </div>
             ))}
@@ -184,7 +184,7 @@ export default function EusCat12UscCombined() {
       {/* How We Deliver This Training */}
       <section className="bg-muted/20 border-y border-border py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">How We Deliver</p>
+          <p className="eyebrow mb-3">How We Deliver</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">How Sygma Delivers This CAT and Genny Training Course</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl">
             <p>
@@ -203,7 +203,7 @@ export default function EusCat12UscCombined() {
       {/* CAT1 and CAT2 content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">EUS CAT1 and CAT2 Elements</p>
+          <p className="eyebrow mb-3">EUS CAT1 and CAT2 Elements</p>
           <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">CAT and Genny Training Content: Full EUS CAT1 and CAT2 Course Programme</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
             The classroom and site elements of this CAT and Genny training course deliver the complete EUS CAT1 and CAT2 content. Both days of training include USC content integrated alongside the core cable avoidance and safe dig curriculum. All locator and signal generator training follows Sygma's Genny-First methodology.
@@ -256,7 +256,7 @@ export default function EusCat12UscCombined() {
 
       {/* USC content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Underground Service Coordinator Element</p>
+        <p className="eyebrow mb-3">Underground Service Coordinator Element</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Underground Service Coordinator Training: Roles, Responsibilities and PAS128 Drawings</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
           The Underground Service Coordinator element is integrated throughout the programme and tailored specifically to your organisation's documentation, utilities, and permit systems. The training is built around your specific permits to dig, utility drawings, PAS128 survey formats, and health and safety requirements, which Sygma requires in advance of the course so that the practical training is directly relevant to your team's day-to-day site responsibilities.
@@ -289,7 +289,7 @@ export default function EusCat12UscCombined() {
 
       {/* What You Get */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">What You Get</p>
+        <p className="eyebrow mb-3">What You Get</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive from This CAT and Genny Training Course</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -324,7 +324,7 @@ export default function EusCat12UscCombined() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Documentation</p>
+              <p className="eyebrow mb-3">Documentation</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">What Your Organisation Must Provide Before CAT and Genny Training</h2>
               <div className="space-y-3">
                 {[
@@ -343,7 +343,7 @@ export default function EusCat12UscCombined() {
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+              <p className="eyebrow mb-3">Site Requirements</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">CAT2 Safe Dig Area</h2>
               <div className="space-y-2 mb-4">
                 <p className="text-sm font-semibold text-foreground">Minimum requirements:</p>
@@ -379,7 +379,7 @@ export default function EusCat12UscCombined() {
 
       {/* CITB */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+        <p className="eyebrow mb-3">CITB Funding</p>
         <h2 className="text-2xl font-black mb-4 text-foreground">CITB Funding for CAT and Genny Training Courses</h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
           Sygma Solutions is a CITB Approved Training Instructor. CITB-registered employers may be able to access training funding support for this CAT and Genny training course through the CITB Employer Network. This applies to all Sygma courses including EUS CAT1, CAT2, and the combined programme with USC content. Contact your CITB adviser directly for current eligibility and funding options.
@@ -436,7 +436,7 @@ export default function EusCat12UscCombined() {
       {/* Why This CAT and Genny Training Matters */}
       <section className="py-14 bg-background border-t border-border">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why It Matters</p>
+          <p className="eyebrow mb-3">Why It Matters</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why This CAT and Genny Training Course Matters</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl">
             <p>
@@ -455,7 +455,7 @@ export default function EusCat12UscCombined() {
       {/* Benefits of CAT and Genny Training */}
       <section className="py-14 bg-muted/20 border-y border-border">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Key Benefits</p>
+          <p className="eyebrow mb-3">Key Benefits</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Benefits of CAT and Genny Training for Your Team</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl">
             <div>
@@ -592,7 +592,7 @@ export default function EusCat12UscCombined() {
       {/* FAQs */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <p className="eyebrow mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map(({ q, a }) => (

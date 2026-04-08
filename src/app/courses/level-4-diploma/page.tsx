@@ -70,7 +70,7 @@ export default function Level4Diploma() {
       />
 
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Specialist Technical Qualification</p>
+        <p className="eyebrow mb-3">Specialist Technical Qualification</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">ProQual Level 4 Diploma in Utility Mapping and Surveying</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">The Level 4 Diploma recognises specialist technical competency in utility mapping and surveying. It is portfolio-based, meaning you evidence your competency through your professional practice, supported by assessor guidance and mentoring.</p>
       </section>
