@@ -4,6 +4,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import KnowledgeHubSidebar from "@/components/KnowledgeHubSidebar";
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Why Connect the Genny First | Training Guide | Sygma',
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
     title: 'Why Connect the Genny First | Training Guide | Sygma',
     description: 'Passive detection alone is not enough to identify buried services. Sygma\'s Genny-First methodology and why it produces measurable improvements in site safety.',
     url: 'https://sygma-solutions.com/knowledge-hub/genny-first-methodology',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

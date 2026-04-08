@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Phone } from 'lucide-react';
 import HeroCarousel from '@/components/HeroCarousel';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
     title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
     description: 'UK specialist in cable avoidance and CAT and Genny training. EUSR CAT1, ProQual, CITB ATO. On-site across the UK.',
     url: 'https://sygma-solutions.com/',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
+    type: 'website',
   },
 };
 

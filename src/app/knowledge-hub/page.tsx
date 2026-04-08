@@ -4,6 +4,7 @@ import Link from "next/link";
 import { knowledgeHubItems } from "@/data/knowledgeHubItems";
 import KnowledgeHubClient from './KnowledgeHubClient';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Utility Training Guides & Articles | Sygma Solutions',
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
     title: 'Utility Training Guides & Articles | Sygma Solutions',
     description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
     url: 'https://sygma-solutions.com/knowledge-hub',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Scotland | Sygma Solutions',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
     title: 'Cable Avoidance Training Scotland | Sygma Solutions',
     description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUS CAT1, ProQual qualifications.',
     url: 'https://sygma-solutions.com/cable-avoidance-training-scotland',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

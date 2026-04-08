@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'QTS Group | Utility Training Case Study | Sygma',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
     title: 'QTS Group | Utility Training Case Study | Sygma',
     description: 'How Sygma designed a rail-specific CAT4 training programme for QTS Group, incorporating surface laid cables and ZSI Super User Coach training.',
     url: 'https://sygma-solutions.com/case-studies/qts-group',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

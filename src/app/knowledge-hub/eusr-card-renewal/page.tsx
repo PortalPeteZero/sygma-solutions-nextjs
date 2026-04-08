@@ -4,6 +4,7 @@ import { articleSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import KnowledgeHubSidebar from "@/components/KnowledgeHubSidebar";
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 const faqs = [
   {
@@ -32,7 +33,8 @@ export const metadata: Metadata = {
     title: 'EUSR Card Renewal Guide | How to Renew | Sygma',
     description: 'Your EUSR card has expired or is about to expire. This guide explains the renewal process, what happens if your card lapses, and how to rebook.',
     url: 'https://sygma-solutions.com/knowledge-hub/eusr-card-renewal',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

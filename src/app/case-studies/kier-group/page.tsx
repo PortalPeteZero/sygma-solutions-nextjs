@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Kier Group | Bespoke Training Case Study | Sygma',
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
     title: 'Kier Group | Bespoke Training Case Study | Sygma',
     description: 'How Sygma built a bespoke utility avoidance training programme around Kier Group\'s systems, policies, and incident data.',
     url: 'https://sygma-solutions.com/case-studies/kier-group',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

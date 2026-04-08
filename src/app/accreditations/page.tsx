@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'CITB Approved, EUSR & ProQual Accredited | Sygma Solutions',
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
     title: 'CITB Approved, EUSR & ProQual Accredited | Sygma Solutions',
     description: 'Sygma is CITB approved, EUSR registered and ProQual accredited.',
     url: 'https://sygma-solutions.com/accreditations',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import UtilityMappingBristolClient from './UtilityMappingBristolClient';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Utility Mapping Training Bristol | Sygma Solutions',
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Utility Mapping Training Bristol | Sygma Solutions',
     description: 'Professional utility mapping and cable detection training courses in Bristol. GPR, CAT, and PAS128 compliant training.',
+    url: 'https://sygma-solutions.com/utility-mapping-training-bristol',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
+    type: 'website',
   },
 };
 

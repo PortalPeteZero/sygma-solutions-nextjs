@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle, ArrowRight } from 'lucide-react';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Bespoke Utility Training Programmes | Sygma Solutions',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     title: 'Bespoke Utility Training Programmes | Sygma Solutions',
     description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide.',
     url: 'https://sygma-solutions.com/bespoke-training',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

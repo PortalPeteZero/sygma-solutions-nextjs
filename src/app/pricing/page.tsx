@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Training Course Prices & Booking | Sygma Solutions',
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
     title: 'Training Course Prices & Booking | Sygma Solutions',
     description: 'Sygma charges one course fee per group, not per person. Travel is included.',
     url: 'https://sygma-solutions.com/pricing',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

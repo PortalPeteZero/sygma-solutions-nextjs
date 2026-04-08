@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'On-Site Competency Assessment | OSCA | Sygma Solutions',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     title: 'On-Site Competency Assessment | OSCA | Sygma Solutions',
     description: 'OSCA provides digital, GPS-stamped on-site competency assessments for utility location operatives.',
     url: 'https://sygma-solutions.com/osca',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

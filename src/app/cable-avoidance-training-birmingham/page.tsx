@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Birmingham | Sygma Solutions',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
     title: 'Cable Avoidance Training Birmingham | Sygma Solutions',
     description: 'Cable avoidance training in Birmingham and the West Midlands. EUSR, ProQual and CAT and Genny courses delivered at your site. Independent specialist.',
     url: 'https://sygma-solutions.com/cable-avoidance-training-birmingham',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

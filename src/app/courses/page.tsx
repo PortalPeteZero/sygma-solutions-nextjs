@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
     title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
     description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist.',
     url: 'https://sygma-solutions.com/courses',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

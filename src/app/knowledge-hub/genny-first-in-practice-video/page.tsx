@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { videoObjectSchema, breadcrumbSchema } from "@/lib/schema";
 import KnowledgeHubSidebar from "@/components/KnowledgeHubSidebar";
 import type { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 const YOUTUBE_ID = "IgxGksU3WQ4";
 
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
     title: 'CAT and Genny Training: The Genny First Approach | Sygma',
     description: 'Watch Sygma\'s CAT and Genny training video: why connecting the signal generator first is the correct approach to underground utility location.',
     url: 'https://sygma-solutions.com/knowledge-hub/genny-first-in-practice-video',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

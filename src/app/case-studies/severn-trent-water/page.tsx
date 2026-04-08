@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Severn Trent | EUS Training Case Study | Sygma',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
     title: 'Severn Trent | EUS Training Case Study | Sygma',
     description: 'How Sygma designed a 2-day bespoke manager training programme for Severn Trent Water built around their policies, procedures, and operational requirements.',
     url: 'https://sygma-solutions.com/case-studies/severn-trent-water',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Morgan Sindall PAS128 Training Case Study | Sygma Solutions',
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
     title: 'Morgan Sindall PAS128 Training Case Study | Sygma Solutions',
     description: 'PAS128 utility survey training case study. How Sygma designed leadership briefings for Morgan Sindall on survey specification, quality levels, and compliance.',
     url: 'https://sygma-solutions.com/case-studies/morgan-sindall',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

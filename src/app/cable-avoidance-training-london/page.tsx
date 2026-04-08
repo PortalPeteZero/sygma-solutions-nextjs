@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training London | CAT and Genny Courses',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
     title: 'Cable Avoidance Training London | CAT and Genny Courses',
     description: 'Cable avoidance training in London. CAT and Genny courses at your site. Half day and full day options. EUSR, ProQual accredited. CITB ATO.',
     url: 'https://sygma-solutions.com/cable-avoidance-training-london',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };

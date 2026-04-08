@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 const courseCards = [
   {
@@ -155,7 +156,8 @@ export const metadata: Metadata = {
     title: 'Cable Location and Avoidance Courses | EUSR | Sygma',
     description: 'HSG47 compliant cable avoidance training from an independent specialist. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Delivered UK-wide.',
     url: 'https://sygma-solutions.com/training/cable-location-avoidance',
-    siteName: 'Sygma Solutions',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
     type: 'website',
   },
 };
