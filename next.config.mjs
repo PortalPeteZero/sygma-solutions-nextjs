@@ -67,6 +67,7 @@ const nextConfig = {
       { source: '/courses/online-utility-mapping-training', destination: '/courses/online-level-3-diploma', permanent: true },
       { source: '/courses/qcf-level-3', destination: '/courses/level-3-certificate', permanent: true },
       { source: '/courses/qcf-level-3-utility-mapping', destination: '/courses/level-3-certificate', permanent: true },
+      { source: '/courses/qcf-level-3-utility-surveyor-qualification', destination: '/courses/level-3-certificate', permanent: true },
       { source: '/courses/qcf-level-5', destination: '/courses/level-5-diploma', permanent: true },
       { source: '/courses/qcf-level-5-utility-mapping', destination: '/courses/level-5-diploma', permanent: true },
       { source: '/courses/mala-gpr-training', destination: '/courses/gpr-training', permanent: true },
@@ -333,7 +334,7 @@ const nextConfig = {
 
       // === PHASE 9.1: COURSE URL VARIANTS (pre-cutover audit + LovableHTML 680-path analysis) ===
       { source: '/courses/cable-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
-      { source: '/courses/gpr-survey-training', destination: '/courses/utility-mapping-surveying', permanent: true },
+      { source: '/courses/gpr-survey-training', destination: '/training/utility-mapping-surveying', permanent: true },
       { source: '/courses/gpr-training-course', destination: '/courses/gpr-training', permanent: true },
       { source: '/courses/level3-certificate', destination: '/courses/level-3-certificate', permanent: true },
       { source: '/courses/mala-core', destination: '/courses/gpr-training', permanent: true },
