@@ -17,7 +17,7 @@ const slides = [
     secondaryCta: { label: "Book a Course", href: "/contact" },
   },
   {
-    image: "Advanced-EM-01",
+    image: "RD_8100_1_aeiaur",
     alt: "Advanced electromagnetic locating equipment used in Sygma utility detection training",
     eyebrow: "Proven Record in Reducing Strikes and Increasing Genny Usage.",
     headline: "We Teach Operatives to Locate Services, Not Just Avoid Them.",

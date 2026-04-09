@@ -28,7 +28,7 @@ export const locationData: LocationPageData = {
   },
   imageStrips: [
     [
-      { src: 'MALA-GPR-12', alt: 'GPR utility survey training South West' },
+      { src: 'GPR_15_cyzrhd', alt: 'GPR utility survey training South West' },
       { src: 'Utility-Mapping-02', alt: 'Utility mapping field work Bristol region' },
       { src: 'MALA-GPR-25', alt: 'Ground penetrating radar practical exercise' },
     ],

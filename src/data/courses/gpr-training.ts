@@ -19,7 +19,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Utility Mapping',
     headline: 'GPR Training for Utility Surveyors: Two Modules, Delivered Separately or Combined',
     sub: 'Module 1: GPR theory and practical operation on site (1 day). Module 2: Advanced data processing and post processing for 3D utility mapping (2 days). Take either module standalone or combine them as a three-day intensive GPR course. Delivered by Sygma\'s team of experienced GPR practitioners.',
-    images: ['MALA-GPR-11', 'MALA-GPR-17', 'MALA-GPR-29'],
+    images: ['MALA-GPR-11', 'GPR_18_lijx63', 'GPR_19_z98jbo'],
     alts: [
       'GPR training practical session - ground penetrating radar equipment',
       'Utility survey training with GPR technology',

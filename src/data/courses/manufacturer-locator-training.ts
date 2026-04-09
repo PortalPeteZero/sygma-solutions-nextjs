@@ -110,7 +110,7 @@ export const courseData: CoursePageData = {
     {
       images: [
         { src: 'CAT4-and-Genny-02', alt: 'Manufacturer locator training - equipment operation' },
-        { src: 'CAT4-and-Genny-19', alt: 'Cable and pipe location practical training' },
+        { src: 'Cat_Genny_19_c9e3jz', alt: 'Cable and pipe location practical training' },
         { src: 'Safe-Dig-03', alt: 'Manufacturer-specific locator competency assessment' },
       ],
       variant: 'grid',

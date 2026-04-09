@@ -30,7 +30,7 @@ const whyPoints = [
 
 const pathways = [
   { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUS accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'CAT4-and-Genny-54' },
-  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'MALA-GPR-08' },
+  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'GPR_11_slv8ob' },
   { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'CAT4-and-Genny-01' },
   { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'Safe-Dig-16' },
 ];

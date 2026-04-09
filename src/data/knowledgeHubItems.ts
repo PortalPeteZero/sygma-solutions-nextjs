@@ -77,7 +77,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.",
     href: "/knowledge-hub/understanding-pas-128",
     type: "article",
-    image: "Utility-Mapping-03",
+    image: "Utility-Mapping-04",
   },
   {
     category: "HSG47",

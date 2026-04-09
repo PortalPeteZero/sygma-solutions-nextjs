@@ -19,7 +19,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Qualifications',
     headline: 'ProQual Level 3 Certificate in Utility Mapping and Surveying',
     sub: 'The nationally recognised, Ofqual-regulated entry qualification for utility surveyors. Full assessor support throughout. Contact us to discuss enrolment and pricing.',
-    images: ['MALA-GPR-01', 'MALA-GPR-03', 'Advanced-EM-01'],
+    images: ['GPR_01_wnqqdp', 'GPR_02_opno5e', 'RD_8100_1_aeiaur'],
     alts: [
       'Advanced electromagnetic locating techniques during ProQual Level 3 training',
       'MALA ground penetrating radar unit used in Level 3 utility mapping coursework',

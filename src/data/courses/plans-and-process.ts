@@ -19,7 +19,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Professional Development',
     headline: 'Plans and Process Training: Read Utility Plans Like an Expert and Work Safely',
     sub: 'One day on-site. Learn to interpret utility plans accurately, understand PAS 128 and HSG47 requirements, and apply this knowledge to real site conditions. For site supervisors, managers, and experienced operatives.',
-    image: 'New-Landscape-09',
+    image: 'New-Landscape-10',
     alt: 'Plans and process training for utility plan interpretation',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
@@ -111,9 +111,9 @@ export const courseData: CoursePageData = {
   photoStrips: [
     {
       images: [
-        { src: 'New-Landscape-09', alt: 'Plans and process training - plan interpretation' },
-        { src: 'New-Landscape-10', alt: 'Site survey and plan verification training' },
-        { src: 'New-Landscape-12', alt: 'Utility plan assessment competency training' },
+        { src: 'New-Landscape-10', alt: 'Plans and process training - plan interpretation' },
+        { src: 'New-Landscape-03', alt: 'Site survey and plan verification training' },
+        { src: 'New-Landscape-06', alt: 'Utility plan assessment competency training' },
       ],
       variant: 'grid',
     },

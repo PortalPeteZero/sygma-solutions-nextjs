@@ -107,17 +107,17 @@ export const courseData: CoursePageData = {
     {
       variant: 'grid',
       images: [
-        { src: 'MALA-GPR-05', alt: 'PAS128 awareness training - practical session' },
+        { src: 'GPR_05_Mala_Compact_mvupzg', alt: 'PAS128 awareness training - practical session' },
         { src: 'CAT4-and-Genny-03', alt: 'PAS128 awareness training - electromagnetic locator practical' },
-        { src: 'MALA-GPR-13', alt: 'PAS128 awareness training - on-site delivery' },
+        { src: 'GPR_16_m2ujzx', alt: 'PAS128 awareness training - on-site delivery' },
       ],
     },
     {
       variant: 'grid',
       images: [
-        { src: 'MALA-GPR-07', alt: 'PAS128 awareness training with GPR equipment' },
+        { src: 'GPR_07_zvhify', alt: 'PAS128 awareness training with GPR equipment' },
         { src: 'MALA-GPR-15', alt: 'Utility survey awareness classroom session' },
-        { src: 'Utility-Mapping-03', alt: 'PAS128 utility mapping demonstration' },
+        { src: 'Utility-Mapping-04', alt: 'PAS128 utility mapping demonstration' },
       ],
     },
     {

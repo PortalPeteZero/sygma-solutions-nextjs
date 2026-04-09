@@ -20,7 +20,7 @@ export const courseData: CoursePageData = {
     headline: 'Online Level 3 Diploma in Utility Mapping and Surveying',
     sub: 'Entry-level RQF qualification delivered entirely online via Microsoft Teams. For operatives who want formal recognition of their utility mapping competency. Self-paced learning with live tutor support sessions throughout. No classroom attendance required.',
     images: [
-      'MALA-GPR-06',
+      'GPR_06_ymxpsk',
       'MALA-GPR-11',
       'Advanced-EM-04',
     ],

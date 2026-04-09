@@ -19,7 +19,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Utility Avoidance',
     headline: 'RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification',
     sub: 'The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included.',
-    image: 'Advanced-EM-07',
+    image: 'RD8100_vLoc_Pro3_2_cbaora',
     alt: 'RQF Level 2 utility location award training with electromagnetic detection equipment',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },

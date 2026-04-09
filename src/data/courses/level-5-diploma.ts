@@ -20,7 +20,7 @@ export const courseData: CoursePageData = {
     headline: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying',
     sub: 'Formal recognition of senior-level competency in utility mapping and surveying. Two routes available: an intensive 5-day in-person fast-track programme with written exam and practical assessments, or a flexible online route with full assessor support via MS Teams. No hidden fees. Contact us to discuss which route suits you best.',
     images: [
-      'MALA-GPR-06',
+      'GPR_06_ymxpsk',
       'MALA-GPR-11',
       'Advanced-EM-04',
     ],

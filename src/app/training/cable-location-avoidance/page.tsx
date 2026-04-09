@@ -76,7 +76,7 @@ const courseCards = [
     desc: "For experienced locators working with Radiodetection RD8200, RD8000, or Vivax equipment. Covers advanced signal interpretation, frequency theory, and problem service strategies.",
     duration: "1-2 Days",
     qualification: "Sygma Advanced EM Certificate",
-    image: "Advanced-EM-07",
+    image: "RD8100_vLoc_Pro3_2_cbaora",
   },
   {
     to: "/courses/rqf-level-2-award",

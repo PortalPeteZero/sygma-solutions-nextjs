@@ -52,7 +52,7 @@ export default function KnowledgeHub() {
           <div className="grid md:grid-cols-3 gap-4">
             <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
             <Image src="Safe-Dig-01" width={1200} height={800} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-            <Image src="MALA-GPR-05" width={1200} height={800} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            <Image src="GPR_05_Mala_Compact_mvupzg" width={1200} height={800} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           </div>
         </div>
       </section>

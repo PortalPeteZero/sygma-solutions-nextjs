@@ -20,7 +20,7 @@ export const courseData: CoursePageData = {
     headline: 'ProQual RQF Level 6 Diploma in Utility Mapping and Surveying Management',
     sub: 'Formal recognition of management-level competency in utility mapping operations. For senior managers and programme leads responsible for planning, resourcing, and managing utility surveying at a strategic level. Portfolio-based assessment with full assessor support throughout.',
     images: [
-      'MALA-GPR-06',
+      'GPR_06_ymxpsk',
       'MALA-GPR-11',
       'Advanced-EM-04',
     ],

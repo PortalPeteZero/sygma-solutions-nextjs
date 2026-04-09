@@ -29,7 +29,7 @@ export const locationData: LocationPageData = {
   imageStrips: [
     [
       { src: 'CAT4-and-Genny-45', alt: 'Cable avoidance training in the Midlands' },
-      { src: 'MALA-GPR-10', alt: 'GPR survey training at Worcester facility' },
+      { src: 'GPR_14_ox4l10', alt: 'GPR survey training at Worcester facility' },
       { src: 'CAT4-and-Genny-63', alt: 'Utility detection practical exercise Birmingham' },
     ],
     [

@@ -20,7 +20,7 @@ export const courseData: CoursePageData = {
     headline: 'ProQual RQF Level 4 Diploma in Utility Mapping and Surveying',
     sub: 'Formal recognition of specialist technical competency in utility mapping and surveying. Work at your own pace with full assessor support and mentoring throughout. Portfolio-based assessment drawing on your existing professional experience. No written exam. No fixed time limits. Contact us to discuss enrolment and pricing.',
     images: [
-      'MALA-GPR-06',
+      'GPR_06_ymxpsk',
       'MALA-GPR-11',
       'Advanced-EM-04',
     ],

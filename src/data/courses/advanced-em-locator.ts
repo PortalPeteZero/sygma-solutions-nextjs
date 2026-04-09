@@ -22,7 +22,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Utility Avoidance',
     headline: 'Advanced EM Locator Training: High-End Electromagnetic Location for Specialists',
     sub: 'Advanced training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot.',
-    image: 'Advanced-EM-07',
+    image: 'RD8100_vLoc_Pro3_2_cbaora',
     alt: 'Advanced EM locator training with precision equipment',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },

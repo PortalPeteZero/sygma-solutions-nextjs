@@ -120,7 +120,7 @@ export const courseData: CoursePageData = {
       images: [
         { src: 'New-Landscape-04', alt: 'GS6 overhead power lines safety training' },
         { src: 'New-Landscape-07', alt: 'Overhead lines risk assessment training' },
-        { src: 'New-Landscape-11', alt: 'Safe working near overhead power lines' },
+        { src: 'New-Landscape-07', alt: 'Safe working near overhead power lines' },
       ],
       variant: 'grid',
     },

@@ -19,7 +19,7 @@ export const courseData: CoursePageData = {
     eyebrow: 'Utility Mapping',
     headline: '5-Day PAS128 Surveyor Course: Intensive Practical and Theoretical Training',
     sub: 'The UK\'s most comprehensive PAS128 surveyor training course. Five days covering PAS128 types D, C and B, advanced EM locating, GPR theory and practical, written exam and individual practical assessments on real buried services. Delivered by working surveyors, not generalists.',
-    images: ['MALA-GPR-05', 'MALA-GPR-14', 'Advanced-EM-04'],
+    images: ['GPR_05_Mala_Compact_mvupzg', 'GPR_17_jq0zfl', 'Advanced-EM-04'],
     alts: [
       '5 Day PAS128 surveyor course - practical session',
       'PAS128 surveyor training with GPR equipment',
@@ -58,9 +58,9 @@ export const courseData: CoursePageData = {
     {
       variant: 'grid',
       images: [
-        { src: 'MALA-GPR-06', alt: '5 Day PAS128 surveyor course - practical session' },
-        { src: 'Advanced-EM-08', alt: 'PAS128 surveyor training - hands-on assessment' },
-        { src: 'MALA-GPR-32', alt: '5 Day PAS128 surveyor course - electromagnetic survey practical' },
+        { src: 'GPR_06_ymxpsk', alt: '5 Day PAS128 surveyor course - practical session' },
+        { src: 'RD_8100_1_aeiaur', alt: 'PAS128 surveyor training - hands-on assessment' },
+        { src: 'GPR_20_mj6no5', alt: '5 Day PAS128 surveyor course - electromagnetic survey practical' },
       ],
     },
   ],
