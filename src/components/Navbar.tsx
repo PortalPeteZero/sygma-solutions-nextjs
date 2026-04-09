@@ -172,6 +172,16 @@ export function Navbar() {
                     {menu.label}
                     {menu.children && <ChevronDown className={`w-4 h-4 transition-transform ${openMenu === menu.label ? 'rotate-180' : ''}`} />}
                   </button>
+
+                  <MegaMenuDropdown
+                    menu={menu}
+                    open={openMenu === menu.label}
+                    onClose={() => setOpenMenu(null)}
+                    onMouseEnter={() => {
+                      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+                    }}
+                    onMouseLeave={handleMouseLeave}
+                  />
                 </div>
               ))}
 
@@ -204,19 +214,7 @@ export function Navbar() {
             </button>
         </div>
 
-        {/* Mega menu dropdowns (desktop) */}
-        {mainNav.map((menu) => (
-          <MegaMenuDropdown
-            key={menu.label}
-            menu={menu}
-            open={openMenu === menu.label}
-            onClose={() => setOpenMenu(null)}
-            onMouseEnter={() => {
-              if (timeoutRef.current) clearTimeout(timeoutRef.current)
-            }}
-            onMouseLeave={handleMouseLeave}
-          />
-        ))}
+        {/* Mega menu dropdowns now rendered inside each nav item's relative div above */}
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
