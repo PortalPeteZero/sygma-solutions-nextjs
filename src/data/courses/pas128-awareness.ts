@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'pas128-awareness',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'PAS 128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, drawings, and specifications.',
       url: 'https://sygma-solutions.com/courses/pas128-awareness',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
@@ -20,17 +23,26 @@ export const courseData: CoursePageData = {
     headline: 'PAS128 Awareness Training: Understand Utility Survey Drawings and the Survey Process',
     sub: 'PAS128 is the British Standard for utility surveys and mapping. If your team works near buried services, manages utility survey contracts or needs to read and act on PAS128 survey drawings, this awareness course gives them the knowledge to do that confidently. Classroom delivery with an optional practical element.',
     image: 'Utility-Mapping-02',
+    alt: 'PAS128 utility survey training',
     breadcrumbs: [
       { label: 'Training', href: '/training/utility-mapping-surveying' },
       { label: 'PAS128 Awareness' },
     ],
   },
 
+  infoBar: [
+    { label: 'Classroom-Based', value: 'Structured learning in a professional training environment' },
+    { label: 'Optional Practical Session', value: 'Mini survey using utility plans and CAT and Genny' },
+    { label: 'In-House Delivery Available', value: 'Delivered at your premises or Sygma\'s Wigan training centre' },
+  ],
+
   schemas: {
     course: {
       name: 'PAS128 Awareness Training',
       description: 'PAS128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, PAS128 drawings and the survey specification process.',
       url: '/courses/pas128-awareness',
+      credential: 'PAS128 Awareness Certificate',
+      duration: '1 day',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -78,46 +90,102 @@ export const courseData: CoursePageData = {
   },
 
   courseContent: {
+    eyebrow: 'Course Content',
+    title: 'What the Session Covers',
     theory: {
-      heading: 'Classroom Content',
+      heading: 'Classroom Content Structured in Four Blocks',
+      subheading: 'The classroom content is structured across four areas, taking delegates from legal context through to understanding what a completed PAS128 survey deliverable should contain.',
       items: [
-        'Plans, Legislation and Network Knowledge: Reasons for using utility plans and legal responsibilities under HSG47',
+        'Plans, Legislation and Network Knowledge',
+        'Reasons for using utility plans: legal responsibilities under HSG47 and when plans must be obtained',
         'Network areas: different network operators, the areas they cover and regional differences',
-        'Introduction to PAS128: Overview of the standard and what it sets out to achieve',
+        'Introduction to PAS128',
+        'Overview of the PAS128 standard and what it sets out to achieve',
         'PAS128 survey types: D (desktop), C (site reconnaissance), B (detection survey) and A (verification)',
         'Detection methods M1 to M4 and how they differ in terms of technology and confidence level',
-        'Using Plans in the Survey Process: Visual survey and detection surveys with plans',
-        'Process of a survey in conjunction with plans: the routine from reading plans through to completing the detection survey',
-        'PAS128 Drawings and Deliverables: Analysing survey drawings and understanding quality levels',
-        'PAS128 deliverables and what a completed survey must include',
+        'Using Plans in the Survey Process',
+        'Visual survey (Type C): how to get the best out of a site reconnaissance using your eyes, environmental clues and STATS plans',
+        'Using plans to assist a detection survey (Type B): understanding what plans tell you and what they do not',
+        'Process of a survey in conjunction with plans: the routine from reading plans through to completing the detection survey (Types D and B)',
+        'PAS128 Drawings and Deliverables',
+        'Analysing PAS128 survey drawings: understanding what is shown, the quality levels and confidence ratings',
+        'PAS128 deliverables: what a completed survey must include',
         'Verification survey (Type A): what it is, when it is used and what it confirms',
       ],
     },
     practical: {
       heading: 'Optional Practical Element',
+      subheading: 'Hands-On Learning in the Field',
+      intro: 'The classroom session can be supplemented with an optional practical site element. Sygma will identify a suitable practical area close to the training venue.',
       items: [
         'Delegates conduct a mini survey using utility plans alongside CAT and Genny',
         'A practical competence assessment is completed during the site session',
-        'The practical element reinforces classroom learning and gives direct experience of applying PAS128 processes in a real environment',
+        'The practical element reinforces the classroom learning and gives delegates direct experience of applying PAS128 Type C and B survey processes in a real environment',
       ],
     },
+  },
+
+  formats: {
+    eyebrow: 'Delivery Format',
+    title: 'Classroom-Based with Optional Site',
+    rows: [
+      {
+        format: 'Classroom Only',
+        duration: '1 day',
+        maxDelegates: 'No limit',
+        assessment: 'Certificate of attendance issued',
+      },
+      {
+        format: 'Classroom with Practical',
+        duration: '1 day + practical session',
+        maxDelegates: 'No limit',
+        assessment: 'Certificate plus practical competence check record',
+      },
+    ],
+    notes: [
+      'The course is available as an in-house delivery at your premises or at Sygma\'s Wigan training centre.',
+      'No formal qualification is attached to this course. Delegates who attend receive a certificate of attendance. Delegates who complete the optional practical element receive a documented record of practical capability with PAS128-aligned tasks.',
+    ],
+  },
+
+  certRoutes: {
+    eyebrow: 'What You Get',
+    title: 'At the End of This Course',
+    items: [
+      {
+        title: 'Certificate of Attendance',
+        desc: 'Sygma certificate confirming PAS128 awareness training completion',
+      },
+      {
+        title: 'Competence Check Record',
+        desc: 'If optional practical session completed, documented competence check',
+      },
+      {
+        title: 'Reference Materials',
+        desc: 'Understanding of PAS128 survey types D, C, B and A',
+      },
+      {
+        title: 'Progression Guidance',
+        desc: 'Advice on next steps toward full PAS128 surveyor qualification',
+      },
+    ],
   },
 
   photoStrips: [
     {
       variant: 'grid',
       images: [
-        { src: 'GPR_05_Mala_Compact_mvupzg', alt: 'PAS128 awareness training - practical session' },
+        { src: 'MALA-GPR-05', alt: 'PAS128 awareness training - practical session' },
         { src: 'CAT4-and-Genny-03', alt: 'PAS128 awareness training - electromagnetic locator practical' },
-        { src: 'GPR_16_m2ujzx', alt: 'PAS128 awareness training - on-site delivery' },
+        { src: 'MALA-GPR-13', alt: 'PAS128 awareness training - on-site delivery' },
       ],
     },
     {
       variant: 'grid',
       images: [
-        { src: 'GPR_07_zvhify', alt: 'PAS128 awareness training with GPR equipment' },
+        { src: 'MALA-GPR-07', alt: 'PAS128 awareness training with GPR equipment' },
         { src: 'MALA-GPR-15', alt: 'Utility survey awareness classroom session' },
-        { src: 'Utility-Mapping-04', alt: 'PAS128 utility mapping demonstration' },
+        { src: 'Utility-Mapping-03', alt: 'PAS128 utility mapping demonstration' },
       ],
     },
     {
@@ -127,6 +195,97 @@ export const courseData: CoursePageData = {
         { src: 'MALA-GPR-28', alt: 'PAS128 utility detection practical training' },
         { src: 'Utility-Mapping-05', alt: 'Utility mapping equipment training session' },
       ],
+    },
+  ],
+
+  relatedCourses: {
+    eyebrow: 'Related Training',
+    title: 'Courses That Complement This One',
+    items: [
+      {
+        eyebrow: 'Utility Mapping',
+        title: 'Plans and Process Training',
+        desc: 'Covers STATS, LSBUD and Digdat plans interpretation. Complements PAS128 Awareness by focusing on the plans side of the survey process.',
+        href: '/courses/plans-and-process',
+      },
+      {
+        eyebrow: 'Utility Mapping',
+        title: '5 Day PAS128 Surveyor Course',
+        desc: 'The full surveyor programme for those who want to go beyond awareness into practical EM locating and GPR survey skills.',
+        href: '/courses/5-day-pas128-surveyor',
+      },
+      {
+        eyebrow: 'Utility Mapping',
+        title: 'GPR Training',
+        desc: 'GPR theory and practical operation for PAS128 Level B surveys. Module 1 and Module 2 available individually or combined.',
+        href: '/courses/gpr-training',
+      },
+      {
+        eyebrow: 'Utility Mapping',
+        title: 'TSA and ICES Utility Mapping Programme',
+        desc: 'Full ICES competency programme for utility mapping professionals seeking TSA and ICES recognition.',
+        href: '/courses/tsa-ices-utility-mapping',
+      },
+      {
+        eyebrow: 'Utility Mapping',
+        title: 'EUS CAT and Genny Training',
+        desc: 'For operatives who need locating skills before progressing to surveying. The foundation for PAS128 B survey work.',
+        href: '/courses/eus-cat1',
+      },
+    ],
+  },
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Real Survey Expertise',
+        title: 'Real Survey Expertise',
+        desc: 'Led by trainers who actively survey to PAS128. Not theoretical delivery.',
+      },
+      {
+        eyebrow: 'Independent',
+        title: 'Independent',
+        desc: 'Sygma is independent and owns the training process from start to finish.',
+      },
+      {
+        eyebrow: 'Specialist Trainers',
+        title: 'Specialist Trainers',
+        desc: 'Delivered by practitioners who understand real-world utility surveying challenges.',
+      },
+      {
+        eyebrow: 'Practical Understanding',
+        title: 'Practical Understanding',
+        desc: 'The classroom content is grounded in how surveys actually happen on the ground.',
+      },
+      {
+        eyebrow: 'Flexible Delivery',
+        title: 'Flexible Delivery',
+        desc: 'In-house at your premises or at Sygma\'s Wigan training centre. Mix and match with practical sessions.',
+      },
+      {
+        eyebrow: 'Foundation for Further Training',
+        title: 'Foundation for Further Training',
+        desc: 'PAS128 Awareness sits at the entry point to the wider utility mapping training pathway.',
+      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding support. Availability varies by employer and is not guaranteed.',
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
     },
   ],
 

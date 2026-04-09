@@ -6,11 +6,11 @@ export const courseData: CoursePageData = {
 
   metadata: {
     title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
-    description: 'Online ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Nationally recognised advanced qualification delivered online with flexible study.',
+    description: 'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/online-level-5-diploma' },
     openGraph: {
       title: 'Online Level 5 Diploma in Utility Mapping | Sygma Solutions',
-      description: 'Online ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Advanced qualification with flexible online delivery.',
+      description: 'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
       url: 'https://sygma-solutions.com/courses/online-level-5-diploma',
       type: 'website',
       siteName: SITE_NAME,
@@ -21,8 +21,17 @@ export const courseData: CoursePageData = {
   hero: {
     eyebrow: 'Qualifications',
     headline: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying (Online)',
-    sub: 'Nationally recognised Level 5 qualification in utility surveying delivered entirely online. Flexible study with practical assessments conducted in-person at your location or ours. For experienced practitioners seeking advanced competency and technical leadership.',
-    image: 'Utility-Mapping-02',
+    sub: 'Formal recognition of senior-level competency in utility mapping and surveying. Work at your own pace with full assessor support and mentoring throughout, delivered via MS Teams. No hidden fees. No extra charges for additional assessments. Contact us to discuss enrolment and pricing.',
+    images: [
+      'MALA-GPR-06',
+      'MALA-GPR-11',
+      'Advanced-EM-04',
+    ],
+    alts: [
+      'Advanced EM locating methods taught in the online Level 5 diploma programme',
+      'Professional GPR survey techniques covered in the online Level 5 course',
+      'Advanced EM locating methods taught in the online Level 5 diploma programme',
+    ],
     breadcrumbs: [
       { label: 'Training', href: '/training/utility-mapping-surveying' },
       { label: 'Online Level 5 Diploma' },
@@ -31,11 +40,11 @@ export const courseData: CoursePageData = {
 
   schemas: {
     course: {
-      name: 'Online Level 5 Diploma in Utility Mapping',
-      description: 'ProQual RQF Level 5 nationally recognised qualification in utility mapping and surveying delivered online.',
+      name: 'ProQual Level 5 Diploma in Utility Mapping and Surveying (Online)',
+      description: 'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
       url: '/courses/online-level-5-diploma',
-      credential: 'Level 5 Diploma',
-      duration: 'Flexible',
+      credential: 'Level 5 Diploma in Utility Surveying',
+      duration: 'Part-time',
       mode: ['online'],
     },
     breadcrumbs: [
@@ -45,101 +54,105 @@ export const courseData: CoursePageData = {
     includeFaqSchema: true,
   },
 
-  stats: [
+  infoBar: [
     {
-      value: 'Level 5',
-      label: 'Ofqual Regulated',
-      detail: 'Nationally recognised qualification on the Regulated Qualifications Framework.',
+      label: 'Qualification',
+      value: 'ProQual RQF Level 5',
     },
     {
-      value: 'Blended Delivery',
-      label: 'Online + Practical',
-      detail: 'Online learning with in-person practical assessments at your location or ours.',
+      label: 'Delivery',
+      value: 'MS Teams (self-paced)',
     },
     {
-      value: 'Portfolio & Practical',
-      label: 'Assessment',
-      detail: 'Evidence-based assessment combined with practical field competency verification.',
+      label: 'Duration',
+      value: 'Flexible (your schedule)',
+    },
+    {
+      label: 'Pricing',
+      value: 'Fixed (contact us)',
+    },
+  ],
+
+  photoStrips: [
+    {
+      variant: 'grid',
+      images: [
+        { src: 'MALA-GPR-06', alt: 'Online Level 5 Diploma - practical session' },
+        { src: 'Advanced-EM-08', alt: 'Online Level 5 Diploma - hands-on assessment' },
+        { src: 'MALA-GPR-32', alt: 'Online Level 5 Diploma - electromagnetic survey practical' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Advanced-EM-01', alt: 'Online Level 5 Diploma training support' },
+        { src: 'MALA-GPR-17', alt: 'Utility survey training for Level 5 qualification' },
+        { src: 'Utility-Mapping-02', alt: 'Level 5 qualification practical demonstration' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'MALA-GPR-33', alt: 'Level 5 Diploma training with equipment' },
+        { src: 'MALA-GPR-29', alt: 'GPR survey training for online Level 5' },
+        { src: 'Utility-Mapping-02', alt: 'Online Level 5 qualification assessment' },
+      ],
     },
   ],
 
   whoFor: {
-    eyebrow: 'Who Is This Qualification For',
-    title: 'Ideal For',
+    eyebrow: 'Who This Is For',
+    title: 'This Course Is for You If...',
     items: [
       {
-        title: 'Experienced Utility Surveyors',
-        desc: 'Senior practitioners with substantial field experience seeking formal advanced qualification and technical leadership credentials.',
+        title: 'Experienced utility surveyors',
+        desc: 'You are an experienced utility mapping or surveying professional seeking formal RQF Level 5 qualification to reflect your level of competency and responsibility.',
       },
       {
-        title: 'Survey Company Managers and Directors',
-        desc: 'Business leaders in utility surveying who need advanced qualifications to demonstrate technical capability and operational expertise.',
+        title: 'Progression to Level 5',
+        desc: 'You hold or are working towards Level 3 or Level 4 and are ready to progress to the next stage of the ProQual qualification pathway.',
       },
       {
-        title: 'Consultants and Specialists',
-        desc: 'Technical consultants, specialists, and subject matter experts in utility mapping and surveying seeking formal recognition of expertise.',
+        title: 'Employer or framework requirements',
+        desc: 'Your employer, framework, or career progression requires evidence of senior-level competency in utility mapping and surveying as a formal, regulated qualification.',
       },
       {
-        title: 'Career Advancement and CPD',
-        desc: 'Professionals progressing from Level 3 and Level 4 seeking the highest formal qualification in utility surveying and specialist technical leadership.',
+        title: 'Flexible study with support',
+        desc: 'You want to work through the qualification at your own pace, drawing on your existing professional experience as evidence, with a Sygma assessor supporting you throughout.',
       },
     ],
   },
 
-  infoBar: [
-    {
-      label: 'Level',
-      value: '5 (Ofqual-regulated)',
-    },
-    {
-      label: 'Prerequisite',
-      value: 'Level 4 Diploma or equivalent',
-    },
-    {
-      label: 'Delivery',
-      value: 'Online with in-person practical assessments',
-    },
-    {
-      label: 'Assessment',
-      value: 'Portfolio + practical field assessment',
-    },
-    {
-      label: 'Duration',
-      value: '6–12 months (flexible)',
-    },
-  ],
-
   about: {
-    eyebrow: 'Qualification Overview',
-    title: 'What Is the ProQual Level 5 Diploma (Online)?',
+    eyebrow: 'Qualification Content',
+    title: 'What the Level 5 Covers',
     paragraphs: [
-      'The ProQual Level 5 Diploma in Utility Mapping and Surveying is an Ofqual-regulated, nationally recognised qualification for experienced practitioners seeking the highest formal qualification in utility surveying. It builds on Level 4 competency, developing expertise in advanced detection techniques, specialist methodologies, and technical leadership in utility surveying.',
-      'This online delivery model is designed specifically for experienced professionals who can study flexibly around their work commitments. You progress through advanced technical learning modules at your own pace via online support, complemented by live mentoring sessions. Unlike desk-based learning alone, Level 5 includes practical field assessments conducted in-person -- either at your location or at Sygma\'s Wigan training centre -- to verify your advanced practical competency in real utility surveying environments.',
-      'Assessment combines portfolio evidence from your professional practice with practical field verification. Your assessor evaluates evidence of advanced competency in specialist detection methods, project leadership, complex survey planning, and technical decision-making. The practical assessment ensures you can demonstrate advanced techniques confidently in real-world utility surveying conditions.',
-      'On completion, you hold the highest formal qualification in the ProQual utility mapping pathway, with evidence of both advanced technical knowledge and verified practical competency. This qualification opens doors to senior technical roles, consultancy, management positions, and recognised expertise in the utility surveying industry.',
+      'The ProQual RQF Level 5 Diploma in Utility Mapping and Surveying is the advanced practitioner-level qualification in the Sygma qualification pathway. It recognises a high level of competency in utility surveying, mapping methodology, PAS128 practice, and the professional responsibilities that come with senior roles in this field.',
+      'The Level 5 goes beyond the technical foundations covered at Level 3 and the specialist technical depth of Level 4. At Level 5, the qualification recognises the ability to plan, manage, and take professional responsibility for utility mapping programmes at a senior level.',
+      'Assessment is evidence-based. Candidates build a portfolio of workplace evidence demonstrating competency across the qualification units, supported by knowledge workbooks and assessor-led review sessions via MS Teams.',
     ],
     sidebar: {
       eyebrow: 'Assessment Overview',
       items: [
         {
           label: 'Approach',
-          value: 'Portfolio-based evidence plus in-person practical field assessment',
+          value: 'Portfolio-based evidence with assessor support',
         },
         {
           label: 'Duration',
-          value: 'Typically 6–12 months depending on evidence and assessment scheduling',
+          value: 'Flexible timescale',
         },
         {
           label: 'Support',
-          value: 'Online mentoring, live sessions, and practical assessor guidance',
+          value: 'MS Teams assessor support sessions',
         },
         {
-          label: 'Practical Assessment',
-          value: 'Conducted in-person at your location or Sygma\'s Wigan centre',
+          label: 'Materials',
+          value: 'E-portfolio framework and knowledge workbooks',
         },
         {
           label: 'Prerequisites',
-          value: 'ProQual Level 4 Diploma or equivalent advanced competency',
+          value: 'Level 4 Diploma or equivalent experience',
         },
       ],
     },
@@ -147,55 +160,51 @@ export const courseData: CoursePageData = {
 
   courseContent: {
     theory: {
-      heading: 'Advanced EM and Technical Competency',
-      subheading: 'Specialist Detection and Project Leadership',
+      heading: 'Qualification Units',
+      subheading: 'Mandatory Units and Assessment',
       items: [
-        'Advanced electromagnetic detection principles and specialist applications',
-        'Signal interpretation in complex utility environments and multi-layered services',
-        'Depth estimation and accuracy assessment in challenging ground conditions',
-        'Frequency optimisation and equipment selection for specialist surveys',
-        'Integration of EM, GPR and GNSS in complex utility mapping projects',
-        'Quality assurance and quality control in utility surveying',
-        'Technical project planning and survey methodology design',
-        'Risk assessment and management in complex utility surveying operations',
+        'Y/507/1370 -- Agree project requirements and plan site surveying in geomatics and site surveying management (Level 6)',
+        'D/507/1371 -- Plan methods, resources and systems to meet project requirements in geomatics and site surveying management (Level 5)',
+        'H/507/1372 -- Site surveying procedures for construction and the built environment (Level 4)',
+        'K/507/1373 -- Establish and maintain the dimensional control and setting out of construction projects in geomatics and site surveying (Level 4)',
+        'M/507/1374 -- Establish and operate technical information systems in geomatics and site surveying management (Level 5)',
+        'T/507/1375 -- Identify, assess and present spatial data in geomatics and site surveying management (Level 6)',
       ],
     },
     practical: {
-      heading: 'Advanced Practical Field Competency',
-      subheading: 'Verified In-Person Assessment',
-      intro: 'Advanced practical competency demonstrated through in-person field assessment and portfolio evidence from complex utility surveying projects.',
+      heading: 'How the Online Route Works',
+      subheading: 'Seven Steps to Qualification',
       items: [
-        'Advanced field survey planning and methodology implementation',
-        'Complex utility detection in multi-service, congested ground environments',
-        'Specialist GPR interpretation and advanced radargram analysis',
-        'Integration of multiple detection methods in single survey projects',
-        'Quality verification and audit of survey data and interpretation',
-        'Team leadership and quality management in field operations',
-        'Technical decision-making and problem-solving in complex utility scenarios',
-        'Communication of findings and technical reporting for complex projects',
+        'Enrolment -- You enrol with Sygma. Sygma registers you with ProQual as a Level 5 candidate.',
+        'Materials Issued -- You receive your e-portfolio framework and workbooks covering the Level 5 qualification units.',
+        'Evidence Gathering -- You build your evidence portfolio from your existing professional practice. Sygma\'s assessor supports you throughout.',
+        'Assessor Support Sessions -- Regular MS Teams sessions with your Sygma assessor to review progress, discuss evidence, and prepare for submission. Sessions are not recorded. A computer (not a phone) is required.',
+        'Knowledge Workbooks -- You complete knowledge workbooks to cover any areas not fully demonstrated by workplace evidence.',
+        'Assessment and Submission -- Your completed evidence portfolio is assessed by Sygma and submitted to ProQual for external quality assurance.',
+        'Certification -- On successful completion, ProQual issues your RQF Level 5 Diploma certificate.',
       ],
     },
   },
 
   certRoutes: {
-    eyebrow: 'What You Receive',
-    title: 'Level 5 Diploma Certification Routes',
+    eyebrow: 'What You Get',
+    title: 'Certification and Recognition',
     items: [
       {
-        title: 'ProQual Level 5 Diploma Certificate',
-        desc: 'The formal certificate awarded on successful completion, registered on the Regulated Qualifications Framework (RQF).',
+        title: 'ProQual Level 5 Diploma in Underground Utility Mapping',
+        desc: 'The formal certificate awarded on successful completion, registered on the Regulated Qualifications Framework.',
       },
       {
-        title: 'Portfolio of Advanced Evidence',
-        desc: 'A comprehensive record of all portfolio evidence submitted, assessor feedback, and competency sign-off demonstrating advanced technical expertise.',
+        title: 'Online Portfolio Submission Record',
+        desc: 'A comprehensive record of your evidence portfolio and assessor feedback.',
       },
       {
-        title: 'Practical Assessment Report',
-        desc: 'Detailed report from the practical assessor confirming your verified in-person competency in advanced utility mapping techniques.',
+        title: 'External Assessment Report',
+        desc: 'Detailed report from ProQual confirming your competency assessment.',
       },
       {
-        title: 'Qualification Registered on RQF',
-        desc: 'Your qualification is registered on the Regulated Qualifications Framework, making it formally recognised as the highest level in utility surveying across the UK.',
+        title: 'Qualification Registered on the RQF',
+        desc: 'Your qualification is registered on the Regulated Qualifications Framework, making it formally recognised across the UK.',
       },
     ],
   },
@@ -203,59 +212,59 @@ export const courseData: CoursePageData = {
   whySygma: {
     items: [
       {
-        eyebrow: 'Flexibility',
-        title: 'Online Delivery',
-        desc: 'Study the theory and advanced technical knowledge online at your own pace. No requirement to attend classroom sessions. Live mentoring available to support your progress.',
+        eyebrow: 'ProQual Approved',
+        title: 'ProQual Approved Centre status',
+        desc: 'Your Level 5 Diploma is issued by a regulated awarding organisation and recognised across the industry.',
       },
       {
-        eyebrow: 'Verified Competency',
-        title: 'Practical Assessment',
-        desc: 'In-person field assessment at your location or our centre verifies your advanced practical skills in real utility surveying conditions. Online study plus proven practical capability.',
+        eyebrow: 'Transparent Pricing',
+        title: 'Fixed, transparent pricing',
+        desc: 'No hidden fees. No extra charges for additional assessments. The price you agree at enrolment is the price you pay.',
       },
       {
-        eyebrow: 'Expertise',
-        title: 'Specialist Assessors',
-        desc: 'Your assessor is a senior utility surveying professional with real-world experience in advanced techniques and project leadership.',
+        eyebrow: 'Senior Assessors',
+        title: 'Experienced assessors who work at senior level',
+        desc: 'At Level 5, your evidence is assessed by practitioners who understand what senior-level competency looks like in practice, not just in a workbook.',
       },
       {
-        eyebrow: 'Practice-Led',
-        title: 'Evidence From Your Work',
-        desc: 'Assessment draws on your actual professional practice and complex projects. You apply advanced learning to real utility surveying scenarios.',
+        eyebrow: 'Full Support',
+        title: 'Full assessor support throughout',
+        desc: 'You are supported from enrolment to certification. This is not a self-study package with occasional check-ins.',
       },
       {
-        eyebrow: 'Approved Centre',
-        title: 'ProQual Recognised',
-        desc: 'Sygma is an approved ProQual centre. Your Level 5 Diploma is formally recognised and externally moderated.',
+        eyebrow: 'Pathway',
+        title: 'The complete pathway in one place',
+        desc: 'If you hold Level 3 or Level 4, Level 5 is the natural next step. Level 6 is available after that. You do not need to switch providers or re-register with a different organisation.',
       },
       {
-        eyebrow: 'Career Progression',
-        title: 'Highest Qualification',
-        desc: 'Level 5 is the peak of the ProQual utility mapping pathway. Opens doors to senior roles, consultancy, and recognised technical expertise.',
+        eyebrow: 'Management Qualification',
+        title: 'Flexible Online Format',
+        desc: 'Complete your Level 5 remotely with live tutor support and full portfolio guidance.',
       },
     ],
   },
 
   relatedCourses: {
-    eyebrow: 'Related Qualifications',
-    title: 'ProQual Utility Mapping Pathway',
+    eyebrow: 'Related Courses',
+    title: 'Other Qualifications in the Pathway',
     items: [
       {
         eyebrow: 'Level 3',
-        title: 'Level 3 Certificate (Online)',
-        desc: 'Foundation qualification in utility surveying. Online delivery with live MS Teams support. Desktop skills and site reconnaissance.',
+        title: 'Online Level 3 Diploma',
+        desc: 'Complete your Level 3 remotely with live tutor support if you haven\'t already qualified.',
         href: '/courses/online-level-3-diploma',
       },
       {
-        eyebrow: 'Level 4',
-        title: 'Level 4 Diploma',
-        desc: 'Advanced qualification covering electromagnetic detection and GPR. Portfolio-based assessment with tutor mentoring.',
-        href: '/courses/level-4-diploma',
+        eyebrow: 'Level 5 (In-Person)',
+        title: 'Level 5 Diploma',
+        desc: 'The fast-track in-person route to the same ProQual Level 5 Diploma if you prefer classroom-based learning.',
+        href: '/courses/level-5-diploma',
       },
       {
-        eyebrow: 'Specialist Skills',
-        title: 'GPR Training',
-        desc: 'Specialist skills training in ground-penetrating radar operation and advanced radargram interpretation.',
-        href: '/courses/gpr-training',
+        eyebrow: 'Level 6',
+        title: 'Level 6 Diploma',
+        desc: 'Diploma in Utility Mapping and Surveying Management. The advanced route after Level 5.',
+        href: '/courses/level-6-diploma',
       },
     ],
   },
@@ -263,68 +272,55 @@ export const courseData: CoursePageData = {
   alsoConsider: [
     {
       title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify your practical skills in real-world field conditions.',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
       href: '/osca',
     },
     {
       title: 'Bespoke Training',
-      desc: 'Tailored specialist training to support your Level 5 journey and develop bespoke advanced competencies.',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
       href: '/contact',
     },
   ],
 
   citbFunding: {
     paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may be eligible to access training funding support through the CITB Employer Network.',
-      'Contact your CITB adviser or Sygma directly to discuss current funding eligibility for Level 5 advanced qualification and how to access employer network support.',
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding support for your Level 5 enrolment. Availability varies by employer and is not guaranteed.',
     ],
   },
 
   faqs: [
     {
-      q: 'Is the Level 5 Diploma nationally recognised?',
-      a: 'Yes. The ProQual RQF Level 5 Diploma is a nationally recognised qualification on the Regulated Qualifications Framework. It is the highest formal qualification in the utility mapping pathway.',
+      q: 'How is the online Level 5 delivered?',
+      a: 'Live sessions via Microsoft Teams. Portfolio-based assessment with ongoing tutor support.',
     },
     {
-      q: 'How is the online delivery structured?',
-      a: 'The course combines online learning modules and mentoring (flexible pace) with in-person practical assessments. You study theory and advanced techniques online, then practical assessment happens in-person either at your location or at Sygma\'s Wigan training centre.',
+      q: 'What prior qualifications do I need?',
+      a: 'Level 4 Diploma or equivalent experience in utility mapping at management level.',
     },
     {
-      q: 'How long does the Level 5 Diploma take?',
-      a: 'Study duration is flexible, typically ranging from 6–12 months depending on your pace, evidence availability, and practical assessment scheduling.',
+      q: 'How long does it take to complete?',
+      a: 'Most candidates complete within 12--18 months alongside normal duties.',
     },
     {
-      q: 'What practical assessments are required?',
-      a: 'Practical assessment verifies your advanced competency in specialist detection techniques, complex survey methodology, and technical decision-making in real utility surveying environments.',
+      q: 'Is this the same qualification as the in-person route?',
+      a: 'Yes. Same ProQual Level 5 Diploma, same assessment criteria, same certificate.',
     },
     {
-      q: 'Can assessments be conducted at my location?',
-      a: 'Yes. Practical assessments can be arranged at your premises or at Sygma\'s Wigan training centre, depending on what works best for your circumstances.',
+      q: 'What evidence do I need to provide?',
+      a: 'Portfolio evidence from your real work. Your existing management responsibilities generate much of what is needed.',
     },
     {
-      q: 'Is prior experience required?',
-      a: 'You must have completed the ProQual Level 4 Diploma or demonstrate equivalent advanced competency in utility surveying. Level 5 is designed for experienced practitioners seeking the highest qualification.',
-    },
-    {
-      q: 'What if I don\'t have all the evidence needed when I start?',
-      a: 'Your assessor will help you identify gaps and plan how to gather evidence from your ongoing professional practice. Your assessor supports you throughout the qualification, not just at the end.',
-    },
-    {
-      q: 'Is there a written exam?',
-      a: 'No. Level 5 assessment is portfolio-based combined with in-person practical assessment. You submit evidence from your professional practice and demonstrate advanced competency in field conditions. No written exam.',
-    },
-    {
-      q: 'What happens after Level 5?',
-      a: 'Level 5 is the highest formal qualification in the ProQual utility mapping pathway. Many Level 5 graduates move into senior technical roles, consultancy, management positions, or undertake specialist CPD to maintain and extend their expertise.',
+      q: 'Can my employer claim CITB funding?',
+      a: 'Sygma is a CITB ATO. Speak to your CITB Employer Network adviser about available support.',
     },
   ],
 
   cta: {
-    title: 'Enrol in Online Level 5 Diploma',
-    description: 'Advanced qualification combining flexible online study with verified practical assessment. Contact us for enrolment information and to discuss your pathway.',
-    primaryLabel: 'Get Started',
+    title: 'Enrol or Enquire',
+    description: 'To discuss enrolment at Level 5, your existing qualifications and experience, or to find out whether the online route is right for your situation, get in touch with the Sygma team.',
+    primaryLabel: 'Enquire About the Level 5',
     primaryHref: '/contact',
-    secondaryLabel: 'Request Course Information',
-    secondaryHref: '/contact',
+    secondaryLabel: 'Call Us',
+    secondaryHref: 'tel:+442039718252',
   },
 };

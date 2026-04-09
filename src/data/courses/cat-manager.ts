@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'cat-manager',
@@ -12,18 +13,20 @@ export const courseData: CoursePageData = {
       description: 'CAT Manager online training course. Learn to use c.a.t manager online for cat and genny data, check work quality and reduce utility strikes.',
       url: 'https://sygma-solutions.com/courses/cat-manager',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
     eyebrow: 'CAT Manager Online Training',
     headline: 'CAT Manager Online Training Course: Make Your Cat and Genny Data Work for You',
-    sub: 'A practical half-day course for managers and supervisors. Learn to transfer usage data from cat and genny equipment, create real-time reports, and use structured data analysis to monitor work quality across your entire operative team.',
-    image: 'CAT4-and-Genny-49',
-    alt: 'CAT Manager online training for managers and supervisors checking work quality',
+    sub: 'Cat manager online training for managers and supervisors. Your cat and genny equipment records every locate. This half day course teaches you to use c.a.t manager online as a remote management tool to transfer usage data, check work quality across your entire team, identify training needs, and build the audit trail that protects your organisation from utility strikes.',
+    image: 'CAT4-and-Genny-46',
+    alt: 'CAT Manager online training showing data management from CAT and Genny surveys',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
-      { label: 'CAT Manager Online Training' },
+      { label: 'CAT Manager Training' },
     ],
   },
 
@@ -44,9 +47,9 @@ export const courseData: CoursePageData = {
   },
 
   infoBar: [
-    { label: 'Duration', value: 'Half day training course (approximately 4 hours)' },
-    { label: 'Delivery', value: 'In person (Wigan HQ) or online via Microsoft Teams' },
-    { label: 'Max Delegates', value: '8 in person | 12 online training' },
+    { label: 'Duration', value: 'Half day training course (approx 4 hours)' },
+    { label: 'Format', value: 'In-person or online training (Teams)' },
+    { label: 'Max Delegates', value: '8 in-person | 12 online' },
     { label: 'Assessment', value: 'No formal assessment (hands on practical session)' },
     { label: 'Certificate', value: 'Certificate of attendance' },
   ],
@@ -103,21 +106,29 @@ export const courseData: CoursePageData = {
     title: 'In Person or Online Training Course',
     rows: [
       {
-        format: 'In Person (Sygma HQ, Wigan or on-site)',
-        duration: '4 hours (half day)',
+        format: 'In Person',
+        duration: 'Half day (4 hours)',
         maxDelegates: '8',
         assessment: 'Hands-on practical session',
       },
       {
         format: 'Online via Microsoft Teams',
-        duration: 'Approx 3.5 hours (half day)',
+        duration: 'Half day (approx 3.5 hours)',
         maxDelegates: '12',
-        assessment: 'Hands-on practical session via Teams',
+        assessment: 'Hands-on practical session',
       },
     ],
   },
 
   photoStrips: [
+    {
+      images: [
+        { src: 'CAT4-and-Genny-07', alt: 'CAT Manager training -- practical session' },
+        { src: 'CAT4-and-Genny-50', alt: 'CAT Manager training -- hands-on assessment' },
+        { src: 'CAT4-and-Genny-63', alt: 'CAT Manager training -- on-site delivery' },
+      ],
+      variant: 'grid',
+    },
     {
       images: [
         { src: 'CAT4-and-Genny-49', alt: 'CAT Manager training session in classroom' },
@@ -126,13 +137,129 @@ export const courseData: CoursePageData = {
       ],
       variant: 'grid',
     },
+    {
+      images: [
+        { src: 'CAT4-and-Genny-54', alt: 'Utility management training practical' },
+        { src: 'CAT4-and-Genny-69', alt: 'CAT Manager delegates reviewing procedures' },
+        { src: 'CAT4-and-Genny-60', alt: 'On-site CAT Manager assessment training' },
+      ],
+      variant: 'grid',
+    },
   ],
 
+  whoFor: {
+    eyebrow: 'Audience',
+    title: 'Who Should Attend?',
+    items: [
+      {
+        title: 'Underground Service Coordinators (USC)',
+        desc: 'Managers responsible for monitoring cat and genny operative compliance on underground services. Cat manager online training turns an obligation into a practical remote management tool for your entire team.',
+      },
+      {
+        title: 'Health and Safety Managers',
+        desc: 'Health and safety managers who want to use cat manager data as a compliance audit tool to check work quality, identify training needs, and build a documented evidence trail for avoiding danger from utility strikes.',
+      },
+      {
+        title: 'Site Managers',
+        desc: 'Site managers wanting to verify that field operators are using the genny correctly and following best practice before problems occur on site with underground services and buried cables.',
+      },
+      {
+        title: 'Supervisors',
+        desc: 'Supervisors building regular data-download habits into their site processes as part of ongoing HSG47 compliance, allowing supervisors to monitor cat and genny usage across their company.',
+      },
+      {
+        title: 'Data-Responsible Operatives',
+        desc: 'Any operative who is responsible for downloading and reporting cat and genny data to managers. Cat manager online training provides essential knowledge for structured analysis of usage data.',
+      },
+    ],
+  },
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Manager-Focused Training Course',
+        title: 'Manager-Focused Training Course',
+        desc: 'Designed specifically for managers and supervisors who manage teams using cat and genny equipment. Not generic IT training, but focused on practical management of usage data and location information through the c.a.t manager online system.',
+      },
+      {
+        eyebrow: 'Specialist Cat and Genny Trainers',
+        title: 'Specialist Cat and Genny Trainers',
+        desc: 'Directly employed, ex-utility surveyors and ex-manufacturer specialists. TAQA qualified and with years of real-world cat and genny experience in locating underground services.',
+      },
+      {
+        eyebrow: 'Genny-First Methodology',
+        title: 'Genny-First Methodology',
+        desc: 'Sygma\'s genny-first approach built into the cat manager online training programme. The training course teaches data analysis that supports best practice and the genny-first safety methodology for avoiding danger from utility strikes.',
+      },
+      {
+        eyebrow: 'Independent and Unbiased',
+        title: 'Independent and Unbiased',
+        desc: 'Not tied to any manufacturer. We do not sell cat and genny equipment. Advice is focused purely on the management and structured analysis of cat genny data to check work quality across your company.',
+      },
+      {
+        eyebrow: 'Small Class Sizes',
+        title: 'Small Class Sizes',
+        desc: 'Maximum 8 delegates ensuring personalised attention, hands on support, and the chance to work with real cat and genny equipment and real usage data from your site.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'We Come to You',
+        desc: 'Cat manager online training delivered on-site anywhere in the UK. Travel included in the training course rate. Minimal disruption to your operations.',
+      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma Solutions is a CITB Approved Training Organisation and member of the CITB Employer Network. Employers registered with CITB may be able to access Employer Network funding towards cat manager online training course costs for their managers and supervisors.',
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world cat and genny skills for your field operators.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Cat and Genny Training',
+      desc: 'Design a tailored cat and genny training programme around your site risks, equipment limitations, and team size.',
+      href: '/contact',
+    },
+  ],
+
+  relatedCourses: {
+    eyebrow: 'Related Courses',
+    title: 'Related Courses',
+    items: [
+      {
+        eyebrow: 'Cable Avoidance Training',
+        title: 'EUS CAT1 Cat and Genny Training',
+        desc: 'EUSR-registered cat and genny training course for field operators. Includes an optional cat manager data download module.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Cable Avoidance Training',
+        title: 'EUS Superuser Cat and Genny Training',
+        desc: 'Advanced genny training course for supervisors and competency managers overseeing cat and genny operatives. Includes cat manager data analysis.',
+        href: '/courses/eus-superuser',
+      },
+      {
+        eyebrow: 'Cable Avoidance Training',
+        title: 'Cable Avoidance Training Course',
+        desc: 'Practical cat and genny training course for field operators who need competency on cable avoidance tools and signal generators.',
+        href: '/courses/cable-avoidance-training',
+      },
+    ],
+  },
+
   cta: {
-    title: 'Book Your CAT Manager Training Session',
-    description: 'Choose in-person at our Wigan training centre or online via Microsoft Teams. Contact us with your preferred format, delegate numbers, and target dates.',
-    primaryLabel: 'Get in Touch',
+    title: 'Book Cat Manager Online Training',
+    description: 'Cat manager online training course delivered in person at Sygma HQ in Wigan, on-site at your premises, or online via Microsoft Teams. This half day training course teaches managers and supervisors to use c.a.t manager online to check work quality and reduce utility strikes. Contact us to arrange a session and receive a quote.',
+    primaryLabel: 'Contact Us for Pricing',
     primaryHref: '/contact',
+    secondaryLabel: 'View EUS CAT1 Training',
+    secondaryHref: '/courses/eus-cat1',
   },
 
   faqs: [

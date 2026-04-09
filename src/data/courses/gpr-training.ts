@@ -6,11 +6,11 @@ export const courseData: CoursePageData = {
 
   metadata: {
     title: 'GPR Training for Utility Surveyors | Sygma Solutions',
-    description: 'Ground penetrating radar training. Module 1: GPR theory and practical use. Module 2: advanced data processing and post processing. Available separately or combined.',
+    description: 'Ground penetrating radar training covering GPR technology, practical use and post-processing. Delivered by GPR experts with equipment selection guidance.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/gpr-training' },
     openGraph: {
       title: 'GPR Training for Utility Surveyors | Sygma Solutions',
-      description: 'Ground penetrating radar training. Module 1 and Module 2 available separately or combined.',
+      description: 'Ground penetrating radar training covering GPR technology, practical use and post-processing. Delivered by GPR experts with equipment selection guidance.',
       url: 'https://sygma-solutions.com/courses/gpr-training',
       type: 'website',
       siteName: SITE_NAME,
@@ -21,13 +21,9 @@ export const courseData: CoursePageData = {
   hero: {
     eyebrow: 'Utility Mapping',
     headline: 'GPR Training: Theory, Practical Use and Post Processing for Utility Surveyors',
-    sub: 'Ground Penetrating Radar is the detection method that reveals what an electromagnetic locator cannot. From radargram science to GPS-integrated data collection and full post processing in Object Mapper software. Elevate your surveying skills with expert-led ground penetrating radar training.',
-    images: ['GPR_05_Mala_Compact_mvupzg', 'GPR_18_lijx63', 'GPR_19_z98jbo'],
-    alts: [
-      'GPR training practical session with MALA Easy Locator equipment',
-      'Utility survey training with GPR technology',
-      'GPR practical demonstration during training course',
-    ],
+    sub: 'Ground Penetrating Radar is the detection method that reveals what an electromagnetic locator cannot. This two-module GPR training programme covers GPR technology from the science behind a radargram to GPS-integrated data collection and full post processing in Object Mapper software. Elevate your surveying skills with expert-led ground penetrating radar training. Book individually or take both modules together.',
+    image: 'Utility-Mapping-03',
+    alt: 'Ground penetrating radar training using professional GPR survey equipment',
     breadcrumbs: [
       { label: 'Training', href: '/training/utility-mapping-surveying' },
       { label: 'GPR Training' },
@@ -37,10 +33,10 @@ export const courseData: CoursePageData = {
   schemas: {
     course: {
       name: 'GPR Training for Utility Surveyors',
-      description: 'Ground penetrating radar training covering theory, practical use and post-processing for utility surveyors. Delivered by experienced specialists.',
+      description: 'GPR training covering theory, practical use and post-processing for utility surveyors. Delivered by experienced specialists at The Survey School.',
       url: '/courses/gpr-training',
       credential: 'GPR Training Certificate',
-      duration: '1-2 days',
+      duration: '2 days',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -50,65 +46,46 @@ export const courseData: CoursePageData = {
     includeFaqSchema: true,
   },
 
-  stats: [
-    {
-      value: '2 Modules',
-      label: 'Take Together or Separately',
-      detail: 'Module 1: theory and practical. Module 2: data processing and post processing.',
-    },
-    {
-      value: 'TSA',
-      label: 'Approved Training',
-      detail: 'Approved by The Survey Association for utility surveying training.',
-    },
-    {
-      value: 'CITB',
-      label: 'Approved Training Organisation',
-      detail: 'CITB-approved training for the construction sector.',
-    },
+  infoBar: [
+    { label: '2 Modules', value: 'Take together or separately' },
+    { label: 'CITB Approved', value: 'CITB-approved training' },
+    { label: 'TSA Approved', value: 'Survey Association approved' },
+    { label: 'EUSR Accredited', value: 'ProQual Approved Centre' },
   ],
 
   whoFor: {
-    eyebrow: 'Who Is This Course For',
+    eyebrow: 'Audience',
     title: 'Designed For',
     items: [
       {
-        title: 'Utility Surveyors New to GPR',
-        desc: 'Module 1 is your starting point. No prior GPR experience required.',
+        title: 'Utility surveyors new to GPR',
+        desc: 'Module 1 (start here)',
       },
       {
-        title: 'Surveyors Extending to Post Processing',
-        desc: 'If you can operate GPR on site but need to learn data processing and CAD export, Module 2 is the right route.',
+        title: 'Surveyors who can operate GPR on site but want to extend to post processing',
+        desc: 'Module 2 (if you already understand GPR fundamentals)',
       },
       {
-        title: 'Complete Beginners Needing Both',
-        desc: 'Take both modules as a two-day course for the full GPR training programme from theory through to post processing.',
+        title: 'Surveyors who need both (complete beginners or those refreshing both skills)',
+        desc: 'Both modules as a two-day course',
       },
       {
-        title: '5-Day PAS128 Delegates',
-        desc: 'Both modules complement the 5-Day PAS128 Surveyor Course content for standalone GPR competency.',
+        title: 'Delegates on the 5 Day PAS128 Surveyor Course who want standalone GPR training',
+        desc: 'Both modules complement the 5 Day course content',
       },
       {
-        title: 'TSA and ICES Programme Delegates',
-        desc: 'Covering ICES GEUS01 F requirements. Module 1 covers Part 1; Module 2 covers Parts 2 and beyond.',
+        title: 'TSA and ICES programme delegates covering ICES GEUS01 F',
+        desc: 'Module 1 covers Part 1; Module 2 covers Parts 2 and beyond',
       },
     ],
   },
-
-  infoBar: [
-    { label: 'Module 1', value: '1 day -- theory and practical' },
-    { label: 'Module 2', value: '1 day -- data collection and post processing' },
-    { label: 'Combined', value: '2 days back-to-back' },
-    { label: 'Max Delegates', value: '6' },
-    { label: 'Delivery', value: 'Wigan HQ, on-site UK-wide' },
-  ],
 
   about: {
     eyebrow: 'What This Course Covers',
     title: 'The Complete GPR Training Programme',
     paragraphs: [
-      'Electromagnetic locators detect services that carry or can be induced to carry a signal. But not all underground infrastructure meets that condition. Non-conductive pipes, poorly connected systems, congested utility corridors, and services with no viable connection point all require a different detection method. Ground Penetrating Radar fills that gap.',
-      'Equipment selection, correct configuration, and accurate post processing all determine whether a ground penetrating radar survey adds genuine value or generates misleading data. Sygma\'s GPR training programme covers both sides: Module 1 builds the theoretical knowledge and practical skills to operate GPR equipment on a live survey site. Module 2 extends into GPS-integrated data collection, grid surveys, multi-array antennas, and full post processing workflow in Object Mapper software.',
+      'Electromagnetic locating is the foundation of most utility surveys, but it cannot detect all services. Non-conductive pipes, poorly connected systems, congested utility corridors and services with no viable connection point all present challenges that ground penetrating radar is uniquely placed to address. But GPR technology is only useful when the operative knows how to set it up correctly, read the data in the field, and extract meaningful GPR insights from the results. Equipment selection, correct configuration, and accurate post processing all determine whether a ground penetrating radar survey adds genuine value or generates misleading data.',
+      'Sygma\'s GPR training programme is structured in two modules that work together as a complete system. Module 1 builds the theoretical knowledge and practical skills needed to operate GPR equipment on a live survey site. Module 2 takes that capability further, covering GPS-integrated data collection, grid surveys, multi-array antennas and the full post processing workflow in Object Mapper software.',
       'The two modules are run as a two-day course or can be taken individually depending on existing knowledge and training needs. Module 2 requires either completion of Module 1 or a solid working knowledge of GPR operation.',
     ],
     sidebar: {
@@ -124,8 +101,6 @@ export const courseData: CoursePageData = {
   },
 
   courseContent: {
-    eyebrow: 'Course Content',
-    title: 'Module 1 and Module 2 Syllabus',
     theory: {
       heading: 'Module 1: GPR Theory and Practical Use',
       subheading: 'Duration: 1 day. No prior GPR experience required.',
@@ -148,7 +123,7 @@ export const courseData: CoursePageData = {
     },
     practical: {
       heading: 'Module 2: Data Collection and Post Processing',
-      subheading: 'Duration: 1 day. Prerequisite: Module 1 or solid working knowledge.',
+      subheading: 'Duration: 1 day (approximately 08:30 to 15:00). Prerequisite: Module 1 attendance or good working knowledge of GPR operation.',
       intro: 'Morning: on-site data collection. Afternoon: post processing in Object Mapper software.',
       items: [
         'Setting up a baseline for data collection',
@@ -200,25 +175,32 @@ export const courseData: CoursePageData = {
     {
       variant: 'grid',
       images: [
-        { src: 'GPR_05_Mala_Compact_mvupzg', alt: 'MALA Easy Locator GPR equipment used in Sygma training' },
-        { src: 'GPR_07_zvhify', alt: 'GPR training practical session on site' },
-        { src: 'GPR_17_jq0zfl', alt: 'Delegates learning GPR survey techniques' },
+        { src: 'Utility-Mapping-01', alt: 'GPR training - practical session with survey equipment' },
+        { src: 'Utility-Mapping-02', alt: 'GPR training - hands-on field assessment' },
+        { src: 'MALA-GPR-12', alt: 'GPR training - on-site delivery' },
       ],
     },
     {
       variant: 'grid',
       images: [
-        { src: 'GPR_06_ymxpsk', alt: 'Ground penetrating radar data collection training' },
-        { src: 'GPR_16_m2ujzx', alt: 'GPR practical demonstration with utility detection' },
-        { src: 'GPR_19_z98jbo', alt: 'On-site GPR training with Sygma Solutions' },
+        { src: 'GPR_05_Mala_Compact_mvupzg', alt: 'Ground penetrating radar practical training session' },
+        { src: 'MALA-GPR-12', alt: 'GPR data collection on training site' },
+        { src: 'MALA-GPR-01', alt: 'Delegates learning GPR survey techniques' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'MALA-GPR-25', alt: 'GPR training equipment demonstration' },
+        { src: 'MALA-GPR-30', alt: 'Ground penetrating radar survey practical' },
+        { src: 'MALA-GPR-33', alt: 'On-site GPR training with Mala equipment' },
       ],
     },
   ],
 
   citbFunding: {
     paragraphs: [
-      'Sygma is a CITB Approved Training Organisation (ATO) and a member of the CITB Employer Network. Employers registered with CITB may be able to access Employer Network funding towards training costs.',
-      'Contact your CITB adviser or Sygma for guidance on eligibility.',
+      'Sygma is a CITB Approved Training Organisation (ATO) and a member of the CITB Employer Network. Employers registered with CITB may be able to access Employer Network funding towards training costs. Contact your CITB adviser or Sygma for guidance on eligibility.',
     ],
   },
 
@@ -232,22 +214,22 @@ export const courseData: CoursePageData = {
       {
         eyebrow: 'Experts',
         title: 'GPR Experts Who Survey Professionally',
-        desc: 'Sygma\'s ground penetrating radar trainers are experienced utility surveying experts who use GPR technology operationally. They teach from direct field experience.',
+        desc: 'Sygma\'s ground penetrating radar trainers are experienced utility surveying experts who use GPR technology operationally. They teach from direct field experience, delivering real GPR insights rather than reading from a script.',
       },
       {
         eyebrow: 'Independent',
         title: 'Independent of All Manufacturers',
-        desc: 'Sygma does not sell ground penetrating radar equipment. Training is delivered without bias toward any specific manufacturer, so delegates learn equipment selection principles and how to get the best out of whatever GPR technology they use.',
+        desc: 'Sygma does not sell ground penetrating radar equipment. Training is delivered without bias toward any specific manufacturer, so delegates learn equipment selection principles and how to get the best out of whatever GPR technology they use. This independence means you receive unbiased GPR insights that elevate your surveying capability.',
       },
       {
         eyebrow: 'PAS128',
         title: 'PAS128 Aligned',
-        desc: 'GPR Module 1 and Module 2 together provide the GPR component of PAS128 Level B survey competency.',
+        desc: 'GPR Module 1 and Module 2 together provide the GPR component of PAS128 Level B survey competency. For surveyors working toward PAS128, this is the practical GPR foundation.',
       },
       {
         eyebrow: 'Flexible',
         title: 'Flexible Delivery',
-        desc: 'Available as open courses at Sygma\'s Wigan centre or as private in-house courses at your premises. Modules can be taken individually or together.',
+        desc: 'Available as open courses at Sygma\'s Wigan centre or as private in-house courses at your premises. Modules can be taken individually or together depending on your team\'s needs.',
       },
       {
         eyebrow: 'Post Processing',
@@ -263,26 +245,26 @@ export const courseData: CoursePageData = {
     items: [
       {
         eyebrow: 'Utility Mapping',
-        title: '5-Day PAS128 Surveyor Course',
-        desc: 'Includes GPR training within the full surveyor programme.',
+        title: '5 Day PAS128 Surveyor Course',
+        desc: 'Includes GPR training within the full surveyor programme',
         href: '/courses/5-day-pas128-surveyor',
       },
       {
         eyebrow: 'Utility Mapping',
         title: 'TSA and ICES Utility Mapping Programme',
-        desc: 'Full ICES competency programme including GPR modules.',
+        desc: 'Full ICES competency programme including GPR modules',
         href: '/courses/tsa-ices-utility-mapping',
       },
       {
         eyebrow: 'Utility Mapping',
         title: 'PAS128 Awareness',
-        desc: 'Entry-level PAS128 understanding for those who procure or interpret surveys.',
+        desc: 'Entry-level PAS128 understanding for those who procure or interpret surveys',
         href: '/courses/pas128-awareness',
       },
       {
         eyebrow: 'Utility Mapping',
         title: 'ProQual Level 3 Certificate',
-        desc: 'Nationally recognised qualification for utility surveyors.',
+        desc: 'Nationally recognised qualification for utility surveyors',
         href: '/courses/level-3-certificate',
       },
     ],
@@ -312,7 +294,7 @@ export const courseData: CoursePageData = {
     },
     {
       q: 'What GPR equipment is used on the course?',
-      a: 'The course uses MALA Easy Locator GPR equipment including the HDR and HDR Pro models as standard. For in-house delivery, the course can be adapted for Leica DS2000, Leica DSX, and other client-supplied GPR systems.',
+      a: 'The course uses MALA Easy Locator GPR equipment including the HDR and HDR Pro models as standard. For in-house delivery, the course can be adapted for Leica DS2000, Leica DSX, and other client-supplied GPR systems. MALA-specific variants of both modules are available for open courses. Delegates who wish to use alternative GPR equipment should discuss this with the bookings team in advance.',
     },
     {
       q: 'What post processing software is covered in Module 2?',
@@ -324,13 +306,13 @@ export const courseData: CoursePageData = {
     },
     {
       q: 'How does this training relate to PAS128?',
-      a: 'GPR is a specified detection method within PAS128 Level B. Completing both GPR training modules equips surveyors to conduct PAS128 Level B GPR surveys. For the full PAS128 training programme covering Levels D, C and B, see the 5-Day PAS128 Surveyor Course.',
+      a: 'GPR is a specified detection method within PAS128 Level B. Completing both GPR training modules equips surveyors to conduct PAS128 Level B GPR surveys. For the full PAS128 training programme covering Levels D, C and B, see the 5 Day PAS128 Surveyor Course.',
     },
   ],
 
   cta: {
     title: 'Enquire About Ground Penetrating Radar Training',
-    description: 'Open course dates available at Sygma\'s Wigan training centre. Private in-house bookings arranged to suit your team and location.',
+    description: 'Open course dates available at Sygma\'s Wigan training centre. Private in-house bookings arranged to suit your team and location. Our GPR experts will help you choose the right module or combination to elevate your ground penetrating radar surveying skills.',
     primaryLabel: 'Enquire About GPR Training',
     primaryHref: '/contact',
     secondaryLabel: 'View All Utility Mapping Training',

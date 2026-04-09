@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'plans-and-process',
@@ -12,15 +13,17 @@ export const courseData: CoursePageData = {
       description: 'Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.',
       url: 'https://sygma-solutions.com/courses/plans-and-process',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
-    eyebrow: 'Professional Development',
-    headline: 'Plans and Process Training: Read Utility Plans Like an Expert and Work Safely',
-    sub: 'One day on-site. Learn to interpret utility plans accurately, understand PAS 128 and HSG47 requirements, and apply this knowledge to real site conditions. For site supervisors, managers, and experienced operatives.',
-    image: 'New-Landscape-10',
-    alt: 'Plans and process training for utility plan interpretation',
+    eyebrow: 'Utility Avoidance',
+    headline: 'Plans and Process Training: Read Utility Plans Properly and Survey More Safely',
+    sub: 'Most operatives can get hold of a utility plan. Far fewer can read one properly. From STATS and LSBUD to keys, scales, and regional network differences, delegates leave able to extract the right information from any plan and use it correctly on site.',
+    image: 'CAT4-and-Genny-55',
+    alt: 'Plans and process training covering utility survey planning and documentation',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
       { label: 'Plans and Process Training' },
@@ -32,6 +35,7 @@ export const courseData: CoursePageData = {
       name: 'Plans and Process Training',
       description: 'Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.',
       url: '/courses/plans-and-process',
+      credential: 'Plans and Process Certificate',
       duration: '1 day',
       mode: ['onsite'],
     },
@@ -43,113 +47,271 @@ export const courseData: CoursePageData = {
   },
 
   infoBar: [
-    { label: 'Duration', value: '1 day (on-site)' },
-    { label: 'Format', value: 'In-house at your site' },
-    { label: 'Max Delegates', value: '8-12 per course' },
-    { label: 'Assessment', value: 'Practical plan interpretation' },
-    { label: 'Certificate', value: 'Certificate of competency' },
+    { label: 'Online Format', value: 'Live Teams, approx 90 mins' },
+    { label: 'In-Person Format', value: 'Classroom and site practical' },
+    { label: 'Assessment', value: 'Practical competence check (in-person)' },
+    { label: 'Certificate', value: 'Certificate of attendance' },
+    { label: 'Delivery', value: 'Online or in-house, nationwide UK' },
   ],
 
+  whoFor: {
+    eyebrow: 'Audience',
+    title: 'Who Should Attend',
+    items: [
+      {
+        title: 'Operatives and Supervisors',
+        desc: 'Anyone who uses utility plans as part of a survey or excavation process and wants to read them more accurately. This course is often taken alongside the EUS CAT1 or RQF Level 2 Award to complete the end-to-end skills picture.',
+      },
+      {
+        title: 'Service Coordinators and USC Appointees',
+        desc: 'Coordinators responsible for sourcing, reviewing, and signing off utility plans as part of the permit and excavation process. Covers PAS128 survey types and plan interpretation in the context of the USC role.',
+      },
+      {
+        title: 'New Starters and Inductions',
+        desc: 'The online format is well suited to remote inductions. The 90-minute session covers everything a new starter needs to know about utility plans before picking up a locator for the first time.',
+      },
+    ],
+  },
+
   about: {
-    eyebrow: 'Understanding the Plans You Receive',
-    title: 'Many Site Delays Start With Misunderstood Plans',
+    eyebrow: 'The Problem With Plans',
+    title: 'Having the Plan Is Not the Same as Understanding It',
     paragraphs: [
-      'Utility plans are the starting point for every safe site survey. But plans have limitations. They contain indication lines, not exact routes. They are drawn to variable scales and accuracy standards. They don\'t always show every service. Some utilities aren\'t shown on any plan at all. Misinterpreting a plan leads to incomplete or inaccurate locate work, and can waste time, delay projects, and compromise safety.',
-      'This one-day course teaches teams to read plans critically and accurately. Delegates learn the limitations of different plan types (STATS, utilities commission records, historical surveys), understand the standards they should comply with (PAS 128, HSG47, BS 1192), and practice interpreting real site plans alongside physical site conditions. By the end of the day, your team understands what plans can and cannot tell them, and how to bridge the gap with professional survey techniques.',
-      'The course is ideal for site supervisors, survey managers, utility coordinators, and experienced operatives who want to improve their professional competency in plan reading and site interpretation.',
+      'HSG47 is clear: you must obtain utility records before you excavate. But having the plan is only the first step. Understanding what it tells you, what it does not tell you, and how to use it alongside your locator is a different skill entirely.',
+      'Misreading a plan, using the wrong scale, not spotting a network operator boundary, or failing to check the date can all lead to a locate that looks complete but leaves services undetected. This course closes that gap.',
+      'The course is built for operatives, supervisors, and coordinators who use utility plans as part of their work. It covers the legal framework, the sourcing process, how to interpret different plan types, and how plans integrate with the locating survey from start to finish.',
     ],
     sidebar: {
       eyebrow: 'Course at a Glance',
       items: [
-        { label: 'Duration', value: '1 day (6-8 hours)' },
-        { label: 'Format', value: 'On-site at your location' },
-        { label: 'Max Delegates', value: '8-12 per course' },
-        { label: 'Assessment', value: 'Practical plan interpretation and site application' },
-        { label: 'Certificate', value: 'Certificate of competency' },
-        { label: 'Suitable For', value: 'Site supervisors, survey managers, coordinators, experienced operatives' },
-        { label: 'Prerequisites', value: 'Some site experience beneficial but not essential' },
+        { label: 'Online Format', value: 'Live session via Microsoft Teams, approximately 90 minutes. Webcam and microphone required.' },
+        { label: 'In-Person Format', value: 'Classroom session plus practical site competence check' },
+        { label: 'Assessment', value: 'Online: no formal assessment. In-person: optional short practical competence check' },
+        { label: 'Certificate', value: 'Certificate of attendance' },
+        { label: 'Max Delegates', value: 'By arrangement (contact Sygma for group size guidance)' },
+        { label: 'Delivery', value: 'Online (Teams) or in-house at your site, nationwide UK' },
+        { label: 'Pricing', value: 'By quotation (contact Sygma for a tailored quote)' },
       ],
     },
   },
 
   courseContent: {
     theory: {
-      heading: 'Training Content',
-      subheading: 'Plan Interpretation and Safe Site Practice',
+      heading: 'Legal and Responsibility Framework',
       items: [
-        'Introduction to utility plans: types, sources, and standards',
-        'STATS plans: how they are created, accuracy limitations, and interpretation',
-        'Utility company records and service drawings: understanding their scope and accuracy',
-        'Historical survey records and their reliability',
-        'Plan symbols, notations, and conventions: reading utility information accurately',
-        'Scale and measurement: understanding plan accuracy at different scales',
-        'PAS 128 standard requirements for plan interpretation and survey',
-        'HSG47 guidance on reading plans and identifying hazards',
-        'Identifying plan limitations and gaps in utility information',
-        'Visual site inspection: correlating plan information with physical ground conditions',
-        'Undertaking a desktop survey: using multiple sources to build an accurate picture',
-        'Recognising services that may not be shown on plans (private installations, old services)',
-        'Creating an accurate locate brief for the surveying team',
-        'Documentation and records: maintaining plan sets and updating information',
+        'HSG47 responsibilities for obtaining and using utility plans before any excavation',
+        'CDM obligations (client, designer, and contractor responsibilities)',
+        'When and why you need to source utility plans before breaking ground',
       ],
     },
     practical: {
-      heading: 'Practical Application',
-      subheading: 'Real Plans and Real Site Conditions',
-      intro: 'The practical element of the course involves interpreting actual plans relevant to your site and reconciling them with physical ground conditions.',
+      heading: 'What the Course Covers',
+      intro: 'The course covers utility plan reading from first principles through to practical site application. The same content applies to both formats.',
       items: [
-        'Plan interpretation exercises using real site plans',
-        'Visual site inspection and plan verification',
-        'Identifying utilities on site that do not appear on plans',
-        'Recognising service changes and disconnections not recorded on plans',
-        'Practical assessment of plan reading competency',
-        'Feedback and discussion of real site examples',
+        'Network Areas and Regional Differences',
+        'Different network operators and the areas they cover across the UK',
+        'Regional differences in plan formats, keys, and notation by area',
+        'Understanding which operator owns which asset in a given location',
+        'Sourcing Utility Plans',
+        'How to use LSBUD (Line Search Before U Dig) to request statutory utility records',
+        'How to use Digdat and other plan sources for a complete picture',
+        'Understanding the difference between a statutory response and a survey-grade drawing',
+        'Reading and Interpreting Plans',
+        'Keys and legends: material types, pipe sizes, cable types, and what they mean',
+        'Scale: confirming you have the correct area and scale for the job in hand',
+        'Dates: checking plan currency and understanding the limitations of older records',
+        'Cross-sections and supplementary information contained in the plan',
+        'Voltage and pressure notation: does it change the locate technique?',
+        'Colour coding conventions and what they indicate for different services',
+        'Using Plans With a Locator Survey',
+        'How to use plans to select the correct utility detection technique for the job',
+        'The process from reading plans to conducting the survey, step by step',
+        'Accuracy and limitations: what the plan will not show you',
+        'Using your eyes: visual survey as a complement to the utility plan',
       ],
     },
+  },
+
+  formats: {
+    eyebrow: 'Delivery Formats',
+    title: 'Practical Element and Competence Check',
+    rows: [
+      {
+        format: 'Online (Teams)',
+        duration: 'Live session, approx 90 minutes',
+        maxDelegates: 'Unlimited (contact for guidance)',
+        assessment: 'No formal assessment',
+      },
+      {
+        format: 'In-House Classroom with Practical',
+        duration: 'Full session including site competence check',
+        maxDelegates: 'By arrangement',
+        assessment: 'Optional practical competence check',
+      },
+    ],
+    notes: [
+      'When delivered in person, the course adds a practical element where delegates apply what they have learned in a real or representative site environment. This includes working with real plans, identifying utility routes, checking scales, and then using a locator in conjunction with the plan.',
+      'A short competence check is completed to document understanding and practical ability. This does not qualify as an EUS assessment, but it gives a documented record of delegate competence that your company can retain.',
+    ],
+  },
+
+  certRoutes: {
+    eyebrow: 'What You Get',
+    title: 'At the End of This Course',
+    items: [
+      { title: 'Certificate of Attendance', desc: 'Certificate of Attendance' },
+      { title: 'HSG47 and PAS128 Reference Pack', desc: 'HSG47 and PAS128 Reference Pack' },
+      { title: 'Plan Interpretation Guidance Notes', desc: 'Plan Interpretation Guidance Notes' },
+      { title: 'CPD Record for Your Portfolio', desc: 'CPD Record for Your Portfolio' },
+    ],
   },
 
   photoStrips: [
     {
-      images: [
-        { src: 'New-Landscape-10', alt: 'Plans and process training - plan interpretation' },
-        { src: 'New-Landscape-03', alt: 'Site survey and plan verification training' },
-        { src: 'New-Landscape-06', alt: 'Utility plan assessment competency training' },
-      ],
       variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-45', alt: 'Plans and process training - practical session' },
+        { src: 'CAT4-and-Genny-56', alt: 'Plans and process training - hands-on assessment' },
+        { src: 'Safe-Dig-13', alt: 'Plans and process training with practical site element' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-47', alt: 'Plans and process training practical session' },
+        { src: 'MALA-GPR-04', alt: 'Utility plans interpretation training' },
+        { src: 'CAT4-and-Genny-66', alt: 'Understanding utility drawings and records' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'CAT4-and-Genny-52', alt: 'Plans and process training - live training environment' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-50', alt: 'Plans and process qualification assessment' },
+        { src: 'MALA-GPR-02', alt: 'Utility mapping and plans training' },
+        { src: 'CAT4-and-Genny-61', alt: 'On-site plans and process practical' },
+      ],
+    },
+  ],
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding. All Sygma courses exceed 51% practical. CITB-registered employers may be able to access Employer Network funding towards training costs. Plans and process training is recognised as essential foundation knowledge for utility avoidance work.',
+    ],
+  },
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Records and Planning',
+        title: 'Understanding utility records is the first step before any equipment reaches the ground.',
+        desc: 'Proper plan reading prevents incomplete surveys and dangerous misinterpretations.',
+      },
+      {
+        eyebrow: 'Specialist Trainers',
+        title: 'Directly employed, ex-surveyors and ex-manufacturers, TAQA qualified.',
+        desc: 'Trainers who have worked with utility plans in the field every day.',
+      },
+      {
+        eyebrow: 'Real Practical Assessment',
+        title: 'Structured on-site practical in real conditions.',
+        desc: 'In-person format includes site practical with real utility plans and buried services.',
+      },
+      {
+        eyebrow: 'Independent',
+        title: 'No surveys, no equipment, no manufacturer relationships.',
+        desc: 'Training focused entirely on plan reading skills, not commercial interests.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'Delivered at your site, travel included.',
+        desc: 'In-house training at your location for online and in-person formats.',
+      },
+      {
+        eyebrow: 'Two Formats',
+        title: 'Online Teams session or full in-person with site practical element.',
+        desc: 'Choose the delivery method that suits your team\'s needs.',
+      },
+    ],
+  },
+
+  relatedCourses: {
+    eyebrow: 'Next Steps',
+    title: 'Related Training Courses',
+    intro: 'Combine plans and process training with locating and safe dig qualifications.',
+    items: [
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'EUS CAT1',
+        desc: 'The foundation qualification for utility location. Plans and locating work together from start to finish.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'EUS CAT2 Safe Dig',
+        desc: 'Safe excavation and permit requirements. Essential for teams executing digs after planning.',
+        href: '/courses/eus-cat2-safe-dig',
+      },
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'Service Coordinator (USC)',
+        desc: 'For those responsible for sourcing and reviewing utility plans as part of the USC role.',
+        href: '/courses/service-coordinator-usc',
+      },
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
+    },
+  ],
+
+  faqs: [
+    {
+      q: 'Does the course cover LSBUD and Digdat?',
+      a: 'Yes. The course covers how to use LSBUD (Line Search Before U Dig) to request statutory records from utility owners, and how to use Digdat as an additional source. Delegates will understand how to obtain the right plans for the job before any excavation takes place.',
+    },
+    {
+      q: 'Is this course just for operatives?',
+      a: 'No. While operatives benefit significantly, the course is equally relevant for supervisors, coordinators, and anyone who sources, reviews, or signs off utility plans as part of the excavation process. The Service Coordinator (USC) course also covers utility plans in more depth in the context of the USC appointment.',
+    },
+    {
+      q: 'What is the difference between the online and in-person format?',
+      a: 'The online format is a 90-minute live session via Teams covering the full classroom content. The in-person format includes the same classroom content plus a site practical element and a documented competence check. For teams where site competence needs to be recorded, the in-person format is recommended.',
+    },
+    {
+      q: 'Does this course lead to a qualification?',
+      a: 'No. Both formats issue a certificate of attendance. The in-person format includes a competence check. If you need a nationally recognised qualification, look at the RQF Level 2 Award or the EUS CAT1 course, both of which include utility plans as part of a broader assessment.',
+    },
+    {
+      q: 'Can this course be delivered as part of a site induction?',
+      a: 'Yes. The online format is well suited to remote inductions and can be used as a standalone session for new starters before they arrive on site. Contact Sygma to discuss how it can be incorporated into your onboarding process.',
+    },
+    {
+      q: 'What plans experience do delegates need before attending?',
+      a: 'None. The course starts from first principles and is suitable for delegates at all levels. Experienced operatives will find it confirms and formalises existing knowledge; newer starters get the full framework from the ground up.',
     },
   ],
 
   cta: {
-    title: 'Book Your Plans and Process Training',
-    description: 'One day on-site. Learn to read plans accurately and survey more safely. Contact us with your delegate numbers and preferred dates.',
-    primaryLabel: 'Get in Touch',
+    title: 'Enquire About Plans and Process Training',
+    description: 'Online via Teams or in-house at your site. Contact us to discuss the format that works best for your team and receive a tailored quotation.',
+    primaryLabel: 'Request a Quote',
     primaryHref: '/contact',
+    secondaryLabel: 'View All Utility Avoidance Training',
+    secondaryHref: '/training/cable-location-avoidance',
   },
-
-  faqs: [
-    {
-      q: 'Is this course suitable for site operatives or only supervisors?',
-      a: 'This course is designed for site supervisors, managers, and experienced operatives. It assumes basic site knowledge and focuses on professional competency in plan interpretation. Complete beginners should start with awareness-level training covering HSG47 and PAS 128 principles before taking this course.',
-    },
-    {
-      q: 'Do we need to provide plans for the training?',
-      a: 'Yes. The most valuable training uses actual plans from your site. Please provide utility plans, STATS records, or other survey data available for your location. If you don\'t have plans in advance, we can work with generic examples, but using your real site plans will give better practical learning.',
-    },
-    {
-      q: 'Can this course be delivered online?',
-      a: 'No. The Plans and Process course requires on-site delivery so that the practical element can compare plans with actual ground conditions. This physical comparison is essential to understanding plan accuracy and limitations.',
-    },
-    {
-      q: 'How often is this training delivered?',
-      a: 'The course can be arranged on flexible dates to suit your team. Contact us with your preferred timeframe and delegate numbers. Multiple sessions can be arranged if you have large teams to train.',
-    },
-    {
-      q: 'Can this course be combined with other training?',
-      a: 'Yes. Many organisations combine Plans and Process training with CAT and Genny courses or HSG47 awareness training to provide comprehensive competency. Contact us to discuss combining courses.',
-    },
-    {
-      q: 'What if some of our team are complete beginners to site work?',
-      a: 'Beginners should start with HSG47 awareness training to build foundational knowledge before taking the Plans and Process course. For established teams wanting to improve plan-reading competency, the Plans and Process course delivers focused professional development.',
-    },
-  ],
 };

@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'gs6-overhead-power-lines',
@@ -12,15 +13,17 @@ export const courseData: CoursePageData = {
       description: 'GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.',
       url: 'https://sygma-solutions.com/courses/gs6-overhead-power-lines',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
-    eyebrow: 'Safety Training',
+    eyebrow: 'Utility Avoidance',
     headline: 'GS6 Overhead Power Lines: Awareness and Safe Working Training',
-    sub: 'Half-day or full-day training covering overhead power lines, approach distances, risk assessment, and safe working practices. GS6 compliant.',
-    image: 'New-Landscape-04',
-    alt: 'GS6 overhead power lines safety training',
+    sub: 'Half-day classroom awareness or full-day with practical site element. Written assessment with 70% pass mark. GS6 fourth edition and ENATS 43-8. Delivered in-house at your site, nationwide UK.',
+    image: 'CAT4-and-Genny-45',
+    alt: 'GS6 overhead power lines awareness training for safe working near electrical hazards',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
       { label: 'GS6 Overhead Power Lines' },
@@ -32,7 +35,8 @@ export const courseData: CoursePageData = {
       name: 'GS6 Overhead Power Lines Training',
       description: 'GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.',
       url: '/courses/gs6-overhead-power-lines',
-      duration: '½ or 1 day',
+      credential: 'GS6 Overhead Power Lines Certificate',
+      duration: '1 day',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -43,120 +47,238 @@ export const courseData: CoursePageData = {
   },
 
   infoBar: [
-    { label: 'Duration', value: 'Half day (awareness) or full day (comprehensive)' },
-    { label: 'Format', value: 'On-site at your location' },
-    { label: 'Max Delegates', value: '12 per session' },
-    { label: 'Assessment', value: 'Theory assessment' },
-    { label: 'Certificate', value: 'Certificate of attendance or competency' },
+    { label: 'Formats Available', value: 'Half-day or Full-day' },
+    { label: 'Assessment', value: 'Written, 70% pass mark' },
+    { label: 'Standards Covered', value: 'GS6 4th Edition, ENATS 43-8' },
+    { label: 'Certificate', value: 'Certificate of attendance' },
+    { label: 'Delivery', value: 'In-house, nationwide UK' },
   ],
 
   about: {
-    eyebrow: 'Safe Working Near Overhead Power Lines',
-    title: 'Preventing Contact with Overhead Power Lines',
+    eyebrow: 'Overhead Line Hazard Training',
+    title: 'Understanding the Risk Above the Ground',
     paragraphs: [
-      'Overhead power lines pose a serious hazard on many construction and utility sites. Electrocution, arc flash, and serious injury are real risks when working or moving equipment near overhead lines. GS6 training covers the science of electrical hazards, the identification of different line types, approach distances, and the safe systems of work that prevent contact.',
-      'The GS6 standard defines the competency requirements for safe working near overhead power lines. This training covers the identification of different voltage lines, safe approach distances, the role of the appointed person, exclusion zones, permits to work, and emergency procedures if contact occurs.',
-      'Choose the half-day awareness option for general site awareness, or the full-day comprehensive programme for teams that regularly work near overhead lines or require formal competency assessment.',
+      'Overhead power lines kill and injure workers every year. Unlike buried services, overhead conductors are visible, but that visibility creates complacency. The consequences of contact are immediate and almost always fatal. GS6 exists to give workers and managers the knowledge to recognise the hazard, plan their work correctly, and apply the control measures that prevent contact from occurring.',
+      'Sygma\'s GS6 Overhead Power Lines course is delivered against the GS6 fourth edition and ENATS 43-8. It is available in two formats: a half-day classroom and assessment session for teams that need the theoretical grounding, and a full-day programme that adds a practical site element covering the use of the supa rule and the application of control measures in a real working environment.',
+      'Both formats include a written assessment with a 70% pass mark. A verbal assessment is available as an alternative for delegates with dyslexia or other reading difficulties (contact Sygma at the time of booking to arrange this).',
     ],
     sidebar: {
       eyebrow: 'Course at a Glance',
       items: [
-        { label: 'Duration', value: 'Half day (4 hours) or full day (8 hours)' },
-        { label: 'Format', value: 'On-site at your location' },
-        { label: 'Max Delegates', value: '12 per session' },
-        { label: 'Assessment', value: 'Theory test (full day)' },
-        { label: 'Certificate', value: 'Certificate of attendance (half day) or competency (full day)' },
-        { label: 'Framework', value: 'GS6 compliant' },
-        { label: 'Prerequisites', value: 'None' },
+        { label: 'Formats', value: 'Half-day (classroom + assessment) or Full-day (classroom + site practical + assessment)' },
+        { label: 'Standards', value: 'GS6 fourth edition and ENATS 43-8' },
+        { label: 'Assessment', value: 'Written assessment, 70% pass mark (verbal alternative available)' },
+        { label: 'Certificate', value: 'Certificate of attendance on successful completion' },
+        { label: 'Format', value: 'In-house at your site' },
+        { label: 'Delivery', value: 'Nationwide UK' },
+        { label: 'Pricing', value: 'Contact Sygma for a tailored quotation' },
       ],
     },
   },
 
   courseContent: {
+    eyebrow: 'Classroom Content',
+    title: 'What the Classroom Element Covers',
     theory: {
-      heading: 'Course Content',
-      subheading: 'Overhead Power Lines Awareness and Safety',
+      heading: 'Classroom Programme',
+      subheading: 'Common to both half-day and full-day formats',
       items: [
-        'Identifying different types of overhead power lines (distribution, transmission, rural, urban)',
-        'Understanding voltage and electrical hazard: the dangers of AC and DC lines',
-        'GS6 standard and competency requirements for safe working near overhead lines',
-        'Approach distances: understanding safe working distances for different line types and voltages',
-        'The appointed person role and responsibilities',
-        'Risk assessment near overhead lines',
-        'Safe systems of work: work permits, exclusion zones, and barriers',
-        'Emergency procedures if contact with overhead lines occurs',
-        'First aid for electrical contact and electrocution',
-        'Equipment and machinery: understanding clearance requirements for cranes, platforms, and vehicles',
-        'Site-specific hazards and hazard identification',
+        'Legislation and guidance: Health and Safety at Work Act, CDM, Electricity at Work Regulations, and the role of GS6',
+        'Consequences of overhead line contact: live incidents, statistics, and what happens in a contact event',
+        'GS6 fourth edition: requirements, application, and what it means for your work activities',
+        'ENATS 43-8: network specifications and what they tell you about the lines on your site',
+        'Tower and structure types: wood poles, lattice towers, H-frames, and how to identify them',
+        'Voltage classifications: extra-high, high, and low voltage overhead systems and what they look like',
+        'Conductor sag: why conductors droop, what affects sag, and why this matters for approach distances',
+        'Safe approach distances and the exclusion zone: the three-zone model and how to calculate required clearances',
+        'Risk assessments for work near overhead lines: what they must contain and who carries them out',
+        'Control measures: goal posts, crossbars, suspended loads restrictions, spotter roles, and danger notices',
+        'Emergency procedures: what to do in a contact or near-miss incident, who to call, and how to manage casualties safely',
       ],
     },
     practical: {
-      heading: 'Training Delivery Options',
-      items: [],
+      heading: 'Site Practical (Full-Day Format)',
+      subheading: 'Applying the Theory on Site',
+      intro: 'The full-day programme adds a practical element where delegates apply what they have learned in a real or representative outdoor environment. Sygma trainers use a flexible approach, adapting site activities to the location available.',
+      items: [
+        'Reading and interpreting overhead line route drawings and DNO records',
+        'Identifying tower and structure types in the field',
+        'Estimating voltage from visual inspection of infrastructure',
+        'Using the supa rule to take conductor height measurements',
+        'Applying the three-zone model to a specific site scenario',
+        'Setting out goal posts and crossbars at the correct clearance heights',
+        'Completing a risk assessment for a representative work activity near overhead lines',
+        'Discussion of spotter responsibilities and communication requirements on site',
+      ],
     },
-  },
-
-  formats: {
-    eyebrow: 'Training Formats',
-    title: 'Half-Day Awareness or Full-Day Competency',
-    rows: [
-      {
-        format: 'Half-Day Awareness',
-        duration: '4 hours',
-        maxDelegates: '12',
-        assessment: 'None (awareness only)',
-      },
-      {
-        format: 'Full-Day Comprehensive',
-        duration: '8 hours',
-        maxDelegates: '12',
-        assessment: 'Theory test and practical scenarios',
-      },
-    ],
   },
 
   photoStrips: [
     {
-      images: [
-        { src: 'New-Landscape-04', alt: 'GS6 overhead power lines safety training' },
-        { src: 'New-Landscape-07', alt: 'Overhead lines risk assessment training' },
-        { src: 'New-Landscape-07', alt: 'Safe working near overhead power lines' },
-      ],
       variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-46', alt: 'GS6 overhead power lines training - practical session' },
+        { src: 'CAT4-and-Genny-58', alt: 'GS6 overhead power lines training - hands-on assessment' },
+        { src: 'Safe-Dig-15', alt: 'GS6 overhead power lines safety training' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-41', alt: 'GS6 overhead power lines awareness training' },
+        { src: 'CAT4-and-Genny-55', alt: 'Overhead power line safety practical session' },
+        { src: 'Safe-Dig-15', alt: 'GS6 compliance training demonstration' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'CAT4-and-Genny-53', alt: 'GS6 overhead power lines training - live training environment' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-43', alt: 'GS6 training with site safety equipment' },
+        { src: 'CAT4-and-Genny-55', alt: 'Overhead power lines safety assessment' },
+        { src: 'Safe-Dig-10', alt: 'On-site GS6 compliance practical training' },
+      ],
     },
   ],
 
-  cta: {
-    title: 'Book Your GS6 Overhead Power Lines Training',
-    description: 'On-site at your location. Half-day awareness or full-day competency programme. Contact us with your team size and preferred dates.',
-    primaryLabel: 'Get in Touch',
-    primaryHref: '/contact',
+  formats: {
+    eyebrow: 'Course Formats',
+    title: 'Choose the Format That Fits Your Needs',
+    rows: [
+      {
+        format: 'Half-Day Awareness',
+        duration: 'Half-day',
+        maxDelegates: 'Classroom and written assessment only',
+        assessment: 'The half-day format covers the full classroom programme: legislation, GS6 fourth edition, voltage classifications, conductor behaviour, safe approach distances, and control measures. Delegates complete a written assessment before the session ends.',
+      },
+      {
+        format: 'Full-Day with Practical',
+        duration: 'Full-day',
+        maxDelegates: 'Classroom, site practical, and written assessment',
+        assessment: 'The full-day format adds a practical site element to the classroom programme. Delegates use the supa rule to measure conductor heights in the field, identify tower and structure types, apply safe approach distances on site, and set up the control measures required before work can begin.',
+      },
+    ],
+  },
+
+  relatedCourses: {
+    eyebrow: 'Next Steps',
+    title: 'Related Training Courses',
+    intro: 'Build a comprehensive safety programme across all utility avoidance hazards.',
+    items: [
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'EUS CAT1',
+        desc: 'Underground services avoidance. The complement to overhead line safety in a complete hazard awareness programme.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'EUS CAT2 Safe Dig',
+        desc: 'Safe excavation techniques for buried services. Essential knowledge for teams working in multi-hazard environments.',
+        href: '/courses/eus-cat2-safe-dig',
+      },
+      {
+        eyebrow: 'Utility Avoidance',
+        title: 'Service Coordinator (USC)',
+        desc: 'Coordination and oversight of underground service avoidance. Essential for site supervisors and managers.',
+        href: '/courses/service-coordinator-usc',
+      },
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
+    },
+  ],
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'GS6 Compliance',
+        title: 'Meets HSE GS6 guidance requirements for working near overhead power lines.',
+        desc: 'Delivered against the GS6 fourth edition and ENATS 43-8. Your team leaves with documented competency.',
+      },
+      {
+        eyebrow: 'Specialist Trainers',
+        title: 'Directly employed, ex-surveyors and ex-manufacturers, TAQA qualified.',
+        desc: 'Trainers who understand the hazard and how to communicate it effectively to site teams.',
+      },
+      {
+        eyebrow: 'Real Practical Assessment',
+        title: 'Structured on-site practical in real conditions.',
+        desc: 'Full-day format includes practical measurement and control measure application on site.',
+      },
+      {
+        eyebrow: 'Independent',
+        title: 'No surveys, no equipment, no manufacturer relationships.',
+        desc: 'Impartial delivery focused entirely on safety, not commercial interests.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'Delivered at your site, travel included.',
+        desc: 'In-house training at your location, with access to your local overhead infrastructure if available.',
+      },
+      {
+        eyebrow: 'Two Formats',
+        title: 'Half-day awareness or full-day with practical site element.',
+        desc: 'Choose the format that matches your team\'s needs and responsibilities.',
+      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding. All Sygma courses exceed 51% practical.',
+      'CITB-registered employers may be able to access Employer Network funding towards training costs. GS6 training is recognised as essential health and safety competency development.',
+    ],
   },
 
   faqs: [
     {
-      q: 'What is the difference between half-day awareness and full-day competency training?',
-      a: 'The half-day awareness session provides general understanding of overhead line hazards and safe working principles. The full-day competency programme includes the awareness content plus more detailed theory, case studies, risk assessment practice, and a formal assessment to confirm competency in the GS6 role.',
+      q: 'Which format is right for my team?',
+      a: 'The half-day awareness format is suitable for teams that need the theoretical knowledge: understanding the hazard, the legislation, the control measures, and what the standards require. The full-day format is appropriate where delegates will have a direct role in applying control measures on site, operating plant near overhead lines, or conducting risk assessments. If you are unsure, contact Sygma and we will advise based on your team\'s roles and responsibilities.',
     },
     {
-      q: 'Is GS6 training mandatory for all site workers?',
-      a: 'GS6 training is mandatory for anyone whose work could bring them within the defined approach distance of overhead power lines. This includes site managers, supervisors, crane operators, and any team member working on sites with overhead lines. Check with your organisation\'s health and safety requirements.',
+      q: 'What is the supa rule and why is it relevant?',
+      a: 'The supa rule is a telescopic measuring pole used to determine the height of overhead conductors at a safe distance from the line. It allows the measured clearance height to be compared against the known sag curve data for that type of line, which in turn determines the maximum safe height for plant and equipment working in the vicinity. The supa rule is used as part of the risk assessment process under GS6 and is covered in the practical element of the full-day format.',
     },
     {
-      q: 'Do we need to provide any site equipment for the training?',
-      a: 'No specialist equipment is required. The training takes place in a suitable meeting room on your site. We will conduct a site survey to identify any overhead lines near your working areas during the training.',
+      q: 'What does ENATS 43-8 cover?',
+      a: 'ENATS 43-8 is the Energy Networks Association technical specification that sets out the minimum clearance distances for overhead line construction in the UK. It provides the technical basis for the approach distances used in GS6. Understanding ENATS 43-8 allows delegates to understand why specific clearance distances are set as they are, rather than simply memorising numbers.',
     },
     {
-      q: 'Can this training be delivered online?',
-      a: 'The GS6 training can include an online theory component, but the full-day competency programme includes site assessment and practical scenarios which require on-site delivery. Contact us to discuss blended learning options.',
+      q: 'Does passing this course give EUS recognition?',
+      a: 'No. The GS6 Overhead Power Lines course is an awareness and training programme delivered against the GS6 fourth edition. It does not form part of the EUSR (Energy & Utility Skills Register) qualification framework. Delegates who successfully complete the written assessment receive a certificate of attendance from Sygma.',
     },
     {
-      q: 'What if we have existing competency but need refresher training?',
-      a: 'Refresher and recertification training is available. If your team are already GS6-trained, we can deliver focused refresher sessions covering changes in standards, site-specific hazards, or competency confirmation. Contact us to discuss your specific needs.',
+      q: 'Can a verbal assessment be arranged?',
+      a: 'Yes. Sygma offers verbal assessment as an alternative to the written paper for delegates with dyslexia or other reading difficulties. This must be requested at the time of booking so that the trainer can prepare accordingly. The verbal assessment covers the same content and is conducted at the same pass mark threshold.',
     },
     {
-      q: 'How often should GS6 training be refreshed?',
-      a: 'Most organisations refresher train every 2-3 years. Some regulatory bodies and client specifications require annual refresher. Check your own organisational requirements and your client specifications. Sygma can schedule refresher training at your preferred interval.',
+      q: 'Can you deliver this alongside other Sygma training on the same day?',
+      a: 'Yes, depending on the format. The half-day awareness programme can be combined with other half-day modules where your team has multiple training needs in the same visit. Contact Sygma to discuss combining GS6 awareness with other elements of your utility safety training programme.',
     },
   ],
+
+  cta: {
+    title: 'Enquire About GS6 Overhead Power Lines Training',
+    description: 'Half-day awareness or full-day with site practical. Delivered in-house at your site anywhere in the UK. Contact us to discuss your team\'s requirements and receive a tailored quotation.',
+    primaryLabel: 'Enquire About This Course',
+    primaryHref: '/contact',
+    secondaryLabel: 'View All Utility Avoidance Training',
+    secondaryHref: '/training/cable-location-avoidance',
+  },
 };

@@ -42,6 +42,7 @@ export const courseData: CoursePageData = {
       { label: 'Training', to: '/training/cable-location-avoidance' },
       { label: 'ZS Superuser: Scottish Water' },
     ],
+    includeFaqSchema: true,
   },
 
   stats: [
@@ -59,6 +60,239 @@ export const courseData: CoursePageData = {
       value: 'Proven',
       label: 'Strike Reduction Record',
       detail: 'Clients report measurable reductions in utility strikes after completing cat and genny training courses.',
+    },
+  ],
+
+  infoBar: [
+    { label: 'Duration', value: '2 days (flexible approach)' },
+    { label: 'Max Delegates', value: '6 per course' },
+    { label: 'Framework', value: 'ZSI Zero Strike Initiative' },
+    { label: 'Assessments', value: '3 formal assessments' },
+    { label: 'Prerequisite', value: 'EUS CAT1 and EUS CAT2' },
+  ],
+
+  about: {
+    eyebrow: 'ZSI-Specific Super User Cat and Genny Training',
+    title: 'The EUS Superuser Standard, Built for the Scottish Water Supply Chain',
+    paragraphs: [
+      'The ZS Superuser training course follows the same two-day structure and assessment framework as Sygma\'s EUS Superuser course, with one important difference: the delivery is mapped to the Scottish Water Zero Strike Initiative (ZSI) framework. This cat and genny training teaches delegates how to locate utility services, operate cat and genny equipment to the required standard, and coach others in safe excavation practices.',
+      'Scottish Water\'s Zero Strike Initiative sets specific standards for how utility location and avoidance work is planned, documented, and carried out across its supply chain. Delegates learn to use cable avoidance tools (CAT) and signal generators (genny) to locate buried services and underground utilities safely, avoiding danger from underground services during excavation work. The ZSI Operators\' Guide, the minimum locator standard, and Scottish Water\'s company-specific policies are all embedded into the delivery.',
+      'Delegates leave with the same advanced capabilities as EUS Superuser completers (advanced location, utility strike investigation, coaching, and assessment competency) but with content, documentation, and case studies specific to Scottish Water operations. The course develops practical skills in operating cat and genny equipment across all modes, interpreting utility drawings, and conducting best practice surveys to locate utility services in complex underground utility networks.',
+    ],
+    sidebar: {
+      eyebrow: 'Course at a Glance',
+      items: [
+        { label: 'Duration', value: '2 days (no fixed daily timings, flexible approach across both days)' },
+        { label: 'Max Delegates', value: '6 per course' },
+        { label: 'Prerequisite', value: 'EUSR Category: EUS CAT1 and EUS Safe Dig CAT2 certification' },
+        { label: 'Equipment Standard', value: 'Advanced cat and genny equipment minimum (Scottish Water ZSI requirement)' },
+        { label: 'Framework', value: 'Scottish Water Zero Strike Initiative (ZSI)' },
+        { label: 'Assessments', value: 'Three formal assessments: POW Risk Assessment, Practical Assessment 1, Practical Assessment 2 (coaching)' },
+        { label: 'Delivery', value: 'In-house training course at your premises, nationwide UK' },
+        { label: 'Pricing', value: 'By quotation. Contact Sygma' },
+      ],
+    },
+  },
+
+  hsg47: {
+    items: [
+      {
+        eyebrow: 'Framework',
+        title: 'The ZSI Framework',
+        desc: 'Scottish Water\'s Zero Strike Initiative is the framework that governs utility location and avoidance across its supply chain, ensuring compliance with current legislation and guidance for avoiding danger from underground services. It sets minimum standards for cat and genny training, documentation, PPE, survey methodology, and permit management.',
+      },
+    ],
+  },
+
+  courseContent: {
+    eyebrow: 'Classroom Content',
+    title: 'Knowledge Required to Operate as a ZSI Superuser',
+    theory: {
+      heading: 'Classroom Content',
+      subheading: 'The theory and knowledge required to fulfil the ZS Superuser role: advanced cat and genny training covering location theory, utility strike investigation, CAT Manager data analysis, and the coaching skills and competency needed to assess other operatives against the ZSI standard.',
+      items: [
+        'Underground service strikes: the risks of hitting buried services, HSG47 guidance, and ZSI requirements for avoiding danger from underground utilities',
+        'Permit to break ground: Scottish Water specific requirements, completion and sign-off',
+        'Company-specific policies and ZSI safe dig procedures for safe excavation near underground services',
+        'ZSI company-specific examples of utility strikes and lessons learned',
+        'Buried service plans (STATS): interpretation, inaccuracies, and limitations when locating utility services in the Scottish Water context',
+        'How to use utility drawings and plans to plan the correct utility detection technique',
+        'Electromagnetic theory: how a cable avoidance tool (CAT) and signal generator (genny) works, limitations, tips and techniques',
+        'Myth busting: understanding what cat and genny equipment can and cannot locate',
+        'Genny-First methodology: promoting the genny training message and leading by example',
+        'Cat and genny controls and operation: correct use of cable avoidance tools and signal generator in all modes to locate utility services',
+        'Signal interpretation: locating service joints, changes of direction, and depth estimation',
+        'Signal distortion and its effects on location accuracy when locating underground services',
+        'Transmitter techniques: dual frequency, capacitance, earth positioning, induction, nulling out, and blind sweeps',
+        'Depth estimation and practical instruction on interpreting readings',
+        'Complex utility networks: how to plan and execute a complete utility survey to locate buried services',
+        'Knowledge-based assessment of cat and genny training competency',
+        'CAT Manager: downloading and exporting raw data (CSV and KML files) to identify usage patterns',
+        'Importing data into CAT Manager Online and creating line search documents and reports',
+        'Analysing raw data: spotting usage patterns and identifying good and poor practice across your team',
+        'Utility strike investigation: completing the USAG utility strike form',
+        'Coaching others: principles, structure, and ZSI coaching requirements for developing practical skills in cat and genny operation',
+      ],
+    },
+    practical: {
+      heading: 'Site Practical',
+      subheading: 'ZSI Methodology Applied on a Live Utility Area',
+      intro: 'The site practical training is flexible across both days and is conducted on a live utility area with real underground services. All practical work follows ZSI survey methodology (genny first, then passive and all other modes) to locate utility services in line with Scottish Water requirements.',
+      items: [
+        'Utility drawings, plans and site information used to ascertain indicated underground utility routes before going onto site',
+        'Importance of site visual checks including street furniture, HV assets, kiosks, and lamp posts',
+        'Correct use of cable avoidance tools (CAT) and signal generator (genny) in all modes to locate buried services',
+        'Genny-First methodology: understanding the ZSI requirement and applying cat and genny in the field',
+        'Street lighting location using cat and genny equipment',
+        'LV service and main tracing, including joint location of underground services',
+        'HV cable detection and underground utility location',
+        'Communications cable location',
+        'Induction sweeps, blind sweeps, and nulling out',
+        'Capacitance techniques and earth repositioning',
+        'Individual practical assessment (Assessment 1: standard locate to assess competency in locating utility services)',
+        'Coaching assessment: delegates coach and assess each other using the Assessment 1 document and the Sygma coaching sheet (Assessment 2)',
+        'Coaching competency checks in accordance with ZSI coaching criteria',
+      ],
+    },
+  },
+
+  certRoutes: {
+    eyebrow: 'Assessments',
+    title: 'Three Formal Assessments Over Two Days',
+    items: [
+      {
+        title: 'POW Risk Assessment',
+        desc: 'Each delegate completes their own Point of Work Risk Assessment before the practical cat and genny training begins, identifying risks on site and planning assessment of the work area.',
+      },
+      {
+        title: 'Practical Assessment 1: Standard Locate',
+        desc: 'Sygma standard practical assessment that records and documents the delegate\'s skills and competency to operate cat and genny equipment and locate utility services independently in line with ZSI requirements.',
+      },
+      {
+        title: 'Practical Assessment 2: Coaching Assessment',
+        desc: 'Delegates use the Assessment 1 document to coach and assess each other on cat and genny operation, supported by the Sygma coaching sheet. The coaching competency criteria include: communicating effectively with the team, considering learning needs, downloading and understanding CAT Manager data, and giving structured guidance and feedback.',
+      },
+      {
+        title: 'Permit to Break Ground',
+        desc: 'Each delegate completes a permit to break ground, ideally using the Scottish Water or customer-specific permit form.',
+      },
+    ],
+  },
+
+  whoFor: {
+    eyebrow: 'Audience',
+    title: 'Who Should Attend',
+    items: [
+      {
+        title: 'Experienced Operatives in the Scottish Water Supply Chain',
+        desc: 'Operatives who hold EUS CAT1 and EUS Safe Dig CAT2 certification and are ready to step up to a superuser role. This cat and genny training course is suitable for those who will be coaching, supporting, and assessing their teams on ZSI-compliant surveys to locate utility services and underground utilities.',
+      },
+      {
+        title: 'Supervisors and Team Leaders',
+        desc: 'Supervisors and team leaders responsible for coaching their teams in ZSI methodology, conducting documented assessments, investigating utility strikes, and leading by example in the field. The ZS Superuser genny training gives them the advanced knowledge and assessed competency to operate cat and genny equipment and conduct safe excavation guidance effectively.',
+      },
+      {
+        title: 'Companies with Scottish Water Contracts',
+        desc: 'Any company in the Scottish Water supply chain that needs to develop internal superuser capability in line with ZSI requirements. This cat and genny training course ensures your superusers are trained, assessed, and documented to the standard Scottish Water expects for locating buried services and underground utilities during construction and excavation work.',
+      },
+    ],
+  },
+
+  photoStrips: [
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-49', alt: 'ZS Superuser Scottish Water training -- practical session' },
+        { src: 'CAT4-and-Genny-61', alt: 'ZS Superuser Scottish Water training -- hands-on assessment' },
+        { src: 'Safe-Dig-11', alt: 'Scottish Water utility avoidance site practical' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'CAT4-and-Genny-56', alt: 'ZS Superuser Scottish Water training -- live training environment' },
+      ],
+    },
+  ],
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Scottish Water Approved',
+        title: 'Meets Scottish Water ZS standard requirements for utility location competence.',
+        desc: 'Cat and genny training mapped specifically to the Zero Strike Initiative framework and ZSI Operators\' Guide for locating utility services.',
+      },
+      {
+        eyebrow: 'Specialist Trainers',
+        title: 'Directly employed, ex-surveyors and ex-manufacturers, TAQA qualified.',
+        desc: 'Trainers with practical skills and experience in Scottish Water supply chain operations, cat and genny equipment, and ZSI requirements.',
+      },
+      {
+        eyebrow: 'Real Practical Assessment',
+        title: 'Structured on-site practical in real conditions.',
+        desc: 'Assessment follows ZSI methodology and requirements throughout both days, with delegates assessed on their ability to locate underground services using cat and genny.',
+      },
+      {
+        eyebrow: 'Independent',
+        title: 'No surveys, no equipment, no manufacturer relationships.',
+        desc: 'Objective cat and genny training course focused on ZSI compliance and best practice, not commercial interests.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'Delivered at your site, travel included.',
+        desc: 'In-house cat and genny training at your location anywhere in the UK, using your site utilities and underground services.',
+      },
+      {
+        eyebrow: 'Small Groups',
+        title: 'Maximum 6 delegates per course.',
+        desc: 'Small groups allow individual attention during coaching assessment, practical instruction, and genny training to develop practical skills.',
+      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding. All Sygma courses exceed 51% practical.',
+      'CITB-registered employers may be able to access Employer Network funding towards cat and genny training course costs. ZS Superuser training is recognised as professional development supporting your Scottish Water supply chain capability in construction and utility location.',
+    ],
+  },
+
+  relatedCourses: {
+    eyebrow: 'Next Steps',
+    title: 'Related Training Courses',
+    intro: 'Build your team\'s cat and genny training capability across the EUS pathway and Scottish Water supply chain requirements.',
+    items: [
+      {
+        eyebrow: 'Cable Location',
+        title: 'EUS CAT1',
+        desc: 'The foundation cat and genny training course and EUSR category qualification. Superuser prerequisite required for all delegates.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Cable Location',
+        title: 'EUS CAT2 Safe Dig',
+        desc: 'Safe excavation training course and permit requirements for avoiding danger from underground services. Superuser prerequisite required for all delegates.',
+        href: '/courses/eus-cat2-safe-dig',
+      },
+      {
+        eyebrow: 'Cable Location',
+        title: 'EUS Superuser',
+        desc: 'The standard super user cat and genny training course for non-Scottish Water teams. Same structure, EUS framework.',
+        href: '/courses/eus-superuser',
+      },
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world cat and genny skills on locating utility services.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored cat and genny training programme around your site risks, equipment, and team size.',
+      href: '/contact',
     },
   ],
 
@@ -107,7 +341,7 @@ export const courseData: CoursePageData = {
 
   cta: {
     title: 'Enquire About the ZS Superuser Cat and Genny Training Course',
-    description: '2 days, maximum 6 delegates. In-house cat and genny training at your site anywhere in the UK. Built specifically for Scottish Water supply chain teams operating under the Zero Strike Initiative.',
+    description: '2 days, maximum 6 delegates. In-house cat and genny training at your site anywhere in the UK. Built specifically for Scottish Water supply chain teams operating under the Zero Strike Initiative to locate utility services and underground utilities safely.',
     primaryLabel: 'Request a Quote',
     primaryHref: '/contact',
     secondaryLabel: 'View EUS Superuser (Non-Scottish Water)',

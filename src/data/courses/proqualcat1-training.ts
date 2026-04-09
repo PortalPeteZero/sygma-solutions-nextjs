@@ -1,29 +1,79 @@
 import type { CoursePageData } from './types';
-import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
+
+const faqs = [
+  {
+    q: 'What is the difference between ProQual CAT1 and EUS CAT1?',
+    a: 'They are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUS does not assess at all, including CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. Where EUS relies on multiple choice questions, ProQual uses written theory papers that require candidates to demonstrate understanding in their own words. ProQual also requires both theory and practical assessment across most criteria, whereas EUS covers many areas through MCQ alone with no practical demonstration. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 is the only one we do not have to add anything to, because it covers everything needed. If your industry standard is a lower-level qualification, ProQual CAT1 will be several steps up from what your team is used to.',
+  },
+  {
+    q: 'What is the CITB funding status?',
+    a: 'Sygma is a CITB-approved training organisation, and this course is CITB-listed. If your organisation is registered with CITB and paying the levy, training can be grant-funded. Funding eligibility is based on your business type, headcount and levy contribution. Contact CITB directly to check your eligibility and current funding rates. Sygma will help you submit the training claim.',
+  },
+  {
+    q: 'Why does ProQual CAT1 take 2 days?',
+    a: 'ProQual\'s content requirements are significantly more extensive than other qualifications. The standard 1-day format covers the core cable avoidance methodology and equipment operation. ProQual adds CDM Regulations assessment, formal risk assessment, detailed Safe Systems of Work documentation (HASAWA and HSG47 context), compliance with GS6, and an additional set of theory questions that test the depth of understanding in a second written paper. A 2-day course allows delegates to learn it properly, practice it on site, and demonstrate competence on both the standard CAT and Genny content and on the regulatory requirements. One day is simply not enough time to do it justice.',
+  },
+  {
+    q: 'I already have EUS CAT1 or EUSR CAT1. Can I upgrade to ProQual CAT1?',
+    a: 'Yes. Delegates who hold a current EUS or EUSR CAT1 certificate can take a 1-day top-up course. This covers the additional theory content (CDM, risk assessment, Safe Systems of Work) and the second written paper, plus any gaps in your practical skills. You will then be able to sit the full ProQual CAT1 assessment.',
+  },
+  {
+    q: 'What is the ProQual CAT1 Plus format?',
+    a: 'This is a 2-day course with additional time for deeper dive into the regulatory context and risk assessment methodology, plus an extended practical session. It is designed for supervisors, health and safety managers, or trainers who need to understand not just the how but the why behind Safe Systems of Work. You will leave the course with the knowledge to assess the adequacy of your team\'s locating practices and to coach others.',
+  },
+  {
+    q: 'Can the course be delivered at my site?',
+    a: 'Yes. Site delivery is standard. The practical component is designed to be delivered on your site using your utility layout, soil types, and the services your team encounters daily. This means the training is applied immediately to your real working environment. If site delivery is not possible, Sygma\'s Wigan HQ is available as an alternative.',
+  },
+  {
+    q: 'What if my team cannot commit to 2 days?',
+    a: 'A 1-day in-house certified format is available. This covers the cable avoidance methodology, equipment operation, and practical assessment. It does not include the ProQual accreditation and its additional regulatory content. If you later need ProQual, the 1-day top-up (see above) gets you to the full qualification. Many organisations start with 1-day certified training and upgrade later if business requirements change.',
+  },
+  {
+    q: 'What is the split-course option?',
+    a: 'Theory delivered on day 1, then a 3-month gap, then practical and assessment on day 2. This allows your team to apply the theory on site between sessions, and the trainer can tune the second day specifically to the problems your team has encountered. It is also an option if you cannot release 8 people for 2 consecutive days. Feedback from clients who use this format is strong: the time between sessions helps the knowledge stick.',
+  },
+  {
+    q: 'Do the candidates need their own equipment?',
+    a: 'For the most practical benefit, yes. Ideally, each operative uses their own site equipment during the training so they learn to operate the specific CAT and Genny models they use daily. Sygma provides Radiodetection CAT4 and Genny4 as backup for those who do not have equipment on site. Any manufacturer\'s cable locator and signal generator is suitable for the training.',
+  },
+  {
+    q: 'What about EUSR CAT1 accreditation?',
+    a: 'A 1-day EUSR-accredited course is available. This is a lighter qualification than ProQual (no CDM, no formal Safe Systems of Work assessment) but is still well-respected and covers the full cable avoidance methodology. It is a popular choice for organisations whose clients specify EUSR accreditation and is frequently chosen by those seeking a comprehensive but shorter qualification.',
+  },
+  {
+    q: 'Does the certification cover my whole team or just those on the training?',
+    a: 'Certification is individual. Each person on the training receives their own certificate with their names and results on it. If you train 4 delegates, 4 people are certified. This is how the construction industry works: the certification sits with the person, not with the organisation. When someone leaves, the certification goes with them.',
+  },
+  {
+    q: 'What if someone fails the assessment?',
+    a: 'Sygma courses are designed for people to pass. The trainer will work through any areas of doubt during the 2 days. If someone does not reach the required standard on the written paper (70% for ProQual) or in the practical assessment, Sygma can provide support and allow a re-assessment, usually within a week at no additional cost. In 21 years, this rarely happens. The trainer knows their subject and will make sure delegates understand.',
+  },
+];
 
 export const courseData: CoursePageData = {
-  slug: 'proqualcat1-training',
+  slug: 'proqual-cat1-training',
 
   metadata: {
-    title: 'ProQual CAT1 Training | Accredited Course | Sygma',
-    description: 'ProQual-accredited CAT1 utility location training. 14 theory criteria, 8 practical criteria, all four EML modes assessed. The most rigorous one-day cable avoidance qualification.',
-    alternates: { canonical: 'https://sygma-solutions.com/courses/proqualcat1-training' },
+    title: 'ProQual CAT1 Cable Locator Training | Sygma',
+    description: 'ProQual CAT1 training -- comprehensive cable location and avoidance qualification. Proven track record reducing service strikes. Delivered nationwide with on-site practical assessment.',
+    alternates: { canonical: 'https://sygma-solutions.com/courses/proqual-cat1-training' },
     openGraph: {
-      title: 'ProQual CAT1 Training | Accredited Course | Sygma',
-      description: 'ProQual-accredited CAT1 utility location training. The most rigorous one-day cable avoidance qualification available in the UK.',
-      url: 'https://sygma-solutions.com/courses/proqualcat1-training',
+      title: 'ProQual CAT1 Cable Locator Training | Sygma',
+      description: 'ProQual CAT1 training -- comprehensive cable location and avoidance qualification. Proven track record reducing service strikes. Delivered nationwide with on-site practical assessment.',
+      url: 'https://sygma-solutions.com/courses/proqual-cat1-training',
       type: 'website',
-      siteName: SITE_NAME,
       images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
-    eyebrow: 'Utility Avoidance',
-    headline: 'ProQual CAT1 Training: The Most Rigorous Utility Locating Qualification',
-    sub: '14 theory criteria. 8 practical criteria. Every one must be met. A full written theory assessment and a full hands-on practical assessment covering all four locating modes and every Genny signal application method, mapped to HSG47, GS6, and CDM Regulations. Accredited by ProQual Accreditations.',
-    image: 'Cat_Genny_01_hifnli',
-    alt: 'ProQual CAT1 cable avoidance training with practical locator exercises',
+    eyebrow: 'Cable Location',
+    headline: 'ProQual CAT1: The Comprehensive Cable Locator Qualification',
+    sub: 'The only cable location qualification Sygma does not have to supplement. Designed for operatives who will locate underground utilities professionally. Includes comprehensive regulatory context, risk assessment, and Safe Systems of Work aligned with HSG47 and HASAWA.',
+    image: 'CAT4-and-Genny-40',
+    alt: 'ProQual CAT1 training showing cable locator and signal generator operation',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
       { label: 'ProQual CAT1 Training' },
@@ -32,11 +82,10 @@ export const courseData: CoursePageData = {
 
   schemas: {
     course: {
-      name: 'ProQual CAT1 Training',
-      description: 'ProQual-accredited CAT1 utility location training with all four EML modes in practical assessment.',
-      url: '/courses/proqualcat1-training',
-      credential: 'ProQual CAT1',
-      duration: '1 day',
+      name: 'ProQual CAT1 Cable Locator Training',
+      description: 'ProQual CAT1 training -- comprehensive cable location and avoidance qualification. Proven track record reducing service strikes. Delivered nationwide with on-site practical assessment.',
+      url: '/courses/proqual-cat1-training',
+      duration: '1-2 days',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -53,14 +102,37 @@ export const courseData: CoursePageData = {
       detail: 'Underground utility location training is all we do.',
     },
     {
-      value: '70-80%',
-      label: 'Increase in Genny Usage',
-      detail: 'Measured through locator data downloads after Sygma training.',
-    },
-    {
       value: 'Proven',
       label: 'Strike Reduction Record',
       detail: 'Clients report measurable reductions in service strikes.',
+    },
+    {
+      value: 'Only One',
+      label: 'Qualification we do not supplement',
+      detail: 'ProQual CAT1 covers everything needed without additional content.',
+    },
+  ],
+
+  infoBar: [
+    {
+      label: 'Format',
+      value: '1-day or 2-day, accredited or in-house',
+    },
+    {
+      label: 'Duration',
+      value: '1 or 2 days',
+    },
+    {
+      label: 'Max Delegates',
+      value: '8',
+    },
+    {
+      label: 'Assessment',
+      value: 'Written (70%) + practical',
+    },
+    {
+      label: 'Delivery',
+      value: 'Your site, nationwide',
     },
   ],
 
@@ -69,192 +141,229 @@ export const courseData: CoursePageData = {
     title: 'Designed For',
     items: [
       {
-        title: 'Site Operatives',
-        desc: 'Anyone who breaks ground or works near underground services.',
+        title: 'Professional Locators',
+        desc: 'This qualification is designed for operatives who will use cable location professionally. If your team is entering this as a core skill, ProQual CAT1 is the industry standard that demonstrates that competence.',
       },
       {
-        title: 'Groundworkers and Labourers',
-        desc: 'Digging, excavating or working in the vicinity of buried utilities.',
+        title: 'Organisations Requiring Comprehensive Qualification',
+        desc: 'Clients, contractors, and utilities that require staff to hold a formally-accredited cable location qualification. This is your mandatory training.',
       },
       {
-        title: 'Supervisors and Managers',
-        desc: 'Responsible for teams who carry out excavation or survey work.',
+        title: 'Health and Safety Managers',
+        desc: 'Responsible for Safe Systems of Work and CDM compliance. This course gives you the authority to verify that your team\'s cable location practices are compliant and effective.',
       },
       {
-        title: 'New Entrants to Utilities',
-        desc: 'Starting a career in utility avoidance, streetworks or civil engineering.',
-      },
-      {
-        title: 'Organisations Requiring ProQual Accreditation',
-        desc: 'Companies whose competency frameworks mandate ProQual-accredited qualifications rather than EUS.',
+        title: 'Supervisors and Trainers',
+        desc: 'Those who coach others or induct new team members. The regulatory and risk assessment context means you will understand the why behind every safety requirement.',
       },
     ],
   },
 
-  infoBar: [
-    { label: 'Duration', value: '1 day (typically 8:30am to 4:00pm)' },
-    { label: 'Format', value: 'Wigan HQ / Survey School, Worcester / on-site UK-wide' },
-    { label: 'Max Delegates', value: '8 per session' },
-    { label: 'Qualification', value: 'ProQual CAT1' },
-    { label: 'Pass Standard', value: 'All 14 theory + all 8 practical criteria must be met' },
-  ],
-
   about: {
-    eyebrow: 'About This Course',
-    title: 'What Is the ProQual CAT1?',
+    eyebrow: 'Why This Qualification Exists',
+    title: 'Why ProQual CAT1 Matters',
     paragraphs: [
-      'The ProQual CAT1 is a ProQual-accredited cable avoidance qualification and the most rigorous one-day Genny and CAT course available in the UK. Delegates must demonstrate competence against 14 theory criteria and 8 practical criteria using a criteria-based competency assessment rather than pass-or-fail percentages.',
-      'Accredited by ProQual Accreditations with external audits, the ProQual CAT1 sits alongside EUS CAT1 as an alternative accreditation route. Delivered at Wigan HQ, Worcester (The Survey School), or on-site UK-wide. The practical assessment covers all four locating modes: Power, Radio, Genny, and Avoidance, plus every Genny signal application method: direct connection, clamp, capacitance, induction, and nulling out.',
-      'Clients who implement Sygma\'s ProQual CAT1 training as part of a wider competency programme report measurable reductions in cable strikes and service damage. The Genny-First methodology drives a 70 to 80 per cent increase in Genny usage across trained teams.',
-      'In 21 years of delivering utility avoidance training, Sygma has had to add content to every qualification on the market to make it fit for the real demands of the industry. Every single one. The ProQual CAT1 is the first qualification developed in partnership with an awarding body that covers everything needed from a course in this subject.',
+      'Most cable location training teaches operatives to use the equipment, not to understand the principles. They know what the beep means. They do not understand how the signal behaves in soil, what happens near a joint, or why they cannot trust a passive Power mode reading. The result is a technician, not a locator.',
+      'ProQual CAT1 was designed to create true professional locators. It covers electromagnetic theory in detail, systematic survey methodology, signal interpretation in complex conditions, and the regulatory context (CDM Regulations, HASAWA, HSG47, GS6) that underpins safe practice. You will understand not just what to do but why it matters.',
+      'The qualification includes formal risk assessment and Safe Systems of Work documentation. This means you can sit on a pre-construct meeting and contribute to the locating plan. This is a qualification for people who are entrusted with the safety of their teams.',
     ],
     sidebar: {
-      eyebrow: 'Quick Reference',
+      eyebrow: 'Course at a Glance',
       items: [
-        { label: 'Qualification', value: 'ProQual CAT1' },
-        { label: 'Awarding Body', value: 'ProQual Accreditations' },
-        { label: 'Duration', value: '1 day' },
-        { label: 'Max Delegates', value: '8' },
-        { label: 'Equipment', value: 'Radiodetection CAT4 and Genny4 as standard' },
-        { label: 'Modes Assessed', value: 'Power, Radio, Genny, Avoidance' },
-        { label: 'Regulation', value: 'HSG47, GS6, CDM Regulations, BS EN 50110' },
-        { label: 'Certificate', value: 'Valid 3 years' },
+        {
+          label: 'Standard Duration',
+          value: '2 days',
+        },
+        {
+          label: 'Accreditation',
+          value: 'ProQual Level 2 (formally accredited qualification)',
+        },
+        {
+          label: 'Theory Assessment',
+          value: 'Written paper (2 papers, 70% pass each)',
+        },
+        {
+          label: 'Practical Assessment',
+          value: 'Observed assessment on real buried services',
+        },
+        {
+          label: 'Location',
+          value: 'Your site or Wigan HQ',
+        },
+        {
+          label: 'Max Delegates',
+          value: '8',
+        },
+        {
+          label: 'Equipment',
+          value: 'Use your own or Sygma-provided Radiodetection CAT4 and Genny4',
+        },
+        {
+          label: 'CITB',
+          value: 'CITB-approved, eligible for grant funding',
+        },
       ],
     },
   },
 
   courseContent: {
-    eyebrow: 'Assessment Framework',
-    title: 'Theory and Practical Criteria',
     theory: {
-      heading: 'Theory Criteria (T1-T14)',
-      subheading: 'Every criterion must be met individually. No percentage pass mark.',
+      heading: 'Classroom: Theory',
+      subheading: 'The full technical and regulatory context',
       items: [
-        'T1: Health, safety and environmental responsibilities while locating underground services, including HASAWA, Street Works Act, Permit to Works, contingency planning, CDM Regulations',
-        'T2: Health and safety guidance governing location work including HSG47 and GS6',
-        'T3: Range and use of personal protective equipment for the work',
-        'T4: Requirements of a site-specific risk assessment and control measures in relation to utility locating activities',
-        'T5: Safe system of work in accordance with HSG47, including identifying dangers, planning, obtaining plans, detecting and marking services, PAS128 awareness',
-        'T6: Interpreting utility drawings to identify services and apparatus including colour coding, symbols, regional differences, PAS128 quality levels',
-        'T7: Depths of apparatus and underground services, limitations of depth measurements, risks of depth uncertainty',
-        'T8: Methods of marking out services and excavations for different site and weather conditions',
-        'T9: Consequences of incorrect marking out, including impact on power cables, gas pipes, water, sewers, heated networks and telecommunications',
-        'T10: Roles and responsibilities of individuals within site and highway operations teams including NRSWA requirements',
-        'T11: Methods of visually locating and identifying overhead and underground services including markers, signs, features, and existing records',
-        'T12: Principles of electronic locating equipment: Signal Generator in direct connection, clamp, capacitance, induction and nulling out modes, Power and Radio modes, specific locator features, data-enabled locators, and sources of interference',
-        'T13: Procedure for recording and communicating the position and types of services and sub-structures located',
-        'T14: Importance of reporting deviations in equipment position and identification of other structures',
+        'Legal, financial and health consequences of cable strikes (HSG47, HASAWA)',
+        'CDM Regulations and designer/client responsibilities',
+        'Utility network types, materials and connectivity',
+        'Reading and interpreting utility plans (STATS)',
+        'Electromagnetic theory and how cable locators work',
+        'All four locator modes: Power, Radio, Genny, Avoidance',
+        'Signal interpretation and depth estimation',
+        'Safe Systems of Work and risk assessment methodology',
       ],
     },
     practical: {
-      heading: 'Practical Criteria (P1-P8)',
-      subheading: 'All four locating modes and every Genny signal application method assessed.',
-      intro: 'The practical assessment is conducted on a live training rig. Delegates must demonstrate competent performance on all eight criteria.',
+      heading: 'Site-Based: Practical',
+      subheading: 'Every principle proved on real buried utilities',
       items: [
-        'P1: Determine work location using company documentation and work instructions, ensure site plans obtained, recognise plan references and symbols',
-        'P2: Plan work in line with health, safety and environmental legislation including Permit to Work process, risk assessment, site guarding, Safe System of Work',
-        'P3: Inspect and prepare locating equipment required to complete work activity with pre-use checks per manufacturer instructions',
-        'P4: Wear required PPE to complete work activities in accordance with Safe System of Work, minimum statutory requirements, damage checks',
-        'P5: Use utility plans to determine extent of work site area where services are to be located, initial survey, visual assessment of surface features',
-        'P6: Carry out Point of Work Risk Assessment (POWRA), recording findings and adding control measures aligned with HASAWA, HSG47 and GS6',
-        'P7: Use utility plans with locating equipment: direct connection, induction, nulling out, Power and Radio modes, signal application, pinpoint, depth estimation, passive sweep',
-        'P8: Mark and record position of services and sub-structures on work site in accordance with company procedures, report deviations from plans',
+        'Planning a survey using service plans',
+        'Identifying above-ground indicators of buried services',
+        'Direct connection, capacitance, and induction techniques',
+        'Locating joints, T-connections, and direction changes',
+        'Earth positioning and signal nulling',
+        'Full utility survey methodology',
+        'Individual practical assessment',
       ],
     },
+  },
+
+  formats: {
+    eyebrow: 'Course Formats',
+    title: 'Formats Available',
+    rows: [
+      {
+        format: '1-day In-House (Certified)',
+        duration: '1 day',
+        maxDelegates: '8',
+        assessment: 'Written MCQ (70%) + practical',
+      },
+      {
+        format: '1-day EUSR CAT1 (Accredited)',
+        duration: '1 day',
+        maxDelegates: '8',
+        assessment: 'Written MCQ (70%) + practical',
+      },
+      {
+        format: '1-day ProQual CAT1 (Accredited) -- Top-Up Only',
+        duration: '1 day',
+        maxDelegates: '8',
+        assessment: 'Full ProQual assessment',
+      },
+      {
+        format: '2-day In-House (Certified)',
+        duration: '2 days',
+        maxDelegates: '8',
+        assessment: 'Written MCQ (70%) + practical',
+      },
+      {
+        format: '2-day ProQual CAT1 (Accredited)',
+        duration: '2 days',
+        maxDelegates: '8',
+        assessment: 'Two written papers (70% each) + practical',
+      },
+      {
+        format: '2-day ProQual CAT1 Plus (Accredited)',
+        duration: '2 days',
+        maxDelegates: '8',
+        assessment: 'Two written papers (70% each) + extended practical',
+      },
+      {
+        format: 'Split Course (Certified) -- Theory + 3 months + Practical',
+        duration: '2 days (3 months apart)',
+        maxDelegates: '8',
+        assessment: 'Written MCQ (70%) + practical',
+      },
+    ],
+  },
+
+  certRoutes: {
+    eyebrow: 'Your Accreditation Options',
+    title: 'Certification Routes',
+    items: [
+      {
+        title: 'ProQual CAT1',
+        desc: 'The fully comprehensive qualification. Covers cable location methodology, regulatory context (CDM, HASAWA), Safe Systems of Work, and GS6 compliance. Two written papers test depth of understanding. The industry standard for professional locators and organisations that will not compromise on safety competence.',
+      },
+      {
+        title: 'EUSR CAT1',
+        desc: 'A respected, lighter accreditation. Covers cable avoidance methodology and equipment operation without the regulatory content of ProQual. Frequently specified by clients and a popular choice for organisations seeking a comprehensive qualification in a shorter timeframe.',
+      },
+      {
+        title: 'In-House Certified',
+        desc: 'Not accredited externally, but Sygma-certified. Covers the same cable location methodology as the accredited courses, plus practical assessment on your site. Many organisations use this as their standard and add accreditation later if client requirements change.',
+      },
+    ],
   },
 
   photoStrips: [
     {
       variant: 'grid',
       images: [
-        { src: 'Cat_Genny_07_j5ml0w', alt: 'ProQual CAT1 practical training with locating equipment' },
-        { src: 'Cat_Genny_10_bbjorl', alt: 'Hands-on cable avoidance assessment during ProQual training' },
-        { src: 'Cat_Genny_17_kqd2z9', alt: 'Practical site assessment during utility avoidance training' },
-      ],
-    },
-    {
-      variant: 'grid',
-      images: [
-        { src: 'Cat_Genny_19_c9e3jz', alt: 'CAT4 locator practical assessment during ProQual training' },
-        { src: 'Cat_Genny_25_if7oy2', alt: 'Delegates learning signal application techniques' },
-        { src: 'Cat_Genny_01_hifnli', alt: 'Hands-on utility avoidance practical session' },
+        { src: 'CAT4-and-Genny-57', alt: 'Practical cable locator training' },
+        { src: 'CAT4-and-Genny-58', alt: 'Genny signal generator operation' },
+        { src: 'CAT4-and-Genny-59', alt: 'Underground service location demonstration' },
       ],
     },
   ],
 
-  certRoutes: {
-    eyebrow: 'What You Receive',
-    title: 'At the End of This Course',
-    items: [
-      { title: 'ProQual CAT1 Certificate', desc: 'Accredited by ProQual Accreditations, demonstrating competency across all four EML connection modes. Valid for 3 years.' },
-      { title: 'Personalised Training Record', desc: 'Detailed breakdown of all theory and practical criteria assessed, including additional ProQual criteria.' },
-      { title: 'Practical Assessment Evidence', desc: 'Documented evidence of competency with Genny and CAT equipment across all locating modes.' },
-      { title: 'Ongoing Support', desc: 'Access to Sygma trainers for post-course questions and refresher guidance.' },
-    ],
-  },
-
-  formats: {
-    eyebrow: 'Pricing',
-    title: 'Simple, Transparent Pricing',
-    rows: [
-      { format: 'ProQual CAT1 (on-site)', duration: '1 day', maxDelegates: 'Up to 8', assessment: 'Theory paper + practical' },
-      { format: 'ProQual CAT1 (Wigan HQ)', duration: '1 day', maxDelegates: 'Up to 8', assessment: 'Theory paper + practical' },
-      { format: 'ProQual CAT1 (Survey School, Worcester)', duration: '1 day', maxDelegates: 'Up to 8', assessment: 'Theory paper + practical' },
-    ],
-    notes: [
-      'Sygma charges per course, not per person. Whether you send 4 delegates or 8, the course fee stays the same.',
-      'Travel within the UK mainland is included. ProQual registration fee is included in the course price. No hidden extras.',
-    ],
-  },
-
-  siteRequirements: {
-    items: [
-      { label: 'Training Area', detail: 'Outdoor practical area with access to buried services or marked simulation area.' },
-      { label: 'Classroom', detail: 'Meeting room with projector or large screen for theory sessions.' },
-      { label: 'Equipment', detail: 'Sygma provides all equipment for HQ and Survey School sessions. For on-site delivery, client supplies a locator and signal generator.' },
-      { label: 'PPE', detail: 'Delegates must have appropriate PPE for practical elements. Minimum: safety boots, hi-vis vest.' },
-    ],
-    note: 'For on-site delivery, the equipment must be calibrated and in working order.',
-  },
-
   citbFunding: {
     paragraphs: [
-      'CITB-registered employers can access funding through the CITB Employer Network. Contact your Employer Network lead to confirm availability before booking.',
-      'Sygma is a CITB Approved Training Organisation. We help clients navigate CITB funding enquiries as part of every booking.',
+      'Sygma is a CITB-approved training organisation. This course is CITB-listed and may be eligible for grant funding if your organisation is registered with CITB and paying the levy.',
+      'Your funding eligibility depends on your business type, headcount, and levy contribution. Contact CITB directly to find out your current funding rates. Sygma will help you submit the training claim and will work with CITB to process the funding.',
+      'CITB funding can cover tuition fees (within the daily rate), and sometimes travel and accommodation expenses depending on your agreement with CITB.',
     ],
   },
 
   hsg47: {
     items: [
       {
-        eyebrow: 'Legal Framework',
-        title: 'HSG47, GS6, CDM Regulations',
-        desc: 'Comprehensive coverage of legal and regulatory requirements governing work near buried services, including specific CDM duty-holder obligations.',
+        eyebrow: 'Why HSG47 Matters',
+        title: 'Safe Working Near Underground Services',
+        desc: 'HSG47 (Avoiding Danger from Underground Services) is the HSE\'s definitive guidance on safe working near buried utilities. Your organisation\'s Safe System of Work must be compliant. Cable location sits at the heart of this compliance. If your team is not locating utilities correctly, your SSOW is incomplete.',
       },
       {
-        eyebrow: 'Risk Assessment',
-        title: 'Identifying Buried Services Before Work Begins',
-        desc: 'Systematic approach to service plan interpretation, visual inspection, and locating equipment use to identify all buried utilities before excavation.',
+        eyebrow: 'ProQual CAT1 Alignment',
+        title: 'Regulatory Context',
+        desc: 'ProQual CAT1 training is aligned to HSG47 and is designed for operatives and managers to understand the regulatory context of safe practice. You will learn what HSG47 requires, why it requires it, and how your cable location practices fit into your organisation\'s overall compliance picture.',
       },
       {
-        eyebrow: 'Safe Practices',
-        title: 'Safe Digging Practices in Proximity Zones',
-        desc: 'Hand digging techniques, appropriate tool selection, and procedures for working within proximity zones once services have been identified.',
+        eyebrow: 'CDM Regulations',
+        title: 'Designer Responsibility',
+        desc: 'This course covers CDM Regulations and the designer\'s responsibility to plan for safe cable location before work starts. If you attend pre-construct meetings or contribute to safety plans, you need to understand the regulatory framework.',
+      },
+    ],
+  },
+
+  siteRequirements: {
+    items: [
+      {
+        label: 'Access',
+        detail: 'A safe area to work (ideally where your team will be working) with buried utilities that we can locate and demonstrate on. This does not need to be glamorous -- we train on real working sites every day.',
       },
       {
-        eyebrow: 'Systems of Work',
-        title: 'Permit to Dig Systems',
-        desc: 'Integration of locating results into safe systems of work, permit to dig procedures, and coordination between survey teams and excavation teams.',
+        label: 'Service Plans',
+        detail: 'Copies of any available utility plans (STATS, CAD drawings, or marked-up prints). These help us plan the survey and teach delegates how to interpret plans (including inaccuracies).',
       },
       {
-        eyebrow: 'Emergency Response',
-        title: 'Procedures for Utility Strikes',
-        desc: 'Immediate response procedures in the event of inadvertent utility strike, including notification, isolation, and safety protocols.',
+        label: 'Utility Access',
+        detail: 'If possible, the ability to make direct connection to utility cabinets or services (with appropriate permissions). This teaches the transmission method.',
       },
       {
-        eyebrow: 'Documentation',
-        title: 'Record Keeping and Audit Trail',
-        desc: 'Maintaining comprehensive records of service locations, survey results, and locating activities for compliance documentation and future reference.',
+        label: 'Accommodation',
+        detail: 'A dry space for the theory component (classroom or office). This does not need to be elaborate -- a meeting room or site hut is fine.',
+      },
+      {
+        label: 'Weather Contingency',
+        detail: 'If the practical is rained out, Sygma will reschedule the practical component for a subsequent date.',
       },
     ],
   },
@@ -262,109 +371,79 @@ export const courseData: CoursePageData = {
   whySygma: {
     items: [
       {
-        eyebrow: 'Accreditation',
-        title: 'Accredited to a Higher Standard',
-        desc: 'ProQual CAT1 is accredited by ProQual Accreditations and externally audited to exceed the EUS minimum specification.',
+        eyebrow: '21 Years, One Specialism',
+        title: 'Focused Expertise',
+        desc: 'Cable location is all we do. No sideline in scaffolding, no part-time training. We have invested two decades in understanding how cable location failures happen and how to build teams that do not fail.',
       },
       {
-        eyebrow: 'Assessment',
-        title: 'Every Mode Assessed',
-        desc: 'ProQual CAT1 practical assessment covers all four locating modes and every Genny signal application method using Genny and CAT equipment.',
+        eyebrow: 'Post-Strike Investigation',
+        title: 'Evidence-Based Training',
+        desc: 'We have investigated more cable strikes than any other training organisation in the UK. This means our trainers know exactly what causes failures and what habits prevent them. Every lesson is evidence-based.',
       },
       {
-        eyebrow: 'Trainers',
-        title: 'Specialist Trainers',
-        desc: 'Every trainer is directly employed by Sygma. All are ex-utility surveyors or ex-equipment manufacturer specialists. All TAQA qualified.',
+        eyebrow: 'Real Site Delivery',
+        title: 'Training on Your Ground',
+        desc: 'Training on your site, using your utilities and your soil. This is not classroom theory; it is proof. Your operatives see how the equipment behaves in their working environment.',
       },
       {
-        eyebrow: 'Methodology',
-        title: 'Genny-First Methodology',
-        desc: '70 to 80 per cent of Sygma-trained operatives default to Genny-First after training. Measured through locator data downloads.',
+        eyebrow: 'Proven Results',
+        title: 'Measurable Improvements',
+        desc: 'Clients report measurable reductions in service strikes. We have data showing Genny usage increases from locator downloads after Sygma training.',
       },
       {
-        eyebrow: 'Independence',
-        title: 'Independent Provider',
-        desc: 'No surveys to sell, no equipment to push. When we identify a gap in competence, that verdict is unbiased.',
-      },
-      {
-        eyebrow: 'Delivery',
-        title: 'We Come to You',
-        desc: 'Delivered at your site using your equipment and procedures. Travel included in course rate.',
+        eyebrow: 'No Fluff',
+        title: 'Complete Qualification',
+        desc: 'ProQual CAT1 is the only qualification we offer that we do not have to supplement with additional content. It covers everything needed. That is unusual, and it is deliberate.',
       },
     ],
   },
 
   relatedCourses: {
-    eyebrow: 'Next Steps',
-    title: 'Where to Go After ProQual CAT1',
+    eyebrow: 'Related Courses',
+    title: 'Further Training Options',
     items: [
       {
-        eyebrow: 'Advanced',
-        title: 'ProQual CAT1 Plus',
-        desc: 'Extend your qualification with 7 additional theory criteria and 32+ practical criteria covering advanced locating scenarios.',
-        href: '/courses/proqualcat1plus',
+        eyebrow: 'Cable Location',
+        title: 'CAT and Genny Training',
+        desc: 'The hands-on cable location course. Genny and CAT equipment operation with emphasis on field-verified habits that eliminate service strikes.',
+        href: '/courses/genny-cat-training',
       },
       {
-        eyebrow: 'Assessment',
-        title: 'OSCA',
-        desc: 'The On-Site Competency Assessment. A digital, GPS-stamped assessment proving your team can locate and avoid buried services in the field.',
-        href: '/osca',
+        eyebrow: 'Advanced Training',
+        title: 'Cable Location Trainer Development',
+        desc: 'Train the trainer. Designed for Sygma-certified trainers who want to become formally accredited under ProQual standards.',
+        href: '/courses/trainer-development',
       },
       {
-        eyebrow: 'Tailored',
-        title: 'Bespoke Training',
-        desc: 'If your organisation has a specific incident history or permit system, we design the programme from the ground up.',
-        href: '/contact',
+        eyebrow: 'Compliance',
+        title: 'Cable Strike Investigation',
+        desc: 'What went wrong. Post-strike investigation, safety case documentation, incident reporting and learning.',
+        href: '/courses/cable-strike-investigation',
       },
     ],
   },
 
   alsoConsider: [
     {
-      title: 'EUS CAT1',
-      desc: 'EUSR-registered cable avoidance qualification. Required by many utility sector frameworks and network operators.',
-      href: '/courses/eus-cat1',
+      title: 'GS6 Safety Training',
+      desc: 'If you are working in gas environments, GS6 compliance is mandatory. The ProQual CAT1 course includes GS6 alignment, so if you add GS6 training, you will have a joined-up safety case.',
+      href: '/courses/gs6-safety-training',
     },
     {
-      title: 'ProQual CAT2',
-      desc: 'Safe excavation qualification. If your team locates and digs, they need both.',
-      href: '/courses/proqualcat2',
-    },
-  ],
-
-  faqs: [
-    {
-      q: 'What is the difference between ProQual CAT1 and EUS CAT1?',
-      a: 'They are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUS does not assess at all, including CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. Where EUS relies on multiple choice questions, ProQual uses written theory papers that require candidates to demonstrate understanding in their own words. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 is the only one we do not have to add anything to.',
-    },
-    {
-      q: 'Why does the ProQual have no percentage pass mark?',
-      a: 'The ProQual framework uses a competency-based assessment model. Rather than scoring a percentage on a multiple-choice paper, the assessor observes the delegate and judges whether each individual criterion has been met. Every criterion must be met before a certificate is issued. This is considered a more robust demonstration of real-world competence.',
-    },
-    {
-      q: 'Do I need to bring my own CAT and Genny?',
-      a: 'For classroom-based sessions at Wigan or Worcester, Sygma provides all equipment (Radiodetection CAT4 and Genny4 as standard). The course can be delivered on Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX. For on-site delivery, the client must supply a locator and signal generator.',
-    },
-    {
-      q: 'What happens if a delegate fails one of the practical criteria?',
-      a: 'If a delegate does not meet a criterion during the assessment, the trainer will note the gap and, where time allows, provide additional coaching before a reassessment. If competence cannot be demonstrated on the day, the delegate will not receive a certificate and will need to attend a further session.',
-    },
-    {
-      q: 'Is ProQual CAT1 training recognised on utility and construction sites?',
-      a: 'Yes. The ProQual CAT1 is widely accepted across utility, water, gas, electricity, and construction sectors. Some organisations specify ProQual; others specify EUSR. If you are unsure what your framework requires, contact us and we will check for you.',
-    },
-    {
-      q: 'What are the progression routes from ProQual CAT1?',
-      a: 'Delegates who hold the ProQual CAT1 can progress to the ProQual CAT1 Plus (additional theory and extended practical criteria), the ProQual CAT2 Safe Dig qualification, or the OSCA scheme. Sygma can advise on the right progression route for your team.',
+      title: 'Confined Space Entry',
+      desc: 'If your team will enter pits or chambers to locate services, Confined Space Entry training is needed. This is separate from cable location but is often required by the same organisations.',
+      href: '/courses/confined-space-entry',
     },
   ],
 
   cta: {
-    title: 'Book ProQual CAT1 Training',
-    description: 'Available at Wigan, Worcester, or on your site anywhere in the UK. Covers up to 8 delegates per session. ProQual registration included.',
-    primaryLabel: 'Book This Course',
+    title: 'Ready to Train Your Team?',
+    description: 'Contact Sygma to discuss formats, dates, and accreditation. We will work around your schedule.',
+    primaryLabel: 'Get in Touch',
     primaryHref: '/contact',
-    secondaryLabel: 'Get in Touch',
-    secondaryHref: '/contact',
+    secondaryLabel: 'Back to Cable Location Training',
+    secondaryHref: '/training/cable-location-avoidance',
   },
+
+  faqs,
 };

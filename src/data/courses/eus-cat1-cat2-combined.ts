@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'eus-cat1-cat2-combined',
@@ -12,6 +13,8 @@ export const courseData: CoursePageData = {
       description: 'Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
       url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
@@ -109,7 +112,7 @@ export const courseData: CoursePageData = {
         { label: 'Qualifications', value: 'EUSR CAT1 and EUSR CAT2 (Safe Dig)' },
         { label: 'Assessment', value: 'Multiple choice questions (MCQs) + practical safe dig assessment' },
         { label: 'Prerequisites', value: 'None' },
-        { label: 'Equipment', value: 'Sygma provides Radiodetection CAT4 and Genny4 as standard; this course can be delivered on Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.' },
+        { label: 'Equipment', value: 'Sygma provides Radiodetection CAT4 and Genny4 as standard; delegates may bring their own locator and signal generator. This course can be delivered on any of the following: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.' },
         { label: 'Delivery', value: 'Nationwide UK' },
         { label: 'Pricing', value: 'Contact Sygma for a tailored quote' },
       ],
@@ -163,6 +166,22 @@ export const courseData: CoursePageData = {
       ],
       variant: 'grid',
     },
+    {
+      images: [
+        { src: 'CAT4-and-Genny-10', alt: 'EUSR CAT1 and CAT2 combined training practical session' },
+        { src: 'Safe-Dig-08', alt: 'Safe dig technique demonstration during CAT2 training' },
+        { src: 'CAT4-and-Genny-54', alt: 'Cable avoidance and safe excavation combined assessment' },
+      ],
+      variant: 'grid',
+    },
+    {
+      images: [
+        { src: 'CAT4-and-Genny-67', alt: 'Utility avoidance practical training on site' },
+        { src: 'Safe-Dig-22', alt: 'Safe excavation assessment during EUSR CAT2' },
+        { src: 'CAT4-and-Genny-50', alt: 'Combined CAT1 and CAT2 certificate training' },
+      ],
+      variant: 'grid',
+    },
   ],
 
   siteRequirements: {
@@ -180,14 +199,14 @@ export const courseData: CoursePageData = {
         detail: 'A live dig area with buried metallic utilities. One power cable to a site cabin is not sufficient. Open area of at least 10m squared, ground suitable for a hand dig, full buried service plans available, delegates must have FR PPE and insulated digging tools',
       },
     ],
-    note: 'The training will not take place unless the minimum CAT2 site requirements are met. Each delegate must bring government-issued photographic ID.',
+    note: 'The training will not take place unless the minimum CAT2 site requirements are met. Each delegate must bring government-issued photographic ID. Sygma trainers typically arrive in a transit-van-sized vehicle (please advise at booking if there are height barriers or access restrictions).',
   },
 
   whySygma: {
     items: [
       {
         eyebrow: 'Quality',
-        title: 'Exceeds Minimum Specification',
+        title: 'Not All CAT1 Courses Are Created Equal',
         desc: 'Many CAT1 courses meet the minimum specification. Ours exceed it. We invest in the science and in your operatives\' depth of understanding.',
       },
       {
@@ -218,9 +237,45 @@ export const courseData: CoursePageData = {
     ],
   },
 
+  hsg47: {
+    items: [
+      {
+        eyebrow: 'Competence',
+        title: 'Trained and Competent',
+        desc: 'Full theoretical foundation and practical assessment to confirmed EUSR CAT1 and CAT2 standards.',
+      },
+      {
+        eyebrow: 'Systems',
+        title: 'Safe System of Work',
+        desc: 'Permits to dig, risk assessments, site inspection protocols, and documented procedures.',
+      },
+      {
+        eyebrow: 'Planning',
+        title: 'Service Plan Checks',
+        desc: 'STATS plan interpretation, limitations, quality levels, visual verification, and drawing interrogation.',
+      },
+      {
+        eyebrow: 'Operation',
+        title: 'Correct Use of Equipment',
+        desc: 'Locator and signal generator operation, signal interpretation, depth estimation, and troubleshooting.',
+      },
+      {
+        eyebrow: 'Excavation',
+        title: 'Safe Excavation',
+        desc: 'Practical safe dig assessment with exposure of live services, correct tool use, and reinstatement.',
+      },
+      {
+        eyebrow: 'Records',
+        title: 'Evidenced Records',
+        desc: 'Written assessment, practical observation, and CAT Manager data logging for your records.',
+      },
+    ],
+  },
+
   relatedCourses: {
     eyebrow: 'Related Courses',
     title: 'Expand Your Team\'s Utility Avoidance Capability',
+    intro: 'Consider these additional programmes to build deeper expertise across your team.',
     items: [
       {
         eyebrow: 'Alternative',
@@ -255,6 +310,12 @@ export const courseData: CoursePageData = {
       href: '/contact',
     },
   ],
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.',
+    ],
+  },
 
   cta: {
     title: 'Get in Touch for Your Team',

@@ -33,7 +33,7 @@ export const courseData: CoursePageData = {
   schemas: {
     course: {
       name: 'EUS Super User Cat and Genny Training',
-      description: 'EUS super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.',
+      description: 'EUS super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment. EUSR category certification for experienced operatives who locate utility services and lead safe excavation practice.',
       url: '/courses/eus-superuser',
       credential: 'EUS Superuser Certificate',
       duration: '2 days',
@@ -161,27 +161,154 @@ export const courseData: CoursePageData = {
     },
   },
 
+  courseContent: {
+    eyebrow: 'Classroom Content',
+    title: 'Advanced Cat and Genny Theory, Calibration, and Strike Investigation',
+    theory: {
+      heading: 'Classroom Theory Content',
+      subheading: 'The classroom element of this cat and genny training course revisits the theoretical foundations from CAT1 and CAT2 at an advanced level, with additional content around equipment calibration, data analysis, utility strike investigation, and the principles of coaching for safe digging practice.',
+      items: [
+        'Underground service strikes and cable strikes: risks, hazards, and requirements of HSG47 guidance for avoiding danger from underground cables and buried services',
+        'STATS plans and utility drawings: interpretation, inaccuracies, and limitations at advanced level for locating underground utilities',
+        'Advanced electromagnetic theory: full understanding of cat and genny operation, signal distortion, false readings, and myth-busting',
+        'Signal generator (genny) operation: dual frequency, capacitance mode, earth positioning, blind induction, and depth estimation techniques',
+        'Cat and genny calibration: how to verify equipment calibration, check calibration status, and understand calibration requirements before locating utility services on site',
+        'How to promote and embed the genny-first approach with site teams to locate buried services safely',
+        'Permit to break ground: how to complete and sign off correctly for safe digging and safe excavation compliance',
+        'Cat Manager data analysis: downloading from the cat unit, exporting CSV and KML, importing into the analysis tool and online portal',
+        'Analysing raw data: identifying usage patterns, spotting good and poor practice with cat and genny equipment across power mode, radio mode, and genny mode',
+        'Utility strike investigation: how to conduct an investigation, assess service strikes, and complete a USAG cable strike form',
+        'Coaching principles: effective on-site coaching, knowledge-based assessment, and building competency in cat and genny operation',
+      ],
+    },
+    practical: {
+      heading: 'Site Work Element',
+      subheading: 'The site element of this training course covers advanced cat and genny location practice, calibration checks, and the coaching assessment. Delegates use cable avoidance tools and signal generators to locate underground services and buried utilities in real conditions. Sygma\'s trainers use a flexible approach across the two days, spending more time outdoors when site conditions are good.',
+      items: [
+        'Using STATS plans, utility drawings, and existing site information to plan the survey before any cat and genny location work begins',
+        'Conducting a full utility survey starting with the genny to locate underground services and buried utilities',
+        'Street light locating, LV service and main tracing including locating joints using cable avoidance tools',
+        'HV detection and underground cable location using the right mode on cat and genny equipment',
+        'Induction techniques: blind sweeps, effective nulling, and locating multiple utilities',
+        'Capacitance techniques: locating non-earthed underground cables and metallic pipes',
+        'Repositioning the genny earth: understanding the effect on signal quality and calibration',
+        'Problem scenarios: identifying false readings, missed services, and working through solutions on site',
+        'Delegates coach and assess each other on cat and genny operation using the Assessment 1 document and the Sygma coaching sheet',
+        'Coaching tips, assessment planning, and session structure for cat and genny training delivery',
+        'Coaching competency checks: communication, feedback, cat data download, calibration review, and using data to guide coaching on locating utility services',
+        'Where possible, delegates coach working teams from the site on safe use of cable avoidance tools and signal generators',
+        'Individual support, skills development, and additional hands-on cat and genny equipment time throughout',
+      ],
+    },
+  },
+
+  formats: {
+    eyebrow: 'Assessment Structure',
+    title: 'Three Formal Assessments for Cat and Genny Competency',
+    rows: [
+      {
+        format: 'POW Risk Assessment',
+        duration: 'Completed before practical begins',
+        maxDelegates: 'Individual',
+        assessment: 'Hazard identification and underground service assessment',
+      },
+      {
+        format: 'Practical Assessment 1',
+        duration: 'On-site with cable avoidance tools and signal generators',
+        maxDelegates: 'Individual',
+        assessment: 'Utility location competency using cat and genny',
+      },
+      {
+        format: 'Practical Assessment 2',
+        duration: 'Coaching and assessment of a delegate',
+        maxDelegates: 'Paired',
+        assessment: 'Coaching competency and data understanding',
+      },
+    ],
+    notes: [
+      'POW Risk Assessment: Completed by each delegate independently before the practical cat and genny training begins. Demonstrates the ability to assess hazards, conduct a proper Place of Work risk assessment, and identify underground services and buried utilities before any location activity starts on site.',
+      'Practical Assessment 1: The Sygma Standard practical assessment for cat and genny competency. Records and validates each delegate\'s ability to locate utility services independently using correct use of cable avoidance tools and signal generators, equipment calibration checks, and survey methodology across all detection modes.',
+      'Practical Assessment 2 (Coaching and Assessment Competency): Delegates use the Assessment 1 document and the Sygma coaching sheet to coach and formally assess another delegate on cat and genny operation. Assessment criteria cover communication, feedback quality, cat data download, calibration verification, data understanding, and the ability to use data to guide coaching on locating underground services safely.',
+    ],
+  },
+
+  certRoutes: {
+    eyebrow: 'What You Get',
+    title: 'What Delegates Receive',
+    items: [
+      {
+        title: 'EUS Super User Certification',
+        desc: 'EUSR category certification for super user cat and genny training. Confirms competency to supervise, coach, and quality-check cat and genny operations for locating utility services and underground utilities safely.',
+      },
+      {
+        title: 'Written Assessment Record',
+        desc: 'Documented theory assessment covering supervisory responsibilities, HSG47 compliance, calibration knowledge, and permit-to-dig processes for safe excavation.',
+      },
+      {
+        title: 'Practical Assessment Record',
+        desc: 'On-site assessment evidence demonstrating competency in supervising cat and genny operations, correct use of cable avoidance tools and signal generators, and locating underground services.',
+      },
+      {
+        title: 'Progression Guidance',
+        desc: 'Clear next steps for further development of cat and genny skills, including CAT Manager training and management qualifications from the awarding body.',
+      },
+    ],
+  },
+
+  photoStrips: [
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-40', alt: 'EUS super user cat and genny training - practical session locating underground services' },
+        { src: 'CAT4-and-Genny-54', alt: 'Cat and genny training course - hands-on assessment with cable avoidance tools' },
+        { src: 'CAT4-and-Genny-71', alt: 'Signal generator (genny) application technique - direct connection for locating buried utilities' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'CAT4-and-Genny-04', alt: 'EUS Superuser advanced training delivery on site' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-48', alt: 'Cable avoidance superuser training' },
+        { src: 'Advanced-EM-08', alt: 'Advanced locator techniques training' },
+        { src: 'CAT4-and-Genny-56', alt: 'EUS Superuser practical skills assessment' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-48', alt: 'EUS Superuser advanced cable avoidance training' },
+        { src: 'CAT4-and-Genny-01', alt: 'Advanced electromagnetic locator operation' },
+        { src: 'CAT4-and-Genny-56', alt: 'Superuser practical assessment on site' },
+      ],
+    },
+  ],
+
   siteRequirements: {
     items: [
       {
-        label: 'Meeting or conference room',
-        detail: 'Suitable for up to 6 people with projector or screen and welfare facilities',
+        label: 'Meeting or conference room with projector or screen and welfare facilities',
+        detail: 'Suitable meeting space for classroom sessions',
       },
       {
-        label: 'Site with multiple detectable underground utilities',
-        detail: 'Including at least one LV service and one street light circuit where possible',
+        label: 'Site with multiple detectable underground utilities including at least one LV service and one street light circuit where possible',
+        detail: 'For practical location work',
       },
       {
-        label: 'STATS plans',
-        detail: 'For the site, provided by the client before the course',
+        label: 'STATS plans for the site, provided by the client before the course',
+        detail: 'For survey planning',
       },
       {
-        label: 'Live dig area',
-        detail: 'Or permit to access a representative site area for practical work',
+        label: 'A live dig area or permit to access a representative site area for practical work',
+        detail: 'For hands-on assessment',
       },
       {
-        label: 'PPE',
-        detail: 'Delegates should wear appropriate PPE throughout the site element',
+        label: 'Delegates should wear appropriate PPE throughout the site element',
+        detail: 'Safety requirements',
       },
     ],
     note: 'Sygma\'s dedicated training centre in Wigan is available at no extra venue cost and includes live utility demonstration rigs suitable for all elements of the Superuser programme.',
@@ -189,8 +316,68 @@ export const courseData: CoursePageData = {
 
   citbFunding: {
     paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers in construction and civil engineering may be able to access training funding support for cat and genny training course costs through the CITB Employer Network.',
-      'Contact your CITB adviser directly for current eligibility and funding options.',
+      'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers in construction and civil engineering may be able to access training funding support for cat and genny training course costs through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.',
+    ],
+  },
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Super User Cat and Genny Programme',
+        title: 'Builds internal competency champions for cat and genny operations within your organisation.',
+        desc: 'Not just advanced operators, but people who can assess and coach others on cable avoidance tools and signal generators to the same standard for locating utility services.',
+      },
+      {
+        eyebrow: 'Specialist Cat and Genny Trainers',
+        title: 'Directly employed, ex-surveyors and ex-manufacturers, TAQA qualified.',
+        desc: 'Our trainers come from the field. They have years of experience locating underground services with cat and genny equipment and coaching teams on best practice.',
+      },
+      {
+        eyebrow: 'Real Practical Assessment',
+        title: 'Structured on-site practical using cat and genny in real conditions.',
+        desc: 'Assessment happens on real underground utilities and buried services in real field conditions, not simulations. Calibration of location equipment is verified before every assessment.',
+      },
+      {
+        eyebrow: 'Independent Training',
+        title: 'No surveys, no equipment sales, no manufacturer relationships.',
+        desc: 'Complete independence means objective assessment of cat and genny skills and no pressure to inflate results.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'Cat and genny training delivered at your site, travel included.',
+        desc: 'In-house training course delivery at your premises eliminates disruption and uses your own underground utilities for practical instruction.',
+      },
+      {
+        eyebrow: 'Small Groups',
+        title: 'Maximum 6 delegates per cat and genny training course.',
+        desc: 'Small groups mean individual attention for the coaching assessment and real cat and genny coaching practice on locating underground services.',
+      },
+    ],
+  },
+
+  relatedCourses: {
+    eyebrow: 'Next Steps',
+    title: 'Related Training Courses',
+    intro: 'Build your team\'s cat and genny training capability across the full EUS pathway and beyond.',
+    items: [
+      {
+        eyebrow: 'Cable Location',
+        title: 'EUS CAT1 Cat and Genny Training',
+        desc: 'The foundation cat and genny training course and EUSR category qualification. Essential prerequisite knowledge for cable avoidance tools and signal generators before moving toward a super user role.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Cable Location',
+        title: 'EUS CAT2 Safe Dig',
+        desc: 'Safe excavation training course and permit to dig for avoiding danger from underground services. Super user prerequisite required for all delegates.',
+        href: '/courses/eus-cat2-safe-dig',
+      },
+      {
+        eyebrow: 'Cable Location',
+        title: 'Plans and Process Training',
+        desc: 'Master utility drawings and plan interpretation. Essential for coordinators and team leaders managing surveys and locating utility services.',
+        href: '/courses/plans-and-process',
+      },
     ],
   },
 

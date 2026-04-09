@@ -5,13 +5,13 @@ export const courseData: CoursePageData = {
   slug: 'cable-avoidance-training',
 
   metadata: {
-    title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
-    description: 'Cable avoidance training and EUSR / ProQual accredited CAT1 training for underground utility detection. EUSR-registered qualification and ProQual accreditation available.',
-    alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-training' },
+    title: 'Cable Avoidance Training Course | Sygma Solutions',
+    description: 'Cable avoidance training courses delivered UK-wide by the UK\'s only independent specialist. CAT and Genny training. HSG47 compliant. Contact us for pricing.',
+    alternates: { canonical: '/courses/cable-avoidance-training' },
     openGraph: {
-      title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
-      description: 'Cable avoidance training and EUSR / ProQual accredited CAT1 training for underground utility detection. EUSR-registered qualification and ProQual accreditation available.',
-      url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
+      title: 'Cable Avoidance Training Course | Sygma Solutions',
+      description: 'Cable avoidance training courses delivered UK-wide by the UK\'s only independent specialist. CAT and Genny training. HSG47 compliant. Contact us for pricing.',
+      url: '/courses/cable-avoidance-training',
       type: 'website',
       siteName: SITE_NAME,
       images: [DEFAULT_OG_IMAGE],
@@ -21,8 +21,9 @@ export const courseData: CoursePageData = {
   hero: {
     eyebrow: 'Utility Avoidance',
     headline: 'Cable Avoidance Training: The Course That Changes How Your Team Works on Site',
-    sub: 'Cable avoidance training that teaches your operatives to find what is in the ground before they break it. EUSR-registered CAT1 or ProQual accredited certification available. In-house delivery nationwide.',
+    sub: 'Not just CAT and Genny equipment operation. The scientific understanding and field-verified habits that eliminate service strikes.',
     image: 'CAT4-and-Genny-68',
+    alt: 'CAT and Genny cable avoidance training equipment laid out for a practical session',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
       { label: 'Cable Avoidance Training' },
@@ -31,10 +32,10 @@ export const courseData: CoursePageData = {
 
   schemas: {
     course: {
-      name: 'Cable Avoidance Training',
-      description: 'Cable avoidance training for underground utility detection with EUSR and ProQual accreditation options.',
+      name: 'Cable Avoidance Training Course',
+      description: 'Cable avoidance training that changes how your team works on site. Delivered by the UK\'s only independent specialist in underground utility location and avoidance.',
       url: '/courses/cable-avoidance-training',
-      duration: '1-2 days',
+      duration: '1 day',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -62,8 +63,31 @@ export const courseData: CoursePageData = {
     },
   ],
 
+  whoFor: {
+    eyebrow: 'Who Is This Course For',
+    title: 'Designed For',
+    items: [
+      {
+        title: 'Complete Beginners',
+        desc: 'No prior experience with CAT and Genny equipment needed.',
+      },
+      {
+        title: 'Site Operatives and Groundworkers',
+        desc: 'Anyone who needs to locate buried services before excavation.',
+      },
+      {
+        title: 'Supervisors Wanting Awareness',
+        desc: 'Those who need to understand the equipment their teams are using.',
+      },
+      {
+        title: 'Organisations Introducing Genny-First',
+        desc: 'Companies transitioning to full cable avoidance training use across their workforce, embedding the Genny-First approach.',
+      },
+    ],
+  },
+
   infoBar: [
-    { label: 'Format', value: 'Choice of accredited or certified' },
+    { label: 'Format', value: 'Choice of in-house certified or accredited' },
     { label: 'Duration', value: '1-day or 2-day options' },
     { label: 'Max Delegates', value: '8' },
     { label: 'Assessment', value: 'Written 70% + practical' },
@@ -75,16 +99,16 @@ export const courseData: CoursePageData = {
     title: 'The Problem with Standard Cable Avoidance Training',
     paragraphs: [
       'Most standard cable avoidance training courses teach operatives to press the on button and walk over the area. They know what the beep means. They do not know why the signal behaves the way it does in different soil conditions, what happens to accuracy near a joint, or why their passive Power mode reading is not telling them what they think it is.',
-      'The Sygma cable avoidance training course was built to fix that. You will notice that Sygma says "Genny-First" rather than the industry standard approach of CAT first. That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.',
-      'This course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the confirmation biases and pressure shortcuts that cause strikes. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives\' own working environment.',
-      'The result is a cable avoidance training course with a proven track record of reducing underground utility strikes for organisations across the UK construction, utilities and infrastructure sectors. When your operatives understand how to locate underground utilities and underground services properly, the safety improvements follow.',
+      'The Sygma cable avoidance training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.',
+      'This cable avoidance course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the confirmation biases and pressure shortcuts that cause strikes. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives\' own working environment.',
+      'The result is a cable avoidance training course with a proven track record of reducing service strikes for organisations across the UK construction, utilities and infrastructure sectors.',
     ],
     sidebar: {
       eyebrow: 'Course at a Glance',
       items: [
         {
           label: 'Format',
-          value: 'Choice of: 1-day in-house certified, 1-day EUSR CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)',
+          value: 'Choice of: 1-day in-house certified, 1-day EUS CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)',
         },
         {
           label: 'Location',
@@ -130,6 +154,7 @@ export const courseData: CoursePageData = {
         'Signal distortion and its effects on location accuracy',
         'Transmitter applications: dual frequency, capacitance technique, earth positioning, blind induction sweeps and nulling out',
         'Depth estimation: when and how to take depth readings, testing the results',
+        'Data logging (optional): how to use CAT Manager software to collect and analyse data',
         'PAS128 survey levels: understanding different survey types',
         'Permits and paperwork: permits to dig, safe systems of work',
       ],
@@ -137,7 +162,7 @@ export const courseData: CoursePageData = {
     practical: {
       heading: 'Site-Based: Practical',
       subheading: 'Every principle proved on real buried utilities',
-      intro: 'The practical session takes delegates outside onto a real site to prove every safety principle taught in the classroom. Sygma uses your own site wherever possible, which means operatives are locating underground utilities on the same ground and the same utility types they will encounter daily.',
+      intro: 'The practical session takes delegates outside onto a real site to prove every principle taught in the classroom. Sygma uses your own site wherever possible, which means operatives are training on the same ground and the same utility types they will encounter daily.',
       items: [
         'Reading and using service plans to plan the survey before any equipment is switched on',
         'Site visual checks: identifying above-ground indicators of buried services',
@@ -155,7 +180,7 @@ export const courseData: CoursePageData = {
 
   formats: {
     eyebrow: 'Formats Available',
-    title: 'Course Formats',
+    title: 'Cable Avoidance Course Formats',
     rows: [
       {
         format: 'One-day in-house (certified)',
@@ -164,7 +189,7 @@ export const courseData: CoursePageData = {
         assessment: 'Written + practical',
       },
       {
-        format: 'One-day EUSR CAT1 (accredited)',
+        format: 'One-day EUS CAT1 (accredited)',
         duration: '1 day',
         maxDelegates: '8',
         assessment: 'Written + practical',
@@ -196,30 +221,29 @@ export const courseData: CoursePageData = {
     ],
     notes: [
       'The two-day split format is particularly valuable where operatives benefit from applying classroom learning in real working conditions before returning for their assessed practical day. The gap of approximately three months allows behaviours to bed in and any gaps to be identified and corrected.',
-      'All courses delivered by a CITB Approved Training Organisation.',
+      'All cable avoidance courses delivered by a CITB Approved Training Organisation.',
     ],
   },
 
   certRoutes: {
     eyebrow: 'What You Get',
-    title: 'Cable Avoidance Certificate and Qualification Routes',
-    intro: 'On successful completion of your cable avoidance training, the certification you receive depends on the course format chosen. All routes include written and practical assessment, and all are delivered to the same Sygma standard. The difference is in the awarding body and the type of ID card or certificate issued.',
+    title: 'At the End of This Course',
     items: [
       {
         title: 'Certificate of Attendance',
-        desc: 'Formal recognition of course completion with written and practical assessment results included.',
+        desc: 'Confirmation of completion of Sygma cable avoidance training',
       },
       {
         title: 'Practical Skills Record',
-        desc: 'Documented evidence of practical competency assessment conducted on site in real working conditions.',
+        desc: 'Detailed record of all hands-on exercises completed during the course',
       },
       {
         title: 'Equipment Confidence',
-        desc: 'Personalised assessment of your team\'s confidence and competency with specific equipment and techniques.',
+        desc: 'Practical experience with Genny signal generator and CAT locator in real conditions',
       },
       {
         title: 'Pathway Guidance',
-        desc: 'Tailored recommendations on progression routes to accredited qualifications (EUSR CAT1, ProQual CAT1) if required for your organisation or client requirements.',
+        desc: 'Personalised advice on which qualification pathway to progress to next',
       },
     ],
   },
@@ -266,12 +290,12 @@ export const courseData: CoursePageData = {
       {
         eyebrow: 'Competence',
         title: 'Trained and Competent Operatives',
-        desc: 'Formal safety assessment ensures operatives meet competence standards for cable avoidance work.',
+        desc: 'Formal assessment ensures operatives meet competence standards for cable avoidance work.',
       },
       {
         eyebrow: 'Process',
         title: 'Safe System of Work',
-        desc: 'Classroom and practical safety training covers systematic approach to underground service location.',
+        desc: 'Classroom and practical training covers systematic approach to service location.',
       },
       {
         eyebrow: 'Planning',
@@ -301,7 +325,7 @@ export const courseData: CoursePageData = {
       {
         eyebrow: 'Content',
         title: 'Content That Exceeds Industry Standards',
-        desc: 'Whether you choose in-house, EUSR or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.',
+        desc: 'Whether you choose in-house, EUS or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.',
       },
       {
         eyebrow: 'Methodology',
@@ -348,9 +372,9 @@ export const courseData: CoursePageData = {
       href: '/knowledge-hub/strike-prevention-site-managers',
     },
     {
-      title: 'NPORS vs EUSR Qualification Routes',
+      title: 'NPORS vs EUSR Cable Avoidance',
       desc: 'How the two main accreditation schemes compare for cable avoidance training.',
-      href: '/knowledge-hub/npors-vs-eusr',
+      href: '/knowledge-hub/npors-vs-eusr-cable-avoidance',
     },
   ],
 
@@ -361,7 +385,7 @@ export const courseData: CoursePageData = {
     items: [
       {
         eyebrow: 'Qualification',
-        title: 'EUSR CAT1',
+        title: 'EUS CAT1',
         desc: 'EUSR-registered qualification for operatives who need a formal card.',
         href: '/courses/eus-cat1',
       },
@@ -372,13 +396,26 @@ export const courseData: CoursePageData = {
         href: '/courses/proqualcat1-training',
       },
       {
-        eyebrow: 'Genny & CAT',
-        title: 'CAT and Genny Training',
-        desc: 'Our comprehensive Genny-First training programme teaching full electromagnetic methodology.',
-        href: '/courses/genny-cat-training',
+        eyebrow: 'Vivax-Metrotech',
+        title: 'vScan & Tx Training',
+        desc: 'The Vivax-Metrotech vScan and transmitter equivalent of this course, using the same Sygma methodology.',
+        href: '/courses/vscan-and-transmitter-training',
       },
     ],
   },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
+    },
+  ],
 
   video: {
     eyebrow: 'See It In Action',
@@ -395,54 +432,26 @@ export const courseData: CoursePageData = {
       images: [
         { src: 'CAT4-and-Genny-50', alt: 'Cable avoidance training outdoors with Sygma' },
         { src: 'CAT4-and-Genny-56', alt: 'Delegates using locating equipment on site' },
-        { src: 'CAT4-and-Genny-41', alt: 'Signal generator practical training' },
+        { src: 'Safe-Dig-09', alt: 'Practical cable avoidance and excavation training' },
       ],
     },
     {
       variant: 'grid',
       images: [
-        { src: 'CAT4-and-Genny-43', alt: 'Cable locator training practical session' },
-        { src: 'CAT4-and-Genny-52', alt: 'Delegates practising utility location techniques' },
+        { src: 'CAT4-and-Genny-41', alt: 'Genny4 signal generator practical training' },
+        { src: 'CAT4-and-Genny-51', alt: 'Cable avoidance training assessment on buried services' },
+        { src: 'CAT4-and-Genny-63', alt: 'Hands-on Genny signal application demonstration' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'CAT4-and-Genny-43', alt: 'CAT4 locator cable avoidance practical session' },
+        { src: 'CAT4-and-Genny-52', alt: 'Delegates practising cable avoidance techniques' },
         { src: 'CAT4-and-Genny-58', alt: 'On-site cable avoidance training assessment' },
       ],
     },
   ],
-
-  alsoConsider: [
-    {
-      title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
-      href: '/osca',
-    },
-    {
-      title: 'Bespoke Training',
-      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
-      href: '/contact',
-    },
-  ],
-
-  whoFor: {
-    eyebrow: 'Who Is This Course For',
-    title: 'Designed For',
-    items: [
-      {
-        title: 'Complete Beginners',
-        desc: 'No prior experience with cable location equipment needed. This safety training takes someone from zero to competent.',
-      },
-      {
-        title: 'Site Operatives and Groundworkers',
-        desc: 'Anyone who needs to locate underground services and utilities before excavation.',
-      },
-      {
-        title: 'Supervisors Wanting Awareness',
-        desc: 'Those who need to understand the equipment their teams are using.',
-      },
-      {
-        title: 'Organisations Building Competency',
-        desc: 'Companies transitioning to structured cable avoidance training across their workforce.',
-      },
-    ],
-  },
 
   faqs: [
     {
@@ -454,16 +463,16 @@ export const courseData: CoursePageData = {
       a: 'Yes. Bespoke elements can include your company\'s specific permit to dig, your strike history and lessons learned, your site-specific hazards and your documentation. The QTS surface laid cables programme is an example of how the course can be customised around a client\'s exact needs.',
     },
     {
-      q: 'What is the difference between cable avoidance training and EUSR CAT1?',
-      a: 'The EUSR CAT1 is an EUSR-registered qualification with fixed assessment criteria. The cable avoidance course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the cable avoidance course for bulk refresher training and the EUSR CAT1 for formal qualification.',
+      q: 'What is the difference between cable avoidance training and EUS CAT1?',
+      a: 'The EUS CAT1 is an EUSR-registered qualification with fixed assessment criteria. The cable avoidance course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the cable avoidance course for bulk refresher training and the EUS CAT1 for formal qualification.',
     },
     {
       q: 'Is the course suitable for delegates with no previous locating experience?',
       a: 'Yes. The course is designed to be accessible to delegates at any level. For delegates who are completely new to utility locating, the two-day format is recommended to allow sufficient time on the practical site.',
     },
     {
-      q: 'Can we combine this course with EUSR CAT1 or ProQual?',
-      a: 'Yes. Sygma offers combined course formats that incorporate EUSR CAT1, ProQual and cable avoidance training content in a single programme. Contact us to discuss combined booking options.',
+      q: 'Can we combine this course with EUS CAT1 or CAT2?',
+      a: 'Yes. Sygma offers combined course formats that incorporate EUS CAT1, CAT2 Safe Dig and cable avoidance training content in a single programme. Contact us to discuss combined booking options.',
     },
     {
       q: 'What qualifications do the Sygma trainers hold?',

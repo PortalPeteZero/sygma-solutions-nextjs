@@ -5,12 +5,12 @@ export const courseData: CoursePageData = {
   slug: 'eus-cat2-safe-dig',
 
   metadata: {
-    title: 'EUSR CAT2 Safe Dig Training | Safe Excavation Course | Sygma',
-    description: 'EUSR CAT2 Safe Dig training course. Safe excavation qualification covering classroom theory, live site practical, and written assessment. Built for operatives excavating near buried services.',
+    title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
+    description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig' },
     openGraph: {
-      title: 'EUSR CAT2 Safe Dig Training | Safe Excavation Course | Sygma',
-      description: 'EUSR CAT2 Safe Dig training course. Safe excavation qualification covering classroom theory, live site practical, and written assessment. Built for operatives excavating near buried services.',
+      title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
+      description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
       url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
       type: 'website',
       siteName: SITE_NAME,
@@ -19,10 +19,11 @@ export const courseData: CoursePageData = {
   },
 
   hero: {
-    eyebrow: 'Utility Avoidance',
+    eyebrow: 'Safe Dig and Advanced',
     headline: 'EUSR CAT2 Safe Dig: EUSR-Registered Safe Excavation Training',
     sub: 'The complete safe digging course. Classroom theory, live site practical, and written assessment. Built for every operative who excavates near buried services.',
-    image: 'Safe-Dig-14',
+    image: 'Safe-Dig-01',
+    alt: 'EUSR CAT2 safe digging training with vacuum excavation and hand-dig demonstration',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
       { label: 'EUSR CAT2 Safe Dig' },
@@ -32,8 +33,9 @@ export const courseData: CoursePageData = {
   schemas: {
     course: {
       name: 'EUSR CAT2 Safe Dig Training',
-      description: 'EUSR-registered safe excavation training covering classroom theory, live site practical, and written assessment for operatives excavating near buried services.',
+      description: 'EUSR CAT2 safe excavation training from Sygma Solutions. EUSR-registered qualification covering HSG47 safe digging practice, proximity working, and live dig practical assessment.',
       url: '/courses/eus-cat2-safe-dig',
+      credential: 'EUSR CAT2 / EUSR CAT2',
       duration: '1 day',
       mode: ['onsite'],
     },
@@ -62,29 +64,6 @@ export const courseData: CoursePageData = {
     },
   ],
 
-  whoFor: {
-    eyebrow: 'Who Is This Course For',
-    title: 'Designed For',
-    items: [
-      {
-        title: 'Site Operatives Responsible for Excavation',
-        desc: 'Anyone who excavates near buried utilities needs this qualification to operate safely and meet HSG47 competence requirements.',
-      },
-      {
-        title: 'Supervisors Overseeing Dig Operations',
-        desc: 'Those managing excavation teams and responsible for ensuring safe digging practices on site.',
-      },
-      {
-        title: 'Organisations Requiring Safe Dig Competency',
-        desc: 'Companies across construction and utilities sectors that need to ensure their teams are trained to EUSR standards.',
-      },
-      {
-        title: 'Anyone Combining CAT1 and CAT2',
-        desc: 'Operatives who need both cable location (CAT1) and safe excavation (CAT2) competencies in a single qualification path.',
-      },
-    ],
-  },
-
   infoBar: [
     {
       label: 'Duration',
@@ -108,6 +87,29 @@ export const courseData: CoursePageData = {
     },
   ],
 
+  whoFor: {
+    eyebrow: 'Who Is This Course For',
+    title: 'Designed For',
+    items: [
+      {
+        title: 'Site Operatives Responsible for Excavation',
+        desc: 'Anyone who physically excavates around buried services',
+      },
+      {
+        title: 'Supervisors Overseeing Dig Operations',
+        desc: 'Those accountable for safe digging practice on site',
+      },
+      {
+        title: 'Organisations Requiring Safe Dig Competency',
+        desc: 'Companies that need to evidence safe excavation training across their workforce',
+      },
+      {
+        title: 'Anyone Combining CAT1 and CAT2',
+        desc: 'Delegates who want complete utility avoidance competency covering both locating and safe excavation',
+      },
+    ],
+  },
+
   about: {
     eyebrow: 'About This Course',
     title: 'What Is EUSR CAT2 Safe Dig?',
@@ -121,68 +123,81 @@ export const courseData: CoursePageData = {
       items: [
         {
           label: 'Qualification',
-          value: 'EUSR CAT2 Safe Dig Competency Card',
+          value: 'EUSR CAT2 Safe Dig (EUSR Registered)',
         },
         {
           label: 'Duration',
-          value: '1 Day',
+          value: '1 Day (Classroom and On-Site Practical)',
         },
         {
-          label: 'Format',
-          value: 'Classroom + On-Site Practical',
+          label: 'Course Format',
+          value: 'Classroom theory + On-site practical dig + MCQ assessment',
         },
         {
-          label: 'Max Delegates',
-          value: '8',
+          label: 'Assessment',
+          value: 'Multiple choice questions (MCQs) and practical on-site observation',
+        },
+        {
+          label: 'Maximum Delegates',
+          value: '8 per session',
+        },
+        {
+          label: 'Pricing',
+          value: 'Per course, not per person. Contact Sygma for a quote.',
+        },
+        {
+          label: 'Delivery Options',
+          value: 'On-site at client premises (nationwide) or Sygma HQ, Wigan',
         },
         {
           label: 'Equipment',
-          value: 'Spade, PPE, Locating equipment',
+          value: 'Locator and signal generator equipment provided; delegates encouraged to bring own equipment. Sygma provides Radiodetection CAT4 and Genny4 as standard, This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX',
         },
         {
           label: 'Site Requirement',
-          value: 'Live dig area with buried metallic utilities',
+          value: 'Live dig area with buried metallic utilities and meeting or conference room',
         },
         {
           label: 'Pre-Requisite',
-          value: 'EUSR CAT1 recommended',
+          value: 'Delegates should hold EUSR CAT1 or equivalent; photographic ID required on the day',
         },
         {
           label: 'CITB Funding',
-          value: 'CITB Approved Training Organisation',
+          value: 'May be accessible via the CITB Employer Network; contact your CITB adviser for current options',
         },
         {
-          label: 'Certificate Validity',
-          value: '3 years',
+          label: 'Accreditation',
+          value: 'EUSR Registered | CITB Approved Training Organisation',
         },
       ],
     },
   },
 
   courseContent: {
+    title: 'How the Day Is Structured',
     theory: {
       heading: 'Classroom Theory',
       items: [
-        'Current legislation HSG47 and GS6',
-        'Site-specific risk assessments and permits to dig',
-        'Occupational health hazards',
-        'Excavation hazards',
-        'Reading and interpreting utility plans',
-        'Detecting and marking underground services',
-        'Safe excavation practices',
-        'Trench support systems and service exposure',
+        'Current legislation, HSG47 and GS6 guidance, and what they require of excavating operatives',
+        'Site-specific risk assessments, company procedures and permits to dig',
+        'Occupational health hazards: Leptospirosis, asbestos, silica dust, noise and vibration',
+        'Excavation hazards: loose ground, made-up ground, groundwater and stored materials',
+        'Reading and interpreting utility plans, their limitations, and what to do when plans are unavailable',
+        'Detecting and marking underground services with locating equipment',
+        'Safe excavation practices: hand tools, handheld power tools, and horizontal excavation',
+        'Trench support systems and service exposure, support and reinstatement',
       ],
     },
     practical: {
       heading: 'On-Site Practical',
       items: [
-        'Complete site-specific risk assessment and permit to dig',
-        'Use service plans to identify utility routes',
+        'Complete a site-specific risk assessment and permit to dig',
+        'Use service plans and site information to identify indicated utility routes',
         'Operate locating equipment to confirm service positions',
-        'Begin safe dig operation',
-        'Excavate to 500mm depth',
-        'Dig horizontally to expose buried service',
-        'Support exposed service',
+        'Begin the safe dig operation, removing surface material with services marked',
+        'Excavate to 500mm depth using appropriate tools and safe digging practice',
+        'Dig horizontally beneath the remaining surface to expose the indicated buried service',
+        'Support the exposed service appropriately',
         'Complete site reinstatement',
       ],
     },
@@ -190,53 +205,84 @@ export const courseData: CoursePageData = {
 
   certRoutes: {
     eyebrow: 'What You Get',
-    title: 'CAT2 Safe Dig Certification Routes',
+    title: 'At the End of This Course',
     items: [
       {
         title: 'EUSR CAT2 Safe Dig Competency Card',
-        desc: 'The industry-standard EUSR CAT2 qualification. On successful completion, your competency card is registered on the EUSR database and valid for 3 years. Widely recognised across UK construction sites and required by most principal contractors.',
+        desc: 'Valid for 3 years, nationally recognised evidence of safe excavation competency',
       },
       {
         title: 'Personalised Training Record',
-        desc: 'Detailed record of classroom theory sessions (T1-T24) and practical assessment outcomes (P1-P4), documenting competencies achieved during the course.',
+        desc: 'Detailed breakdown of all theory criteria T1 to T24 and practical criteria P1 to P4',
       },
       {
         title: 'Practical Assessment Evidence',
-        desc: 'Documented evidence of safe excavation practices demonstrated during the live site practical, including risk assessment and permit to dig competency.',
+        desc: 'Documented evidence of hands-on safe digging competency',
       },
       {
         title: 'Ongoing Support',
-        desc: 'Access to Sygma support and guidance for maintaining competency and keeping up with regulatory updates over the 3-year validity period.',
+        desc: 'Access to Sygma trainers for post-course questions',
       },
     ],
   },
+
+  photoStrips: [
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Safe-Dig-05', alt: 'Safe dig training in progress' },
+        { src: 'Safe-Dig-12', alt: 'On-site practical dig' },
+        { src: 'Safe-Dig-02', alt: 'Service exposure technique' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'Safe-Dig-06', alt: 'EUSR CAT2 Safe Dig live excavation' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Safe-Dig-07', alt: 'EUSR CAT2 safe dig practical training' },
+        { src: 'Safe-Dig-14', alt: 'Safe excavation technique demonstration' },
+        { src: 'Safe-Dig-03', alt: 'Hand dig assessment near buried services' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Safe-Dig-08', alt: 'Service exposure during safe dig training' },
+        { src: 'Safe-Dig-31', alt: 'EUSR CAT2 on-site excavation assessment' },
+        { src: 'Safe-Dig-34', alt: 'Sygma safe dig training completion' },
+      ],
+    },
+  ],
 
   siteRequirements: {
     items: [
       {
-        label: 'Live Dig Area',
-        detail: 'A suitable site with buried metallic utilities (cable, pipe or duct) accessible for safe excavation practice.',
+        label: 'Site Requirements',
+        detail: 'A live dig area with buried metallic utilities. One power cable to a site cabin is not sufficient. The site must have a realistic variety of underground services. The practical area should be close to the meeting room. If distances require driving, Sygma must be notified. Sygma Solutions can advise on site suitability or arrange access to specific sites if required.',
       },
       {
-        label: 'Meeting Room',
-        detail: 'Suitable for up to 8 people with projector or screen and sufficient space for written assessment.',
+        label: 'Meeting Room and Welfare',
+        detail: 'A comfortable meeting or conference room with sufficient desk space for all delegates to write. Space for a projector and a clear projection wall or screen. Appropriate welfare facilities. Sygma\'s dedicated training centre in Wigan is available at no extra cost as an alternative.',
       },
       {
-        label: 'STATS Plans',
-        detail: 'Buried service drawings for the practical site showing utility locations and routes.',
+        label: 'Utility Plans',
+        detail: 'STATS plans appropriate to the training site should be available for the practical. If no plans are available, Sygma Solutions can supply suitable plans at an additional cost agreed prior to booking.',
       },
       {
-        label: 'Delegate Requirements',
-        detail: 'Delegates must bring photo ID and appropriate PPE in compliance with national and company health and safety requirements.',
+        label: 'Delegates',
+        detail: 'All delegates must bring government-issued photographic ID (driving licence, passport, or residence permit). All delegates must have appropriate PPE. Sygma recommends that delegates hold EUSR CAT1 or an equivalent utility locating qualification.',
       },
     ],
-    note: 'Sygma\'s dedicated training centre in Wigan is available as an alternative venue at no extra cost.',
   },
 
   citbFunding: {
     paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may be able to access training funding support through the CITB Employer Network.',
-      'Contact your CITB adviser for current eligibility and funding options. Sygma is a CITB Approved Training Organisation and provides all required documentation to support funding applications.',
+      'May be accessible via the CITB Employer Network; contact your CITB adviser for current options',
     ],
   },
 
@@ -245,32 +291,32 @@ export const courseData: CoursePageData = {
       {
         eyebrow: 'Competence',
         title: 'Trained and Competent Operatives',
-        desc: 'Formal safety assessment ensures operatives meet competence standards for safe excavation work near buried services.',
+        desc: 'Every delegate meets the HSG47 definition of competence through hands-on assessment in real site conditions.',
       },
       {
         eyebrow: 'Process',
         title: 'Safe System of Work',
-        desc: 'Classroom and practical safety training covers systematic approach to planning and executing safe excavation.',
+        desc: 'Permits to dig, risk assessments, site-specific procedures, and hazard communication form the foundation of the course.',
       },
       {
         eyebrow: 'Technique',
         title: 'Safe Excavation Techniques',
-        desc: 'Hands-on training in correct digging methods, depth management, and protection of exposed services.',
+        desc: 'Hand tools, power tools, trench support, and protective systems taught and assessed in live digging conditions.',
       },
       {
         eyebrow: 'Protection',
         title: 'Protecting Exposed Services',
-        desc: 'Practical skills in supporting and protecting buried utilities once exposed during excavation.',
+        desc: 'Service support, marking, and reinstatement techniques prevent damage and maintain safety during excavation.',
       },
       {
         eyebrow: 'Standards',
         title: 'NRSWA Highway Operations',
-        desc: 'Training aligned with National Road and Street Works Association standards for safe street works.',
+        desc: 'Traffic management, lane rental, highway access, and utility service protection covered where applicable.',
       },
       {
         eyebrow: 'Records',
         title: 'Evidenced Training Records',
-        desc: 'Written and practical assessment results provided for compliance documentation and audit.',
+        desc: 'EUSR registration, certificates, and documented practical assessments provide audit-ready proof of competence.',
       },
     ],
   },
@@ -279,58 +325,57 @@ export const courseData: CoursePageData = {
     items: [
       {
         eyebrow: 'Standards',
-        title: 'Beyond Minimum Specification',
-        desc: 'Sygma CAT2 content exceeds the EUSR specification, providing deeper coverage of hazards and practical techniques.',
+        title: 'Beyond the Minimum Specification',
+        desc: 'Sygma content goes above and beyond the EUSR CAT2 minimum spec. Practical assessment in real site conditions.',
       },
       {
         eyebrow: 'Integration',
         title: 'Pairs with CAT1',
-        desc: 'Designed to work seamlessly with EUSR CAT1 training for operatives who need both locate and excavate competencies.',
+        desc: 'If your team locates and digs, they need both. EUSR CAT2 covers safe excavation hazards, protecting exposed services, and occupational health.',
       },
       {
         eyebrow: 'People',
         title: 'Specialist Trainers',
-        desc: 'Directly employed specialists with real-world excavation and utility experience, not generalist H&S trainers.',
+        desc: 'Directly employed. Ex-utility surveyors or ex-equipment manufacturer specialists. TAQA qualified.',
       },
       {
         eyebrow: 'Assessment',
         title: 'Real Practical Assessment',
-        desc: 'Structured on-site practical in real conditions with live buried services. The goal is competent operatives, not just certificates.',
+        desc: 'On-site practicals in real conditions. Competent operatives, not just certificates.',
       },
       {
         eyebrow: 'Independence',
         title: 'Independent',
-        desc: 'No surveys, no equipment manufacturing, no utility company relationships. Unbiased training focused on your safety.',
+        desc: 'No surveys, no equipment, no manufacturer relationships.',
       },
       {
         eyebrow: 'Delivery',
         title: 'We Come to You',
-        desc: 'Delivered at your site nationwide. Travel included. No hidden extras. Your team trains in familiar conditions.',
+        desc: 'At your site. Travel included. No hidden extras.',
       },
     ],
   },
 
   relatedCourses: {
-    eyebrow: 'Further Training',
+    eyebrow: 'Other Training Options',
     title: 'Related Courses',
-    intro: 'Sygma offers a range of utility avoidance and safe excavation training programmes to suit different needs and regulatory requirements.',
     items: [
       {
         eyebrow: 'Cable Location',
         title: 'EUSR CAT1',
-        desc: 'The cable location training that precedes CAT2. Covers Genny and CAT equipment operation and utility detection.',
+        desc: 'Cable location qualification. Pairs with CAT2 for complete locate-and-dig competence.',
         href: '/courses/eus-cat1',
       },
       {
         eyebrow: 'Alternative Standard',
         title: 'ProQual CAT2',
-        desc: 'An alternative to EUSR CAT2, accredited through ProQual with equivalent practical assessment.',
-        href: '/courses/proqualcat2-training',
+        desc: 'ProQual-accredited safe excavation qualification. Externally verified by ProQual Accreditations.',
+        href: '/courses/proqualcat2',
       },
       {
         eyebrow: 'Combined Pathway',
         title: 'EUSR CAT1 and CAT2 Combined',
-        desc: 'Complete locate and excavate training in a single combined programme, suitable for teams needing both competencies.',
+        desc: 'Two-day combined course covering both location and safe excavation.',
         href: '/courses/eus-cat1-cat2-combined',
       },
     ],
@@ -338,85 +383,45 @@ export const courseData: CoursePageData = {
 
   alsoConsider: [
     {
-      title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify real-world safe excavation skills.',
-      href: '/osca',
-    },
-    {
       title: 'Bespoke Training',
       desc: 'Design a tailored programme around your site risks, equipment, and team size.',
       href: '/contact',
     },
   ],
 
-  photoStrips: [
-    {
-      variant: 'grid',
-      images: [
-        { src: 'Safe-Dig-01', alt: 'Safe Dig excavation training in progress' },
-        { src: 'Safe-Dig-05', alt: 'Delegates learning safe excavation techniques' },
-        { src: 'Safe-Dig-09', alt: 'Live site practical safe digging assessment' },
-      ],
-    },
-    {
-      variant: 'grid',
-      images: [
-        { src: 'Safe-Dig-14', alt: 'EUSR CAT2 Safe Dig training on site' },
-        { src: 'on-site-training-03', alt: 'On-site excavation safety training' },
-        { src: 'on-site-training-01', alt: 'Practical safe dig assessment' },
-      ],
-    },
-  ],
-
   faqs: [
     {
-      q: 'What is CAT2 Safe Dig training?',
-      a: 'CAT2 Safe Dig is EUSR-registered training for the safe excavation process near buried utilities. It focuses on the digging team and safe working practices. Unlike CAT1 which covers locating services, CAT2 covers how to safely excavate, expose and protect services once located.',
+      q: 'Do delegates need to hold EUSR CAT1 before attending EUSR CAT2?',
+      a: 'It is strongly recommended. EUSR CAT2 assumes familiarity with CAT and Genny locating equipment, as the on-site practical element requires delegates to operate a locator before commencing the dig. Delegates who have not completed EUSR CAT1 or an equivalent utility locating course may struggle with the practical element.',
     },
     {
-      q: 'Who should attend CAT2 training?',
-      a: 'Excavation supervisors, site operatives, and teams responsible for managing the digging process near buried services. Anyone combining CAT1 and CAT2 competencies should attend.',
+      q: 'What happens if the site does not have a suitable live dig area?',
+      a: 'Sygma Solutions can advise on site suitability before your booking is confirmed. If your site is not suitable, we can often arrange access to an alternative site. Alternatively, courses can be delivered at Sygma\'s training centre in Wigan at no extra cost. Please contact us before booking if you are unsure.',
     },
     {
-      q: 'Is CAT2 EUSR-registered?',
-      a: 'Yes. The CAT2 Safe Dig qualification is EUSR-registered and valid for 3 years.',
+      q: 'What is the pass mark for the written assessment?',
+      a: 'Sygma Solutions does not publish a fixed percentage pass mark for the EUSR CAT2 written assessment. Assessment is conducted by EUSR-registered criteria. Delegates who do not pass on the day will receive guidance on the areas that require improvement before a reassessment can be arranged.',
     },
     {
-      q: 'How long is the course?',
-      a: 'CAT2 training is a 1-day format combining classroom theory in the morning and live site practical in the afternoon.',
+      q: 'Can EUSR CAT1 and EUSR CAT2 be delivered on the same day?',
+      a: 'Yes. Sygma Solutions offers a combined EUSR CAT1 and CAT2 training day for teams who need both qualifications. Contact us for pricing and logistics for combined delivery.',
     },
     {
-      q: 'Can it be delivered in-house?',
-      a: 'Yes. Sygma delivers CAT2 training at your premises nationwide, using your site for the practical assessment.',
+      q: 'How does EUSR CAT2 relate to the ProQual CAT2 Safe Dig qualification?',
+      a: 'EUSR CAT2 and ProQual CAT2 cover the same operational area: safe excavation near buried services. ProQual CAT2 is assessed against a broader and more detailed criteria framework, whereas EUSR CAT2 follows the EUSR specification. Both are industry-recognised qualifications. The right choice depends on your organisation\'s competency framework requirements. Sygma offers both.',
     },
     {
-      q: 'What is the difference between CAT1 and CAT2?',
-      a: 'CAT1 covers cable location and detection using Genny and CAT equipment. CAT2 covers safe excavation and protecting services during the digging process. Both are required for full competency in utility avoidance.',
-    },
-    {
-      q: 'What is HSG47?',
-      a: 'HSG47 is the HSE guidance on avoiding danger from underground services. It requires that anyone excavating near buried utilities must be trained, competent, and working to a safe system of work. CAT2 training meets these requirements.',
-    },
-    {
-      q: 'What qualifications do the Sygma trainers hold?',
-      a: 'All Sygma trainers are specialist utility professionals with real-world excavation and field experience. They are not generalist H&S trainers. Many hold CICES membership and PAS128 field experience.',
-    },
-    {
-      q: 'Can we combine CAT1 and CAT2 training?',
-      a: 'Yes. Sygma offers combined CAT1 and CAT2 courses that cover both cable location and safe excavation in a structured programme.',
-    },
-    {
-      q: 'Is the course suitable for delegates with no previous excavation experience?',
-      a: 'Yes. The course is designed to take delegates from basic safety awareness to competent safe excavation practice.',
+      q: 'What STATS plans are needed for the course?',
+      a: 'STATS plans are the utility drawings for the specific site where the practical excavation will take place. They should be sourced from the relevant utility owners and operators before the course date. If you are unable to obtain plans, Sygma Solutions can supply suitable plans for an additional cost agreed before booking. Please discuss this with us when making your enquiry.',
     },
   ],
 
   cta: {
     title: 'Book EUSR CAT2 Safe Dig Training',
-    description: 'On-site delivery available nationwide. Your team trains at your location with your actual buried services and site conditions.',
+    description: 'Available on-site at your premises nationwide or at Sygma HQ in Wigan. Up to 8 delegates per session. EUSR registration included on pass. Contact us for a quote.',
     primaryLabel: 'Check Availability and Book',
-    primaryHref: '/contact',
+    primaryHref: '/contact#enquiry-form',
     secondaryLabel: 'Get in Touch',
-    secondaryHref: '/contact',
+    secondaryHref: '/contact#enquiry-form',
   },
 };

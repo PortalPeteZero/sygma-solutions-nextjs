@@ -1,4 +1,5 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'service-coordinator-usc',
@@ -12,144 +13,278 @@ export const courseData: CoursePageData = {
       description: 'Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.',
       url: 'https://sygma-solutions.com/courses/service-coordinator-usc',
       type: 'website',
+      siteName: SITE_NAME,
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
-    eyebrow: 'Utility Service Coordination',
-    headline: 'Service Coordinator USC Training: Manage Works Near Buried Services Safely',
-    sub: 'Two-day training covering utility service coordination roles, permit systems, risk assessment, and safe systems of work near buried services. PAS 128 compliant.',
-    image: 'Safe-Dig-01',
-    alt: 'Service Coordinator USC training for utility service coordination',
+    eyebrow: 'Utility Avoidance',
+    headline: 'Service Coordinator (USC) Training: Understanding the Role and Responsibilities',
+    sub: 'The Underground Service Coordinator (USC) is an appointment made by the employer, not a qualification. This course prepares your appointed USC to source and review utility plans, interpret survey data, and complete the documentation the role demands.',
+    image: 'CAT4-and-Genny-55',
+    alt: 'Utility service coordinator training covering safe excavation planning and supervision',
     breadcrumbs: [
       { label: 'Training', href: '/training/cable-location-avoidance' },
-      { label: 'Service Coordinator USC Training' },
+      { label: 'Service Coordinator USC' },
     ],
   },
 
   schemas: {
     course: {
-      name: 'Service Coordinator USC Training',
-      description: 'Two-day training covering utility service coordination roles and responsibilities. For teams managing works near buried services.',
+      name: 'Service Coordinator (USC) Training',
+      description: 'Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.',
       url: '/courses/service-coordinator-usc',
-      duration: '2 days',
+      credential: 'USC Appointment Training Certificate',
+      duration: '1-3 days',
       mode: ['onsite'],
     },
     breadcrumbs: [
       { label: 'Training', to: '/training/cable-location-avoidance' },
-      { label: 'Service Coordinator USC Training' },
+      { label: 'Service Coordinator USC' },
     ],
     includeFaqSchema: true,
   },
 
   infoBar: [
-    { label: 'Duration', value: '2 days (on-site)' },
-    { label: 'Format', value: 'In-house at your site' },
-    { label: 'Max Delegates', value: '8 per course' },
-    { label: 'Assessment', value: 'Practical and theory assessment' },
-    { label: 'Certificate', value: 'Service Coordinator Certificate' },
+    { label: 'Formats', value: '1-day standalone or 3-day with Level 3' },
+    { label: 'USC Status', value: 'Appointment, not a qualification' },
+    { label: 'Prerequisite (1-day)', value: 'EUS CAT1 within 12 months' },
+    { label: 'Delivery', value: 'In-house, nationwide UK' },
   ],
 
   about: {
-    eyebrow: 'Coordinating Works Near Buried Services',
-    title: 'The Role of the Utility Service Coordinator',
+    eyebrow: 'What Is the USC Role?',
+    title: 'An Appointment, Not a Qualification',
     paragraphs: [
-      'When excavation or construction works take place near underground utilities, someone must be accountable for managing those risks. The utility service coordinator role is that accountability. From initial risk assessment through to site supervision and permit control, the coordinator ensures that all works near buried services follow safe systems of work.',
-      'This two-day course covers the full USC role: understanding utility records, interpreting service plans, managing the location process, implementing traffic management and exclusion zones, and supervising the excavation and service management phases. By the end of the programme, delegates are competent to take on USC responsibilities on site, with full understanding of both their authority and their legal obligations.',
-      'The course is aligned with PAS 128 principles and is suitable for site supervisors, project managers, and anyone taking on the USC role for the first time, or refreshing their competency in an established role.',
+      'The Underground Service Coordinator is an individual appointed by the employer to coordinate underground utility avoidance activities on a project. The appointment is a requirement under the Overhead and Underground Excavation Services Standards (it is not a qualification that a delegate earns, but a responsibility that a company assigns).',
+      'The USC is responsible for ensuring the right utility plans are in place before excavation starts, that the locate has been conducted correctly, that permits are completed, and that the site team has the information they need to work safely. It is a coordination and oversight role, not an operational locating role.',
+      'Because the USC role is an appointment rather than a qualification, companies often underestimate the knowledge it requires. This course makes sure the person you appoint actually understands what they are responsible for.',
     ],
     sidebar: {
-      eyebrow: 'Course at a Glance',
+      eyebrow: 'Important',
       items: [
-        { label: 'Duration', value: '2 days (classroom and on-site)' },
-        { label: 'Format', value: 'In-house at your site' },
-        { label: 'Max Delegates', value: '8 per course' },
-        { label: 'Assessment', value: 'Theory and practical assessment' },
-        { label: 'Certificate', value: 'Service Coordinator Certificate' },
-        { label: 'Framework', value: 'PAS 128 aligned' },
-        { label: 'Prerequisites', value: 'None, but some site experience beneficial' },
+        { label: 'Key Point', value: 'The USC is an appointment, not a qualification.' },
+        { label: 'Registration', value: 'Your company appoints the USC. Sygma trains them to carry out that role correctly. Completing the USC course does not register your delegate on the EUSR or any other qualification register (it trains the person your organisation has chosen to fill the role). If your team needs the EUS CAT1, CAT2, and USC content together as part of a combined programme, see the EUS CAT1, CAT2 and USC Combined page.' },
       ],
     },
   },
 
   courseContent: {
     theory: {
-      heading: 'Day One',
-      subheading: 'Utility Service Coordination Theory',
+      heading: 'Classroom',
       items: [
-        'The utility service coordinator role, responsibilities, and legal obligations',
-        'PAS 128 standard and principles of safe working near buried services',
-        'Understanding utility records and service drawings',
-        'Risk assessment: identifying hazards and evaluating risk of utility strikes',
-        'Locating methods and equipment: selecting and requesting the right location process',
-        'The locate request and commissioning the cable and pipe location survey',
-        'Interpreting locate results and understanding the locate drawing',
-        'Permit systems and formal approval for works near services',
-        'Safe systems of work: exclusion zones, barriers, and traffic management',
-        'Emergency procedures and incident reporting',
-        'Site-specific hazards: overhead lines, low-pressure pipes, telecommunications',
+        'Understanding the Overhead and Underground Excavation Services Standards',
+        'Overview of utility networks and asset types',
+        'Utility plans in depth: reading and interpreting plans in the context of the USC role',
+        'PAS128 survey levels: understanding different survey types and specifying the right survey for the job',
+        'CAT Manager data download: how to collect and analyse CAT data as a coordinator',
+        'Electromagnetic location theory: understanding how the locate works, its limitations, and what it cannot find',
+        'GPR survey awareness: what GPR does and when it should be specified',
+        'Safe digging techniques: vacuum excavation, air pick, and hydro excavation',
+        'Site documentation: services location board, permit to break ground, and sign-off requirements',
+        'Insulated tools and flame-retardant clothing requirements',
       ],
     },
     practical: {
-      heading: 'Day Two',
-      subheading: 'Practical Application and On-Site Assessment',
-      intro: 'The second day moves into site-based activity and practical assessment.',
+      heading: 'Site Practical',
       items: [
-        'Conducting a pre-work site survey and utility plan review',
-        'Commissioning location work and communicating with the locating team',
-        'Implementing traffic management and exclusion zones',
-        'Supervising exposure and safe digging techniques',
-        'Managing the permit to dig process',
-        'Overseeing contact with exposed services',
-        'Documenting the work and maintaining records',
-        'Post-completion sign-off and reinstatement',
-        'Practical assessment of USC competency in real site conditions',
+        'Practical demonstration of passive and active locating of buried services',
+        'Site surveying techniques and process: from plan to locate',
       ],
     },
+  },
+
+  formats: {
+    eyebrow: 'Course Formats',
+    title: 'Two Ways to Deliver the USC Training',
+    rows: [
+      {
+        format: '1-Day Standalone',
+        duration: '1 day',
+        maxDelegates: 'Delegates must hold EUS CAT1 from within the last 12 months',
+        assessment: 'USC course completion certificate issued',
+      },
+      {
+        format: '3-Day with Level 3 Certificate',
+        duration: '3 days',
+        maxDelegates: 'No prior qualification required',
+        assessment: 'Level 3 Certificate in Utility Mapping and Surveying issued on completion',
+      },
+    ],
+  },
+
+  certRoutes: {
+    eyebrow: 'What You Get',
+    title: 'Course Deliverables',
+    items: [
+      { title: 'USC Certificate of Competence', desc: 'Completion certificate for the USC training.' },
+      { title: 'Written Assessment Record', desc: 'Documentation of written assessment outcomes.' },
+      { title: 'Practical Assessment Record', desc: 'Record of practical assessment completion.' },
+      { title: 'EUSR Registration Guidance', desc: 'Guidance on EUSR registration where applicable.' },
+    ],
   },
 
   photoStrips: [
     {
       images: [
-        { src: 'Safe-Dig-01', alt: 'Service Coordinator USC training - site assessment' },
-        { src: 'Safe-Dig-09', alt: 'Utility service coordination - permit management' },
-        { src: 'Safe-Dig-14', alt: 'Service Coordinator on-site competency assessment' },
+        { src: 'CAT4-and-Genny-47', alt: 'Service Coordinator USC training - practical session' },
+        { src: 'CAT4-and-Genny-59', alt: 'Service Coordinator USC training - hands-on assessment' },
+        { src: 'Safe-Dig-07', alt: 'Service Coordinator USC training - on-site delivery' },
+      ],
+      variant: 'grid',
+    },
+    {
+      images: [
+        { src: 'CAT4-and-Genny-09', alt: 'Service coordinator utility awareness training' },
+        { src: 'Safe-Dig-07', alt: 'USC qualification practical demonstration' },
+        { src: 'CAT4-and-Genny-59', alt: 'Service coordination training assessment' },
+      ],
+      variant: 'grid',
+    },
+    {
+      images: [
+        { src: 'CAT4-and-Genny-45', alt: 'USC training with utility location equipment' },
+        { src: 'Safe-Dig-18', alt: 'Service coordinator on-site assessment' },
+        { src: 'CAT4-and-Genny-56', alt: 'Utility service coordination practical session' },
       ],
       variant: 'grid',
     },
   ],
 
-  cta: {
-    title: 'Book Your Service Coordinator Training',
-    description: 'Two days on-site at your location. In-house training for site supervisors and project managers stepping into the USC role. Contact us for availability.',
-    primaryLabel: 'Get in Touch',
-    primaryHref: '/contact',
+  whoFor: {
+    eyebrow: 'Audience',
+    title: 'Who Should Attend',
+    items: [
+      {
+        title: 'The Appointed or Designated USC',
+        desc: 'The individual your company has appointed (or is planning to appoint) as Underground Service Coordinator. This course gives them the knowledge to fulfil the role correctly: sourcing plans, reviewing surveys, completing permits, and coordinating the excavation safely.',
+      },
+      {
+        title: 'Supervisors and Site Managers',
+        desc: 'Supervisors and site managers responsible for utility avoidance oversight who want to formalise their understanding of the USC role and the documentation it requires.',
+      },
+      {
+        title: 'Companies Setting Up a USC Process',
+        desc: 'Companies that need to appoint a USC but are unsure how the process should work in practice. This course gives your designated person the knowledge to set up and manage the process from day one.',
+      },
+    ],
   },
+
+  whySygma: {
+    items: [
+      {
+        eyebrow: 'Coordinating Safe Work',
+        title: 'For those managing teams who dig near services. Understanding of both location and excavation requirements.',
+        desc: 'USC training that covers the full range of coordination responsibilities and documentation.',
+      },
+      {
+        eyebrow: 'Specialist Trainers',
+        title: 'Directly employed, ex-surveyors and ex-manufacturers, TAQA qualified.',
+        desc: 'Trainers with real-world experience in coordination roles and site management.',
+      },
+      {
+        eyebrow: 'Real Practical Assessment',
+        title: 'Structured on-site practical in real conditions.',
+        desc: 'For the 1-day format, practical site element with real utilities and documentation.',
+      },
+      {
+        eyebrow: 'Independent',
+        title: 'No surveys, no equipment, no manufacturer relationships.',
+        desc: 'Training focused on what the USC role actually demands, not commercial interests.',
+      },
+      {
+        eyebrow: 'We Come to You',
+        title: 'Delivered at your site, travel included.',
+        desc: 'In-house training at your location, using your site and documentation.',
+      },
+      {
+        eyebrow: 'Two Format Options',
+        title: '1-day standalone or 3-day with Level 3 Certificate in Utility Mapping.',
+        desc: 'Choose the format that matches your team\'s qualification needs.',
+      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding. All Sygma courses exceed 51% practical.',
+      'CITB-registered employers may be able to access Employer Network funding towards training costs. USC training and the Level 3 Certificate are recognised as professional development supporting your management capability.',
+    ],
+  },
+
+  relatedCourses: {
+    eyebrow: 'Related Training',
+    title: 'Related Training Courses',
+    intro: 'Build your team\'s capability across utility avoidance and coordination roles.',
+    items: [
+      {
+        eyebrow: 'Foundation',
+        title: 'EUS CAT1',
+        desc: 'The foundation. USCs need to understand locating as well as coordinate it.',
+        href: '/courses/eus-cat1',
+      },
+      {
+        eyebrow: 'Safe Digging',
+        title: 'EUS CAT2 Safe Dig',
+        desc: 'Safe excavation and permit requirements. Essential knowledge for USCs managing dig teams.',
+        href: '/courses/eus-cat2-safe-dig',
+      },
+      {
+        eyebrow: 'Plans Management',
+        title: 'Plans and Process Training',
+        desc: 'Master utility plan interpretation. USCs source and review plans every day.',
+        href: '/courses/plans-and-process',
+      },
+    ],
+  },
+
+  alsoConsider: [
+    {
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
+    },
+    {
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
+    },
+  ],
 
   faqs: [
     {
-      q: 'What qualifications do I need before taking the Service Coordinator USC course?',
-      a: 'No formal qualifications are required, but the course assumes basic understanding of site operations and work near utilities. Delegates with some site experience (groundwork, utilities, construction) will get more from the course, but the programme is designed to take someone with no prior USC experience to full competency.',
+      q: 'Is the USC a qualification?',
+      a: 'No. The Underground Service Coordinator is an appointment made by the employer. It is not a qualification that delegates earn through an awarding body. The course trains the person being appointed to understand and fulfil the role correctly. The USC appointment itself is the employer\'s responsibility.',
     },
     {
-      q: 'Is the Service Coordinator training PAS 128 accredited?',
-      a: 'The training is PAS 128 aligned and covers all elements of the utility service coordinator role as defined in the PAS 128 standard. Delegates receive a Sygma Service Coordinator Certificate. For formal PAS 128 accreditation, additional third-party assessment may be required depending on your organisation\'s requirements.',
+      q: 'Do delegates need to have done the EUS CAT1 course first?',
+      a: 'For the 1-day standalone format, yes. Delegates must have completed the EUS CAT1 course within the last 12 months. If they have not, the USC course should be delivered over 2 days to incorporate the CAT1 content. For the 3-day format with Level 3 Certificate, no prior qualification is required.',
     },
     {
-      q: 'Can this course be delivered online?',
-      a: 'No. The Service Coordinator USC course requires on-site practical assessment and real site conditions. The two days must be delivered at your premises or a suitable location with underground utilities. This ensures practical competency is assessed in realistic conditions.',
+      q: 'What is the difference between this course and the EUS CAT1 and CAT2 Combined with USC course?',
+      a: 'The EUS CAT1 and CAT2 Combined with USC course includes the EUS CAT1 and CAT2 qualifications alongside the USC content (it is a qualification route through EUSR). The standalone USC course is for delegates who already hold CAT1 and need USC-specific training, or for teams who want to pair the USC content with the Level 3 Certificate rather than the EUS qualification.',
     },
     {
-      q: 'How often is the Service Coordinator training delivered?',
-      a: 'The course can be arranged on flexible dates to suit your team. Contact us with your preferred timeframe and delegate numbers, and we will schedule a session. Multiple sessions can be arranged if you have large teams to train.',
+      q: 'What is the Level 3 Certificate in Utility Mapping and Surveying?',
+      a: 'The Level 3 Certificate is a qualification covering site reconnaissance, desktop survey, and utility survey processes mapped to PAS128. The 3-day USC format includes this qualification alongside the USC training content. The qualification is issued on completion of the three days.',
     },
     {
-      q: 'Do we need any specific site setup for the practical element?',
-      a: 'Yes. The practical element requires access to underground utilities suitable for location work and a safe digging area. Sygma will assess site suitability before booking. If your site is not suitable, we can advise on alternative locations or arrange training at a pre-agreed venue.',
+      q: 'What site or venue is required?',
+      a: 'Both formats require a meeting room with welfare facilities. The 1-day standalone format includes a site practical element, so a suitable outdoor area with buried utilities near the training room is also required. For the 3-day format, an outdoor practical area is required for Day 3.',
     },
     {
-      q: 'Can Service Coordinator training be combined with other Sygma courses?',
-      a: 'Yes. Many organisations book Service Coordinator training together with CAT and Genny courses or HSG47 awareness training to provide comprehensive competency across their teams. Contact us to discuss combining courses.',
+      q: 'Does this course cover GPR?',
+      a: 'The USC course includes GPR awareness (an overview of what GPR does and when it should be specified). It does not include GPR operation training. For GPR operation training, see the GPR Training course in the Utility Mapping section.',
     },
   ],
+
+  cta: {
+    title: 'Enquire About Service Coordinator (USC) Training',
+    description: '1-day standalone (EUS CAT1 prerequisite) or 3-day with Level 3 Certificate. In-house at your site anywhere in the UK. Contact us to discuss the right format and receive a tailored quotation.',
+    primaryLabel: 'Request a Quote',
+    primaryHref: '/contact',
+    secondaryLabel: 'View CAT1, CAT2 and USC Combined',
+    secondaryHref: '/courses/eus-cat1-cat2-usc-combined',
+  },
 };

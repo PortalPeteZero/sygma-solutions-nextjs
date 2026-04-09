@@ -1,17 +1,19 @@
 import type { CoursePageData } from './types';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const courseData: CoursePageData = {
   slug: 'genny-cat-training',
 
   metadata: {
-    title: 'Cat and Genny Training | Cable Avoidance Courses | Sygma',
-    description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
+    title: 'CAT and Genny Training Course | EUSR | Sygma Solutions',
+    description: 'CAT and Genny training courses delivered UK-wide by the UK\'s only independent specialist. Cable avoidance training. HSG47 compliant. Contact us for pricing.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/genny-cat-training' },
     openGraph: {
-      title: 'Cat and Genny Training | Cable Avoidance Courses | Sygma',
-      description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
+      title: 'CAT and Genny Training Course | EUSR | Sygma Solutions',
+      description: 'CAT and Genny training courses delivered UK-wide by the UK\'s only independent specialist. Cable avoidance training. HSG47 compliant. Contact us for pricing.',
       url: 'https://sygma-solutions.com/courses/genny-cat-training',
       type: 'website',
+      images: [DEFAULT_OG_IMAGE],
     },
   },
 
@@ -29,18 +31,66 @@ export const courseData: CoursePageData = {
 
   schemas: {
     course: {
-      name: 'Cat and Genny Training',
-      description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide by specialist utility avoidance trainers.',
+      name: 'CAT and Genny Training Course',
+      description: 'CAT and Genny training that changes how your team works on site. Delivered by the UK\'s only independent specialist in underground utility location and avoidance.',
       url: '/courses/genny-cat-training',
-      duration: '1-2 days',
+      credential: 'CAT and Genny Training Certificate',
+      duration: '1 day',
       mode: ['onsite'],
     },
     breadcrumbs: [
       { label: 'Training', to: '/training/cable-location-avoidance' },
-      { label: 'Cat and Genny Training' },
+      { label: 'CAT and Genny Training' },
     ],
     includeFaqSchema: true,
   },
+
+  faqs: [
+    {
+      q: 'What is CAT and Genny training?',
+      a: 'CAT and Genny training teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to detect buried utilities before excavation. It is the core cable avoidance training required to meet HSG47 obligations and ensure operatives are competent before breaking ground near underground services. The course covers electromagnetic theory, all four locating modes (Power, Radio, Genny and Avoidance), signal interpretation, depth estimation and practical on-site assessment. Sygma delivers CAT and Genny training with a Genny-First methodology, meaning operatives learn to connect the signal generator before relying on passive detection modes. Successful delegates can be assessed for an EUS/EUSR CAT1 accredited card, a ProQual CAT1 certificate or a Sygma in-house certification depending on the route chosen.',
+    },
+    {
+      q: 'How much does a CAT and Genny course cost?',
+      a: 'CAT and Genny training is available as an in-house day rate for up to 8 delegates, delivered at your site. The exact cost depends on the format you choose (in-house certified, EUSR CAT1 accredited or ProQual CAT1 accredited) and whether you need a one-day or two-day programme. Travel is included in the day rate with no hidden extras. We also run regular open courses at venues across the UK, priced per person -- get in touch via our live chat to ask about upcoming dates. Employers who pay the CITB levy may be eligible for training funding support through the CITB Employer Network. Contact Sygma for a tailored quote.',
+    },
+    {
+      q: 'Do you need to be trained to use a CAT scanner?',
+      a: 'Yes. HSG47, the Health and Safety Executive\'s guidance on avoiding danger from underground services, requires that anyone using cable and pipe locating equipment must be trained and competent. Using a CAT locator without proper cable avoidance training increases the risk of striking buried services, which can result in cable strikes, gas leaks and serious injury. Most principal contractors and utility companies require operatives to hold a recognised qualification such as EUSR CAT1 or ProQual CAT1 before being allowed to use locating equipment on site.',
+    },
+    {
+      q: 'How long is CAT and Genny training valid for?',
+      a: 'It depends on the qualification route. The EUSR CAT1 card is valid for 3 years from the date of issue. ProQual CAT1 certificates are also valid for 3 years. The Sygma in-house certificate does not have a fixed expiry but most employers and frameworks require refresher training every 3 years to maintain competency. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.',
+    },
+    {
+      q: 'What is the difference between EUSR CAT1 and EUSR CAT1?',
+      a: 'They are the same qualification. EUS stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUS. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.',
+    },
+    {
+      q: 'What equipment do our operatives need to bring?',
+      a: 'Each operative should bring the locator and signal generator they use on site. Sygma provide Radiodetection CAT4 and Genny4 as backup equipment to run a standard course if delegates do not have their own. Any manufacturer\'s locator is suitable, including Vivax-Metrotech vLoc, Leica DSX, and Radiodetection RD8200/RD8100. If sharing equipment, a minimum ratio of one locator per three delegates is recommended.',
+    },
+    {
+      q: 'Can the course be tailored to our specific sites and risk profile?',
+      a: 'Yes. Bespoke elements can include your company\'s specific permit to dig, your strike history and lessons learned, your site-specific hazards and your documentation. The QTS surface laid cables programme is an example of how the course can be customised around a client\'s exact needs.',
+    },
+    {
+      q: 'What is the difference between CAT and Genny training and EUSR CAT1?',
+      a: 'The EUSR CAT1 is an EUSR-registered qualification with fixed assessment criteria. The Genny & CAT course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the Genny & CAT course for bulk refresher training and the EUSR CAT1 for formal qualification.',
+    },
+    {
+      q: 'Is the course suitable for delegates with no previous locating experience?',
+      a: 'Yes. The course is designed to be accessible to delegates at any level. For delegates who are completely new to utility locating, the two-day format is recommended to allow sufficient time on the practical site.',
+    },
+    {
+      q: 'Can we combine this course with EUSR CAT1 or CAT2?',
+      a: 'Yes. Sygma offers combined course formats that incorporate EUSR CAT1, CAT2 Safe Dig and Genny & CAT training content in a single programme. Contact us to discuss combined booking options.',
+    },
+    {
+      q: 'What qualifications do the Sygma trainers hold?',
+      a: 'All Sygma trainers are specialist utility location professionals with real-world field experience. They are not generalist H&S trainers. Many hold CICES membership, PAS128 field experience and backgrounds in managing large-scale infrastructure projects. You are learning from people who have done the job.',
+    },
+  ],
 
   stats: [
     {
@@ -84,26 +134,11 @@ export const courseData: CoursePageData = {
   },
 
   infoBar: [
-    {
-      label: 'Format',
-      value: 'Choice of in-house certified or accredited',
-    },
-    {
-      label: 'Duration',
-      value: '1-day or 2-day options',
-    },
-    {
-      label: 'Max Delegates',
-      value: '8',
-    },
-    {
-      label: 'Assessment',
-      value: 'Written 70% + practical',
-    },
-    {
-      label: 'Delivery',
-      value: 'At your site, nationwide',
-    },
+    { label: 'Format', value: 'Choice of in-house certified or accredited' },
+    { label: 'Duration', value: '1-day or 2-day options' },
+    { label: 'Max Delegates', value: '8' },
+    { label: 'Assessment', value: 'Written 70% + practical' },
+    { label: 'Delivery', value: 'At your site, nationwide' },
   ],
 
   about: {
@@ -225,15 +260,11 @@ export const courseData: CoursePageData = {
         assessment: 'Written + practical',
       },
       {
-        format: 'Two-day split - 3 months apart (certified)',
+        format: 'Two-day split -- 3 months apart (certified)',
         duration: 'Day 1 + Day 2',
         maxDelegates: '8',
         assessment: 'Day 1 training, Day 2 assessment',
       },
-    ],
-    notes: [
-      'The two-day split format is particularly valuable where operatives benefit from applying classroom learning in real working conditions before returning for their assessed practical day. The gap of approximately three months allows behaviours to bed in and any gaps to be identified and corrected.',
-      'All courses delivered by a CITB Approved Training Organisation.',
     ],
   },
 
@@ -261,270 +292,67 @@ export const courseData: CoursePageData = {
     ],
   },
 
-  relatedCourses: {
-    eyebrow: 'Further Training',
-    title: 'Related Courses',
-    intro: 'Sygma offers a range of utility avoidance and cable location training programmes to suit different needs and regulatory requirements.',
-    items: [
-      {
-        eyebrow: 'Qualification',
-        title: 'EUSR CAT1',
-        desc: 'EUSR-registered qualification for operatives who need a formal card.',
-        href: '/courses/eus-cat1',
-      },
-      {
-        eyebrow: 'Assessment',
-        title: 'ProQual CAT1',
-        desc: 'Accredited qualification with all four EML modes in the practical assessment.',
-        href: '/courses/proqualcat1-training',
-      },
-      {
-        eyebrow: 'Vivax-Metrotech',
-        title: 'vScan & Tx Training',
-        desc: 'The Vivax-Metrotech vScan and transmitter equivalent of this course, using the same Sygma methodology.',
-        href: '/courses/vscan-and-transmitter-training',
-      },
-    ],
-  },
-
-  relatedReading: [
+  photoStrips: [
     {
-      title: 'Genny-First Methodology',
-      desc: 'Why Sygma teaches Genny-first and how it increases buried utility detection rates.',
-      href: '/knowledge-hub/genny-first-methodology',
+      variant: 'full',
+      images: [
+        {
+          src: 'CAT4-and-Genny-79.jpg',
+          alt: 'Genny & CAT training on a live utility site',
+        },
+      ],
     },
     {
-      title: 'HSG47 Explained',
-      desc: 'The HSE guidance that underpins all cable avoidance work. What it says and why it matters.',
-      href: '/knowledge-hub/hsg47-explained',
-    },
-    {
-      title: 'Strike Prevention for Site Managers',
-      desc: 'Practical guidance for site managers on reducing utility strike risk on construction projects.',
-      href: '/knowledge-hub/strike-prevention-site-managers',
-    },
-    {
-      title: 'NPORS vs EUSR Qualification Routes',
-      desc: 'How the two main accreditation schemes compare for cable avoidance training.',
-      href: '/knowledge-hub/npors-vs-eusr',
+      variant: 'grid',
+      images: [
+        {
+          src: 'CAT4-and-Genny-41.webp',
+          alt: 'Genny4 signal generator practical training',
+        },
+        {
+          src: 'CAT4-and-Genny-51.webp',
+          alt: 'Genny & CAT training assessment on buried services',
+        },
+        {
+          src: 'CAT4-and-Genny-63.webp',
+          alt: 'Hands-on Genny signal application demonstration',
+        },
+      ],
     },
   ],
 
-  alsoConsider: [
+  whySygma: { items: [
     {
-      title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
-      href: '/osca',
+      eyebrow: 'HSG47 Compliance',
+      title: 'Health and Safety Executive Obligations',
+      desc: 'The consequences of inadequate cat and genny training go beyond the immediate safety risk. HSE prosecutions for cable strikes and utility damage carry significant fines, and organisations have faced enforcement action where operatives were found to be untrained or using equipment without understanding its limitations. Costly disruptions to street works and excavation programmes follow every strike, and the reputational damage to contractors can affect future tender opportunities. Without proper safety training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. The result is predictable: cable strikes, service damage and project delays that were entirely preventable with the right cat and genny training.',
     },
     {
-      title: 'Bespoke Training',
-      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
-      href: '/contact',
+      eyebrow: 'Cable Avoidance Training',
+      title: 'Safe Utility Location Methodology',
+      desc: 'Proper cat and genny training, whether delivered as an EUSR CAT1 accredited course or a certified in-house programme, teaches operatives to locate underground utilities systematically. That means starting with buried service plans, progressing through visual site checks, and using the cable avoidance tool in all four detection modes with the signal generator connected first. This is not just about knowing which button to press. It is about understanding why passive modes alone are not enough, why locating underground services requires a Genny-First approach, and why health and safety guidelines exist to protect everyone on site and the public beyond the hoarding. Construction sites that invest in proper cable avoidance training and safety training for their workforce see measurable reductions in underground utility strikes, fewer costly disruptions, and a team that understands the obligations that come with working around buried cables and underground utilities.',
     },
-  ],
+  ] },
 
-  siteRequirements: {
-    items: [
-      {
-        label: 'STATS Plans',
-        detail: 'Buried service drawings appropriate to the practical site. If plans are not available, Sygma can supply plans at an additional cost agreed prior to booking.',
-      },
-      {
-        label: 'Equipment',
-        detail: 'Each operative should use the equipment they work with on site. Sygma provide Radiodetection CAT4 and Genny4 as backup. Any manufacturer\'s equipment is suitable.',
-      },
-      {
-        label: 'Meeting Room',
-        detail: 'Suitable for up to 8 people with projector or screen and sufficient space for written assessment.',
-      },
-      {
-        label: 'Practical Site',
-        detail: 'A suitable site with buried metallic utilities close to the meeting room. A single power cable to a cabin is not sufficient.',
-      },
-      {
-        label: 'PPE',
-        detail: 'Delegates must have appropriate PPE in compliance with national and company health and safety requirements.',
-      },
-      {
-        label: 'Parking',
-        detail: 'Sygma trainers arrive in transit-sized vehicles. Advise of any height barriers or access restrictions in advance.',
-      },
-    ],
-    note: 'Sygma\'s dedicated training centre at Wigan is available as an alternative venue at no extra cost, with full welfare and catering facilities.',
+  video: {
+    eyebrow: 'The Genny-First Methodology',
+    title: 'CAT and Genny Training: The Genny First Approach Explained',
+    description: 'Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma CAT and Genny training course.',
+    youtubeId: '_nVCZqM_Mz0',
   },
 
   citbFunding: {
     paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may still be able to access training funding support through the CITB Employer Network.',
-      'Contact your CITB adviser for current eligibility and funding options. Sygma is a CITB Approved Training Organisation and provides all required documentation to support funding applications.',
+      'Cat and Genny training is approved by the CITB (Construction Industry Training Board). Employers who pay the CITB levy may be eligible for training grants and funding support through the CITB Employer Network. The CITB operates the network that grants access to training funding for organisations across the construction industry. If your organisation qualifies, CITB funding can offset the cost of training. Contact Sygma with your CITB reference and we can discuss available funding support and how to structure the course to maximise your eligibility.',
     ],
   },
-
-  hsg47: {
-    items: [
-      {
-        eyebrow: 'Competence',
-        title: 'Trained and Competent Operatives',
-        desc: 'Formal safety assessment ensures operatives meet competence standards for cable avoidance work.',
-      },
-      {
-        eyebrow: 'Process',
-        title: 'Safe System of Work',
-        desc: 'Classroom and practical safety training covers systematic approach to underground service location.',
-      },
-      {
-        eyebrow: 'Planning',
-        title: 'Service Plan Checks',
-        desc: 'Reading, interpreting and cross-checking buried service drawings before work begins.',
-      },
-      {
-        eyebrow: 'Equipment',
-        title: 'Correct Use of Equipment',
-        desc: 'Training in all four locating modes (Power, Radio, Genny and Avoidance) with emphasis on correct operation and limitations.',
-      },
-      {
-        eyebrow: 'Verification',
-        title: 'Visual Inspection',
-        desc: 'Site visual checks for above-ground indicators of buried services before and during work.',
-      },
-      {
-        eyebrow: 'Records',
-        title: 'Evidenced Training Records',
-        desc: 'Written and practical assessment results provided for compliance documentation and audit.',
-      },
-    ],
-  },
-
-  whySygma: {
-    items: [
-      {
-        eyebrow: 'Content',
-        title: 'Content That Exceeds Industry Standards',
-        desc: 'Whether you choose in-house, EUS or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.',
-      },
-      {
-        eyebrow: 'Methodology',
-        title: 'Genny-First Methodology',
-        desc: '70-80% increase in Genny usage among Sygma-trained operatives. Measured through locator data downloads.',
-      },
-      {
-        eyebrow: 'People',
-        title: 'Specialist Trainers',
-        desc: 'Directly employed. Ex-utility surveyors or ex-equipment manufacturer specialists. TAQA qualified.',
-      },
-      {
-        eyebrow: 'Assessment',
-        title: 'Real Practical Assessment',
-        desc: 'Structured on-site practical in real conditions. The goal is competent operatives, not just certificates.',
-      },
-      {
-        eyebrow: 'Approach',
-        title: 'Independent',
-        desc: 'No surveys, no equipment, no manufacturer relationships. Unbiased training.',
-      },
-      {
-        eyebrow: 'Delivery',
-        title: 'We Come to You',
-        desc: 'Delivered at your site. Travel included. No hidden extras.',
-      },
-    ],
-  },
-
-  video: {
-    eyebrow: 'See It In Action',
-    title: 'The Genny First Approach on Site',
-    description: 'Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma CAT and Genny training course.',
-    youtubeId: 'IgxGksU3WQ4',
-    linkText: 'Read the full breakdown of the Genny First approach',
-    linkHref: '/knowledge-hub/genny-first-in-practice-video',
-  },
-
-  photoStrips: [
-    {
-      variant: 'grid',
-      images: [
-        { src: 'CAT4-and-Genny-50', alt: 'Genny & CAT training outdoors with Sygma' },
-        { src: 'CAT4-and-Genny-56', alt: 'Delegates using locating equipment on site' },
-        { src: 'Safe-Dig-09', alt: 'Practical utility location and excavation training' },
-      ],
-    },
-    {
-      variant: 'full',
-      images: [
-        { src: 'CAT4-and-Genny-79', alt: 'Genny & CAT training on a live utility site' },
-      ],
-    },
-    {
-      variant: 'grid',
-      images: [
-        { src: 'CAT4-and-Genny-41', alt: 'Genny4 signal generator practical training' },
-        { src: 'CAT4-and-Genny-51', alt: 'Genny & CAT training assessment on buried services' },
-        { src: 'CAT4-and-Genny-63', alt: 'Hands-on Genny signal application demonstration' },
-      ],
-    },
-    {
-      variant: 'grid',
-      images: [
-        { src: 'CAT4-and-Genny-43', alt: 'CAT4 locator training practical session' },
-        { src: 'CAT4-and-Genny-52', alt: 'Delegates practising utility location techniques' },
-        { src: 'CAT4-and-Genny-58', alt: 'On-site Genny & CAT training assessment' },
-      ],
-    },
-  ],
-
-  faqs: [
-    {
-      q: 'What is CAT and Genny training?',
-      a: 'CAT and Genny training teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to detect buried utilities before excavation. It is the core cable avoidance training required to meet HSG47 obligations and ensure operatives are competent before breaking ground near underground services. The course covers electromagnetic theory, all four locating modes (Power, Radio, Genny and Avoidance), signal interpretation, depth estimation and practical on-site assessment. Sygma delivers CAT and Genny training with a Genny-First methodology, meaning operatives learn to connect the signal generator before relying on passive detection modes. Successful delegates can be assessed for an EUS/EUSR CAT1 accredited card, a ProQual CAT1 certificate or a Sygma in-house certification depending on the route chosen.',
-    },
-    {
-      q: 'How much does a CAT and Genny course cost?',
-      a: 'CAT and Genny training is available as an in-house day rate for up to 8 delegates, delivered at your site. The exact cost depends on the format you choose (in-house certified, EUSR CAT1 accredited or ProQual CAT1 accredited) and whether you need a one-day or two-day programme. Travel is included in the day rate with no hidden extras. We also run regular open courses at venues across the UK, priced per person -- get in touch via our live chat to ask about upcoming dates. Employers who pay the CITB levy may be eligible for training funding support through the CITB Employer Network. Contact Sygma for a tailored quote.',
-    },
-    {
-      q: 'Do you need to be trained to use a CAT scanner?',
-      a: 'Yes. HSG47, the Health and Safety Executive\'s guidance on avoiding danger from underground services, requires that anyone using cable and pipe locating equipment must be trained and competent. Using a CAT locator without proper cable avoidance training increases the risk of striking buried services, which can result in cable strikes, gas leaks and serious injury. Most principal contractors and utility companies require operatives to hold a recognised qualification such as EUSR CAT1 or ProQual CAT1 before being allowed to use locating equipment on site.',
-    },
-    {
-      q: 'How long is CAT and Genny training valid for?',
-      a: 'It depends on the qualification route. The EUSR CAT1 card is valid for 3 years from the date of issue. ProQual CAT1 certificates are also valid for 3 years. The Sygma in-house certificate does not have a fixed expiry but most employers and frameworks require refresher training every 3 years to maintain competency. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.',
-    },
-    {
-      q: 'What is the difference between EUSR CAT1 and EUSR CAT1?',
-      a: 'They are the same qualification. EUS stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUS. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.',
-    },
-    {
-      q: 'What equipment do our operatives need to bring?',
-      a: 'Each operative should bring the locator and signal generator they use on site. Sygma provide Radiodetection CAT4 and Genny4 as backup equipment to run a standard course if delegates do not have their own. Any manufacturer\'s locator is suitable, including Vivax-Metrotech vLoc, Leica DSX, and Radiodetection RD8200/RD8100. If sharing equipment, a minimum ratio of one locator per three delegates is recommended.',
-    },
-    {
-      q: 'Can the course be tailored to our specific sites and risk profile?',
-      a: 'Yes. Bespoke elements can include your company\'s specific permit to dig, your strike history and lessons learned, your site-specific hazards and your documentation. The QTS surface laid cables programme is an example of how the course can be customised around a client\'s exact needs.',
-    },
-    {
-      q: 'What is the difference between CAT and Genny training and EUSR CAT1?',
-      a: 'The EUSR CAT1 is an EUSR-registered qualification with fixed assessment criteria. The Genny & CAT course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the Genny & CAT course for bulk refresher training and the EUSR CAT1 for formal qualification.',
-    },
-    {
-      q: 'Is the course suitable for delegates with no previous locating experience?',
-      a: 'Yes. The course is designed to be accessible to delegates at any level. For delegates who are completely new to utility locating, the two-day format is recommended to allow sufficient time on the practical site.',
-    },
-    {
-      q: 'Can we combine this course with EUSR CAT1 or CAT2?',
-      a: 'Yes. Sygma offers combined course formats that incorporate EUSR CAT1, CAT2 Safe Dig and Genny & CAT training content in a single programme. Contact us to discuss combined booking options.',
-    },
-    {
-      q: 'What qualifications do the Sygma trainers hold?',
-      a: 'All Sygma trainers are specialist utility location professionals with real-world field experience. They are not generalist H&S trainers. Many hold CICES membership, PAS128 field experience and backgrounds in managing large-scale infrastructure projects. You are learning from people who have done the job.',
-    },
-  ],
 
   cta: {
-    title: 'Book Your CAT and Genny Training',
-    description: 'Site-based delivery available nationwide, bespoke to your equipment, your plans and your risk profile. Contact us for a tailored quote.',
-    primaryLabel: 'Book Now',
-    primaryHref: '/contact',
-    secondaryLabel: 'Request Site-Based Delivery',
-    secondaryHref: '/contact',
+    title: 'Ready to Reduce Underground Utility Strikes?',
+    description: 'CAT and Genny training delivered by specialists who understand the real-world conditions your team faces. Let us help you build a team that locates buried utilities properly and understands why it matters.',
+    primaryLabel: 'Request a Quote',
+    primaryHref: 'https://sygma-solutions.com/contact',
+    secondaryLabel: 'View All Courses',
+    secondaryHref: '/training/cable-location-avoidance',
   },
 };

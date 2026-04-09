@@ -1,16 +1,43 @@
 import type { CoursePageData } from './types';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
+const faqs = [
+  {
+    q: 'Do I need Level 3 and Level 4 before starting the Level 5?',
+    a: 'Yes. Both the ProQual Level 3 Certificate in Utility Mapping and Surveying and the Level 4 Diploma in Utility Mapping and Surveying are mandatory prerequisites for enrolment on the Level 5 Diploma. You cannot start the Level 5 without holding both preceding qualifications.',
+  },
+  {
+    q: 'What is the fastest way to complete the Level 5?',
+    a: "The fastest route for experienced utility surveyors is through Sygma's 5 Day PAS128 Surveyor Course combined with workplace evidence for the higher-level competency areas. The 5-day course generates evidence across ICES GEUS01 A through F Part 1. If you already have workplace evidence for GEUS02 through GEUS04 (surveying instruments, geometric principles, and ICT), you can move very quickly through the evidence portfolio.",
+  },
+  {
+    q: 'How does the Level 5 differ from the Level 4?',
+    a: 'The Level 4 Diploma focuses on advanced EM detection and GPR (ICES GEUS01 E, G, F). The Level 5 extends this to include surveying instruments (total stations, GNSS), geometric principles (3D coordinate geometry, least squares, error propagation), and ICT for 3D utility data. The Level 5 is the qualification that reflects full professional competence across the entire utility mapping and surveying discipline.',
+  },
+  {
+    q: 'Does the Level 5 Diploma support professional membership of TSA or CICES?',
+    a: 'The Level 5 Diploma, combined with the TSA and ICES Utility Mapping Training Programme, provides evidence that aligns with ICES GEUS competency units and supports applications for professional membership of CICES and TSA. The qualification is widely recognised by both organisations as evidence of professional competence in utility surveying.',
+  },
+  {
+    q: 'Can I use my existing survey work as evidence for the Level 5?',
+    a: 'Yes. Evidence from your current role, including survey reports, Quality Level A deliverables, GPS records, CAD outputs, and instrument operation logs, can all form part of your Level 5 evidence portfolio. Our tailored assessment plan will identify which workplace evidence is relevant and what additional evidence may be needed to fill any gaps.',
+  },
+  {
+    q: 'Is the assessment fee all-inclusive?',
+    a: "The Sygma assessment fee covers the complete assessment service: induction, tailored assessment plan, e-portfolio access, workbooks, assessor support, mentoring, and open day sessions. ProQual registration fees are separate and paid directly to ProQual. There are no additional Sygma charges. Contact us for a quote.",
+  },
+];
+
 export const courseData: CoursePageData = {
   slug: 'level-5-diploma',
 
   metadata: {
-    title: 'ProQual Level 5 Diploma in Utility Mapping | Sygma Solutions',
-    description: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Highest operational qualification. Portfolio-based assessment. For senior surveyors and managers.',
+    title: 'ProQual Level 5 Utility Mapping Course | Sygma Solutions',
+    description: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying, and ICT.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/level-5-diploma' },
     openGraph: {
-      title: 'ProQual Level 5 Diploma in Utility Mapping | Sygma Solutions',
-      description: 'ProQual RQF Level 5 Diploma in Utility Mapping and Surveying. Highest operational qualification for utility mapping professionals.',
+      title: 'ProQual Level 5 Utility Mapping Course | Sygma Solutions',
+      description: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying, and ICT.',
       url: 'https://sygma-solutions.com/courses/level-5-diploma',
       type: 'website',
       images: [DEFAULT_OG_IMAGE],
@@ -19,18 +46,18 @@ export const courseData: CoursePageData = {
   },
 
   hero: {
-    eyebrow: 'Utility Mapping',
+    eyebrow: 'Qualifications',
     headline: 'ProQual Level 5 Diploma in Utility Mapping and Surveying',
-    sub: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT.',
+    sub: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT. Contact us to discuss enrolment and pricing.',
     images: [
-      'GPR_06_ymxpsk',
-      'RD_8100_1_aeiaur',
-      'GPR_17_jq0zfl',
+      'MALA-GPR-09',
+      'MALA-GPR-12',
+      'Advanced-EM-05',
     ],
     alts: [
-      'Advanced GPR survey training for Level 5 diploma',
-      'Radiodetection RD8100 equipment used in Level 5 utility mapping',
-      'Professional GPR data collection techniques for Level 5 qualification',
+      'Electromagnetic survey techniques practised during Level 5 diploma training',
+      'Professional GPR survey methodology taught on the ProQual Level 5 course',
+      'Advanced ground penetrating radar interpretation during Level 5 utility mapping',
     ],
     breadcrumbs: [
       { label: 'Training', href: '/training/utility-mapping-surveying' },
@@ -41,10 +68,10 @@ export const courseData: CoursePageData = {
   schemas: {
     course: {
       name: 'ProQual Level 5 Diploma in Utility Mapping and Surveying',
-      description: 'Ofqual-regulated Level 5 Diploma in Utility Mapping and Surveying. Highest operational qualification with portfolio-based assessment.',
+      description: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT. Contact us to discuss enrolment and pricing.',
       url: '/courses/level-5-diploma',
       credential: 'Level 5 Diploma in Utility Surveying',
-      duration: '5 days',
+      duration: 'Part-time',
       mode: ['onsite'],
     },
     breadcrumbs: [
@@ -54,243 +81,251 @@ export const courseData: CoursePageData = {
     includeFaqSchema: true,
   },
 
-  stats: [
-    {
-      value: 'Level 5',
-      label: 'Ofqual Regulated',
-      detail: 'Highest operational qualification. Formal recognition on the Regulated Qualifications Framework.',
-    },
-    {
-      value: 'Level 3 + Level 4 Required',
-      label: 'Prerequisites',
-      detail: 'Must complete Level 3 Certificate and Level 4 Diploma before enrolling in Level 5.',
-    },
-    {
-      value: 'Portfolio-Based',
-      label: 'Assessment',
-      detail: 'No exams. Evidence-based assessment from your professional practice.',
-    },
+  infoBar: [
+    { label: 'Qualification', value: 'ProQual Diploma' },
+    { label: 'Level', value: 'Level 5 (Ofqual-regulated)' },
+    { label: 'Prerequisites', value: 'Level 3 + Level 4 required' },
+    { label: 'Pricing', value: 'Contact us for pricing' },
+    { label: 'Equipment', value: 'MALA GPR, Leica DSX, Radiodetection RD8200' },
+    { label: 'Delivery', value: 'Wigan, 5-day fast-track, in-house' },
   ],
 
+  about: {
+    eyebrow: 'The Qualification',
+    title: 'What Is the ProQual Level 5 Diploma in Utility Mapping and Surveying?',
+    paragraphs: [
+      'The ProQual Level 5 Diploma in Utility Mapping and Surveying is an Ofqual-regulated qualification that demonstrates the highest level of operational competence in utility mapping and surveying. It is the third and highest diploma in the ProQual utility mapping pathway, sitting above the Level 3 Certificate and the Level 4 Diploma.',
+      'The Level 5 Diploma covers a broader range of technical disciplines than the Level 4. In addition to the advanced EM detection and GPR competencies evidenced at Level 4, it extends into surveying instruments and positioning (total stations, GNSS in static and kinematic modes), geometric principles (3D coordinate geometry, scale factors, least squares adjustment), and ICT for utility mapping (digital data transfer, CAD outputs, and production of 3D utility data sets).',
+      'Together with the Level 4 evidence base, the Level 5 Diploma covers the full set of ICES competency units required for professional membership pathways with TSA and CICES.',
+    ],
+    sidebar: {
+      eyebrow: 'Fast-Track Option',
+      items: [
+        {
+          label: '5 Day PAS128 Surveyor Course Route',
+          value: "Experienced utility surveyors can use Sygma's 5 Day PAS128 Surveyor Course as the core of their Level 5 evidence portfolio. The course covers ICES GEUS01 A through F Part 1 (combined with workplace evidence for GEUS02 through GEUS04, the Level 5 Diploma becomes achievable within a realistic timeline).",
+        },
+        {
+          label: 'ICES Coverage',
+          value: 'GEUS01 E, G, F: Advanced EM and GPR (from Level 4). GEUS02 A-G: Surveying instruments (total station, GNSS). GEUS03 A-E: Geometric principles. GEUS04 A-D: ICT for utility mapping.',
+        },
+      ],
+    },
+  },
+
   whoFor: {
-    eyebrow: 'Who Is This Qualification For',
-    title: 'Designed For',
+    eyebrow: 'Audience',
+    title: 'Who Is This Qualification For?',
     items: [
       {
         title: 'Senior Utility Surveyors',
-        desc: 'Experienced practitioners seeking formal recognition of expert-level competency in utility mapping, surveying instruments and geometric principles.',
+        desc: 'Surveyors who carry out PAS128 Quality Level A verification surveys using total stations, GNSS, or other precise positioning equipment and want the qualification to match their operational level.',
       },
       {
         title: 'Survey Team Leaders and Technical Managers',
-        desc: 'Leaders and managers in utility surveying organisations who need advanced technical qualifications to demonstrate management-level capability.',
+        desc: 'Team leaders or technical managers who need a qualification that reflects their full operational competence and the scope of technical work they oversee.',
       },
       {
         title: 'TSA/ICES Programme Candidates',
-        desc: 'Those progressing through the TSA and ICES Utility Mapping Programme seeking to structure learning into formal qualifications.',
+        desc: 'Candidates working through the full TSA and ICES Utility Mapping Training Programme (Modules 1 to 7) who want to convert that training into the highest ProQual operational qualification.',
       },
       {
         title: 'Professional Membership Applicants',
-        desc: 'Professionals seeking formal qualifications as part of professional membership applications or technical registration.',
+        desc: 'Professionals seeking qualification evidence to support applications for CICES membership, TSA membership, or CPD records.',
       },
       {
         title: 'PAS128 Quality Level A Organisations',
-        desc: 'Staff from organisations pursuing PAS128 Quality Level A accreditation requiring highest-level utility mapping qualification.',
+        desc: 'Organisations that tender for PAS128 Quality Level A contracts where demonstrating qualified personnel is a requirement.',
       },
       {
-        title: '5-Day PAS128 Course Alumni',
-        desc: 'Candidates who have completed the 5-day PAS128 intensive course and wish to structure learning into formal qualification.',
+        title: '5 Day PAS128 Course Alumni',
+        desc: 'Candidates who have attended the 5 Day PAS128 Surveyor Course and want to formalise that training through an Ofqual-regulated diploma using the fast-track route.',
       },
     ],
   },
 
-  infoBar: [
-    {
-      label: 'Level',
-      value: '5 (Ofqual-regulated)',
-    },
-    {
-      label: 'Prerequisites',
-      value: 'Level 3 + Level 4',
-    },
-    {
-      label: 'Assessment',
-      value: 'Evidence portfolio + workbook',
-    },
-    {
-      label: 'Equipment',
-      value: 'Total station, GNSS, MALA GPR, RD8200',
-    },
-    {
-      label: 'Delivery',
-      value: 'Wigan, 5-day fast-track, in-house',
-    },
-  ],
-
-  about: {
-    eyebrow: 'Qualification Overview',
-    title: 'What Is the ProQual Level 5 Diploma?',
-    paragraphs: [
-      'The ProQual Level 5 Diploma in Utility Mapping and Surveying is the highest operational qualification in utility mapping and surveying. It is Ofqual-regulated and must be completed after the Level 3 Certificate and Level 4 Diploma. The Level 5 qualification extends professional competency beyond detection methodologies into the surveying instruments, geometric principles and information communication technology (ICT) required for advanced utility mapping operations.',
-      'Where Level 4 focused on electromagnetic detection and GPR (PAS128 Quality Level B), Level 5 advances into the specialist surveying and quality assurance phases. You will develop expert competency in total station operations, GNSS surveying, three-dimensional coordinate geometry, least squares adjustment, ICT systems for utility mapping, and alignment with the full ICES GEUS framework. This is the qualification for specialists, team leaders and organisations pursuing PAS128 Quality Level A.',
-      'The Level 5 qualification is assessed through structured evidence portfolios and workbooks. This portfolio-based approach means assessment draws on your actual professional practice at a senior level. You apply real evidence from your utility surveying work and team management, supplemented by knowledge workbooks covering any areas not fully demonstrated in the field. There is no written exam.',
-      'Your assessor works alongside you throughout the qualification, helping you identify evidence gaps, plan how to gather evidence, and build confidence in applying expert-level techniques. Assessment is continuous and supportive, not a single high-stakes examination at the end. This is the qualification for senior practitioners, managers and organisations committed to the highest standards in utility mapping.',
+  formats: {
+    eyebrow: 'Competency Framework',
+    title: 'The Complete Utility Surveyor Competency Framework',
+    rows: [
+      {
+        format: 'Advanced EM detection (from Level 4)',
+        duration: 'EM equipment operation; signal interpretation; depth estimation; connection methods; clamp, capacitance, induction, nulling',
+        maxDelegates: 'GEUS01 E and G',
+        assessment: '',
+      },
+      {
+        format: 'Ground penetrating radar Unit A (from Level 4)',
+        duration: 'GPR setup and operation; radargram interpretation; hyperbola identification; depth and velocity',
+        maxDelegates: 'GEUS01 F Part 1',
+        assessment: '',
+      },
+      {
+        format: 'GPR post processing and data management',
+        duration: 'GPS data collection in field; grid surveys; Object Mapper or equivalent post processing; CAD export of 3D utility data',
+        maxDelegates: 'GEUS01 F Part 2',
+        assessment: '',
+      },
+      {
+        format: 'Surveying instruments: total station',
+        duration: 'Setup and operation; traverses; observations; data recording; coordinate computation',
+        maxDelegates: 'GEUS02 A-G',
+        assessment: '',
+      },
+      {
+        format: 'Surveying instruments: GNSS',
+        duration: 'Static and kinematic GNSS surveys; network and PPK processing; accuracy assessment; datum transformations',
+        maxDelegates: 'GEUS02 A-G',
+        assessment: '',
+      },
+      {
+        format: 'Geometric principles',
+        duration: '3D coordinate geometry; scale factors; least squares adjustment; error propagation; transformations',
+        maxDelegates: 'GEUS03 A-E',
+        assessment: '',
+      },
+      {
+        format: 'ICT for utility mapping',
+        duration: 'Data transfer protocols; CAD software for utility survey outputs; 3D utility data sets with digital ground models',
+        maxDelegates: 'GEUS04 A-D',
+        assessment: '',
+      },
+      {
+        format: 'PAS128 Quality Level A survey deliverables',
+        duration: 'Full Quality Level A verification survey outputs including confirmation of detected service positions using precise positioning',
+        maxDelegates: 'All GEUS units',
+        assessment: '',
+      },
     ],
-    sidebar: {
-      eyebrow: 'Assessment Overview',
-      items: [
-        {
-          label: 'Approach',
-          value: 'Portfolio-based evidence from your professional practice',
-        },
-        {
-          label: 'Duration',
-          value: 'Typically 6-12 months depending on evidence availability',
-        },
-        {
-          label: 'Support',
-          value: 'Ongoing assessor mentoring via regular review sessions',
-        },
-        {
-          label: 'Exam',
-          value: 'None. Assessment is entirely portfolio and workbook-based',
-        },
-        {
-          label: 'Prerequisites',
-          value: 'Level 3 Certificate + Level 4 Diploma',
-        },
-      ],
-    },
+  },
+
+  certRoutes: {
+    eyebrow: 'Fast-Track Route',
+    title: 'Accelerate Your Level 5 with the 5 Day PAS128 Surveyor Course',
+    intro: 'For experienced utility surveyors who want to progress through the Level 5 Diploma efficiently, Sygma offers a fast-track route built around the 5 Day PAS128 Utility Mapping and Surveying Course.',
+    items: [
+      {
+        title: 'The 5-day course is a TSA, CICES, and EUSR approved intensive programme that covers the full range of utility surveying skills in five days of structured training and assessment.',
+        desc: 'The course provides evidence toward ICES GEUS01 A-D, E&G, and F Part 1 and can include the Level 3 add-on. Combined with workplace evidence for GEUS01 F Part 2 and GEUS02 through GEUS04, the Level 5 Diploma becomes achievable within a realistic timeline for experienced practitioners.',
+      },
+      {
+        title: 'This fast-track route is most suitable for:',
+        desc: 'Surveyors who already have significant practical experience in EM detection, GPR, and survey instrument use. Those who have access to workplace evidence from Quality Level A surveys or similar positioning work. Professionals who want to formalise their skills without going through a full classroom programme from scratch.',
+      },
+    ],
   },
 
   courseContent: {
     theory: {
-      heading: 'Detection and GPR Evidence',
-      subheading: 'ICES GEUS01 E, G, F',
+      heading: 'Evidence Portfolio and Workbook: No Exams',
+      subheading: 'The Level 5 Diploma is assessed through a structured evidence portfolio covering all competency areas. There is no formal written exam. Assessment is competence-based and can be completed at a pace that fits around work commitments.',
       items: [
-        'Advanced electromagnetic detection principles and applications',
-        'Ground-penetrating radar operating principles, signal interpretation and data validation',
-        'Integration of EM and GPR methodologies in professional practice',
-        'Advanced depth estimation and confidence assessment techniques',
-        'Systematic survey planning and quality assurance',
+        'Online Induction: Introduction to the Level 5 qualification structure and what evidence is needed for each unit.',
+        'Tailored Assessment Plan: Your Sygma assessor builds a personalised plan that maps your existing training, certifications, and workplace activity against the Level 5 criteria and identifies any gaps.',
+        "Evidence Submission: Candidates submit through Sygma's online e-portfolio system. Evidence can include survey reports, field records, post processing outputs, CAD files, and training certificates.",
+        "Assessor Review and Open Days: Sygma's qualified assessors review submissions and provide feedback. Open day sessions at the Wigan centre are available for face-to-face assessments, practical verification, and mentoring.",
+        'Gap-Filling: Where workplace evidence does not cover the full criteria, candidates can attend open days or in-house sessions to address specific gaps through supervised practical work.',
+        'Certification: On successful completion of all units, the ProQual Level 5 Diploma certificate is awarded by ProQual Awarding Body.',
       ],
     },
     practical: {
-      heading: 'Surveying Instruments, Geometry and ICT',
-      subheading: 'ICES GEUS02-04: Instruments, Geometry, ICT',
-      intro: 'Expert-level competency in total station operations, GNSS surveying, geometric principles and utility mapping ICT systems.',
+      heading: 'The Complete Utility Surveyor Competency Framework',
+      subheading: 'The Level 5 Diploma covers all competency areas in the ProQual utility mapping pathway. The evidence base aligns with the full ICES GEUS framework used in Sygma\'s TSA and ICES Utility Mapping Training Programme.',
       items: [
-        'Total station operation, calibration and advanced survey techniques',
-        'GNSS surveying principles, positioning accuracy and quality control',
-        'Three-dimensional coordinate geometry and coordinate transformation',
-        'Least squares adjustment and network analysis',
-        'ICT systems for utility mapping, data management and quality assurance',
-        'Integration of surveying data with detection evidence and utility records',
-        'PAS128 Quality Assurance Framework and compliance',
-        'Team leadership and quality management in utility surveying operations',
+        'Advanced EM detection (from Level 4): EM equipment operation; signal interpretation; depth estimation; connection methods; clamp, capacitance, induction, nulling (ICES GEUS01 E and G)',
+        'Ground penetrating radar Unit A (from Level 4): GPR setup and operation; radargram interpretation; hyperbola identification; depth and velocity (ICES GEUS01 F Part 1)',
+        'GPR post processing and data management: GPS data collection in field; grid surveys; Object Mapper or equivalent post processing; CAD export of 3D utility data (ICES GEUS01 F Part 2)',
+        'Surveying instruments -- total station: Setup and operation; traverses; observations; data recording; coordinate computation (ICES GEUS02 A-G)',
+        'Surveying instruments -- GNSS: Static and kinematic GNSS surveys; network and PPK processing; accuracy assessment; datum transformations (ICES GEUS02 A-G)',
+        'Geometric principles: 3D coordinate geometry; scale factors; least squares adjustment; error propagation; transformations (ICES GEUS03 A-E)',
+        'ICT for utility mapping: Data transfer protocols; CAD software for utility survey outputs; 3D utility data sets with digital ground models (ICES GEUS04 A-D)',
+        'PAS128 Quality Level A survey deliverables: Full Quality Level A verification survey outputs including confirmation of detected service positions using precise positioning (All GEUS units)',
       ],
     },
   },
 
-  certRoutes: {
-    eyebrow: 'What You Receive',
-    title: 'Level 5 Diploma Certification Routes',
+  relatedReading: [
+    {
+      title: '5 Day PAS128 Utility Mapping and Surveying Course',
+      desc: 'The most efficient single training event for generating Level 5 evidence. Days 1 through 5 cover PAS128 D-C, EM, advanced EM, GPR, and assessment. Provides evidence for ICES GEUS01 A through F Part 1 and can include the Level 3 add-on.',
+      href: '/courses/5-day-pas128-surveyor',
+    },
+    {
+      title: 'TSA and ICES Utility Mapping Training Programme',
+      desc: 'Modules 5, 6, and 7 cover surveying instruments (GEUS02), geometric principles (GEUS03), and ICT (GEUS04) (the components unique to Level 5 beyond the Level 4 requirements). Completing all seven modules provides evidence for the full ProQual Level 5 Diploma.',
+      href: '/courses/tsa-ices-utility-mapping',
+    },
+    {
+      title: 'GPR Training (Module 2 Post Processing)',
+      desc: 'Object Mapper training, GPS integration, and CAD export provide evidence for ICES GEUS01 F Part 2, which is required at Level 5 but not Level 4.',
+      href: '/courses/gpr-training',
+    },
+  ],
+
+  relatedCourses: {
+    eyebrow: 'Related Courses',
+    title: 'Expand Your Skills and Qualifications',
     items: [
       {
-        title: 'ProQual Level 5 Diploma Certificate',
-        desc: 'The formal certificate awarded on successful completion, registered on the Regulated Qualifications Framework (RQF).',
+        eyebrow: 'Qualifications',
+        title: 'Level 4 Diploma',
+        desc: 'Advanced EM detection and GPR specialist qualification. The prerequisite for Level 5.',
+        href: '/courses/level-4-diploma',
       },
       {
-        title: 'Portfolio of Evidence Record',
-        desc: 'A comprehensive record of all evidence submitted, assessor feedback and competency sign-off across surveying instruments, geometry and ICT modules.',
+        eyebrow: 'Qualifications',
+        title: 'Level 6 Diploma',
+        desc: 'Management and leadership qualification for survey operations, projects and teams.',
+        href: '/courses/level-6-diploma',
       },
       {
-        title: 'External Assessment Report',
-        desc: 'A detailed report from the external assessor confirming your expert competency in utility mapping and surveying at Level 5.',
+        eyebrow: 'Qualifications',
+        title: 'Online Level 5 Diploma',
+        desc: 'Flexible online route through the Level 5, suitable for remote candidates and workplace learners.',
+        href: '/courses/online-level-5-diploma',
       },
-      {
-        title: 'RQF Registration',
-        desc: 'Your qualification is registered on the Regulated Qualifications Framework, making it formally recognised across the UK.',
-      },
+    ],
+  },
+
+  citbFunding: {
+    paragraphs: [
+      'Sygma is a CITB Approved Training Organisation. If your business is registered with CITB, speak to your CITB Employer Network adviser about funding support for this qualification. Funding is not guaranteed and varies by employer, but we can help you navigate the process.',
+      'Contact us for guidance on how to access available support.',
     ],
   },
 
   whySygma: {
     items: [
       {
-        eyebrow: 'Status',
+        eyebrow: 'ProQual Approved Centre',
         title: 'ProQual Approved Centre',
-        desc: 'Sygma is an approved centre for ProQual qualifications. All assessors are qualified and externally moderated.',
+        desc: 'Sygma is a ProQual approved assessment centre with proven expertise in delivering Level 5 assessments.',
       },
       {
-        eyebrow: 'Expertise',
+        eyebrow: 'Specialist Assessors',
         title: 'Specialist Assessors',
-        desc: 'Your assessor is a utility surveying professional with real-world field experience and senior-level expertise in surveying instruments and management.',
+        desc: 'All assessors are qualified utility surveyors with real-world experience in total station, GNSS and survey instrument use.',
       },
       {
-        eyebrow: 'Support',
-        title: 'Portfolio Support',
-        desc: 'Ongoing mentoring and guidance throughout your qualification journey. Regular review sessions with your specialist assessor.',
+        eyebrow: 'Portfolio Support',
+        title: 'Portfolio Support.',
+        desc: 'Your evidence comes from your workplace. We help you structure survey reports, GPS records, and CAD outputs efficiently.',
       },
       {
-        eyebrow: 'Management-Level',
+        eyebrow: 'Management-Level Qualification',
         title: 'Management-Level Qualification',
-        desc: 'Level 5 is designed for senior practitioners and team leaders. Recognised as a management-level qualification in utility mapping.',
+        desc: 'Level 5 covers utility survey project management and team leadership. Position yourself for progression.',
       },
       {
-        eyebrow: 'Independence',
-        title: 'Independent',
-        desc: 'No equipment relationships or survey interests. Unbiased, specialist teaching and assessment.',
+        eyebrow: 'Independent',
+        title: 'Independent.',
+        desc: 'No equipment to sell, no commercial bias. Pure assessment of your professional competence.',
       },
       {
         eyebrow: 'Evidence From Your Work',
         title: 'Evidence From Your Work',
-        desc: 'Assessment draws on your actual professional practice and real projects, not artificial exercises. Reflects your genuine expertise.',
+        desc: 'Real survey work, instrument operation records and project deliverables form your portfolio.',
       },
-    ],
-  },
-
-  relatedCourses: {
-    eyebrow: 'Related Qualifications',
-    title: 'ProQual Utility Mapping Pathway',
-    items: [
-      {
-        eyebrow: 'Level 4',
-        title: 'Level 4 Diploma',
-        desc: 'Advanced qualification in EM detection and GPR. Required prerequisite for Level 5.',
-        href: '/courses/level-4-diploma',
-      },
-      {
-        eyebrow: 'Level 6',
-        title: 'Level 6 Diploma',
-        desc: 'Specialist qualification for consultants and quality assurance specialists. Advanced progression after Level 5.',
-        href: '/courses/level-6-diploma',
-      },
-      {
-        eyebrow: 'Skills Training',
-        title: 'GPR Training',
-        desc: 'Specialist skills training in ground-penetrating radar operation and interpretation.',
-        href: '/courses/gpr-training',
-      },
-    ],
-  },
-
-  alsoConsider: [
-    {
-      title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify your practical skills in real conditions.',
-      href: '/osca',
-    },
-    {
-      title: 'Bespoke Training',
-      desc: 'Tailored technical training to support your qualification journey and develop specific competencies.',
-      href: '/contact',
-    },
-  ],
-
-  citbFunding: {
-    paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may be eligible to access training funding support through the CITB Employer Network.',
-      'Contact your CITB adviser or Sygma directly to discuss current funding eligibility, available support, and how to access employer network funding for Level 5 qualification.',
     ],
   },
 
@@ -298,70 +333,56 @@ export const courseData: CoursePageData = {
     {
       variant: 'grid',
       images: [
-        { src: 'GPR_06_ymxpsk', alt: 'Advanced GPR training and expert competency development' },
-        { src: 'RD_8100_1_aeiaur', alt: 'Radiodetection equipment used in senior utility mapping' },
-        { src: 'GPR_17_jq0zfl', alt: 'Professional surveying techniques for Level 5 diploma' },
+        { src: 'Utility-Mapping-02', alt: 'Level 5 Diploma utility mapping -- practical session' },
+        { src: 'MALA-GPR-22', alt: 'Level 5 Diploma utility mapping -- hands-on assessment' },
+        { src: 'Advanced-EM-07', alt: 'Level 5 Diploma utility mapping -- on-site delivery' },
+      ],
+    },
+    {
+      variant: 'full',
+      images: [
+        { src: 'Advanced-EM-08', alt: 'Level 5 Diploma utility mapping -- live training environment' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Advanced-EM-01', alt: 'Level 5 Diploma practical training with equipment' },
+        { src: 'MALA-GPR-11', alt: 'GPR survey training for Level 5 qualification' },
+        { src: 'Utility-Mapping-03', alt: 'Advanced utility detection assessment' },
+      ],
+    },
+    {
+      variant: 'grid',
+      images: [
+        { src: 'Advanced-EM-06', alt: 'Level 5 Diploma utility mapping training' },
+        { src: 'MALA-GPR-23', alt: 'Ground penetrating radar practical session' },
+        { src: 'MALA-GPR-25', alt: 'On-site Level 5 qualification assessment' },
       ],
     },
   ],
 
-  faqs: [
+  alsoConsider: [
     {
-      q: 'What is the difference between Level 4 and Level 5?',
-      a: 'Level 4 focuses on electromagnetic detection and GPR (PAS128 Quality Level B). Level 5 extends this to include total station operations, GNSS surveying, geometric principles, ICT systems and quality assurance (PAS128 Quality Level A). Level 5 is the qualification for senior practitioners, managers and organisations pursuing the highest standards.',
+      title: 'OSCA Assessment',
+      desc: 'GPS-stamped on-site competency assessment to verify real-world skills.',
+      href: '/osca',
     },
     {
-      q: 'Do I need to complete Level 3 and Level 4 first?',
-      a: 'Yes. You must complete the Level 3 Certificate and Level 4 Diploma before enrolling in Level 5. This ensures a structured progression through the qualification pathway and builds the knowledge base required for expert-level assessment.',
-    },
-    {
-      q: 'How long does Level 5 take to complete?',
-      a: 'Most candidates complete within 6-12 months, depending on experience and evidence availability. The timeline depends on how quickly you can gather senior-level work evidence and progress through assessor-led review sessions. Your assessor will advise on realistic timescales at enrolment.',
-    },
-    {
-      q: 'What is the fastest route to complete Level 5?',
-      a: 'Complete Level 3 (typically 3-5 days) first. Then complete Level 4 (typically 6-9 months) whilst building a portfolio of evidence. With your Level 4 complete and evidence already gathered, you can progress to Level 5, which typically takes 6-12 months with ongoing assessor support. Total timeline: 12-24 months from start to Level 5 completion.',
-    },
-    {
-      q: 'Is Level 5 the same as professional membership or PAS128 Quality Level A?',
-      a: 'No. The ProQual Level 5 Diploma is a formal qualification assessed against ICES GEUS standards. Professional membership and PAS128 Quality Level A are separate credentials. However, Level 5 qualification is often a requirement or strong evidence for professional membership applications and PAS128 Level A assessment.',
-    },
-    {
-      q: 'Can I study part-time whilst working?',
-      a: 'Yes. The Level 5 is portfolio-based and designed for experienced working professionals. You progress at your own pace, applying your professional experience and team management evidence as part of the assessment. Assessor support is provided via regular review sessions to guide your portfolio development.',
-    },
-    {
-      q: 'What kind of evidence do I need to submit for Level 5?',
-      a: 'You submit evidence from your professional practice at a senior level: survey reports, site records, team records, equipment calibration records, quality assurance documents and assessor observations from real projects. Evidence should demonstrate competency in total station operations, GNSS surveying, geometric principles, ICT systems management and team leadership.',
-    },
-    {
-      q: 'Can I appeal my assessment or request a re-assessment?',
-      a: 'Yes. All ProQual qualifications include formal appeals processes and opportunities to resubmit evidence against assessment criteria. Your assessor will explain the process and support you through any appeals or reassessment.',
-    },
-    {
-      q: 'What equipment do I need access to for Level 5?',
-      a: 'You should have access to professional surveying equipment used in your practice: total station, GNSS receiver, ground-penetrating radar (MALA or equivalent), and detection equipment (Radiodetection RD8200 or equivalent). Your assessor will work with you to plan how to gather evidence using your available equipment and workplace context.',
-    },
-    {
-      q: 'What happens after I complete Level 5?',
-      a: 'You can progress to the Level 6 Diploma if you wish to develop further expertise in consultancy, quality assurance or technical leadership. Many candidates also undertake CPD (continuing professional development) through specialist training courses to maintain and develop their skills. Level 5 is also often a stepping stone to professional membership or PAS128 Quality Level A assessment.',
-    },
-    {
-      q: 'Is there a written exam for Level 5?',
-      a: 'No. The Level 5 assessment is portfolio-based. You submit evidence from your professional practice, supplemented by knowledge workbooks covering any areas not fully demonstrated by workplace evidence. No written exam is required.',
-    },
-    {
-      q: 'Can I use evidence from the 5-day PAS128 intensive course to support Level 5?',
-      a: 'Yes. Evidence from structured training programmes like the 5-day PAS128 course, the TSA and ICES programme, or other professional development can be used to support your Level 5 portfolio. However, this must be combined with evidence from your ongoing professional practice to demonstrate sustained competency.',
+      title: 'Bespoke Training',
+      desc: 'Design a tailored programme around your site risks, equipment, and team size.',
+      href: '/contact',
     },
   ],
 
+  faqs,
+
   cta: {
     title: 'Enquire About the Level 5 Diploma',
-    description: 'The highest operational qualification in utility mapping and surveying. Portfolio-based assessment with specialist assessor support.',
-    primaryLabel: 'Enquire',
+    description: 'Full assessor support, no hidden fees. Wigan centre, 5-day fast-track option, or in-house. Contact us to discuss your pathway, pricing, and get started.',
+    primaryLabel: 'Enquire About Level 5',
     primaryHref: '/contact',
-    secondaryLabel: 'View Level 6',
+    secondaryLabel: 'View Level 6 Diploma',
     secondaryHref: '/courses/level-6-diploma',
   },
 };

@@ -1,210 +1,228 @@
 import type { CoursePageData } from './types';
-import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
+
+const faqs = [
+  {
+    q: "How is the online Level 3 delivered?",
+    a: "Live sessions via Microsoft Teams with experienced assessors. Not pre-recorded.",
+  },
+  {
+    q: "What equipment do I need?",
+    a: "A computer (not a phone) and a stable internet connection. Screen size matters for the course material.",
+  },
+  {
+    q: "How long does it take to complete?",
+    a: "Timescales vary by candidate. Most complete within 6-12 months alongside normal work duties.",
+  },
+  {
+    q: "Do I need any prior qualifications?",
+    a: "No formal prerequisites, but you should have practical experience in utility surveying or location work.",
+  },
+  {
+    q: "Is the qualification the same as the classroom version?",
+    a: "Yes. Same ProQual Level 3 Certificate. Same units, same assessment criteria, same certificate.",
+  },
+  {
+    q: "Can my employer claim CITB funding?",
+    a: "Sygma is a CITB ATO. Speak to your CITB Employer Network adviser about available support.",
+  },
+  {
+    q: "What practical skills will I develop during this training course?",
+    a: "You will develop skills in locating buried services using active and passive modes on electromagnetic locators, interpreting stats plans and utility plans, surveying small site areas as part of a two man team, and producing utility mapping drawings that record the depth and position of underground utility networks.",
+  },
+  {
+    q: "How is the Level 3 Certificate in Utility Mapping assessed?",
+    a: "Assessment is through a combination of a written exam under exam conditions, observed practical assessment, and a portfolio of workplace evidence. Candidates must achieve the overall pass mark in each component and demonstrate their ability to undertake utility mapping and surveying tasks to the required standard.",
+  },
+  {
+    q: "Do I need to undertake site visits during the online route?",
+    a: "Yes. You will need to undertake practical site visits to gather workplace evidence. The online element covers theory, mentoring and portfolio support, but proof of competence must be demonstrated through real utility surveying work on site.",
+  },
+  {
+    q: "What equipment and methods are covered in this training course?",
+    a: "The training course covers electromagnetic locators including active, passive and genny modes, as well as a ground penetrating radar overview. You will learn methods for locating underground utilities in different situations across construction and infrastructure sites.",
+  },
+];
 
 export const courseData: CoursePageData = {
   slug: 'online-level-3-diploma',
 
   metadata: {
-    title: 'Online Level 3 Certificate in Utility Mapping | Sygma Solutions',
-    description: 'Online Level 3 Certificate in Utility Mapping and Surveying. Flexible online delivery with live tutor support via MS Teams. Entry-level RQF qualification.',
+    title: 'Online Level 3 Diploma in Utility Mapping | Sygma Solutions',
+    description: 'Ofqual-regulated Level 3 Diploma in Utility Mapping delivered online. Work at your own pace with full assessor support and mentoring via MS Teams.',
     alternates: { canonical: 'https://sygma-solutions.com/courses/online-level-3-diploma' },
     openGraph: {
-      title: 'Online Level 3 Certificate in Utility Mapping | Sygma Solutions',
-      description: 'Online Level 3 Certificate in Utility Mapping and Surveying. Flexible online delivery with live tutor support.',
+      title: 'Online Level 3 Diploma in Utility Mapping | Sygma Solutions',
+      description: 'Ofqual-regulated Level 3 Diploma in Utility Mapping delivered online. Work at your own pace with full assessor support and mentoring via MS Teams.',
       url: 'https://sygma-solutions.com/courses/online-level-3-diploma',
       type: 'website',
-      siteName: SITE_NAME,
       images: [DEFAULT_OG_IMAGE],
     },
   },
 
   hero: {
     eyebrow: 'Qualifications',
-    headline: 'Online Level 3 Certificate in Utility Mapping and Surveying',
-    sub: 'Entry-level RQF qualification delivered entirely online via Microsoft Teams. For operatives and field staff who want formal recognition of their utility mapping competency. Self-paced learning with live tutor support sessions throughout. No classroom attendance required.',
+    headline: 'ProQual RQF Level 3 Diploma in Utility Mapping and Surveying (Online)',
+    sub: 'Work towards your ProQual Level 3 Certificate in Utility Mapping at your own pace, from wherever you work. This training course provides full assessor support and mentoring via MS Teams throughout. No hidden fees. No extra charges for additional assessments. Contact us to discuss enrolment and pricing.',
     images: [
-      'GPR_06_ymxpsk',
-      'MALA-GPR-11',
-      'Advanced-EM-04',
+      '/images/courses/MALA-GPR-05.webp',
+      '/images/courses/MALA-GPR-08.webp',
+      '/images/courses/Advanced-EM-02.webp',
     ],
     alts: [
-      'Online Level 3 utility mapping training',
-      'MS Teams-based online qualification',
-      'Online learning support for Level 3 qualification',
+      'Electromagnetic utility detection techniques covered in the online Level 3 course',
+      'GPR survey equipment featured in the online ProQual Level 3 diploma',
+      'Electromagnetic utility detection techniques covered in the online Level 3 course',
     ],
     breadcrumbs: [
       { label: 'Training', href: '/training/utility-mapping-surveying' },
-      { label: 'Online Level 3 Certificate' },
+      { label: 'Online Level 3 Diploma' },
     ],
   },
 
   schemas: {
     course: {
-      name: 'Online Level 3 Certificate in Utility Mapping and Surveying',
-      description: 'Online Level 3 Certificate delivered via Microsoft Teams. Entry-level Ofqual-regulated qualification.',
+      name: 'ProQual Level 3 Diploma in Utility Mapping and Surveying (Online)',
+      description: 'Ofqual-regulated Level 3 Diploma in Utility Mapping delivered online. Work at your own pace with full assessor support and mentoring via MS Teams.',
       url: '/courses/online-level-3-diploma',
-      credential: 'Level 3 Certificate in Utility Surveying',
+      credential: 'Level 3 Diploma in Utility Mapping',
       duration: 'Part-time',
       mode: ['online'],
     },
     breadcrumbs: [
       { label: 'Training', to: '/training/utility-mapping-surveying' },
-      { label: 'Online Level 3 Certificate' },
+      { label: 'Online Level 3 Diploma' },
     ],
     includeFaqSchema: true,
   },
 
-  stats: [
+  infoBar: [
     {
-      value: 'Level 3',
-      label: 'Ofqual Regulated',
-      detail: 'Formal recognition on the Regulated Qualifications Framework.',
+      label: 'Qualification',
+      value: 'ProQual RQF Level 3 Diploma',
     },
     {
-      value: 'Online Delivery',
-      label: 'Flexible Format',
-      detail: 'Study from home with live MS Teams tutor support and self-paced modules.',
+      label: 'Delivery',
+      value: 'Online via MS Teams',
     },
     {
-      value: 'Portfolio Assessment',
-      label: 'No Exams',
-      detail: 'Evidence-based assessment using your professional practice.',
+      label: 'Duration',
+      value: 'Self-paced (weeks to months)',
+    },
+    {
+      label: 'Pricing',
+      value: 'Fixed (contact us for details)',
     },
   ],
 
   whoFor: {
-    eyebrow: 'Who Is This Qualification For',
-    title: 'Ideal For',
+    eyebrow: 'Is This Right for You?',
+    title: 'This Course Is for You If...',
     items: [
       {
-        title: 'Utility Field Operatives',
-        desc: 'Professionals in utility surveying and cable avoidance roles seeking formal recognition of foundational competency without classroom requirements.',
+        title: 'You are working in or moving into utility mapping, utility surveying or desktop survey work and need a formal RQF certificate in utility mapping to reflect your role.',
+        desc: 'You are working in or moving into utility mapping, utility surveying or desktop survey work and need a formal RQF certificate in utility mapping to reflect your role.',
       },
       {
-        title: 'Remote and Distributed Teams',
-        desc: 'Companies with teams across multiple locations who need flexible online access to training and assessment support.',
+        title: 'You are unable to attend a week-long in-person fast-track course and want to work through the qualification at your own pace while continuing in your current role.',
+        desc: 'You are unable to attend a week-long in-person fast-track course and want to work through the qualification at your own pace while continuing in your current role.',
       },
       {
-        title: 'Career Changers',
-        desc: 'Professionals entering utility mapping from related sectors who can study around existing employment and home commitments.',
+        title: 'Your employer or client framework requires a ProQual Level 3 Certificate for engineers performing or aiming for utility mapping roles in construction.',
+        desc: 'Your employer or client framework requires a ProQual Level 3 Certificate for engineers performing or aiming for utility mapping roles in construction.',
       },
       {
-        title: 'CPD and Career Progression',
-        desc: 'Experienced operatives ready to formalise skills and progress toward Level 4 and Level 5 qualifications.',
+        title: 'You want full assessor support and mentoring throughout, rather than a purely self-directed distance learning experience.',
+        desc: 'You want full assessor support and mentoring throughout, rather than a purely self-directed distance learning experience.',
       },
     ],
   },
 
-  infoBar: [
-    {
-      label: 'Level',
-      value: '3 (Ofqual-regulated)',
-    },
-    {
-      label: 'Delivery',
-      value: 'Online via Microsoft Teams',
-    },
-    {
-      label: 'Assessment',
-      value: 'Portfolio-based, no exam',
-    },
-    {
-      label: 'Prerequisite',
-      value: 'None',
-    },
-    {
-      label: 'Duration',
-      value: '6–12 months (flexible)',
-    },
-  ],
-
   about: {
-    eyebrow: 'Qualification Overview',
-    title: 'What Is the Online Level 3 Certificate?',
+    eyebrow: 'Qualification Content',
+    title: 'What the Level 3 Covers',
     paragraphs: [
-      'The Online Level 3 Certificate in Utility Mapping and Surveying is an Ofqual-regulated qualification designed for utility field operatives and surveying professionals. It develops foundational competency in utility detection, site reconnaissance, and PAS128 Quality Levels D and C -- the desktop and early fieldwork phases of utility surveying.',
-      'Unlike traditional classroom-based qualifications, this online format is built for working professionals. You progress through structured learning modules at your own pace, with regular live MS Teams sessions where tutors guide your development, answer questions, and provide mentoring. There is no requirement to attend a physical training centre or leave your location.',
-      'Assessment is entirely portfolio-based. You gather evidence from your actual utility surveying work -- site reports, survey records, observations from real projects -- and submit this alongside knowledge workbooks covering any areas not fully demonstrated in your fieldwork. Your assessor works alongside you to ensure your evidence clearly demonstrates competency. There is no written examination.',
-      'On completion of the Level 3 Certificate, you can progress to the Level 4 Diploma for advanced technical qualification, or use this qualification to support career development in utility surveying and cable avoidance roles.',
+      'The ProQual Level 3 Certificate in Utility Mapping and Surveying is the formal entry-level training course for engineers and professionals working in utility mapping, utility surveying and desktop survey roles. This certificate in utility mapping sits above the CAT operator level and below the specialist Level 4 and Level 5 qualifications. Candidates who undertake this qualification will develop the skills and ability to locate underground utilities across construction and infrastructure settings. The Level 3 covers two mandatory units.',
+      'Assessment for the ProQual Level 3 Certificate in Utility Mapping is through a combination of documentary evidence against each unit\'s criteria and a written exam completed under exam conditions. Candidates must achieve the overall pass mark and provide proof that they have demonstrated the methods learned throughout the training course. Where workplace evidence does not cover the full range, knowledge evidence must be provided. Observed assessment may also be used to verify that candidates can successfully complete practical tasks. A knowledge workbook completed by the candidate is used alongside workplace submissions.',
     ],
     sidebar: {
-      eyebrow: 'Assessment Overview',
+      eyebrow: 'Typical Candidates',
       items: [
         {
-          label: 'Approach',
-          value: 'Portfolio-based evidence from your professional practice',
+          label: 'Utility surveyors in their first few years of professional practice',
+          value: 'Utility surveyors in their first few years of professional practice',
         },
         {
-          label: 'Duration',
-          value: 'Typically 6–12 months depending on evidence availability',
+          label: 'Desktop survey technicians building towards formal qualification status',
+          value: 'Desktop survey technicians building towards formal qualification status',
         },
         {
-          label: 'Support',
-          value: 'Live MS Teams sessions fortnightly; email and assessor mentoring',
+          label: 'Operatives progressing beyond CAT operator level into surveying roles',
+          value: 'Operatives progressing beyond CAT operator level into surveying roles',
         },
         {
-          label: 'Exam',
-          value: 'None. Assessment is entirely portfolio and workbook-based',
+          label: 'Site engineers and technicians whose role includes locating underground utilities, service location and utility mapping',
+          value: 'Site engineers and technicians whose role includes locating underground utilities, service location and utility mapping',
         },
         {
-          label: 'Prerequisites',
-          value: 'None. Entry-level qualification',
+          label: 'Candidates who have completed CAT1 or CAT1 Plus accreditation and are ready for the next level',
+          value: 'Candidates who have completed CAT1 or CAT1 Plus accreditation and are ready for the next level',
         },
       ],
     },
   },
 
   courseContent: {
+    eyebrow: 'Qualification Content',
+    title: 'What the Level 3 Covers',
     theory: {
-      heading: 'Desktop and Reconnaissance',
-      subheading: 'PAS128 Quality Levels D and C',
+      heading: 'Unit 1',
+      subheading: 'Utility Identification and Site Reconnaissance',
       items: [
-        'Utility mapping principles and best practice across UK infrastructure',
-        'PAS128 standard application and understanding of quality levels',
-        'Desktop survey techniques: plans, records, utility identification',
-        'Site reconnaissance planning and health and safety considerations',
-        'Service identification and colour coding standards',
-        'Surface features recognition and marking conventions',
-        'Site safety and risk assessment in utility work',
-        'Record keeping and professional documentation standards',
+        'This unit covers identifying underground utilities and utility networks, colour coding of buried services, regulations and guidelines relating to the location of buried utilities, reading maps and drawings, and site reconnaissance. Candidates learn to locate buried services across different situations, survey small site areas as part of a two man team, and record the depth of underground utility services. It meets the requirements for PAS128 Survey Quality Levels D and C.',
       ],
     },
     practical: {
-      heading: 'Field Evidence and Site Work',
-      subheading: 'Early Fieldwork Competency',
-      intro: 'Practical competency demonstrated through site assessments and field observations recorded in your professional practice.',
+      heading: 'Unit 2',
+      subheading: 'Carry Out Desktop Surveys and Communicate Findings',
       items: [
-        'Site reconnaissance and visual identification methods',
-        'Surface feature mapping and utility location observations',
-        'Health and safety protocols on utility sites',
-        'Use of basic location equipment for utility indication',
-        'Hazard identification and risk management in the field',
-        'Photography and documentation of utility features',
-        'Collaborative working with site teams and contractors',
-        'Communication of findings and site-specific reports',
+        'This unit covers the compilation of desktop utility surveys, identifying what data is required from stats plans and other utility plans, survey methods, communicating information, and preparing survey drawings. Candidates undertake comparison of desktop findings against the same survey site data, produce an overview of utility networks present, and demonstrate their ability to compile plans for construction and engineering teams. It also meets the requirements for PAS128 Survey Quality Levels D and C.',
       ],
     },
   },
 
   certRoutes: {
-    eyebrow: 'What You Receive',
-    title: 'Level 3 Certificate Outcomes',
+    eyebrow: 'Process',
+    title: 'How the Online Route Works',
+    intro: 'The online route allows you to work through the qualification at your own pace, from your normal place of work. You are not left to work through materials alone. A Sygma assessor provides full support and mentoring throughout, available via MS Teams.',
     items: [
       {
-        title: 'Level 3 Certificate',
-        desc: 'The formal certificate awarded on successful completion, registered on the Regulated Qualifications Framework (RQF).',
+        title: 'Enrolment',
+        desc: 'You enrol with Sygma. Sygma registers you with ProQual as a candidate.',
       },
       {
-        title: 'Portfolio of Evidence',
-        desc: 'A comprehensive record of all evidence submitted, assessor feedback and competency sign-off.',
+        title: 'Materials Issued',
+        desc: 'You receive your e-portfolio framework and workbooks. These are your evidence guides for each unit.',
       },
       {
-        title: 'Assessment Report',
-        desc: 'Detailed feedback from your assessor confirming your foundational utility surveying competency at Level 3.',
+        title: 'Evidence Gathering',
+        desc: 'You undertake workplace evidence gathering against the assessment criteria for each unit. Sygma\'s assessor supports you throughout this training course.',
       },
       {
-        title: 'Progression Pathway',
-        desc: 'Clear route to Level 4 Diploma for those seeking advanced technical qualification and career development.',
+        title: 'Assessor Support Sessions',
+        desc: 'Regular MS Teams sessions with your Sygma assessor. Sessions are not recorded. A computer (not a phone) is required due to screen size.',
+      },
+      {
+        title: 'Workbook Completion',
+        desc: 'You complete knowledge workbooks to cover any areas not fully evidenced by workplace submissions.',
+      },
+      {
+        title: 'Assessment and Submission',
+        desc: 'Your completed evidence portfolio is assessed by Sygma and submitted to ProQual for quality assurance.',
+      },
+      {
+        title: 'Certification',
+        desc: 'On successful completion, ProQual issues your RQF Level 3 Certificate. This certificate in utility mapping is registered on the national qualifications framework.',
       },
     ],
   },
@@ -212,119 +230,72 @@ export const courseData: CoursePageData = {
   whySygma: {
     items: [
       {
-        eyebrow: 'Flexibility',
-        title: 'Study From Home',
-        desc: 'No need to travel to a training centre. Online delivery via MS Teams fits around your work and home commitments.',
+        eyebrow: 'Flexible Online Format',
+        title: 'Flexible Online Format',
+        desc: 'Complete your Level 3 Certificate in Utility Mapping remotely with live training and tutor support. Not pre-recorded content.',
       },
       {
-        eyebrow: 'Support',
-        title: 'Live Tutoring',
-        desc: 'Regular live sessions with experienced tutors who understand field work. Not pre-recorded content. Real people, real answers.',
+        eyebrow: 'ProQual Approved Centre',
+        title: 'ProQual Approved Centre',
+        desc: 'Your qualification is assessed and certified by a recognised awarding organisation. No shortcuts.',
       },
       {
-        eyebrow: 'Practice-Focused',
-        title: 'Your Work Is Your Evidence',
-        desc: 'Assessment draws directly from your actual utility surveying practice. No artificial exercises. Your real projects count.',
+        eyebrow: 'Specialist Assessors',
+        title: 'Specialist Assessors',
+        desc: 'Sygma\'s assessors are experienced utility mapping engineers who work at the intersection of training and professional practice.',
       },
       {
-        eyebrow: 'Approved Centre',
-        title: 'ProQual Trusted Provider',
-        desc: 'Sygma is an approved ProQual centre with qualified, experienced assessors. Your qualification is formally recognised.',
+        eyebrow: 'Full Portfolio Support',
+        title: 'Full Portfolio Support',
+        desc: 'You are not alone. A Sygma assessor is available to support you throughout the qualification.',
       },
       {
-        eyebrow: 'Career Progression',
-        title: 'Clear Pathway',
-        desc: 'Level 3 is the foundation for Level 4 and Level 5 progression. Build formally recognised expertise step by step.',
+        eyebrow: 'Independent',
+        title: 'Independent',
+        desc: 'Sygma is independent and owns the training process from start to finish.',
+      },
+      {
+        eyebrow: 'Same Qualification, Flexible Delivery',
+        title: 'Same Qualification, Flexible Delivery',
+        desc: 'Same ProQual Level 3 Diploma, same assessment criteria, same certificate. Online just works better for you.',
       },
     ],
   },
 
   relatedCourses: {
-    eyebrow: 'Related Qualifications',
-    title: 'ProQual Utility Mapping Pathway',
+    eyebrow: 'Choosing Your Route',
+    title: 'Online Route or Fast-Track In-Person?',
+    intro: 'The Level 3 Diploma is available via two routes. The right choice depends on your circumstances.',
     items: [
       {
-        eyebrow: 'In-Person Alternative',
-        title: 'Level 3 Certificate (In-Centre)',
-        desc: 'Traditional classroom-based version of the Level 3 Certificate with tutor-led sessions at our Wigan training centre.',
-        href: '/courses/level-3-certificate',
+        eyebrow: 'Online Route (this page)',
+        title: 'Online Route (this page)',
+        desc: 'Self-paced, online training course. Evidence gathered from your own workplace.',
+        href: '/courses/online-level-3-diploma',
       },
       {
-        eyebrow: 'Level 4',
-        title: 'Level 4 Diploma',
-        desc: 'Advanced qualification covering electromagnetic detection and GPR. Portfolio-based assessment with tutor mentoring.',
-        href: '/courses/level-4-diploma',
-      },
-      {
-        eyebrow: 'Level 5',
-        title: 'Level 5 Diploma (Online)',
-        desc: 'Advanced online qualification for practitioners and managers seeking full operational competency and technical leadership.',
-        href: '/courses/online-level-5-diploma',
+        eyebrow: '5-Day Surveyor Programme (in-person)',
+        title: '5-Day Surveyor Programme (in-person)',
+        desc: 'Intensive in-person training course, typically one week.',
+        href: '/courses/5-day-pas128-surveyor',
       },
     ],
   },
-
-  alsoConsider: [
-    {
-      title: 'OSCA Assessment',
-      desc: 'GPS-stamped on-site competency assessment to verify your practical skills in real field conditions.',
-      href: '/osca',
-    },
-    {
-      title: 'Bespoke Training',
-      desc: 'Tailored online or in-person training to support your qualification journey and develop specific competencies.',
-      href: '/contact',
-    },
-  ],
 
   citbFunding: {
     paragraphs: [
-      'Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may be eligible to access training funding support through the CITB Employer Network.',
-      'Contact your CITB adviser or Sygma directly to discuss current funding eligibility and how to access employer network funding for online Level 3 training.',
+      'Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding support for your enrolment. Availability varies by employer and is not guaranteed.',
     ],
   },
 
-  faqs: [
-    {
-      q: 'How is the online Level 3 delivered?',
-      a: 'Live sessions via Microsoft Teams (fortnightly) plus self-paced learning modules. You progress through the qualification content with structured assessor support throughout. Sessions are recorded so you can catch up if you miss a live session.',
-    },
-    {
-      q: 'How long does it take to complete?',
-      a: 'Most delegates complete within 6–12 months. Your progress depends on how quickly you can gather evidence from your work and complete assessor-led review sessions.',
-    },
-    {
-      q: 'Can I take this if I am working full-time?',
-      a: 'Yes. The online Level 3 is designed for working professionals. You progress at your own pace with MS Teams sessions scheduled fortnightly. Live sessions are recorded, so you can attend flexibly.',
-    },
-    {
-      q: 'What do I need to provide as evidence?',
-      a: 'Portfolio evidence from your professional practice in utility mapping or surveying roles. Your existing work and site records generate much of what is needed for the qualification.',
-    },
-    {
-      q: 'Is there a written exam?',
-      a: 'No. The Level 3 assessment is entirely portfolio-based. You submit evidence from your professional practice supplemented by knowledge workbooks covering any areas not fully demonstrated in your fieldwork.',
-    },
-    {
-      q: 'What equipment or access do I need?',
-      a: 'You need access to Microsoft Teams, a computer or tablet, and the ability to use basic documentation tools (Word, email). You do not need specialist utility mapping equipment for the online Level 3.',
-    },
-    {
-      q: 'Can I progress to Level 4 after Level 3?',
-      a: 'Yes. On completion of the Level 3 Certificate, you are eligible to enrol in the Level 4 Diploma, which covers advanced electromagnetic detection and GPR techniques.',
-    },
-    {
-      q: 'How much does it cost?',
-      a: 'Contact us for current pricing and payment options. Many employers access funding through CITB levy support or other training grants.',
-    },
-  ],
+  faqs,
 
   cta: {
-    title: 'Enrol in Online Level 3 Certificate',
-    description: 'Flexible online delivery with live tutor support via Microsoft Teams. Contact us for enrolment information and programme start dates.',
-    primaryLabel: 'Get Started',
+    title: 'Enrol or Enquire',
+    description: 'To discuss enrolment on this utility mapping training course, pricing, or whether the online route is right for your circumstances, get in touch with the Sygma team. No hidden fees, no extra charges for additional assessments.',
+    primaryLabel: 'Enquire About the Level 3',
     primaryHref: '/contact',
-    secondaryLabel: 'Request More Information',
-    secondaryHref: '/contact',
+    secondaryLabel: 'Call Us',
+    secondaryHref: 'tel:+442039718252',
   },
 };
