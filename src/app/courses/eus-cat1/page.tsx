@@ -72,14 +72,14 @@ export default function EusCat1() {
         headline="EUSR CAT1: EUSR-Registered Utility Avoidance Training"
         sub="EUSR CAT1 and EUSR Category 1 training from the UK's only independent specialist. Full electromagnetic theory, practical Genny & CAT assessment, and written paper. HSG47 compliant. Recognised across the water, gas, electricity, and telecoms sectors."
         images={[
-          "landscape/landscape-01",
-          "landscape/landscape-02",
-          "landscape/landscape-03",
-          "landscape/landscape-04",
-          "landscape/landscape-05",
-          "landscape/landscape-06",
-          "landscape/landscape-07",
-          "landscape/landscape-08",
+          "landscape-01",
+          "landscape-02",
+          "landscape-03",
+          "landscape-04",
+          "landscape-05",
+          "landscape-06",
+          "landscape-07",
+          "landscape-08",
         ]}
         alts={["Trainee scanning for underground utilities with a CAT4 locator", "Genny signal generator being connected to a utility service point", "Practical cable avoidance exercise on a live training site", "Instructor guiding a trainee through CAT4 signal interpretation", "Close-up of CAT4 display showing utility signal detection", "Overhead view of a marked utility survey area during training", "Group of trainees practising cable avoidance techniques outdoors", "CAT4 and Genny equipment used during EUSR CAT1 accredited training"]}
         breadcrumbs={[
@@ -611,4 +611,3 @@ export default function EusCat1() {
     </>
 );
 }
-
