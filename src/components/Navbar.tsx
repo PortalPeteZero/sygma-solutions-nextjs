@@ -30,7 +30,7 @@ const MegaMenuDropdown = memo(function MegaMenuDropdown({
 
   return (
     <div
-      className="absolute left-0 top-full z-50 mt-2 min-w-[640px] rounded-lg border border-border bg-card shadow-xl"
+      className="absolute left-0 right-0 top-full z-50 mt-2 rounded-lg border border-border bg-card shadow-xl"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -141,7 +141,7 @@ export function Navbar() {
         ref={navRef}
         className="border-b border-border bg-background/95 backdrop-blur-md"
       >
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="container relative mx-auto flex h-16 items-center justify-between px-4">
             {/* Logo */}
             <Link href="/" className="shrink-0">
               <Image
@@ -159,7 +159,6 @@ export function Navbar() {
               {mainNav.map((menu) => (
                 <div
                   key={menu.label}
-                  className="relative"
                   onMouseEnter={() => handleMouseEnter(menu.label)}
                   onMouseLeave={handleMouseLeave}
                 >
