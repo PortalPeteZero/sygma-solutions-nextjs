@@ -61,13 +61,24 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
               className="border border-border rounded-xl bg-card flex flex-col overflow-hidden"
             >
               {item.type === "article" && item.image && (
-                <Link href={item.href} className="relative block aspect-video">
-                  <Image src={item.image} width={1200} height={800} alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+                <Link href={item.href} className="relative block aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    fill
+                    alt={item.title}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                  />
                 </Link>
               )}
               {item.type === "video" && item.youtubeId && (
-                <Link href={item.href} className="relative block aspect-video">
-                  <img loading="lazy" src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`} alt={item.title} className="w-full aspect-video object-cover" />
+                <Link href={item.href} className="relative block aspect-[4/3] overflow-hidden">
+                  <img
+                    loading="lazy"
+                    src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center">
                       <Play
