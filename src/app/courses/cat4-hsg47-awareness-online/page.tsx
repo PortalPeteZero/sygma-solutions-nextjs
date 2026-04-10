@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.',
     url: 'https://sygma-solutions.com/courses/cat4-hsg47-awareness-online',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/New-Landscape-06', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -419,7 +419,7 @@ export default function Cat4HsgAwarenessOnline() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -436,7 +436,7 @@ export default function Cat4HsgAwarenessOnline() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Book for Your Team

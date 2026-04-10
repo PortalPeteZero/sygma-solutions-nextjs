@@ -53,7 +53,7 @@ export default function BespokeTrainingPage() {
           </div>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
             >
               Get in Touch
@@ -123,7 +123,7 @@ export default function BespokeTrainingPage() {
           <h2 className="text-3xl font-bold mb-6">Per Programme, Not Per Person.</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Bespoke programmes are priced per programme, not per delegate. There is no per-head charge that increases as your group grows. Travel within the UK mainland is included.</p>
           <Link
-            href="/contact"
+            href="/contact#enquiry-form"
             className="inline-flex items-center px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
           >
             Get a Programme Quote
@@ -157,7 +157,7 @@ export default function BespokeTrainingPage() {
           <p className="text-gray-600 mb-6 leading-relaxed">Tell us about your workforce, your requirements, and what you need to achieve. We will come back to you with an outline proposal and a cost.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-block px-8 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
             >
               Get in Touch

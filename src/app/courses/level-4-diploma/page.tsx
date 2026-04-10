@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'The advanced specialist qualification for utility surveyors: demonstrating competency in EM location and GPR. Contact us for enrolment and pricing.',
     url: 'https://sygma-solutions.com/courses/level-4-diploma',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Utility-Mapping-04', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -344,7 +344,7 @@ export default function Level4Diploma() {
             <p className="text-muted-foreground leading-relaxed mb-6">
               Sygma charges a fixed assessment fee per candidate (plus ProQual registration fees paid directly to ProQual). This covers the full assessment support package with no additional charges for re-submissions, extra sessions, or extended mentoring. Contact us for a quote.
             </p>
-            <Link href="/contact"
+            <Link href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Level 4
@@ -628,7 +628,7 @@ export default function Level4Diploma() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -644,7 +644,7 @@ export default function Level4Diploma() {
             Full assessor support, no hidden fees. Wigan centre, online, or in-house. Contact us to discuss your current qualifications, pricing, and get started.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact"
+            <Link href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Level 4

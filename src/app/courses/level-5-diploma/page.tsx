@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying, and ICT.',
     url: 'https://sygma-solutions.com/courses/level-5-diploma',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/MALA-GPR-25', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -402,7 +402,7 @@ export default function Level5Diploma() {
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Sygma charges a fixed assessment fee per candidate (plus ProQual registration fees). There are no additional charges for re-submissions, extended mentoring, or extra assessments. Contact us for a quote.
               </p>
-              <Link href="/contact"
+              <Link href="/contact#enquiry-form"
                 className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
               >
                 Enquire About Level 5
@@ -646,7 +646,7 @@ export default function Level5Diploma() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -662,7 +662,7 @@ export default function Level5Diploma() {
             Full assessor support, no hidden fees. Wigan centre, 5-day fast-track option, or in-house. Contact us to discuss your pathway, pricing, and get started.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact"
+            <Link href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Level 5

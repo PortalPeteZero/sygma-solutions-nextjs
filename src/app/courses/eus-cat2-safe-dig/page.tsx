@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
     url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Safe-Dig-01', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -441,7 +441,7 @@ export default function EusCat2SafeDig() {
             </tbody>
           </table>
         </div>
-        <p className="mt-5 text-sm text-muted-foreground">Sygma Solutions offers combined EUSR CAT1 and EUSR CAT2 training packages for teams who need both qualifications. <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> to discuss your requirements.</p>
+        <p className="mt-5 text-sm text-muted-foreground">Sygma Solutions offers combined EUSR CAT1 and EUSR CAT2 training packages for teams who need both qualifications. <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> to discuss your requirements.</p>
       </section>
 
       {/* Pricing */}
@@ -641,7 +641,7 @@ export default function EusCat2SafeDig() {
         <div className="container mx-auto max-w-3xl px-4">
           <h3 className="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Also Consider</h3>
           <div className="grid gap-4 sm:grid-cols-2">
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: 'Super user cat and genny training for the Scottish Water supply chain. Advanced location, strike investigation and coaching assessment.',
     url: 'https://sygma-solutions.com/courses/zs-superuser-scottish-water',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/New-Landscape-03', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -451,7 +451,7 @@ export default function ZsSuperuserScottishWater() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world cat and genny skills on locating utility services.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored cat and genny training programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -467,7 +467,7 @@ export default function ZsSuperuserScottishWater() {
             2 days, maximum 6 delegates. In-house cat and genny training at your site anywhere in the UK. Built specifically for Scottish Water supply chain teams operating under the Zero Strike Initiative to locate utility services and underground utilities safely.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact"
+            <Link href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Request a Quote

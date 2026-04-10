@@ -103,7 +103,7 @@ export default function ProQualCat1Plus() {
       {/* Hero CTA Bar */}
       <section className="bg-primary/5 border-y border-primary/20 py-5">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link href="/contact" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
+          <Link href="/contact#enquiry-form" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
             Book Now
           </Link>
         </div>
@@ -176,7 +176,7 @@ export default function ProQualCat1Plus() {
         </div>
         <div className="mt-6 bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="font-bold text-foreground mb-2">Already Hold ProQual CAT1?</p>
-          <p className="text-muted-foreground text-sm leading-relaxed">If your team already holds a current ProQual CAT1, you can book the 1-day Plus add-on instead of the full 2-day programme. The add-on covers the seven additional theory criteria and thirty-two additional practical criteria. <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> and we will confirm whether the 1-day option is suitable.</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">If your team already holds a current ProQual CAT1, you can book the 1-day Plus add-on instead of the full 2-day programme. The add-on covers the seven additional theory criteria and thirty-two additional practical criteria. <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will confirm whether the 1-day option is suitable.</p>
         </div>
       </section>
 
@@ -432,7 +432,7 @@ export default function ProQualCat1Plus() {
               </tbody>
             </table>
           </div>
-          <p className="mt-5 text-sm text-muted-foreground">Not sure which qualification your organisation needs? <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check your procurement framework for you.</p>
+          <p className="mt-5 text-sm text-muted-foreground">Not sure which qualification your organisation needs? <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check your procurement framework for you.</p>
         </div>
       </section>
 
@@ -569,7 +569,7 @@ export default function ProQualCat1Plus() {
               <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
               <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills after training.</p>
             </Link>
-            <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+            <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
               <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
               <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
             </Link>
@@ -586,7 +586,7 @@ export default function ProQualCat1Plus() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Book Now

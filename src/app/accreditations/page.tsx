@@ -156,7 +156,7 @@ export default function AccreditationsPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-block px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
             >
               Contact Us

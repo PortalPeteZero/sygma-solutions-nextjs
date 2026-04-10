@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Compare EUSR CAT1, ProQual CAT1, and ProQual CAT1 Plus cable avoidance qualifications. Which course is right for your team?',
     url: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-02', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -540,14 +540,14 @@ export default function CourseComparison() {
           <h2 className="text-2xl font-black mb-4 text-foreground">Not Sure Which Option Is Right for You?</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Sygma delivers all three qualifications to your premises, UK-wide. If you are not sure which qualification to specify, call us or{" "}
-            <Link href="/contact" className="text-primary font-semibold hover:underline">
+            <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">
               send an enquiry
             </Link>{" "}
             and we will advise based on your client requirements, procurement framework and the work your team carries out.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Request a Quote

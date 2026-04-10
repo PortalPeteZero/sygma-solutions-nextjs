@@ -135,7 +135,7 @@ export default function OscaPage() {
           <p className="text-gray-600 mb-6 leading-relaxed">We will walk you through the assessment process, show you a sample report, and discuss how OSCA fits into your competency management programme. No obligation.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-block px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
             >
               Book a Free Demonstration

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
     url: 'https://sygma-solutions.com/courses/eus-superuser',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-66', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -503,7 +503,7 @@ export default function EusSuperuser() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world cat and genny skills on locating utility services.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Cat and Genny Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored cat and genny training programme around your site risks, equipment calibration needs, and team size.</p>
               </Link>
@@ -520,7 +520,7 @@ export default function EusSuperuser() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Super User Cat and Genny Training

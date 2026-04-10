@@ -107,7 +107,7 @@ export default function PricingPage() {
           </div>
           <div className="text-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-block px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
             >
               Get in Touch
@@ -147,7 +147,7 @@ export default function PricingPage() {
           <h2 className="text-2xl font-bold mb-4">Ready to Get in Touch?</h2>
           <p className="text-gray-600 mb-6">Tell us the course you need, the number of delegates, and your preferred location. We will confirm availability and provide a fixed quotation with no obligation.</p>
           <Link
-            href="/contact"
+            href="/contact#enquiry-form"
             className="inline-block px-8 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
           >
             Get in Touch

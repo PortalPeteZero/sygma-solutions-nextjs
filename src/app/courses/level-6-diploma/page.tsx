@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'The highest qualification in utility surveying. For experienced surveyors ready to lead teams, manage projects and drive operational excellence.',
     url: 'https://sygma-solutions.com/courses/level-6-diploma',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/MALA-GPR-28', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -355,7 +355,7 @@ export default function Level6Diploma() {
               Your ProQual Level 6 Diploma registration with Sygma includes everything you need to progress through the portfolio. The qualification fee for the diploma in utility mapping and surveying management is fixed from the point of registration with no hidden charges. ProQual registration fees are charged separately.
             </p>
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Level 6
@@ -609,7 +609,7 @@ export default function Level6Diploma() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About Level 6

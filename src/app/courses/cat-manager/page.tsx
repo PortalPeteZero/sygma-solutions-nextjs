@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description: 'CAT Manager online training course. Learn to use c.a.t manager online for cat and genny data, check work quality and reduce utility strikes.',
     url: 'https://sygma-solutions.com/courses/cat-manager',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-46', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -318,7 +318,7 @@ export default function CatManager() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world cat and genny skills for your field operators.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Cat and Genny Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored cat and genny training programme around your site risks, equipment limitations, and team size.</p>
               </Link>
@@ -335,7 +335,7 @@ export default function CatManager() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Contact Us for Pricing

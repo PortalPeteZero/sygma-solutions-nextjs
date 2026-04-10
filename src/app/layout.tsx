@@ -33,9 +33,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sygma Solutions | Utility Avoidance & Mapping Services',
-    description: 'Leading provider of utility avoidance, mapping, and OSCA services across the UK.',
-    images: ['https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo'],
   },
 }
 

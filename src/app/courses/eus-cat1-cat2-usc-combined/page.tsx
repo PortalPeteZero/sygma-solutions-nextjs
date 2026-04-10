@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
     url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-63', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -623,7 +623,7 @@ export default function EusCat12UscCombined() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -640,7 +640,7 @@ export default function EusCat12UscCombined() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Enquire About This Course

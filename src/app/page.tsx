@@ -133,13 +133,13 @@ export default function Home() {
       </section>
 
       {/* What to Expect */}
-      <div className="container mx-auto px-6 md:px-8 max-w-4xl pb-8">
+      <section className="container mx-auto px-6 md:px-8 max-w-4xl pb-8">
         <div className="border-l-4 border-accent bg-accent/5 rounded-r-lg p-6">
           <p className="text-lg font-bold text-foreground mb-2">What to Expect on a Sygma CAT and Genny Training Course</p>
           <p className="text-muted-foreground leading-relaxed mb-3">Every Sygma CAT and Genny training course combines <strong>theoretical and practical sessions</strong> designed for operatives and supervisors who carry out <strong>excavation work near underground services</strong>. Delegates work through course content covering site plans, cable avoidance techniques, genny training fundamentals, <strong>signal generator operation</strong>, and the practical use of <strong>CAT and Genny cable avoidance tools</strong> across all four locating modes, including cat operating mode selection and cat display reading. Each session includes practical assessment elements where delegates carry out CAT and Genny work using real equipment on a live training rig.</p>
           <p className="text-muted-foreground leading-relaxed">Delegates must have a good understanding of the English language to follow all training materials and safety instructions. On successful completion, delegates receive a <strong>certificate and ID card</strong> as proof of competency. Our trainers provide support throughout the session and are available to answer questions after the course. Sygma does not run half day CAT and Genny courses. Our minimum is a full day, because competence in avoiding danger from underground services cannot be built in four hours.</p>
         </div>
-      </div>
+      </section>
 
       {/* Why Cable Avoidance Training Matters */}
       <section className="py-16 bg-background">

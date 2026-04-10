@@ -92,7 +92,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <div className="bg-primary text-primary-foreground py-10">
+      <section className="bg-primary text-primary-foreground py-10">
         <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {stats.map((s) => (
             <div key={s.number}>
@@ -101,7 +101,7 @@ export default function About() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Image Grid - Training in Action - 6 images */}
       <section className="py-12 bg-background">

@@ -10,7 +10,7 @@ import { trackPhoneClick, trackEmailClick } from '@/lib/analytics'
 export function TrackedPhoneLink() {
   return (
     <a
-      href="tel:02039718252"
+      href="tel:+442039718252"
       onClick={() => trackPhoneClick('02039718252')}
       className="flex items-center gap-2 hover:text-primary transition-colors"
     >

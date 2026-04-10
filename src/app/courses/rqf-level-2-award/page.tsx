@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: 'RQF Level 2 Award in Utility Location and Avoidance. Nationally recognised, Ofqual-regulated qualification for formal recognition of competency.',
     url: 'https://sygma-solutions.com/courses/rqf-level-2-award',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Advanced-EM-05', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -501,7 +501,7 @@ export default function RqfLevel2Award() {
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
                 <p className="text-xs text-muted-foreground">GPS-stamped on-site competency assessment to verify real-world skills.</p>
               </Link>
-              <Link href="/contact" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
@@ -517,7 +517,7 @@ export default function RqfLevel2Award() {
             In-house at your site. Three formats available: 1-day (max 6), 2-day (max 8), or 2-day split over 3 months (max 6). Contact us with your group size and preferred format for a tailored quotation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact"
+            <Link href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Request a Quote

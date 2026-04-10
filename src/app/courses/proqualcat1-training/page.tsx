@@ -413,7 +413,7 @@ export default function ProQualCat1() {
               </div>
             ))}
           </div>
-          <p className="mt-5 text-sm text-muted-foreground">Not sure whether your framework requires ProQual or EUSR? <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check for you.</p>
+          <p className="mt-5 text-sm text-muted-foreground">Not sure whether your framework requires ProQual or EUSR? <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check for you.</p>
         </div>
       </section>
 
@@ -514,7 +514,7 @@ export default function ProQualCat1() {
             </div>
           </div>
 
-          <p className="text-sm text-muted-foreground">Not sure which qualification your organisation needs? <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check your procurement framework for you.</p>
+          <p className="text-sm text-muted-foreground">Not sure which qualification your organisation needs? <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check your procurement framework for you.</p>
           <p className="mt-4 text-xs text-muted-foreground/70 leading-relaxed italic">EUSR CAT1 column reflects the published EUSR Category 1 minimum specification. ProQual column reflects the published ProQual specification as delivered by Sygma Solutions Ltd.</p>
           <p className="mt-3 text-sm text-muted-foreground">For the full three-way comparison including ProQual CAT1 Plus, see our <Link href="/courses/cable-avoidance-course-comparison" className="text-primary font-semibold hover:underline">detailed comparison page</Link>.</p>
         </div>
@@ -744,13 +744,13 @@ export default function ProQualCat1() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
             >
               Book This Course
             </Link>
             <Link
-              href="/contact"
+              href="/contact#enquiry-form"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               Get in Touch
