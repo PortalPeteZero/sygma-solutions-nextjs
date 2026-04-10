@@ -1,21 +1,91 @@
-import { KnowledgeHubHeroSection } from '@/components/sections/KnowledgeHubHeroSection';
-import { KnowledgeHubGridSection } from '@/components/sections/KnowledgeHubGridSection';
-import { SiteConfig } from '@/config/site';
+import type { Metadata } from 'next';
+import InnerPageHero from "@/components/InnerPageHero";
+import Link from "next/link";
+import { knowledgeHubItems } from "@/data/knowledgeHubItems";
+import KnowledgeHubClient from './KnowledgeHubClient';
+import Image from 'next/image';
+import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
-export const metadata = {
-  title: `Knowledge Hub | ${SiteConfig.siteName}`,
-  description: 'Comprehensive guides and resources on utility strike avoidance, cable safety, and related topics.',
+export const metadata: Metadata = {
+  title: 'Utility Training Guides & Articles | Sygma Solutions',
+  description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub' },
+  robots: { index: false, follow: true },
   openGraph: {
-    title: 'Knowledge Hub',
-    description: 'Comprehensive guides and resources on utility strike avoidance.',
+    title: 'Utility Training Guides & Articles | Sygma Solutions',
+    description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
+    url: 'https://sygma-solutions.com/knowledge-hub',
+    siteName: SITE_NAME,
+    images: [DEFAULT_OG_IMAGE],
+    type: 'website',
   },
 };
 
 export default function KnowledgeHub() {
   return (
-    <main className="min-h-screen">
-      <KnowledgeHubHeroSection />
-      <KnowledgeHubGridSection />
-    </main>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Knowledge Hub",
+        "description": "Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.",
+        "url": "https://sygma-solutions.com/knowledge-hub",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://sygma-solutions.com/#organization",
+          "name": "Sygma Solutions"
+        }
+      }) }} />
+      <InnerPageHero
+        image="CAT4-and-Genny-61"
+        alt="Sygma Solutions knowledge hub covering cable avoidance and utility mapping guidance"
+        eyebrow="Knowledge Hub"
+        headline="Practical Knowledge for Underground Utility Professionals"
+        sub="Guides, explainers, and technical resources on utility location, avoidance, and mapping. Written by Sygma's specialist trainers."
+        breadcrumbs={[{ label: "Knowledge Hub" }]}
+      />
+
+      <KnowledgeHubClient items={knowledgeHubItems} />
+
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <div className="grid md:grid-cols-3 gap-4">
+            <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="Safe-Dig-01" width={1200} height={800} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="GPR_05_Mala_Compact_mvupzg" width={1200} height={800} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          </div>
+        </div>
+      </section>
+
+      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
+        <div className="overflow-hidden rounded-lg">
+          <Image src="CAT4-and-Genny-10" width={1200} height={800} alt="Cable avoidance training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div className="overflow-hidden rounded-lg">
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div className="overflow-hidden rounded-lg">
+          <Image src="Safe-Dig-10" width={1200} height={800} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        </div>
+      </div>
+
+      <section className="py-14 bg-primary/5 border-y border-border">
+        <div className="container mx-auto px-6 md:px-8 text-center max-w-xl">
+          <h2 className="text-2xl font-black mb-4 text-foreground">
+            Have a Technical Question?
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Our trainers are available to answer questions from customers,
+            clients, and industry contacts. Call us or get in touch.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
+          >
+            Get in Touch
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

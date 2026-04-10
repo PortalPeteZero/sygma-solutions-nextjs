@@ -85,9 +85,9 @@ export default function Gs6OverheadPowerLines() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="GS6 overhead power lines training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-58" width={1200} height={800} alt="GS6 overhead power lines training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-15" width={1200} height={800} alt="GS6 overhead power lines safety training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="GS6 overhead power lines training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-58" width={1200} height={800} alt="GS6 overhead power lines training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="Safe-Dig-15" width={1200} height={800} alt="GS6 overhead power lines safety training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
       {/* About */}
@@ -272,21 +272,21 @@ export default function Gs6OverheadPowerLines() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
+      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-41" width={1200} height={800} alt="GS6 overhead power lines awareness training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-41" width={1200} height={800} alt="GS6 overhead power lines awareness training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="Overhead power line safety practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="Overhead power line safety practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-15" width={1200} height={800} alt="GS6 compliance training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-15" width={1200} height={800} alt="GS6 compliance training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="CAT4-and-Genny-53" width={1200} height={800} alt="GS6 overhead power lines training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-53" width={1200} height={800} alt="GS6 overhead power lines training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* Assessment */}
@@ -325,15 +325,15 @@ export default function Gs6OverheadPowerLines() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
+      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-43" width={1200} height={800} alt="GS6 training with site safety equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-43" width={1200} height={800} alt="GS6 training with site safety equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="Overhead power lines safety assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-55" width={1200} height={800} alt="Overhead power lines safety assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-10" width={1200} height={800} alt="On-site GS6 compliance practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Safe-Dig-10" width={1200} height={800} alt="On-site GS6 compliance practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
