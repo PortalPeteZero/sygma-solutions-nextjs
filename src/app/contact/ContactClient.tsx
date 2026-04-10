@@ -3,18 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { createClient } from '@supabase/supabase-js';
 import InnerPageHero from '@/components/InnerPageHero';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { trackFormSubmit, trackPhoneClick, trackEmailClick, trackEvent } from '@/lib/analytics';
 import Image from 'next/image';
-
-function getSupabaseClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !key) throw new Error('Supabase env vars not configured');
-  return createClient(url, key);
-}
 
 const quickLinks = [
   { label: 'Browse all Utility Avoidance courses', href: '/training/cable-location-avoidance' },
@@ -50,15 +42,23 @@ export default function ContactClient() {
     };
 
     try {
-      const supabase = getSupabaseClient();
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: payload,
+      // POST to our own API route (server-side proxy) to avoid
+      // ad blockers blocking direct .supabase.co requests
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
 
-      if (error) throw error;
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Submission failed');
+      }
 
       setSubmitted(true);
       form.reset();
+
+      // GTM conversion tracking -- fires client-side as before
       trackFormSubmit(payload.enquiry_type);
       trackEvent('thank_you');
       router.push('/thank-you');
@@ -200,7 +200,7 @@ export default function ContactClient() {
                   </div>
                   <p className="text-xs text-muted-foreground">Your details are used only to respond to your enquiry. We do not share your information with third parties or add you to marketing lists without your permission. <Link href="/privacy-policy" className="text-primary hover:underline">Read our Privacy Policy.</Link></p>
                   <button type="submit" disabled={submitting} className="inline-flex items-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors disabled:opacity-50">
-                    {submitting ? 'Sending…' : 'Send Enquiry'}
+                    {submitting ? 'Sending\u2026' : 'Send Enquiry'}
                   </button>
                 </form>
               )}
