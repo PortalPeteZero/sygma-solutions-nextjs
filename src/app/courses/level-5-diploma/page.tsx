@@ -58,8 +58,8 @@ export default function Level5Diploma() {
         headline="ProQual Level 5 Diploma in Utility Mapping and Surveying"
         sub="The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT. Contact us to discuss enrolment and pricing."
         images={[
-          "MALA-GPR-09",
-          "MALA-GPR-12",
+          "MALA-GPR-19",
+          "MALA-GPR-25",
           "Advanced-EM-05",
         ]}
         alts={["Electromagnetic survey techniques practised during Level 5 diploma training", "Professional GPR survey methodology taught on the ProQual Level 5 course", "Advanced ground penetrating radar interpretation during Level 5 utility mapping"]}
@@ -95,7 +95,7 @@ export default function Level5Diploma() {
         <div className="grid grid-cols-3 gap-3">
           <Image src="Utility-Mapping-02" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover aspect-[4/3] w-full" />
           <Image src="MALA-GPR-22" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <Image src="Advanced-EM-07" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <Image src="Advanced-EM-05" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* What is Level 5 */}
@@ -147,7 +147,7 @@ export default function Level5Diploma() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="Advanced-EM-08" width={1200} height={800} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-center" />
+        <Image src="Advanced-EM-04" width={1200} height={800} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Who it's for */}
@@ -333,13 +333,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-01" width={1200} height={800} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-04" width={1200} height={800} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="MALA-GPR-11" width={1200} height={800} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Utility-Mapping-03" width={1200} height={800} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-01" width={1200} height={800} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -541,10 +541,10 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-06" width={1200} height={800} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-04" width={1200} height={800} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-23" width={1200} height={800} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="MALA-GPR-25" width={1200} height={800} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />

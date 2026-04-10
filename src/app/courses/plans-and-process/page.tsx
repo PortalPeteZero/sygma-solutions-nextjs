@@ -294,7 +294,7 @@ export default function PlansAndProcess() {
           <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Plans and process training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-04" width={1200} height={800} alt="Utility plans interpretation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-25" width={1200} height={800} alt="Utility plans interpretation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-66" width={1200} height={800} alt="Understanding utility drawings and records" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -341,7 +341,7 @@ export default function PlansAndProcess() {
           <Image src="CAT4-and-Genny-50" width={1200} height={800} alt="Plans and process qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-02" width={1200} height={800} alt="Utility mapping and plans training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-19" width={1200} height={800} alt="Utility mapping and plans training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-61" width={1200} height={800} alt="On-site plans and process practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />

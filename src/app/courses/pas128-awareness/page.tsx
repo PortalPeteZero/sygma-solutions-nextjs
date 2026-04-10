@@ -134,9 +134,9 @@ export default function Pas128Awareness() {
 
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="MALA-GPR-05" width={1200} height={800} alt="PAS128 awareness training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="PAS128 awareness training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           <Image src="CAT4-and-Genny-03" width={1200} height={800} alt="PAS128 awareness training - electromagnetic locator practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-          <Image src="MALA-GPR-13" width={1200} height={800} alt="PAS128 awareness training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="PAS128 awareness training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -347,13 +347,13 @@ export default function Pas128Awareness() {
 
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-07" width={1200} height={800} alt="PAS128 awareness training with GPR equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="PAS128 awareness training with GPR equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="MALA-GPR-15" width={1200} height={800} alt="Utility survey awareness classroom session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Utility-Mapping-03" width={1200} height={800} alt="PAS128 utility mapping demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-01" width={1200} height={800} alt="PAS128 utility mapping demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

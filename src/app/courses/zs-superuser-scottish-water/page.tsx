@@ -123,9 +123,9 @@ export default function ZsSuperuserScottishWater() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="CAT4-and-Genny-49" alt="ZS Superuser Scottish Water training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="CAT4-and-Genny-61" alt="ZS Superuser Scottish Water training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="Safe-Dig-11" alt="Scottish Water utility avoidance site practical" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-49" alt="ZS Superuser Scottish Water training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-61" alt="ZS Superuser Scottish Water training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-11" alt="Scottish Water utility avoidance site practical" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* About */}
@@ -318,7 +318,7 @@ export default function ZsSuperuserScottishWater() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="CAT4-and-Genny-56" alt="ZS Superuser Scottish Water training - live training environment" className="w-full h-full object-cover object-center" />
+        <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1400/CAT4-and-Genny-56" alt="ZS Superuser Scottish Water training - live training environment" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Who should attend */}

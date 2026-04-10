@@ -191,9 +191,9 @@ export default function EusCat1() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="on-site/on-site-training-03" alt="EUSR CAT1 training delegates using Genny & CAT on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="on-site/on-site-training-05" alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="on-site/on-site-training-01" alt="On-site practical cable avoidance training with signal generator" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-15" alt="EUSR CAT1 training delegates using Genny & CAT on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-20" alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-30" alt="On-site practical cable avoidance training with signal generator" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
 
@@ -266,13 +266,13 @@ export default function EusCat1() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-07" alt="EUSR CAT1 practical training with cable locator" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-07" alt="EUSR CAT1 practical training with cable locator" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-43" alt="Genny signal generator connection during EUSR CAT1 assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-43" alt="Genny signal generator connection during EUSR CAT1 assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-50" alt="On-site utility detection training for EUSR registration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-50" alt="On-site utility detection training for EUSR registration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -311,7 +311,7 @@ export default function EusCat1() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="on-site/on-site-training-panoramic-02" alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" className="w-full h-full object-cover object-center" />
+        <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1400/New-Landscape-02" alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Learning outcomes */}
@@ -468,13 +468,13 @@ export default function EusCat1() {
       {/* Image strip before upgrade paths */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-59" alt="Cable avoidance practical assessment on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-59" alt="Cable avoidance practical assessment on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-64" alt="EUSR CAT1 delegates using locator equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-64" alt="EUSR CAT1 delegates using locator equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-68" alt="Sygma EUSR CAT1 hands-on training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-68" alt="Sygma EUSR CAT1 hands-on training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -94,9 +94,9 @@ export default function TsaIcesUtilityMapping() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="MALA-GPR-07" alt="TSA and ICES utility mapping - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="Advanced-EM-07" alt="TSA and ICES utility mapping - EM locator training" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="MALA-GPR-15" alt="TSA and ICES utility mapping - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="TSA and ICES utility mapping - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Advanced-EM-05" alt="TSA and ICES utility mapping - EM locator training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-15" alt="TSA and ICES utility mapping - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Programme introduction */}
@@ -363,13 +363,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-08" alt="TSA utility mapping training with GPR" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-15" alt="TSA utility mapping training with GPR" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-16" alt="ICES utility mapping practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="ICES utility mapping practical assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="Utility-Mapping-02" alt="Utility mapping survey fieldwork training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-02" alt="Utility mapping survey fieldwork training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -582,13 +582,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-26" alt="Ground penetrating radar training equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-26" alt="Ground penetrating radar training equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-32" alt="TSA ICES utility survey practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="TSA ICES utility survey practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="Utility-Mapping-04" alt="Utility mapping and detection training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-04" alt="Utility mapping and detection training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

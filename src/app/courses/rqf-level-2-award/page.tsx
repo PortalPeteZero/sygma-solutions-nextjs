@@ -55,7 +55,7 @@ export default function RqfLevel2Award() {
         eyebrow="Utility Avoidance"
         headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
-        image="Advanced-EM-07"
+        image="Advanced-EM-05"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -106,9 +106,9 @@ export default function RqfLevel2Award() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="CAT4-and-Genny-15" alt="RQF Level 2 Award training - practical session with CAT and Genny" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="CAT4-and-Genny-35" alt="RQF Level 2 Award training - hands-on assessment on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="CAT4-and-Genny-55" alt="RQF Level 2 Award - Genny signal application training" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-15" alt="RQF Level 2 Award training - practical session with CAT and Genny" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-35" alt="RQF Level 2 Award training - hands-on assessment on site" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-55" alt="RQF Level 2 Award - Genny signal application training" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* About */}
@@ -301,19 +301,19 @@ export default function RqfLevel2Award() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-09" alt="RQF Level 2 Award practical training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-09" alt="RQF Level 2 Award practical training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-48" alt="Utility avoidance hands-on assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-48" alt="Utility avoidance hands-on assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="Safe-Dig-05" alt="Level 2 qualification practical demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-05" alt="Level 2 qualification practical demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="Advanced-EM-08" alt="RQF Level 2 Award training - live training environment" className="w-full h-full object-cover object-center" />
+        <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1400/Advanced-EM-04" alt="RQF Level 2 Award training - live training environment" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Requirements */}
@@ -376,13 +376,13 @@ export default function RqfLevel2Award() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-62" alt="RQF Level 2 training with CAT and Genny" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-62" alt="RQF Level 2 training with CAT and Genny" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-30" alt="Utility locating qualification assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-30" alt="Utility locating qualification assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-20" alt="On-site RQF Level 2 practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-20" alt="On-site RQF Level 2 practical training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -463,7 +463,7 @@ export default function EusSuperuser() {
           <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="Cable avoidance superuser training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-08" width={1200} height={800} alt="Advanced locator techniques training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="Advanced-EM-04" width={1200} height={800} alt="Advanced locator techniques training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="EUSR Superuser practical skills assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />

@@ -55,7 +55,7 @@ export default function GprTraining() {
         eyebrow="Utility Mapping"
         headline="GPR Training: Theory, Practical Use and Post Processing for Utility Surveyors"
         sub="Ground Penetrating Radar is the detection method that reveals what an electromagnetic locator cannot. This two-module GPR training programme covers GPR technology from the science behind a radargram to GPS-integrated data collection and full post processing in Object Mapper software. Elevate your surveying skills with expert-led ground penetrating radar training. Book individually or take both modules together."
-        image="Utility-Mapping-03"
+        image="Utility-Mapping-01"
         alt="Ground penetrating radar training using professional GPR survey equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/utility-mapping-surveying" },
@@ -83,9 +83,9 @@ export default function GprTraining() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="Utility-Mapping-01" alt="GPR training - practical session with survey equipment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="Utility-Mapping-02" alt="GPR training - hands-on field assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="MALA-GPR-12" alt="GPR training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-01" alt="GPR training - practical session with survey equipment" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-02" alt="GPR training - hands-on field assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Course introduction */}
@@ -360,13 +360,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-05" alt="Ground penetrating radar practical training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-26" alt="Ground penetrating radar practical training session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-12" alt="GPR data collection on training site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR data collection on training site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-01" alt="Delegates learning GPR survey techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="Delegates learning GPR survey techniques" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -457,13 +457,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-25" alt="GPR training equipment demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR training equipment demonstration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-30" alt="Ground penetrating radar survey practical" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-19" alt="Ground penetrating radar survey practical" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="MALA-GPR-33" alt="On-site GPR training with Mala equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-28" alt="On-site GPR training with Mala equipment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

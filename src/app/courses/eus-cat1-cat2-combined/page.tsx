@@ -107,9 +107,9 @@ export default function EusCat12Combined() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="CAT4-and-Genny-09" alt="EUSR CAT1 and CAT2 combined training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="CAT4-and-Genny-51" alt="EUSR CAT1 and CAT2 combined training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
-          <img loading="lazy" src="Safe-Dig-05" alt="EUSR CAT1 and CAT2 combined training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-09" alt="EUSR CAT1 and CAT2 combined training - practical session" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-51" alt="EUSR CAT1 and CAT2 combined training - hands-on assessment" className="rounded-lg object-cover aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-05" alt="EUSR CAT1 and CAT2 combined training - on-site delivery" className="rounded-lg object-cover aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Who This Course Is For */}
@@ -267,13 +267,13 @@ export default function EusCat12Combined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-10" alt="EUSR CAT1 and CAT2 combined training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-10" alt="EUSR CAT1 and CAT2 combined training practical session" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="Safe-Dig-08" alt="Safe dig technique demonstration during CAT2 training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-08" alt="Safe dig technique demonstration during CAT2 training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-54" alt="Cable avoidance and safe excavation combined assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-54" alt="Cable avoidance and safe excavation combined assessment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -359,7 +359,7 @@ export default function EusCat12Combined() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <img loading="lazy" src="Safe-Dig-15" alt="EUSR CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" className="w-full h-full object-cover object-center" />
+        <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1400/Safe-Dig-15" alt="EUSR CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -486,13 +486,13 @@ export default function EusCat12Combined() {
       {/* Image strip before FAQs */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-67" alt="Utility avoidance practical training on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-67" alt="Utility avoidance practical training on site" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="Safe-Dig-22" alt="Safe excavation assessment during EUSR CAT2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-22" alt="Safe excavation assessment during EUSR CAT2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="CAT4-and-Genny-50" alt="Combined CAT1 and CAT2 certificate training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-50" alt="Combined CAT1 and CAT2 certificate training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
