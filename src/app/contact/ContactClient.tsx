@@ -149,7 +149,7 @@ export default function ContactClient() {
                   <p className="text-sm text-muted-foreground mt-4">In the meantime, you can <Link href="/training/cable-location-avoidance" className="text-primary hover:underline">browse our courses</Link> or learn about our <Link href="/bespoke-training" className="text-primary hover:underline">bespoke training programmes</Link>.</p>
                 </div>
               ) : (
-                <form id="enquiry-form" onSubmit={handleSubmit} className="space-y-5">
+                <form id="enquiry-form" method="POST" onSubmit={handleSubmit} className="space-y-5">
                   <h2 className="text-2xl font-black text-foreground mb-2">Send Us a Message</h2>
                   <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-semibold text-primary mb-4">
                     <Clock size={14} className="shrink-0" />
@@ -160,35 +160,35 @@ export default function ContactClient() {
                   )}
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="text-sm font-semibold text-foreground block mb-1.5">Full Name *</label>
-                      <input type="text" name="full_name" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                      <label htmlFor="full_name" className="text-sm font-semibold text-foreground block mb-1.5">Full Name *</label>
+                      <input id="full_name" type="text" name="full_name" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-foreground block mb-1.5">Company Name *</label>
-                      <input type="text" name="company_name" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                      <label htmlFor="company_name" className="text-sm font-semibold text-foreground block mb-1.5">Company Name *</label>
+                      <input id="company_name" type="text" name="company_name" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-semibold text-foreground block mb-1.5">Training Interest *</label>
-                    <input type="text" name="enquiry_type" required placeholder="e.g. CAT and Genny training, cable avoidance, GPR, PAS 128..." className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                    <label htmlFor="enquiry_type" className="text-sm font-semibold text-foreground block mb-1.5">Training Interest *</label>
+                    <input id="enquiry_type" type="text" name="enquiry_type" required placeholder="e.g. CAT and Genny training, cable avoidance, GPR, PAS 128..." className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
                   </div>
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
-                      <label className="text-sm font-semibold text-foreground block mb-1.5">Email Address *</label>
-                      <input type="email" name="email" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                      <label htmlFor="email" className="text-sm font-semibold text-foreground block mb-1.5">Email Address *</label>
+                      <input id="email" type="email" name="email" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-foreground block mb-1.5">Phone Number *</label>
-                      <input type="tel" name="phone" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                      <label htmlFor="phone" className="text-sm font-semibold text-foreground block mb-1.5">Phone Number *</label>
+                      <input id="phone" type="tel" name="phone" required className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-semibold text-foreground block mb-1.5">Message</label>
-                    <textarea name="message" rows={5} className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none" placeholder="Tell us your requirements, number of delegates, preferred dates, or anything else we should know." />
+                    <label htmlFor="message" className="text-sm font-semibold text-foreground block mb-1.5">Message</label>
+                    <textarea id="message" name="message" rows={5} className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none" placeholder="Tell us your requirements, number of delegates, preferred dates, or anything else we should know." />
                   </div>
                   <div>
-                    <label className="text-sm font-semibold text-muted-foreground block mb-1.5">How did you hear about us?</label>
-                    <select name="how_heard" className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40">
+                    <label htmlFor="how_heard" className="text-sm font-semibold text-muted-foreground block mb-1.5">How did you hear about us?</label>
+                    <select id="how_heard" name="how_heard" className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40">
                       <option value="">Please select (optional)</option>
                       <option>Google search</option>
                       <option>LinkedIn</option>
