@@ -23,7 +23,7 @@ const faqs = [
               },
               {
                 q: "What if some delegates use equipment other than a Radiodetection locator?",
-                a: "Delegates should bring their own equipment if they use a different manufacturer's locator, at a minimum ratio of one locator per three delegates. Sygma cannot carry a full stock of every manufacturer's equipment. The training covers universal locating and signal generation principles, This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.",
+                a: "Delegates should bring their own equipment if they use a different manufacturer's locator, at a minimum ratio of one locator per three delegates. Sygma cannot carry a full stock of every manufacturer's equipment. The training covers universal locating and signal generation principles. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.",
               },
               {
                 q: "Can we run this at your Wigan training centre?",
@@ -170,7 +170,7 @@ export default function ProqualCat1Cat2Combined() {
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
               ["Max Delegates", "8 per course"],
               ["Qualifications", "ProQual CAT1 and ProQual CAT2 (Safe Dig)"],
-              ["Assessment", "Multiple choice questions (MCQs) + practical safe dig assessment"],
+              ["Assessment", "Written theory papers + practical safe dig assessment"],
               ["Prerequisites", "None"],
               ["Equipment", "Sygma provides Radiodetection CAT4 and Genny4 as standard; delegates may bring their own locator and signal generator. This course can be delivered on any of the following: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX."],
               ["Delivery", "Nationwide UK"],
@@ -235,7 +235,7 @@ export default function ProqualCat1Cat2Combined() {
             "Horizontal excavation to expose the indicated service below the remaining surface",
             "Supporting exposed services where required",
             "Reinstatement completion",
-            "Multiple choice questions (MCQs) at the end of the programme",
+            "Written theory papers at the end of the programme",
           ].map((item, i) => (
             <div key={i} className="flex gap-3 items-start bg-muted/30 border border-border rounded-lg p-4">
               <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>

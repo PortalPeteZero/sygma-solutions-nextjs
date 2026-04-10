@@ -10,7 +10,7 @@ const faqs = [
     a: "EUSR CAT1 is a one-day utility avoidance training course that leads to an EUSR-registered Category 1 qualification. It covers electromagnetic theory, correct use of Genny & CAT equipment in all four modes, utility service plan reading, and a practical on-site assessment. It is one of the most widely recognised utility avoidance qualifications in the UK utility sector.",
   },
   {
-    q: "What is the difference between EUSR CAT1 and EUSR CAT1?",
+    q: "Is EUSR CAT1 the same as EUS CAT1?",
     a: "They are the same qualification. EUSR and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUSR CAT1 and sometimes as EUSR CAT1 or EUSR Category 1. All Sygma EUSR CAT1 certificates are issued against EUSR-registered standards.",
   },
   {

@@ -67,7 +67,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     category: "CITB Funding",
     title: "CITB Funding for Utility Training: The 2026 Position",
     desc: "How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.",
-    href: "/contact",
+    href: "/knowledge-hub",
     type: "article",
     image: "CAT4-and-Genny-10",
   },

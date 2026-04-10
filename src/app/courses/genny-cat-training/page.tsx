@@ -22,7 +22,7 @@ const faqs = [
               a: "It depends on the qualification route. The EUSR CAT1 card is valid for 3 years from the date of issue. ProQual CAT1 certificates are also valid for 3 years. The Sygma in-house certificate does not have a fixed expiry but most employers and frameworks require refresher training every 3 years to maintain competency. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.",
             },
             {
-              q: "What is the difference between EUSR CAT1 and EUSR CAT1?",
+              q: "Is EUSR CAT1 the same as EUS CAT1?",
               a: "They are the same qualification. EUSR stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUSR. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.",
             },
             {
@@ -53,11 +53,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'Cat and Genny Training | Cable Avoidance Courses | Sygma',
+  title: 'CAT and Genny Training | Cable Avoidance Courses | Sygma',
   description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/genny-cat-training' },
   openGraph: {
-    title: 'Cat and Genny Training | Cable Avoidance Courses | Sygma',
+    title: 'CAT and Genny Training | Cable Avoidance Courses | Sygma',
     description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
     url: 'https://sygma-solutions.com/courses/genny-cat-training',
     siteName: 'Sygma Solutions',
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
 export default function GennyCatTraining() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cat and Genny Training', description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide by specialist utility avoidance trainers.', url: '/courses/genny-cat-training', duration: '1-2 days', mode: ['onsite'] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cat and Genny Training' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training', description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide by specialist utility avoidance trainers.', url: '/courses/genny-cat-training', duration: '1-2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'CAT and Genny Training' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
@@ -241,7 +241,7 @@ export default function GennyCatTraining() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="eyebrow mb-3">Course Content</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">Cat and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">CAT and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Theory */}
             <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -320,7 +320,7 @@ export default function GennyCatTraining() {
       <section className="bg-background py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">What You Get</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Cat and Genny Certificate and Qualification Routes</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">CAT and Genny Certificate and Qualification Routes</h2>
           <p className="text-muted-foreground mb-6 leading-relaxed">
             On successful completion of your cat and genny training, the certification you receive depends on the course format chosen. All routes include written and practical assessment, and all are delivered to the same Sygma standard. The difference is in the awarding body and the type of ID card or certificate issued.
           </p>

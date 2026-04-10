@@ -65,9 +65,9 @@ const faqs = [
 export default function Level6Diploma() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema({ name: "ProQual Level 6 Diploma in Utility Mapping and Surveying Management", description: "The highest qualification in the utility surveying pathway. Designed for experienced surveyors ready to lead teams, manage projects and drive operational excellence.", url: "/courses/level-6-diploma", credential: "Level 6 Diploma in Utility Surveying", duration: "Part-time", mode: ["blended"] })) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(faqs)) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "Level 6 Diploma" }])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual Level 6 Diploma in Utility Mapping and Surveying Management", description: "The highest qualification in the utility surveying pathway. Designed for experienced surveyors ready to lead teams, manage projects and drive operational excellence.", url: "/courses/level-6-diploma", credential: "Level 6 Diploma in Utility Surveying", duration: "Part-time", mode: ["blended"] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "Level 6 Diploma" }]) }} />
 
       <InnerPageHero
         eyebrow="Qualifications"

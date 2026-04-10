@@ -46,12 +46,12 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'Advanced EM Locator Training | CICES Accredited | Sygma',
-  description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
+  title: 'Advanced EM Locator Training | CICES Mapped | Sygma',
+  description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/advanced-em-locator' },
   openGraph: {
-    title: 'Advanced EM Locator Training | CICES Accredited | Sygma',
-    description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
+    title: 'Advanced EM Locator Training | CICES Mapped | Sygma',
+    description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
     url: 'https://sygma-solutions.com/courses/advanced-em-locator',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Advanced-EM-05', width: 1200, height: 630 }],
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 export default function AdvancedEmLocator() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Advanced EM Locator Training', description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-accredited. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.', url: '/courses/advanced-em-locator', credential: 'CICES GEUS01 Item E', duration: '2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Advanced EM Locator Training', description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.', url: '/courses/advanced-em-locator', credential: 'CICES GEUS01 Item E', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Advanced EM Locator' }]) }} />
 

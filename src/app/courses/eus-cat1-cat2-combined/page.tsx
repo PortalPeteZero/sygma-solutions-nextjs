@@ -23,7 +23,7 @@ const faqs = [
               },
               {
                 q: "What if some delegates use equipment other than a Radiodetection locator?",
-                a: "Delegates should bring their own equipment if they use a different manufacturer's locator, at a minimum ratio of one locator per three delegates. Sygma cannot carry a full stock of every manufacturer's equipment. The training covers universal locating and signal generation principles, This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.",
+                a: "Delegates should bring their own equipment if they use a different manufacturer's locator, at a minimum ratio of one locator per three delegates. Sygma cannot carry a full stock of every manufacturer's equipment. The training covers universal locating and signal generation principles. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.",
               },
               {
                 q: "Can we run this at your Wigan training centre?",

@@ -83,7 +83,7 @@ export default function Locations() {
             <p className="text-sm font-semibold text-blue-300 mb-2">Training Locations</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">We Come to You. Or You Come to Us.</h1>
             <p className="text-lg text-slate-300">
-              Sygma delivers training from two fixed training centres, on client sites nationwide, and virtually via MS Teams. The standard of training is the same regardless of where it is delivered.
+              Sygma delivers training from its Wigan training centre and The Survey School in Worcester, on client sites nationwide, and virtually via MS Teams. The standard of training is the same regardless of where it is delivered.
             </p>
           </div>
         </section>

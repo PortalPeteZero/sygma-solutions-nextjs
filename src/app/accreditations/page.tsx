@@ -31,7 +31,7 @@ export default function AccreditationsPage() {
           <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-center">
             {[
               '21 Years in Business',
-              '7 Active Accreditations',
+              '6 Active Accreditations',
               'CITB Approved Training Organisation',
             ].map((stat) => (
               <div key={stat} className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function AccreditationsPage() {
               Over 21 years, Sygma has delivered training for utility network operators, Tier 1 and Tier 2 contractors, specialist survey companies, local authorities and water industry supply chain businesses across the UK.
             </p>
             <p>
-              Named client references and case studies are available on request for organisations at procurement or tender stage. <Link href="/case-studies" className="text-blue-600 font-semibold hover:underline">View our case studies</Link> to see how we have delivered training programmes for organisations in the sector.
+              Named client references and case studies are available on request for organisations at procurement or tender stage. <Link href="/knowledge-hub" className="text-blue-600 font-semibold hover:underline">View our case studies</Link> to see how we have delivered training programmes for organisations in the sector.
             </p>
           </div>
         </div>
