@@ -1,6 +1,9 @@
+import type { Metadata } from 'next';
 import LocationTemplate from '@/components/LocationTemplate';
-import { locationData as bristolData } from '@/data/locations/bristol';
+import { locationData } from '@/data/locations/bristol';
 
-export default function BristolLocation() {
-  return <LocationTemplate data={bristolData} />;
+export const metadata: Metadata = locationData.metadata;
+
+export default function LocationBristol() {
+  return <LocationTemplate data={locationData} />;
 }
