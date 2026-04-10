@@ -7,31 +7,31 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 const breadcrumbs = [
   { label: 'Courses', href: '/courses' },
   { label: 'School of Engineering (EUS)', href: '/courses/eus' },
-  { label: 'Cat 1: Essentials', href: '/courses/eus-cat1' },
+  { label: 'Cat 2: Advanced', href: '/courses/eus-cat2' },
 ];
 
 export const metadata: Metadata = {
-  title: 'Cat 1: Essentials - EUS | Sygma Solutions',
-  description: 'Master foundational engineering skills with Sygma Solutions\' Cat 1: Essentials course. Learn the core principles and industry standards.',
+  title: 'Cat 2: Advanced - EUS | Sygma Solutions',
+  description: 'Take your engineering skills to the next level with Cat 2: Advanced. Master complex systems and advanced techniques.',
 };
 
-export default function EUSCat1Page() {
+export default function EUSCat2Page() {
   const faqData = [
     {
-      question: 'What topics are covered in Cat 1: Essentials?',
-      answer: 'Cat 1 covers fundamental engineering principles, including core concepts, best practices, and industry standards essential for all engineering professionals.',
+      question: 'What are the prerequisites for Cat 2?',
+      answer: 'Completion of Cat 1: Essentials is required. This ensures you have the foundational knowledge needed for advanced topics.',
     },
     {
-      question: 'Who should take this course?',
-      answer: 'This course is designed for anyone new to engineering or those seeking to reinforce their foundational knowledge. It\'s the prerequisite for advanced categories.',
+      question: 'What advanced topics are covered?',
+      answer: 'Cat 2 covers advanced systems design, optimization techniques, emerging technologies, and complex problem-solving scenarios.',
     },
     {
-      question: 'How long does the course take?',
-      answer: 'The course is self-paced, typically requiring 20-30 hours of study. Most professionals complete it within 4-6 weeks.',
+      question: 'Is there hands-on project work?',
+      answer: 'Yes, this course includes several capstone projects where you\'ll apply advanced concepts to real-world engineering challenges.',
     },
     {
-      question: 'Is there a certification?',
-      answer: 'Yes, upon successful completion of all modules and the final assessment, you\'ll receive an official Cat 1 certification.',
+      question: 'How does this prepare me for specialization?',
+      answer: 'Cat 2 provides the advanced foundation needed for specialized Cat 3 tracks. You\'ll be ready to pursue your specific engineering discipline.',
     },
   ];
 
@@ -39,9 +39,9 @@ export default function EUSCat1Page() {
     '@context': 'https://schema.org',
     '@graph': [
       courseSchema({
-        name: 'Cat 1: Essentials',
-        description: 'Master foundational engineering skills',
-        url: 'https://sygma.ai/courses/eus-cat1',
+        name: 'Cat 2: Advanced',
+        description: 'Master advanced engineering systems and techniques',
+        url: 'https://sygma.ai/courses/eus-cat2',
       }),
       breadcrumbSchema(breadcrumbs),
       faqPageSchema(faqData),
@@ -56,10 +56,10 @@ export default function EUSCat1Page() {
       />
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white">
         <InnerPageHero
-          imageSrc="/images/hero/eus-cat1-hero.jpg"
-          imageAlt="Engineering essentials course"
-          title="Cat 1: Essentials"
-          subtitle="Build Your Engineering Foundation"
+          imageSrc="/images/hero/eus-cat2-hero.jpg"
+          imageAlt="Advanced engineering course"
+          title="Cat 2: Advanced"
+          subtitle="Master Complex Systems and Techniques"
         />
 
         <div className="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-6xl mx-auto w-full">
@@ -70,7 +70,7 @@ export default function EUSCat1Page() {
                   Course Overview
                 </h2>
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                  Cat 1: Essentials is the foundation of your engineering journey. This comprehensive course covers the fundamental principles, industry standards, and best practices that every engineer must know.
+                  Cat 2: Advanced builds on your Cat 1 foundation to explore complex engineering systems, advanced methodologies, and cutting-edge technologies. This course is designed for engineers ready to tackle sophisticated challenges.
                 </p>
               </section>
 
@@ -81,23 +81,23 @@ export default function EUSCat1Page() {
                 <ul className="space-y-3 text-slate-600">
                   <li className="flex gap-3">
                     <span className="text-indigo-600 font-bold flex-shrink-0">✓</span>
-                    <span>Core engineering principles and theory</span>
+                    <span>Advanced system design and architecture</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-indigo-600 font-bold flex-shrink-0">✓</span>
-                    <span>Industry standards and compliance requirements</span>
+                    <span>Optimization and performance analysis</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-indigo-600 font-bold flex-shrink-0">✓</span>
-                    <span>Practical problem-solving techniques</span>
+                    <span>Emerging technologies and innovation</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-indigo-600 font-bold flex-shrink-0">✓</span>
-                    <span>Professional communication and documentation</span>
+                    <span>Complex problem-solving frameworks</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-indigo-600 font-bold flex-shrink-0">✓</span>
-                    <span>Safety protocols and risk management</span>
+                    <span>Leadership and project management</span>
                   </li>
                 </ul>
               </section>
@@ -108,20 +108,20 @@ export default function EUSCat1Page() {
                 </h2>
                 <div className="space-y-4">
                   <div className="border-l-4 border-indigo-600 pl-4">
-                    <h3 className="font-semibold text-slate-900 mb-1">Module 1: Fundamentals</h3>
-                    <p className="text-slate-600">Introduction to core concepts and theoretical foundations</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Module 1: Advanced Systems</h3>
+                    <p className="text-slate-600">Deep dive into complex systems design and integration</p>
                   </div>
                   <div className="border-l-4 border-indigo-600 pl-4">
-                    <h3 className="font-semibold text-slate-900 mb-1">Module 2: Standards & Practices</h3>
-                    <p className="text-slate-600">Industry standards, compliance, and best practices</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Module 2: Optimization & Performance</h3>
+                    <p className="text-slate-600">Techniques for maximizing efficiency and reliability</p>
                   </div>
                   <div className="border-l-4 border-indigo-600 pl-4">
-                    <h3 className="font-semibold text-slate-900 mb-1">Module 3: Applied Skills</h3>
-                    <p className="text-slate-600">Practical applications and case studies</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Module 3: Emerging Technologies</h3>
+                    <p className="text-slate-600">Latest innovations shaping the engineering field</p>
                   </div>
                   <div className="border-l-4 border-indigo-600 pl-4">
-                    <h3 className="font-semibold text-slate-900 mb-1">Module 4: Assessment</h3>
-                    <p className="text-slate-600">Comprehensive evaluation and certification</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Module 4: Capstone Project</h3>
+                    <p className="text-slate-600">Apply your learning to real-world engineering scenarios</p>
                   </div>
                 </div>
               </section>
@@ -133,15 +133,15 @@ export default function EUSCat1Page() {
                 <div className="space-y-4 text-sm">
                   <div>
                     <p className="text-slate-600">Duration</p>
-                    <p className="font-semibold text-slate-900">4-6 weeks</p>
+                    <p className="font-semibold text-slate-900">6-8 weeks</p>
                   </div>
                   <div>
                     <p className="text-slate-600">Effort Required</p>
-                    <p className="font-semibold text-slate-900">20-30 hours</p>
+                    <p className="font-semibold text-slate-900">30-40 hours</p>
                   </div>
                   <div>
-                    <p className="text-slate-600">Certification</p>
-                    <p className="font-semibold text-slate-900">Yes</p>
+                    <p className="text-slate-600">Prerequisite</p>
+                    <p className="font-semibold text-slate-900">Cat 1: Essentials</p>
                   </div>
                   <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition mt-4">
                     Enroll Now
@@ -169,10 +169,10 @@ export default function EUSCat1Page() {
 
           <section className="text-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-slate-900">
-              Ready to Start?
+              Ready for the Challenge?
             </h2>
             <p className="text-lg text-slate-600 mb-6">
-              Join hundreds of engineers who have advanced their careers with our proven curriculum.
+              Advance your career with specialized knowledge and practical experience in complex engineering systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded transition">

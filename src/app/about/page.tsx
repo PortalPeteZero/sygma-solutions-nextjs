@@ -1,130 +1,152 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import InnerPageHero from '@/components/InnerPageHero';
-import { FAQ } from '@/components/FAQ';
-import { Section } from '@/components/Section';
-import { ImageStrip } from '@/components/ImageStrip';
-import { Button } from '@/components/Button';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import PageHero from "@/components/PageHero";
+import { breadcrumbSchema, organizationSchema } from "@/lib/schema";
 
-const metadata: Metadata = {
-  title: 'About Sygma Solutions',
-  description: 'Learn about Sygma Solutions - leading provider of Cable Avoidance Tools training and PAS 128 surveyor courses in the UK.',
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+];
+
+export const metadata: Metadata = {
+  title: 'About Sygma Solutions | Our Mission & Values',
+  description: 'Learn about Sygma Solutions\' mission to transform professional education. Discover our story, values, and commitment to excellence.',
 };
 
-export { metadata };
+export default function AboutPage() {
+  const teamMembers = [
+    {
+      name: 'Alex Johnson',
+      role: 'Founder & CEO',
+      bio: 'Leading the vision to democratise professional education',
+    },
+    {
+      name: 'Sarah Chen',
+      role: 'Chief Product Officer',
+      bio: 'Driving innovation in learning experience design',
+    },
+    {
+      name: 'Michael Rodriguez',
+      role: 'Chief Technology Officer',
+      bio: 'Building scalable platforms for global education',
+    },
+    {
+      name: 'Emily Watson',
+      role: 'Head of Curriculum',
+      bio: 'Crafting world-class educational content',
+    },
+  ];
 
-const aboutPageData = {
-  title: 'About Sygma Solutions',
-  description: 'We are committed to delivering expert training in Cable Avoidance Tools and other critical utility detection skills.',
-};
+  const values = [
+    {
+      title: 'Excellence',
+      description: 'We pursue the highest standards in everything we create',
+    },
+    {
+      title: 'Impact',
+      description: 'We measure success by the careers we help transform',
+    },
+    {
+      title: 'Innovation',
+      description: 'We embrace new ideas and continuous improvement',
+    },
+    {
+      title: 'Integrity',
+      description: 'We operate with transparency and honesty',
+    },
+  ];
 
-export default function Page() {
+  const jsonLD = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      breadcrumbSchema(breadcrumbs),
+      organizationSchema({
+        name: 'Sygma Solutions',
+        url: 'https://sygma.ai',
+      }),
+    ],
+  };
+
   return (
     <>
-      <InnerPageHero
-        title="About Sygma Solutions"
-        description="We are committed to delivering expert training in Cable Avoidance Tools and other critical utility detection skills."
-        backgroundImage="/images/about-hero.jpg"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
       />
+      <div className="min-h-screen flex flex-col bg-white">
+        <PageHero
+          imageSrc="/images/hero/about-hero.jpg"
+          imageAlt="About Sygma Solutions"
+          title="About Sygma Solutions"
+          subtitle="Transforming professional education and career development"
+        />
 
-      <Section>
-        <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-          <p className="text-lg text-gray-600 mb-6">
-            At Sygma Solutions, we believe that proper training and certification in cable avoidance and utility detection is essential for creating safer work environments across the construction and utility industries.
-          </p>
-          <p className="text-lg text-gray-600 mb-6">
-            Our comprehensive courses equip professionals with the knowledge and practical skills needed to identify and avoid underground utilities, reducing the risk of accidents and ensuring compliance with industry standards.
-          </p>
-        </div>
-      </Section>
+        <div className="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-6xl mx-auto w-full">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">
+              Our Mission
+            </h2>
+            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+              At Sygma Solutions, we believe that professional education should be accessible, engaging, and directly applicable to real-world challenges. Our mission is to provide world-class training programmes that empower individuals and organisations to achieve their full potential. Through innovative learning experiences and expert instruction, we're transforming how professionals develop their careers.
+            </p>
+          </section>
 
-      <ImageStrip
-        title="Our Facilities"
-        images={[
-          { src: '/images/facility-1.jpg', alt: 'Training facility 1', width: 600, height: 400 },
-          { src: '/images/facility-2.jpg', alt: 'Training facility 2', width: 600, height: 400 },
-          { src: '/images/facility-3.jpg', alt: 'Training facility 3', width: 600, height: 400 },
-        ]}
-        objectPosition="object-top"
-        containerHeight="h-96"
-      />
-
-      <Section>
-        <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold mb-4">Why Choose Us?</h2>
-          <ul className="space-y-4 text-lg text-gray-600">
-            <li className="flex items-start">
-              <span className="text-blue-600 font-bold mr-3">✓</span>
-              <span>Industry-certified instructors with years of practical experience</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 font-bold mr-3">✓</span>
-              <span>State-of-the-art training facilities and equipment</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 font-bold mr-3">✓</span>
-              <span>Flexible scheduling with courses across multiple UK locations</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 font-bold mr-3">✓</span>
-              <span>Comprehensive curriculum covering all major utility detection standards</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 font-bold mr-3">✓</span>
-              <span>High pass rates and excellent student satisfaction ratings</span>
-            </li>
-          </ul>
-        </div>
-      </Section>
-
-      <ImageStrip
-        title="Training in Action"
-        images={[
-          { src: '/images/training-1.jpg', alt: 'Training session 1', width: 600, height: 400 },
-          { src: '/images/training-2.jpg', alt: 'Training session 2', width: 600, height: 400 },
-          { src: '/images/training-3.jpg', alt: 'Training session 3', width: 600, height: 400 },
-        ]}
-        objectPosition="object-top"
-        containerHeight="h-96"
-      />
-
-      <Section>
-        <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold mb-4">Our Certifications</h2>
-          <p className="text-lg text-gray-600 mb-6">
-            Sygma Solutions is accredited to deliver training in PAS 128, CAT Manager courses, and other industry-standard utility detection qualifications.
-          </p>
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div className="border-l-4 border-blue-600 pl-4">
-              <h3 className="font-bold text-lg mb-2">PAS 128</h3>
-              <p className="text-sm text-gray-600">Surveyor qualifications in cable avoidance</p>
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">
+              Our Values
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {values.map((value, index) => (
+                <div key={index} className="bg-slate-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-slate-600">{value.description}</p>
+                </div>
+              ))}
             </div>
-            <div className="border-l-4 border-blue-600 pl-4">
-              <h3 className="font-bold text-lg mb-2">CAT Manager</h3>
-              <p className="text-sm text-gray-600">Equipment management and usage</p>
-            </div>
-          </div>
-          <Link href="/courses">
-            <Button>View All Courses</Button>
-          </Link>
-        </div>
-      </Section>
+          </section>
 
-      <FAQ items={[
-        {
-          question: 'What experience do your instructors have?',
-          answer: 'Our instructors are certified professionals with extensive practical experience in cable avoidance and utility detection across multiple industries.'
-        },
-        {
-          question: 'Can I book a private group training session?',
-          answer: 'Yes, we offer customised training packages for organisations. Contact our team for more information about group bookings.'
-        },
-        {
-          question: 'Are your courses recognised nationally?',
-          answer: 'Yes, all our courses meet UK industry standards and are recognised by major construction and utility companies.'
-        },
-      ]} />
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">
+              Our Story
+            </h2>
+            <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
+              <p>
+                Sygma Solutions was founded with a simple observation: traditional professional education wasn't keeping pace with industry change. Professionals needed faster, more relevant, and more practical learning experiences.
+              </p>
+              <p>
+                From our early days, we've focused on one thing: creating exceptional learning experiences that translate directly into career growth. We've partnered with industry experts, invested in cutting-edge technology, and built a culture of innovation and excellence.
+              </p>
+              <p>
+                Today, thousands of professionals and organisations trust Sygma Solutions to develop their teams and transform their careers. We're just getting started.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">
+              Leadership Team
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-slate-50 rounded-lg p-6 text-center hover:shadow-lg transition"
+                >
+                  <div className="w-24 h-24 bg-indigo-300 rounded-full mx-auto mb-4" />
+                  <h3 className="text-lg font-bold text-slate-900 mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-indigo-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-sm text-slate-600">{member.bio}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
     </>
   );
 }
