@@ -1,7 +1,7 @@
 import InnerPageHero from "@/components/InnerPageHero";
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { breadcrumbSchema } from '@/lib/schema';
+import {  breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import Image from 'next/image';
 
 
@@ -21,7 +21,10 @@ export const metadata: Metadata = {
 
 export default function CourseComparison() {
   return (
-    <>
+    
+      <script type="application/ld+json" dangerouslySetInnerHTML={ __html: faqPageSchema(faqs) } />
+
+<>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cable Avoidance Course Comparison' }]) }} />
 
       <InnerPageHero
@@ -561,6 +564,8 @@ export default function CourseComparison() {
           </div>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
+
     </>
   );
 }

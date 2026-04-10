@@ -45,6 +45,11 @@ export function courseSchema(params: {
   credential?: string;
   duration?: string;
   mode?: string[];
+  image?: string;
+  teaches?: string;
+  coursePrerequisites?: string;
+  educationalLevel?: string;
+  offers?: boolean;
 }): string {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -56,6 +61,11 @@ export function courseSchema(params: {
     ...(params.credential
       ? { "educationalCredentialAwarded": params.credential }
       : {}),
+    ...(params.image ? { "image": params.image } : {}),
+    ...(params.teaches ? { "teaches": params.teaches } : {}),
+    ...(params.coursePrerequisites ? { "coursePrerequisites": params.coursePrerequisites } : {}),
+    ...(params.educationalLevel ? { "educationalLevel": params.educationalLevel } : {}),
+    ...(params.offers ? { "offers": { "@type": "Offer", "priceCurrency": "GBP", "description": "Contact for tailored quote" } } : {}),
     "hasCourseInstance": {
       "@type": "CourseInstance",
       "courseMode": params.mode ?? ["onsite"],
@@ -63,14 +73,13 @@ export function courseSchema(params: {
     },
   });
 }
-
 export function localBusinessSchema(): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": `${SITE_URL}/#localbusiness`,
     "name": "Sygma Solutions",
-    "description": "UK specialist in underground utility location and avoidance training. EUSR, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2004.",
+    "description": "UK specialist in underground utility location and avoidance training. EUSR, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2005.",
     "url": SITE_URL,
     "telephone": "+442039718252",
     "email": "info@sygma-solutions.com",
@@ -99,6 +108,7 @@ export function localBusinessSchema(): Record<string, unknown> {
     "image": "https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto/CAT4-and-Genny-54",
     "sameAs": [
       "https://www.linkedin.com/company/sygma-solutions",
+      "https://x.com/sygmasolutions",
     ],
   };
 }
@@ -116,7 +126,7 @@ export function organizationSchema(): Record<string, unknown> {
       "width": 200,
       "height": 50,
     },
-    "description": "The UK's only independent specialist in underground utility location and avoidance training. Delivering accredited courses nationwide since 2004.",
+    "description": "The UK's only independent specialist in underground utility location and avoidance training. Delivering accredited courses nationwide since 2005.",
     "telephone": "+442039718252",
     "email": "info@sygma-solutions.com",
     "address": {
@@ -129,7 +139,7 @@ export function organizationSchema(): Record<string, unknown> {
       "@type": "Country",
       "name": "United Kingdom",
     },
-    "foundingDate": "2004",
+    "foundingDate": "2005",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
       "minValue": 5,
@@ -137,6 +147,7 @@ export function organizationSchema(): Record<string, unknown> {
     },
     "sameAs": [
       "https://www.linkedin.com/company/sygma-solutions",
+      "https://x.com/sygmasolutions",
     ],
   };
 }

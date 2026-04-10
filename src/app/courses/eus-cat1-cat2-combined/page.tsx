@@ -50,7 +50,7 @@ export default function EusCat12Combined() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 and 2 Training", description: "Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.", url: "/courses/eus-cat1-cat2-combined", credential: "EUSR CAT 1 and 2 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "EUSR CAT 1 and 2 Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 and 2 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="EUSR CAT1 and CAT2 Combined: Two-Day Utility Avoidance and Safe Dig Training"

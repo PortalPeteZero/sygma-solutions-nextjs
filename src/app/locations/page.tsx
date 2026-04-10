@@ -1,7 +1,8 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
+import { MapPin, Phone } from 'lucide-react';
+import { breadcrumbSchema, localBusinessSchema } from '@/lib/schema';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
@@ -75,6 +76,9 @@ const courseMatrix = [
 
 export default function Locations() {
   return (
+    <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
     <>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}

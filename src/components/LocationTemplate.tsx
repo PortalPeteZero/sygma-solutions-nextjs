@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 import Image from 'next/image';
 import type { LocationPageData } from '@/data/locations/types';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export default function LocationTemplate({ data }: { data: LocationPageData }) {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations", to: "/locations" }, { label: data.title }]) }} />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import LocationTemplate from '@/components/LocationTemplate';
-import { locationData } from '@/data/locations/manchester';
+import { breadcrumbSchema, locationData } from '@/data/locations/manchester';
 
 export const metadata: Metadata = locationData.metadata;
 

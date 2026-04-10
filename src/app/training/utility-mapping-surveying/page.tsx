@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Metadata } from 'next';
+import { breadcrumbSchema, Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
-import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { breadcrumbSchema, DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Utility Mapping & Survey Courses | PAS128 | Sygma',
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 
 export default function UtilityMappingHub() {
   return (
+    <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "All Courses", to: "/courses" }, { label: "Utility Mapping & Surveying" }]) }} />
     <>
       <InnerPageHero
         eyebrow="Utility Mapping"

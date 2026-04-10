@@ -1,3 +1,4 @@
+import { faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -19,7 +20,11 @@ export const metadata: Metadata = {
 
 export default function CableAvoidanceManchester() {
   return (
-    <>
+    
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "All Courses", to: "/courses" }, { label: "Cable Avoidance Training Manchester" }]) }} />
+
+      <>
       <div className="relative w-full h-96 overflow-hidden bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700">
         <div className="flex flex-col justify-end p-8 md:p-12 h-full">
           <div className="eyebrow text-blue-400 mb-2">Utility Avoidance</div>
@@ -171,6 +176,8 @@ export default function CableAvoidanceManchester() {
           </div>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{{ __html: faqPageSchema(faqs) }}} />
+
     </>
   );
 }

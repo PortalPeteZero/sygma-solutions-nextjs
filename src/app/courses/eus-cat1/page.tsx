@@ -66,7 +66,7 @@ export default function EusCat1() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 Training", description: "EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.", url: "/courses/eus-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "EUSR CAT 1 Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="EUSR CAT1: EUSR-Registered Utility Avoidance Training"
