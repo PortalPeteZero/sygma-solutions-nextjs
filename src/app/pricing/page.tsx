@@ -51,7 +51,7 @@ export default function PricingPage() {
     },
     {
       q: 'What is not included in the course fee?',
-      a: 'The only cost not included is the awarding body registration fee where applicable. For EUS courses, there is an EUS registration fee per delegate, paid to Energy and Utility Skills. This is fixed by the awarding body and passed through at cost with no Sygma markup. Your trainer will confirm the current fee at booking.',
+      a: 'The only cost not included is the awarding body registration fee where applicable. For EUSR courses, there is an EUSR registration fee per delegate, paid to Energy and Utility Skills. This is fixed by the awarding body and passed through at cost with no Sygma markup. Your trainer will confirm the current fee at booking.',
     },
     {
       q: 'Can CITB-registered employers access funding?',

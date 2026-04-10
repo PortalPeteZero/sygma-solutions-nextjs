@@ -136,7 +136,7 @@ export default function Hsg47Explained() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">How Training Maps to HSG47</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Every cable avoidance course that Sygma delivers is structured around the principles in HSG47. Our courses cover plans interpretation, all four locating modes, all Genny signal application methods, signal interpretation, depth estimation, and safe digging practices. The assessment criteria in both our EUS CAT1 and ProQual CAT1 courses map directly to the competence expectations set out in the guidance.
+              Every cable avoidance course that Sygma delivers is structured around the principles in HSG47. Our courses cover plans interpretation, all four locating modes, all Genny signal application methods, signal interpretation, depth estimation, and safe digging practices. The assessment criteria in both our EUSR CAT1 and ProQual CAT1 courses map directly to the competence expectations set out in the guidance.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -171,7 +171,7 @@ export default function Hsg47Explained() {
               <h3 className="font-bold text-foreground mb-2">Related Courses</h3>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/courses/cat4-hsg47-awareness-online" className="text-primary hover:underline">CAT4 and HSG47 Awareness Online</Link></li>
-                <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUS CAT1 Cable Avoidance Training</Link></li>
+                <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
                 <li><Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1 Training</Link></li>
                 <li><Link href="/courses/plans-and-process" className="text-primary hover:underline">Plans and Process Training</Link></li>
               </ul>

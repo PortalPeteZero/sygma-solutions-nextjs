@@ -18,8 +18,8 @@ const faqs = [
                 a: "No. The combined programme is designed to take delegates from no prior training through to ProQual CAT1 and CAT2 qualification in two days. The classroom content on day one provides all the foundation knowledge required for the practical work on day two.",
               },
               {
-                q: "Is this the same as EUS CAT1 and CAT2?",
-                a: "No. ProQual CAT1 and CAT2 are regulated qualifications through ProQual Accreditations. EUS CAT1 and CAT2 are industry-recognised qualifications administered through EUSR. Both cover utility avoidance, but through different frameworks. Many organisations accept either; some require the RQF-regulated ProQual qualification specifically. Sygma can advise on which is appropriate for your team.",
+                q: "Is this the same as EUSR CAT1 and CAT2?",
+                a: "No. ProQual CAT1 and CAT2 are regulated qualifications through ProQual Accreditations. EUSR CAT1 and CAT2 are industry-recognised qualifications administered through EUSR. Both cover utility avoidance, but through different frameworks. Many organisations accept either; some require the RQF-regulated ProQual qualification specifically. Sygma can advise on which is appropriate for your team.",
               },
               {
                 q: "What if some delegates use equipment other than a Radiodetection locator?",
@@ -455,8 +455,8 @@ export default function ProqualCat1Cat2Combined() {
           <div className="grid md:grid-cols-3 gap-5">
             {[
               {
-                title: "EUS CAT1 and CAT2 Combined",
-                desc: "The EUS equivalent of this ProQual programme. Two-day combined EUS CAT1 and CAT2 covering the same content through the EUSR framework.",
+                title: "EUSR CAT1 and CAT2 Combined",
+                desc: "The EUSR equivalent of this ProQual programme. Two-day combined EUSR CAT1 and CAT2 covering the same content through the EUSR framework.",
                 link: "/courses/eus-cat1-cat2-combined",
               },
               {
@@ -548,7 +548,7 @@ export default function ProqualCat1Cat2Combined() {
               href="/courses/eus-cat1-cat2-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS CAT1 and CAT2 Combined
+              View EUSR CAT1 and CAT2 Combined
             </Link>
           </div>
         </div>

@@ -10,8 +10,8 @@ const faqs = [
                 a: "The QCF (Qualifications and Credit Framework) Level 2 Award has been superseded by the RQF (Regulated Qualifications Framework) Level 2 Award. The qualification name (Level 2 Award in Utility Location and Avoidance) is the same, and the subject matter is equivalent. If your operatives hold an older QCF qualification, they will need to complete the RQF version to hold a current, recognised qualification.",
               },
               {
-                q: "What is the difference between the RQF Level 2 and the EUS CAT1 qualification?",
-                a: "These are two different qualification schemes. The RQF Level 2 Award in Utility Location and Avoidance is a nationally recognised qualification delivered through the RQF framework. EUS CAT1 is an EUSR-registered qualification. Both cover utility location and avoidance. The right qualification depends on your client or contract requirements (some specify EUS, others accept the Level 2). Contact Sygma if you are unsure which to choose.",
+                q: "What is the difference between the RQF Level 2 and the EUSR CAT1 qualification?",
+                a: "These are two different qualification schemes. The RQF Level 2 Award in Utility Location and Avoidance is a nationally recognised qualification delivered through the RQF framework. EUSR CAT1 is an EUSR-registered qualification. Both cover utility location and avoidance. The right qualification depends on your client or contract requirements (some specify EUSR, others accept the Level 2). Contact Sygma if you are unsure which to choose.",
               },
               {
                 q: "Which format is right for my team?",
@@ -464,7 +464,7 @@ export default function RqfLevel2Award() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              title: "EUS CAT1",
+              title: "EUSR CAT1",
               desc: "EUSR-registered qualification. Common requirement in utility sector frameworks.",
               href: "/courses/eus-cat1",
             },
@@ -525,7 +525,7 @@ export default function RqfLevel2Award() {
             <Link href="/courses/eus-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              Compare With EUS CAT1
+              Compare With EUSR CAT1
             </Link>
           </div>
         </div>

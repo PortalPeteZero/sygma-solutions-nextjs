@@ -70,7 +70,7 @@ export function localBusinessSchema(): Record<string, unknown> {
     "@type": "LocalBusiness",
     "@id": `${SITE_URL}/#localbusiness`,
     "name": "Sygma Solutions",
-    "description": "UK specialist in underground utility location and avoidance training. EUS, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2004.",
+    "description": "UK specialist in underground utility location and avoidance training. EUSR, ProQual, and CITB accredited. Delivering CAT and Genny, PAS 128, GPR, and professional utility mapping courses nationwide since 2004.",
     "url": SITE_URL,
     "telephone": "+442039718252",
     "email": "info@sygma-solutions.com",

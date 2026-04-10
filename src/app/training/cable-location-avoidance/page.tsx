@@ -294,7 +294,7 @@ export default function UtilityAvoidanceHub() {
         <p className="eyebrow mb-3">All Courses</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Our Cable Avoidance Training Courses</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
-          Each course below has its own dedicated page with full learning outcomes, assessment criteria, agenda, and booking information. All are available as EUS, ProQual, or in-house certificate routes for buried services training and cable detection training needs.
+          Each course below has its own dedicated page with full learning outcomes, assessment criteria, agenda, and booking information. All are available as EUSR, ProQual, or in-house certificate routes for buried services training and cable detection training needs.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           {courseCards.map((card) => (
@@ -476,7 +476,7 @@ export default function UtilityAvoidanceHub() {
             },
             {
               title: "Full Pathway Coverage",
-              body: "From half-day awareness sessions to Level 6 management qualifications. EUS, ProQual, and ICES routes all delivered by a single provider.",
+              body: "From half-day awareness sessions to Level 6 management qualifications. EUSR, ProQual, and ICES routes all delivered by a single provider.",
             },
           ].map(({ title, body }) => (
             <div key={title} className="bg-muted/20 rounded-xl border border-border p-6">

@@ -5,7 +5,7 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
-  description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUS CAT1, ProQual, PAS 128, GPR. On-site delivery, CITB approved.',
+  description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUSR CAT1, ProQual, PAS 128, GPR. On-site delivery, CITB approved.',
   alternates: { canonical: 'https://sygma-solutions.com/courses' },
   openGraph: {
     title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 
 export default function CoursesPage() {
   const faqs = [
-    { q: 'What CAT and Genny training courses does Sygma offer?', a: 'Sygma offers a full range of cable avoidance training including EUS CAT1, ProQual CAT1 and CAT1 Plus, EUS CAT2 Safe Dig, CAT Manager, and the RQF Level 2 Award. We also deliver specialist courses such as Advanced EM Locator, GPR training, and PAS128 awareness.' },
+    { q: 'What CAT and Genny training courses does Sygma offer?', a: 'Sygma offers a full range of cable avoidance training including EUSR CAT1, ProQual CAT1 and CAT1 Plus, EUSR CAT2 Safe Dig, CAT Manager, and the RQF Level 2 Award. We also deliver specialist courses such as Advanced EM Locator, GPR training, and PAS128 awareness.' },
     { q: 'Are Sygma courses CITB approved?', a: 'Yes. Sygma is a CITB Approved Training Organisation. CITB-registered employers may be able to access funding support for eligible courses through the CITB Employer Network.' },
-    { q: 'What is the difference between EUS CAT1 and ProQual CAT1?', a: 'EUS CAT1 leads to EUSR card registration, which is the industry-standard proof of cable avoidance competency. ProQual CAT1 is externally verified and accredited by ProQual Accreditations, offering a higher standard of individual assessment. Both cover cable avoidance but through different assessment routes.' },
+    { q: 'What is the difference between EUSR CAT1 and ProQual CAT1?', a: 'EUSR CAT1 leads to EUSR card registration, which is the industry-standard proof of cable avoidance competency. ProQual CAT1 is externally verified and accredited by ProQual Accreditations, offering a higher standard of individual assessment. Both cover cable avoidance but through different assessment routes.' },
     { q: 'Do you deliver training on-site at our premises?', a: 'Yes. Sygma delivers on-site training across the UK. On-site delivery is available for most courses and requires a minimum of 4 delegates. We bring all equipment and materials to your location.' },
-    { q: 'What qualifications can I gain through Sygma?', a: 'Depending on the course, you can gain EUS/EUSR cards, ProQual accredited certificates, Ofqual-regulated ProQual Level 2 to Level 6 qualifications in utility mapping and surveying, and Sygma attendance certificates.' },
+    { q: 'What qualifications can I gain through Sygma?', a: 'Depending on the course, you can gain EUSR/EUSR cards, ProQual accredited certificates, Ofqual-regulated ProQual Level 2 to Level 6 qualifications in utility mapping and surveying, and Sygma attendance certificates.' },
     { q: 'What is the maximum group size for assessed courses?', a: 'Sygma operates a strict maximum of 8 delegates per trainer/assessor session for all assessed courses. This is a deliberate limit maintained across all delivery to ensure proper individual assessment.' },
   ];
 

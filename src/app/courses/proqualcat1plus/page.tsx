@@ -14,8 +14,8 @@ const faqs = [
     a: "Yes. If your team already holds current ProQual CAT1, you can book the 1-day Plus add-on instead of the full 2-day programme. The add-on covers the seven additional theory criteria and thirty-two additional practical criteria that the standard CAT1 does not include. Contact us and we will confirm whether your existing CAT1 is current and whether the 1-day option is suitable.",
   },
   {
-    q: "What is the difference between ProQual CAT1 Plus and EUS CAT1?",
-    a: "They are fundamentally different qualifications. ProQual CAT1 Plus builds on an already more rigorous CAT1 base and adds seven theory criteria and over thirty practical criteria that EUS does not cover at all. Topics like PAS128 vs Utility STATS plans, capacitance technique, signal clamp, depth quality verification, HV cable limitations, blind induction sweeps, and signal loss identification are all assessed in ProQual CAT1 Plus but absent from EUS entirely. Where EUS relies on multiple choice questions, ProQual uses written theory papers and individually assessed hands-on practical criteria. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 and CAT1 Plus are the only qualifications we do not have to add anything to, because they cover everything needed.",
+    q: "What is the difference between ProQual CAT1 Plus and EUSR CAT1?",
+    a: "They are fundamentally different qualifications. ProQual CAT1 Plus builds on an already more rigorous CAT1 base and adds seven theory criteria and over thirty practical criteria that EUSR does not cover at all. Topics like PAS128 vs Utility STATS plans, capacitance technique, signal clamp, depth quality verification, HV cable limitations, blind induction sweeps, and signal loss identification are all assessed in ProQual CAT1 Plus but absent from EUSR entirely. Where EUSR relies on multiple choice questions, ProQual uses written theory papers and individually assessed hands-on practical criteria. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 and CAT1 Plus are the only qualifications we do not have to add anything to, because they cover everything needed.",
   },
   {
     q: "How many individual practical criteria are assessed across the 2 days?",
@@ -381,19 +381,19 @@ export default function ProQualCat1Plus() {
         </div>
       </div>
 
-      {/* ProQual vs EUS Comparison */}
+      {/* ProQual vs EUSR Comparison */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Not All CAT1 Courses Are Created Equal</p>
-          <h2 className="text-2xl font-black mb-4 text-foreground">ProQual CAT1 Plus vs EUS CAT1: Why These Are Not Equivalent</h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">The ProQual CAT1 Plus goes far beyond what the EUS CAT1 assesses. Where EUS covers a topic through multiple choice questions only, we have marked it as not covered, because an MCQ does not demonstrate that a candidate can apply that knowledge in practice.</p>
+          <h2 className="text-2xl font-black mb-4 text-foreground">ProQual CAT1 Plus vs EUSR CAT1: Why These Are Not Equivalent</h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed">The ProQual CAT1 Plus goes far beyond what the EUSR CAT1 assesses. Where EUSR covers a topic through multiple choice questions only, we have marked it as not covered, because an MCQ does not demonstrate that a candidate can apply that knowledge in practice.</p>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-muted/50 border-b border-border">
                   <th className="px-5 py-3 text-left font-bold text-foreground">Assessment Area</th>
                   <th className="px-5 py-3 text-left font-bold text-foreground">ProQual CAT1 Plus</th>
-                  <th className="px-5 py-3 text-left font-bold text-foreground">EUS CAT1</th>
+                  <th className="px-5 py-3 text-left font-bold text-foreground">EUSR CAT1</th>
                 </tr>
               </thead>
               <tbody>

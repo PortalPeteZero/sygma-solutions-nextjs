@@ -5,11 +5,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training Scotland | Sygma Solutions',
-  description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUS CAT1, ProQual qualifications.',
+  description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUSR CAT1, ProQual qualifications.',
   alternates: { canonical: 'https://sygma-solutions.com/cable-avoidance-training-scotland' },
   openGraph: {
     title: 'Cable Avoidance Training Scotland | Sygma Solutions',
-    description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUS CAT1, ProQual qualifications.',
+    description: 'Cable avoidance and utility location training delivered at your site across Scotland. CAT and Genny training, EUSR CAT1, ProQual qualifications.',
     url: 'https://sygma-solutions.com/cable-avoidance-training-scotland',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
@@ -64,7 +64,7 @@ export default function CableAvoidanceScotland() {
             <tbody>
               {[
                 { course: 'CAT and Genny Training (In-House Certificate)', href: '/courses/cable-avoidance-training', duration: '1 day', suitable: 'Operatives new to cable avoidance. Site-level competency with Sygma in-house certificate.' },
-                { course: 'EUS CAT1 (EUSR Category 1)', href: '/courses/eus-cat1', duration: '1 day', suitable: 'Teams that need EUSR card accreditation. Industry-standard cable avoidance qualification.' },
+                { course: 'EUSR CAT1 (EUSR Category 1)', href: '/courses/eus-cat1', duration: '1 day', suitable: 'Teams that need EUSR card accreditation. Industry-standard cable avoidance qualification.' },
                 { course: 'ProQual CAT1 (Accredited by ProQual Accreditations)', href: '/courses/proqualcat1-training', duration: '1 day', suitable: 'Teams requiring a higher assessment standard. Individually mapped, externally verified by ProQual Accreditations.' },
                 { course: 'ProQual CAT1 Plus (Most Advanced Available)', href: '/courses/proqualcat1plus', duration: '2 days', suitable: 'Operatives in complex, high-risk environments. The most advanced cable avoidance qualification in the UK.' },
                 { course: 'Advanced Electromagnetic Location', href: '/courses/advanced-em-locator', duration: '1 day', suitable: 'Experienced operatives. Using the RD8200 and related locators to their full capability.' },

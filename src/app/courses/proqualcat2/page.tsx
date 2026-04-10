@@ -10,15 +10,15 @@ const faqs = [
   },
   {
     q: "Do we need to hold ProQual CAT1 before attending ProQual CAT2?",
-    a: "ProQual CAT1 or EUS CAT1 (or an equivalent utility locating qualification) is strongly recommended as a pre-requisite. There is no formal entry requirement, but ProQual CAT2 includes on-site locating work as part of the safe dig assessment. Delegates who are not comfortable operating a CAT and Genny locator will find the practical element difficult. The entry level for this training course assumes basic understanding of utility avoidance principles.",
+    a: "ProQual CAT1 or EUSR CAT1 (or an equivalent utility locating qualification) is strongly recommended as a pre-requisite. There is no formal entry requirement, but ProQual CAT2 includes on-site locating work as part of the safe dig assessment. Delegates who are not comfortable operating a CAT and Genny locator will find the practical element difficult. The entry level for this training course assumes basic understanding of utility avoidance principles.",
   },
   {
     q: "Can ProQual CAT2 be delivered on the same day as ProQual CAT1?",
     a: "For most groups, combining CAT1 and CAT2 in a single day is not recommended due to the breadth of content and the on-site practical requirements of both qualifications. However, Sygma Solutions can design a two-day combined programme for groups who need both qualifications. Contact us to discuss your specific requirements.",
   },
   {
-    q: "Is ProQual CAT2 better than EUS CAT2?",
-    a: "Neither is universally better. The right qualification depends on the competence framework your organisation uses. ProQual tends to be preferred in regulated sectors where independent certification matters. EUS is widely recognised across utility companies and private contractors. Both meet BS 8475:2015 standard. Discuss with your training provider which suits your team\u2019s needs.",
+    q: "Is ProQual CAT2 better than EUSR CAT2?",
+    a: "Neither is universally better. The right qualification depends on the competence framework your organisation uses. ProQual tends to be preferred in regulated sectors where independent certification matters. EUSR is widely recognised across utility companies and private contractors. Both meet BS 8475:2015 standard. Discuss with your training provider which suits your team\u2019s needs.",
   },
   {
     q: "What practical assessment is involved?",

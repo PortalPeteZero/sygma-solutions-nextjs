@@ -14,16 +14,16 @@ const faqs = [
               a: "Yes. Bespoke elements can include your company's specific permit to dig, your strike history and lessons learned, your site-specific hazards and your documentation. The QTS surface laid cables programme is an example of how the course can be customised around a client's exact needs.",
             },
             {
-              q: "What is the difference between vScan and transmitter training and EUS CAT1?",
-              a: "The EUS CAT1 is an EUSR-registered qualification with fixed assessment criteria. The vScan & Tx course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the vScan & Tx course for bulk refresher training and the EUS CAT1 for formal qualification.",
+              q: "What is the difference between vScan and transmitter training and EUSR CAT1?",
+              a: "The EUSR CAT1 is an EUSR-registered qualification with fixed assessment criteria. The vScan & Tx course is a bespoke in-house training programme with no fixed awarding body, giving Sygma greater flexibility to cover advanced topics and tailor content to your organisation. Many clients use the vScan & Tx course for bulk refresher training and the EUSR CAT1 for formal qualification.",
             },
             {
               q: "Is the course suitable for delegates with no previous locating experience?",
               a: "Yes. The course is designed to be accessible to delegates at any level. For delegates who are completely new to utility locating, the two-day format is recommended to allow sufficient time on the practical site.",
             },
             {
-              q: "Can we combine this course with EUS CAT1 or CAT2?",
-              a: "Yes. Sygma offers combined course formats that incorporate EUS CAT1, CAT2 Safe Dig and vScan & Tx training content in a single programme. Contact us to discuss combined booking options.",
+              q: "Can we combine this course with EUSR CAT1 or CAT2?",
+              a: "Yes. Sygma offers combined course formats that incorporate EUSR CAT1, CAT2 Safe Dig and vScan & Tx training content in a single programme. Contact us to discuss combined booking options.",
             },
             {
               q: "What qualifications do the Sygma trainers hold?",
@@ -483,7 +483,7 @@ export default function VscanTransmitterTraining() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Content</p>
               <h3 className="text-base font-bold text-foreground mb-2">Content That Exceeds Industry Standards</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Whether you choose in-house, EUS or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Whether you choose in-house, EUSR or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Methodology</p>
@@ -523,7 +523,7 @@ export default function VscanTransmitterTraining() {
           <div className="grid md:grid-cols-3 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Qualification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">EUSR-registered qualification for operatives who need a formal card.</p>
               <Link href="/courses/eus-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -585,7 +585,7 @@ export default function VscanTransmitterTraining() {
               href="/courses/eus-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS CAT1 (Formal Qualification)
+              View EUSR CAT1 (Formal Qualification)
             </Link>
           </div>
         </div>

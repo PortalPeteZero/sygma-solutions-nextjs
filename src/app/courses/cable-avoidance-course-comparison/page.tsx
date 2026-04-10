@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: 'Cable Avoidance Course Comparison | EUS vs ProQual | Sygma',
+  title: 'Cable Avoidance Course Comparison | EUSR vs ProQual | Sygma',
   description: 'Compare EUSR CAT1, ProQual CAT1, and ProQual CAT1 Plus cable avoidance qualifications. Which course is right for your team?',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison' },
   openGraph: {
-    title: 'Cable Avoidance Course Comparison | EUS vs ProQual | Sygma',
+    title: 'Cable Avoidance Course Comparison | EUSR vs ProQual | Sygma',
     description: 'Compare EUSR CAT1, ProQual CAT1, and ProQual CAT1 Plus cable avoidance qualifications. Which course is right for your team?',
     url: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison',
     siteName: 'Sygma Solutions',
@@ -26,7 +26,7 @@ export default function CourseComparison() {
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="EUS CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus: Which Cable Avoidance Course Is Right for Your Team?"
+        headline="EUSR CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus: Which Cable Avoidance Course Is Right for Your Team?"
         sub="Three qualifications. One comparison. Sygma delivers all three. Use this page to understand the difference and choose what your team actually needs."
         image="CAT4-and-Genny-02"
         breadcrumbs={[
@@ -77,9 +77,9 @@ export default function CourseComparison() {
                   label: "Cable Avoidance Training",
                 },
                 {
-                  qual: "EUS CAT1: EUSR Category 1",
+                  qual: "EUSR CAT1: EUSR Category 1",
                   to: "/courses/eus-cat1",
-                  label: "EUS CAT1 Accreditation",
+                  label: "EUSR CAT1 Accreditation",
                 },
                 {
                   qual: "ProQual CAT1 (externally audited)",
@@ -126,13 +126,13 @@ export default function CourseComparison() {
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What This Comparison Covers</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mb-8">
             <p>
-              The EUS CAT1, ProQual CAT1 and ProQual CAT1 Plus are the three main cable avoidance qualifications you are likely to encounter when specifying training for operatives who locate and avoid buried services.
+              The EUSR CAT1, ProQual CAT1 and ProQual CAT1 Plus are the three main cable avoidance qualifications you are likely to encounter when specifying training for operatives who locate and avoid buried services.
             </p>
             <p>
-              All three relate to the use of a Cable Avoidance Tool (CAT) and Signal Generator (Genny) on site, but they are not equivalent qualifications. The ProQual qualifications are significantly more thorough. They cover more assessment areas, include topics that EUS does not assess at all, and use written theory papers rather than multiple choice questions. The differences are substantial and worth understanding before you specify training for your team.
+              All three relate to the use of a Cable Avoidance Tool (CAT) and Signal Generator (Genny) on site, but they are not equivalent qualifications. The ProQual qualifications are significantly more thorough. They cover more assessment areas, include topics that EUSR does not assess at all, and use written theory papers rather than multiple choice questions. The differences are substantial and worth understanding before you specify training for your team.
             </p>
             <p>
-              The EUS CAT1 is the most widely held qualification and is recognised across the utility sector. The ProQual qualifications are accredited to a higher standard and externally audited and are awarded by ProQual Accreditations, a dedicated accreditation arm of ProQual AB Limited.
+              The EUSR CAT1 is the most widely held qualification and is recognised across the utility sector. The ProQual qualifications are accredited to a higher standard and externally audited and are awarded by ProQual Accreditations, a dedicated accreditation arm of ProQual AB Limited.
             </p>
             <p>
               Important: this comparison is based on the published minimum specifications for each qualification. How well a provider delivers to those specifications varies. Sygma delivers above the minimum specification for every qualification it offers. The ProQual CAT1 is the only qualification where we do not need to add content, because we helped develop it to the standard the industry actually requires.
@@ -142,7 +142,7 @@ export default function CourseComparison() {
           {/* Disclaimer callout */}
           <div className="border-l-4 border-accent bg-muted/40 rounded-r-xl p-5 max-w-3xl">
             <p className="text-sm text-muted-foreground leading-relaxed italic">
-              EUS CAT1 column reflects the published EUS Category 1 minimum specification. The EUS standard itself states: the specification does not preclude employers and providers from adding to the specification in their own training programmes. Sygma Solutions has always done so. ProQual columns reflect the published ProQual specification as delivered by Sygma Solutions Ltd.
+              EUSR CAT1 column reflects the published EUSR Category 1 minimum specification. The EUSR standard itself states: the specification does not preclude employers and providers from adding to the specification in their own training programmes. Sygma Solutions has always done so. ProQual columns reflect the published ProQual specification as delivered by Sygma Solutions Ltd.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function CourseComparison() {
             <thead>
               <tr className="bg-primary text-white">
                 <th className="text-left px-4 py-3 font-bold w-56"></th>
-                <th className="text-left px-4 py-3 font-bold">EUS CAT1 (min spec)</th>
+                <th className="text-left px-4 py-3 font-bold">EUSR CAT1 (min spec)</th>
                 <th className="text-left px-4 py-3 font-bold">ProQual CAT1</th>
                 <th className="text-left px-4 py-3 font-bold">ProQual CAT1 Plus</th>
               </tr>
@@ -250,13 +250,13 @@ export default function CourseComparison() {
                 },
                 {
                   label: "Practical assessment standard",
-                  eus: "Practical elements to EUS minimum specification",
+                  eus: "Practical elements to EUSR minimum specification",
                   pq1: "Hands-on practical elements (individually assessed and signed off)",
                   pq1p: "Substantially extended hands-on practical (all elements individually assessed and signed off)",
                 },
                 {
                   label: "Genny First methodology (PP3.3)",
-                  eus: "Not a named requirement in the EUS spec",
+                  eus: "Not a named requirement in the EUSR spec",
                   pq1: "Not a separate named criterion",
                   pq1p: "Required and assessed; candidates must exhaust all transmitter connection opportunities before moving to induction",
                 },
@@ -392,17 +392,17 @@ export default function CourseComparison() {
               <tbody>
                 {[
                   {
-                    situation: "Your contract or procurement framework requires EUS CAT1 accreditation specifically",
-                    rec: "EUS CAT1",
+                    situation: "Your contract or procurement framework requires EUSR CAT1 accreditation specifically",
+                    rec: "EUSR CAT1",
                     to: "/courses/eus-cat1",
                   },
                   {
                     situation: "Your client specifies EUSR card holders",
-                    rec: "EUS CAT1",
+                    rec: "EUSR CAT1",
                     to: "/courses/eus-cat1",
                   },
                   {
-                    situation: "You want operatives accredited to a higher, externally audited standard than the EUS minimum specification",
+                    situation: "You want operatives accredited to a higher, externally audited standard than the EUSR minimum specification",
                     rec: "ProQual CAT1",
                     to: "/courses/proqualcat1-training",
                   },
@@ -453,13 +453,13 @@ export default function CourseComparison() {
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why ProQual CAT1 Is a Significantly Higher Standard</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl">
           <p>
-            The difference between EUS CAT1 and ProQual CAT1 is not just about how competency is assessed. It is about what is assessed. ProQual CAT1 covers assessment areas that EUS does not include at all.
+            The difference between EUSR CAT1 and ProQual CAT1 is not just about how competency is assessed. It is about what is assessed. ProQual CAT1 covers assessment areas that EUSR does not include at all.
           </p>
           <p>
-            <strong className="text-foreground">Topics EUS does not cover:</strong> CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. These are absent from the EUS specification entirely.
+            <strong className="text-foreground">Topics EUSR does not cover:</strong> CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. These are absent from the EUSR specification entirely.
           </p>
           <p>
-            <strong className="text-foreground">Topics EUS covers only by MCQ (insufficient):</strong> Legislation including HSAWA, NRSWA, HSG47, GS6, and PAS128. The features and need for a safe system of work. Risks of over-reliance on utility plans. Specific locator features including shallow cable alert, Avoidance mode, depth estimation, and calibration. Data-enabled locator use. A multiple choice question tests whether someone can pick the right answer from a list. It does not demonstrate that they understand the subject or can apply it on site. ProQual assesses all of these through written theory papers, and in many cases requires a practical demonstration as well.
+            <strong className="text-foreground">Topics EUSR covers only by MCQ (insufficient):</strong> Legislation including HSAWA, NRSWA, HSG47, GS6, and PAS128. The features and need for a safe system of work. Risks of over-reliance on utility plans. Specific locator features including shallow cable alert, Avoidance mode, depth estimation, and calibration. Data-enabled locator use. A multiple choice question tests whether someone can pick the right answer from a list. It does not demonstrate that they understand the subject or can apply it on site. ProQual assesses all of these through written theory papers, and in many cases requires a practical demonstration as well.
           </p>
           <p>
             ProQual CAT1 is assessed to an individually mapped criterion standard. Each candidate is assessed against every criterion individually, and the assessor documents whether each one was met. That record is externally verified by a ProQual Accreditations auditor. If a candidate does not meet every criterion, they do not pass.
@@ -471,7 +471,7 @@ export default function CourseComparison() {
             In 21 years of delivering utility avoidance training, Sygma has had to add content to every qualification on the market to make it fit for the real demands of the industry. Every single one. The ProQual CAT1 is the first qualification we developed in partnership with an awarding body that covers everything needed from a course in this subject. It is the only qualification we do not have to supplement, because the syllabus was built to the standard the industry actually needs.
           </p>
           <p>
-            If your procurement framework gives you a choice between EUS CAT1 and ProQual CAT1, the ProQual qualification delivers a measurably higher standard of assessed competence. It covers more, it assesses deeper, and it documents everything to a standard that can be externally verified.
+            If your procurement framework gives you a choice between EUSR CAT1 and ProQual CAT1, the ProQual qualification delivers a measurably higher standard of assessed competence. It covers more, it assesses deeper, and it documents everything to a standard that can be externally verified.
           </p>
         </div>
       </section>
@@ -479,7 +479,7 @@ export default function CourseComparison() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-41" width={1200} height={800} alt="ProQual vs EUS training comparison" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-41" width={1200} height={800} alt="ProQual vs EUSR training comparison" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-53" width={1200} height={800} alt="Hands-on training qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -497,12 +497,12 @@ export default function CourseComparison() {
           <div className="space-y-4">
             {[
               {
-                q: "Can my team hold both EUS CAT1 and ProQual CAT1?",
-                a: "Yes. They are separate qualifications issued by different bodies. An operative can hold both. In practice, most clients who move to ProQual CAT1 do so as a direct upgrade; their team completes ProQual CAT1 instead of renewing their EUS CAT1. Both are valid for three years.",
+                q: "Can my team hold both EUSR CAT1 and ProQual CAT1?",
+                a: "Yes. They are separate qualifications issued by different bodies. An operative can hold both. In practice, most clients who move to ProQual CAT1 do so as a direct upgrade; their team completes ProQual CAT1 instead of renewing their EUSR CAT1. Both are valid for three years.",
               },
               {
-                q: "Is ProQual CAT1 accepted by the same principal contractors as EUS CAT1?",
-                a: "This varies by contractor and procurement framework. EUS CAT1 remains the more widely mandated qualification across the utility sector. ProQual CAT1 is accepted by a growing number of principal contractors and is often specified alongside or in place of EUS CAT1 by organisations that require a higher assessment standard. If your contract specifies EUS CAT1 by name, speak to your client before substituting. Sygma can advise based on your sector and client base.",
+                q: "Is ProQual CAT1 accepted by the same principal contractors as EUSR CAT1?",
+                a: "This varies by contractor and procurement framework. EUSR CAT1 remains the more widely mandated qualification across the utility sector. ProQual CAT1 is accepted by a growing number of principal contractors and is often specified alongside or in place of EUSR CAT1 by organisations that require a higher assessment standard. If your contract specifies EUSR CAT1 by name, speak to your client before substituting. Sygma can advise based on your sector and client base.",
               },
               {
                 q: "What does ProQual CAT1 Plus add that standard ProQual CAT1 does not?",
@@ -510,15 +510,15 @@ export default function CourseComparison() {
               },
               {
                 q: "Is ProQual CAT1 an Ofqual-regulated qualification?",
-                a: "No. ProQual CAT1, CAT1 Plus and CAT2 are issued by ProQual Accreditations, a dedicated accreditation arm of ProQual AB Limited. They are externally audited industry accreditations. They are not listed on the Ofqual national qualifications register. The EUS CAT1 is also not an Ofqual-regulated qualification. Neither qualification is an RQF-listed award.",
+                a: "No. ProQual CAT1, CAT1 Plus and CAT2 are issued by ProQual Accreditations, a dedicated accreditation arm of ProQual AB Limited. They are externally audited industry accreditations. They are not listed on the Ofqual national qualifications register. The EUSR CAT1 is also not an Ofqual-regulated qualification. Neither qualification is an RQF-listed award.",
               },
               {
                 q: "How long are these qualifications valid?",
                 a: "All three are valid for three years. Renewal requires re-assessment, not simply a refresher day.",
               },
               {
-                q: "Can Sygma deliver the EUS CAT1 and ProQual CAT1 on the same day or back-to-back?",
-                a: "Yes. Sygma delivers all three qualifications (EUS CAT1, ProQual CAT1 and ProQual CAT1 Plus) to your premises, UK-wide. For teams that want to upgrade from EUS CAT1 to ProQual CAT1, both can be scheduled as part of a planned training programme. Contact us to discuss your requirements.",
+                q: "Can Sygma deliver the EUSR CAT1 and ProQual CAT1 on the same day or back-to-back?",
+                a: "Yes. Sygma delivers all three qualifications (EUSR CAT1, ProQual CAT1 and ProQual CAT1 Plus) to your premises, UK-wide. For teams that want to upgrade from EUSR CAT1 to ProQual CAT1, both can be scheduled as part of a planned training programme. Contact us to discuss your requirements.",
               },
               {
                 q: "What is the 'Genny First' methodology in ProQual CAT1 Plus?",

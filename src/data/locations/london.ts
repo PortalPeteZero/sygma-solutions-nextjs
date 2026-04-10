@@ -40,7 +40,7 @@ export const locationData: LocationPageData = {
   ],
   courses: [
     { course: 'Cable Avoidance Training (CAT and Genny)', desc: 'One-day HSG47-compliant course. Classroom theory and practical site assessment. Sygma in-house certificate issued same day.' },
-    { course: 'EUS CAT1 Accreditation', desc: 'EUSR-registered company scheme accreditation. One-day delivery with practical and written assessment.' },
+    { course: 'EUSR CAT1 Accreditation', desc: 'EUSR-registered company scheme accreditation. One-day delivery with practical and written assessment.' },
     { course: 'ProQual CAT1 and CAT1 Plus', desc: 'ProQual-accredited qualification with individual assessment in all four EML modes.' },
     { course: 'RQF Level 2 Award', desc: 'Nationally recognised formal qualification for operatives locating and avoiding buried services.' },
     { course: 'OSCA On-Site Competency Assessment', desc: 'GPS-stamped, photo-verified competency assessment on your live site. Not a training course.' },

@@ -7,7 +7,7 @@ import Image from 'next/image';
 const faqs = [
             {
               q: "What is CAT and Genny training?",
-              a: "CAT and Genny training teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to detect buried utilities before excavation. It is the core cable avoidance training required to meet HSG47 obligations and ensure operatives are competent before breaking ground near underground services. The course covers electromagnetic theory, all four locating modes (Power, Radio, Genny and Avoidance), signal interpretation, depth estimation and practical on-site assessment. Sygma delivers CAT and Genny training with a Genny-First methodology, meaning operatives learn to connect the signal generator before relying on passive detection modes. Successful delegates can be assessed for an EUS/EUSR CAT1 accredited card, a ProQual CAT1 certificate or a Sygma in-house certification depending on the route chosen.",
+              a: "CAT and Genny training teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to detect buried utilities before excavation. It is the core cable avoidance training required to meet HSG47 obligations and ensure operatives are competent before breaking ground near underground services. The course covers electromagnetic theory, all four locating modes (Power, Radio, Genny and Avoidance), signal interpretation, depth estimation and practical on-site assessment. Sygma delivers CAT and Genny training with a Genny-First methodology, meaning operatives learn to connect the signal generator before relying on passive detection modes. Successful delegates can be assessed for an EUSR/EUSR CAT1 accredited card, a ProQual CAT1 certificate or a Sygma in-house certification depending on the route chosen.",
             },
             {
               q: "How much does a CAT and Genny course cost?",
@@ -23,7 +23,7 @@ const faqs = [
             },
             {
               q: "What is the difference between EUSR CAT1 and EUSR CAT1?",
-              a: "They are the same qualification. EUS stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUS. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.",
+              a: "They are the same qualification. EUSR stands for Energy and Utility Skills, the organisation that sets the standards for utility training including the CAT1 Locate Utility Services course -- commonly known as cat and genny training. EUSR stands for Energy and Utility Skills Register, the database where your qualification card is recorded and verified after completing the course. The industry used the name EUSR CAT1 for years, but the organisation now brands itself as EUSR. Both terms refer to the same one-day cable avoidance training course covering CAT and Genny operation, and the same EUSR-registered card. When searching for training you may see it listed as EUSR CAT1, EUSR CAT1, EUSR CAT1 Locate Utility Services, EUSR Category 1 or EUSR Category 1 -- all refer to the same accredited standard.",
             },
             {
               q: "What equipment do our operatives need to bring?",
@@ -554,7 +554,7 @@ export default function GennyCatTraining() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Content</p>
               <h3 className="text-base font-bold text-foreground mb-2">Content That Exceeds Industry Standards</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Whether you choose in-house, EUS or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Whether you choose in-house, EUSR or ProQual, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Methodology</p>

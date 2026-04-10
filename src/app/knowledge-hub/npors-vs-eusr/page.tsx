@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     q: 'Do I need to retrain if I switch from NPORS to EUSR?',
-    a: 'Yes. They are separate qualifications on separate registers. You would need to complete the EUS CAT1 course and assessment to obtain an EUSR card, regardless of whether you already hold NPORS.',
+    a: 'Yes. They are separate qualifications on separate registers. You would need to complete the EUSR CAT1 course and assessment to obtain an EUSR card, regardless of whether you already hold NPORS.',
   },
   {
     q: 'Can Sygma deliver NPORS cable avoidance training?',
-    a: 'Sygma specialises in EUS and ProQual qualifications. If your client requires EUSR registration or you want an Ofqual-regulated qualification, we can help. Contact us to discuss your specific requirements.',
+    a: 'Sygma specialises in EUSR and ProQual qualifications. If your client requires EUSR registration or you want an Ofqual-regulated qualification, we can help. Contact us to discuss your specific requirements.',
   },
 ];
 
@@ -105,23 +105,23 @@ export default function NporsVsEusr() {
           </aside>
           <article className="min-w-0 flex-1 max-w-3xl">
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              If you manage operatives who work near underground services, you will have come across two cable avoidance qualifications: NPORS and EUSR (sometimes written as EUS). Both involve training on cable avoidance tools (CAT and Genny), and both result in a card that proves the operative has been assessed. But they are not the same qualification, they sit on different registers, and different clients accept different ones. This guide sets out the key differences so you can make the right choice.
+              If you manage operatives who work near underground services, you will have come across two cable avoidance qualifications: NPORS and EUSR (sometimes written as EUSR). Both involve training on cable avoidance tools (CAT and Genny), and both result in a card that proves the operative has been assessed. But they are not the same qualification, they sit on different registers, and different clients accept different ones. This guide sets out the key differences so you can make the right choice.
             </p>
 
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">What Is EUSR?</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              EUSR stands for Energy and Utility Skills Register. It is maintained by Energy and Utility Skills (EUS), the sector skills body for the UK energy and utilities industry. The relevant qualification for cable avoidance is EUS CAT1, which covers the safe use of cable avoidance tools (CAT and Genny) in all four locating modes: Power, Radio, Genny, and Avoidance.
+              EUSR stands for Energy and Utility Skills Register. It is maintained by Energy and Utility Skills (EUSR), the sector skills body for the UK energy and utilities industry. The relevant qualification for cable avoidance is EUSR CAT1, which covers the safe use of cable avoidance tools (CAT and Genny) in all four locating modes: Power, Radio, Genny, and Avoidance.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              EUS CAT1 is a one-day course that includes theory, practical training, and an assessment. On successful completion, the operative is registered on the EUSR database and issued a card valid for three years. Employers and clients can verify the operative's status online via the EUSR register.
+              EUSR CAT1 is a one-day course that includes theory, practical training, and an assessment. On successful completion, the operative is registered on the EUSR database and issued a card valid for three years. Employers and clients can verify the operative's status online via the EUSR register.
             </p>
 
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">What Is NPORS?</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              NPORS stands for National Plant Operators Registration Scheme. It is an independent registration body that covers a wide range of plant and equipment competency categories. The relevant cable avoidance category is NPORS Cable Avoidance Tool (CAT and Genny), which covers similar ground to EUS CAT1 in terms of safe use of the equipment.
+              NPORS stands for National Plant Operators Registration Scheme. It is an independent registration body that covers a wide range of plant and equipment competency categories. The relevant cable avoidance category is NPORS Cable Avoidance Tool (CAT and Genny), which covers similar ground to EUSR CAT1 in terms of safe use of the equipment.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -147,7 +147,7 @@ export default function NporsVsEusr() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              <strong>Industry alignment.</strong> EUSR is specifically designed for the energy and utilities sector. The EUS register is the standard database that most major utility companies, network operators, and their contractors use to verify operative competency. If you work on contracts for gas, electric, water, or telecoms network operators, EUS CAT1 is almost certainly what your client requires.
+              <strong>Industry alignment.</strong> EUSR is specifically designed for the energy and utilities sector. The EUSR register is the standard database that most major utility companies, network operators, and their contractors use to verify operative competency. If you work on contracts for gas, electric, water, or telecoms network operators, EUSR CAT1 is almost certainly what your client requires.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -165,7 +165,7 @@ export default function NporsVsEusr() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Which One Should You Choose?</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The answer depends on your client requirements. Start by checking what your principal contractor or network operator specifies. In the utility sector, EUS CAT1 is the most commonly required qualification by a significant margin. Major network operators and their Tier 1 contractors typically require EUSR registration as a minimum for anyone working near underground services on their projects.
+              The answer depends on your client requirements. Start by checking what your principal contractor or network operator specifies. In the utility sector, EUSR CAT1 is the most commonly required qualification by a significant margin. Major network operators and their Tier 1 contractors typically require EUSR registration as a minimum for anyone working near underground services on their projects.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -179,7 +179,7 @@ export default function NporsVsEusr() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">What About ProQual CAT1?</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              There is a third option worth considering. <Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1</Link> is an externally verified, ProQual-accredited qualification that goes beyond what either EUS or NPORS require. It is awarded by ProQual Accreditations and uses a rigorous criteria-based competency model rather than a percentage pass mark. Many clients accept it in place of, or alongside, EUS CAT1. If you want the most thorough assessment of your operative's cable avoidance competency, ProQual CAT1 is worth looking at.
+              There is a third option worth considering. <Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1</Link> is an externally verified, ProQual-accredited qualification that goes beyond what either EUSR or NPORS require. It is awarded by ProQual Accreditations and uses a rigorous criteria-based competency model rather than a percentage pass mark. Many clients accept it in place of, or alongside, EUSR CAT1. If you want the most thorough assessment of your operative's cable avoidance competency, ProQual CAT1 is worth looking at.
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
@@ -209,7 +209,7 @@ export default function NporsVsEusr() {
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
-                <li><Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUS CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
+                <li><Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
               </ul>
             </div>
 
@@ -218,7 +218,7 @@ export default function NporsVsEusr() {
               <p className="text-muted-foreground mb-4">
                 If you are not sure which qualification your team needs, get in touch. Sygma's trainers can advise on what your client requires and recommend the right course.
               </p>
-              <Link href="/courses/eus-cat1" className="text-primary font-semibold hover:underline">View EUS CAT1 Course Details &rsaquo;</Link>
+              <Link href="/courses/eus-cat1" className="text-primary font-semibold hover:underline">View EUSR CAT1 Course Details &rsaquo;</Link>
             </div>
           </article>
         </div>

@@ -8,7 +8,7 @@ import Image from 'next/image';
 const faqs = [
             {
               q: "Is this a qualification?",
-              a: "No. This is an awareness course. Delegates receive a certificate of attendance but no formal qualification or EUS recognition. For EUS-recognised qualifications, see the EUS CAT1 and EUS CAT2 programmes.",
+              a: "No. This is an awareness course. Delegates receive a certificate of attendance but no formal qualification or EUSR recognition. For EUSR-recognised qualifications, see the EUSR CAT1 and EUSR CAT2 programmes.",
             },
             {
               q: "Can this be run as a public scheduled session rather than a private team booking?",
@@ -23,8 +23,8 @@ const faqs = [
               a: "Yes. The session is flexible and Sygma can adjust the controls overview and data section to focus on the specific version of the CAT4 your team uses. Raise this at the time of booking.",
             },
             {
-              q: "Is this suitable as a refresher for operatives with existing EUS CAT1?",
-              a: "Yes. This course works well as a standalone theory refresher for operatives who hold EUS CAT1 but have not attended any training for some time. It covers the core theoretical content without requiring a full in-person programme.",
+              q: "Is this suitable as a refresher for operatives with existing EUSR CAT1?",
+              a: "Yes. This course works well as a standalone theory refresher for operatives who hold EUSR CAT1 but have not attended any training for some time. It covers the core theoretical content without requiring a full in-person programme.",
             },
             {
               q: "How is this different from the full CAT Manager Training course?",
@@ -262,10 +262,10 @@ export default function Cat4HsgAwarenessOnline() {
               <p className="eyebrow mb-3">What Comes Next</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">From Awareness to Full Qualification</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                This online awareness course provides the theoretical grounding that makes in-person training more effective. Delegates who complete this course and go on to attend a full EUS CAT1 programme or CAT and Genny training will arrive with the electromagnetic theory already in place.
+                This online awareness course provides the theoretical grounding that makes in-person training more effective. Delegates who complete this course and go on to attend a full EUSR CAT1 programme or CAT and Genny training will arrive with the electromagnetic theory already in place.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                For teams that need formal qualification rather than awareness, Sygma's EUS CAT1, EUS CAT2, ProQual CAT1, and CAT and Genny programmes are the natural next step.
+                For teams that need formal qualification rather than awareness, Sygma's EUSR CAT1, EUSR CAT2, ProQual CAT1, and CAT and Genny programmes are the natural next step.
               </p>
             </div>
           </div>
@@ -394,12 +394,12 @@ export default function Cat4HsgAwarenessOnline() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Continue your journey with these complementary courses in utility avoidance training.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation qualification for anyone who locates buried services. Two days of theory and practical assessment.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">The second stage of EUS. Safe excavation techniques, HSG47 in practice, and permit to dig requirements.</p>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">The second stage of EUSR. Safe excavation techniques, HSG47 in practice, and permit to dig requirements.</p>
             </Link>
             <Link href="/courses/cat-manager" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">CAT Manager Training</h3>

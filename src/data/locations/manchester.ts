@@ -46,7 +46,7 @@ export const locationData: LocationPageData = {
     facilities: 'Classroom space, live utility demonstration area, outdoor practical assessment site with real buried metallic services, welfare facilities, and free parking.',
     courses: [
       'Cable Avoidance Training (CAT and Genny)',
-      'EUS CAT1 and ProQual CAT1 Accreditation',
+      'EUSR CAT1 and ProQual CAT1 Accreditation',
       'ProQual CAT1 Plus and CAT2',
       'Advanced EM Location',
       'RQF Level 2 Award',

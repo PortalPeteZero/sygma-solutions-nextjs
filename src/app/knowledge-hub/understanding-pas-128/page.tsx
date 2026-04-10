@@ -126,7 +126,7 @@ export default function UnderstandingPas128() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Why This Matters for Training</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              If your operatives carry out Type B detection surveys, they need training that covers the full range of detection techniques specified in PAS 128. This goes beyond basic CAT and Genny operation. It includes an understanding of when to use GPR, how to interpret geophysical data, and how to report results to the standard required by the specification. A standard EUS CAT1 or ProQual CAT1 course covers cable avoidance, not utility mapping. Operatives working on PAS 128 projects need specialist training in addition to their base cable avoidance qualification.
+              If your operatives carry out Type B detection surveys, they need training that covers the full range of detection techniques specified in PAS 128. This goes beyond basic CAT and Genny operation. It includes an understanding of when to use GPR, how to interpret geophysical data, and how to report results to the standard required by the specification. A standard EUSR CAT1 or ProQual CAT1 course covers cable avoidance, not utility mapping. Operatives working on PAS 128 projects need specialist training in addition to their base cable avoidance qualification.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">

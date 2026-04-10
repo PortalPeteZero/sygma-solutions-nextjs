@@ -24,11 +24,11 @@ const faqs = [
             },
             {
               q: "Can we combine this training course with other Sygma cat and genny training?",
-              a: "Yes. Cat manager online training pairs particularly well with the EUS Superuser genny training course, which includes cat manager data analysis as one of its core modules. Many organisations book the two sessions together as a supervisory development package for managers responsible for cat and genny competency.",
+              a: "Yes. Cat manager online training pairs particularly well with the EUSR Superuser genny training course, which includes cat manager data analysis as one of its core modules. Many organisations book the two sessions together as a supervisory development package for managers responsible for cat and genny competency.",
             },
             {
-              q: "Is cat manager training relevant to the EUS CAT1 or CAT2 cat and genny accreditation?",
-              a: "Cat manager data download is an optional module within the EUS CAT1 cat and genny training course. This standalone cat manager online training session provides much greater depth on the c.a.t manager online system and is aimed at managers, supervisors, and coordinators rather than operative-level delegates.",
+              q: "Is cat manager training relevant to the EUSR CAT1 or CAT2 cat and genny accreditation?",
+              a: "Cat manager data download is an optional module within the EUSR CAT1 cat and genny training course. This standalone cat manager online training session provides much greater depth on the c.a.t manager online system and is aimed at managers, supervisors, and coordinators rather than operative-level delegates.",
             },
             {
               q: "What is c.a.t manager online and how does it work as a remote management tool?",
@@ -344,7 +344,7 @@ export default function CatManager() {
               href="/courses/eus-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS CAT1 Training
+              View EUSR CAT1 Training
             </Link>
           </div>
         </div>
@@ -429,8 +429,8 @@ export default function CatManager() {
           <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-accent">Related Courses</h3>
           <div className="grid gap-4 sm:grid-cols-3">
             {[
-              { label: "EUS CAT1 Cat and Genny Training", desc: "EUSR-registered cat and genny training course for field operators. Includes an optional cat manager data download module.", to: "/courses/eus-cat1" },
-              { label: "EUS Superuser Cat and Genny Training", desc: "Advanced genny training course for supervisors and competency managers overseeing cat and genny operatives. Includes cat manager data analysis.", to: "/courses/eus-superuser" },
+              { label: "EUSR CAT1 Cat and Genny Training", desc: "EUSR-registered cat and genny training course for field operators. Includes an optional cat manager data download module.", to: "/courses/eus-cat1" },
+              { label: "EUSR Superuser Cat and Genny Training", desc: "Advanced genny training course for supervisors and competency managers overseeing cat and genny operatives. Includes cat manager data analysis.", to: "/courses/eus-superuser" },
               { label: "Cable Avoidance Training Course", desc: "Practical cat and genny training course for field operators who need competency on cable avoidance tools and signal generators.", to: "/courses/cable-avoidance-training" },
             ].map((item) => (
               <Link key={item.to} href={item.to} className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">

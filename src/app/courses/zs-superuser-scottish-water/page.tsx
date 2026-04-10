@@ -6,12 +6,12 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 const faqs = [
             {
-              q: "What is the difference between the ZS Superuser and the EUS Superuser?",
-              a: "The structure, duration, assessments, and standard of both cat and genny training courses are identical. The ZS Superuser is mapped specifically to the Scottish Water Zero Strike Initiative (ZSI) framework. It uses ZSI documentation, Scottish Water-specific examples and case studies, and the ZSI Operators' Guide. The EUS Superuser is built around the EUS (EUSR) framework and is relevant across all clients and sectors. If your team works in the Scottish Water supply chain, the ZS Superuser training course is the right course.",
+              q: "What is the difference between the ZS Superuser and the EUSR Superuser?",
+              a: "The structure, duration, assessments, and standard of both cat and genny training courses are identical. The ZS Superuser is mapped specifically to the Scottish Water Zero Strike Initiative (ZSI) framework. It uses ZSI documentation, Scottish Water-specific examples and case studies, and the ZSI Operators' Guide. The EUSR Superuser is built around the EUSR (EUSR) framework and is relevant across all clients and sectors. If your team works in the Scottish Water supply chain, the ZS Superuser training course is the right course.",
             },
             {
-              q: "Do delegates need to hold EUS CAT1 and CAT2 before attending?",
-              a: "Yes. Delegates must hold both EUSR category EUS CAT1 and EUS Safe Dig CAT2 certification before attending the ZS Superuser cat and genny training course. These are the minimum training requirements and prerequisite qualifications set by the Scottish Water Zero Strike Initiative for anyone working on a ZSI site.",
+              q: "Do delegates need to hold EUSR CAT1 and CAT2 before attending?",
+              a: "Yes. Delegates must hold both EUSR category EUSR CAT1 and EUSR Safe Dig CAT2 certification before attending the ZS Superuser cat and genny training course. These are the minimum training requirements and prerequisite qualifications set by the Scottish Water Zero Strike Initiative for anyone working on a ZSI site.",
             },
             {
               q: "Does the course cover the ZSI Operators' Guide?",
@@ -39,7 +39,7 @@ const faqs = [
             },
             {
               q: "What is the EUSR category requirement for the ZS Superuser?",
-              a: "The EUSR category prerequisite for the ZS Superuser is EUS CAT1 (cable avoidance training) and EUS CAT2 Safe Dig (safe excavation). These qualifications from the awarding body confirm the delegate has the foundation knowledge and skills to operate cat and genny equipment safely. The ZS Superuser builds on this with advanced genny training, utility strike investigation, coaching competency, and assessment skills specific to Scottish Water's Zero Strike Initiative.",
+              a: "The EUSR category prerequisite for the ZS Superuser is EUSR CAT1 (cable avoidance training) and EUSR CAT2 Safe Dig (safe excavation). These qualifications from the awarding body confirm the delegate has the foundation knowledge and skills to operate cat and genny equipment safely. The ZS Superuser builds on this with advanced genny training, utility strike investigation, coaching competency, and assessment skills specific to Scottish Water's Zero Strike Initiative.",
             },
             {
               q: "Does the certification have an expiry date?",
@@ -70,7 +70,7 @@ export default function ZsSuperuserScottishWater() {
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="ZS Superuser: Advanced Location, Strike Investigation, and Coaching for Scottish Water Supply Chain"
-        sub="Sygma's ZS Superuser course is the ZSI-specific super user cat and genny training programme, built for teams working within the Scottish Water supply chain. This advanced training course follows the same structure and standard as the EUS Superuser, mapped to the Zero Strike Initiative framework for locating underground services and buried utilities."
+        sub="Sygma's ZS Superuser course is the ZSI-specific super user cat and genny training programme, built for teams working within the Scottish Water supply chain. This advanced training course follows the same structure and standard as the EUSR Superuser, mapped to the Zero Strike Initiative framework for locating underground services and buried utilities."
         image="New-Landscape-03"
         alt="Scottish Water ZS Superuser cable avoidance training course"
         breadcrumbs={[
@@ -110,7 +110,7 @@ export default function ZsSuperuserScottishWater() {
             ["Max Delegates", "6 per course"],
             ["Framework", "ZSI Zero Strike Initiative"],
             ["Assessments", "3 formal assessments"],
-            ["Prerequisite", "EUS CAT1 and EUS CAT2"],
+            ["Prerequisite", "EUSR CAT1 and EUSR CAT2"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
               <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</p>
@@ -133,16 +133,16 @@ export default function ZsSuperuserScottishWater() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">ZSI-Specific Super User Cat and Genny Training</p>
-            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The EUS Superuser Standard, Built for the Scottish Water Supply Chain</h2>
+            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The EUSR Superuser Standard, Built for the Scottish Water Supply Chain</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                The ZS Superuser training course follows the same two-day structure and assessment framework as Sygma's EUS Superuser course, with one important difference: the delivery is mapped to the Scottish Water Zero Strike Initiative (ZSI) framework. This cat and genny training teaches delegates how to locate utility services, operate cat and genny equipment to the required standard, and coach others in safe excavation practices.
+                The ZS Superuser training course follows the same two-day structure and assessment framework as Sygma's EUSR Superuser course, with one important difference: the delivery is mapped to the Scottish Water Zero Strike Initiative (ZSI) framework. This cat and genny training teaches delegates how to locate utility services, operate cat and genny equipment to the required standard, and coach others in safe excavation practices.
               </p>
               <p>
                 Scottish Water's Zero Strike Initiative sets specific standards for how utility location and avoidance work is planned, documented, and carried out across its supply chain. Delegates learn to use cable avoidance tools (CAT) and signal generators (genny) to locate buried services and underground utilities safely, avoiding danger from underground services during excavation work. The ZSI Operators' Guide, the minimum locator standard, and Scottish Water's company-specific policies are all embedded into the delivery.
               </p>
               <p>
-                Delegates leave with the same advanced capabilities as EUS Superuser completers (advanced location, utility strike investigation, coaching, and assessment competency) but with content, documentation, and case studies specific to Scottish Water operations. The course develops practical skills in operating cat and genny equipment across all modes, interpreting utility drawings, and conducting best practice surveys to locate utility services in complex underground utility networks.
+                Delegates leave with the same advanced capabilities as EUSR Superuser completers (advanced location, utility strike investigation, coaching, and assessment competency) but with content, documentation, and case studies specific to Scottish Water operations. The course develops practical skills in operating cat and genny equipment across all modes, interpreting utility drawings, and conducting best practice surveys to locate utility services in complex underground utility networks.
               </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function ZsSuperuserScottishWater() {
             {[
               ["Duration", "2 days (no fixed daily timings, flexible approach across both days)"],
               ["Max Delegates", "6 per course"],
-              ["Prerequisite", "EUSR Category: EUS CAT1 and EUS Safe Dig CAT2 certification"],
+              ["Prerequisite", "EUSR Category: EUSR CAT1 and EUSR Safe Dig CAT2 certification"],
               ["Equipment Standard", "Advanced cat and genny equipment minimum (Scottish Water ZSI requirement)"],
               ["Framework", "Scottish Water Zero Strike Initiative (ZSI)"],
               ["Assessments", "Three formal assessments: POW Risk Assessment, Practical Assessment 1, Practical Assessment 2 (coaching)"],
@@ -330,7 +330,7 @@ export default function ZsSuperuserScottishWater() {
             {[
               {
                 title: "Experienced Operatives in the Scottish Water Supply Chain",
-                body: "Operatives who hold EUS CAT1 and EUS Safe Dig CAT2 certification and are ready to step up to a superuser role. This cat and genny training course is suitable for those who will be coaching, supporting, and assessing their teams on ZSI-compliant surveys to locate utility services and underground utilities.",
+                body: "Operatives who hold EUSR CAT1 and EUSR Safe Dig CAT2 certification and are ready to step up to a superuser role. This cat and genny training course is suitable for those who will be coaching, supporting, and assessing their teams on ZSI-compliant surveys to locate utility services and underground utilities.",
               },
               {
                 title: "Supervisors and Team Leaders",
@@ -423,19 +423,19 @@ export default function ZsSuperuserScottishWater() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Next Steps</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the EUS pathway and Scottish Water supply chain requirements.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the EUSR pathway and Scottish Water supply chain requirements.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation cat and genny training course and EUSR category qualification. Superuser prerequisite required for all delegates.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation training course and permit requirements for avoiding danger from underground services. Superuser prerequisite required for all delegates.</p>
             </Link>
             <Link href="/courses/eus-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS Superuser</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">The standard super user cat and genny training course for non-Scottish Water teams. Same structure, EUS framework.</p>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR Superuser</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">The standard super user cat and genny training course for non-Scottish Water teams. Same structure, EUSR framework.</p>
             </Link>
           </div>
         </div>
@@ -475,7 +475,7 @@ export default function ZsSuperuserScottishWater() {
             <Link href="/courses/eus-superuser"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS Superuser (Non-Scottish Water)
+              View EUSR Superuser (Non-Scottish Water)
             </Link>
           </div>
         </div>

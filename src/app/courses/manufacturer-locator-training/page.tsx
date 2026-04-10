@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const faqs = [
             {
-              q: "How is this different from EUS CAT1 training?",
-              a: "The EUS qualification is designed for any kind of locator but is not locator-specific. The certificate you receive does not qualify you on a specific model. This manufacturer-specific course is for organisations that want training built around the specific controls, modes, and signal generator of the equipment their team actually uses. The Genny-First methodology is the same across both. The difference is that this course is tailored to your kit.",
+              q: "How is this different from EUSR CAT1 training?",
+              a: "The EUSR qualification is designed for any kind of locator but is not locator-specific. The certificate you receive does not qualify you on a specific model. This manufacturer-specific course is for organisations that want training built around the specific controls, modes, and signal generator of the equipment their team actually uses. The Genny-First methodology is the same across both. The difference is that this course is tailored to your kit.",
             },
             {
               q: "What certification options are available?",
-              a: "You can choose from four certification routes: an in-house Sygma certificate, an EUS certificate, a ProQual certificate, or a Level 2 qualification. The course content is the same regardless of which route you choose. The certification decision is yours and can be discussed at booking.",
+              a: "You can choose from four certification routes: an in-house Sygma certificate, an EUSR certificate, a ProQual certificate, or a Level 2 qualification. The course content is the same regardless of which route you choose. The certification decision is yours and can be discussed at booking.",
             },
             {
               q: "Can the course cover multiple different makes of locator?",
@@ -73,7 +73,7 @@ export default function ManufacturerLocatorTraining() {
             {[
               {
                 title: "Experienced Locator Operators",
-                desc: "Those who already hold EUS CAT1 or equivalent and want manufacturer-specific advanced training on their particular equipment model.",
+                desc: "Those who already hold EUSR CAT1 or equivalent and want manufacturer-specific advanced training on their particular equipment model.",
               },
               {
                 title: "Equipment Fleet Managers",
@@ -103,7 +103,7 @@ export default function ManufacturerLocatorTraining() {
           {[
             ["Duration", "1 day (09:00 to approx 15:30)"],
             ["Max Delegates", "8 per course"],
-            ["Certificate", "In-house, EUS, ProQual, or Level 2"],
+            ["Certificate", "In-house, EUSR, ProQual, or Level 2"],
             ["Assessment", "Written, 70% pass mark"],
             ["Delivery", "In-house, nationwide UK"],
           ].map(([label, value]) => (
@@ -137,7 +137,7 @@ export default function ManufacturerLocatorTraining() {
                 This one-day course is bespoke by design. Sygma's trainers work from the electromagnetic principles upward, building a programme around your specific locator's controls, modes, signal generator, and data output. The Genny-First methodology that sits at the core of all Sygma training is adapted to your equipment. The theory session covers how your locator works and why it behaves the way it does in different conditions. The practical element puts delegates on site with their own kit, working through real location tasks and problem scenarios.
               </p>
               <p>
-                Certification is flexible. You can choose from an in-house Sygma certificate, an EUS certificate, a ProQual certificate, or a Level 2 qualification. The course content is the same regardless of the certification route. What differs is the certificate your delegates receive at the end.
+                Certification is flexible. You can choose from an in-house Sygma certificate, an EUSR certificate, a ProQual certificate, or a Level 2 qualification. The course content is the same regardless of the certification route. What differs is the certificate your delegates receive at the end.
               </p>
               <p>
                 The course concludes with a written assessment at a 70% pass mark. A verbal assessment alternative is available for delegates with dyslexia or other reading difficulties. This must be requested at booking.
@@ -150,7 +150,7 @@ export default function ManufacturerLocatorTraining() {
               ["Duration", "1 day (09:00 to approximately 15:30, including breaks)"],
               ["Format", "In-house at your site"],
               ["Max Delegates", "8 per course"],
-              ["Certificate", "In-house, EUS, ProQual, or Level 2 (your choice)"],
+              ["Certificate", "In-house, EUSR, ProQual, or Level 2 (your choice)"],
               ["Assessment", "Written assessment, 70% pass mark (verbal alternative available)"],
               ["Equipment", "Delegates must bring their own locator; 1 signal generator with accessories provided per course"],
               ["Delivery", "Nationwide UK"],
@@ -364,7 +364,7 @@ export default function ManufacturerLocatorTraining() {
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Flexible Certification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Choose in-house, EUS, ProQual, or Level 2 certification.</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">Choose in-house, EUSR, ProQual, or Level 2 certification.</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Same high-quality training, your choice of certificate at the end.</p>
             </div>
           </div>
@@ -392,11 +392,11 @@ export default function ManufacturerLocatorTraining() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's capability across locating and safe excavation.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation qualification for utility location. Complementary to manufacturer-specific training.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation and permit requirements. Essential for teams using locators in the field.</p>
             </Link>
             <Link href="/courses/plans-and-process" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
@@ -443,7 +443,7 @@ export default function ManufacturerLocatorTraining() {
               href="/courses/eus-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS CAT1 Training
+              View EUSR CAT1 Training
             </Link>
           </div>
         </div>

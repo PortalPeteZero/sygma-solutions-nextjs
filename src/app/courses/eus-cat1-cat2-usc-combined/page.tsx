@@ -11,7 +11,7 @@ const faqs = [
               },
               {
                 q: "Can we run the CAT1 and CAT2 elements without the USC content?",
-                a: "Yes. The standalone EUS CAT1 and CAT2 Combined programme covers the location and safe dig elements without the USC content. If your team needs the USC component as well, this combined programme is the most efficient option.",
+                a: "Yes. The standalone EUSR CAT1 and CAT2 Combined programme covers the location and safe dig elements without the USC content. If your team needs the USC component as well, this combined programme is the most efficient option.",
               },
               {
                 q: "We do not have all our USC documentation ready. Can we still book?",
@@ -33,12 +33,12 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'EUS CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
-  description: 'EUS CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
+  title: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
+  description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined' },
   openGraph: {
-    title: 'EUS CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
-    description: 'EUS CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
+    title: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
+    description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
     url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
@@ -49,19 +49,19 @@ export const metadata: Metadata = {
 export default function EusCat12UscCombined() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUS CAT1 CAT & Genny Training with CAT2 and USC', description: 'EUS CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.', url: '/courses/eus-cat1-cat2-usc-combined', credential: 'EUS CAT1, EUS CAT2, and USC', duration: '3 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC', description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.', url: '/courses/eus-cat1-cat2-usc-combined', credential: 'EUSR CAT1, EUSR CAT2, and USC', duration: '3 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUS CAT1, CAT2 and USC Combined' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR CAT1, CAT2 and USC Combined' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="EUS CAT1 CAT and Genny Training with CAT2 Safe Dig and USC Combined"
-        sub="Three qualifications and responsibilities in a single two-day CAT and Genny training programme. EUS CAT1 location training, EUS CAT2 Safe Dig assessment, and Underground Service Coordinator content delivered in-house by Sygma Solutions, tailored to your organisation's permit systems and documentation."
+        headline="EUSR CAT1 CAT and Genny Training with CAT2 Safe Dig and USC Combined"
+        sub="Three qualifications and responsibilities in a single two-day CAT and Genny training programme. EUSR CAT1 location training, EUSR CAT2 Safe Dig assessment, and Underground Service Coordinator content delivered in-house by Sygma Solutions, tailored to your organisation's permit systems and documentation."
         image="CAT4-and-Genny-63"
-        alt="Combined EUS CAT1, CAT2 and USC utility service coordinator training session"
+        alt="Combined EUSR CAT1, CAT2 and USC utility service coordinator training session"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
-          { label: "EUS CAT1, CAT2 and USC Combined" },
+          { label: "EUSR CAT1, CAT2 and USC Combined" },
         ]}
       />
 
@@ -95,7 +95,7 @@ export default function EusCat12UscCombined() {
             ["Duration", "2 days (classroom and site)"],
             ["Format", "In-house at your site or Sygma Wigan"],
             ["Max Delegates", "8 per course"],
-            ["Qualifications", "EUS CAT1, EUS CAT2, USC content"],
+            ["Qualifications", "EUSR CAT1, EUSR CAT2, USC content"],
             ["Delivery", "Nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
@@ -111,9 +111,9 @@ export default function EusCat12UscCombined() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-10" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-          <Image src="CAT4-and-Genny-52" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
-          <Image src="Safe-Dig-06" width={1200} height={800} alt="EUS CAT1 CAT2 and USC combined training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-10" width={1200} height={800} alt="EUSR CAT1 CAT2 and USC combined training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-52" width={1200} height={800} alt="EUSR CAT1 CAT2 and USC combined training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="Safe-Dig-06" width={1200} height={800} alt="EUSR CAT1 CAT2 and USC combined training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
       </section>
       {/* Who This Course Is For */}
@@ -129,7 +129,7 @@ export default function EusCat12UscCombined() {
               },
               {
                 title: "Site Operatives Requiring Full Competency",
-                desc: "Anyone who locates, excavates and coordinates utility avoidance on site. This CAT and Genny training course equips you with practical skills in cable avoidance, hands-on experience with locator and signal generator equipment, and competency in safe excavation around live underground services. You will receive EUS CAT1 and CAT2 accreditation."
+                desc: "Anyone who locates, excavates and coordinates utility avoidance on site. This CAT and Genny training course equips you with practical skills in cable avoidance, hands-on experience with locator and signal generator equipment, and competency in safe excavation around live underground services. You will receive EUSR CAT1 and CAT2 accreditation."
               },
               {
                 title: "Organisations Seeking Maximum Competency",
@@ -160,10 +160,10 @@ export default function EusCat12UscCombined() {
                 Most utility strikes are not caused by individual operative failure. They happen when the systems around the operative also fail: when plans are not interrogated properly, when permits to dig are treated as paperwork formalities, when no one in the team actually understands what a PAS128 drawing is telling them, and when the underground service coordinator role is occupied by someone who was appointed without any structured genny training, cable avoidance training, or preparation for the role. Proper cat and genny training and genny training courses exist to prevent these failures by teaching operatives how to locate utility services before excavation work begins.
               </p>
               <p>
-                This combined CAT and Genny training course addresses all three layers. Day one covers the complete theoretical foundation for EUS CAT1: electromagnetic location science, Genny-First methodology, plan interpretation, and the legislative framework including HSG47. The site training element of day two delivers EUS CAT2 through a live safe dig assessment with a permit to dig. Incorporated throughout the course is the USC element, which is tailored specifically to your organisation's documentation, permit systems, and service coordinator responsibilities.
+                This combined CAT and Genny training course addresses all three layers. Day one covers the complete theoretical foundation for EUSR CAT1: electromagnetic location science, Genny-First methodology, plan interpretation, and the legislative framework including HSG47. The site training element of day two delivers EUSR CAT2 through a live safe dig assessment with a permit to dig. Incorporated throughout the course is the USC element, which is tailored specifically to your organisation's documentation, permit systems, and service coordinator responsibilities.
               </p>
               <p>
-                The USC is not a qualification. It is an appointment made by the organisation when a delegate has the experience and knowledge to take on the role. This genny training course builds the knowledge base and contextualises it within your specific company systems, so that when the appointment is made, it is meaningful. Every delegate leaves this training course with EUS CAT1 and CAT2 accreditation in the appropriate EUSR category, registered on the EUSR database. On successful completion of both the cable avoidance and safe dig elements, delegates can locate utility services with confidence and competence.
+                The USC is not a qualification. It is an appointment made by the organisation when a delegate has the experience and knowledge to take on the role. This genny training course builds the knowledge base and contextualises it within your specific company systems, so that when the appointment is made, it is meaningful. Every delegate leaves this training course with EUSR CAT1 and CAT2 accreditation in the appropriate EUSR category, registered on the EUSR database. On successful completion of both the cable avoidance and safe dig elements, delegates can locate utility services with confidence and competence.
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function EusCat12UscCombined() {
               ["Duration", "2 days (classroom and on-site)"],
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
               ["Max Delegates", "8 per course"],
-              ["Qualifications", "EUS CAT1, EUS CAT2 (Safe Dig), USC content (appointment by employer)"],
+              ["Qualifications", "EUSR CAT1, EUSR CAT2 (Safe Dig), USC content (appointment by employer)"],
               ["Assessment", "Multiple choice questions (MCQs) + practical safe dig assessment"],
               ["Prerequisites", "None for operatives. Company must provide USC documentation in advance."],
               ["Equipment", "Sygma provides Radiodetection CAT4 and Genny4 as standard; this course can be delivered on any of the following: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX. Delegates may bring their own equipment."],
@@ -199,7 +199,7 @@ export default function EusCat12UscCombined() {
               This cat and genny training course is delivered in-house at your site anywhere in the UK, or at Sygma's dedicated training centre in Wigan. Every genny training course is led by a directly employed Sygma trainer who is TAQA qualified and has real survey field experience in cable avoidance and locating utility services. We do not use subcontracted trainers.
             </p>
             <p>
-              Day one covers CAT and Genny classroom training: electromagnetic theory, Genny-First methodology, plan interpretation, and the full EUS CAT1 curriculum. Day two moves to the site for practical CAT and Genny training, CAT2 safe dig assessment, and the integrated USC content built around your company documentation.
+              Day one covers CAT and Genny classroom training: electromagnetic theory, Genny-First methodology, plan interpretation, and the full EUSR CAT1 curriculum. Day two moves to the site for practical CAT and Genny training, CAT2 safe dig assessment, and the integrated USC content built around your company documentation.
             </p>
             <p>
               All cat genny equipment is provided by Sygma as standard for every genny training course. The training course can be delivered on Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX. Delegates may also bring their own cable avoidance equipment for training on their day-to-day kit. Maximum 8 delegates per course.
@@ -211,14 +211,14 @@ export default function EusCat12UscCombined() {
       {/* CAT1 and CAT2 content */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="eyebrow mb-3">EUS CAT1 and CAT2 Elements</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">CAT and Genny Training Content: Full EUS CAT1 and CAT2 Course Programme</h2>
+          <p className="eyebrow mb-3">EUSR CAT1 and CAT2 Elements</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">CAT and Genny Training Content: Full EUSR CAT1 and CAT2 Course Programme</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">
-            The classroom and site elements of this CAT and Genny training course deliver the complete EUS CAT1 and CAT2 content. Both days of training include USC content integrated alongside the core cable avoidance and safe dig curriculum. All locator and signal generator training follows Sygma's Genny-First methodology.
+            The classroom and site elements of this CAT and Genny training course deliver the complete EUSR CAT1 and CAT2 content. Both days of training include USC content integrated alongside the core cable avoidance and safe dig curriculum. All locator and signal generator training follows Sygma's Genny-First methodology.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-bold text-foreground mb-4">CAT and Genny Classroom Training (EUS CAT1 and CAT2 Theory)</h3>
+              <h3 className="font-bold text-foreground mb-4">CAT and Genny Classroom Training (EUSR CAT1 and CAT2 Theory)</h3>
               <div className="space-y-3">
                 {[
                   "Legislation and guidance including HSG47 and company-specific policy",
@@ -301,8 +301,8 @@ export default function EusCat12UscCombined() {
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive from This CAT and Genny Training Course</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { title: "EUS CAT1 Certificate", desc: "EUSR-registered CAT1 accreditation for cable and underground service location competency. Covers electromagnetic detection, Genny-First methodology, and practical cable avoidance skills." },
-            { title: "EUS CAT2 Certificate", desc: "EUSR-registered CAT2 Safe Dig accreditation for safe excavation competency around live utilities. Covers safe dig assessment, practical skills, and underground service exposure techniques." },
+            { title: "EUSR CAT1 Certificate", desc: "EUSR-registered CAT1 accreditation for cable and underground service location competency. Covers electromagnetic detection, Genny-First methodology, and practical cable avoidance skills." },
+            { title: "EUSR CAT2 Certificate", desc: "EUSR-registered CAT2 Safe Dig accreditation for safe excavation competency around live utilities. Covers safe dig assessment, practical skills, and underground service exposure techniques." },
             { title: "USC Certificate", desc: "Service Coordinator accreditation registered on the EUSR database. Confirms your appointment and recognition as competent in permit systems, utility drawings, and service detection responsibilities." },
             { title: "Written and Practical Assessment Records", desc: "Full documentation of theory assessments, practical observations, cable avoidance demonstrations, safe dig assessment records, and CAT Manager data analysis across all three disciplines." },
           ].map(({ title, desc }) => (
@@ -317,7 +317,7 @@ export default function EusCat12UscCombined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Combined EUS CAT1, CAT2 and USC training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Combined EUSR CAT1, CAT2 and USC training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="Safe-Dig-10" width={1200} height={800} alt="Safe excavation demonstration during combined utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -390,13 +390,13 @@ export default function EusCat12UscCombined() {
         <p className="eyebrow mb-3">CITB Funding</p>
         <h2 className="text-2xl font-black mb-4 text-foreground">CITB Funding for CAT and Genny Training Courses</h2>
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
-          Sygma Solutions is a CITB Approved Training Instructor. CITB-registered employers may be able to access training funding support for this CAT and Genny training course through the CITB Employer Network. This applies to all Sygma courses including EUS CAT1, CAT2, and the combined programme with USC content. Contact your CITB adviser directly for current eligibility and funding options.
+          Sygma Solutions is a CITB Approved Training Instructor. CITB-registered employers may be able to access training funding support for this CAT and Genny training course through the CITB Employer Network. This applies to all Sygma courses including EUSR CAT1, CAT2, and the combined programme with USC content. Contact your CITB adviser directly for current eligibility and funding options.
         </p>
       </section>
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="Safe-Dig-18" width={1200} height={800} alt="Combined EUS CAT1, CAT2 and USC on-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
+        <Image src="Safe-Dig-18" width={1200} height={800} alt="Combined EUSR CAT1, CAT2 and USC on-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -474,7 +474,7 @@ export default function EusCat12UscCombined() {
                   "Confidence in cable avoidance and underground services detection",
                   "Knowledge of pre-use checks and equipment maintenance",
                   "Safe excavation techniques around live utilities",
-                  "EUS CAT1 and CAT2 certification registered on the EUSR database",
+                  "EUSR CAT1 and CAT2 certification registered on the EUSR database",
                   "Understanding of HSG47 guidance and legal responsibilities",
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3 items-start">
@@ -515,7 +515,7 @@ export default function EusCat12UscCombined() {
             {[
               {
                 title: "Trained and Competent",
-                desc: "Full theoretical foundation in cable avoidance, locator operation, and signal generator use. Practical CAT and Genny assessment to confirmed EUS CAT1 and CAT2 standards. Competency registered on the EUSR database.",
+                desc: "Full theoretical foundation in cable avoidance, locator operation, and signal generator use. Practical CAT and Genny assessment to confirmed EUSR CAT1 and CAT2 standards. Competency registered on the EUSR database.",
               },
               {
                 title: "Safe System of Work",
@@ -556,13 +556,13 @@ export default function EusCat12UscCombined() {
           <div className="grid md:grid-cols-3 gap-5">
             {[
               {
-                title: "EUS CAT1",
+                title: "EUSR CAT1",
                 desc: "Two-day location theory and practical. Detection only, without the safe dig element of this combined programme.",
                 link: "/courses/eus-cat1",
               },
               {
                 title: "ProQual CAT1 Plus",
-                desc: "RQF-regulated alternative to EUS CAT1. Covers electromagnetic location with additional depth on geology and cable theory.",
+                desc: "RQF-regulated alternative to EUSR CAT1. Covers electromagnetic location with additional depth on geology and cable theory.",
                 link: "/courses/proqualcat1plus",
               },
               {

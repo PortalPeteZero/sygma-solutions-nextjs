@@ -150,7 +150,7 @@ export default function EusCat12Combined() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT1 and CAT2?</p>
-            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUS Recognition</h2>
+            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUSR Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Most organisations that send operatives for CAT1 training will eventually need CAT2 as well. CAT1 covers the detection side: electromagnetic theory, equipment operation, Genny application, and plan interpretation. CAT2 adds the excavation element: the safe dig, the permit to dig, the correct handling of exposed services, and the documented assessment that proves your operatives can work safely in proximity to live utilities.

@@ -57,8 +57,8 @@ export default function AccreditationsPage() {
                 content: 'Sygma Solutions is a CITB Approved Training Organisation. This approval means our training meets CITB\'s quality standards and that CITB-registered employers may be able to access funding support towards eligible training costs through the CITB Employer Network model.',
               },
               {
-                title: 'EUS / EUSR (Utility Skills Register)',
-                content: 'Sygma is approved to deliver EUS Category 1 (CAT1) and Category 2 (CAT2) training. Operatives who complete these courses and pass assessment are registered on the Utility Skills Register (EUSR) and receive EUSR cards, which are the industry-standard proof of cable avoidance competency required by the majority of utility network operators.',
+                title: 'EUSR / EUSR (Utility Skills Register)',
+                content: 'Sygma is approved to deliver EUSR Category 1 (CAT1) and Category 2 (CAT2) training. Operatives who complete these courses and pass assessment are registered on the Utility Skills Register (EUSR) and receive EUSR cards, which are the industry-standard proof of cable avoidance competency required by the majority of utility network operators.',
               },
               {
                 title: 'ProQual Approved Centre',

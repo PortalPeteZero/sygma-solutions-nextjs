@@ -42,13 +42,13 @@ const deliveryModes = [
 const accreditations = [
   { name: 'CITB ATO', desc: 'CITB Approved Training Organisation. CITB-registered employers may access Employer Network funding.' },
   { name: 'ProQual', desc: 'Accredited ProQual Accreditations centre for CAT1, CAT2, and utility mapping qualifications.' },
-  { name: 'EUSR/EUS', desc: 'Registered Energy and Utility Skills provider. EUS CAT1 and CAT2 courses produce EUSR-registered operatives.' },
+  { name: 'EUSR/EUSR', desc: 'Registered Energy and Utility Skills provider. EUSR CAT1 and CAT2 courses produce EUSR-registered operatives.' },
   { name: 'TSA', desc: 'The Survey Association Approved Training Provider for PAS 128 and utility mapping courses.' },
   { name: 'CICES', desc: 'Chartered Institution of Civil Engineering Surveyors recognised provider.' },
 ];
 
 const faqs = [
-  { q: 'Is Sygma Solutions an accredited training provider?', a: 'Yes. Sygma Solutions is a CITB Approved Training Organisation (ATO), an accredited ProQual Accreditations centre, and a registered EUSR/EUS provider. All certifications issued are against recognised industry standards and are subject to external quality assurance.' },
+  { q: 'Is Sygma Solutions an accredited training provider?', a: 'Yes. Sygma Solutions is a CITB Approved Training Organisation (ATO), an accredited ProQual Accreditations centre, and a registered EUSR/EUSR provider. All certifications issued are against recognised industry standards and are subject to external quality assurance.' },
   { q: 'What makes Sygma different from other cable avoidance training providers?', a: 'We only teach one subject: cable avoidance and utility mapping training. Other training providers deliver hundreds of topics across different industries. Sygma teaches cable avoidance training exclusively. Every trainer is an experienced utility mapping professional, directly employed, and not tied to any cable avoidance equipment manufacturer. Our cable avoidance training courses cover all four locating modes, signal generator techniques, and the practical skills workers need to locate underground cables and pipes safely.' },
   { q: 'How long has Sygma Solutions been operating?', a: 'Sygma Solutions has been operating since 2004. We have 21 years of specialist experience in cable avoidance training and utility mapping, with over 15 directly employed specialist trainers. Over that time, we have delivered cable avoidance courses covering CAT and Genny equipment, signal generator operation, and practical cable location techniques to workers across every sector that carries out excavation near underground services.' },
   { q: 'Where is Sygma Solutions based?', a: 'Our primary training centre is at Hindley Business Centre in Wigan. We also deliver courses from The Survey School in Worcester, on client sites nationwide, and via MS Teams for virtual delivery.' },

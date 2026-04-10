@@ -11,12 +11,12 @@ const faqs = [
               a: "No. The Underground Service Coordinator is an appointment made by the employer. It is not a qualification that delegates earn through an awarding body. The course trains the person being appointed to understand and fulfil the role correctly. The USC appointment itself is the employer's responsibility.",
             },
             {
-              q: "Do delegates need to have done the EUS CAT1 course first?",
-              a: "For the 1-day standalone format, yes. Delegates must have completed the EUS CAT1 course within the last 12 months. If they have not, the USC course should be delivered over 2 days to incorporate the CAT1 content. For the 3-day format with Level 3 Certificate, no prior qualification is required.",
+              q: "Do delegates need to have done the EUSR CAT1 course first?",
+              a: "For the 1-day standalone format, yes. Delegates must have completed the EUSR CAT1 course within the last 12 months. If they have not, the USC course should be delivered over 2 days to incorporate the CAT1 content. For the 3-day format with Level 3 Certificate, no prior qualification is required.",
             },
             {
-              q: "What is the difference between this course and the EUS CAT1 and CAT2 Combined with USC course?",
-              a: "The EUS CAT1 and CAT2 Combined with USC course includes the EUS CAT1 and CAT2 qualifications alongside the USC content (it is a qualification route through EUSR). The standalone USC course is for delegates who already hold CAT1 and need USC-specific training, or for teams who want to pair the USC content with the Level 3 Certificate rather than the EUS qualification.",
+              q: "What is the difference between this course and the EUSR CAT1 and CAT2 Combined with USC course?",
+              a: "The EUSR CAT1 and CAT2 Combined with USC course includes the EUSR CAT1 and CAT2 qualifications alongside the USC content (it is a qualification route through EUSR). The standalone USC course is for delegates who already hold CAT1 and need USC-specific training, or for teams who want to pair the USC content with the Level 3 Certificate rather than the EUSR qualification.",
             },
             {
               q: "What is the Level 3 Certificate in Utility Mapping and Surveying?",
@@ -70,7 +70,7 @@ export default function ServiceCoordinatorUsc() {
           {[
             ["Formats", "1-day standalone or 3-day with Level 3"],
             ["USC Status", "Appointment, not a qualification"],
-            ["Prerequisite (1-day)", "EUS CAT1 within 12 months"],
+            ["Prerequisite (1-day)", "EUSR CAT1 within 12 months"],
             ["Delivery", "In-house, nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
@@ -114,7 +114,7 @@ export default function ServiceCoordinatorUsc() {
               Your company appoints the USC. Sygma trains them to carry out that role correctly. Completing the USC course does not register your delegate on the EUSR or any other qualification register (it trains the person your organisation has chosen to fill the role).
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              If your team needs the EUS CAT1, CAT2, and USC content together as part of a combined programme, see the <Link href="/courses/eus-cat1-cat2-usc-combined" className="text-primary font-semibold underline underline-offset-2">EUS CAT1, CAT2 and USC Combined</Link> page.
+              If your team needs the EUSR CAT1, CAT2, and USC content together as part of a combined programme, see the <Link href="/courses/eus-cat1-cat2-usc-combined" className="text-primary font-semibold underline underline-offset-2">EUSR CAT1, CAT2 and USC Combined</Link> page.
             </p>
           </div>
         </div>
@@ -129,16 +129,16 @@ export default function ServiceCoordinatorUsc() {
             <div className="rounded-xl border border-border overflow-hidden">
               <div className="bg-primary px-6 py-4">
                 <p className="text-white font-black text-lg">1-Day Standalone</p>
-                <p className="text-white/70 text-sm">Prerequisite (EUS CAT1 within 12 months)</p>
+                <p className="text-white/70 text-sm">Prerequisite (EUSR CAT1 within 12 months)</p>
               </div>
               <div className="p-6 space-y-4">
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  For delegates who have already completed the EUS CAT1 course within the last 12 months. The CAT1 content is not repeated (the day focuses entirely on the USC-specific responsibilities, documentation, and coordination skills).
+                  For delegates who have already completed the EUSR CAT1 course within the last 12 months. The CAT1 content is not repeated (the day focuses entirely on the USC-specific responsibilities, documentation, and coordination skills).
                 </p>
                 <div className="space-y-2">
                   {[
                     "1 day in duration",
-                    "Delegates must hold EUS CAT1 from within the last 12 months",
+                    "Delegates must hold EUSR CAT1 from within the last 12 months",
                     "USC course completion certificate issued",
                     "If CAT1 was not within 12 months, contact Sygma to discuss a 2-day option",
                   ].map((item, i) => (
@@ -184,7 +184,7 @@ export default function ServiceCoordinatorUsc() {
         <p className="eyebrow mb-3">1-Day Standalone Content</p>
         <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">What the Standalone USC Day Covers</h2>
         <p className="text-muted-foreground mb-8 max-w-2xl">
-          The 1-day standalone course focuses on the USC-specific content. The EUS CAT1 theory is not repeated. Both a classroom session and a short site practical are included.
+          The 1-day standalone course focuses on the USC-specific content. The EUSR CAT1 theory is not repeated. Both a classroom session and a short site practical are included.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -404,11 +404,11 @@ export default function ServiceCoordinatorUsc() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's capability across utility avoidance and coordination roles.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation. USCs need to understand locating as well as coordinate it.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation and permit requirements. Essential knowledge for USCs managing dig teams.</p>
             </Link>
             <Link href="/courses/plans-and-process" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
@@ -442,7 +442,7 @@ export default function ServiceCoordinatorUsc() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl font-black mb-4 text-foreground">Enquire About Service Coordinator (USC) Training</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            1-day standalone (EUS CAT1 prerequisite) or 3-day with Level 3 Certificate. In-house at your site anywhere in the UK. Contact us to discuss the right format and receive a tailored quotation.
+            1-day standalone (EUSR CAT1 prerequisite) or 3-day with Level 3 Certificate. In-house at your site anywhere in the UK. Contact us to discuss the right format and receive a tailored quotation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

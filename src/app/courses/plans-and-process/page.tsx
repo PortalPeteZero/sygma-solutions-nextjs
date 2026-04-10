@@ -20,7 +20,7 @@ const faqs = [
             },
             {
               q: "Does this course lead to a qualification?",
-              a: "No. Both formats issue a certificate of attendance. The in-person format includes a competence check. If you need a nationally recognised qualification, look at the RQF Level 2 Award or the EUS CAT1 course, both of which include utility plans as part of a broader assessment.",
+              a: "No. Both formats issue a certificate of attendance. The in-person format includes a competence check. If you need a nationally recognised qualification, look at the RQF Level 2 Award or the EUSR CAT1 course, both of which include utility plans as part of a broader assessment.",
             },
             {
               q: "Can this course be delivered as part of a site induction?",
@@ -222,7 +222,7 @@ export default function PlansAndProcess() {
           When delivered in person, the course adds a practical element where delegates apply what they have learned in a real or representative site environment. This includes working with real plans, identifying utility routes, checking scales, and then using a locator in conjunction with the plan.
         </p>
         <p className="text-muted-foreground mb-6 max-w-2xl">
-          A short competence check is completed to document understanding and practical ability. This does not qualify as an EUS assessment, but it gives a documented record of delegate competence that your company can retain.
+          A short competence check is completed to document understanding and practical ability. This does not qualify as an EUSR assessment, but it gives a documented record of delegate competence that your company can retain.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border border-border overflow-hidden">
@@ -315,7 +315,7 @@ export default function PlansAndProcess() {
             {[
               {
                 title: "Operatives and Supervisors",
-                body: "Anyone who uses utility plans as part of a survey or excavation process and wants to read them more accurately. This course is often taken alongside the EUS CAT1 or RQF Level 2 Award to complete the end-to-end skills picture.",
+                body: "Anyone who uses utility plans as part of a survey or excavation process and wants to read them more accurately. This course is often taken alongside the EUSR CAT1 or RQF Level 2 Award to complete the end-to-end skills picture.",
               },
               {
                 title: "Service Coordinators and USC Appointees",
@@ -424,11 +424,11 @@ export default function PlansAndProcess() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Combine plans and process training with locating and safe dig qualifications.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation qualification for utility location. Plans and locating work together from start to finish.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation and permit requirements. Essential for teams executing digs after planning.</p>
             </Link>
             <Link href="/courses/service-coordinator-usc" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">

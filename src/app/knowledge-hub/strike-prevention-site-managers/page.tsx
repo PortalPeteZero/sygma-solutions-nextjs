@@ -12,11 +12,11 @@ const faqs = [
   },
   {
     q: 'Do all site operatives need cable avoidance training?',
-    a: 'Anyone who excavates or breaks ground near underground services should hold a current cable avoidance qualification such as EUS CAT1 or ProQual CAT1. Even operatives who are not digging should understand the risks if they are working in the vicinity of excavation work.',
+    a: 'Anyone who excavates or breaks ground near underground services should hold a current cable avoidance qualification such as EUSR CAT1 or ProQual CAT1. Even operatives who are not digging should understand the risks if they are working in the vicinity of excavation work.',
   },
   {
     q: 'How often should cable avoidance training be renewed?',
-    a: 'EUS CAT1 accreditation is valid for three years. However, competency can drift well before the card expires. Regular on-site checks or OSCA assessments between renewal dates help catch and correct bad habits early.',
+    a: 'EUSR CAT1 accreditation is valid for three years. However, competency can drift well before the card expires. Regular on-site checks or OSCA assessments between renewal dates help catch and correct bad habits early.',
   },
   {
     q: 'What should I do if a utility strike occurs on my site?',
@@ -120,7 +120,7 @@ export default function StrikePreventionSiteManagers() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Before Any Excavation Starts</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Every excavation on your site should follow a consistent pre-dig procedure. This is not optional and it is not something that can be skipped when the programme is under pressure. The basics are straightforward: obtain up-to-date service plans from all relevant utility companies, ensure the operative carrying out the survey holds a current cable avoidance qualification (EUS CAT1 or ProQual CAT1 as a minimum), and confirm the operative has the right equipment and knows how to use it in all four locating modes.
+              Every excavation on your site should follow a consistent pre-dig procedure. This is not optional and it is not something that can be skipped when the programme is under pressure. The basics are straightforward: obtain up-to-date service plans from all relevant utility companies, ensure the operative carrying out the survey holds a current cable avoidance qualification (EUSR CAT1 or ProQual CAT1 as a minimum), and confirm the operative has the right equipment and knows how to use it in all four locating modes.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -142,7 +142,7 @@ export default function StrikePreventionSiteManagers() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Training Is Not a Tick-Box Exercise</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Holding a current card is the minimum. It confirms the operative passed a course, but it does not confirm what they are doing on site today. Competency can drift significantly over the three-year life of an EUS or ProQual card, particularly if the operative does not use the equipment regularly or has picked up shortcuts from colleagues.
+              Holding a current card is the minimum. It confirms the operative passed a course, but it does not confirm what they are doing on site today. Competency can drift significantly over the three-year life of an EUSR or ProQual card, particularly if the operative does not use the equipment regularly or has picked up shortcuts from colleagues.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -224,7 +224,7 @@ export default function StrikePreventionSiteManagers() {
             <div className="bg-primary/5 border border-border rounded-xl p-6 mt-4">
               <h3 className="font-black text-foreground mb-3">Improve Your Team's Competency</h3>
               <p className="text-muted-foreground mb-4">
-                Sygma delivers EUS CAT1, ProQual CAT1, and bespoke cable avoidance training across the UK. We also offer OSCA on-site assessments to verify real-world competency. Get in touch to discuss what your site needs.
+                Sygma delivers EUSR CAT1, ProQual CAT1, and bespoke cable avoidance training across the UK. We also offer OSCA on-site assessments to verify real-world competency. Get in touch to discuss what your site needs.
               </p>
               <Link href="/contact" className="text-primary font-semibold hover:underline">Contact Sygma &rsaquo;</Link>
             </div>

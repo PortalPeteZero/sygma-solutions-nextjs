@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const faqs = [
   {
-    q: "What is the difference between ProQual CAT1 and EUS CAT1?",
-    a: "They are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUS does not assess at all, including CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. Where EUS relies on multiple choice questions, ProQual uses written theory papers that require candidates to demonstrate understanding in their own words. ProQual also requires both theory and practical assessment across most criteria, whereas EUS covers many areas through MCQ alone with no practical demonstration. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 is the only one we do not have to add anything to, because it covers everything needed. If your procurement framework gives you a choice, ProQual CAT1 delivers a measurably higher standard.",
+    q: "What is the difference between ProQual CAT1 and EUSR CAT1?",
+    a: "They are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUSR does not assess at all, including CDM Regulations, risk assessment monitoring and reporting, and Safe Systems of Work aligned with HASAWA, HSG47, and GS6. Where EUSR relies on multiple choice questions, ProQual uses written theory papers that require candidates to demonstrate understanding in their own words. ProQual also requires both theory and practical assessment across most criteria, whereas EUSR covers many areas through MCQ alone with no practical demonstration. In 21 years, Sygma has had to add content to every qualification on the market to make it fit for industry. The ProQual CAT1 is the only one we do not have to add anything to, because it covers everything needed. If your procurement framework gives you a choice, ProQual CAT1 delivers a measurably higher standard.",
   },
   {
     q: "Why does the ProQual have no percentage pass mark?",
@@ -120,7 +120,7 @@ export default function ProQualCat1() {
               },
               {
                 title: "Organisations Requiring ProQual Accreditation",
-                desc: "Companies whose competency frameworks mandate ProQual-accredited qualifications rather than EUS.",
+                desc: "Companies whose competency frameworks mandate ProQual-accredited qualifications rather than EUSR.",
               },
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
@@ -155,7 +155,7 @@ export default function ProQualCat1() {
         <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">About This Course</p>
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What Is the ProQual CAT1?</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
-          <p>The ProQual CAT1 is a ProQual-accredited cable avoidance qualification and the most rigorous one-day Genny & CAT course available in the UK. Delegates must demonstrate competence against 14 theory criteria and 8 practical criteria before a certificate is issued. It is accredited by ProQual Accreditations and externally audited to ensure assessment standards are maintained. It sits alongside the EUS CAT1 as an alternative accreditation route for operatives working near buried services.</p>
+          <p>The ProQual CAT1 is a ProQual-accredited cable avoidance qualification and the most rigorous one-day Genny & CAT course available in the UK. Delegates must demonstrate competence against 14 theory criteria and 8 practical criteria before a certificate is issued. It is accredited by ProQual Accreditations and externally audited to ensure assessment standards are maintained. It sits alongside the EUSR CAT1 as an alternative accreditation route for operatives working near buried services.</p>
           <p>Unlike pass-or-fail percentage tests, the ProQual CAT1 uses a criteria-based competency assessment. Every single criterion must be met. This makes it the preferred qualification for organisations with the most demanding procurement and H&S frameworks, including those governed by CDM Regulations.</p>
           <p>Sygma delivers this qualification at our Wigan HQ, at The Survey School in Worcester, or on-site anywhere in the UK. All four locating modes (Power, Radio, Genny, and Avoidance) are demonstrated and assessed hands-on, along with every Genny signal application method: direct connection, clamp, capacitance, induction, and nulling out.</p>
           <p>Clients who implement Sygma's ProQual CAT1 training as part of a wider competency programme report measurable reductions in cable strikes and service damage. Our Genny-First methodology, which is central to how we deliver this course, drives a 70 to 80% increase in Genny usage across trained teams. That is a behavioural change that shows up in locator data downloads, not just in assessment results.</p>
@@ -387,7 +387,7 @@ export default function ProQualCat1() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Acceptance</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">Who Accepts ProQual CAT1?</h2>
-          <p className="text-muted-foreground mb-6 leading-relaxed">The ProQual CAT1 is widely accepted across the utility, construction, and infrastructure sectors. Some organisations mandate it specifically because it exceeds the minimum standard set by EUS. Others accept it alongside EUSR as an equivalent or preferred route.</p>
+          <p className="text-muted-foreground mb-6 leading-relaxed">The ProQual CAT1 is widely accepted across the utility, construction, and infrastructure sectors. Some organisations mandate it specifically because it exceeds the minimum standard set by EUSR. Others accept it alongside EUSR as an equivalent or preferred route.</p>
           <div className="grid md:grid-cols-2 gap-5">
             {[
               {
@@ -417,12 +417,12 @@ export default function ProQualCat1() {
         </div>
       </section>
 
-      {/* ProQual vs EUS Comparison - What Is Delivered */}
+      {/* ProQual vs EUSR Comparison - What Is Delivered */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Criterion-by-Criterion Comparison</p>
-          <h2 className="text-2xl font-black mb-4 text-foreground">ProQual CAT1 vs EUS CAT1: What Is Actually Delivered</h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">This is not a comparison of what is assessed. It is a comparison of what is actually delivered as part of each qualification. The table below maps every ProQual theory and practical criterion against whether EUS CAT1 delivers the same content. Where you see a cross, that topic is not part of the EUS specification at all.</p>
+          <h2 className="text-2xl font-black mb-4 text-foreground">ProQual CAT1 vs EUSR CAT1: What Is Actually Delivered</h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed">This is not a comparison of what is assessed. It is a comparison of what is actually delivered as part of each qualification. The table below maps every ProQual theory and practical criterion against whether EUSR CAT1 delivers the same content. Where you see a cross, that topic is not part of the EUSR specification at all.</p>
 
           <p className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Theory Criteria (T1-T14)</p>
           <div className="overflow-x-auto rounded-xl border border-border mb-8">
@@ -432,7 +432,7 @@ export default function ProQualCat1() {
                   <th className="px-4 py-3 text-left font-bold text-foreground w-14">Ref</th>
                   <th className="px-4 py-3 text-left font-bold text-foreground">What Is Delivered</th>
                   <th className="px-4 py-3 text-center font-bold text-primary w-28">ProQual</th>
-                  <th className="px-4 py-3 text-center font-bold text-muted-foreground w-28">EUS</th>
+                  <th className="px-4 py-3 text-center font-bold text-muted-foreground w-28">EUSR</th>
                 </tr>
               </thead>
               <tbody>
@@ -471,7 +471,7 @@ export default function ProQualCat1() {
                   <th className="px-4 py-3 text-left font-bold text-foreground w-14">Ref</th>
                   <th className="px-4 py-3 text-left font-bold text-foreground">What Is Delivered</th>
                   <th className="px-4 py-3 text-center font-bold text-primary w-28">ProQual</th>
-                  <th className="px-4 py-3 text-center font-bold text-muted-foreground w-28">EUS</th>
+                  <th className="px-4 py-3 text-center font-bold text-muted-foreground w-28">EUSR</th>
                 </tr>
               </thead>
               <tbody>
@@ -500,10 +500,10 @@ export default function ProQualCat1() {
             <p className="font-bold text-foreground mb-2">Key Differences in Delivery Method</p>
             <div className="grid md:grid-cols-2 gap-4 mt-4">
               {[
-                ["Knowledge assessment", "ProQual: Written theory papers in the delegate's own words", "EUS: Multiple choice questions"],
-                ["Pass standard", "ProQual: Every criterion must be met individually", "EUS: 80% MCQ pass mark + practical sign-off"],
-                ["External verification", "ProQual: ProQual Accreditations external auditor", "EUS: EUS internal verification"],
-                ["EUSR registration", "ProQual: No", "EUS: Yes"],
+                ["Knowledge assessment", "ProQual: Written theory papers in the delegate's own words", "EUSR: Multiple choice questions"],
+                ["Pass standard", "ProQual: Every criterion must be met individually", "EUSR: 80% MCQ pass mark + practical sign-off"],
+                ["External verification", "ProQual: ProQual Accreditations external auditor", "EUSR: EUSR internal verification"],
+                ["EUSR registration", "ProQual: No", "EUSR: Yes"],
               ].map(([area, proqual, eus]) => (
                 <div key={area} className="border border-border rounded-lg p-4 bg-background">
                   <p className="font-semibold text-foreground text-sm mb-2">{area}</p>
@@ -515,7 +515,7 @@ export default function ProQualCat1() {
           </div>
 
           <p className="text-sm text-muted-foreground">Not sure which qualification your organisation needs? <Link href="/contact" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check your procurement framework for you.</p>
-          <p className="mt-4 text-xs text-muted-foreground/70 leading-relaxed italic">EUS CAT1 column reflects the published EUS Category 1 minimum specification. ProQual column reflects the published ProQual specification as delivered by Sygma Solutions Ltd.</p>
+          <p className="mt-4 text-xs text-muted-foreground/70 leading-relaxed italic">EUSR CAT1 column reflects the published EUSR Category 1 minimum specification. ProQual column reflects the published ProQual specification as delivered by Sygma Solutions Ltd.</p>
           <p className="mt-3 text-sm text-muted-foreground">For the full three-way comparison including ProQual CAT1 Plus, see our <Link href="/courses/cable-avoidance-course-comparison" className="text-primary font-semibold hover:underline">detailed comparison page</Link>.</p>
         </div>
       </section>
@@ -564,7 +564,7 @@ export default function ProQualCat1() {
       <section className="container mx-auto px-6 md:px-8 pb-0 pt-14 max-w-4xl">
         <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="font-bold text-foreground mb-2">CDM Regulations Coverage</p>
-          <p className="text-muted-foreground text-sm leading-relaxed">The ProQual CAT1 includes coverage of CDM Regulations as part of its theory assessment. This is a key differentiator from the EUS CAT1 and makes the ProQual the preferred route for principal designers, contractors, and organisations operating under CDM duty-holder obligations.</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">The ProQual CAT1 includes coverage of CDM Regulations as part of its theory assessment. This is a key differentiator from the EUSR CAT1 and makes the ProQual the preferred route for principal designers, contractors, and organisations operating under CDM duty-holder obligations.</p>
         </div>
       </section>
 
@@ -681,7 +681,7 @@ export default function ProQualCat1() {
             {[
               {
                 title: "Accredited to a Higher Standard",
-                desc: "ProQual CAT1 is accredited by ProQual Accreditations and externally audited to exceed the EUS minimum specification. A robust qualification for organisations that value rigorous competency standards.",
+                desc: "ProQual CAT1 is accredited by ProQual Accreditations and externally audited to exceed the EUSR minimum specification. A robust qualification for organisations that value rigorous competency standards.",
               },
               {
                 title: "Every Mode Assessed",
@@ -724,7 +724,7 @@ export default function ProQualCat1() {
               <p className="text-sm text-muted-foreground leading-relaxed">Two-day advanced qualification with expanded practical element using Genny & CAT equipment. Includes the Genny-First methodology formalised into assessment criteria.</p>
             </Link>
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">EUSR-registered cable avoidance qualification. Required by many utility sector frameworks and network operators.</p>
             </Link>
             <Link href="/courses/proqualcat2" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">

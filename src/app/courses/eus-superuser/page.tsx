@@ -6,16 +6,16 @@ import Image from 'next/image';
 
 const faqs = [
               {
-                q: "Who is the EUS super user cat and genny training course designed for?",
-                a: "The EUS super user cat and genny training course is designed for experienced CAT1 and CAT2 operators who are moving into supervisory or lead operative roles, and who need to assess and coach other members of their team on locating utility services and underground utilities on site. It is also appropriate for managers responsible for monitoring cat and genny equipment usage, calibration compliance, and CAT Manager data to improve their team's practice in locating buried services safely.",
+                q: "Who is the EUSR super user cat and genny training course designed for?",
+                a: "The EUSR super user cat and genny training course is designed for experienced CAT1 and CAT2 operators who are moving into supervisory or lead operative roles, and who need to assess and coach other members of their team on locating utility services and underground utilities on site. It is also appropriate for managers responsible for monitoring cat and genny equipment usage, calibration compliance, and CAT Manager data to improve their team's practice in locating buried services safely.",
               },
               {
-                q: "Is EUS CAT2 mandatory as a prerequisite for this cat and genny training?",
-                a: "Yes. Both the EUSR category EUS CAT1 and EUS Safe Dig CAT2 certification are required before attending the super user training course. The programme is built on the assumption that delegates can already use cable avoidance tools and signal generators to locate underground services competently in their own right. The super user course does not repeat entry-level cat and genny training.",
+                q: "Is EUSR CAT2 mandatory as a prerequisite for this cat and genny training?",
+                a: "Yes. Both the EUSR category EUSR CAT1 and EUSR Safe Dig CAT2 certification are required before attending the super user training course. The programme is built on the assumption that delegates can already use cable avoidance tools and signal generators to locate underground services competently in their own right. The super user course does not repeat entry-level cat and genny training.",
               },
               {
-                q: "What is the difference between this cat and genny course and the EUS CAT1 Plus?",
-                a: "EUS CAT1 Plus is an advanced single-day extension to the standard CAT1 training course, covering advanced genny application techniques and more complex location scenarios. The super user cat and genny training covers all of that technical content and adds the coaching and assessment element, calibration knowledge, utility strike investigation, and CAT Manager data analysis. The super user course is the complete upper level of the EUS pathway for locating utility services.",
+                q: "What is the difference between this cat and genny course and the EUSR CAT1 Plus?",
+                a: "EUSR CAT1 Plus is an advanced single-day extension to the standard CAT1 training course, covering advanced genny application techniques and more complex location scenarios. The super user cat and genny training covers all of that technical content and adds the coaching and assessment element, calibration knowledge, utility strike investigation, and CAT Manager data analysis. The super user course is the complete upper level of the EUSR pathway for locating utility services.",
               },
               {
                 q: "Does the coaching assessment replace a formal assessor qualification?",
@@ -30,31 +30,31 @@ const faqs = [
                 a: "There is a knowledge-based assessment element included in the classroom content covering cat and genny theory, calibration, and underground utility detection, as well as the three practical assessments. The super user training course does not conclude with a standalone written exam paper in the same format as CAT1, but delegates are assessed continuously on their skills and competency throughout both days.",
               },
               {
-                q: "What cat and genny equipment is used on the EUS super user training course?",
+                q: "What cat and genny equipment is used on the EUSR super user training course?",
                 a: "Sygma provides Radiodetection CAT4 and Genny4 as standard location equipment with calibration verified before each training course. The course can also be delivered on CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX cable avoidance tools and signal generators. Delegates learn correct use of cat and genny equipment across power mode, radio mode, and genny mode, and are trained to check calibration status and identify equipment requiring calibration before locating underground services on site.",
               },
               {
-                q: "How does cat and genny calibration feature in the EUS super user course?",
-                a: "Calibration is a significant element of the EUS super user cat and genny training. Delegates learn how to verify that cable avoidance tools and signal generators are within calibration, how to check calibration records and expiry dates through CAT Manager data, and how to identify location equipment that requires calibration before use on site. Understanding calibration requirements is essential for managers responsible for ensuring their team's cat and genny equipment detects signals accurately and supports safe excavation of underground utilities and buried cables.",
+                q: "How does cat and genny calibration feature in the EUSR super user course?",
+                a: "Calibration is a significant element of the EUSR super user cat and genny training. Delegates learn how to verify that cable avoidance tools and signal generators are within calibration, how to check calibration records and expiry dates through CAT Manager data, and how to identify location equipment that requires calibration before use on site. Understanding calibration requirements is essential for managers responsible for ensuring their team's cat and genny equipment detects signals accurately and supports safe excavation of underground utilities and buried cables.",
               },
               {
-                q: "How does the EUS super user training support safe excavation and avoiding danger?",
+                q: "How does the EUSR super user training support safe excavation and avoiding danger?",
                 a: "The super user cat and genny training course covers safe digging and safe excavation practice in detail, including guidance from HSG47 on avoiding danger from underground services. Delegates learn how to assess risk before excavation work begins, how to use utility drawings and STATS plans to identify buried services and underground cables, and how to coach their team on best practice for locating utility services. The course also covers service strikes and utility strike investigation to prevent missed services during construction and civil engineering excavation work.",
               },
               {
-                q: "What EUSR category does the EUS super user certification cover?",
-                a: "Successful completion of the EUS super user cat and genny training course leads to the EUSR category EUS Superuser certification, registered through the awarding body. This qualification confirms competency to supervise, coach, and assess cat and genny operators who locate utility services and underground utilities. The EUSR category certification has an expiry date and requires periodic re-assessment to maintain the qualification. Contact Sygma for guidance on certification renewal and maintaining your cat and genny training accreditation.",
+                q: "What EUSR category does the EUSR super user certification cover?",
+                a: "Successful completion of the EUSR super user cat and genny training course leads to the EUSR category EUSR Superuser certification, registered through the awarding body. This qualification confirms competency to supervise, coach, and assess cat and genny operators who locate utility services and underground utilities. The EUSR category certification has an expiry date and requires periodic re-assessment to maintain the qualification. Contact Sygma for guidance on certification renewal and maintaining your cat and genny training accreditation.",
               },
             ];
 
 
 export const metadata: Metadata = {
-  title: 'EUS Super User Cat and Genny | EUSR Accredited | Sygma',
-  description: 'EUS super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
+  title: 'EUSR Super User Cat and Genny | EUSR Accredited | Sygma',
+  description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eus-superuser' },
   openGraph: {
-    title: 'EUS Super User Cat and Genny | EUSR Accredited | Sygma',
-    description: 'EUS super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
+    title: 'EUSR Super User Cat and Genny | EUSR Accredited | Sygma',
+    description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
     url: 'https://sygma-solutions.com/courses/eus-superuser',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/sygma-solutions/branding/logo', width: 1200, height: 630 }],
@@ -65,19 +65,19 @@ export const metadata: Metadata = {
 export default function EusSuperuser() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUS Super User Cat and Genny Training', description: 'EUS super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.', url: '/courses/eus-superuser', credential: 'EUS Superuser Certificate', duration: '2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR Super User Cat and Genny Training', description: 'EUSR super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.', url: '/courses/eus-superuser', credential: 'EUSR Superuser Certificate', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUS Super User Cat and Genny' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR Super User Cat and Genny' }]) }} />
 
       <InnerPageHero
-        eyebrow="EUS Super User Cat and Genny Training"
-        headline="EUS Superuser: Advanced Location, Calibration, Strike Investigation, and Coaching Assessment"
-        sub="The highest level of EUS super user cat and genny training. Two days covering advanced cable avoidance tools and signal generator techniques, calibration, CAT Manager data analysis, USAG strike investigation, and the skills to assess and coach your team on locating underground services safely on site. Prerequisite: EUS CAT1 and Safe Dig CAT2."
+        eyebrow="EUSR Super User Cat and Genny Training"
+        headline="EUSR Superuser: Advanced Location, Calibration, Strike Investigation, and Coaching Assessment"
+        sub="The highest level of EUSR super user cat and genny training. Two days covering advanced cable avoidance tools and signal generator techniques, calibration, CAT Manager data analysis, USAG strike investigation, and the skills to assess and coach your team on locating underground services safely on site. Prerequisite: EUSR CAT1 and Safe Dig CAT2."
         image="CAT4-and-Genny-66"
-        alt="EUS Superuser advanced cable avoidance training for experienced locator operators"
+        alt="EUSR Superuser advanced cable avoidance training for experienced locator operators"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
-          { label: "EUS Superuser" },
+          { label: "EUSR Superuser" },
         ]}
       />
 
@@ -143,9 +143,9 @@ export default function EusSuperuser() {
           {[
             ["Duration", "2 days cat and genny training (classroom and site)"],
             ["Max Delegates", "6 per training course"],
-            ["EUSR Category", "EUS Superuser certification"],
+            ["EUSR Category", "EUSR Superuser certification"],
             ["Assessments", "3 formal cat and genny assessments"],
-            ["Prerequisite", "EUSR category EUS CAT1 and EUS CAT2"],
+            ["Prerequisite", "EUSR category EUSR CAT1 and EUSR CAT2"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
               <p className="eyebrow mb-1">{label}</p>
@@ -159,7 +159,7 @@ export default function EusSuperuser() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="EUS super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="EUSR super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           <Image src="CAT4-and-Genny-54" width={1200} height={800} alt="Cat and genny training course - hands-on assessment with cable avoidance tools" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
           <Image src="CAT4-and-Genny-71" width={1200} height={800} alt="Signal generator (genny) application technique - direct connection for locating buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
         </div>
@@ -168,11 +168,11 @@ export default function EusSuperuser() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="eyebrow mb-3">EUS Super User Cat and Genny Training Course</p>
+            <p className="eyebrow mb-3">EUSR Super User Cat and Genny Training Course</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Teaching Others to Locate Underground Services Safely</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                This cat and genny training course is the next stage in the EUS pathway. EUS CAT1 and CAT2 train operatives to use cable avoidance tools and signal generators to locate buried services and perform safe excavations. The super user course asks a fundamentally different question: not whether you can do the job, but whether you can teach someone else to operate cat and genny equipment safely, locate underground utilities correctly, and assess whether they have reached the required standard of competency.
+                This cat and genny training course is the next stage in the EUSR pathway. EUSR CAT1 and CAT2 train operatives to use cable avoidance tools and signal generators to locate buried services and perform safe excavations. The super user course asks a fundamentally different question: not whether you can do the job, but whether you can teach someone else to operate cat and genny equipment safely, locate underground utilities correctly, and assess whether they have reached the required standard of competency.
               </p>
               <p>
                 The training course builds on the full CAT1 and CAT2 theoretical foundation with advanced cat and genny techniques including calibration, equipment operation across power mode, radio mode, and genny mode, and detailed analysis of the data being generated by your team's cat units. Delegates develop the practical coaching and assessment skills needed to formally check their team's competence in locating utility services on site. The course also covers utility strike investigation: how to complete a USAG cable strike form, how to analyse what went wrong with service strikes, and how to use that information to support safe excavation and prevent missed services happening again.
@@ -188,9 +188,9 @@ export default function EusSuperuser() {
               ["Duration", "2 days (classroom and site, flexible approach)"],
               ["Format", "In-house cat and genny training at your site or Sygma's Wigan training centre"],
               ["Max Delegates", "6 per training course"],
-              ["EUSR Category", "EUS Superuser certification"],
+              ["EUSR Category", "EUSR Superuser certification"],
               ["Assessments", "3: POW Risk Assessment, Practical Assessment 1, Practical Assessment 2 (coaching and assessment competency)"],
-              ["Prerequisite", "EUSR category: EUS CAT1 and EUS Safe Dig CAT2"],
+              ["Prerequisite", "EUSR category: EUSR CAT1 and EUSR Safe Dig CAT2"],
               ["Equipment", "Cat and genny equipment provided including cable avoidance tools and signal generators. Sygma provides Radiodetection CAT4 and Genny4 as standard with calibration verified. This training course can be delivered on Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX"],
               ["Delivery", "Nationwide UK training course delivery"],
               ["Pricing", "Contact Sygma for a tailored quotation"],
@@ -322,7 +322,7 @@ export default function EusSuperuser() {
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { title: "EUS Super User Certification", desc: "EUSR category certification for super user cat and genny training. Confirms competency to supervise, coach, and quality-check cat and genny operations for locating utility services and underground utilities safely." },
+            { title: "EUSR Super User Certification", desc: "EUSR category certification for super user cat and genny training. Confirms competency to supervise, coach, and quality-check cat and genny operations for locating utility services and underground utilities safely." },
             { title: "Written Assessment Record", desc: "Documented theory assessment covering supervisory responsibilities, HSG47 compliance, calibration knowledge, and permit-to-dig processes for safe excavation." },
             { title: "Practical Assessment Record", desc: "On-site assessment evidence demonstrating competency in supervising cat and genny operations, correct use of cable avoidance tools and signal generators, and locating underground services." },
             { title: "Progression Guidance", desc: "Clear next steps for further development of cat and genny skills, including CAT Manager training and management qualifications from the awarding body." },
@@ -338,7 +338,7 @@ export default function EusSuperuser() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-52 md:h-64">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="EUS Superuser advanced cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="EUSR Superuser advanced cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-01" width={1200} height={800} alt="Advanced electromagnetic locator operation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
@@ -400,7 +400,7 @@ export default function EusSuperuser() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="CAT4-and-Genny-04" width={1200} height={800} alt="EUS Superuser advanced training delivery on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
+        <Image src="CAT4-and-Genny-04" width={1200} height={800} alt="EUSR Superuser advanced training delivery on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-center" />
       </div>
 
       {/* Why Sygma */}
@@ -466,7 +466,7 @@ export default function EusSuperuser() {
           <Image src="Advanced-EM-08" width={1200} height={800} alt="Advanced locator techniques training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="EUS Superuser practical skills assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="EUSR Superuser practical skills assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -475,14 +475,14 @@ export default function EusSuperuser() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Next Steps</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the full EUS pathway and beyond.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the full EUSR pathway and beyond.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1 Cat and Genny Training</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1 Cat and Genny Training</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation cat and genny training course and EUSR category qualification. Essential prerequisite knowledge for cable avoidance tools and signal generators before moving toward a super user role.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation training course and permit to dig for avoiding danger from underground services. Super user prerequisite required for all delegates.</p>
             </Link>
             <Link href="/courses/plans-and-process" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
@@ -514,7 +514,7 @@ export default function EusSuperuser() {
       {/* CTA */}
       <section className="bg-primary/5 border-y border-border py-14">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-black mb-4 text-foreground">Enquire About EUS Super User Cat and Genny Training</h2>
+          <h2 className="text-2xl font-black mb-4 text-foreground">Enquire About EUSR Super User Cat and Genny Training</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Cat and genny training course delivered in-house at your site anywhere in the UK, or at Sygma's dedicated training centre in Wigan. Maximum 6 delegates per cohort. Contact us to discuss your team's needs for locating utility services and underground utilities safely and receive a tailored quotation.
           </p>
@@ -529,7 +529,7 @@ export default function EusSuperuser() {
               href="/courses/eus-cat2-safe-dig"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View EUS CAT2 Safe Dig (Prerequisite)
+              View EUSR CAT2 Safe Dig (Prerequisite)
             </Link>
           </div>
         </div>

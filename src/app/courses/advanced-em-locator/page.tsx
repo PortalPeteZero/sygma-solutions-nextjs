@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 const faqs = [
               {
-                q: "Do delegates need to hold EUS CAT1 or ProQual CAT1 before attending?",
-                a: "A working knowledge of CAT and Genny locating equipment is required. Delegates who have completed EUS CAT1 or ProQual CAT1 will be well prepared. Those with significant field experience using locating equipment but without a formal qualification may also be suitable. If you are unsure, contact Sygma to discuss your team's background before booking.",
+                q: "Do delegates need to hold EUSR CAT1 or ProQual CAT1 before attending?",
+                a: "A working knowledge of CAT and Genny locating equipment is required. Delegates who have completed EUSR CAT1 or ProQual CAT1 will be well prepared. Those with significant field experience using locating equipment but without a formal qualification may also be suitable. If you are unsure, contact Sygma to discuss your team's background before booking.",
               },
               {
                 q: "Why is the course limited to six delegates?",
@@ -265,7 +265,7 @@ export default function AdvancedEmLocator() {
           {[
             {
               title: "Experienced Utility Operatives",
-              desc: "Those who hold EUS CAT1 or ProQual CAT1 and regularly encounter difficult locating scenarios in the field. These training courses give them the diagnostic understanding and best practice to handle edge cases correctly rather than guessing.",
+              desc: "Those who hold EUSR CAT1 or ProQual CAT1 and regularly encounter difficult locating scenarios in the field. These training courses give them the diagnostic understanding and best practice to handle edge cases correctly rather than guessing.",
             },
             {
               title: "Professional Utility Surveyors",
@@ -506,11 +506,11 @@ export default function AdvancedEmLocator() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Continue your journey with these complementary training courses in utility avoidance and advanced location. Each course covers different types of practice and skills development.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation qualification for anyone who uses cable avoidance tools to locate buried services. Prerequisite for advanced EM training courses.</p>
             </Link>
             <Link href="/courses/eus-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS Superuser</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR Superuser</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Advanced coaching and assessment competency. The next level for experienced operatives moving into supervisory roles.</p>
             </Link>
             <Link href="/courses/plans-and-process" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">

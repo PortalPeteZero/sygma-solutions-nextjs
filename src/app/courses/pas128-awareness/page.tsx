@@ -474,7 +474,7 @@ export default function Pas128Awareness() {
               href: '/courses/tsa-ices-utility-mapping',
             },
             {
-              title: 'EUS CAT and Genny Training',
+              title: 'EUSR CAT and Genny Training',
               desc: 'For operatives who need locating skills before progressing to surveying. The foundation for PAS128 B survey work.',
               href: '/courses/eus-cat1',
             },

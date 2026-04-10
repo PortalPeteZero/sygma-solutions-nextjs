@@ -179,7 +179,7 @@ export default function GennyFirstMethodology() {
             <h3 className="font-bold text-foreground mb-2">Related Courses</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/courses/genny-cat-training" className="text-primary hover:underline">Genny and CAT Training</Link></li>
-              <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUS CAT1 Cable Avoidance Training</Link></li>
+              <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
               <li><Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1 Training</Link></li>
               <li><Link href="/courses/advanced-em-locator" className="text-primary hover:underline">Advanced Electromagnetic Locator Training</Link></li>
             </ul>

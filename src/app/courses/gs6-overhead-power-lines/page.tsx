@@ -19,7 +19,7 @@ const faqs = [
                 a: "ENATS 43-8 is the Energy Networks Association technical specification that sets out the minimum clearance distances for overhead line construction in the UK. It provides the technical basis for the approach distances used in GS6. Understanding ENATS 43-8 allows delegates to understand why specific clearance distances are set as they are, rather than simply memorising numbers.",
               },
               {
-                q: "Does passing this course give EUS recognition?",
+                q: "Does passing this course give EUSR recognition?",
                 a: "No. The GS6 Overhead Power Lines course is an awareness and training programme delivered against the GS6 fourth edition. It does not form part of the EUSR (Energy & Utility Skills Register) qualification framework. Delegates who successfully complete the written assessment receive a certificate of attendance from Sygma.",
               },
               {
@@ -415,11 +415,11 @@ export default function Gs6OverheadPowerLines() {
           <p className="text-muted-foreground mb-8 max-w-2xl">Build a comprehensive safety programme across all utility avoidance hazards.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT1</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Underground services avoidance. The complement to overhead line safety in a complete hazard awareness programme.</p>
             </Link>
             <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
-              <h3 className="text-base font-bold text-foreground mb-2">EUS CAT2 Safe Dig</h3>
+              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation techniques for buried services. Essential knowledge for teams working in multi-hazard environments.</p>
             </Link>
             <Link href="/courses/service-coordinator-usc" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">

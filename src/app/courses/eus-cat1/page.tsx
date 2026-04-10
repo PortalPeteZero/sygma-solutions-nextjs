@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "What is the difference between EUSR CAT1 and EUSR CAT1?",
-    a: "They are the same qualification. EUS and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUSR CAT1 and sometimes as EUSR CAT1 or EUSR Category 1. All Sygma EUSR CAT1 certificates are issued against EUSR-registered standards.",
+    a: "They are the same qualification. EUSR and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUSR CAT1 and sometimes as EUSR CAT1 or EUSR Category 1. All Sygma EUSR CAT1 certificates are issued against EUSR-registered standards.",
   },
   {
     q: "What pass mark is required for EUSR CAT1?",
@@ -207,7 +207,7 @@ export default function EusCat1() {
                 {[
                   ["Course Name", "EUSR CAT1: Utility Avoidance Training"],
                   ["Awarding Body", "EUSR (Energy and Utility Skills Register)"],
-                  ["Also Known As", "EUSR CAT1, EUSR Category 1, EUS Cat 1 utility training"],
+                  ["Also Known As", "EUSR CAT1, EUSR Category 1, EUSR Cat 1 utility training"],
                   ["Duration", "One day (typically 8:30am to 4:00pm)"],
                   ["Format", "Classroom theory (morning) followed by on-site practical assessment (afternoon)"],
                   ["Assessment", "Multiple choice written paper: 80% minimum pass mark. Oral assessment available for delegates with dyslexia or reading difficulties. On-site practical assessment in all Genny & CAT modes."],
@@ -387,7 +387,7 @@ export default function EusCat1() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <h2 className="text-2xl font-black mb-3 text-foreground">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</h2>
-          <p className="text-muted-foreground mb-8">EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUSR does not assess at all, uses written theory papers rather than multiple choice questions, and requires both theory and practical assessment where EUSR relies on MCQ alone. Where EUS covers a topic through MCQ only, that topic is not meaningfully assessed because a multiple choice question does not demonstrate that a candidate can apply the knowledge on site.</p>
+          <p className="text-muted-foreground mb-8">EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. ProQual CAT1 is significantly more thorough. It covers topics that EUSR does not assess at all, uses written theory papers rather than multiple choice questions, and requires both theory and practical assessment where EUSR relies on MCQ alone. Where EUSR covers a topic through MCQ only, that topic is not meaningfully assessed because a multiple choice question does not demonstrate that a candidate can apply the knowledge on site.</p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>

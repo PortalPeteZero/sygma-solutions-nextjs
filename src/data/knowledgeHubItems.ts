@@ -57,7 +57,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
   },
   {
     category: "Qualifications",
-    title: "EUS CAT1 vs ProQual CAT1: Which One Does Your Operative Need?",
+    title: "EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?",
     desc: "These are not equivalent qualifications. This guide explains why ProQual CAT1 is a significantly more thorough assessment and helps you choose the right one for your team.",
     href: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
     type: "article",
@@ -98,7 +98,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
   {
     category: "EUSR",
     title: "How to Renew Your EUSR Card",
-    desc: "Your EUSR card has expired or is about to expire. This guide explains the EUS card renewal process, what happens if your card lapses, and how to rebook your training.",
+    desc: "Your EUSR card has expired or is about to expire. This guide explains the EUSR card renewal process, what happens if your card lapses, and how to rebook your training.",
     href: "/knowledge-hub/eusr-card-renewal",
     type: "article",
     image: "CAT4-and-Genny-61",

@@ -21,7 +21,7 @@ export const mainNav: NavMenu[] = [
         group: 'Operator Courses',
         items: [
           { label: 'Cable Avoidance Training', to: '/courses/cable-avoidance-training' },
-          { label: 'EUS CAT1', to: '/courses/eus-cat1' },
+          { label: 'EUSR CAT1', to: '/courses/eus-cat1' },
           { label: 'ProQual CAT1', to: '/courses/proqualcat1-training' },
           { label: 'ProQual CAT1 Plus', to: '/courses/proqualcat1plus' },
           { label: 'RQF Level 2 Award', to: '/courses/rqf-level-2-award' },
@@ -32,18 +32,18 @@ export const mainNav: NavMenu[] = [
       {
         group: 'Safe Dig & Combined',
         items: [
-          { label: 'EUS CAT2 Safe Dig', to: '/courses/eus-cat2-safe-dig' },
+          { label: 'EUSR CAT2 Safe Dig', to: '/courses/eus-cat2-safe-dig' },
           { label: 'ProQual CAT2 Safe Dig', to: '/courses/proqualcat2' },
-          { label: 'EUS CAT1 & CAT2 Combined', to: '/courses/eus-cat1-cat2-combined' },
+          { label: 'EUSR CAT1 & CAT2 Combined', to: '/courses/eus-cat1-cat2-combined' },
           { label: 'ProQual CAT1 & CAT2 Combined', to: '/courses/proqual-cat1-cat2-combined' },
-          { label: 'EUS CAT1, CAT2 & USC', to: '/courses/eus-cat1-cat2-usc-combined' },
+          { label: 'EUSR CAT1, CAT2 & USC', to: '/courses/eus-cat1-cat2-usc-combined' },
         ],
       },
       {
         group: 'Supervisor Courses',
         items: [
           { label: 'CAT Manager', to: '/courses/cat-manager' },
-          { label: 'EUS Superuser Locator', to: '/courses/eus-superuser' },
+          { label: 'EUSR Superuser Locator', to: '/courses/eus-superuser' },
           { label: 'ZS Superuser Scottish Water', to: '/courses/zs-superuser-scottish-water' },
           { label: 'Service Coordinator USC', to: '/courses/service-coordinator-usc' },
         ],
@@ -123,9 +123,9 @@ export const topBarLinks: FooterLink[] = [
 
 export const footerUtilityAvoidanceLinks: FooterLink[] = [
   { label: 'Cable Avoidance Training', href: '/courses/cable-avoidance-training' },
-  { label: 'EUS CAT1', href: '/courses/eus-cat1' },
-  { label: 'EUS CAT2 Safe Dig', href: '/courses/eus-cat2-safe-dig' },
-  { label: 'EUS CAT1 & CAT2 Combined', href: '/courses/eus-cat1-cat2-combined' },
+  { label: 'EUSR CAT1', href: '/courses/eus-cat1' },
+  { label: 'EUSR CAT2 Safe Dig', href: '/courses/eus-cat2-safe-dig' },
+  { label: 'EUSR CAT1 & CAT2 Combined', href: '/courses/eus-cat1-cat2-combined' },
   { label: 'ProQual CAT1 & CAT2 Combined', href: '/courses/proqual-cat1-cat2-combined' },
   { label: 'CAT & Genny Training', href: '/courses/genny-cat-training' },
   { label: 'vScan & Tx Training', href: '/courses/vscan-and-transmitter-training' },
