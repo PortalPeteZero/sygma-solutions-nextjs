@@ -26,7 +26,7 @@ const nextConfig = {
       { source: '/blog', destination: '/knowledge-hub', permanent: true },
       { source: '/training', destination: '/courses', permanent: true },
       { source: '/certification', destination: '/accreditations', permanent: true },
-      { source: '/case-studies', destination: '/about', permanent: true },
+      { source: '/case-studies', destination: '/knowledge-hub', permanent: true },
       // === KNOWLEDGE HUB CLIENT-SIDE REDIRECT (from Lovable Navigate) ===
       { source: '/knowledge-hub/what-is-cat-and-genny', destination: '/knowledge-hub/genny-first-methodology', permanent: true },
       { source: '/knowledge-hub/npors-vs-eusr-cable-avoidance', destination: '/knowledge-hub/npors-vs-eusr', permanent: true },
@@ -78,7 +78,7 @@ const nextConfig = {
       { source: '/hsg47-is-a-guide-issued-by-the-hse-for-those-involved-in-any-sort-of-excavation', destination: '/knowledge-hub/hsg47-explained', permanent: true },
       { source: '/how-do-cable-locators-work-key-principles-of-buried-utility-detection', destination: '/knowledge-hub', permanent: true },
       // Internal restructuring
-      { source: '/bespoke-training/design-your-programme', destination: '/contact', permanent: true },
+      { source: '/bespoke-training/design-your-programme', destination: '/bespoke-training', permanent: true },
       { source: '/courses/utility-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/courses/proqualcat1', destination: '/courses/proqualcat1-training', permanent: true },
       { source: '/courses/proqual-level-3-cat-and-genny', destination: '/courses/proqualcat1-training', permanent: true },
@@ -380,6 +380,22 @@ const nextConfig = {
       { source: '/the-importance-of-cat-courses-and-how-they-work', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/how-can-excavators-cause-cable-strikes', destination: '/knowledge-hub', permanent: true },
       { source: '/interpreting-cat-genny-readings-like-a-pro', destination: '/courses/genny-cat-training', permanent: true },
+
+
+      // === WS-9: REDIRECT GAPS (V8 Remediation, 10 April 2026) ===
+      // 9.1: Trailing slash catch-all (Lovable had /:path+/ -> /:path+ as 301)
+      { source: '/:path+/', destination: '/:path+', permanent: true },
+      // 9.2: Knowledge hub slug rename (genny-first-video -> genny-first-in-practice-video)
+      { source: '/knowledge-hub/genny-first-video', destination: '/knowledge-hub/genny-first-in-practice-video', permanent: true },
+      // 9.3: Duplicate design-your-programme routes (dirs already removed, redirects needed)
+      { source: '/courses/design-your-programme', destination: '/bespoke-training', permanent: true },
+      { source: '/courses/designyourprogramme', destination: '/bespoke-training', permanent: true },
+      // 9.4: Individual case study redirects (pages merge into knowledge hub per Pete's decision)
+      { source: '/case-studies/kier-group', destination: '/knowledge-hub', permanent: true },
+      { source: '/case-studies/qts-group', destination: '/knowledge-hub', permanent: true },
+      { source: '/case-studies/morgan-sindall', destination: '/knowledge-hub', permanent: true },
+      { source: '/case-studies/severn-trent-water', destination: '/knowledge-hub', permanent: true },
+      { source: '/courses/case-studies/:path*', destination: '/knowledge-hub', permanent: true },
 
       // === PHASE 9.5: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr).+)', destination: '/knowledge-hub', permanent: true },
