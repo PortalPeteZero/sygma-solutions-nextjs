@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
@@ -41,7 +42,7 @@ export default function OscaPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -60,39 +61,43 @@ export default function OscaPage() {
         }}
       />
       
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">OSCA</h1>
-          <p className="text-xl mb-8">A 3-year training certificate tells you nothing about what your operative can do in month 18. OSCA does.</p>
+      <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
+        <Image src="https://res.cloudinary.com/sygma-solutions/image/upload/Safe-Dig-01" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="OSCA hero" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
+        <div className="relative z-10 container mx-auto px-6 md:px-8 pt-10 pb-12">
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Assessment</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white max-w-4xl">OSCA</h1>
+          <p className="text-white/75 max-w-xl">A 3-year training certificate tells you nothing about what your operative can do in month 18. OSCA does.</p>
         </div>
       </section>
 
-      <section className="bg-slate-900 text-white py-8">
+      <section className="bg-foreground text-primary-foreground py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white/10 rounded-lg border border-blue-400/30 p-5 text-center">
-              <p className="text-3xl font-bold text-blue-300 mb-1">21 Years</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">One Specialism</p>
-              <p className="text-xs text-white/60">Underground utility location training is all we do.</p>
+            <div className="bg-white/10 rounded-lg border border-accent/30 p-5 text-center">
+              <p className="text-3xl font-bold text-accent mb-1">21 Years</p>
+              <p className="text-xs font-bold text-primary-foreground uppercase tracking-wider mb-1">One Specialism</p>
+              <p className="text-xs text-primary-foreground/60">Underground utility location training is all we do.</p>
             </div>
-            <div className="bg-white/10 rounded-lg border border-blue-400/30 p-5 text-center">
-              <p className="text-3xl font-bold text-blue-300 mb-1">70-80%</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Increase in Genny Usage</p>
-              <p className="text-xs text-white/60">Measured through locator data downloads after Sygma training.</p>
+            <div className="bg-white/10 rounded-lg border border-accent/30 p-5 text-center">
+              <p className="text-3xl font-bold text-accent mb-1">70-80%</p>
+              <p className="text-xs font-bold text-primary-foreground uppercase tracking-wider mb-1">Increase in Genny Usage</p>
+              <p className="text-xs text-primary-foreground/60">Measured through locator data downloads after Sygma training.</p>
             </div>
-            <div className="bg-white/10 rounded-lg border border-blue-400/30 p-5 text-center">
-              <p className="text-3xl font-bold text-blue-300 mb-1">Proven</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Strike Reduction Record</p>
-              <p className="text-xs text-white/60">Clients report measurable reductions in service strikes.</p>
+            <div className="bg-white/10 rounded-lg border border-accent/30 p-5 text-center">
+              <p className="text-3xl font-bold text-accent mb-1">Proven</p>
+              <p className="text-xs font-bold text-primary-foreground uppercase tracking-wider mb-1">Strike Reduction Record</p>
+              <p className="text-xs text-primary-foreground/60">Clients report measurable reductions in service strikes.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-background">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6">The Gap Your Certificate Cannot Fill</h2>
-          <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
+          <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
             <p>Most utility location operatives hold a 3-year EUSR card or ProQual certificate. It confirms they passed a course. It does not confirm they are operating correctly on site today.</p>
             <p>The gap between certification dates is where competency erodes. Equipment changes. Habits develop. Pressure builds. And nobody checks.</p>
             <p>OSCA closes that gap. It gives you verifiable, time-stamped, criteria-mapped evidence of what each operative can do on your site, in your environment, with your equipment.</p>
@@ -100,14 +105,14 @@ export default function OscaPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-muted/30">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">What OSCA Assesses</h2>
-          <p className="text-gray-600 leading-relaxed mb-8">The OSCA covers ten structured assessment elements, all mapped to current industry standards for utility location and avoidance. Each element is assessed systematically.</p>
+          <p className="text-muted-foreground leading-relaxed mb-8">The OSCA covers ten structured assessment elements, all mapped to current industry standards for utility location and avoidance. Each element is assessed systematically.</p>
           <div className="grid md:grid-cols-2 gap-3">
             {assessmentElements.map((el) => (
-              <div key={el} className="flex items-start gap-3 border border-gray-300 rounded-lg bg-white p-4">
-                <CheckCircle size={16} className="text-blue-600 shrink-0 mt-0.5" />
+              <div key={el} className="flex items-start gap-3 border border-border rounded-lg bg-card p-4">
+                <CheckCircle size={16} className="text-primary shrink-0 mt-0.5" />
                 <span className="text-sm">{el}</span>
               </div>
             ))}
@@ -115,40 +120,40 @@ export default function OscaPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-background">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="border border-gray-300 rounded-lg bg-gray-50 p-5">
+              <div key={faq.q} className="border border-border rounded-lg bg-muted/30 p-5">
                 <h3 className="font-bold mb-2">{faq.q}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-blue-50 border-t border-b border-blue-200 py-14">
+      <section className="bg-primary text-primary-foreground py-14">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">Book a Free OSCA Demonstration</h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">We will walk you through the assessment process, show you a sample report, and discuss how OSCA fits into your competency management programme. No obligation.</p>
+          <p className="text-primary-foreground/75 mb-6 leading-relaxed">We will walk you through the assessment process, show you a sample report, and discuss how OSCA fits into your competency management programme. No obligation.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact#enquiry-form"
-              className="inline-block px-6 py-3 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700"
+              className="inline-block px-6 py-3 rounded-md bg-primary-foreground text-primary font-bold hover:bg-primary-foreground/90"
             >
               Book a Free Demonstration
             </Link>
             <a
               href="mailto:osca@sygma-solutions.com"
-              className="inline-block px-6 py-3 rounded-md border border-blue-600 text-blue-600 font-semibold hover:bg-blue-50"
+              className="inline-block px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold hover:bg-primary-foreground/10"
             >
               Email osca@sygma-solutions.com
             </a>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

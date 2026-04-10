@@ -77,141 +77,148 @@ const courseMatrix = [
 export default function Locations() {
   return (
     <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations" }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
-    <>
-      <div className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-sm font-semibold text-blue-300 mb-2">Training Locations</p>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">We Come to You. Or You Come to Us.</h1>
-            <p className="text-lg text-slate-300">
-              Sygma delivers training from its Wigan training centre and The Survey School in Worcester, on client sites nationwide, and virtually via MS Teams. The standard of training is the same regardless of where it is delivered.
-            </p>
-          </div>
-        </section>
-
-        {/* Image Break */}
-        <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+      
+      {/* Hero Section */}
+      <section className="relative w-full h-96 overflow-hidden bg-foreground">
+        <Image
+          src="CAT4-and-Genny-47"
+          alt="Sygma training locations nationwide"
+          fill
+          className="absolute inset-0 object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
+        <div className="absolute inset-0 border-l-4 border-accent" />
+        <div className="relative flex flex-col justify-end p-8 md:p-12 h-full">
+          <p className="text-sm font-semibold text-accent mb-2">Training Locations</p>
+          <h1 className="text-4xl md:text-5xl font-black text-primary-foreground mb-4">We Come to You. Or You Come to Us.</h1>
+          <p className="text-lg text-primary-foreground/80">
+            Sygma delivers training from its Wigan training centre and The Survey School in Worcester, on client sites nationwide, and virtually via MS Teams. The standard of training is the same regardless of where it is delivered.
+          </p>
         </div>
+      </section>
 
-        {/* Location Cards */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
-              {locations.map((loc) => (
-                <div key={loc.name} className="border border-slate-300 rounded-xl bg-white p-6 md:p-8">
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin size={20} className="text-blue-600 shrink-0 mt-0.5" />
-                    <div>
-                      <h2 className="text-xl font-bold text-slate-900">{loc.name}</h2>
-                      <p className="text-sm text-slate-600 font-medium mt-0.5">{loc.address}</p>
-                    </div>
-                  </div>
-                  <p className="text-slate-700 leading-relaxed mb-4">{loc.desc}</p>
-                  <div className="grid md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-slate-200">
-                    <div>
-                      <p className="eyebrow text-blue-600 mb-2">Courses Available</p>
-                      <p className="text-sm text-slate-700">{loc.courses}</p>
-                    </div>
-                    <div>
-                      <p className="eyebrow text-blue-600 mb-2">Notes</p>
-                      <p className="text-sm text-slate-700">{loc.notes}</p>
-                    </div>
+      {/* Image Break */}
+      <div className="w-full h-64 md:h-80 overflow-hidden">
+        <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+      </div>
+
+      {/* Location Cards */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <div className="space-y-6">
+            {locations.map((loc) => (
+              <div key={loc.name} className="border border-border rounded-xl bg-card p-6 md:p-8">
+                <div className="flex items-start gap-3 mb-4">
+                  <MapPin size={20} className="text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h2 className="text-xl font-bold text-foreground">{loc.name}</h2>
+                    <p className="text-sm text-muted-foreground font-medium mt-0.5">{loc.address}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Image Break */}
-        <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
-        </div>
-
-        {/* Regional Training Guides */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="eyebrow text-blue-600 mb-3">On-Site Training by Region</p>
-            <h2 className="text-3xl font-bold mb-4 text-slate-900">Regional Training Guides</h2>
-            <p className="text-slate-700 leading-relaxed mb-8">We deliver cable avoidance and utility training at client sites across the UK. These guides cover what we offer in each region, including course availability, travel arrangements, and local client references.</p>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {regionalGuides.map((loc) => (
-                <Link key={loc.name} href={loc.to} className="border border-slate-300 rounded-lg bg-white p-5 hover:border-blue-600 hover:shadow-md transition-all block">
-                  <h3 className="font-bold text-slate-900 mb-2">{loc.name}</h3>
-                  <p className="text-sm text-slate-700">{loc.desc}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Course Matrix */}
-        <section className="bg-slate-50 py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="eyebrow text-blue-600 mb-3">Quick Reference</p>
-            <h2 className="text-3xl font-bold mb-6 text-slate-900">Which Location for Which Course?</h2>
-            <div className="overflow-x-auto rounded-lg border border-slate-300">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-blue-600 text-white">
-                    <th className="text-left px-5 py-3 font-bold">Course Type</th>
-                    <th className="text-left px-5 py-3 font-bold">Wigan</th>
-                    <th className="text-left px-5 py-3 font-bold">Worcester</th>
-                    <th className="text-left px-5 py-3 font-bold">Your Site</th>
-                    <th className="text-left px-5 py-3 font-bold">Online</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {courseMatrix.map(({ type, wigan, worcester, site, online }, i) => (
-                    <tr key={type} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
-                      <td className="px-5 py-3 font-semibold text-slate-900">{type}</td>
-                      <td className="px-5 py-3 text-slate-700">{wigan}</td>
-                      <td className="px-5 py-3 text-slate-700">{worcester}</td>
-                      <td className="px-5 py-3 text-slate-700">{site}</td>
-                      <td className="px-5 py-3 text-slate-700">{online}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        {/* Image Break */}
-        <div className="w-full h-64 md:h-80 overflow-hidden">
-          <Image src="CAT4-and-Genny-49" width={1200} height={800} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
-        </div>
-
-        {/* CTA */}
-        <section className="bg-blue-50 border-y border-blue-200 py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap items-center justify-between gap-6">
-              <div>
-                <h2 className="text-2xl font-bold mb-2 text-slate-900">Book a Course at Your Preferred Location</h2>
-                <p className="text-slate-700">Contact us to discuss dates, location, and group requirements.</p>
+                <p className="text-muted-foreground leading-relaxed mb-4">{loc.desc}</p>
+                <div className="grid md:grid-cols-2 gap-4 mt-4 pt-4 border-t border-border">
+                  <div>
+                    <p className="eyebrow text-primary mb-2">Courses Available</p>
+                    <p className="text-sm text-muted-foreground">{loc.courses}</p>
+                  </div>
+                  <div>
+                    <p className="eyebrow text-primary mb-2">Notes</p>
+                    <p className="text-sm text-muted-foreground">{loc.notes}</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center px-6 py-3 rounded-md bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-colors"
-                >
-                  Get in Touch
-                </Link>
-                <a
-                  href="tel:+442039718252"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-blue-600 text-blue-600 font-semibold text-sm hover:bg-blue-50 transition-colors"
-                >
-                  <Phone size={16} /> 0203 971 8252
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* Image Break */}
+      <div className="w-full h-64 md:h-80 overflow-hidden">
+        <Image src="CAT4-and-Genny-48" width={1200} height={800} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
+
+      {/* Regional Training Guides */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="eyebrow text-primary mb-3">On-Site Training by Region</p>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Regional Training Guides</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">We deliver cable avoidance and utility training at client sites across the UK. These guides cover what we offer in each region, including course availability, travel arrangements, and local client references.</p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {regionalGuides.map((loc) => (
+              <Link key={loc.name} href={loc.to} className="border border-border rounded-lg bg-card p-5 hover:border-primary hover:shadow-md transition-all block">
+                <h3 className="font-bold text-foreground mb-2">{loc.name}</h3>
+                <p className="text-sm text-muted-foreground">{loc.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Course Matrix */}
+      <section className="bg-muted/30 py-16 px-4">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="eyebrow text-primary mb-3">Quick Reference</p>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Which Location for Which Course?</h2>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary text-primary-foreground">
+                  <th className="text-left px-5 py-3 font-bold">Course Type</th>
+                  <th className="text-left px-5 py-3 font-bold">Wigan</th>
+                  <th className="text-left px-5 py-3 font-bold">Worcester</th>
+                  <th className="text-left px-5 py-3 font-bold">Your Site</th>
+                  <th className="text-left px-5 py-3 font-bold">Online</th>
+                </tr>
+              </thead>
+              <tbody>
+                {courseMatrix.map(({ type, wigan, worcester, site, online }, i) => (
+                  <tr key={type} className={i % 2 === 0 ? 'bg-background' : 'bg-muted/30'}>
+                    <td className="px-5 py-3 font-semibold text-foreground">{type}</td>
+                    <td className="px-5 py-3 text-muted-foreground">{wigan}</td>
+                    <td className="px-5 py-3 text-muted-foreground">{worcester}</td>
+                    <td className="px-5 py-3 text-muted-foreground">{site}</td>
+                    <td className="px-5 py-3 text-muted-foreground">{online}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Break */}
+      <div className="w-full h-64 md:h-80 overflow-hidden">
+        <Image src="CAT4-and-Genny-49" width={1200} height={800} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+      </div>
+
+      {/* CTA */}
+      <section className="bg-primary border-y border-border py-16 px-4">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <div className="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <h2 className="text-2xl font-bold mb-2 text-primary-foreground">Book a Course at Your Preferred Location</h2>
+              <p className="text-primary-foreground/80">Contact us to discuss dates, location, and group requirements.</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center px-6 py-3 rounded-md bg-primary-foreground text-primary font-bold text-sm hover:bg-primary-foreground/90 transition-colors"
+              >
+                Get in Touch
+              </Link>
+              <a
+                href="tel:+442039718252"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors"
+              >
+                <Phone size={16} /> 0203 971 8252
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
