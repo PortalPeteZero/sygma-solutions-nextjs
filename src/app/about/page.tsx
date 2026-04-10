@@ -146,8 +146,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Continue with remaining sections - abbreviated for space */}
-      {/* Full About page continues with all sections from the source file */}
+      {/* Call-to-Action Section */}
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-black mb-4">Ready to Reduce Cable Strikes on Your Sites?</h2>
+            <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">Explore our cable avoidance training courses or speak with a specialist about a bespoke programme for your organisation.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/courses" className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-background text-primary font-bold text-sm hover:bg-background/90 transition-colors">
+              See Our Courses
+            </Link>
+            <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-primary-foreground text-primary font-bold text-sm hover:bg-primary-foreground/90 transition-colors">
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
