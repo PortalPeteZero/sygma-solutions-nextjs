@@ -148,6 +148,135 @@ export default function About() {
         </div>
       </section>
 
+      {/* The Importance of Cable Avoidance Training */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">The Importance of Cable Avoidance Training</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Why Certified Cable Avoidance Training Matters</h2>
+          <div className="prose prose-sm max-w-none text-muted-foreground space-y-4 leading-relaxed">
+            <p>Thousands of underground utility strikes are reported across Great Britain every year. Striking an electrical cable or gas main can lead to catastrophic injuries or death. Cable strikes also result in extensive damage to infrastructure, significant financial costs, compensation claims, and construction site shutdowns that cause project delays. These consequences affect the contractor's reputation and the safety of every worker on site.</p>
+            <p>Certified cable avoidance training is essential to reduce the risk of these accidents. Proper training ensures that operatives and supervisors can locate underground cables and pipes safely and effectively before and during excavation. Course content covers emergency protocols, including when to switch off power, how to evacuate safely, and whom to contact if a cable strike occurs. The training also ensures compliance with health and safety guidance such as HSG47 and the CDM Regulations, which are applicable to every excavation project in the UK.</p>
+            <p>On successful completion of a Sygma cable avoidance training course, delegates receive a training certificate and photo ID card to demonstrate competence. Most industry certifications are valid for three to five years before refresher training is required. Sygma does not run half day cable avoidance courses. Our minimum is a full day, because competence in avoiding danger from underground services cannot be built in four hours.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our People */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Our People</p>
+              <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Every Trainer Is a Specialist. That Is Not a Tagline.</h2>
+              <p className="text-muted-foreground leading-relaxed">Every Sygma trainer is directly employed. No freelancers. No generalists. Every one of them has worked as a utility surveyor or for an equipment manufacturer before joining Sygma. They are TAQA qualified and they teach one subject. That is what makes the difference between a course that ticks a box and a course that changes behaviour on site.</p>
+            </div>
+            <div>
+              <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Sygma directly employed specialist trainer conducting utility training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { title: 'Ex-Utility Surveyors', body: 'Trainers who have spent years running electromagnetic and GPR surveys on live sites. They know where the equipment fails and why, because they have been there.' },
+              { title: 'Ex-Equipment Manufacturer Specialists', body: 'Trainers who worked for the companies that design and build the locating equipment. They understand the engineering behind the signal, not just the buttons on the front panel.' },
+              { title: 'TAQA Qualified Assessors', body: 'Every Sygma trainer holds a Training, Assessment and Quality Assurance qualification. They do not just know the subject. They know how to assess it properly.' },
+              { title: 'Directly Employed', body: "No agency staff. No sub-contracted freelancers. Every trainer works for Sygma and is accountable to Sygma's standards. You get the same quality every time." },
+            ].map((item) => (
+              <div key={item.title} className="border border-border rounded-lg bg-card p-5">
+                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Course Content */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Course Content</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">What Our Cable Avoidance Training Courses Cover</h2>
+          <div className="prose prose-sm max-w-none text-muted-foreground space-y-4 leading-relaxed">
+            <p>Every Sygma cable avoidance training course combines theoretical and practical sessions. The course content covers electromagnetic signal theory, the practical use of CAT and Genny cable avoidance tools across all four locating modes (Power, Radio, Genny, and Avoidance), signal generator operation, and how to read and cross-reference service drawings to locate underground services before breaking ground. Delegates also learn how to carry out cable avoidance work in realistic site conditions using real cable avoidance equipment.</p>
+            <p>Practical elements include hands-on practice with CAT and Genny equipment, where delegates carry out cable location exercises on a live training rig. Each cable avoidance course includes a short written assessment and practical assessment to ensure competency. Course materials include a handout summarising the topics covered.</p>
+            <p>Sygma cable avoidance training courses can be conducted on-site at the client's premises or at one of our dedicated training venues, providing flexibility for businesses. We commonly deliver in house cable avoidance training at client sites across the UK mainland, with travel included in every course fee.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Accreditations */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Accreditations</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Accredited. Specialist. Accountable.</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8 max-w-4xl">Sygma Solutions holds the following accreditations and affiliations. Each one is earned through assessment, maintained through performance, and subject to external audit.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {accreditations.map((a) => (
+              <div key={a.name} className="bg-card border border-border rounded-lg p-5">
+                <h3 className="font-bold text-foreground mb-2">{a.name}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Link href="/accreditations" className="text-primary font-semibold hover:underline text-sm">View full accreditation details &rsaquo;</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Train */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">How We Train</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Four Ways to Train with Sygma</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">We come to you, or you come to us. Either way, the standard is the same.</p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {deliveryModes.map((dm) => (
+              <div key={dm.title} className="border border-border rounded-lg bg-card p-5">
+                <h3 className="font-bold text-foreground mb-2">{dm.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{dm.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Train */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Who We Train</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Sectors We Work With</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">Sygma trains operatives and surveyors across every sector that works with underground utilities. Our clients include Tier 1 contractors, utility network operators, rail infrastructure companies, and specialist survey firms.</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {['Water and Wastewater', 'Gas Distribution', 'Electricity Networks', 'Telecommunications', 'Civil Engineering', 'Highways and Transport', 'Rail Infrastructure', 'Defence and MOD', 'Utility Survey Firms'].map((sector) => (
+              <div key={sector} className="bg-card border border-border rounded-lg px-4 py-3 text-sm font-semibold text-foreground">{sector}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* We Measure Everything */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">We Measure Everything</p>
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Every Delegate. Every Course. Externally Verified Feedback.</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8 max-w-4xl">Every delegate completes a QR-code feedback form at the end of every cable avoidance training course. Every response is captured, analysed, and reported back to the client. We do not guess how well the cable avoidance course went. We measure it. If there is a problem with how course content was delivered, or if workers need additional support with specific cable avoidance techniques, we know about it the same day.</p>
+          <div className="grid grid-cols-3 gap-6 text-center">
+            <div>
+              <p className="text-3xl font-black text-primary">100%</p>
+              <p className="text-sm text-muted-foreground mt-1">of courses produce a delegate feedback report</p>
+            </div>
+            <div>
+              <p className="text-3xl font-black text-primary">Same Day</p>
+              <p className="text-sm text-muted-foreground mt-1">feedback reports delivered to clients</p>
+            </div>
+            <div>
+              <p className="text-3xl font-black text-primary">QR Code</p>
+              <p className="text-sm text-muted-foreground mt-1">digital feedback system on every course</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call-to-Action Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
@@ -161,6 +290,22 @@ export default function About() {
             </Link>
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-primary-foreground text-primary font-bold text-sm hover:bg-primary-foreground/90 transition-colors">
               Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Open Day CTA */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Free Monthly Open Day: Wigan HQ</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">Once a month, Sygma opens its Wigan training centre for a free face-to-face mentoring session. Bring your equipment. Bring your site data. Bring the questions your team cannot answer.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
+              Book Your Open Day Place
+            </Link>
+            <Link href="/training/cable-location-avoidance" className="inline-flex items-center justify-center px-8 py-3 rounded-md border border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+              Browse All Courses
             </Link>
           </div>
         </div>

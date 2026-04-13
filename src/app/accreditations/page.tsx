@@ -62,27 +62,27 @@ export default function AccreditationsPage() {
             {[
               {
                 title: 'CITB Approved Training Organisation (ATO)',
-                content: 'Sygma Solutions is a CITB Approved Training Organisation. This approval means our training meets CITB\'s quality standards and that CITB-registered employers may be able to access funding support towards eligible training costs through the CITB Employer Network model.',
+                content: 'Sygma Solutions is a CITB Approved Training Organisation. This approval means our training meets CITB\'s quality standards and that CITB-registered employers may be able to access funding support towards eligible training costs through the CITB Employer Network model. Funding is accessed through the Employer Network, not directly from Sygma. If your business is CITB-registered, speak to your CITB Employer Network adviser to discuss which courses qualify and how to apply. Sygma can guide you through the process.',
               },
               {
-                title: 'EUSR / EUSR (Utility Skills Register)',
-                content: 'Sygma is approved to deliver EUSR Category 1 (CAT1) and Category 2 (CAT2) training. Operatives who complete these courses and pass assessment are registered on the Utility Skills Register (EUSR) and receive EUSR cards, which are the industry-standard proof of cable avoidance competency required by the majority of utility network operators.',
+                title: 'EUS / EUSR (Utility Skills Register)',
+                content: 'Sygma is approved to deliver EUS Category 1 (CAT1) and Category 2 (CAT2) training. Operatives who complete these courses and pass assessment are registered on the Utility Skills Register (EUSR) and receive EUSR cards, which are the industry-standard proof of cable avoidance competency required by the majority of utility network operators and their supply chains. EUSR card registration carries an additional fee payable to EUS at the point of registration. This fee is set by EUS, not Sygma, and is not included in the training price. Your Sygma trainer will confirm the current registration fee at the time of booking.',
               },
               {
                 title: 'ProQual Approved Centre',
-                content: 'Sygma is a ProQual Approved Centre. This covers two distinct relationships with ProQual: ProQual Level 2 to Level 6 Qualifications (Ofqual-regulated qualifications in utility mapping and surveying), and ProQual Accreditations (CAT1, CAT1 Plus, CAT2 - externally verified and accredited by ProQual Accreditations).',
+                content: 'Sygma is a ProQual Approved Centre. This covers two distinct relationships with ProQual, which are not the same and should not be confused. ProQual Level 2 to Level 6 Qualifications: Sygma delivers ProQual\'s Ofqual-regulated qualifications in utility mapping and surveying. These qualifications sit on the Regulated Qualifications Framework (RQF) and are nationally recognised. ProQual Accreditations (CAT1, CAT1 Plus, CAT2): Separately, Sygma delivers ProQual-accredited cable avoidance courses. These are externally verified and accredited by ProQual Accreditations, but they are not Ofqual-regulated qualifications. They are industry accreditations that carry a higher standard of individual assessment than in-house or EUSR-route certificates.',
               },
               {
                 title: 'TSA (The Survey Association)',
-                content: 'Sygma\'s 5-Day PAS128 Surveyor Programme is recognised by The Survey Association (TSA). This approval relates specifically to that programme only. TSA is the professional body for survey companies and their approval confirms it meets the standards expected for surveyor development.',
+                content: 'Sygma\'s 5-Day PAS128 Surveyor Programme is recognised by The Survey Association (TSA). This approval relates specifically to that programme only and does not apply to Sygma\'s wider course portfolio. TSA is the professional body for survey companies and their approval of the 5-Day Programme confirms it meets the standards expected for surveyor development in the utilities and mapping sector.',
               },
               {
                 title: 'ICES (Institution of Civil Engineering Surveyors)',
-                content: 'The ProQual Level 3 Certificate and Level 4, 5 and 6 Diplomas in Utility Surveying and Mapping are mapped to ICES membership pathways. Learners who complete these qualifications may use them as part of their route to ICES membership.',
+                content: 'The ProQual Level 3 Certificate and Level 4, 5 and 6 Diplomas in Utility Surveying and Mapping are mapped to ICES membership pathways. Learners who complete these qualifications may use them as part of their route to ICES membership at the relevant grade. This is a qualification mapping relationship, not a blanket organisational accreditation. Sygma is not accredited by ICES as an institution; specific qualifications we deliver are formally recognised within the ICES membership framework.',
               },
               {
                 title: 'CICES (Chartered Institution of Civil Engineering Surveyors)',
-                content: 'The Level 6 Diploma in Utility Surveying and Mapping is mapped to the CICES Incorporated Engineer pathway. Learners completing the Level 6 Diploma may use it as part of their route to CICES membership.',
+                content: 'The Level 6 Diploma in Utility Surveying and Mapping is mapped to the CICES Incorporated Engineer pathway. As with the ICES relationship, this is a qualification-specific mapping, not a blanket organisational accreditation. Learners completing the Level 6 Diploma may use it as part of their route to CICES membership at the appropriate grade.',
               },
             ].map((item) => (
               <div key={item.title} className="border border-border rounded-lg bg-card p-6">
@@ -152,6 +152,27 @@ export default function AccreditationsPage() {
             <p>
               Named client references and case studies are available on request for organisations at procurement or tender stage. <Link href="/knowledge-hub" className="text-primary font-semibold hover:underline">View our case studies</Link> to see how we have delivered training programmes for organisations in the sector.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
+          <h2 className="text-3xl font-bold mb-8">Questions About Our Accreditations</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is Sygma a CITB Approved Training Organisation?', a: 'Yes. Sygma Solutions is a CITB Approved Training Organisation. CITB-registered businesses may be able to access funding support towards eligible training costs through the CITB Employer Network. Funding is not automatic and is not applied directly by Sygma. Contact your CITB Employer Network adviser to confirm which courses qualify and how to apply. We can assist you with the process.' },
+              { q: 'Are your EUS CAT1 courses accredited and do delegates receive EUSR cards?', a: 'Yes. Sygma is approved to deliver EUS Category 1 and Category 2 courses. Operatives who pass assessment are registered on the Utility Skills Register and receive EUSR cards. The EUSR card is the industry-standard proof of cable avoidance competency required by the majority of utility network operators. Registration carries an additional fee paid directly to EUS, which will be confirmed at the time of booking.' },
+              { q: 'Are ProQual CAT1 and CAT1 Plus nationally recognised qualifications?', a: 'ProQual CAT1 and CAT1 Plus are externally verified and accredited by ProQual Accreditations. They are not Ofqual-regulated qualifications and are not on the Regulated Qualifications Framework. They are industry accreditations that carry a high standard of individual assessment: each delegate is individually mapped to learning outcomes and the assessment is externally verified. This is a different and more rigorous standard than in-house or EUSR-route certificates, but they are not the same as Ofqual-regulated qualifications. For Ofqual-regulated qualifications, see our ProQual Level 2 to Level 6 utility mapping diploma range.' },
+              { q: 'Can you provide accreditation documentation for tender or procurement purposes?', a: 'Yes. If you are completing a tender, pre-qualification questionnaire or supplier audit, Sygma can provide documentation covering our CITB ATO status, EUS/EUSR approval, ProQual centre approval and any other relevant accreditation. Contact us with your specific requirements and we will provide the appropriate documentation.' },
+            ].map(({ q, a }) => (
+              <div key={q} className="border border-border rounded-lg bg-card p-6">
+                <h3 className="font-bold text-foreground mb-3">{q}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

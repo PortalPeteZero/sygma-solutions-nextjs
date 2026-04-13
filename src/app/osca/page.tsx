@@ -105,8 +105,23 @@ export default function OscaPage() {
         </div>
       </section>
 
+      {/* What Is OSCA */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">What It Is</p>
+          <h2 className="text-3xl font-bold mb-4">What Is OSCA?</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+            <p>OSCA is Sygma's digital on-site competency assessment tool for utility location and avoidance, and safe digging. It is conducted by Sygma's qualified assessors and industry experts at your workplace, during normal operations.</p>
+            <p>Unlike classroom refreshers or end-of-course sign-offs, OSCA assesses what operatives actually do. On your site. On your equipment. In real conditions. Each assessment is conducted to a structured criteria set mapped to current industry standards, with the option to add client-specific or site-specific elements.</p>
+            <p>The OSCA report is generated digitally during the assessment and delivered to you immediately. It includes photographic and video evidence, GPS location data, time and date stamps and a full criteria map showing what was assessed and the outcome.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* What OSCA Assesses */}
+      <section className="py-16 bg-background">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Assessment Scope</p>
           <h2 className="text-3xl font-bold mb-4">What OSCA Assesses</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">The OSCA covers ten structured assessment elements, all mapped to current industry standards for utility location and avoidance. Each element is assessed systematically.</p>
           <div className="grid md:grid-cols-2 gap-3">
@@ -120,7 +135,144 @@ export default function OscaPage() {
         </div>
       </section>
 
+      {/* Digital Report */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Digital Report</p>
+          <h2 className="text-3xl font-bold mb-4">The OSCA Digital Report</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">The OSCA does not end with a handwritten form or a tick-sheet. Our digital platform generates a full assessment report during the assessment and emails it to you the same day. The report gives you the evidence you need for compliance, procurement and internal records.</p>
+          <div className="grid md:grid-cols-2 gap-3">
+            {[
+              'Full criteria map showing each assessed element and outcome',
+              'Photographic and video evidence captured during the assessment',
+              'GPS location data and time and date stamps for every assessment point',
+              'Assessor commentary on each element',
+              'Overall competency outcome: Competent, Development Required, or Not Yet Competent',
+              'Coaching notes (coaching format only)',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 border border-border rounded-lg bg-card p-4">
+                <CheckCircle size={16} className="text-primary shrink-0 mt-0.5" />
+                <span className="text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Assessment Format */}
       <section className="py-16 bg-background">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Assessment Format</p>
+          <h2 className="text-3xl font-bold mb-4">Assessment Only or Assessment with Coaching</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">OSCA is available in two formats. You choose the approach that is right for your operatives and your programme.</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="border border-border rounded-lg bg-card p-6">
+              <h3 className="font-bold text-foreground mb-3">Assessment Only</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">The assessor observes and records. Operatives are assessed against all criteria without intervention. The digital report is generated and emailed on the same day. This format is typically used for compliance verification and periodic competency checks.</p>
+            </div>
+            <div className="border border-border rounded-lg bg-card p-6">
+              <h3 className="font-bold text-foreground mb-3">Assessment with Coaching</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">The assessor observes, records, and intervenes where required. Each intervention is logged as a coaching record. This format is typically used where operatives are known to have specific development needs, or as part of a structured improvement programme following an incident.</p>
+            </div>
+          </div>
+          <p className="text-muted-foreground text-sm mt-4">Both formats use the same digital platform and produce the same structured report.</p>
+        </div>
+      </section>
+
+      {/* How OSCA Works On the Day */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">On the Day</p>
+          <h2 className="text-3xl font-bold mb-8">How OSCA Works On the Day</h2>
+          <div className="space-y-4">
+            {[
+              { step: '1', title: 'Pre-Assessment Briefing', desc: 'The Sygma assessor arrives on site and briefs the operatives. The assessment scope, criteria, and format are explained. No surprises.' },
+              { step: '2', title: 'Live Observation', desc: 'The assessor observes operatives during normal site operations. Equipment use, Genny deployment, signal interpretation, depth readings, and safe digging practice are all assessed against the structured criteria set.' },
+              { step: '3', title: 'Real-Time Digital Capture', desc: 'Every assessment element is recorded digitally using the OSCA platform. Photographic and video evidence, GPS location data, and time stamps are captured as the assessment progresses.' },
+              { step: '4', title: 'Coaching Interventions (if selected)', desc: 'In the coaching format, the assessor intervenes where required and logs each coaching record. This is used for operatives with known development needs or as part of a structured improvement programme.' },
+              { step: '5', title: 'Same-Day Report Delivery', desc: 'The full OSCA digital report is generated during the assessment and emailed to you the same day. No waiting. No follow-up paperwork.' },
+            ].map((item) => (
+              <div key={item.step} className="border border-border rounded-lg bg-card p-5 flex gap-4">
+                <div className="shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-black text-sm">{item.step}</div>
+                <div>
+                  <h4 className="font-bold text-foreground mb-1">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Safe Digging Add-On */}
+      <section className="py-16 bg-background">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Safe Digging</p>
+          <h2 className="text-3xl font-bold mb-4">OSCA Safe Digging Add-On</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">The OSCA safe digging module extends the assessment to cover hand excavation technique, spotter positioning, and excavation risk management. It takes approximately 45 minutes per operative and produces a separate section in the digital report.</p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="border border-border rounded-lg bg-card p-5">
+              <h3 className="font-bold text-foreground mb-2">Hand-Digging Technique</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Assessment of correct hand-dig methods near buried services, tool selection, and approach angle.</p>
+            </div>
+            <div className="border border-border rounded-lg bg-card p-5">
+              <h3 className="font-bold text-foreground mb-2">Spotter Positioning</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Where the spotter stands, what they observe, and how they communicate with the operative during excavation.</p>
+            </div>
+            <div className="border border-border rounded-lg bg-card p-5">
+              <h3 className="font-bold text-foreground mb-2">Excavation Risk Management</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Decision-making when a service is exposed. What to do when something unexpected appears in the trench.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why OSCA Is Different */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Why OSCA</p>
+          <h2 className="text-3xl font-bold mb-8">Why OSCA Is Different</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { title: 'It happens on your site', body: 'Not in a classroom. Not on a training rig. OSCA assesses what your operatives actually do, in the conditions they actually work in.' },
+              { title: 'It is criteria-mapped', body: 'Every element is assessed against a structured criteria set. The report shows exactly what was assessed and the outcome for each element.' },
+              { title: 'It produces evidence, not opinion', body: 'GPS location, time stamps, photographic and video evidence. The OSCA report is an auditable record, not a subjective impression.' },
+              { title: 'It fills the gap certificates cannot', body: 'A 3-year certificate tells you nothing about month 18. OSCA gives you verifiable evidence of current competency between training cycles.' },
+            ].map((item) => (
+              <div key={item.title} className="border border-border rounded-lg bg-card p-5">
+                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who Is OSCA For */}
+      <section className="py-16 bg-background">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Who Is It For</p>
+          <h2 className="text-3xl font-bold mb-6">Who Is OSCA For?</h2>
+          <div className="grid md:grid-cols-2 gap-3">
+            {[
+              'Tier 1 and Tier 2 contractors with large utility location workforces',
+              'Utility network operators managing field team competency between training cycles',
+              'Health and safety managers who need auditable evidence of operative competency',
+              'Procurement leads who need to demonstrate competency assurance to clients',
+              'Organisations that have experienced a utility strike or near-miss',
+              'Any business that employs or contracts operatives who locate utilities as part of their work',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3 border border-border rounded-lg bg-card p-4">
+                <CheckCircle size={16} className="text-primary shrink-0 mt-0.5" />
+                <span className="text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-16 bg-muted/30">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">

@@ -113,6 +113,36 @@ export default function CableAvoidanceLondon() {
       {/* Image Break */}
       <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-06" width={1200} height={800} alt="CAT and Genny training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
 
+      {/* Course Content */}
+      <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
+        <p className="eyebrow text-primary mb-3">Course Content</p>
+        <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What Your Team Will Learn on a Cable Avoidance Training Course in London</h2>
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
+          <div>
+            <h3 className="font-bold text-foreground mb-3">Theory and Understanding</h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">Every cable avoidance training course combines classroom theory sessions covering current legislation, HSG47 guidance on avoiding danger from underground services, safe digging practices and utility hazards. Your delegates will understand why cable avoidance matters, the real cost of utility strikes on construction sites, and how to avoid danger when excavating near buried services. We cover health and safety requirements, risk assessment basics and best practice procedures for locating underground services before breaking ground.</p>
+          </div>
+          <div>
+            <h3 className="font-bold text-foreground mb-3">Practical CAT and Genny Training</h3>
+            <p className="text-muted-foreground leading-relaxed text-sm">Practical instruction covers the CAT4 cable avoidance tool and Genny signal generator in detail. Trainees learn the four locating modes used by the CAT tool, how to correctly apply the Genny signal to cables and pipes, and how to interpret equipment signals in the field. Hands-on practical sessions take place on your actual London site, using real underground services and genuine site conditions. That is the difference between a classroom exercise and confident, competent operators.</p>
+          </div>
+        </div>
+        <h3 className="font-bold text-foreground mb-4">Four CAT Locating Modes Covered in Every Genny Training Course</h3>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { mode: '1. Power Mode', desc: 'Passive detection of electromagnetic fields from cables carrying load at the time of the survey. Cables not under load may produce little or no signal.' },
+            { mode: '2. Genny Mode', desc: 'Locating underground services using an applied signal from the Genny signal generator. The most accurate method for identifying specific lines.' },
+            { mode: '3. Radio Mode', desc: 'Passive detection of VLF radio signals re-radiated by metallic conductors. Signal strength varies with depth, soil conditions, and conductor length.' },
+            { mode: '4. Avoidance Mode', desc: 'Combining all passive detection modes to sweep for buried services before excavation. The mode most commonly used as a safety check.' },
+          ].map((item) => (
+            <div key={item.mode} className="border border-border rounded-lg bg-card p-5">
+              <h4 className="font-bold text-foreground mb-1 text-sm">{item.mode}</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
@@ -139,16 +169,39 @@ export default function CableAvoidanceLondon() {
         </div>
       </section>
 
-      {/* FAQs */}
+      {/* Flexible Scheduling */}
       <section className="bg-muted/30 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="eyebrow text-primary mb-3">Flexible Scheduling</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Course Duration: Half Day and Full Day CAT and Genny Training Options</h2>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-background border border-border rounded-xl p-6">
+              <h3 className="font-bold text-foreground mb-3">Half Day Training Sessions</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">Half day cable avoidance training is ideal for London teams with tight schedules. Our half day courses focus on core competency: understanding cable hazards, practical CAT and Genny equipment operation, and real-world site application. Perfect for refresher training, induction of new operatives, or certification top-ups. Half day sessions typically run 4 hours including practical instruction, assessment and certification. Maximum 8 delegates per session.</p>
+              <p className="text-xs text-muted-foreground font-semibold">Suitable for: Operatives with prior cable avoidance experience, induction training, rapid team updates</p>
+            </div>
+            <div className="bg-background border border-border rounded-xl p-6">
+              <h3 className="font-bold text-foreground mb-3">Full Day Training Courses</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">Full day cable avoidance courses offer comprehensive theory, practical training, and detailed instruction in CAT and Genny equipment operation. A full day allows deeper understanding of underground service detection, four locating modes, signal generator application, and extended practical sessions on your London site. Ideal for initial competency development or higher-level accreditation pathways like EUSR CAT1 or ProQual CAT1. Course duration is typically 7 hours including breaks.</p>
+              <p className="text-xs text-muted-foreground font-semibold">Suitable for: New operatives, in-depth competency, ProQual and EUSR accreditation courses</p>
+            </div>
+          </div>
+          <p className="text-muted-foreground text-sm leading-relaxed max-w-4xl">On-site delivery means no travel time for your delegates, no lost productivity, and practical CAT and Genny training using your actual site conditions, cable layouts and real buried services. Whether you need a focused half day session or a comprehensive full day genny training course, we deliver at your London premises with no disruption to your schedule.</p>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="bg-background py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="eyebrow text-primary mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Questions About CAT and Genny Training in London</h2>
           <div className="space-y-4">
             {[
               { q: 'What is CAT and Genny training?', a: 'CAT and Genny training teaches your operatives to safely operate cable avoidance tools and signal generators on site. The CAT4 is the industry-standard cable avoidance tool with four locating modes. The Genny is a signal generator used to apply a radio frequency to cables and pipes for precise location.' },
-              { q: 'Can we do a half day cable avoidance training course in London?', a: 'Yes. We offer flexible half day training sessions for London teams with tight schedules. Half day cable avoidance courses cover core competency in CAT and Genny operation, practical instruction, and site-specific assessment.' },
-              { q: 'Do you deliver cable avoidance training in London?', a: 'Yes. Sygma Solutions delivers cable avoidance and CAT and Genny training at client sites across London and the South East. We travel to your site and bring all CAT and Genny equipment, materials and assessment documentation.' },
+              { q: 'Can we do a half day cable avoidance training course in London?', a: 'Yes. We offer flexible half day training sessions for London teams with tight schedules. Half day cable avoidance courses cover core competency in CAT and Genny operation, practical instruction, and site-specific assessment. Half day sessions typically run 4 hours and are ideal for refresher training, induction, or team updates.' },
+              { q: 'What does practical instruction include on a genny training course?', a: 'Practical sessions cover hands-on operation of the CAT4 cable avoidance tool, including all four locating modes: Power Mode, Genny Mode, Radio Mode, and Avoidance Mode. Trainees also learn to apply the Genny signal generator correctly, interpret equipment responses, and conduct safe digging checks. All practical training takes place on your actual London site using real underground services in your actual ground conditions.' },
+              { q: 'How long is cable avoidance training?', a: 'Course duration depends on the qualification. Our in-house CAT and Genny training, EUSR CAT1 and ProQual CAT1 are 1 day courses (typically 7 hours). ProQual CAT1 Plus is 2 days for advanced competency. We also offer focused half day sessions for refresher training or induction. All genny training courses include theory, practical instruction, and assessment.' },
+              { q: 'Do you deliver cable avoidance training in London?', a: 'Yes. Sygma Solutions delivers cable avoidance and CAT and Genny training at client sites across London and the South East. We travel to your site and bring all CAT and Genny equipment, materials and assessment documentation. On-site delivery means your operatives train on the ground they actually work on, using real underground services beneath your London site.' },
               { q: 'What is the travel cost for training in London?', a: 'Travel costs for London deliveries are included in the course quote. Contact us with your site location and we will confirm the full cost. There are no hidden charges for cable avoidance training delivered anywhere in London or the South East.' },
               { q: 'Can you deliver at our depot or site in the South East?', a: 'Yes. Sygma delivers CAT and Genny training at client premises across London and the South East including depots, live construction sites, training rooms and open yard space. We bring all cable avoidance equipment, signal generators and assessment materials.' },
               { q: 'Is CITB funding available for cable avoidance training in London?', a: 'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered businesses may be able to access funding for cable avoidance and genny training courses through the CITB Employer Network model.' },
