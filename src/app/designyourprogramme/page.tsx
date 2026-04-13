@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function DesignYourProgrammePage() {
-  redirect('/contact');
+  redirect('/bespoke-training');
 }

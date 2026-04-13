@@ -391,10 +391,10 @@ const nextConfig = {
       { source: '/courses/design-your-programme', destination: '/bespoke-training', permanent: true },
       { source: '/courses/designyourprogramme', destination: '/bespoke-training', permanent: true },
       // 9.4: Individual case study redirects (pages merge into knowledge hub per Pete's decision)
-      { source: '/case-studies/kier-group', destination: '/knowledge-hub', permanent: true },
-      { source: '/case-studies/qts-group', destination: '/knowledge-hub', permanent: true },
-      { source: '/case-studies/morgan-sindall', destination: '/knowledge-hub', permanent: true },
-      { source: '/case-studies/severn-trent-water', destination: '/knowledge-hub', permanent: true },
+      { source: '/case-studies/kier-group', destination: '/knowledge-hub/kier-group-case-study', permanent: true },
+      { source: '/case-studies/qts-group', destination: '/knowledge-hub/qts-group-case-study', permanent: true },
+      { source: '/case-studies/morgan-sindall', destination: '/knowledge-hub/morgan-sindall-case-study', permanent: true },
+      { source: '/case-studies/severn-trent-water', destination: '/knowledge-hub/severn-trent-water-case-study', permanent: true },
       { source: '/courses/case-studies/:path*', destination: '/knowledge-hub', permanent: true },
 
       // === PHASE 9.5: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
