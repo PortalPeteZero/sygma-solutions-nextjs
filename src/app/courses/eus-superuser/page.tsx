@@ -159,7 +159,7 @@ export default function EusSuperuser() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="EUSR super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="EUSR super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
           <Image src="CAT4-and-Genny-54" width={1200} height={800} alt="Cat and genny training course - hands-on assessment with cable avoidance tools" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
           <Image src="CAT4-and-Genny-71" width={1200} height={800} alt="Signal generator (genny) application technique - direct connection for locating buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>

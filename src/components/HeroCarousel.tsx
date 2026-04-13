@@ -6,9 +6,26 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from 'next/image';
 
+const FALLBACK_IMAGE = 'CAT4-and-Genny-54';
+
+function HeroImage({ src, alt, priority }: { src: string; alt: string; priority: boolean }) {
+  const [imgSrc, setImgSrc] = useState(src);
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt}
+      fill
+      sizes="100vw"
+      priority={priority}
+      className="absolute inset-0 object-cover object-center"
+      onError={() => setImgSrc(FALLBACK_IMAGE)}
+    />
+  );
+}
+
 const slides = [
   {
-    image: "CAT4-and-Genny-15",
+    image: "New-Landscape-03",
     alt: "Trainee using a CAT4 cable avoidance tool during hands-on field training",
     eyebrow: "21 Years. One Specialism.",
     headline: "The UK's Only Independent Specialist in Underground Utility Location and Avoidance Training.",
@@ -26,7 +43,7 @@ const slides = [
     secondaryCta: { label: "Talk to Us", href: "/contact" },
   },
   {
-    image: "CAT4-and-Genny-30",
+    image: "on-site-training-panoramic-02",
     alt: "Instructor demonstrating Genny signal generator connection techniques on site",
     eyebrow: "Every Trainer. A Specialist.",
     headline: "All Our Trainers Are Experienced Utility Mapping Professionals. That Is What Makes the Difference.",
@@ -78,7 +95,7 @@ export default function HeroCarousel() {
           {slides.map((slide, i) => (
             <div key={i} className="relative flex-[0_0_100%] h-full">
               {/* Background image */}
-              <Image src={slide.image} alt={slide.alt} fill sizes="100vw" priority={i < 2} className="absolute inset-0 object-cover object-center" />
+              <HeroImage src={slide.image} alt={slide.alt} priority={i < 2} />
               {/* Gradient overlay - stronger on left for text legibility */}
               <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
 

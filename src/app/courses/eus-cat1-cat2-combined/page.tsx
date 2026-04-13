@@ -492,7 +492,7 @@ export default function EusCat12Combined() {
           <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Safe-Dig-22" alt="Safe excavation assessment during EUSR CAT2" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-50" alt="Combined CAT1 and CAT2 certificate training" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-64" alt="Combined CAT1 and CAT2 certificate training" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

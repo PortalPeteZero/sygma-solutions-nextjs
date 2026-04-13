@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Phone } from 'lucide-react';
 import Image from 'next/image';
+import FallbackImage from '@/components/FallbackImage';
 import type { LocationPageData } from '@/data/locations/types';
 import { breadcrumbSchema } from '@/lib/schema';
 
@@ -11,8 +12,8 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       
       {/* Hero Section */}
       <div className="relative w-full h-96 overflow-hidden bg-foreground">
-        <Image
-          src="CAT4-and-Genny-47"
+        <FallbackImage
+          src="New-Landscape-06"
           alt={data.hero.headline}
           fill
           className="absolute inset-0 object-cover"

@@ -35,7 +35,7 @@ export const locationData: LocationPageData = {
       { src: 'CAT4-and-Genny-58', alt: 'Utility detection practical exercise Greater Manchester' },
     ],
     [
-      { src: 'CAT4-and-Genny-43', alt: 'On-site assessment North West cable avoidance' },
+      { src: 'CAT4-and-Genny-54', alt: 'On-site assessment North West cable avoidance' },
       { src: 'CAT4-and-Genny-69', alt: 'Team at Wigan training centre completing course' },
       { src: 'Safe-Dig-05', alt: 'Excavation safety training North West premises' },
     ],

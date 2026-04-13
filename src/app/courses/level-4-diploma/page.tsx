@@ -60,7 +60,7 @@ export default function Level4Diploma() {
         images={[
           "MALA-GPR-19",
           "MALA-GPR-25",
-          "Advanced-EM-05",
+          "CAT4-and-Genny-59",
         ]}
         alts={["Advanced EM locating equipment demonstration during Level 4 diploma training", "MALA GPR survey being conducted as part of ProQual Level 4 utility mapping", "Ground penetrating radar data collection during Level 4 diploma practical assessment"]}
         breadcrumbs={[
@@ -529,7 +529,7 @@ export default function Level4Diploma() {
           <Image src="MALA-GPR-19" width={1200} height={800} alt="GPR survey practical for Level 4 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" width={1200} height={800} alt="On-site Level 4 Diploma assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="On-site Level 4 Diploma assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

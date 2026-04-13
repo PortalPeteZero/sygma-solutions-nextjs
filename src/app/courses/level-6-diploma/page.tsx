@@ -76,7 +76,7 @@ export default function Level6Diploma() {
         images={[
           "MALA-GPR-22",
           "MALA-GPR-15",
-          "Advanced-EM-05",
+          "CAT4-and-Genny-59",
         ]}
         alts={["Advanced electromagnetic locating for ProQual Level 6 utility mapping diploma", "Professional MALA GPR survey techniques at Level 6 diploma standard", "Complex ground penetrating radar data analysis during Level 6 training"]}
         breadcrumbs={[
@@ -284,7 +284,7 @@ export default function Level6Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" alt="Level 6 Diploma advanced training session" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="CAT4-and-Genny-59" alt="Level 6 Diploma advanced training session" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="MALA-GPR-26" alt="Advanced utility survey training for Level 6" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
@@ -452,7 +452,7 @@ export default function Level6Diploma() {
           <Image src="MALA-GPR-11" alt="GPR data interpretation for Level 6" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" alt="Advanced qualification practical assessment" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="CAT4-and-Genny-59" alt="Advanced qualification practical assessment" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>
 

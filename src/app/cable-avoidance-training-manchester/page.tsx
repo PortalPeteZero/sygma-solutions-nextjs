@@ -125,7 +125,7 @@ export default function CableAvoidanceManchester() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-07" width={1200} height={800} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-61" width={1200} height={800} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

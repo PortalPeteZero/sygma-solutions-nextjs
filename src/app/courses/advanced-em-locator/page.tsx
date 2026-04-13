@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description: 'Advanced electromagnetic locator training from Sygma Solutions. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location for experienced operators.',
     url: 'https://sygma-solutions.com/courses/advanced-em-locator',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Advanced-EM-05', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-59', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -70,7 +70,7 @@ export default function AdvancedEmLocator() {
         eyebrow="Utility Avoidance"
         headline="Advanced EM Locator Training: High-End Electromagnetic Location for Specialists"
         sub="Advanced training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot."
-        image="Advanced-EM-05"
+        image="CAT4-and-Genny-59"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
           { label: "Advanced EM Locator" },
@@ -294,7 +294,7 @@ export default function AdvancedEmLocator() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="Advanced-EM-05" width={1200} height={800} alt="Advanced EM locator practical training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+        <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="Advanced EM locator practical training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 
       {/* Course formats */}
@@ -359,7 +359,7 @@ export default function AdvancedEmLocator() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" width={1200} height={800} alt="Advanced electromagnetic locator practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="Advanced electromagnetic locator practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-02" width={1200} height={800} alt="Advanced EM locator techniques demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />

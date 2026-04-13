@@ -109,7 +109,7 @@ export default function OnlineLevel3Diploma() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <Image src="MALA-GPR-26" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="Advanced-EM-05" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-59" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
           <Image src="MALA-GPR-28" width={800} height={600} alt="Online Level 3 Diploma - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
@@ -257,7 +257,7 @@ export default function OnlineLevel3Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" width={1200} height={800} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="MALA-GPR-19" width={1200} height={800} alt="Utility avoidance qualification practical element" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />

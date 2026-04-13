@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: 'RQF Level 2 Award in Utility Location and Avoidance. Nationally recognised, Ofqual-regulated qualification for formal recognition of competency.',
     url: 'https://sygma-solutions.com/courses/rqf-level-2-award',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Advanced-EM-05', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-59', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -55,7 +55,7 @@ export default function RqfLevel2Award() {
         eyebrow="Utility Avoidance"
         headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
-        image="Advanced-EM-05"
+        image="CAT4-and-Genny-59"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },

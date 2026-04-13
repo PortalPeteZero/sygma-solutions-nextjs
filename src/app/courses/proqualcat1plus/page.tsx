@@ -71,7 +71,7 @@ export default function ProQualCat1Plus() {
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 Plus: The Most Advanced Utility Locating Qualification Available"
         sub="Two days. Forty-two individually assessed practical criteria. Seven advanced theory papers. Two qualifications. Built for operatives who need to locate in the conditions that basic training does not prepare them for."
-        image="CAT4-and-Genny-40"
+        image="CAT4-and-Genny-56"
         alt="ProQual CAT1 Plus advanced cable avoidance training course"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -518,7 +518,7 @@ export default function ProQualCat1Plus() {
           <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="ProQual CAT1 Plus practical training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-05" width={1200} height={800} alt="Advanced locator training with depth verification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="Advanced locator training with depth verification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-53" width={1200} height={800} alt="Hands-on Genny & CAT training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />

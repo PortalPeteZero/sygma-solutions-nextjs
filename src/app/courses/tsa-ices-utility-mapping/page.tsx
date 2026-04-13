@@ -95,7 +95,7 @@ export default function TsaIcesUtilityMapping() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="TSA and ICES utility mapping - practical session" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Advanced-EM-05" alt="TSA and ICES utility mapping - EM locator training" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-59" alt="TSA and ICES utility mapping - EM locator training" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
           <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-15" alt="TSA and ICES utility mapping - on-site delivery" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>

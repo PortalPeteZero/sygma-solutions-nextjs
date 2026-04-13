@@ -60,7 +60,7 @@ export default function Level5Diploma() {
         images={[
           "MALA-GPR-19",
           "MALA-GPR-25",
-          "Advanced-EM-05",
+          "CAT4-and-Genny-59",
         ]}
         alts={["Electromagnetic survey techniques practised during Level 5 diploma training", "Professional GPR survey methodology taught on the ProQual Level 5 course", "Advanced ground penetrating radar interpretation during Level 5 utility mapping"]}
         breadcrumbs={[
@@ -95,7 +95,7 @@ export default function Level5Diploma() {
         <div className="grid grid-cols-3 gap-3">
           <Image src="Utility-Mapping-02" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
           <Image src="MALA-GPR-22" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="Advanced-EM-05" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-59" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* What is Level 5 */}

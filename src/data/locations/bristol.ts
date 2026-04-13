@@ -35,7 +35,7 @@ export const locationData: LocationPageData = {
       { src: 'MALA-GPR-25', alt: 'Ground penetrating radar practical exercise' },
     ],
     [
-      { src: 'CAT4-and-Genny-50', alt: 'Cable avoidance training on South West site' },
+      { src: 'CAT4-and-Genny-64', alt: 'Cable avoidance training on South West site' },
       { src: 'MALA-GPR-19', alt: 'PAS128 survey assessment South West' },
       { src: 'Safe-Dig-02', alt: 'Safe excavation practices training Bristol' },
     ],

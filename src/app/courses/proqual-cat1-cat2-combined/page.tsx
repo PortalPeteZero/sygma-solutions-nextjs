@@ -494,7 +494,7 @@ export default function ProqualCat1Cat2Combined() {
           <Image src="Safe-Dig-22" width={1200} height={800} alt="Safe excavation assessment during ProQual CAT2" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-50" width={1200} height={800} alt="Combined CAT1 and CAT2 certificate training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="Combined CAT1 and CAT2 certificate training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

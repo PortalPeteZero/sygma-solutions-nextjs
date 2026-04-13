@@ -84,7 +84,7 @@ const courseCards = [
     desc: "Nationally recognised qualification for operatives locating and avoiding buried services. Three delivery formats. Theory and practical assessment included.",
     duration: "1-2 Days",
     qualification: "RQF Level 2 Award",
-    image: "CAT4-and-Genny-40",
+    image: "CAT4-and-Genny-56",
   },
 ];
 
@@ -438,13 +438,13 @@ export default function UtilityAvoidanceHub() {
       {/* Image strip before Why Sygma */}
       <div className="grid grid-cols-3 gap-3 h-56 md:h-72">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-40" width={1200} height={800} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="CAT4-and-Genny-45" width={1200} height={800} alt="Utility avoidance training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-50" width={1200} height={800} alt="Underground service detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="Underground service detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -1,6 +1,10 @@
+'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
+
+const FALLBACK_IMAGE = 'CAT4-and-Genny-54';
 
 interface Breadcrumb {
   label: string;
@@ -32,6 +36,7 @@ export default function InnerPageHero({
   const resolvedImage = image || (images && images[0]);
   const resolvedAlt = alt || (alts && alts[0]) || '';
   const hasImage = Boolean(resolvedImage);
+  const [imgSrc, setImgSrc] = useState(resolvedImage || FALLBACK_IMAGE);
 
   /* Always prepend "Home" breadcrumb if not already present */
   const fullBreadcrumbs =
@@ -44,12 +49,13 @@ export default function InnerPageHero({
       {/* Background image */}
       {hasImage && (
         <Image
-          src={resolvedImage!}
+          src={imgSrc}
           alt={resolvedAlt}
           fill
           className="absolute inset-0 h-full w-full object-cover object-center"
           priority
           sizes="100vw"
+          onError={() => setImgSrc(FALLBACK_IMAGE)}
         />
       )}
 

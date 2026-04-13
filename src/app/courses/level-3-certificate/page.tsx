@@ -93,7 +93,7 @@ export default function Level3Certificate() {
         <div className="grid grid-cols-3 gap-3">
           <Image src="MALA-GPR-11" width={1200} height={800} alt="Level 3 Certificate utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
           <Image src="MALA-GPR-11" width={1200} height={800} alt="Level 3 Certificate utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="Advanced-EM-05" width={1200} height={800} alt="Level 3 Certificate utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="Level 3 Certificate utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
       {/* What is it */}

@@ -35,9 +35,9 @@ export const locationData: LocationPageData = {
       { src: 'Safe-Dig-07', alt: 'Safe excavation near buried services London' },
     ],
     [
-      { src: 'CAT4-and-Genny-40', alt: 'On-site utility avoidance assessment London' },
+      { src: 'CAT4-and-Genny-56', alt: 'On-site utility avoidance assessment London' },
       { src: 'CAT4-and-Genny-05', alt: 'Advanced electromagnetic location training practical' },
-      { src: 'CAT4-and-Genny-50', alt: 'Team completing cable detection certification' },
+      { src: 'CAT4-and-Genny-64', alt: 'Team completing cable detection certification' },
     ],
   ],
   courses: [
