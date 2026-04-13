@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
       'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
     url: 'https://sygma-solutions.com/courses/online-level-5-diploma',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

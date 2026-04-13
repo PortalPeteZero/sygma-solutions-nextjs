@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { LocationPageData } from './types';
 
@@ -10,6 +11,7 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'CAT and Genny Training London | Sygma Solutions',
       description: 'CAT and Genny training in London and the South East. On-site delivery. Travel included.',
+      images: [DEFAULT_OG_IMAGE],
     },
   },
   hero: {

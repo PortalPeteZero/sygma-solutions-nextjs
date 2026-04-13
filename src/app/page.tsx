@@ -64,7 +64,9 @@ export default function Home() {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           name: 'Sygma Solutions',
+          url: 'https://sygma-solutions.com',
           telephone: '02039718252',
+          image: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto/CAT4-and-Genny-54',
           address: { '@type': 'PostalAddress', streetAddress: 'Platt Lane, Hindley', addressLocality: 'Wigan', postalCode: 'WN2 3PA', addressCountry: 'GB' }
         },
         {

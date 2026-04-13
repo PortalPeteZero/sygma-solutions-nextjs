@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: 'Utility Training Guides & Articles | Sygma Solutions',
   description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub' },
-  robots: { index: false, follow: true },
   openGraph: {
     title: 'Utility Training Guides & Articles | Sygma Solutions',
     description: 'Technical resources and guides on underground utility location, avoidance, and mapping. Written by specialist trainers for utility professionals.',
@@ -44,6 +43,14 @@ export default function KnowledgeHub() {
         sub="Guides, explainers, and technical resources on utility location, avoidance, and mapping. Written by Sygma's specialist trainers."
         breadcrumbs={[{ label: "Knowledge Hub" }]}
       />
+
+      <section className="py-10 bg-background">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Sygma publishes technical guides, industry explainers, case studies, and training insights for teams working around buried utilities. Every article is written or reviewed by our specialist trainers and draws on two decades of field delivery across the UK.
+          </p>
+        </div>
+      </section>
 
       <KnowledgeHubClient items={knowledgeHubItems} />
 

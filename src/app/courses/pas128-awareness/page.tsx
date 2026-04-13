@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import { Metadata } from 'next';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
       'PAS 128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, drawings, and specifications.',
     url: 'https://sygma-solutions.com/courses/pas128-awareness',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

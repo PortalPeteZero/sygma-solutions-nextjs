@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Bespoke Utility Training Programmes | Sygma Solutions',
@@ -38,6 +39,16 @@ export default function BespokeTrainingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: 'Bespoke Utility Training Programmes',
+        description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Priced per programme, not per head. Built around your sites and procedures.',
+        provider: { '@type': 'Organization', name: 'Sygma Solutions', url: 'https://sygma-solutions.com' },
+        areaServed: { '@type': 'Country', name: 'United Kingdom' },
+        url: 'https://sygma-solutions.com/bespoke-training',
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Bespoke Training' }]) }} />
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
         <Image src="CAT4-and-Genny-61" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="Bespoke training hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />

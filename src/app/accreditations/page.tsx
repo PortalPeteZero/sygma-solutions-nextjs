@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { organizationSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'CITB Approved, EUSR & ProQual Accredited | Sygma Solutions',
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
 export default function AccreditationsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Accreditations' }]) }} />
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
         <Image src="CAT4-and-Genny-54" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="Accreditations hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />

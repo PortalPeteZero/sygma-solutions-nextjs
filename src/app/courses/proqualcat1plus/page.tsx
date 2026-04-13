@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
@@ -45,6 +46,7 @@ export const metadata: Metadata = {
     url: 'https://sygma-solutions.com/courses/proqualcat1plus',
     siteName: 'Sygma Solutions',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

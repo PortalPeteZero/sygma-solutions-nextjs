@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import Link from 'next/link';
 import { CheckCircle } from "lucide-react";
 import InnerPageHero from "@/components/InnerPageHero";
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
     url: 'https://sygma-solutions.com/courses/service-coordinator-usc',
     siteName: 'Sygma Solutions',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

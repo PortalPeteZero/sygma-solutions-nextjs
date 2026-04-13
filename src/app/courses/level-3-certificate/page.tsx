@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import Link from 'next/link';
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import InnerPageHero from "@/components/InnerPageHero";
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
     url: 'https://sygma-solutions.com/courses/level-3-certificate',
     siteName: 'Sygma Solutions',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

@@ -170,7 +170,7 @@ export function articleSchema(params: {
     "publisher": ORG,
     ...(params.datePublished ? { "datePublished": params.datePublished } : {}),
     ...(params.dateModified ? { "dateModified": params.dateModified } : {}),
-    ...(params.image ? { "image": `${SITE_URL}${params.image}` } : {}),
+    ...(params.image ? { "image": `https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200/${params.image}` } : {}),
   });
 }
 

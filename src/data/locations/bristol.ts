@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { LocationPageData } from './types';
 
@@ -10,6 +11,7 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'Utility Training Bristol & South West | Sygma Solutions',
       description: 'Utility mapping and PAS 128 training in Bristol and the South West. Travel included.',
+      images: [DEFAULT_OG_IMAGE],
     },
   },
   hero: {
