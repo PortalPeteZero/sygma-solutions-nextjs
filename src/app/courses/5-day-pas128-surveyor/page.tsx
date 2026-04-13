@@ -82,9 +82,9 @@ export default function Pas128Surveyor() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-59" alt="PAS128 surveyor course - electromagnetic locating practical session" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-26" alt="PAS128 surveyor course - GPR survey equipment in use" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Advanced-EM-04" alt="PAS128 surveyor course - advanced EM training on site" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="PAS128 surveyor course - electromagnetic locating practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="PAS128 surveyor course - GPR survey equipment in use" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="Advanced-EM-04" width={1200} height={800} alt="PAS128 surveyor course - advanced EM training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Course introduction */}
@@ -493,13 +493,13 @@ export default function Pas128Surveyor() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-22" alt="PAS128 surveyor training with GPR equipment" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-22" width={1200} height={800} alt="PAS128 surveyor training with GPR equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-22" alt="Utility survey practical assessment session" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-22" width={1200} height={800} alt="Utility survey practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-19" alt="PAS128 surveyor fieldwork demonstration" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-19" width={1200} height={800} alt="PAS128 surveyor fieldwork demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -661,13 +661,13 @@ export default function Pas128Surveyor() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-28" alt="Ground penetrating radar survey training" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-28" width={1200} height={800} alt="Ground penetrating radar survey training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-01" alt="Utility mapping survey practical" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-01" width={1200} height={800} alt="Utility mapping survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-22" alt="PAS128 surveyor GPR data interpretation" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-22" width={1200} height={800} alt="PAS128 surveyor GPR data interpretation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

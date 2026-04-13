@@ -83,9 +83,9 @@ export default function GprTraining() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-01" alt="GPR training - practical session with survey equipment" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-02" alt="GPR training - hands-on field assessment" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR training - on-site delivery" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="Utility-Mapping-01" width={1200} height={800} alt="GPR training - practical session with survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="Utility-Mapping-02" width={1200} height={800} alt="GPR training - hands-on field assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="MALA-GPR-25" width={1200} height={800} alt="GPR training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Course introduction */}
@@ -360,13 +360,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-26" alt="Ground penetrating radar practical training session" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="Ground penetrating radar practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR data collection on training site" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-25" width={1200} height={800} alt="GPR data collection on training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="Delegates learning GPR survey techniques" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="Delegates learning GPR survey techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -457,13 +457,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="GPR training equipment demonstration" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-25" width={1200} height={800} alt="GPR training equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-19" alt="Ground penetrating radar survey practical" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-19" width={1200} height={800} alt="Ground penetrating radar survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-28" alt="On-site GPR training with Mala equipment" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-28" width={1200} height={800} alt="On-site GPR training with Mala equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

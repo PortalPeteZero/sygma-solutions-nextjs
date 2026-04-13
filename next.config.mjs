@@ -78,6 +78,8 @@ const nextConfig = {
       { source: '/how-do-cable-locators-work-key-principles-of-buried-utility-detection', destination: '/knowledge-hub', permanent: true },
       // Internal restructuring
       { source: '/bespoke-training/design-your-programme', destination: '/bespoke-training', permanent: true },
+      { source: '/design-your-programme', destination: '/bespoke-training', permanent: true },
+      { source: '/designyourprogramme', destination: '/bespoke-training', permanent: true },
       { source: '/courses/utility-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/courses/proqualcat1', destination: '/courses/proqualcat1-training', permanent: true },
       { source: '/courses/proqual-level-3-cat-and-genny', destination: '/courses/proqualcat1-training', permanent: true },

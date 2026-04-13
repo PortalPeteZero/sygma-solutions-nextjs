@@ -94,9 +94,9 @@ export default function TsaIcesUtilityMapping() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="TSA and ICES utility mapping - practical session" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/CAT4-and-Genny-59" alt="TSA and ICES utility mapping - EM locator training" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-15" alt="TSA and ICES utility mapping - on-site delivery" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="TSA and ICES utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="TSA and ICES utility mapping - EM locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="MALA-GPR-15" width={1200} height={800} alt="TSA and ICES utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* Programme introduction */}
@@ -363,13 +363,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-15" alt="TSA utility mapping training with GPR" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-15" width={1200} height={800} alt="TSA utility mapping training with GPR" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-11" alt="ICES utility mapping practical assessment" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-11" width={1200} height={800} alt="ICES utility mapping practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-02" alt="Utility mapping survey fieldwork training" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-02" width={1200} height={800} alt="Utility mapping survey fieldwork training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -582,13 +582,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-26" alt="Ground penetrating radar training equipment" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-26" width={1200} height={800} alt="Ground penetrating radar training equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/MALA-GPR-25" alt="TSA ICES utility survey practical session" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="MALA-GPR-25" width={1200} height={800} alt="TSA ICES utility survey practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <img loading="lazy" src="https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_800/Utility-Mapping-04" alt="Utility mapping and detection training" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="Utility-Mapping-04" width={1200} height={800} alt="Utility mapping and detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
