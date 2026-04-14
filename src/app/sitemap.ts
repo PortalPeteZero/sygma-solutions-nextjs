@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/accreditations`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/bespoke-training`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/osca`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/privacy-policy`, changeFrequency: 'yearly', priority: 0.2 },
+    // /privacy-policy excluded -- noindexed page should not be in sitemap
   ];
 
   /* ------------------------------------------------------------------ */
@@ -89,6 +89,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'eusr-card-renewal',
     'npors-vs-eusr',
     'strike-prevention-site-managers',
+    'citb-funding-utility-training',
+    'kier-group-case-study',
+    'morgan-sindall-case-study',
+    'qts-group-case-study',
+    'severn-trent-water-case-study',
   ];
 
   const knowledgeHubPages: MetadataRoute.Sitemap = [
