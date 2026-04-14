@@ -14,10 +14,10 @@ export default function cloudinaryLoader({
     return src;
   }
 
-  // c_limit just resizes without cropping. Source photos are 4:3 landscape
-  // (Pete's phone). Components should use containers and Next.js
-  // Image width/height matching the 4:3 natural aspect so nothing gets cropped
-  // in CSS. Keeping server-side crops out of the loader prevents subject loss.
-  const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto'}`];
+  // c_limit just resizes without cropping -- source photos are 4:3 landscape
+  // (Pete's phone). Containers match 4:3 so nothing gets cropped in CSS.
+  // q_auto:eco = aggressive compression without visible quality loss, drops
+  // image payload ~40% vs q_auto which helps slow connections.
+  const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto:eco'}`];
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${params.join(',')}/${src}`;
 }

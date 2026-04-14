@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     loader: 'custom',
     loaderFile: './src/lib/cloudinary.ts',
+    // Cap srcSet at 1920 -- no container on the site is wider than this.
+    // Saves unnecessary downloads of 2048w/3840w images.
+    deviceSizes: [640, 750, 828, 1080, 1200, 1440, 1920],
+    imageSizes: [16, 32, 64, 96, 128, 256, 384],
   },
   async redirects() {
     return [
