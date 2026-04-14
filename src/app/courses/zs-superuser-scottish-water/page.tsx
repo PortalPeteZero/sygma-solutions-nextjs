@@ -123,9 +123,9 @@ export default function ZsSuperuserScottishWater() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="cat-42" width={1200} height={800} alt="ZS Superuser Scottish Water training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="cat-47" width={1200} height={800} alt="ZS Superuser Scottish Water training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="cat-53" width={1200} height={800} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="cat-42" width={1200} height={900} alt="ZS Superuser Scottish Water training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="cat-47" width={1200} height={900} alt="ZS Superuser Scottish Water training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="cat-53" width={1200} height={900} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* About */}
@@ -318,7 +318,7 @@ export default function ZsSuperuserScottishWater() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="cat-54" width={1200} height={800} alt="ZS Superuser Scottish Water training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top" />
+        <Image src="cat-54" width={1200} height={900} alt="ZS Superuser Scottish Water training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top" />
       </div>
 
       {/* Who should attend */}

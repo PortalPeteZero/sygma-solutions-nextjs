@@ -147,7 +147,7 @@ export default function Level5Diploma() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="em-02" width={1200} height={800} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
+        <Image src="em-02" width={1200} height={900} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
       </div>
 
       {/* Who it's for */}
@@ -333,13 +333,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-03" width={1200} height={800} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-03" width={1200} height={900} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-01" width={1200} height={800} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-01" width={1200} height={900} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-05" width={1200} height={800} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-05" width={1200} height={900} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -541,13 +541,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-07" width={1200} height={800} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-07" width={1200} height={900} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-04" width={1200} height={800} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-04" width={1200} height={900} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-06" width={1200} height={800} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06" width={1200} height={900} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

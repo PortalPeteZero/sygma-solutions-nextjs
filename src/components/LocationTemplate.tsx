@@ -49,8 +49,7 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
           <div key={idx} className="overflow-hidden rounded-lg">
             <Image
               src={img.src}
-              width={1200}
-              height={800}
+              width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="h-full w-full object-cover"
@@ -175,8 +174,7 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
           <div key={idx} className="overflow-hidden rounded-lg">
             <Image
               src={img.src}
-              width={1200}
-              height={800}
+              width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="h-full w-full object-cover"

@@ -154,7 +154,7 @@ export default function Level6Diploma() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="gpr-06" alt="Level 6 Diploma utility mapping - advanced electromagnetic survey training" width={1200} height={800} className="w-full h-full object-cover object-top" sizes="100vw" />
+        <Image src="gpr-06" alt="Level 6 Diploma utility mapping - advanced electromagnetic survey training" width={1200} height={900} className="w-full h-full object-cover object-top" sizes="100vw" />
       </div>
 
       {/* Who it's for */}

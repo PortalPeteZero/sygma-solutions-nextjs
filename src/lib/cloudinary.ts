@@ -14,9 +14,10 @@ export default function cloudinaryLoader({
     return src;
   }
 
-  // c_fill with g_auto:faces prioritises faces when present, falls back to
-  // overall content-aware cropping otherwise. Keeps operators' heads visible
-  // instead of cropping to hi-vis jackets (high-contrast regions).
-  const params = ['f_auto', 'c_fill', 'g_auto:faces', `w_${width}`, `q_${quality || 'auto'}`];
+  // c_limit just resizes without cropping. Source photos are 4:3 landscape
+  // (Pete's phone). Components should use aspect-[4/3] containers and Next.js
+  // Image width/height matching the 4:3 natural aspect so nothing gets cropped
+  // in CSS. Keeping server-side crops out of the loader prevents subject loss.
+  const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto'}`];
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${params.join(',')}/${src}`;
 }
