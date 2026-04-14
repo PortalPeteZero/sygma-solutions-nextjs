@@ -29,10 +29,10 @@ const whyPoints = [
 ];
 
 const pathways = [
-  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'cat-04' },
-  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'em-07' },
-  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'cat-05' },
-  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-06' },
+  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'cat-86' },
+  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'em-03' },
+  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'cat-82' },
+  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-84' },
 ];
 
 const faqs = [
@@ -273,7 +273,7 @@ export default function Home() {
                 <Image src="cat-66" width={1200} height={800} alt="On-site utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden aspect-square">
-                <Image src="cat-67" width={1200} height={800} alt="Genny & CAT practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+                <Image src="cat-90" width={1200} height={800} alt="Genny & CAT practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
               </div>
             </div>
           </div>
@@ -333,7 +333,7 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-lg overflow-hidden">
-              <Image src="cat-68" width={1200} height={800} alt="On-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-56 object-cover" />
+              <Image src="cat-87" width={1200} height={800} alt="On-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-56 object-cover" />
             </div>
           </div>
         </div>
