@@ -75,12 +75,12 @@ export default function UtilityMappingHub() {
             <p className="text-sm text-muted-foreground leading-relaxed">You need practical skills in utility detection and a recognised qualification. Start with our ProQual Level 3 Certificate in Utility Mapping or Level 4, build through to Level 5, and add PAS128 GPR training courses on top. These training courses cover how to locate buried services on a survey site, interpret stats plans, and use detection methods including EM locator and ground penetrating radar.</p>
           </div>
           <div className="bg-background rounded-xl border border-border p-6">
-            <Image src="MALA-GPR-07" width={600} height={400} alt="Senior Practitioners and Survey Managers" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
+            <Image src="MALA-GPR-15" width={600} height={400} alt="Senior Practitioners and Survey Managers" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
             <h3 className="font-bold text-foreground mb-2">Senior Practitioners and Survey Managers</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">Your team needs credibility on major frameworks. Our ProQual Level 5 and Level 6 professional qualifications (plus OSCA competency assessments) give clients and procurement teams the evidence they need to approve your people for PAS128 utility survey work, from site reconnaissance through to detailed drawings and quality assurance.</p>
           </div>
           <div className="bg-background rounded-xl border border-border p-6">
-            <Image src="Advanced-EM-08" width={600} height={400} alt="Project Managers and Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
+            <Image src="Advanced-EM-04" width={600} height={400} alt="Project Managers and Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
             <h3 className="font-bold text-foreground mb-2">Project Managers and Service Coordinators</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">You commission utility surveys. You need to understand what PAS128 means, what survey quality levels require, how to verify positional accuracy, and what your legal duties are. Our PAS128 Awareness training courses give you the knowledge to specify compliant survey work and reduce the risk of utility strikes without needing to become a surveyor.</p>
           </div>
@@ -148,7 +148,7 @@ export default function UtilityMappingHub() {
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <Link href="/courses/gpr-training" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
-            <Image src="MALA-GPR-05" width={600} height={400} alt="GPR Training: MALA and Leica Systems" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
+            <Image src="MALA-GPR-11" width={600} height={400} alt="GPR Training: MALA and Leica Systems" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
             <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">GPR Training: MALA and Leica Systems</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">Practical training in ground penetrating radar operation, GPR data collection, and interpretation using MALA GPR, Leica DS2000, Leica DSX, and Mira Compact systems. Introductory and advanced sessions available.</p>
           </Link>
