@@ -94,14 +94,14 @@ export default function GennyFirstMethodology() {
           </p>
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-25" width={1200} height={900} alt="Genny and CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-25" width={1200} height={900} alt="Genny and CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-51" width={1200} height={900} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-51" width={1200} height={900} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-52" width={1200} height={900} alt="Signal generator application during CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-52" width={1200} height={900} alt="Signal generator application during CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -130,14 +130,14 @@ export default function GennyFirstMethodology() {
           </p>
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-53" width={1200} height={900} alt="Genny signal application on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-53" width={1200} height={900} alt="Genny signal application on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-02" width={1200} height={900} alt="Active detection with Genny signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-02" width={1200} height={900} alt="Active detection with Genny signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-03" width={1200} height={900} alt="CAT and Genny training in practice" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <div className="overflow-hidden">
+              <Image src="cat-03" width={1200} height={900} alt="CAT and Genny training in practice" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

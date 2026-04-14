@@ -108,9 +108,9 @@ export default function OnlineLevel3Diploma() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="em-01" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="em-04" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="gpr-02" width={800} height={600} alt="Online Level 3 Diploma - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="em-01" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full" />
+          <Image src="em-04" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full" />
+          <Image src="gpr-02" width={800} height={600} alt="Online Level 3 Diploma - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full" />
         </div>
       </section>
 
@@ -256,14 +256,14 @@ export default function OnlineLevel3Diploma() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="gpr-04" width={1200} height={900} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="gpr-04" width={1200} height={900} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="gpr-07" width={1200} height={900} alt="Utility avoidance qualification practical element" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="gpr-07" width={1200} height={900} alt="Utility avoidance qualification practical element" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="gpr-08" width={1200} height={900} alt="Level 3 qualification on-site assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="gpr-08" width={1200} height={900} alt="Level 3 qualification on-site assessment" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -381,14 +381,14 @@ export default function OnlineLevel3Diploma() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="gpr-10" width={1200} height={900} alt="Level 3 Diploma training equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="gpr-10" width={1200} height={900} alt="Level 3 Diploma training equipment" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="gpr-11" width={1200} height={900} alt="Online diploma practical training session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="gpr-11" width={1200} height={900} alt="Online diploma practical training session" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]">
-          <Image src="em-06" width={1200} height={900} alt="Utility avoidance qualification demonstration" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg">
+          <Image src="em-06" width={1200} height={900} alt="Utility avoidance qualification demonstration" sizes="100vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

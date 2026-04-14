@@ -32,12 +32,12 @@ export default function CableAvoidanceManchester() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "All Courses", to: "/courses" }, { label: "Cable Avoidance Training Manchester" }]) }} />
 
-      <div className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
+      <div className="relative w-full overflow-hidden bg-foreground">
         <Image
           src="cat-36"
           alt="Cable avoidance training in Manchester"
           fill
-          className="absolute inset-0 object-cover"
+          className="absolute inset-0"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
@@ -104,13 +104,13 @@ export default function CableAvoidanceManchester() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="cat-37" width={1200} height={900} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="cat-38" width={1200} height={900} alt="Genny signal application during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="cat-20" width={1200} height={900} alt="CAT and Genny session near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="cat-37" width={1200} height={900} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="cat-38" width={1200} height={900} alt="Genny signal application during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="cat-20" width={1200} height={900} alt="CAT and Genny session near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[4/3]"><Image src="cat-39" width={1200} height={900} alt="CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="w-full overflow-hidden"><Image src="cat-39" width={1200} height={900} alt="CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" /></div>
 
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">
@@ -125,7 +125,7 @@ export default function CableAvoidanceManchester() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[4/3]"><Image src="cat-41" width={1200} height={900} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="w-full overflow-hidden"><Image src="cat-41" width={1200} height={900} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

@@ -117,14 +117,14 @@ export default function Hsg47Explained() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-04" width={1200} height={900} alt="Safe digging near buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-04" width={1200} height={900} alt="Safe digging near buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-05" width={1200} height={900} alt="CAT and Genny used for utility detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-05" width={1200} height={900} alt="CAT and Genny used for utility detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-06" width={1200} height={900} alt="Hand digging within proximity zone" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-06" width={1200} height={900} alt="Hand digging within proximity zone" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -148,14 +148,14 @@ export default function Hsg47Explained() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-07" width={1200} height={900} alt="Practical cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-07" width={1200} height={900} alt="Practical cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-08" width={1200} height={900} alt="Excavation safety assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-08" width={1200} height={900} alt="Excavation safety assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-09" width={1200} height={900} alt="Team completing utility avoidance course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-09" width={1200} height={900} alt="Team completing utility avoidance course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

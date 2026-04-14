@@ -123,7 +123,7 @@ export default function CoursesPage() {
           src="cat-10"
           alt="CAT and Genny training in progress"
           fill
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-0 w-full h-auto"
           priority
           sizes="100vw"
         />
@@ -257,9 +257,9 @@ export default function CoursesPage() {
       <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Image src="cat-84" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
-            <Image src="cat-85" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
-            <Image src="em-04" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="cat-84" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="cat-85" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="em-04" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
         </div>
       </section>

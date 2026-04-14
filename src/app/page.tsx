@@ -211,7 +211,7 @@ export default function Home() {
             {pathways.map((p) => (
               <div key={p.title} className="relative overflow-hidden rounded-xl border border-border bg-card group">
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <Image src={p.image} width={1200} height={750} alt={p.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <Image src={p.image} width={1200} height={750} alt={p.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-black text-foreground mb-2">{p.title}</h3>
@@ -239,8 +239,8 @@ export default function Home() {
                 See Our Cable Avoidance Courses <ArrowRight size={14} className="ml-1.5" />
               </Link>
             </div>
-            <div className="rounded-xl overflow-hidden border border-border aspect-[4/3]">
-              <Image src="cat-64" width={1200} height={900} alt="Genny & CAT training" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
+            <div className="rounded-xl overflow-hidden border border-border">
+              <Image src="cat-64" width={1200} height={900} alt="Genny & CAT training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -263,8 +263,8 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden border border-border aspect-[4/3]">
-              <Image src="cat-08" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
+            <div className="rounded-xl overflow-hidden border border-border">
+              <Image src="cat-08" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -322,8 +322,8 @@ export default function Home() {
               </div>
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
-            <div className="rounded-xl overflow-hidden border border-border aspect-[4/3]">
-              <Image src="cat-80" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
+            <div className="rounded-xl overflow-hidden border border-border">
+              <Image src="cat-80" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
             </div>
           </div>
         </div>

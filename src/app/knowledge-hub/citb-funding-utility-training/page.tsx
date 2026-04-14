@@ -124,14 +124,14 @@ export default function CitbFundingUtilityTraining() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-55" width={1200} height={900} alt="CITB approved cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-55" width={1200} height={900} alt="CITB approved cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-56" width={1200} height={900} alt="Practical utility avoidance training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-56" width={1200} height={900} alt="Practical utility avoidance training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-58" width={1200} height={900} alt="Safe excavation practices training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <div className="overflow-hidden">
+                <Image src="cat-58" width={1200} height={900} alt="Safe excavation practices training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

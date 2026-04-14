@@ -45,12 +45,12 @@ export default function UtilityMappingBristolClient() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
+      <div className="relative w-full overflow-hidden bg-foreground">
         <Image
           src="em-02"
           alt="Utility mapping training in Bristol"
           fill
-          className="absolute inset-0 object-cover"
+          className="absolute inset-0"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
@@ -117,9 +117,9 @@ export default function UtilityMappingBristolClient() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 px-4">
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="w-full h-auto" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="w-full h-auto" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="w-full h-auto" /></div>
       </div>
 
       {/* Why It Matters */}

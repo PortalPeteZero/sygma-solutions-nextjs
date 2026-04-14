@@ -61,7 +61,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
               className="border border-border rounded-xl bg-card flex flex-col overflow-hidden"
             >
               {item.type === "article" && item.image && (
-                <Link href={item.href} className="relative block aspect-[4/3] overflow-hidden">
+                <Link href={item.href} className="relative block overflow-hidden">
                   <Image
                     src={item.image}
                     fill
@@ -72,12 +72,12 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
                 </Link>
               )}
               {item.type === "video" && item.youtubeId && (
-                <Link href={item.href} className="relative block aspect-[4/3] overflow-hidden">
+                <Link href={item.href} className="relative block overflow-hidden">
                   <img
                     loading="lazy"
                     src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`}
                     alt={item.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center">

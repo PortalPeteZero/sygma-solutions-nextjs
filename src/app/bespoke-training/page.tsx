@@ -50,7 +50,7 @@ export default function BespokeTrainingPage() {
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Bespoke Training' }]) }} />
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
-        <Image src="cat-09" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="Bespoke training hero" />
+        <Image src="cat-09" fill className="absolute inset-0 w-full h-auto" priority sizes="100vw" alt="Bespoke training hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
         <div className="relative z-10 container mx-auto px-6 md:px-8 pt-10 pb-12">

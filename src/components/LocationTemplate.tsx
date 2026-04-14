@@ -11,12 +11,12 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations", to: "/locations" }, { label: data.slug.charAt(0).toUpperCase() + data.slug.slice(1) }]) }} />
       
       {/* Hero Section */}
-      <div className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
+      <div className="relative w-full overflow-hidden bg-foreground">
         <FallbackImage
           src="cat-65"
           alt={data.hero.headline}
           fill
-          className="absolute inset-0 object-cover"
+          className="absolute inset-0"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
@@ -46,13 +46,13 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       {/* First Image Strip */}
       <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
         {data.imageStrips[0].map((img, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg aspect-[4/3]">
+          <div key={idx} className="overflow-hidden rounded-lg">
             <Image
               src={img.src}
               width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="h-full w-full object-cover"
+              className="w-full h-auto"
             />
           </div>
         ))}
@@ -171,13 +171,13 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       {/* Second Image Strip */}
       <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
         {data.imageStrips[1].map((img, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg aspect-[4/3]">
+          <div key={idx} className="overflow-hidden rounded-lg">
             <Image
               src={img.src}
               width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="h-full w-full object-cover"
+              className="w-full h-auto"
             />
           </div>
         ))}

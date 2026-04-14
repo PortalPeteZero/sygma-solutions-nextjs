@@ -15,7 +15,7 @@ export default function cloudinaryLoader({
   }
 
   // c_limit just resizes without cropping. Source photos are 4:3 landscape
-  // (Pete's phone). Components should use aspect-[4/3] containers and Next.js
+  // (Pete's phone). Components should use containers and Next.js
   // Image width/height matching the 4:3 natural aspect so nothing gets cropped
   // in CSS. Keeping server-side crops out of the loader prevents subject loss.
   const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto'}`];
