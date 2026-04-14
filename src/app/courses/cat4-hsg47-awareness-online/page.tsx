@@ -34,11 +34,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'CAT4 and HSG47 Awareness | Online Cable Avoidance | Sygma',
+  title: 'CAT4 & HSG47 Awareness Online | Cable Avoidance Training | Sygma',
   description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cat4-hsg47-awareness-online' },
   openGraph: {
-    title: 'CAT4 and HSG47 Awareness | Online Cable Avoidance | Sygma',
+    title: 'CAT4 & HSG47 Awareness Online | Cable Avoidance Training | Sygma',
     description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.',
     url: 'https://sygma-solutions.com/courses/cat4-hsg47-awareness-online',
     siteName: 'Sygma Solutions',
