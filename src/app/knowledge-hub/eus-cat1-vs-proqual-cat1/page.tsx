@@ -28,14 +28,14 @@ export default function EusCat1VsProQualCat1() {
         description: "EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.",
         url: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
         datePublished: "2026-03-09",
-        image: "CAT4-and-Genny-56",
+        image: "cat-36",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
         { label: "EUSR CAT1 vs ProQual CAT1" },
       ]) }} />
       <InnerPageHero
-        image="New-Landscape-04"
+        image="cat-59"
         alt="Comparison of EUSR CAT1 and ProQual CAT1 cable avoidance qualifications"
         eyebrow="Knowledge Hub"
         headline="EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?"
@@ -91,13 +91,13 @@ export default function EusCat1VsProQualCat1() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="CAT4-and-Genny-51" width={1200} height={800} alt="Operative using CAT4 during assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-31" width={1200} height={800} alt="Operative using CAT4 during assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="Genny signal application practical exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-43" width={1200} height={800} alt="Genny signal application practical exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="Safe-Dig-06" width={1200} height={800} alt="Cable avoidance training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="dig-06" width={1200} height={800} alt="Cable avoidance training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -127,13 +127,13 @@ export default function EusCat1VsProQualCat1() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="CAT4-and-Genny-66" width={1200} height={800} alt="Team training on CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-45" width={1200} height={800} alt="Team training on CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="CAT4-and-Genny-02" width={1200} height={800} alt="Advanced electromagnetic location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-12" width={1200} height={800} alt="Advanced electromagnetic location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="CAT4-and-Genny-58" width={1200} height={800} alt="Delegates completing cable avoidance qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-37" width={1200} height={800} alt="Delegates completing cable avoidance qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

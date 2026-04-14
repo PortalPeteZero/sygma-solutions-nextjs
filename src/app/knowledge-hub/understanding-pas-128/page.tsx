@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'Utility-Mapping-04',
+        url: 'em-06',
         width: 1200,
         height: 630,
         alt: 'Understanding PAS 128 utility survey',
@@ -45,7 +45,7 @@ export default function UnderstandingPas128() {
             description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
             url: '/knowledge-hub/understanding-pas-128',
             datePublished: '2026-03-09',
-            image: 'Utility-Mapping-04',
+            image: 'em-06',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function UnderstandingPas128() {
       />
 
       <InnerPageHero
-        image="Utility-Mapping-04"
+        image="em-06"
         alt="Understanding PAS 128 utility survey standard and detection methodology"
         eyebrow="Knowledge Hub"
         headline="Understanding PAS 128: A Guide for Contractors and Clients"
@@ -91,13 +91,13 @@ export default function UnderstandingPas128() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="GPR_06_ymxpsk" width={1200} height={800} alt="Ground penetrating radar survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="gpr-10" width={1200} height={800} alt="Ground penetrating radar survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Utility-Mapping-04" width={1200} height={800} alt="Utility mapping and PAS128 survey demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="em-06" width={1200} height={800} alt="Utility mapping and PAS128 survey demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="GPR_17_jq0zfl" width={1200} height={800} alt="GPR data collection for PAS128 survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="gpr-11" width={1200} height={800} alt="GPR data collection for PAS128 survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -135,13 +135,13 @@ export default function UnderstandingPas128() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="GPR_01_wnqqdp" width={1200} height={800} alt="PAS128 survey practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="gpr-08" width={1200} height={800} alt="PAS128 survey practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Utility-Mapping-01" width={1200} height={800} alt="Utility mapping team during field exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="em-04" width={1200} height={800} alt="Utility mapping team during field exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="MALA-GPR-26" width={1200} height={800} alt="GPR equipment used in PAS128 compliant survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="gpr-06" width={1200} height={800} alt="GPR equipment used in PAS128 compliant survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

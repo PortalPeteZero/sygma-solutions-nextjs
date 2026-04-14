@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'CAT4-and-Genny-64',
+        url: 'cat-43',
         width: 1200,
         height: 630,
         alt: 'Morgan Sindall PAS128 leadership training briefing',
@@ -45,7 +45,7 @@ export default function MorganSindallCaseStudy() {
             description: 'How Sygma designed PAS128 utility survey training at the leadership level for Morgan Sindall\'s project management teams.',
             url: '/knowledge-hub/morgan-sindall-case-study',
             datePublished: '2026-01-15',
-            image: 'CAT4-and-Genny-64',
+            image: 'cat-43',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function MorganSindallCaseStudy() {
       />
 
       <InnerPageHero
-        image="CAT4-and-Genny-64"
+        image="cat-43"
         alt="Morgan Sindall PAS128 leadership briefing for project managers"
         eyebrow="Case Study"
         headline="Morgan Sindall: PAS128 Leadership Briefings"
@@ -126,13 +126,13 @@ export default function MorganSindallCaseStudy() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="PAS128 leadership briefing for project managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-43" width={1200} height={800} alt="PAS128 leadership briefing for project managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="Utility-Mapping-04" width={1200} height={800} alt="Utility survey mapping and detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="em-06" width={1200} height={800} alt="Utility survey mapping and detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="CAT4-and-Genny-47" width={1200} height={800} alt="Team completing utility training course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-28" width={1200} height={800} alt="Team completing utility training course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

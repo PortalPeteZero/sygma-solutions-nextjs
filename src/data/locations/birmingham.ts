@@ -30,14 +30,14 @@ export const locationData: LocationPageData = {
   },
   imageStrips: [
     [
-      { src: 'CAT4-and-Genny-45', alt: 'Cable avoidance training in the Midlands' },
+      { src: 'cat-26', alt: 'Cable avoidance training in the Midlands' },
       { src: 'GPR_14_ox4l10', alt: 'GPR survey training at Worcester facility' },
-      { src: 'CAT4-and-Genny-63', alt: 'Utility detection practical exercise Birmingham' },
+      { src: 'cat-42', alt: 'Utility detection practical exercise Birmingham' },
     ],
     [
-      { src: 'Safe-Dig-15', alt: 'Safe excavation training West Midlands site' },
-      { src: 'CAT4-and-Genny-49', alt: 'On-site cable avoidance assessment Midlands' },
-      { src: 'CAT4-and-Genny-01', alt: 'Advanced electromagnetic location equipment training' },
+      { src: 'dig-15', alt: 'Safe excavation training West Midlands site' },
+      { src: 'cat-30', alt: 'On-site cable avoidance assessment Midlands' },
+      { src: 'cat-11', alt: 'Advanced electromagnetic location equipment training' },
     ],
   ],
   facility: {

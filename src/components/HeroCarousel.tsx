@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from 'next/image';
 
-const FALLBACK_IMAGE = 'CAT4-and-Genny-54';
+const FALLBACK_IMAGE = 'cat-34';
 
 function HeroImage({ src, alt, priority }: { src: string; alt: string; priority: boolean }) {
   const [imgSrc, setImgSrc] = useState(src);
@@ -25,7 +25,7 @@ function HeroImage({ src, alt, priority }: { src: string; alt: string; priority:
 
 const slides = [
   {
-    image: "New-Landscape-04",
+    image: "cat-59",
     alt: "Trainee using a CAT4 cable avoidance tool during hands-on field training",
     eyebrow: "21 Years. One Specialism.",
     headline: "The UK's Only Independent Specialist in Underground Utility Location and Avoidance Training.",
@@ -34,7 +34,7 @@ const slides = [
     secondaryCta: { label: "Book a Course", href: "/contact" },
   },
   {
-    image: "RD_8100_1_aeiaur",
+    image: "em-02",
     alt: "Advanced electromagnetic locating equipment used in Sygma utility detection training",
     eyebrow: "Proven Record in Reducing Strikes and Increasing Genny Usage.",
     headline: "We Teach Operatives to Locate Services, Not Just Avoid Them.",
@@ -43,7 +43,7 @@ const slides = [
     secondaryCta: { label: "Talk to Us", href: "/contact" },
   },
   {
-    image: "New-Landscape-01",
+    image: "cat-57",
     alt: "Instructor demonstrating Genny signal generator connection techniques on site",
     eyebrow: "Every Trainer. A Specialist.",
     headline: "All Our Trainers Are Experienced Utility Mapping Professionals. That Is What Makes the Difference.",
@@ -52,7 +52,7 @@ const slides = [
     secondaryCta: { label: "About Sygma", href: "/about" },
   },
   {
-    image: "New-Landscape-06",
+    image: "cat-60",
     alt: "Hands-on Genny signal application demonstration during a Sygma training course",
     eyebrow: "On-Site. Nationwide.",
     headline: "We Come to Your Site. Any Location on the UK Mainland.",

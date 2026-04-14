@@ -73,7 +73,7 @@ export default function ContactClient() {
   return (
     <>
       <InnerPageHero
-        image="New-Landscape-01"
+        image="cat-57"
         alt="Contact Sygma Solutions for cable avoidance and utility mapping training enquiries"
         eyebrow="Contact Sygma Solutions"
         headline="Get in Touch"
@@ -211,19 +211,19 @@ export default function ContactClient() {
 
       {/* Image Break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <Image src="CAT4-and-Genny-64" width={1200} height={800} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
+        <Image src="cat-43" width={1200} height={800} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-56" width={1200} height={800} alt="Sygma Solutions training facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-36" width={1200} height={800} alt="Sygma Solutions training facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Contact Sygma for training enquiries" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-27" width={1200} height={800} alt="Contact Sygma for training enquiries" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Safe-Dig-01" width={1200} height={800} alt="Sygma Solutions nationwide training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="dig-01" width={1200} height={800} alt="Sygma Solutions nationwide training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
     </>

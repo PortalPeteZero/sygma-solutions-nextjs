@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'The advanced specialist qualification for utility surveyors: demonstrating competency in EM location and GPR. Contact us for enrolment and pricing.',
     url: 'https://sygma-solutions.com/courses/level-4-diploma',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Utility-Mapping-04', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/em-06', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -58,9 +58,9 @@ export default function Level4Diploma() {
         headline="ProQual Level 4 Diploma in Utility Mapping and Surveying"
         sub="The advanced specialist qualification for utility surveyors: demonstrating competency in electromagnetic location and ground penetrating radar. Contact us to discuss enrolment and pricing."
         images={[
-          "MALA-GPR-19",
-          "MALA-GPR-25",
-          "CAT4-and-Genny-59",
+          "gpr-03",
+          "gpr-05",
+          "cat-38",
         ]}
         alts={["Advanced EM locating equipment demonstration during Level 4 diploma training", "MALA GPR survey being conducted as part of ProQual Level 4 utility mapping", "Ground penetrating radar data collection during Level 4 diploma practical assessment"]}
         breadcrumbs={[
@@ -93,9 +93,9 @@ export default function Level4Diploma() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="Utility-Mapping-01" width={800} height={600} alt="Level 4 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="Advanced-EM-04" width={800} height={600} alt="Level 4 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="MALA-GPR-22" width={800} height={600} alt="Level 4 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="em-04" width={800} height={600} alt="Level 4 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="em-01" width={800} height={600} alt="Level 4 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="gpr-04" width={800} height={600} alt="Level 4 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* What is Level 4 */}
@@ -140,7 +140,7 @@ export default function Level4Diploma() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="MALA-GPR-25" width={1200} height={800} alt="Level 4 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
+        <Image src="gpr-05" width={1200} height={800} alt="Level 4 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
       </div>
 
       {/* Who it's for */}
@@ -274,13 +274,13 @@ export default function Level4Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-04" width={1200} height={800} alt="Level 4 Diploma practical training session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-01" width={1200} height={800} alt="Level 4 Diploma practical training session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-19" width={1200} height={800} alt="Utility survey assessment for Level 4" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-03" width={1200} height={800} alt="Utility survey assessment for Level 4" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="Advanced-EM-04" width={1200} height={800} alt="Advanced electromagnetic locator training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-01" width={1200} height={800} alt="Advanced electromagnetic locator training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -523,13 +523,13 @@ export default function Level4Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="Utility-Mapping-02" width={1200} height={800} alt="Level 4 Diploma utility location training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-05" width={1200} height={800} alt="Level 4 Diploma utility location training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="MALA-GPR-19" width={1200} height={800} alt="GPR survey practical for Level 4 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-03" width={1200} height={800} alt="GPR survey practical for Level 4 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="CAT4-and-Genny-59" width={1200} height={800} alt="On-site Level 4 Diploma assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-38" width={1200} height={800} alt="On-site Level 4 Diploma assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

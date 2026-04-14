@@ -105,7 +105,7 @@ export function localBusinessSchema(): Record<string, unknown> {
       "name": "United Kingdom",
     },
     "priceRange": "$$",
-    "image": "https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto/CAT4-and-Genny-54",
+    "image": "https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto/cat-34",
     "sameAs": [
       "https://www.linkedin.com/company/sygma-solutions",
       "https://x.com/sygmasolutions",

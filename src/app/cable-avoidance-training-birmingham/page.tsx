@@ -34,7 +34,7 @@ export default function CableAvoidanceBirmingham() {
 
       <div className="relative w-full h-96 overflow-hidden bg-foreground">
         <Image
-          src="CAT4-and-Genny-62"
+          src="cat-41"
           alt="Cable avoidance training in Birmingham"
           fill
           className="absolute inset-0 object-cover"
@@ -104,13 +104,13 @@ export default function CableAvoidanceBirmingham() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-46" width={1200} height={800} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="CAT4-and-Genny-60" width={1200} height={800} alt="Genny signal application during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="Safe-Dig-14" width={1200} height={800} alt="Safe digging practice near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="cat-27" width={1200} height={800} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="cat-39" width={1200} height={800} alt="Genny signal application during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg"><Image src="dig-14" width={1200} height={800} alt="Safe digging practice near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-06" width={1200} height={800} alt="CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="cat-16" width={1200} height={800} alt="CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
 
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">
@@ -125,7 +125,7 @@ export default function CableAvoidanceBirmingham() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="CAT4-and-Genny-61" width={1200} height={800} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="w-full h-80 md:h-96 overflow-hidden"><Image src="cat-40" width={1200} height={800} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

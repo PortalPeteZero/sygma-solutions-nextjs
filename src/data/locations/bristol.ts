@@ -31,13 +31,13 @@ export const locationData: LocationPageData = {
   imageStrips: [
     [
       { src: 'GPR_15_cyzrhd', alt: 'GPR utility survey training South West' },
-      { src: 'Utility-Mapping-02', alt: 'Utility mapping field work Bristol region' },
-      { src: 'MALA-GPR-25', alt: 'Ground penetrating radar practical exercise' },
+      { src: 'em-05', alt: 'Utility mapping field work Bristol region' },
+      { src: 'gpr-05', alt: 'Ground penetrating radar practical exercise' },
     ],
     [
-      { src: 'CAT4-and-Genny-64', alt: 'Cable avoidance training on South West site' },
-      { src: 'MALA-GPR-19', alt: 'PAS128 survey assessment South West' },
-      { src: 'Safe-Dig-02', alt: 'Safe excavation practices training Bristol' },
+      { src: 'cat-43', alt: 'Cable avoidance training on South West site' },
+      { src: 'gpr-03', alt: 'PAS128 survey assessment South West' },
+      { src: 'dig-02', alt: 'Safe excavation practices training Bristol' },
     ],
   ],
   facility: {

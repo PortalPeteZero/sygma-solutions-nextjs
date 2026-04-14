@@ -5,7 +5,7 @@ export const SITE_NAME = 'Sygma Solutions';
 
 /** Default OG image -- used by all pages unless overridden */
 export const DEFAULT_OG_IMAGE = {
-  url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/CAT4-and-Genny-54',
+  url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-34',
   width: 1200,
   height: 630,
 };

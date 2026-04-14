@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
     url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/Safe-Dig-01', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/dig-01', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -57,7 +57,7 @@ export default function EusCat2SafeDig() {
         eyebrow="Safe Dig and Advanced"
         headline="EUSR CAT2 Safe Dig: EUSR-Registered Safe Excavation Training"
         sub="The complete safe digging course. Classroom theory, live site practical, and written assessment. Built for every operative who excavates near buried services."
-        image="Safe-Dig-01"
+        image="dig-01"
         alt="EUSR CAT2 safe digging training with vacuum excavation and hand-dig demonstration"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -153,9 +153,9 @@ export default function EusCat2SafeDig() {
       {/* Photo Strip */}
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="Safe-Dig-05" width={1200} height={800} alt="Safe dig training in progress" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="Safe-Dig-12" width={1200} height={800} alt="On-site practical dig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="Safe-Dig-02" width={1200} height={800} alt="Service exposure technique" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="dig-05" width={1200} height={800} alt="Safe dig training in progress" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="dig-12" width={1200} height={800} alt="On-site practical dig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="dig-02" width={1200} height={800} alt="Service exposure technique" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
 
@@ -257,7 +257,7 @@ export default function EusCat2SafeDig() {
 
       {/* Full-width image */}
       <div className="w-full h-56 md:h-80 overflow-hidden">
-        <Image src="Safe-Dig-06" width={1200} height={800} alt="EUSR CAT2 Safe Dig live excavation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
+        <Image src="dig-06" width={1200} height={800} alt="EUSR CAT2 Safe Dig live excavation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* What You Get */}
@@ -297,13 +297,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-07" width={1200} height={800} alt="EUSR CAT2 safe dig practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-07" width={1200} height={800} alt="EUSR CAT2 safe dig practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-14" width={1200} height={800} alt="Safe excavation technique demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-14" width={1200} height={800} alt="Safe excavation technique demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-03" width={1200} height={800} alt="Hand dig assessment near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-03" width={1200} height={800} alt="Hand dig assessment near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>
@@ -489,13 +489,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-08" width={1200} height={800} alt="Service exposure during safe dig training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-08" width={1200} height={800} alt="Service exposure during safe dig training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-31" width={1200} height={800} alt="EUSR CAT2 on-site excavation assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-20" width={1200} height={800} alt="EUSR CAT2 on-site excavation assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg">
-            <Image src="Safe-Dig-34" width={1200} height={800} alt="Sygma safe dig training completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+            <Image src="dig-21" width={1200} height={800} alt="Sygma safe dig training completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>
