@@ -14,9 +14,9 @@ export default function cloudinaryLoader({
     return src;
   }
 
-  // c_fill,g_auto = Cloudinary AI crops to the requested dimensions, keeping the
-  // most visually interesting content (operators, equipment) in frame.
-  // This eliminates manual cropping and fixes portrait-in-landscape-container issues.
-  const params = ['f_auto', 'c_fill', 'g_auto', `w_${width}`, `q_${quality || 'auto'}`];
+  // c_fill with g_auto:faces prioritises faces when present, falls back to
+  // overall content-aware cropping otherwise. Keeps operators' heads visible
+  // instead of cropping to hi-vis jackets (high-contrast regions).
+  const params = ['f_auto', 'c_fill', 'g_auto:faces', `w_${width}`, `q_${quality || 'auto'}`];
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${params.join(',')}/${src}`;
 }
