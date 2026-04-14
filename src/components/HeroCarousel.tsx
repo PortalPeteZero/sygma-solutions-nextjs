@@ -25,7 +25,7 @@ function HeroImage({ src, alt, priority }: { src: string; alt: string; priority:
 
 const slides = [
   {
-    image: "New-Landscape-03",
+    image: "New-Landscape-04",
     alt: "Trainee using a CAT4 cable avoidance tool during hands-on field training",
     eyebrow: "21 Years. One Specialism.",
     headline: "The UK's Only Independent Specialist in Underground Utility Location and Avoidance Training.",
@@ -43,7 +43,7 @@ const slides = [
     secondaryCta: { label: "Talk to Us", href: "/contact" },
   },
   {
-    image: "on-site-training-panoramic-02",
+    image: "New-Landscape-01",
     alt: "Instructor demonstrating Genny signal generator connection techniques on site",
     eyebrow: "Every Trainer. A Specialist.",
     headline: "All Our Trainers Are Experienced Utility Mapping Professionals. That Is What Makes the Difference.",
@@ -52,7 +52,7 @@ const slides = [
     secondaryCta: { label: "About Sygma", href: "/about" },
   },
   {
-    image: "CAT4-and-Genny-63",
+    image: "New-Landscape-06",
     alt: "Hands-on Genny signal application demonstration during a Sygma training course",
     eyebrow: "On-Site. Nationwide.",
     headline: "We Come to Your Site. Any Location on the UK Mainland.",

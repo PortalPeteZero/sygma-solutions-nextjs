@@ -29,10 +29,10 @@ const whyPoints = [
 ];
 
 const pathways = [
-  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'Cat_Genny_01_hifnli' },
+  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'CAT4-and-Genny-03' },
   { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'GPR_64_zjyuaq' },
-  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'Cat_Genny_17_kqd2z9' },
-  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'on-site-training-panoramic-02' },
+  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'CAT4-and-Genny-60' },
+  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'on-site-training-05' },
 ];
 
 const faqs = [
@@ -333,7 +333,7 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-lg overflow-hidden">
-              <Image src="on-site-training-01" width={1200} height={800} alt="On-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-56 object-cover" />
+              <Image src="on-site-training-02" width={1200} height={800} alt="On-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-56 object-cover" />
             </div>
           </div>
         </div>
