@@ -374,8 +374,8 @@ export default function UtilityAvoidanceHub() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
-        <Image src="cat-13" width={1200} height={900} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
+        <Image src="cat-46" width={1200} height={900} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Genny-First methodology */}

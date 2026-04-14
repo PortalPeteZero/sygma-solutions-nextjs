@@ -262,8 +262,8 @@ export default function EusCat2SafeDig() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
-        <Image src="cat-90" width={1200} height={900} alt="EUSR CAT2 Safe Dig live excavation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
+        <Image src="cat-44" width={1200} height={900} alt="EUSR CAT2 Safe Dig live excavation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* What You Get */}

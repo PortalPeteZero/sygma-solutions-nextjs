@@ -401,8 +401,8 @@ export default function EusCat12UscCombined() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
-        <Image src="cat-85" width={1200} height={900} alt="Combined EUSR CAT1, CAT2 and USC on-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
+        <Image src="cat-47" width={1200} height={900} alt="Combined EUSR CAT1, CAT2 and USC on-site training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Why Sygma */}
