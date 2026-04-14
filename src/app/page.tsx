@@ -210,9 +210,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {pathways.map((p) => (
               <div key={p.title} className="relative overflow-hidden rounded-xl border border-border bg-card group">
-                <div className="relative h-48 overflow-hidden">
-                  <Image src={p.image} width={1200} height={800} alt={p.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image src={p.image} width={1200} height={750} alt={p.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-black text-foreground mb-2">{p.title}</h3>
