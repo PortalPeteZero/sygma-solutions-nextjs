@@ -125,13 +125,13 @@ export default function MorganSindallCaseStudy() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-68" width={1200} height={900} alt="PAS128 leadership briefing for project managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-69" width={1200} height={900} alt="Utility survey mapping and detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-70" width={1200} height={900} alt="Team completing utility training course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>

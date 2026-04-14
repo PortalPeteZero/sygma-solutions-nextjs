@@ -152,7 +152,7 @@ export default function Level5Diploma() {
 
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
         <Image src="em-02" width={1200} height={900} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 

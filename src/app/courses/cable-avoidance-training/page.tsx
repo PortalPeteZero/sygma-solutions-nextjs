@@ -280,7 +280,7 @@ export default function CableAvoidanceTraining() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
         <Image src="cat-70" width={1200} height={900} alt="Cable avoidance training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 

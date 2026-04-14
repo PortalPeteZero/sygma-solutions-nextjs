@@ -129,13 +129,13 @@ export default function KierGroupCaseStudy() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-65" width={1200} height={900} alt="Bespoke utility avoidance training for Kier Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-66" width={1200} height={900} alt="CAT and Genny practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-67" width={1200} height={900} alt="Safe digging practices on infrastructure site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>

@@ -90,13 +90,13 @@ export default function EusCat1VsProQualCat1() {
           </p>
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-31" width={1200} height={900} alt="Operative using CAT4 during assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-37" width={1200} height={900} alt="Genny signal application practical exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-38" width={1200} height={900} alt="Cable avoidance training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
@@ -126,13 +126,13 @@ export default function EusCat1VsProQualCat1() {
           </p>
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-45" width={1200} height={900} alt="Team training on CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-57" width={1200} height={900} alt="Advanced electromagnetic location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-60" width={1200} height={900} alt="Delegates completing cable avoidance qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>

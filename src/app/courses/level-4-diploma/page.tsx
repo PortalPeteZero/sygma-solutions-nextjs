@@ -145,7 +145,7 @@ export default function Level4Diploma() {
 
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
         <Image src="gpr-03" width={1200} height={900} alt="Level 4 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 

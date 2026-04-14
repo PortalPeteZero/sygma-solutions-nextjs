@@ -124,13 +124,13 @@ export default function SevernTrentWaterCaseStudy() {
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-79" width={1200} height={900} alt="Severn Trent Water management training programme" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-80" width={1200} height={900} alt="Excavation safety management assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-81" width={1200} height={900} alt="Cable avoidance training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
