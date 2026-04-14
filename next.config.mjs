@@ -28,6 +28,8 @@ const nextConfig = {
       // === FOOTER/LEGACY LINK REDIRECTS ===
       { source: '/privacy', destination: '/privacy-policy', permanent: true },
       { source: '/blog', destination: '/knowledge-hub', permanent: true },
+      { source: '/sitemap.htm', destination: '/courses', permanent: true },
+      { source: '/observer.php', destination: '/knowledge-hub', permanent: true },
       { source: '/training', destination: '/courses', permanent: true },
       { source: '/certification', destination: '/accreditations', permanent: true },
       { source: '/case-studies', destination: '/knowledge-hub', permanent: true },
