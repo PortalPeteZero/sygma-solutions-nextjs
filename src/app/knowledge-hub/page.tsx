@@ -61,10 +61,10 @@ export default function KnowledgeHub() {
               <Image src="cat-87" width={1200} height={900} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="dig-19" width={1200} height={900} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-02" width={1200} height={900} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="gpr-09" width={1200} height={900} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-03" width={1200} height={900} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
           </div>
         </div>
@@ -75,10 +75,10 @@ export default function KnowledgeHub() {
           <Image src="cat-88" width={1200} height={900} alt="Cable avoidance training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-10" width={1200} height={900} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-04" width={1200} height={900} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="dig-11" width={1200} height={900} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-05" width={1200} height={900} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

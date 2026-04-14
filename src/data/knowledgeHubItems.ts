@@ -82,7 +82,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.",
     href: "/knowledge-hub/understanding-pas-128",
     type: "article",
-    image: "gpr-12",
+    image: "cat-50",
   },
   {
     category: "HSG47",
@@ -138,7 +138,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "How Sygma designed PAS128 utility survey training at the leadership level for Morgan Sindall's project managers.",
     href: "/knowledge-hub/morgan-sindall-case-study",
     type: "article",
-    image: "gpr-09",
+    image: "cat-60",
   },
   {
     category: "Case Study",

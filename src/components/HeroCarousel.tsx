@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from 'next/image';
 
-const FALLBACK_IMAGE = 'cat-03';
+const FALLBACK_IMAGE = 'cat-46';
 
 function HeroImage({ src, alt, priority }: { src: string; alt: string; priority: boolean }) {
   const [imgSrc, setImgSrc] = useState(src);
@@ -52,7 +52,7 @@ const slides = [
     secondaryCta: { label: "About Sygma", href: "/about" },
   },
   {
-    image: "cat-03",
+    image: "cat-46",
     alt: "Hands-on Genny signal application demonstration during a Sygma training course",
     eyebrow: "On-Site. Nationwide.",
     headline: "We Come to Your Site. Any Location on the UK Mainland.",
