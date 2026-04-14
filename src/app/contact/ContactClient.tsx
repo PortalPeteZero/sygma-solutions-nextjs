@@ -211,19 +211,19 @@ export default function ContactClient() {
 
       {/* Image Break */}
       <div className="w-full overflow-hidden">
-        <Image src="cat-80" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" />
+        <Image src="cat-80" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-81" width={1200} height={900} alt="Sygma Solutions training facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-81" width={1200} height={900} alt="Sygma Solutions training facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-82" width={1200} height={900} alt="Contact Sygma for training enquiries" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-82" width={1200} height={900} alt="Contact Sygma for training enquiries" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-83" width={1200} height={900} alt="Sygma Solutions nationwide training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-83" width={1200} height={900} alt="Sygma Solutions nationwide training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
     </>

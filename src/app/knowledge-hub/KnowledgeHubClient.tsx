@@ -67,7 +67,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
                     fill
                     alt={item.title}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover"
+                    className=""
                   />
                 </Link>
               )}
@@ -77,7 +77,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
                     loading="lazy"
                     src={`https://i.ytimg.com/vi/${item.youtubeId}/hqdefault.jpg`}
                     alt={item.title}
-                    className="w-full h-auto"
+                    className="w-full h-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center">

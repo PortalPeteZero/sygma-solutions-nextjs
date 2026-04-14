@@ -38,7 +38,7 @@ export default function CableAvoidanceLondon() {
           src="cat-23"
           alt="Cable avoidance training in London"
           fill
-          className="absolute inset-0"
+          className="absolute inset-0 object-contain"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
@@ -105,13 +105,13 @@ export default function CableAvoidanceLondon() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg"><Image src="cat-24" width={1200} height={900} alt="Operative scanning with CAT4 on London site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="cat-58" width={1200} height={900} alt="Genny signal application during cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="cat-51" width={1200} height={900} alt="CAT and Genny practical training near London underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-24" width={1200} height={900} alt="Operative scanning with CAT4 on London site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-58" width={1200} height={900} alt="Genny signal application during cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-51" width={1200} height={900} alt="CAT and Genny practical training near London underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden"><Image src="cat-25" width={1200} height={900} alt="CAT and Genny training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" /></div>
+      <div className="w-full overflow-hidden"><Image src="cat-25" width={1200} height={900} alt="CAT and Genny training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
 
       {/* Course Content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -157,7 +157,7 @@ export default function CableAvoidanceLondon() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden"><Image src="cat-26" width={1200} height={900} alt="London utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" /></div>
+      <div className="w-full overflow-hidden"><Image src="cat-26" width={1200} height={900} alt="London utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

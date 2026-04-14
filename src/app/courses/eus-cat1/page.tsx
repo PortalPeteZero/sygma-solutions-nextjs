@@ -182,9 +182,15 @@ export default function EusCat1() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="cat-17" width={1200} height={900} alt="EUSR CAT1 training delegates using Genny & CAT on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full" />
-          <Image src="cat-65" width={1200} height={900} alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full" />
-          <Image src="cat-88" width={1200} height={900} alt="On-site practical cable avoidance training with signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full" />
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-17" width={1200} height={900} alt="EUSR CAT1 training delegates using Genny & CAT on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+          </div>
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-65" width={1200} height={900} alt="EUSR CAT1 practical cable avoidance assessment in countryside setting" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+          </div>
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-88" width={1200} height={900} alt="On-site practical cable avoidance training with signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+          </div>
         </div>
       </section>
 
@@ -256,14 +262,14 @@ export default function EusCat1() {
 
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-22" width={1200} height={900} alt="EUSR CAT1 practical training with cable locator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-22" width={1200} height={900} alt="EUSR CAT1 practical training with cable locator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-08" width={1200} height={900} alt="Genny signal generator connection during EUSR CAT1 assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-08" width={1200} height={900} alt="Genny signal generator connection during EUSR CAT1 assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-89" width={1200} height={900} alt="On-site utility detection training for EUSR registration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-89" width={1200} height={900} alt="On-site utility detection training for EUSR registration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -302,7 +308,7 @@ export default function EusCat1() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden">
-        <Image src="cat-05" width={1200} height={900} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" />
+        <Image src="cat-05" width={1200} height={900} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Learning outcomes */}
@@ -458,14 +464,14 @@ export default function EusCat1() {
 
       {/* Image strip before upgrade paths */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-66" width={1200} height={900} alt="Cable avoidance practical assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-66" width={1200} height={900} alt="Cable avoidance practical assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-87" width={1200} height={900} alt="EUSR CAT1 delegates using locator equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-87" width={1200} height={900} alt="EUSR CAT1 delegates using locator equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-06" width={1200} height={900} alt="Sygma EUSR CAT1 hands-on training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-06" width={1200} height={900} alt="Sygma EUSR CAT1 hands-on training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

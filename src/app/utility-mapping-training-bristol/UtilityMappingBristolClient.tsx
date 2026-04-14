@@ -50,7 +50,7 @@ export default function UtilityMappingBristolClient() {
           src="em-02"
           alt="Utility mapping training in Bristol"
           fill
-          className="absolute inset-0"
+          className="absolute inset-0 object-contain"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
@@ -117,9 +117,9 @@ export default function UtilityMappingBristolClient() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 px-4">
-        <div className="overflow-hidden rounded-lg"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="w-full h-auto" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="w-full h-auto" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="w-full h-auto" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="w-full h-full object-contain" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="w-full h-full object-contain" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="w-full h-full object-contain" /></div>
       </div>
 
       {/* Why It Matters */}

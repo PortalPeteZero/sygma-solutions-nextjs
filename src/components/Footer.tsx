@@ -27,7 +27,7 @@ export function Footer() {
                 alt="Sygma Solutions Ltd"
                 width={145}
                 height={40}
-                className="h-10 w-auto"
+                className="h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">

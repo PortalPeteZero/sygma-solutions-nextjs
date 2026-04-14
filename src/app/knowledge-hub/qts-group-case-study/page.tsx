@@ -129,13 +129,13 @@ export default function QtsGroupCaseStudy() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden">
-                <Image src="cat-75" width={1200} height={900} alt="Rail-specific cable avoidance training for QTS Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-75" width={1200} height={900} alt="Rail-specific cable avoidance training for QTS Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden">
-                <Image src="cat-76" width={1200} height={900} alt="Practical cable avoidance assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-76" width={1200} height={900} alt="Practical cable avoidance assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden">
-                <Image src="cat-77" width={1200} height={900} alt="Safe digging practices near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-77" width={1200} height={900} alt="Safe digging practices near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

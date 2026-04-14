@@ -231,9 +231,15 @@ export default function GennyCatTraining() {
       {/* Photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
-          <Image src="cat-14" width={1200} height={900} alt="Genny & CAT training outdoors with Sygma" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg" />
-          <Image src="cat-15" width={1200} height={900} alt="Delegates using locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg" />
-          <Image src="cat-20" width={1200} height={900} alt="Practical utility location and excavation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg" />
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-14" width={1200} height={900} alt="Genny & CAT training outdoors with Sygma" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+          </div>
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-15" width={1200} height={900} alt="Delegates using locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+          </div>
+          <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+            <Image src="cat-20" width={1200} height={900} alt="Practical utility location and excavation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+          </div>
         </div>
       </section>
 
@@ -313,7 +319,7 @@ export default function GennyCatTraining() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden">
-        <Image src="cat-21" width={1200} height={900} alt="Genny & CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto" />
+        <Image src="cat-21" width={1200} height={900} alt="Genny & CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* What You Get */}
@@ -354,14 +360,14 @@ export default function GennyCatTraining() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-22" width={1200} height={900} alt="Genny4 signal generator practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-22" width={1200} height={900} alt="Genny4 signal generator practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-23" width={1200} height={900} alt="Genny & CAT training assessment on buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-23" width={1200} height={900} alt="Genny & CAT training assessment on buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-47" width={1200} height={900} alt="Hands-on Genny signal application demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-47" width={1200} height={900} alt="Hands-on Genny signal application demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -453,14 +459,14 @@ export default function GennyCatTraining() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-48" width={1200} height={900} alt="CAT4 locator training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-48" width={1200} height={900} alt="CAT4 locator training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-49" width={1200} height={900} alt="Delegates practising utility location techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-49" width={1200} height={900} alt="Delegates practising utility location techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
-          <Image src="cat-51" width={1200} height={900} alt="On-site Genny & CAT training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-auto hover:scale-105 transition-transform duration-500" />
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+          <Image src="cat-51" width={1200} height={900} alt="On-site Genny & CAT training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -46,13 +46,13 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       {/* First Image Strip */}
       <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
         {data.imageStrips[0].map((img, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg">
+          <div key={idx} className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
             <Image
               src={img.src}
               width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="w-full h-auto"
+              className="w-full h-full object-contain"
             />
           </div>
         ))}
@@ -171,13 +171,13 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       {/* Second Image Strip */}
       <div className="grid grid-cols-3 gap-2 h-48 md:h-64 px-4">
         {data.imageStrips[1].map((img, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg">
+          <div key={idx} className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
             <Image
               src={img.src}
               width={1200} height={900}
               alt={img.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="w-full h-auto"
+              className="w-full h-full object-contain"
             />
           </div>
         ))}
