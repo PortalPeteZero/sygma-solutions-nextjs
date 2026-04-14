@@ -11,7 +11,7 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations", to: "/locations" }, { label: data.slug.charAt(0).toUpperCase() + data.slug.slice(1) }]) }} />
       
       {/* Hero Section */}
-      <div className="relative w-full h-96 overflow-hidden bg-foreground">
+      <div className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
         <FallbackImage
           src="cat-65"
           alt={data.hero.headline}

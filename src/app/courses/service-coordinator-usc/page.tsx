@@ -251,7 +251,7 @@ export default function ServiceCoordinatorUsc() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full h-80 md:h-[400px] overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9]">
         <Image src="cat-23" width={1200} height={900} alt="Service Coordinator USC training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 

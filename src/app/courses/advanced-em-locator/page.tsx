@@ -293,7 +293,7 @@ export default function AdvancedEmLocator() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full h-80 md:h-[400px] overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9]">
         <Image src="em-04" width={1200} height={900} alt="Advanced EM locator practical training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 

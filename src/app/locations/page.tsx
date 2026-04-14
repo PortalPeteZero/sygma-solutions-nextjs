@@ -81,7 +81,7 @@ export default function Locations() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
       
       {/* Hero Section */}
-      <section className="relative w-full h-96 overflow-hidden bg-foreground">
+      <section className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
         <Image
           src="cat-53"
           alt="Sygma training locations nationwide"

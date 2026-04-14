@@ -260,7 +260,7 @@ export default function ProQualCat1Plus() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full h-56 md:h-80 overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9]">
         <Image src="cat-94" width={1200} height={900} alt="ProQual CAT1 Plus hands-on practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 

@@ -33,7 +33,7 @@ export default function CableAvoidanceLondon() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "All Courses", to: "/courses" }, { label: "Cable Avoidance Training London" }]) }} />
 
-      <div className="relative w-full h-96 overflow-hidden bg-foreground">
+      <div className="relative w-full overflow-hidden aspect-[16/9] bg-foreground">
         <Image
           src="cat-23"
           alt="Cable avoidance training in London"

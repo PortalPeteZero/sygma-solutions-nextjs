@@ -147,7 +147,7 @@ export default function Level3Certificate() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full h-80 md:h-[400px] overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9]">
         <Image src="em-03" width={1200} height={900} alt="Level 3 Certificate utility mapping - electromagnetic locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
