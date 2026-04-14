@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: 'Ofqual-regulated Level 3 Diploma in Utility Mapping delivered online. Work at your own pace with full assessor support and mentoring via MS Teams.',
     url: 'https://sygma-solutions.com/courses/online-level-3-diploma',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/em-04', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/gpr-03', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -75,9 +75,9 @@ export default function OnlineLevel3Diploma() {
         headline="ProQual RQF Level 3 Diploma in Utility Mapping and Surveying (Online)"
         sub="Work towards your ProQual Level 3 Certificate in Utility Mapping at your own pace, from wherever you work. This training course provides full assessor support and mentoring via MS Teams throughout. No hidden fees. No extra charges for additional assessments. Contact us to discuss enrolment and pricing."
         images={[
+          "gpr-05",
           "gpr-06",
-          "gpr-02",
-          "em-01",
+          "gpr-12",
         ]}
         alts={["Electromagnetic utility detection techniques covered in the online Level 3 course", "GPR survey equipment featured in the online ProQual Level 3 diploma", "Electromagnetic utility detection techniques covered in the online Level 3 course"]}
         breadcrumbs={[
@@ -108,9 +108,9 @@ export default function OnlineLevel3Diploma() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="gpr-06" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="cat-38" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="gpr-07" width={800} height={600} alt="Online Level 3 Diploma - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="em-01" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="em-04" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="gpr-02" width={800} height={600} alt="Online Level 3 Diploma - electromagnetic survey practical" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
 
@@ -257,13 +257,13 @@ export default function OnlineLevel3Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-38" width={1200} height={800} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-04" width={1200} height={800} alt="Online Level 3 Diploma training support" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-03" width={1200} height={800} alt="Utility avoidance qualification practical element" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-07" width={1200} height={800} alt="Utility avoidance qualification practical element" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-07" width={1200} height={800} alt="Level 3 qualification on-site assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-08" width={1200} height={800} alt="Level 3 qualification on-site assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -382,13 +382,13 @@ export default function OnlineLevel3Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-04" width={1200} height={800} alt="Level 3 Diploma training equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-10" width={1200} height={800} alt="Level 3 Diploma training equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-04" width={1200} height={800} alt="Online diploma practical training session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-11" width={1200} height={800} alt="Online diploma practical training session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-01" width={1200} height={800} alt="Utility avoidance qualification demonstration" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-06" width={1200} height={800} alt="Utility avoidance qualification demonstration" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

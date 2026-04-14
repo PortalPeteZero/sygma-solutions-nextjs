@@ -14,6 +14,9 @@ export default function cloudinaryLoader({
     return src;
   }
 
-  const params = ['f_auto', 'c_limit', `w_${width}`, `q_${quality || 'auto'}`];
+  // c_fill,g_auto = Cloudinary AI crops to the requested dimensions, keeping the
+  // most visually interesting content (operators, equipment) in frame.
+  // This eliminates manual cropping and fixes portrait-in-landscape-container issues.
+  const params = ['f_auto', 'c_fill', 'g_auto', `w_${width}`, `q_${quality || 'auto'}`];
   return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${params.join(',')}/${src}`;
 }

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: 'RQF Level 2 Award in Utility Location and Avoidance. Nationally recognised, Ofqual-regulated qualification for formal recognition of competency.',
     url: 'https://sygma-solutions.com/courses/rqf-level-2-award',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-38', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-20', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -55,7 +55,7 @@ export default function RqfLevel2Award() {
         eyebrow="Utility Avoidance"
         headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
-        image="cat-38"
+        image="cat-21"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -106,7 +106,7 @@ export default function RqfLevel2Award() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="cat-20" width={1200} height={800} alt="RQF Level 2 Award training - practical session with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="cat-23" width={1200} height={800} alt="RQF Level 2 Award training - practical session with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
           <Image src="cat-24" width={1200} height={800} alt="RQF Level 2 Award training - hands-on assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
           <Image src="cat-35" width={1200} height={800} alt="RQF Level 2 Award - Genny signal application training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
@@ -301,19 +301,19 @@ export default function RqfLevel2Award() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-18" width={1200} height={800} alt="RQF Level 2 Award practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-41" width={1200} height={800} alt="RQF Level 2 Award practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-29" width={1200} height={800} alt="Utility avoidance hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-16" width={1200} height={800} alt="Utility avoidance hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="dig-05" width={1200} height={800} alt="Level 2 qualification practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-17" width={1200} height={800} alt="Level 2 qualification practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="em-01" width={1200} height={800} alt="RQF Level 2 Award training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top" />
+        <Image src="cat-18" width={1200} height={800} alt="RQF Level 2 Award training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top" />
       </div>
 
       {/* Requirements */}
@@ -376,13 +376,13 @@ export default function RqfLevel2Award() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-41" width={1200} height={800} alt="RQF Level 2 training with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-19" width={1200} height={800} alt="RQF Level 2 training with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-23" width={1200} height={800} alt="Utility locating qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-22" width={1200} height={800} alt="Utility locating qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-21" width={1200} height={800} alt="On-site RQF Level 2 practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-26" width={1200} height={800} alt="On-site RQF Level 2 practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

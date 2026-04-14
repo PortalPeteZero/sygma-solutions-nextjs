@@ -57,7 +57,7 @@ export default function VscanTransmitterTraining() {
         eyebrow="Utility Avoidance"
         headline="vScan and Transmitter Training: The Course That Changes How Your Team Works on Site"
         sub="Not just vScan & Tx equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
-        image="cat-47"
+        image="cat-42"
         alt="Vscan and transmitter training for underground utility signal tracing"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -194,9 +194,9 @@ export default function VscanTransmitterTraining() {
       {/* Photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
-          <Image src="cat-43" width={1200} height={800} alt="vScan & Tx training outdoors with Sygma" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="cat-36" width={1200} height={800} alt="Delegates using locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="dig-09" width={1200} height={800} alt="Practical utility location and excavation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-47" width={1200} height={800} alt="vScan & Tx training outdoors with Sygma" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-35" width={1200} height={800} alt="Delegates using locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-39" width={1200} height={800} alt="Practical utility location and excavation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
 
@@ -275,7 +275,7 @@ export default function VscanTransmitterTraining() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="cat-36" width={1200} height={800} alt="vScan & Tx training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+        <Image src="cat-41" width={1200} height={800} alt="vScan & Tx training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 
       {/* What You Get */}
@@ -314,13 +314,13 @@ export default function VscanTransmitterTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-25" width={1200} height={800} alt="Transmitter practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-45" width={1200} height={800} alt="Transmitter practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-31" width={1200} height={800} alt="vScan & Tx training assessment on buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-46" width={1200} height={800} alt="vScan & Tx training assessment on buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-42" width={1200} height={800} alt="Hands-on transmitter signal application demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-48" width={1200} height={800} alt="Hands-on transmitter signal application demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -410,13 +410,13 @@ export default function VscanTransmitterTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-34" width={1200} height={800} alt="vScan locator training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-49" width={1200} height={800} alt="vScan locator training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-32" width={1200} height={800} alt="Delegates practising utility location techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-51" width={1200} height={800} alt="Delegates practising utility location techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-37" width={1200} height={800} alt="On-site vScan & Tx training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-52" width={1200} height={800} alt="On-site vScan & Tx training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

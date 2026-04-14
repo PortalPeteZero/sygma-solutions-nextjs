@@ -12,7 +12,7 @@ const courseCards = [
     desc: "1-day HSG47-compliant course. CAT and Genny practical assessment. Sygma in-house certificate issued same day. Maximum 8 delegates.",
     duration: "1 Day",
     qualification: "Sygma Certificate",
-    image: "cat-22",
+    image: "cat-60",
   },
   {
     to: "/courses/vscan-and-transmitter-training",
@@ -20,7 +20,7 @@ const courseCards = [
     desc: "1-day HSG47-compliant course for Vivax-Metrotech vScan and transmitter. Transmitter-First methodology, practical assessment. Sygma in-house certificate. Maximum 8 delegates.",
     duration: "1 Day",
     qualification: "Sygma Certificate",
-    image: "cat-22",
+    image: "cat-59",
   },
   {
     to: "/courses/eus-cat1",
@@ -76,7 +76,7 @@ const courseCards = [
     desc: "For experienced locators working with Radiodetection RD8200, RD8000, or Vivax equipment. Covers advanced signal interpretation, frequency theory, and problem service strategies.",
     duration: "1-2 Days",
     qualification: "Sygma Advanced EM Certificate",
-    image: "em-03",
+    image: "cat-13",
   },
   {
     to: "/courses/rqf-level-2-award",
@@ -84,7 +84,7 @@ const courseCards = [
     desc: "Nationally recognised qualification for operatives locating and avoiding buried services. Three delivery formats. Theory and practical assessment included.",
     duration: "1-2 Days",
     qualification: "RQF Level 2 Award",
-    image: "cat-36",
+    image: "cat-14",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function UtilityAvoidanceHub() {
         eyebrow="Utility Avoidance"
         headline="Cable Avoidance Training That Changes How Your Operatives Work"
         sub="EUSR CAT1, ProQual, and in-house certificate courses. All underpinned by electromagnetic theory, Genny-First methodology, and 21 years of specialist field experience."
-        image="cat-44"
+        image="cat-16"
         alt="Cable location and avoidance training courses overview showing CAT and Genny equipment"
         breadcrumbs={[{ label: "Cable Avoidance Training" }]}
       />
@@ -203,9 +203,9 @@ export default function UtilityAvoidanceHub() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="cat-63" width={1200} height={800} alt="Utility avoidance training group session on site - Sygma Solutions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="cat-61" width={1200} height={800} alt="Utility avoidance training delegates walking site with locator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="cat-62" width={1200} height={800} alt="Utility avoidance training practical on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-17" width={1200} height={800} alt="Utility avoidance training group session on site - Sygma Solutions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-18" width={1200} height={800} alt="Utility avoidance training delegates walking site with locator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-46" width={1200} height={800} alt="Utility avoidance training practical on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
 
@@ -247,7 +247,7 @@ export default function UtilityAvoidanceHub() {
             </div>
           </div>
           <div className="rounded-xl overflow-hidden">
-            <Image src="cat-15" width={1200} height={800} alt="CAT and Genny training practical on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-80 object-cover" />
+            <Image src="cat-48" width={1200} height={800} alt="CAT and Genny training practical on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-80 object-cover" />
           </div>
         </div>
       </section>
@@ -369,7 +369,7 @@ export default function UtilityAvoidanceHub() {
 
       {/* Full-width image break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <Image src="cat-63" width={1200} height={800} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
+        <Image src="cat-50" width={1200} height={800} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* Genny-First methodology */}
@@ -438,13 +438,13 @@ export default function UtilityAvoidanceHub() {
       {/* Image strip before Why Sygma */}
       <div className="grid grid-cols-3 gap-3 h-56 md:h-72">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-36" width={1200} height={800} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-27" width={1200} height={800} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-26" width={1200} height={800} alt="Utility avoidance training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-28" width={1200} height={800} alt="Utility avoidance training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-43" width={1200} height={800} alt="Underground service detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-21" width={1200} height={800} alt="Underground service detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

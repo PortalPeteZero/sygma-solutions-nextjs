@@ -64,7 +64,7 @@ export default function NporsVsEusr() {
             description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
             url: '/knowledge-hub/npors-vs-eusr',
             datePublished: '2026-03-10',
-            image: 'cat-32',
+            image: 'cat-16',
           }),
         }}
       />
@@ -82,7 +82,7 @@ export default function NporsVsEusr() {
       />
 
       <InnerPageHero
-        image="cat-40"
+        image="cat-31"
         alt="NPORS versus EUSR cable avoidance training accreditation comparison"
         eyebrow="Knowledge Hub"
         headline="NPORS vs EUSR Cable Avoidance"
@@ -130,13 +130,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-16" width={1200} height={800} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-40" width={1200} height={800} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-32" width={1200} height={800} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-43" width={1200} height={800} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="dig-04" width={1200} height={800} alt="Safe excavation near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-71" width={1200} height={800} alt="Safe excavation near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -184,13 +184,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-44" width={1200} height={800} alt="Delegates using CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-72" width={1200} height={800} alt="Delegates using CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-31" width={1200} height={800} alt="Utility avoidance assessment exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-73" width={1200} height={800} alt="Utility avoidance assessment exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="dig-04" width={1200} height={800} alt="Team training on safe digging practices" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-74" width={1200} height={800} alt="Team training on safe digging practices" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

@@ -13,7 +13,7 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
       {/* Hero Section */}
       <div className="relative w-full h-96 overflow-hidden bg-foreground">
         <FallbackImage
-          src="cat-60"
+          src="cat-65"
           alt={data.hero.headline}
           fill
           className="absolute inset-0 object-cover"

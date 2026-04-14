@@ -62,7 +62,7 @@ export default function OscaPage() {
       />
       
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
-        <Image src="dig-01" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="OSCA hero" />
+        <Image src="cat-07" fill className="absolute inset-0 h-full w-full object-cover" priority sizes="100vw" alt="OSCA hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
         <div className="relative z-10 container mx-auto px-6 md:px-8 pt-10 pb-12">

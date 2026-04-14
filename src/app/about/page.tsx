@@ -65,7 +65,7 @@ export default function About() {
         eyebrow="About Sygma Solutions"
         headline="One Subject. Expert Specialists."
         sub="Sygma Solutions is the UK's only independent cable avoidance training specialist. We teach one subject: cable avoidance and utility mapping training, delivered by experienced professionals who are not tied to any equipment manufacturer."
-        image="cat-57"
+        image="cat-69"
         alt="About Sygma Solutions, the UK's specialist underground utility training provider since 2004"
         breadcrumbs={[{ label: 'About Sygma' }]}
       />
@@ -87,7 +87,7 @@ export default function About() {
               </blockquote>
             </div>
             <div>
-              <Image src="cat-12" width={1200} height={800} alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/5]" />
+              <Image src="cat-70" width={1200} height={800} alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/5]" />
             </div>
           </div>
         </div>
@@ -109,12 +109,12 @@ export default function About() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <Image src="cat-11" width={1200} height={800} alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="cat-12" width={1200} height={800} alt="Genny & CAT specialist training session with field operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="cat-13" width={1200} height={800} alt="Hands-on Genny & CAT practical training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="cat-14" width={1200} height={800} alt="Operative using CAT locator during utility location training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="cat-15" width={1200} height={800} alt="Genny signal source being connected during underground utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="cat-16" width={1200} height={800} alt="Field training session for cable avoidance operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-71" width={1200} height={800} alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-72" width={1200} height={800} alt="Genny & CAT specialist training session with field operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-73" width={1200} height={800} alt="Hands-on Genny & CAT practical training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-74" width={1200} height={800} alt="Operative using CAT locator during utility location training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-75" width={1200} height={800} alt="Genny signal source being connected during underground utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-76" width={1200} height={800} alt="Field training session for cable avoidance operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function About() {
               <p className="text-muted-foreground leading-relaxed">Sygma's training methodology addresses all of these. We do not simply teach operatives how to turn on a locator. We teach them why the signal behaves the way it does, what to do when the environment distorts it, and how to recognise the moment when they need to stop and call for a re-survey.</p>
             </div>
             <div>
-              <Image src="cat-14" width={1200} height={800} alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+              <Image src="cat-77" width={1200} height={800} alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
             </div>
           </div>
           <h3 className="text-lg font-black text-foreground mb-6">The Four Failure Patterns We Systematically Address</h3>
@@ -171,7 +171,7 @@ export default function About() {
               <p className="text-muted-foreground leading-relaxed">Every Sygma trainer is directly employed. No freelancers. No generalists. Every one of them has worked as a utility surveyor or for an equipment manufacturer before joining Sygma. They are TAQA qualified and they teach one subject. That is what makes the difference between a course that ticks a box and a course that changes behaviour on site.</p>
             </div>
             <div>
-              <Image src="cat-27" width={1200} height={800} alt="Sygma directly employed specialist trainer conducting utility training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
+              <Image src="cat-78" width={1200} height={800} alt="Sygma directly employed specialist trainer conducting utility training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full rounded-lg object-cover aspect-[4/3]" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4">

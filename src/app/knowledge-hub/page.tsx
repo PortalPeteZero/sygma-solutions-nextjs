@@ -36,7 +36,7 @@ export default function KnowledgeHub() {
         }
       }) }} />
       <InnerPageHero
-        image="cat-40"
+        image="cat-86"
         alt="Sygma Solutions knowledge hub covering cable avoidance and utility mapping guidance"
         eyebrow="Knowledge Hub"
         headline="Practical Knowledge for Underground Utility Professionals"
@@ -57,8 +57,8 @@ export default function KnowledgeHub() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid md:grid-cols-3 gap-4">
-            <Image src="cat-27" width={1200} height={800} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-            <Image src="dig-01" width={1200} height={800} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="cat-87" width={1200} height={800} alt="Underground utility training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+            <Image src="dig-19" width={1200} height={800} alt="Safe digging practices training materials" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
             <Image src="gpr-09" width={1200} height={800} alt="Utility location knowledge and technical expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
           </div>
         </div>
@@ -66,13 +66,13 @@ export default function KnowledgeHub() {
 
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-19" width={1200} height={800} alt="Cable avoidance training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-88" width={1200} height={800} alt="Cable avoidance training knowledge resources" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-01" width={1200} height={800} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-10" width={1200} height={800} alt="Utility mapping and GPR survey expertise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="dig-10" width={1200} height={800} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="dig-20" width={1200} height={800} alt="Safe excavation practice and guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

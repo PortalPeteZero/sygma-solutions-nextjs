@@ -58,9 +58,9 @@ export default function Level5Diploma() {
         headline="ProQual Level 5 Diploma in Utility Mapping and Surveying"
         sub="The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT. Contact us to discuss enrolment and pricing."
         images={[
-          "gpr-03",
-          "gpr-05",
-          "cat-38",
+          "gpr-12",
+          "gpr-08",
+          "gpr-10",
         ]}
         alts={["Electromagnetic survey techniques practised during Level 5 diploma training", "Professional GPR survey methodology taught on the ProQual Level 5 course", "Advanced ground penetrating radar interpretation during Level 5 utility mapping"]}
         breadcrumbs={[
@@ -93,9 +93,9 @@ export default function Level5Diploma() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="em-05" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="gpr-04" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
-          <Image src="cat-38" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="gpr-11" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="gpr-03" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
+          <Image src="gpr-09" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover object-top aspect-[4/3] w-full" />
         </div>
       </section>
       {/* What is Level 5 */}
@@ -147,7 +147,7 @@ export default function Level5Diploma() {
 
       {/* Full-width image */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="em-01" width={1200} height={800} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
+        <Image src="em-02" width={1200} height={800} alt="Level 5 Diploma utility mapping - live training environment" sizes="100vw" className="w-full h-full object-cover object-top" />
       </div>
 
       {/* Who it's for */}
@@ -333,13 +333,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-01" width={1200} height={800} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-03" width={1200} height={800} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
           <Image src="gpr-01" width={1200} height={800} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-04" width={1200} height={800} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-05" width={1200} height={800} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -541,13 +541,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-01" width={1200} height={800} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="em-07" width={1200} height={800} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-06" width={1200} height={800} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-04" width={1200} height={800} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="gpr-05" width={1200} height={800} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06" width={1200} height={800} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -47,7 +47,7 @@ export default function UtilityMappingBristolClient() {
       {/* Hero Section */}
       <div className="relative w-full h-96 overflow-hidden bg-foreground">
         <Image
-          src="em-06"
+          src="em-02"
           alt="Utility mapping training in Bristol"
           fill
           className="absolute inset-0 object-cover"

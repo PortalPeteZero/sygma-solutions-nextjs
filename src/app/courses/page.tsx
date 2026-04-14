@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUSR CAT1, ProQual, PAS 128, GPR.',
     url: 'https://sygma-solutions.com/courses',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-41', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-10', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -120,7 +120,7 @@ export default function CoursesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
         <Image
-          src="cat-41"
+          src="cat-10"
           alt="CAT and Genny training in progress"
           fill
           className="absolute inset-0 h-full w-full object-cover object-top"
@@ -257,9 +257,9 @@ export default function CoursesPage() {
       <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Image src="cat-30" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
-            <Image src="cat-35" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
-            <Image src="em-06" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="cat-84" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="cat-85" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="em-04" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full rounded-lg object-cover aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
         </div>
       </section>

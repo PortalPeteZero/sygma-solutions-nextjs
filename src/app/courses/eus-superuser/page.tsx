@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
     url: 'https://sygma-solutions.com/courses/eus-superuser',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-45', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -73,7 +73,7 @@ export default function EusSuperuser() {
         eyebrow="EUSR Super User Cat and Genny Training"
         headline="EUSR Superuser: Advanced Location, Calibration, Strike Investigation, and Coaching Assessment"
         sub="The highest level of EUSR super user cat and genny training. Two days covering advanced cable avoidance tools and signal generator techniques, calibration, CAT Manager data analysis, USAG strike investigation, and the skills to assess and coach your team on locating underground services safely on site. Prerequisite: EUSR CAT1 and Safe Dig CAT2."
-        image="cat-45"
+        image="cat-14"
         alt="EUSR Superuser advanced cable avoidance training for experienced locator operators"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -159,9 +159,9 @@ export default function EusSuperuser() {
       {/* 3-photo strip */}
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
-          <Image src="cat-36" width={1200} height={800} alt="EUSR super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="cat-34" width={1200} height={800} alt="Cat and genny training course - hands-on assessment with cable avoidance tools" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
-          <Image src="cat-49" width={1200} height={800} alt="Signal generator (genny) application technique - direct connection for locating buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-86" width={1200} height={800} alt="EUSR super user cat and genny training - practical session locating underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-87" width={1200} height={800} alt="Cat and genny training course - hands-on assessment with cable avoidance tools" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
+          <Image src="cat-88" width={1200} height={800} alt="Signal generator (genny) application technique - direct connection for locating buried utilities" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full rounded-lg object-cover object-top aspect-[4/3]" />
         </div>
       </section>
       {/* About */}
@@ -338,13 +338,13 @@ export default function EusSuperuser() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-29" width={1200} height={800} alt="EUSR Superuser advanced cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-89" width={1200} height={800} alt="EUSR Superuser advanced cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-11" width={1200} height={800} alt="Advanced electromagnetic locator operation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-90" width={1200} height={800} alt="Advanced electromagnetic locator operation" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-36" width={1200} height={800} alt="Superuser practical assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-91" width={1200} height={800} alt="Superuser practical assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -400,7 +400,7 @@ export default function EusSuperuser() {
 
       {/* Full-width image break */}
       <div className="w-full h-80 md:h-[400px] overflow-hidden">
-        <Image src="cat-14" width={1200} height={800} alt="EUSR Superuser advanced training delivery on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
+        <Image src="cat-92" width={1200} height={800} alt="EUSR Superuser advanced training delivery on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* Why Sygma */}
@@ -460,13 +460,13 @@ export default function EusSuperuser() {
       {/* Image strip before related courses */}
       <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-29" width={1200} height={800} alt="Cable avoidance superuser training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-93" width={1200} height={800} alt="Cable avoidance superuser training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="em-01" width={1200} height={800} alt="Advanced locator techniques training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-94" width={1200} height={800} alt="Advanced locator techniques training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg">
-          <Image src="cat-36" width={1200} height={800} alt="EUSR Superuser practical skills assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-95" width={1200} height={800} alt="EUSR Superuser practical skills assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

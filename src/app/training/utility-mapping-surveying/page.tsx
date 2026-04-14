@@ -42,7 +42,7 @@ export default function UtilityMappingHub() {
         eyebrow="Utility Mapping"
         headline="Utility Mapping and Surveying Training: The Complete Career Pathway"
         sub="The UK's most complete PAS128 utility mapping training pathway. From introductory training courses through to a ProQual Level 6 Management Diploma: everything a utility mapping professional needs to locate buried services safely and build a credible, certified career."
-        image="em-06"
+        image="em-02"
         breadcrumbs={[
           { label: 'Training', href: '/training' },
           { label: 'Utility Mapping & Surveying' },
@@ -158,7 +158,7 @@ export default function UtilityMappingHub() {
             <p className="text-sm text-muted-foreground leading-relaxed">The complete PAS128 utility survey training programme for professional utility surveyors. Full PAS128 methodology: site reconnaissance, desktop survey, electromagnetic utility detection, and ground penetrating radar operation.</p>
           </Link>
           <Link href="/courses/pas128-awareness" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
-            <Image src="cat-13" width={600} height={400} alt="PAS128 Awareness: Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
+            <Image src="gpr-04" width={600} height={400} alt="PAS128 Awareness: Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full rounded-lg object-cover aspect-[4/3] mb-4" />
             <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">PAS128 Awareness: Service Coordinators</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">For project managers, contract managers, and service coordinators who commission, specify, or accept utility surveys. Covers PAS128 quality levels, legal obligations, and how to verify surveys. No equipment operated.</p>
           </Link>

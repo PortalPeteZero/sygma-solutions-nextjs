@@ -45,7 +45,7 @@ export default function KierGroupCaseStudy() {
             description: 'How Sygma built a 1-day bespoke utility avoidance refresher around Kier\'s own systems, policies, and incident data.',
             url: '/knowledge-hub/kier-group-case-study',
             datePublished: '2026-01-15',
-            image: 'cat-36',
+            image: 'cat-10',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function KierGroupCaseStudy() {
       />
 
       <InnerPageHero
-        image="cat-36"
+        image="cat-64"
         alt="Kier Group bespoke utility avoidance refresher training with Sygma"
         eyebrow="Case Study"
         headline="Kier Group: Bespoke Utility Avoidance Refresher"
@@ -130,13 +130,13 @@ export default function KierGroupCaseStudy() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-36" width={1200} height={800} alt="Bespoke utility avoidance training for Kier Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-65" width={1200} height={800} alt="Bespoke utility avoidance training for Kier Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="cat-36" width={1200} height={800} alt="CAT and Genny practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-66" width={1200} height={800} alt="CAT and Genny practical assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3]">
-                <Image src="dig-08" width={1200} height={800} alt="Safe digging practices on infrastructure site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-67" width={1200} height={800} alt="Safe digging practices on infrastructure site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

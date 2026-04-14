@@ -28,14 +28,14 @@ export default function EusCat1VsProQualCat1() {
         description: "EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.",
         url: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
         datePublished: "2026-03-09",
-        image: "cat-36",
+        image: "cat-59",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
         { label: "EUSR CAT1 vs ProQual CAT1" },
       ]) }} />
       <InnerPageHero
-        image="cat-59"
+        image="cat-12"
         alt="Comparison of EUSR CAT1 and ProQual CAT1 cable avoidance qualifications"
         eyebrow="Knowledge Hub"
         headline="EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?"
@@ -94,10 +94,10 @@ export default function EusCat1VsProQualCat1() {
               <Image src="cat-31" width={1200} height={800} alt="Operative using CAT4 during assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-43" width={1200} height={800} alt="Genny signal application practical exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-37" width={1200} height={800} alt="Genny signal application practical exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="dig-06" width={1200} height={800} alt="Cable avoidance training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-38" width={1200} height={800} alt="Cable avoidance training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -130,10 +130,10 @@ export default function EusCat1VsProQualCat1() {
               <Image src="cat-45" width={1200} height={800} alt="Team training on CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-12" width={1200} height={800} alt="Advanced electromagnetic location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-57" width={1200} height={800} alt="Advanced electromagnetic location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3]">
-              <Image src="cat-37" width={1200} height={800} alt="Delegates completing cable avoidance qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-60" width={1200} height={800} alt="Delegates completing cable avoidance qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

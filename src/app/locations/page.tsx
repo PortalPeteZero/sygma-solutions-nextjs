@@ -83,7 +83,7 @@ export default function Locations() {
       {/* Hero Section */}
       <section className="relative w-full h-96 overflow-hidden bg-foreground">
         <Image
-          src="cat-28"
+          src="cat-53"
           alt="Sygma training locations nationwide"
           fill
           className="absolute inset-0 object-cover"
@@ -102,7 +102,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <Image src="cat-28" width={1200} height={800} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+        <Image src="cat-54" width={1200} height={800} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 
       {/* Location Cards */}
@@ -137,7 +137,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <Image src="cat-29" width={1200} height={800} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+        <Image src="cat-55" width={1200} height={800} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 
       {/* Regional Training Guides */}
@@ -191,7 +191,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full h-64 md:h-80 overflow-hidden">
-        <Image src="cat-30" width={1200} height={800} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
+        <Image src="cat-56" width={1200} height={800} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover" />
       </div>
 
       {/* CTA */}
