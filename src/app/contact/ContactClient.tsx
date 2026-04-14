@@ -210,19 +210,19 @@ export default function ContactClient() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full h-64 md:h-80 overflow-hidden">
+      <div className="w-full overflow-hidden aspect-[4/3]">
         <Image src="cat-80" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top" />
       </div>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-81" width={1200} height={900} alt="Sygma Solutions training facility" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-82" width={1200} height={900} alt="Contact Sygma for training enquiries" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-83" width={1200} height={900} alt="Sygma Solutions nationwide training delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>

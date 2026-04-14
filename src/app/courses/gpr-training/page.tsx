@@ -358,14 +358,14 @@ export default function GprTraining() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-05" width={1200} height={900} alt="Ground penetrating radar practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-02" width={1200} height={900} alt="GPR data collection on training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-03" width={1200} height={900} alt="Delegates learning GPR survey techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
@@ -455,14 +455,14 @@ export default function GprTraining() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-04" width={1200} height={900} alt="GPR training equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-06" width={1200} height={900} alt="Ground penetrating radar survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-07" width={1200} height={900} alt="On-site GPR training with Mala equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>

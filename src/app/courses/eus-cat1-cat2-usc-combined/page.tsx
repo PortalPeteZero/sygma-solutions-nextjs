@@ -315,14 +315,14 @@ export default function EusCat12UscCombined() {
       </section>
 
       {/* Image strip after What You Get */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-68" width={1200} height={900} alt="Combined EUSR CAT1, CAT2 and USC training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-69" width={1200} height={900} alt="Safe excavation demonstration during combined utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-70" width={1200} height={900} alt="On-site utility avoidance and safe dig combined assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
@@ -585,14 +585,14 @@ export default function EusCat12UscCombined() {
       </section>
 
       {/* Image strip before FAQs */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-72" width={1200} height={900} alt="Utility location practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-73" width={1200} height={900} alt="Safe dig practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-74" width={1200} height={900} alt="Combined utility avoidance course completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>

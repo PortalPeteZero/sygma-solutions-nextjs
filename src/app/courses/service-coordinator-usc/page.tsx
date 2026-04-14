@@ -276,14 +276,14 @@ export default function ServiceCoordinatorUsc() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-24" width={1200} height={900} alt="Service coordinator utility awareness training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-26" width={1200} height={900} alt="USC qualification practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-27" width={1200} height={900} alt="Service coordination training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
@@ -318,14 +318,14 @@ export default function ServiceCoordinatorUsc() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-29" width={1200} height={900} alt="USC training with utility location equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-30" width={1200} height={900} alt="Service coordinator on-site assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="cat-33" width={1200} height={900} alt="Utility service coordination practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-500" />
         </div>
       </div>

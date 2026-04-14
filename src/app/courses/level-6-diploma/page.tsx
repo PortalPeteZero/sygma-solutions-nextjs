@@ -282,14 +282,14 @@ export default function Level6Diploma() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-07" alt="Level 6 Diploma advanced training session" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="gpr-09" alt="Advanced utility survey training for Level 6" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="em-01" alt="Advanced electromagnetic detection training" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>
@@ -444,14 +444,14 @@ export default function Level6Diploma() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96">
-        <div className="overflow-hidden rounded-lg">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="em-02" alt="Level 6 Diploma utility management training" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="em-03" alt="GPR data interpretation for Level 6" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]">
           <Image src="em-04" alt="Advanced qualification practical assessment" width={800} height={600} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>

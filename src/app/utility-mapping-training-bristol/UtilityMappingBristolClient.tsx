@@ -116,10 +116,10 @@ export default function UtilityMappingBristolClient() {
       </section>
 
       {/* Image strip */}
-      <div className="grid grid-cols-3 gap-3 h-72 md:h-96 px-4">
-        <div className="overflow-hidden rounded-lg"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
-        <div className="overflow-hidden rounded-lg"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
+      <div className="grid grid-cols-3 gap-3 px-4">
+        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="gpr-03" width={1200} height={900} alt="Ground penetrating radar survey training Bristol" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="em-07" width={1200} height={900} alt="Utility mapping equipment demonstration South West" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3]"><Image src="gpr-04" width={1200} height={900} alt="GPR data collection practical exercise" sizes="33vw" className="h-full w-full object-cover object-top" /></div>
       </div>
 
       {/* Why It Matters */}
