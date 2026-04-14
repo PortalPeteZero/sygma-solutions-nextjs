@@ -264,7 +264,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3]">
-              <Image src="cat-88" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
+              <Image src="cat-08" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
