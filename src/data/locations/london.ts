@@ -30,14 +30,14 @@ export const locationData: LocationPageData = {
   },
   imageStrips: [
     [
-      { src: 'cat-10', alt: 'Cable avoidance training on London construction site' },
-      { src: 'cat-13', alt: 'Utility detection equipment in use South East' },
-      { src: 'cat-11', alt: 'CAT and Genny field practical near buried services London' },
+      { src: 'cat-51', alt: 'Cable avoidance training on London construction site' },
+      { src: 'cat-60', alt: 'Utility detection equipment in use South East' },
+      { src: 'cat-90', alt: 'CAT and Genny field practical near buried services London' },
     ],
     [
-      { src: 'cat-14', alt: 'On-site utility avoidance assessment London' },
-      { src: 'cat-50', alt: 'Practical training session for cable avoidance London' },
-      { src: 'cat-12', alt: 'Team completing cable detection certification' },
+      { src: 'cat-69', alt: 'On-site utility avoidance assessment London' },
+      { src: 'cat-66', alt: 'Practical training session for cable avoidance London' },
+      { src: 'cat-43', alt: 'Team completing cable detection certification' },
     ],
   ],
   courses: [

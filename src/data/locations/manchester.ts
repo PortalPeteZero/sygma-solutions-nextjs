@@ -30,14 +30,14 @@ export const locationData: LocationPageData = {
   },
   imageStrips: [
     [
-      { src: 'cat-92', alt: 'Cable avoidance training Wigan North West' },
-      { src: 'cat-93', alt: 'CAT and Genny techniques training Manchester' },
-      { src: 'cat-16', alt: 'Utility detection practical exercise Greater Manchester' },
+      { src: 'cat-03', alt: 'Cable avoidance training Wigan North West' },
+      { src: 'cat-38', alt: 'CAT and Genny techniques training Manchester' },
+      { src: 'cat-07', alt: 'Utility detection practical exercise Greater Manchester' },
     ],
     [
-      { src: 'cat-94', alt: 'On-site assessment North West cable avoidance' },
-      { src: 'cat-48', alt: 'Team at Wigan training centre completing course' },
-      { src: 'cat-95', alt: 'Locator training in the North West' },
+      { src: 'cat-12', alt: 'On-site assessment North West cable avoidance' },
+      { src: 'cat-63', alt: 'Team at Wigan training centre completing course' },
+      { src: 'cat-93', alt: 'Locator training in the North West' },
     ],
   ],
   facility: {

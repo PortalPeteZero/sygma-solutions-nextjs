@@ -58,7 +58,7 @@ export default function ManufacturerLocatorTraining() {
         eyebrow="Utility Avoidance"
         headline="Manufacturer-Specific Locator Training: vScan, CScope, and Other Pipe Locators"
         sub="One day. Up to eight delegates. Theory and practical training tailored to your specific pipe and cable locating equipment, using your own kit on a representative site. Multiple certification options available."
-        image="cat-83"
+        image="cat-16"
         alt="Manufacturer-specific cable locator training with CAT4 and Genny equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -121,13 +121,13 @@ export default function ManufacturerLocatorTraining() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-63" width={1200} height={900} alt="Manufacturer-specific locator training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-04" width={1200} height={900} alt="Manufacturer-specific locator training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-01" width={1200} height={900} alt="Manufacturer-specific locator training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-13" width={1200} height={900} alt="Manufacturer-specific locator training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-02" width={1200} height={900} alt="Manufacturer-specific locator training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-77" width={1200} height={900} alt="Manufacturer-specific locator training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
         </div>
       </section>
@@ -301,13 +301,13 @@ export default function ManufacturerLocatorTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-03" width={1200} height={900} alt="Manufacturer locator training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-84" width={1200} height={900} alt="Manufacturer locator training practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-04" width={1200} height={900} alt="Locator equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-71" width={1200} height={900} alt="Locator equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-05" width={1200} height={900} alt="Hands-on manufacturer locator assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-73" width={1200} height={900} alt="Hands-on manufacturer locator assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -328,13 +328,13 @@ export default function ManufacturerLocatorTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-06" width={1200} height={900} alt="Utility locator training with electromagnetic equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-02" width={1200} height={900} alt="Utility locator training with electromagnetic equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-07" width={1200} height={900} alt="On-site locator training practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-76" width={1200} height={900} alt="On-site locator training practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-08" width={1200} height={900} alt="Manufacturer-specific locator training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-95" width={1200} height={900} alt="Manufacturer-specific locator training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

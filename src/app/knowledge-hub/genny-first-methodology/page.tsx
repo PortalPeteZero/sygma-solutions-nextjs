@@ -28,14 +28,14 @@ export default function GennyFirstMethodology() {
         description: "Passive detection alone is not enough to identify buried services. Sygma's Genny-First methodology and why it produces measurable improvements in site safety.",
         url: "/knowledge-hub/genny-first-methodology",
         datePublished: "2026-03-09",
-        image: "cat-50",
+        image: "cat-75",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
         { label: "Why You Should Always Connect the Genny First" },
       ]) }} />
       <InnerPageHero
-        image="cat-83"
+        image="cat-82"
         alt="Genny-first methodology for effective underground utility signal tracing"
         eyebrow="Knowledge Hub"
         headline="Why You Should Always Connect the Genny First"
@@ -95,13 +95,13 @@ export default function GennyFirstMethodology() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-85" width={1200} height={900} alt="Genny and CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-48" width={1200} height={900} alt="Genny and CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-51" width={1200} height={900} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-56" width={1200} height={900} alt="CAT and Genny training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-86" width={1200} height={900} alt="Signal generator application during CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-06" width={1200} height={900} alt="Signal generator application during CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -131,13 +131,13 @@ export default function GennyFirstMethodology() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-87" width={1200} height={900} alt="Genny signal application on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-62" width={1200} height={900} alt="Genny signal application on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-02" width={1200} height={900} alt="Active detection with Genny signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-55" width={1200} height={900} alt="Active detection with Genny signal generator" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-03" width={1200} height={900} alt="CAT and Genny training in practice" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-41" width={1200} height={900} alt="CAT and Genny training in practice" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

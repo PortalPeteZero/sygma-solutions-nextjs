@@ -65,7 +65,7 @@ export default function About() {
         eyebrow="About Sygma Solutions"
         headline="One Subject. Expert Specialists."
         sub="Sygma Solutions is the UK's only independent cable avoidance training specialist. We teach one subject: cable avoidance and utility mapping training, delivered by experienced professionals who are not tied to any equipment manufacturer."
-        image="cat-69"
+        image="cat-42"
         alt="About Sygma Solutions, the UK's specialist underground utility training provider since 2004"
         breadcrumbs={[{ label: 'About Sygma' }]}
       />
@@ -88,7 +88,7 @@ export default function About() {
             </div>
             <div>
               <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-                <Image src="cat-70" width={1200} height={900} alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg aspect-[4/5]" />
+                <Image src="cat-81" width={1200} height={900} alt="Sygma Solutions specialist trainer demonstrating advanced EM equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg aspect-[4/5]" />
               </div>
             </div>
           </div>
@@ -112,22 +112,22 @@ export default function About() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-71" width={1200} height={900} alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-54" width={1200} height={900} alt="Specialist trainer demonstrating Genny & CAT equipment to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-72" width={1200} height={900} alt="Genny & CAT specialist training session with field operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-47" width={1200} height={900} alt="Genny & CAT specialist training session with field operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-73" width={1200} height={900} alt="Hands-on Genny & CAT practical training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-61" width={1200} height={900} alt="Hands-on Genny & CAT practical training demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-74" width={1200} height={900} alt="Operative using CAT locator during utility location training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-44" width={1200} height={900} alt="Operative using CAT locator during utility location training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-75" width={1200} height={900} alt="Genny signal source being connected during underground utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-70" width={1200} height={900} alt="Genny signal source being connected during underground utility training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-76" width={1200} height={900} alt="Field training session for cable avoidance operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+              <Image src="cat-57" width={1200} height={900} alt="Field training session for cable avoidance operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function About() {
             </div>
             <div>
               <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-                <Image src="cat-77" width={1200} height={900} alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+                <Image src="cat-16" width={1200} height={900} alt="Sygma trainer explaining electromagnetic signal behaviour to operatives" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function About() {
             </div>
             <div>
               <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-                <Image src="cat-78" width={1200} height={900} alt="Sygma directly employed specialist trainer conducting utility training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain rounded-lg" />
+                <Image src="cat-04" width={1200} height={900} alt="Sygma directly employed specialist trainer conducting utility training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain rounded-lg" />
               </div>
             </div>
           </div>

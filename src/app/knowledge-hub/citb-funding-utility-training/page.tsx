@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-38',
+        url: 'cat-72',
         width: 1200,
         height: 630,
         alt: 'CITB funding for utility avoidance training',
@@ -45,7 +45,7 @@ export default function CitbFundingUtilityTraining() {
             description: 'How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.',
             url: '/knowledge-hub/citb-funding-utility-training',
             datePublished: '2026-03-15',
-            image: 'cat-57',
+            image: 'cat-89',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function CitbFundingUtilityTraining() {
       />
 
       <InnerPageHero
-        image="cat-13"
+        image="cat-08"
         alt="CITB funding for utility avoidance and cable avoidance training"
         eyebrow="Knowledge Hub"
         headline="CITB Funding for Utility Training: The 2026 Position"
@@ -125,13 +125,13 @@ export default function CitbFundingUtilityTraining() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-55" width={1200} height={900} alt="CITB approved cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-85" width={1200} height={900} alt="CITB approved cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-56" width={1200} height={900} alt="Practical utility avoidance training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-87" width={1200} height={900} alt="Practical utility avoidance training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-58" width={1200} height={900} alt="Safe excavation practices training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-88" width={1200} height={900} alt="Safe excavation practices training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

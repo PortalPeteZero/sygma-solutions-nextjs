@@ -67,7 +67,7 @@ export default function TsaIcesUtilityMapping() {
         eyebrow="Utility Mapping"
         headline="TSA and ICES Utility Mapping Training Programme: Seven Modules to Full Professional Competency"
         sub="The UK's most comprehensive utility surveyor training programme. Seven modules. Seventeen-plus days. Every ICES competency from desktop survey and PAS128 reconnaissance through to advanced GPR post processing, total stations, GNSS, geometric principles and CAD. Approved by TSA and mapped to ICES competencies across GEUS01, GEUS02, GEUS03 and GEUS04. The pathway to ProQual Level 4 and Level 5 for professional utility surveyors."
-        image="gpr-02"
+        image="em-02"
         alt="TSA ICES utility mapping training with professional survey equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/utility-mapping-surveying" },
@@ -95,13 +95,13 @@ export default function TsaIcesUtilityMapping() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-01" width={1200} height={900} alt="TSA and ICES utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="em-07" width={1200} height={900} alt="TSA and ICES utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-05" width={1200} height={900} alt="TSA and ICES utility mapping - EM locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="em-04" width={1200} height={900} alt="TSA and ICES utility mapping - EM locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-06" width={1200} height={900} alt="TSA and ICES utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="em-05" width={1200} height={900} alt="TSA and ICES utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -369,13 +369,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-07" width={1200} height={900} alt="TSA utility mapping training with GPR" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="em-06" width={1200} height={900} alt="TSA utility mapping training with GPR" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-04" width={1200} height={900} alt="ICES utility mapping practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06" width={1200} height={900} alt="ICES utility mapping practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-05" width={1200} height={900} alt="Utility mapping survey fieldwork training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-08" width={1200} height={900} alt="Utility mapping survey fieldwork training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -588,13 +588,13 @@ export default function TsaIcesUtilityMapping() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-06" width={1200} height={900} alt="Ground penetrating radar training equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-10" width={1200} height={900} alt="Ground penetrating radar training equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
           <Image src="gpr-03" width={1200} height={900} alt="TSA ICES utility survey practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-04" width={1200} height={900} alt="Utility mapping and detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-09" width={1200} height={900} alt="Utility mapping and detection training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

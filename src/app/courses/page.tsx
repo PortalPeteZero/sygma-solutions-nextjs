@@ -120,7 +120,7 @@ export default function CoursesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
         <Image
-          src="cat-10"
+          src="cat-74"
           alt="CAT and Genny training in progress"
           fill
           className="absolute inset-0 w-full h-full object-contain"
@@ -258,13 +258,13 @@ export default function CoursesPage() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-84" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="cat-67" width={600} height={800} alt="Delegate using CAT equipment during practical assessment" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="cat-85" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="cat-58" width={600} height={800} alt="Trainer demonstrating signal generator techniques" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="em-04" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="cat-11" width={600} height={800} alt="Utility mapping survey equipment in use on site" className="w-full h-full object-contain rounded-lg aspect-[3/4]" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
         </div>

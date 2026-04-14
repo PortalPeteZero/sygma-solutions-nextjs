@@ -59,9 +59,9 @@ export default function Level3Certificate() {
         headline="ProQual Level 3 Certificate in Utility Mapping and Surveying"
         sub="The nationally recognised, Ofqual-regulated entry qualification for utility surveyors. Full assessor support throughout. Contact us to discuss enrolment and pricing."
         images={[
+          "gpr-05",
           "gpr-12",
-          "gpr-08",
-          "gpr-10",
+          "gpr-04",
         ]}
         alts={["Advanced electromagnetic locating techniques during ProQual Level 3 training", "MALA ground penetrating radar unit used in Level 3 utility mapping coursework", "Advanced electromagnetic locating techniques during ProQual Level 3 training"]}
         breadcrumbs={[
@@ -92,13 +92,13 @@ export default function Level3Certificate() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-11" width={1200} height={900} alt="Level 3 Certificate utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="gpr-01" width={1200} height={900} alt="Level 3 Certificate utility mapping - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-09" width={1200} height={900} alt="Level 3 Certificate utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="gpr-11" width={1200} height={900} alt="Level 3 Certificate utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="em-02" width={1200} height={900} alt="Level 3 Certificate utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="em-03" width={1200} height={900} alt="Level 3 Certificate utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function Level3Certificate() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
-        <Image src="em-03" width={1200} height={900} alt="Level 3 Certificate utility mapping - electromagnetic locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="em-02" width={1200} height={900} alt="Level 3 Certificate utility mapping - electromagnetic locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Who it's for */}
@@ -262,10 +262,10 @@ export default function Level3Certificate() {
           <Image src="em-07" width={1200} height={900} alt="Level 3 Certificate practical training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-01" width={1200} height={900} alt="Utility survey equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="em-04" width={1200} height={900} alt="Utility survey equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-07" width={1200} height={900} alt="Level 3 qualification hands-on demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="em-05" width={1200} height={900} alt="Level 3 qualification hands-on demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -473,13 +473,13 @@ export default function Level3Certificate() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-05" width={1200} height={900} alt="Level 3 Certificate training with equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="em-06" width={1200} height={900} alt="Level 3 Certificate training with equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-03" width={1200} height={900} alt="Utility detection practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06" width={1200} height={900} alt="Utility detection practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-04" width={1200} height={900} alt="On-site Level 3 qualification training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-08" width={1200} height={900} alt="On-site Level 3 qualification training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

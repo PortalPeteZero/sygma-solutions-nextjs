@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-01',
+        url: 'cat-09',
         width: 1200,
         height: 630,
         alt: 'Utility strike prevention',
@@ -45,7 +45,7 @@ export default function UtilityStrikesFirst20Metres() {
             description: 'Most cable strikes trace back to the same four behaviours in the pre-excavation survey. Understanding what can cause a cable strike is the first step to preventing one.',
             url: '/knowledge-hub/utility-strikes-first-20-metres',
             datePublished: '2026-03-09',
-            image: 'cat-02',
+            image: 'cat-15',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function UtilityStrikesFirst20Metres() {
       />
 
       <InnerPageHero
-        image="cat-41"
+        image="cat-65"
         alt="Utility strike risks in the first 20 metres of excavation work"
         eyebrow="Knowledge Hub"
         headline="4 Behaviours That Can Cause Cable Strikes on Site"
@@ -93,13 +93,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-87" width={1200} height={900} alt="Excavation near buried utility services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-01" width={1200} height={900} alt="Excavation near buried utility services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-88" width={1200} height={900} alt="Cable detection equipment in use on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-10" width={1200} height={900} alt="Cable detection equipment in use on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-89" width={1200} height={900} alt="Safe digging practices on construction site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-46" width={1200} height={900} alt="Safe digging practices on construction site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -157,13 +157,13 @@ export default function UtilityStrikesFirst20Metres() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-90" width={1200} height={900} alt="Utility avoidance training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-51" width={1200} height={900} alt="Utility avoidance training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-91" width={1200} height={900} alt="Hand tools used for safe excavation near services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-60" width={1200} height={900} alt="Hand tools used for safe excavation near services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-92" width={1200} height={900} alt="Team completing cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-90" width={1200} height={900} alt="Team completing cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
