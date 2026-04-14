@@ -55,7 +55,7 @@ export default function GprTraining() {
         eyebrow="Utility Mapping"
         headline="GPR Training: Theory, Practical Use and Post Processing for Utility Surveyors"
         sub="Ground Penetrating Radar is the detection method that reveals what an electromagnetic locator cannot. This two-module GPR training programme covers GPR technology from the science behind a radargram to GPS-integrated data collection and full post processing in Object Mapper software. Elevate your surveying skills with expert-led ground penetrating radar training. Book individually or take both modules together."
-        image="gpr-06"
+        image="gpr-02"
         alt="Ground penetrating radar training using professional GPR survey equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/utility-mapping-surveying" },
@@ -84,7 +84,7 @@ export default function GprTraining() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-08" width={1200} height={900} alt="GPR training - practical session with survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="gpr-09" width={1200} height={900} alt="GPR training - practical session with survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
             <Image src="gpr-10" width={1200} height={900} alt="GPR training - hands-on field assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
@@ -366,13 +366,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-09" width={1200} height={900} alt="Ground penetrating radar practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-04" width={1200} height={900} alt="Ground penetrating radar practical training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-02" width={1200} height={900} alt="GPR data collection on training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-08" width={1200} height={900} alt="GPR data collection on training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-07" width={1200} height={900} alt="Delegates learning GPR survey techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06" width={1200} height={900} alt="Delegates learning GPR survey techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -463,13 +463,13 @@ export default function GprTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-05" width={1200} height={900} alt="GPR training equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-07" width={1200} height={900} alt="GPR training equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-12" width={1200} height={900} alt="Ground penetrating radar survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-01" width={1200} height={900} alt="Ground penetrating radar survey practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-04" width={1200} height={900} alt="On-site GPR training with Mala equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-05" width={1200} height={900} alt="On-site GPR training with Mala equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

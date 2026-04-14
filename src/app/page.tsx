@@ -29,10 +29,10 @@ const whyPoints = [
 ];
 
 const pathways = [
-  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'cat-10' },
-  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'cat-46' },
-  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'cat-51' },
-  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-60' },
+  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'cat-83' },
+  { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'cat-64' },
+  { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'cat-81' },
+  { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-39' },
 ];
 
 const faqs = [
@@ -240,7 +240,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">
-              <Image src="cat-90" width={1200} height={900} alt="Genny & CAT training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
+              <Image src="cat-82" width={1200} height={900} alt="Genny & CAT training" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
@@ -264,7 +264,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">
-              <Image src="cat-69" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
+              <Image src="cat-02" width={1200} height={900} alt="On-site utility training with Sygma Solutions" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
@@ -323,7 +323,7 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">
-              <Image src="cat-66" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
+              <Image src="cat-10" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

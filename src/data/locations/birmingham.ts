@@ -30,14 +30,14 @@ export const locationData: LocationPageData = {
   },
   imageStrips: [
     [
-      { src: 'cat-09', alt: 'Cable avoidance training in the Midlands' },
-      { src: 'cat-15', alt: 'Sygma utility location practical session at training facility' },
-      { src: 'cat-65', alt: 'Utility detection practical exercise Birmingham' },
+      { src: 'cat-55', alt: 'Cable avoidance training in the Midlands' },
+      { src: 'cat-08', alt: 'Sygma utility location practical session at training facility' },
+      { src: 'cat-12', alt: 'Utility detection practical exercise Birmingham' },
     ],
     [
-      { src: 'cat-01', alt: 'On-site cable avoidance practical Midlands' },
-      { src: 'cat-10', alt: 'On-site cable avoidance assessment Midlands' },
-      { src: 'cat-46', alt: 'Locator training session Midlands cable avoidance' },
+      { src: 'cat-06', alt: 'On-site cable avoidance practical Midlands' },
+      { src: 'cat-01', alt: 'On-site cable avoidance assessment Midlands' },
+      { src: 'cat-65', alt: 'Locator training session Midlands cable avoidance' },
     ],
   ],
   facility: {

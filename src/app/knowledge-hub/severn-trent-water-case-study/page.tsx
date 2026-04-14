@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-78',
+        url: 'cat-07',
         width: 1200,
         height: 630,
         alt: 'Severn Trent Water bespoke manager training programme',
@@ -45,7 +45,7 @@ export default function SevernTrentWaterCaseStudy() {
             description: 'How Sygma designed a 2-day management training and assessment programme built around Severn Trent Water\'s own policies.',
             url: '/knowledge-hub/severn-trent-water-case-study',
             datePublished: '2026-01-15',
-            image: 'cat-59',
+            image: 'cat-79',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function SevernTrentWaterCaseStudy() {
       />
 
       <InnerPageHero
-        image="cat-45"
+        image="cat-85"
         alt="Severn Trent Water bespoke management training and assessment programme"
         eyebrow="Case Study"
         headline="Severn Trent Water: 2-Day Bespoke Manager Training"
@@ -125,13 +125,13 @@ export default function SevernTrentWaterCaseStudy() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-03" width={1200} height={900} alt="Severn Trent Water management training programme" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-54" width={1200} height={900} alt="Severn Trent Water management training programme" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-38" width={1200} height={900} alt="Excavation safety management assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-88" width={1200} height={900} alt="Excavation safety management assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-07" width={1200} height={900} alt="Cable avoidance training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-75" width={1200} height={900} alt="Cable avoidance training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

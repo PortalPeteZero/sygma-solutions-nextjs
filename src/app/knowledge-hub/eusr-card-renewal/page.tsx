@@ -47,7 +47,7 @@ export default function EusrCardRenewal() {
         description: "Your EUSR card has expired or is about to expire. This guide explains the EUSR card renewal process, what happens if your card lapses, and how to rebook your training.",
         url: "/knowledge-hub/eusr-card-renewal",
         datePublished: "2026-03-10",
-        image: "cat-64",
+        image: "cat-04",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
@@ -55,7 +55,7 @@ export default function EusrCardRenewal() {
       ]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <InnerPageHero
-        image="cat-39"
+        image="cat-72"
         eyebrow="Knowledge Hub"
         headline="How to Renew Your EUSR Card"
         sub="Your EUSR card is expiring or has already lapsed. Here is what you need to do, what the process involves, and how long it takes."
@@ -92,13 +92,13 @@ export default function EusrCardRenewal() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-14" width={1200} height={900} alt="EUSR training and practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-86" width={1200} height={900} alt="EUSR training and practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-92" width={1200} height={900} alt="Cable locating equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-73" width={1200} height={900} alt="Cable locating equipment training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-80" width={1200} height={900} alt="Safe digging practices during renewal training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-74" width={1200} height={900} alt="Safe digging practices during renewal training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
@@ -134,13 +134,13 @@ export default function EusrCardRenewal() {
 
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-74" width={1200} height={900} alt="Practical hands-on renewal training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-11" width={1200} height={900} alt="Practical hands-on renewal training session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-67" width={1200} height={900} alt="EUSR card renewal assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-70" width={1200} height={900} alt="EUSR card renewal assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden aspect-[4/3] bg-muted">
-              <Image src="cat-58" width={1200} height={900} alt="Delegates during final renewal assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+              <Image src="cat-89" width={1200} height={900} alt="Delegates during final renewal assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 
