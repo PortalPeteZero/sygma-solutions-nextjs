@@ -71,7 +71,7 @@ export default function ZsSuperuserScottishWater() {
         eyebrow="Utility Avoidance"
         headline="ZS Superuser: Advanced Location, Strike Investigation, and Coaching for Scottish Water Supply Chain"
         sub="Sygma's ZS Superuser course is the ZSI-specific super user cat and genny training programme, built for teams working within the Scottish Water supply chain. This advanced training course follows the same structure and standard as the EUSR Superuser, mapped to the Zero Strike Initiative framework for locating underground services and buried utilities."
-        image="cat-30"
+        image="cat-85"
         alt="Scottish Water ZS Superuser cable avoidance training course"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -130,7 +130,7 @@ export default function ZsSuperuserScottishWater() {
             <Image src="cat-47" width={1200} height={900} alt="ZS Superuser Scottish Water training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-53" width={1200} height={900} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-86" width={1200} height={900} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>

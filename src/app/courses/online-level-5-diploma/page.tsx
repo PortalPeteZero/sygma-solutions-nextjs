@@ -114,7 +114,7 @@ export default function OnlineLevel5Diploma() {
         headline="ProQual RQF Level 5 Diploma in Utility Mapping and Surveying (Online)"
         sub="Formal recognition of senior-level competency in utility mapping and surveying. Work at your own pace with full assessor support and mentoring throughout, delivered via MS Teams. No hidden fees. No extra charges for additional assessments. Contact us to discuss enrolment and pricing."
         images={[
-          'em-01',
+          'em-02',
           'gpr-07',
           'gpr-02',
         ]}

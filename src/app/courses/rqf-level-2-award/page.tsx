@@ -55,7 +55,7 @@ export default function RqfLevel2Award() {
         eyebrow="Utility Avoidance"
         headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
-        image="cat-21"
+        image="cat-68"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -107,13 +107,13 @@ export default function RqfLevel2Award() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-23" width={1200} height={900} alt="RQF Level 2 Award training - practical session with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-70" width={1200} height={900} alt="RQF Level 2 Award training - practical session with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-24" width={1200} height={900} alt="RQF Level 2 Award training - hands-on assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-71" width={1200} height={900} alt="RQF Level 2 Award training - hands-on assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-35" width={1200} height={900} alt="RQF Level 2 Award - Genny signal application training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-73" width={1200} height={900} alt="RQF Level 2 Award - Genny signal application training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -313,13 +313,13 @@ export default function RqfLevel2Award() {
           <Image src="cat-16" width={1200} height={900} alt="Utility avoidance hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-17" width={1200} height={900} alt="Level 2 qualification practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-65" width={1200} height={900} alt="Level 2 qualification practical demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden aspect-[4/3] md:aspect-[16/9] bg-muted">
-        <Image src="cat-18" width={1200} height={900} alt="RQF Level 2 Award training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-66" width={1200} height={900} alt="RQF Level 2 Award training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Requirements */}
@@ -382,13 +382,13 @@ export default function RqfLevel2Award() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-19" width={1200} height={900} alt="RQF Level 2 training with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-67" width={1200} height={900} alt="RQF Level 2 training with CAT and Genny" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-22" width={1200} height={900} alt="Utility locating qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-69" width={1200} height={900} alt="Utility locating qualification assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-26" width={1200} height={900} alt="On-site RQF Level 2 practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-72" width={1200} height={900} alt="On-site RQF Level 2 practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

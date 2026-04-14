@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from 'next/image';
 
-const FALLBACK_IMAGE = 'cat-34';
+const FALLBACK_IMAGE = 'cat-03';
 
 function HeroImage({ src, alt, priority }: { src: string; alt: string; priority: boolean }) {
   const [imgSrc, setImgSrc] = useState(src);

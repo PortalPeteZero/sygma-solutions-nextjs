@@ -137,7 +137,7 @@ export default function Pas128Awareness() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="em-01" width={1200} height={900} alt="PAS128 awareness training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="em-04" width={1200} height={900} alt="PAS128 awareness training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
             <Image src="gpr-02" width={1200} height={900} alt="PAS128 awareness training - electromagnetic locator practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />

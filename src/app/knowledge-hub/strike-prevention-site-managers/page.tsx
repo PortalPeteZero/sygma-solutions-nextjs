@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-18',
+        url: 'cat-80',
         width: 1200,
         height: 630,
         alt: 'Utility strike prevention',
@@ -64,7 +64,7 @@ export default function StrikePreventionSiteManagers() {
             description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training requirements, supervision, and what to do when things go wrong.',
             url: '/knowledge-hub/strike-prevention-site-managers',
             datePublished: '2026-03-10',
-            image: 'cat-26',
+            image: 'cat-81',
           }),
         }}
       />

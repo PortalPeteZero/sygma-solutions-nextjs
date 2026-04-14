@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image, { type ImageProps } from 'next/image';
 
-const FALLBACK_IMAGE = 'cat-34';
+const FALLBACK_IMAGE = 'cat-02';
 
 export default function FallbackImage({ src, ...props }: ImageProps) {
   const [imgSrc, setImgSrc] = useState(src);

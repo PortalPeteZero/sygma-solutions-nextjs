@@ -74,7 +74,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.",
     href: "/knowledge-hub/citb-funding-utility-training",
     type: "article",
-    image: "cat-30",
+    image: "cat-06",
   },
   {
     category: "PAS 128",
@@ -98,7 +98,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Standard courses solve generic problems. Bespoke programmes solve specific ones. This piece explains how to tell the difference and when to invest in a bespoke approach.",
     href: "/bespoke-training",
     type: "article",
-    image: "cat-49",
+    image: "cat-09",
   },
   {
     category: "EUSR",
@@ -122,7 +122,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "Most utility strikes are preventable. Practical guidance on pre-dig procedures, training requirements, supervision, and building a culture that prioritises doing it right.",
     href: "/knowledge-hub/strike-prevention-site-managers",
     type: "article",
-    image: "cat-37",
+    image: "cat-08",
   },
   {
     category: "Case Study",
@@ -130,7 +130,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "How Sygma built a 1-day refresher programme around Kier's own systems, policies, and incident data.",
     href: "/knowledge-hub/kier-group-case-study",
     type: "article",
-    image: "cat-25",
+    image: "cat-05",
   },
   {
     category: "Case Study",
@@ -154,6 +154,6 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "How Sygma designed a management training programme built around Severn Trent's own policies and procedures.",
     href: "/knowledge-hub/severn-trent-water-case-study",
     type: "article",
-    image: "cat-31",
+    image: "cat-07",
   },
 ];

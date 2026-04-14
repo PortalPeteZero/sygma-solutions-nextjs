@@ -85,7 +85,7 @@ export default function UtilityMappingHub() {
           </div>
           <div className="bg-background rounded-xl border border-border p-6">
             <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-              <Image src="em-01" width={600} height={400} alt="Project Managers and Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-full object-contain rounded-lg mb-4" />
+              <Image src="em-02" width={600} height={400} alt="Project Managers and Service Coordinators" sizes="(max-width: 768px) 100vw, 33vw" className="w-full h-full object-contain rounded-lg mb-4" />
             </div>
             <h3 className="font-bold text-foreground mb-2">Project Managers and Service Coordinators</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">You commission utility surveys. You need to understand what PAS128 means, what survey quality levels require, how to verify positional accuracy, and what your legal duties are. Our PAS128 Awareness training courses give you the knowledge to specify compliant survey work and reduce the risk of utility strikes without needing to become a surveyor.</p>

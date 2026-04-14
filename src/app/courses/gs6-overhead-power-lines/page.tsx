@@ -58,7 +58,7 @@ export default function Gs6OverheadPowerLines() {
         eyebrow="Utility Avoidance"
         headline="GS6 Overhead Power Lines: Awareness and Safe Working Training"
         sub="Half-day classroom awareness or full-day with practical site element. Written assessment with 70% pass mark. GS6 fourth edition and ENATS 43-8. Delivered in-house at your site, nationwide UK."
-        image="cat-52"
+        image="cat-60"
         alt="GS6 overhead power lines awareness training for safe working near electrical hazards"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -88,7 +88,7 @@ export default function Gs6OverheadPowerLines() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-53" width={1200} height={900} alt="GS6 overhead power lines training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-64" width={1200} height={900} alt="GS6 overhead power lines training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
             <Image src="cat-54" width={1200} height={900} alt="GS6 overhead power lines training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />

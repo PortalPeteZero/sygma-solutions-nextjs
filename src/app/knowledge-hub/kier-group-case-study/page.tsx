@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-36',
+        url: 'cat-88',
         width: 1200,
         height: 630,
         alt: 'Kier Group bespoke utility avoidance refresher training',

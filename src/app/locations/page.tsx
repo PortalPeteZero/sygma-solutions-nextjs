@@ -83,7 +83,7 @@ export default function Locations() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden bg-foreground">
         <Image
-          src="cat-53"
+          src="cat-87"
           alt="Sygma training locations nationwide"
           fill
           className="absolute inset-0 object-contain"

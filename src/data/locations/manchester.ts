@@ -32,7 +32,7 @@ export const locationData: LocationPageData = {
     [
       { src: 'cat-92', alt: 'Cable avoidance training Wigan North West' },
       { src: 'cat-93', alt: 'CAT and Genny techniques training Manchester' },
-      { src: 'cat-37', alt: 'Utility detection practical exercise Greater Manchester' },
+      { src: 'cat-16', alt: 'Utility detection practical exercise Greater Manchester' },
     ],
     [
       { src: 'cat-94', alt: 'On-site assessment North West cable avoidance' },

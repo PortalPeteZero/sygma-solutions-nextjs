@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-32',
+        url: 'cat-92',
         width: 1200,
         height: 630,
         alt: 'NPORS versus EUSR qualification',
@@ -82,7 +82,7 @@ export default function NporsVsEusr() {
       />
 
       <InnerPageHero
-        image="cat-31"
+        image="cat-91"
         alt="NPORS versus EUSR cable avoidance training accreditation comparison"
         eyebrow="Knowledge Hub"
         headline="NPORS vs EUSR Cable Avoidance"
@@ -130,7 +130,7 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-40" width={1200} height={900} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-93" width={1200} height={900} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
                 <Image src="cat-43" width={1200} height={900} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />

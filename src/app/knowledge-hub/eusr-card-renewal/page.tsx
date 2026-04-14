@@ -47,7 +47,7 @@ export default function EusrCardRenewal() {
         description: "Your EUSR card has expired or is about to expire. This guide explains the EUSR card renewal process, what happens if your card lapses, and how to rebook your training.",
         url: "/knowledge-hub/eusr-card-renewal",
         datePublished: "2026-03-10",
-        image: "cat-19",
+        image: "cat-89",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
@@ -55,7 +55,7 @@ export default function EusrCardRenewal() {
       ]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <InnerPageHero
-        image="cat-33"
+        image="cat-90"
         eyebrow="Knowledge Hub"
         headline="How to Renew Your EUSR Card"
         sub="Your EUSR card is expiring or has already lapsed. Here is what you need to do, what the process involves, and how long it takes."

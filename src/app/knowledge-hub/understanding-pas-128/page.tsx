@@ -45,7 +45,7 @@ export default function UnderstandingPas128() {
             description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
             url: '/knowledge-hub/understanding-pas-128',
             datePublished: '2026-03-09',
-            image: 'em-01',
+            image: 'em-03',
           }),
         }}
       />

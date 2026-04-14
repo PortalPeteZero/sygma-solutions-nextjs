@@ -296,7 +296,7 @@ export default function Level6Diploma() {
           <Image src="gpr-09" alt="Advanced utility survey training for Level 6" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-01" alt="Advanced electromagnetic detection training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="em-07" alt="Advanced electromagnetic detection training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>
 

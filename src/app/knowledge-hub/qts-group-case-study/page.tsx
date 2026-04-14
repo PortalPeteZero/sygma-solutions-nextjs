@@ -45,7 +45,7 @@ export default function QtsGroupCaseStudy() {
             description: 'How Sygma designed a rail-specific CAT4 programme with surface laid cables module and ZSI Super User training for QTS Group.',
             url: '/knowledge-hub/qts-group-case-study',
             datePublished: '2026-01-15',
-            image: 'cat-32',
+            image: 'cat-05',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function QtsGroupCaseStudy() {
       />
 
       <InnerPageHero
-        image="cat-40"
+        image="cat-06"
         alt="QTS Group rail-specific cable avoidance training with surface laid cables module"
         eyebrow="Case Study"
         headline="QTS Group: Rail-Specific CAT4 and Surface Laid Cables"

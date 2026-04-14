@@ -109,7 +109,7 @@ export default function OnlineLevel3Diploma() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="em-01" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="em-06" width={800} height={600} alt="Online Level 3 Diploma - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
             <Image src="em-04" width={800} height={600} alt="Online Level 3 Diploma - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />

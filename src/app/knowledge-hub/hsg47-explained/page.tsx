@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-28',
+        url: 'cat-78',
         width: 1200,
         height: 630,
         alt: 'HSG47 safe digging practices',
@@ -45,7 +45,7 @@ export default function Hsg47Explained() {
             description: 'What is HSG47 and what training does it require? The HSE guidance for avoiding danger from underground services explained, with how cable avoidance training maps to its requirements.',
             url: '/knowledge-hub/hsg47-explained',
             datePublished: '2026-03-09',
-            image: 'cat-40',
+            image: 'cat-79',
           }),
         }}
       />

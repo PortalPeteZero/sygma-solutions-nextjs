@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'cat-28',
+        url: 'cat-01',
         width: 1200,
         height: 630,
         alt: 'Utility strike prevention',
@@ -45,7 +45,7 @@ export default function UtilityStrikesFirst20Metres() {
             description: 'Most cable strikes trace back to the same four behaviours in the pre-excavation survey. Understanding what can cause a cable strike is the first step to preventing one.',
             url: '/knowledge-hub/utility-strikes-first-20-metres',
             datePublished: '2026-03-09',
-            image: 'cat-29',
+            image: 'cat-02',
           }),
         }}
       />

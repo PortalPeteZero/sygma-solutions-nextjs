@@ -34,7 +34,7 @@ export default function CableAvoidanceManchester() {
 
       <div className="relative w-full overflow-hidden bg-foreground">
         <Image
-          src="cat-36"
+          src="cat-65"
           alt="Cable avoidance training in Manchester"
           fill
           className="absolute inset-0 object-contain"
@@ -104,9 +104,9 @@ export default function CableAvoidanceManchester() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-37" width={1200} height={900} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-66" width={1200} height={900} alt="Operative scanning with CAT4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-38" width={1200} height={900} alt="Genny signal application during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-20" width={1200} height={900} alt="CAT and Genny session near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-64" width={1200} height={900} alt="CAT and Genny session near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}

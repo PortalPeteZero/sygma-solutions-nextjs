@@ -45,7 +45,7 @@ export default function MorganSindallCaseStudy() {
             description: 'How Sygma designed PAS128 utility survey training at the leadership level for Morgan Sindall\'s project management teams.',
             url: '/knowledge-hub/morgan-sindall-case-study',
             datePublished: '2026-01-15',
-            image: 'cat-28',
+            image: 'cat-94',
           }),
         }}
       />
@@ -57,7 +57,7 @@ export default function MorganSindallCaseStudy() {
       />
 
       <InnerPageHero
-        image="cat-36"
+        image="cat-95"
         alt="Morgan Sindall PAS128 leadership briefing for project managers"
         eyebrow="Case Study"
         headline="Morgan Sindall: PAS128 Leadership Briefings"

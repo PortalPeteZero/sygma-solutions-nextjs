@@ -36,7 +36,7 @@ export const locationData: LocationPageData = {
     ],
     [
       { src: 'cat-91', alt: 'On-site cable avoidance practical Midlands' },
-      { src: 'cat-30', alt: 'On-site cable avoidance assessment Midlands' },
+      { src: 'cat-15', alt: 'On-site cable avoidance assessment Midlands' },
       { src: 'cat-46', alt: 'Locator training session Midlands cable avoidance' },
     ],
   ],

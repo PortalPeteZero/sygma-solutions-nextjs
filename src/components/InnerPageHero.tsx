@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 
-const FALLBACK_IMAGE = 'cat-34';
+const FALLBACK_IMAGE = 'cat-04';
 
 interface Breadcrumb {
   label: string;
