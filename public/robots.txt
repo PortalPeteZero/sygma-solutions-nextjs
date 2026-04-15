@@ -2,6 +2,14 @@
 User-agent: *
 Allow: /
 
+# AhrefsSiteAudit
+User-agent: AhrefsSiteAudit
+Disallow: /_next/
+
+# AhrefsBot
+User-agent: AhrefsBot
+Disallow: /_next/
+
 # Host
 Host: https://sygma-solutions.com
 
