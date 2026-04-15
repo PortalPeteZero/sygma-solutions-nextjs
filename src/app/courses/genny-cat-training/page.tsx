@@ -54,11 +54,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Course | EUSR | Sygma Solutions',
-  description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
+  description: 'EUSR CAT1 and ProQual cat and genny training from Sygma Solutions. Nationwide cable avoidance courses delivered by independent specialists.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/genny-cat-training' },
   openGraph: {
     title: 'CAT and Genny Training Course | EUSR | Sygma Solutions',
-    description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Specialist utility avoidance trainers.',
+    description: 'EUSR CAT1 and ProQual cat and genny training from Sygma Solutions. Nationwide cable avoidance courses delivered by independent specialists.',
     url: 'https://sygma-solutions.com/courses/genny-cat-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630 }],

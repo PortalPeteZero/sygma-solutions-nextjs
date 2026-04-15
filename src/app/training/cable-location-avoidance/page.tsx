@@ -587,10 +587,10 @@ export default function UtilityAvoidanceHub() {
         <h3 className="text-lg font-bold text-foreground mb-4">Case Studies</h3>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { title: "Kier Group", desc: "How Sygma supported Kier Group with a nationwide cable avoidance training programme across multiple regional sites.", to: "/case-studies/kier-group" },
-            { title: "QTS Group", desc: "Delivering specialist utility training for QTS Group rail and infrastructure teams.", to: "/case-studies/qts-group" },
-            { title: "Morgan Sindall", desc: "A long-term training partnership covering cable avoidance, utility mapping, and supervisor qualifications.", to: "/case-studies/morgan-sindall" },
-            { title: "Severn Trent Water", desc: "Training water network operatives in cable avoidance and safe excavation practices.", to: "/case-studies/severn-trent-water" },
+            { title: "Kier Group", desc: "How Sygma supported Kier Group with a nationwide cable avoidance training programme across multiple regional sites.", to: "/knowledge-hub/kier-group-case-study" },
+            { title: "QTS Group", desc: "Delivering specialist utility training for QTS Group rail and infrastructure teams.", to: "/knowledge-hub/qts-group-case-study" },
+            { title: "Morgan Sindall", desc: "A long-term training partnership covering cable avoidance, utility mapping, and supervisor qualifications.", to: "/knowledge-hub/morgan-sindall-case-study" },
+            { title: "Severn Trent Water", desc: "Training water network operatives in cable avoidance and safe excavation practices.", to: "/knowledge-hub/severn-trent-water-case-study" },
           ].map((cs) => (
             <Link key={cs.title} href={cs.to} className="rounded-lg border border-border bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="font-bold text-foreground mb-2 text-sm">{cs.title}</h3>

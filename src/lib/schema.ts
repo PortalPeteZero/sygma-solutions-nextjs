@@ -38,6 +38,22 @@ export function breadcrumbSchema(
   });
 }
 
+// Rough mapping from human duration strings to ISO 8601 durations for
+// Schema.org courseWorkload. We only need ballpark values; Google accepts
+// any valid ISO 8601 duration. Missing/unknown -> PT1D (1 day).
+function toISO8601Duration(input?: string): string {
+  if (!input) return "PT1D";
+  const s = input.toLowerCase().trim();
+  const m = s.match(/(\d+)\s*(?:hour|hr|h)/);
+  if (m) return `PT${m[1]}H`;
+  const d = s.match(/(\d+)\s*day/);
+  if (d) return `P${d[1]}D`;
+  if (/half\s*day/.test(s)) return "PT4H";
+  if (/part[-\s]?time/.test(s)) return "P1Y";
+  if (/variable|tailored/.test(s)) return "PT1D";
+  return "PT1D";
+}
+
 export function courseSchema(params: {
   name: string;
   description: string;
@@ -51,13 +67,20 @@ export function courseSchema(params: {
   educationalLevel?: string;
   offers?: boolean;
 }): string {
+  const mode = params.mode ?? ["onsite"];
+  const isOnsite = mode.includes("onsite");
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Course",
     "name": params.name,
     "description": params.description,
     "url": `${SITE_URL}${params.url}`,
-    "provider": ORG,
+    "provider": {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      "name": "Sygma Solutions",
+      "url": SITE_URL,
+    },
     ...(params.credential
       ? { "educationalCredentialAwarded": params.credential }
       : {}),
@@ -65,11 +88,33 @@ export function courseSchema(params: {
     ...(params.teaches ? { "teaches": params.teaches } : {}),
     ...(params.coursePrerequisites ? { "coursePrerequisites": params.coursePrerequisites } : {}),
     ...(params.educationalLevel ? { "educationalLevel": params.educationalLevel } : {}),
-    ...(params.offers ? { "offers": { "@type": "Offer", "priceCurrency": "GBP", "description": "Contact for tailored quote" } } : {}),
+    "offers": {
+      "@type": "Offer",
+      "category": "Paid",
+      "url": `${SITE_URL}${params.url}`,
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+    },
     "hasCourseInstance": {
       "@type": "CourseInstance",
-      "courseMode": params.mode ?? ["onsite"],
-      "instructor": ORG,
+      "courseMode": mode,
+      "courseWorkload": toISO8601Duration(params.duration),
+      ...(isOnsite
+        ? {
+            "location": {
+              "@type": "Place",
+              "name": "Client site (UK-wide delivery)",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "GB",
+              },
+            },
+          }
+        : {}),
+      "instructor": {
+        "@type": "Person",
+        "name": "Sygma Solutions Trainer",
+      },
     },
   });
 }

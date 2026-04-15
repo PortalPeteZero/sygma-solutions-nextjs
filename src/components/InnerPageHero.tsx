@@ -34,7 +34,9 @@ export default function InnerPageHero({
   breadcrumbs = [],
 }: InnerPageHeroProps) {
   const resolvedImage = image || (images && images[0]);
-  const resolvedAlt = alt || (alts && alts[0]) || '';
+  // Fall back to the headline so every hero has meaningful alt text
+  // for accessibility and SEO. Passing an explicit alt/alts still wins.
+  const resolvedAlt = alt || (alts && alts[0]) || headline || 'Sygma Solutions';
   const hasImage = Boolean(resolvedImage);
   const [imgSrc, setImgSrc] = useState(resolvedImage || FALLBACK_IMAGE);
 

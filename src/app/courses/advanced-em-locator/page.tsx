@@ -47,11 +47,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'RD8200 Training | Advanced EM Locator | Sygma Solutions',
-  description: 'Advanced electromagnetic locator training from Sygma Solutions. RD8200, RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location.',
+  description: 'RD8200 and advanced EM locator training from Sygma. RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, sonde, and HV cable location.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/advanced-em-locator' },
   openGraph: {
     title: 'RD8200 Training | Advanced EM Locator | Sygma Solutions',
-    description: 'Advanced electromagnetic locator training from Sygma Solutions. RD8200, RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location.',
+    description: 'RD8200 and advanced EM locator training from Sygma. RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, sonde, and HV cable location.',
     url: 'https://sygma-solutions.com/courses/advanced-em-locator',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/em-03', width: 1200, height: 630 }],

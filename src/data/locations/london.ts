@@ -11,6 +11,9 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'CAT and Genny Training London | Sygma Solutions',
       description: 'CAT and Genny training in London and the South East. On-site delivery. Travel included.',
+      url: 'https://sygma-solutions.com/locations/london',
+      siteName: 'Sygma Solutions',
+      type: 'website',
       images: [DEFAULT_OG_IMAGE],
     },
   },

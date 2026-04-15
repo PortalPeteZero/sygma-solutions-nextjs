@@ -11,6 +11,9 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'CAT and Genny Training Manchester | Sygma Solutions',
       description: 'Specialist CAT and Genny training in Manchester and the North West. Travel included.',
+      url: 'https://sygma-solutions.com/locations/manchester',
+      siteName: 'Sygma Solutions',
+      type: 'website',
       images: [DEFAULT_OG_IMAGE],
     },
   },

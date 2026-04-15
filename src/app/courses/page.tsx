@@ -6,7 +6,7 @@ import { faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',
-  description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUSR CAT1, ProQual, PAS 128, GPR, utility mapping qualifications. On-site delivery, CITB approved, max 8 delegates.',
+  description: 'CAT and Genny training courses from the UK\'s independent cable avoidance specialist. EUSR CAT1, ProQual, PAS 128, GPR. On-site, CITB approved.',
   alternates: { canonical: 'https://sygma-solutions.com/courses' },
   openGraph: {
     title: 'CAT and Genny Training Courses | Cable Avoidance | Sygma',

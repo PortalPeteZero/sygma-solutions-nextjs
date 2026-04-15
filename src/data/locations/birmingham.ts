@@ -11,6 +11,9 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'CAT and Genny Training Birmingham | Sygma Solutions',
       description: 'CAT and Genny training in Birmingham and the West Midlands. On-site delivery across the region. Independent specialist provider. Travel included.',
+      url: 'https://sygma-solutions.com/locations/birmingham',
+      siteName: 'Sygma Solutions',
+      type: 'website',
       images: [DEFAULT_OG_IMAGE],
     },
   },

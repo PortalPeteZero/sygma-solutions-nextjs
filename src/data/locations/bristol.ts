@@ -11,6 +11,9 @@ export const locationData: LocationPageData = {
     openGraph: {
       title: 'Utility Training Bristol & South West | Sygma Solutions',
       description: 'Utility mapping and PAS 128 training in Bristol and the South West. Travel included.',
+      url: 'https://sygma-solutions.com/locations/bristol',
+      siteName: 'Sygma Solutions',
+      type: 'website',
       images: [DEFAULT_OG_IMAGE],
     },
   },

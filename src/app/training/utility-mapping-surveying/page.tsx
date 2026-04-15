@@ -44,7 +44,7 @@ export default function UtilityMappingHub() {
         sub="The UK's most complete PAS128 utility mapping training pathway. From introductory training courses through to a ProQual Level 6 Management Diploma: everything a utility mapping professional needs to locate buried services safely and build a credible, certified career."
         image="em-04"
         breadcrumbs={[
-          { label: 'Training', href: '/training' },
+          { label: 'Training', href: '/courses' },
           { label: 'Utility Mapping & Surveying' },
         ]}
       />
