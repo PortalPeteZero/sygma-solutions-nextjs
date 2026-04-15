@@ -33,11 +33,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
-  description: 'Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
+  description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined' },
   openGraph: {
     title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
-    description: 'Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
+    description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
     url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-60', width: 1200, height: 630 }],

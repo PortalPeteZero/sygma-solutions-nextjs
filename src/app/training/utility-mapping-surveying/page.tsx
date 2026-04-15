@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Utility Mapping & Survey Courses | PAS128 | Sygma',
-  description: "Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK's leading specialist provider.",
+  description: "Utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, by the UK's leading specialist provider.",
   alternates: { canonical: 'https://sygma-solutions.com/training/utility-mapping-surveying' },
   openGraph: {
     title: 'Utility Mapping & Survey Courses | PAS128 | Sygma',
-    description: "Complete utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, delivered by the UK's leading specialist provider.",
+    description: "Utility mapping and surveying training pathway. From PAS128 awareness to ProQual Level 6 Diploma, by the UK's leading specialist provider.",
     url: 'https://sygma-solutions.com/training/utility-mapping-surveying',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],

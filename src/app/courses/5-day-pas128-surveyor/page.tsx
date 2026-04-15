@@ -34,11 +34,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: '5-Day PAS 128 Surveyor Course | Sygma Solutions',
-  description: 'Five-day PAS 128 utility mapping course covering survey levels D through B. Advanced EM, GPR, written exam, practical assessment. Wigan and Worcester dates.',
+  description: 'Five-day PAS 128 utility mapping course covering survey levels D-B. Advanced EM, GPR, written exam, practical assessment. Wigan and Worcester dates.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/5-day-pas128-surveyor' },
   openGraph: {
     title: '5-Day PAS 128 Surveyor Course | Sygma Solutions',
-    description: 'Five-day PAS 128 utility mapping course covering survey levels D through B. Advanced EM, GPR, written exam, practical assessment. Wigan and Worcester dates.',
+    description: 'Five-day PAS 128 utility mapping course covering survey levels D-B. Advanced EM, GPR, written exam, practical assessment. Wigan and Worcester dates.',
     url: 'https://sygma-solutions.com/courses/5-day-pas128-surveyor',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/em-03', width: 1200, height: 630 }],

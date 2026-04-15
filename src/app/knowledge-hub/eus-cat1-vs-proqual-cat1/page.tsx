@@ -8,11 +8,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'EUSR CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
-  description: 'EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.',
+  description: 'EUSR CAT1 and ProQual CAT1 are not equivalent. This guide explains the key differences to help you choose the right cable avoidance course.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1' },
   openGraph: {
     title: 'EUSR CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
-    description: 'EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.',
+    description: 'EUSR CAT1 and ProQual CAT1 are not equivalent. This guide explains the key differences to help you choose the right cable avoidance course.',
     url: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],

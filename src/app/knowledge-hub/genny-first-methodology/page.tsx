@@ -8,11 +8,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Why Connect the Genny First | Training Guide | Sygma',
-  description: 'Passive detection alone is not enough to identify buried services. Sygma\'s Genny-First methodology and why it produces measurable improvements in site safety.',
+  description: 'Passive detection alone is not enough to find buried services. Sygma\'s Genny-First methodology and why it improves site safety measurably.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/genny-first-methodology' },
   openGraph: {
     title: 'Why Connect the Genny First | Training Guide | Sygma',
-    description: 'Passive detection alone is not enough to identify buried services. Sygma\'s Genny-First methodology and why it produces measurable improvements in site safety.',
+    description: 'Passive detection alone is not enough to find buried services. Sygma\'s Genny-First methodology and why it improves site safety measurably.',
     url: 'https://sygma-solutions.com/knowledge-hub/genny-first-methodology',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],

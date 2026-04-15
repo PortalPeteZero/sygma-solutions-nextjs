@@ -35,11 +35,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'Manufacturer Locator Training Course | Sygma Solutions',
-  description: 'One day, up to eight delegates. Theory and practical training tailored to your pipe and cable locating equipment, using your own kit on a representative site.',
+  description: 'One day, up to 8 delegates. Theory and practical training tailored to your pipe and cable locating equipment, on a representative site.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/manufacturer-locator-training' },
   openGraph: {
     title: 'Manufacturer Locator Training Course | Sygma Solutions',
-    description: 'One day, up to eight delegates. Theory and practical training tailored to your pipe and cable locating equipment, using your own kit on a representative site.',
+    description: 'One day, up to 8 delegates. Theory and practical training tailored to your pipe and cable locating equipment, on a representative site.',
     url: 'https://sygma-solutions.com/courses/manufacturer-locator-training',
     siteName: 'Sygma Solutions',
     type: 'website',
