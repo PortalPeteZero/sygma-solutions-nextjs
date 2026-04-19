@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'Most cable strikes trace back to the same four behaviours in the pre-excavation survey. Understanding what can cause a cable strike is the first step to preventing one.',
     url: 'https://sygma-solutions.com/knowledge-hub/utility-strikes-first-20-metres',
     type: 'article',
-    images: [
-      {
-        url: 'cat-74',
-        width: 1200,
-        height: 630,
-        alt: 'Utility strike prevention',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-74', 'Utility strike prevention')],
   },
 };
 

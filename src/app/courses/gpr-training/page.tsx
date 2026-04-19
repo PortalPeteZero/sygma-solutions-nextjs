@@ -32,12 +32,12 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'GPR Training for Utility Surveyors | Sygma Solutions',
-  description: 'Ground penetrating radar training covering GPR technology, practical use and post-processing. Delivered by GPR experts with equipment selection guidance.',
+  title: 'GPR Training | Ground Penetrating Radar Courses | Sygma Solutions',
+  description: 'Ground penetrating radar training from GPR specialists. Module 1 (theory + practical) and Module 2 (post-processing). MALA-certified delivery. UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/gpr-training' },
   openGraph: {
-    title: 'GPR Training for Utility Surveyors | Sygma Solutions',
-    description: 'Ground penetrating radar training covering GPR technology, practical use and post-processing. Delivered by GPR experts with equipment selection guidance.',
+    title: 'GPR Training | Ground Penetrating Radar Courses | Sygma Solutions',
+    description: 'Ground penetrating radar training from GPR specialists. Module 1 (theory + practical) and Module 2 (post-processing). MALA-certified delivery. UK-wide.',
     url: 'https://sygma-solutions.com/courses/gpr-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/gpr-12', width: 1200, height: 630 }],

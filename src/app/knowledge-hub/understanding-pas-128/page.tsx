@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
     url: 'https://sygma-solutions.com/knowledge-hub/understanding-pas-128',
     type: 'article',
-    images: [
-      {
-        url: 'cat-12',
-        width: 1200,
-        height: 630,
-        alt: 'Understanding PAS 128 utility survey',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-12', 'Understanding PAS 128 utility survey')],
   },
 };
 

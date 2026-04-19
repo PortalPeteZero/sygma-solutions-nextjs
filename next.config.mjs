@@ -391,8 +391,15 @@ const nextConfig = {
       { source: '/case-studies/morgan-sindall', destination: '/knowledge-hub/morgan-sindall-case-study', permanent: true },
       { source: '/case-studies/severn-trent-water', destination: '/knowledge-hub/severn-trent-water-case-study', permanent: true },
       { source: '/courses/case-studies/:path*', destination: '/knowledge-hub', permanent: true },
+      // 9.5: Sub-path catch-alls for prefixes excluded from the single-level catch-all below.
+      // These use negative lookaheads to avoid intercepting real Next.js pages (real slugs listed in the exclusion).
+      // Any unlisted sub-path under these prefixes would otherwise 404; now it redirects cleanly.
+      { source: '/case-studies/:path*', destination: '/knowledge-hub', permanent: true },
+      { source: '/mala-gpr/:path*', destination: '/courses/gpr-training', permanent: true },
+      { source: '/training/:path((?!cable-location-avoidance|utility-mapping-surveying).+)', destination: '/courses', permanent: true },
+      { source: '/locations/:path((?!manchester|birmingham|london|bristol).+)', destination: '/locations', permanent: true },
 
-      // === PHASE 9.5: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
+      // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr).+)', destination: '/knowledge-hub', permanent: true },
     ];
   },

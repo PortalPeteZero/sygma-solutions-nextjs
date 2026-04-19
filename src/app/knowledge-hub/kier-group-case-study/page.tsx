@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'How Sygma built a 1-day bespoke utility avoidance refresher around Kier\'s own systems, policies, and incident data.',
     url: 'https://sygma-solutions.com/knowledge-hub/kier-group-case-study',
     type: 'article',
-    images: [
-      {
-        url: 'cat-11',
-        width: 1200,
-        height: 630,
-        alt: 'Kier Group bespoke utility avoidance refresher training',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-11', 'Kier Group bespoke utility avoidance refresher training')],
   },
 };
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'How Sygma designed a 2-day management training and assessment programme built around Severn Trent Water\'s own policies.',
     url: 'https://sygma-solutions.com/knowledge-hub/severn-trent-water-case-study',
     type: 'article',
-    images: [
-      {
-        url: 'cat-07',
-        width: 1200,
-        height: 630,
-        alt: 'Severn Trent Water bespoke manager training programme',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-07', 'Severn Trent Water bespoke manager training programme')],
   },
 };
 

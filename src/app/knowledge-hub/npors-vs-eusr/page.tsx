@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 const faqs = [
@@ -33,18 +34,7 @@ export const metadata: Metadata = {
     description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
     url: 'https://sygma-solutions.com/knowledge-hub/npors-vs-eusr',
     type: 'article',
-    images: [
-      {
-        url: 'cat-71',
-        width: 1200,
-        height: 630,
-        alt: 'NPORS versus EUSR qualification',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-71', 'NPORS versus EUSR qualification')],
   },
 };
 

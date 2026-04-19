@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'How Sygma designed a rail-specific CAT4 programme with surface laid cables module and ZSI Super User training for QTS Group.',
     url: 'https://sygma-solutions.com/knowledge-hub/qts-group-case-study',
     type: 'article',
-    images: [
-      {
-        url: 'cat-67',
-        width: 1200,
-        height: 630,
-        alt: 'QTS Group rail-specific CAT4 training programme',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-67', 'QTS Group rail-specific CAT4 training programme')],
   },
 };
 

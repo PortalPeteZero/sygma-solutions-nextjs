@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'How Sygma designed PAS128 utility survey training at the leadership level for Morgan Sindall\'s project management teams.',
     url: 'https://sygma-solutions.com/knowledge-hub/morgan-sindall-case-study',
     type: 'article',
-    images: [
-      {
-        url: 'cat-77',
-        width: 1200,
-        height: 630,
-        alt: 'Morgan Sindall PAS128 leadership training briefing',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-77', 'Morgan Sindall PAS128 leadership training briefing')],
   },
 };
 

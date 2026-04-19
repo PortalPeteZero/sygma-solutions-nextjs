@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 const faqs = [
@@ -33,18 +34,7 @@ export const metadata: Metadata = {
     description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training requirements, supervision, and what to do when things go wrong.',
     url: 'https://sygma-solutions.com/knowledge-hub/strike-prevention-site-managers',
     type: 'article',
-    images: [
-      {
-        url: 'cat-65',
-        width: 1200,
-        height: 630,
-        alt: 'Utility strike prevention',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-65', 'Utility strike prevention')],
   },
 };
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -14,18 +15,7 @@ export const metadata: Metadata = {
     description: 'How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.',
     url: 'https://sygma-solutions.com/knowledge-hub/citb-funding-utility-training',
     type: 'article',
-    images: [
-      {
-        url: 'cat-65',
-        width: 1200,
-        height: 630,
-        alt: 'CITB funding for utility avoidance training',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-65', 'CITB funding for utility avoidance training')],
   },
 };
 

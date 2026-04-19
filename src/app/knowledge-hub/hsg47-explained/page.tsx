@@ -3,29 +3,19 @@ import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import KnowledgeHubSidebar from '@/components/KnowledgeHubSidebar';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'HSG47 Explained | Underground Services Guide | Sygma',
-  description: 'What is HSG47 and what training does it require? HSE guidance for avoiding danger from underground services explained.',
+  title: 'HSG47 Guidance: Avoiding Danger from Underground Services | Sygma',
+  description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training aligns.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained' },
   openGraph: {
-    title: 'HSG47 Training: What HSG47 Requires and How Cable Avoidance Training Aligns',
-    description: 'What is HSG47 and what training does it require? The HSE guidance for avoiding danger from underground services explained, with how cable avoidance training maps to its requirements.',
+    title: 'HSG47 Guidance: What Underground Service Workers Need to Know',
+    description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training meets its obligations.",
     url: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained',
     type: 'article',
-    images: [
-      {
-        url: 'cat-71',
-        width: 1200,
-        height: 630,
-        alt: 'HSG47 safe digging practices',
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [cloudinaryOgImage('cat-71', 'HSG47 safe digging practices')],
   },
 };
 
