@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description: "CAT and Genny training from the UK's only independent specialist. EUSR CAT1, ProQual accredited. On-site, travel included. CITB approved.",
     url: 'https://sygma-solutions.com/courses/cat-and-genny-training',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630, alt: 'CAT and Genny training assessment on site using CAT4 cable locator and Genny4 signal generator' }],
     type: 'website',
   },
 };
@@ -77,7 +77,7 @@ export default function GennyCatTraining() {
         headline="CAT and Genny Training: The Course That Changes How Your Team Works on Site"
         sub="Not just Genny & CAT equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
         image="cat-75"
-        alt="Genny and CAT training course showing hands-on cable detection practice"
+        alt="Operative practising cable detection during a CAT and Genny training course with Sygma Solutions"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
           { label: "CAT and Genny Training" },
@@ -232,13 +232,13 @@ export default function GennyCatTraining() {
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-04" width={1200} height={900} alt="Genny & CAT training outdoors with Sygma" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-04" width={1200} height={900} alt="On-site CAT and Genny training delivered outdoors by Sygma Solutions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-72" width={1200} height={900} alt="Delegates using locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-72" width={1200} height={900} alt="Delegates on a CAT and Genny course using cable and pipe locating equipment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-86" width={1200} height={900} alt="Practical utility location and excavation training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-86" width={1200} height={900} alt="Practical utility location and excavation element of the CAT and Genny training course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
         </div>
       </section>
@@ -319,7 +319,7 @@ export default function GennyCatTraining() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-43" width={1200} height={900} alt="Genny & CAT training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-43" width={1200} height={900} alt="CAT and Genny training delivered on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* What You Get */}
@@ -361,13 +361,13 @@ export default function GennyCatTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-74" width={1200} height={900} alt="Genny4 signal generator practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-74" width={1200} height={900} alt="Genny4 signal generator demonstration during a CAT and Genny training course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-11" width={1200} height={900} alt="Genny & CAT training assessment on buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-11" width={1200} height={900} alt="CAT and Genny training assessment locating buried services with CAT4 and Genny4" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-70" width={1200} height={900} alt="Hands-on Genny signal application demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-70" width={1200} height={900} alt="Hands-on Genny signal application during a CAT and Genny course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -460,13 +460,13 @@ export default function GennyCatTraining() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-89" width={1200} height={900} alt="CAT4 locator training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-89" width={1200} height={900} alt="Practical CAT4 locator session on a CAT and Genny course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-66" width={1200} height={900} alt="Delegates practising utility location techniques" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-66" width={1200} height={900} alt="Delegates practising utility location techniques with Radiodetection CAT4 and Genny4 equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-14" width={1200} height={900} alt="On-site Genny & CAT training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-14" width={1200} height={900} alt="On-site CAT and Genny training assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
