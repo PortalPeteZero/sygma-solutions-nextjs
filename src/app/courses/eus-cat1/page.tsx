@@ -307,7 +307,7 @@ export default function EusCat1() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[1585/341] bg-muted">
+      <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1585 / 341" }}>
         <Image src="cat-63" width={1585} height={341} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
