@@ -300,7 +300,7 @@ export default function AdvancedEmLocator() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-60-advanced-em-locator" width={1200} height={900} alt="Advanced EM locator practical training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-60-advanced-em-locator" width={1200} height={900} alt="Advanced EM locator practical training on site" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Course formats */}

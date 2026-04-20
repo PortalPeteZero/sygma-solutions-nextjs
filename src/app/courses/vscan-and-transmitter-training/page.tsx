@@ -281,7 +281,7 @@ export default function VscanTransmitterTraining() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-57" width={1200} height={900} alt="vScan & Tx training on a live utility site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-57" width={1200} height={900} alt="vScan & Tx training on a live utility site" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* What You Get */}

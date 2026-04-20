@@ -365,7 +365,7 @@ export default function EusCat12Combined() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-92" width={1200} height={900} alt="EUSR CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-92" width={1200} height={900} alt="EUSR CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Why Sygma */}

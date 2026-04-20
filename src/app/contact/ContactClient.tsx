@@ -211,7 +211,7 @@ export default function ContactClient() {
 
       {/* Image Break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-05" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-05" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Image strip */}

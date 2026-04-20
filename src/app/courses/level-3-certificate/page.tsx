@@ -154,7 +154,7 @@ export default function Level3Certificate() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="gpr-12-level-3-certificate" width={1200} height={900} alt="Level 3 Certificate utility mapping - electromagnetic locator training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="gpr-12-level-3-certificate" width={1200} height={900} alt="Level 3 Certificate utility mapping - electromagnetic locator training" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Who it's for */}

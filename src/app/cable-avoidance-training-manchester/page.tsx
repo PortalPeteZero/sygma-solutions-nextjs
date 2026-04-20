@@ -110,7 +110,7 @@ export default function CableAvoidanceManchester() {
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-42" width={1200} height={900} alt="CAT and Genny training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-42" width={1200} height={900} alt="CAT and Genny training" sizes="100vw" className="w-full h-full object-contain" /></div>
 
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">
@@ -125,7 +125,7 @@ export default function CableAvoidanceManchester() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-43-cable-avoidance-training-manchester" width={1200} height={900} alt="Utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-43-cable-avoidance-training-manchester" width={1200} height={900} alt="Utility avoidance training site conditions" sizes="100vw" className="w-full h-full object-contain" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
