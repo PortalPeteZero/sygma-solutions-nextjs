@@ -308,7 +308,7 @@ export default function EusCat1() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-63" width={1200} height={900} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-63" width={1200} height={900} alt="EUSR CAT1 on-site training group, Sygma Solutions nationwide delivery" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Learning outcomes */}
