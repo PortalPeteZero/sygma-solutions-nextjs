@@ -10,8 +10,8 @@ const faqs = [
     a: "CAT and Genny training teaches operatives to use a cable locator (CAT) and signal generator (Genny) to find buried utilities before excavation. The course covers electromagnetic theory, all four locating modes, signal interpretation and depth estimation, with a practical site assessment to prove the skills. Sygma teaches a Genny-First methodology: connect the signal generator before relying on passive detection. Successful delegates can be assessed for an EUSR CAT1 card, ProQual CAT1 certificate or Sygma in-house certification.",
   },
   {
-    q: "How long does CAT and Genny training last?",
-    a: "One or two days, depending on format. The one-day course covers theory and practical assessment for delegates with some experience. Two-day formats split classroom and site work, or add the ProQual CAT1 Plus Genny-First assessment element on day two. Open courses and bespoke on-site delivery are available across the UK.",
+    q: "How long does a CAT and Genny course take?",
+    a: "CAT and Genny training takes one or two days, depending on format. The one-day course covers theory and practical assessment for delegates with some experience. Two-day formats split classroom and site work, or add the ProQual CAT1 Plus Genny-First assessment element on day two. Open courses and bespoke on-site delivery are available across the UK.",
   },
   {
     q: "Can CAT and Genny training be done online?",
