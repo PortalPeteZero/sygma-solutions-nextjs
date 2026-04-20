@@ -30,7 +30,7 @@ const courseExtras: Record<string, CourseExtra> = {
   '/courses/proqualcat1-training': { slug: 'proqualcat1-training', desc: 'ProQual-accredited CAT1 with externally verified individual assessment.', duration: '1 day', cert: 'ProQual Certificate' },
   '/courses/proqualcat1plus': { slug: 'proqualcat1plus', desc: 'ProQual CAT1 Plus with enhanced practical assessment. Recognised by major contractors.', duration: '1 day', cert: 'ProQual Certificate' },
   '/courses/rqf-level-2-award': { slug: 'rqf-level-2-award', desc: 'Ofqual-regulated Level 2 Award in locating underground services using electromagnetic devices.', duration: '2 days', cert: 'Ofqual Level 2' },
-  '/courses/genny-cat-training': { slug: 'genny-cat-training', desc: 'Combined CAT and Genny training covering cable avoidance tool theory and practical competency.', duration: '1 day', cert: 'Sygma Certificate' },
+  '/courses/cat-and-genny-training': { slug: 'cat-and-genny-training', desc: 'Combined CAT and Genny training covering cable avoidance tool theory and practical competency.', duration: '1 day', cert: 'Sygma Certificate' },
   '/courses/vscan-and-transmitter-training': { slug: 'vscan-and-transmitter-training', desc: 'Manufacturer-specific vScan and transmitter training for Vivax-Metrotech equipment.', duration: '1 day', cert: 'Sygma Certificate' },
   '/courses/eus-cat2-safe-dig': { slug: 'eus-cat2-safe-dig', desc: 'Safe excavation near underground services. EUSR CAT2 registration on completion.', duration: '1 day', cert: 'EUSR Card' },
   '/courses/proqualcat2': { slug: 'proqualcat2', desc: 'ProQual-accredited safe dig assessment covering hand dig techniques and excavation risk management.', duration: '1 day', cert: 'ProQual Certificate' },

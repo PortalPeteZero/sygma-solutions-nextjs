@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'proqualcat1-training',
     'proqualcat1plus',
     'rqf-level-2-award',
-    'genny-cat-training',
+    'cat-and-genny-training',
     'vscan-and-transmitter-training',
     'eus-cat2-safe-dig',
     'proqualcat2',

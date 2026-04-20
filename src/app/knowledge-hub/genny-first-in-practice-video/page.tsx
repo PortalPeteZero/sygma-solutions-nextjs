@@ -139,7 +139,7 @@ export default function GennyFirstVideo() {
               Ready to train your team in the Genny First approach? Sygma's CAT and Genny training covers the full methodology, connection techniques, data analysis, and site application — delivered on-site, UK-wide.
             </p>
             <Link
-              href="/courses/genny-cat-training"
+              href="/courses/cat-and-genny-training"
               className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors gap-2"
             >
               View CAT and Genny Training <ArrowRight size={16} />
