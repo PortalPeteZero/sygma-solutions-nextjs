@@ -85,8 +85,8 @@ export default function CourseComparison() {
 
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-41" width={1200} height={900} alt="Sygma course comparison - live training environment" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 498" }}>
+        <Image src="cat-41" width={1400} height={498} alt="Sygma course comparison - live training environment" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Who is this page for */}

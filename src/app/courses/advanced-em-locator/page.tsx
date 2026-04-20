@@ -299,8 +299,8 @@ export default function AdvancedEmLocator() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-60-advanced-em-locator" width={1200} height={900} alt="Advanced EM locator practical training on site" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 742" }}>
+        <Image src="cat-60-advanced-em-locator" width={1600} height={742} alt="Advanced EM locator practical training on site" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Course formats */}

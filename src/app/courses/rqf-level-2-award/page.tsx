@@ -318,8 +318,8 @@ export default function RqfLevel2Award() {
       </div>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-45" width={1200} height={900} alt="RQF Level 2 Award training - live training environment" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 356" }}>
+        <Image src="cat-45" width={1400} height={356} alt="RQF Level 2 Award training - live training environment" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Requirements */}

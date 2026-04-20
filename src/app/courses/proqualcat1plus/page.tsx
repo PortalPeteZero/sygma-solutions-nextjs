@@ -266,8 +266,8 @@ export default function ProQualCat1Plus() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-61" width={1200} height={900} alt="ProQual CAT1 Plus hands-on practical training" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 642" }}>
+        <Image src="cat-61" width={1600} height={642} alt="ProQual CAT1 Plus hands-on practical training" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Practical Outcomes */}

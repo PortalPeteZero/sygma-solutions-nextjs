@@ -405,8 +405,8 @@ export default function EusSuperuser() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-58-eus-superuser" width={1200} height={900} alt="EUSR Superuser advanced training delivery on site" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 477" }}>
+        <Image src="cat-58-eus-superuser" width={1600} height={477} alt="EUSR Superuser advanced training delivery on site" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Why Sygma */}

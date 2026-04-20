@@ -111,7 +111,9 @@ export default function CableAvoidanceLondon() {
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-57-cable-avoidance-training-london" width={1200} height={900} alt="CAT and Genny training in London" sizes="100vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 733" }}>
+        <Image src="cat-57-cable-avoidance-training-london" width={1600} height={733} alt="CAT and Genny training in London" sizes="100vw" className="w-full h-full object-cover" />
+      </div>
 
       {/* Course Content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -157,7 +159,9 @@ export default function CableAvoidanceLondon() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-48-cable-avoidance-training-london" width={1200} height={900} alt="London utility avoidance training site conditions" sizes="100vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 410" }}>
+        <Image src="cat-48-cable-avoidance-training-london" width={1400} height={410} alt="London utility avoidance training site conditions" sizes="100vw" className="w-full h-full object-cover" />
+      </div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

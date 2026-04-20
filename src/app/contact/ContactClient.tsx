@@ -210,8 +210,8 @@ export default function ContactClient() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-05" width={1200} height={900} alt="Sygma Solutions on-site utility avoidance training" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "4032 / 1418" }}>
+        <Image src="cat-05" width={4032} height={1418} alt="Sygma Solutions on-site utility avoidance training" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Image strip */}

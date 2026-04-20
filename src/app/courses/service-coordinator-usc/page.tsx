@@ -257,8 +257,8 @@ export default function ServiceCoordinatorUsc() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-48" width={1200} height={900} alt="Service Coordinator USC training - live training environment" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 410" }}>
+        <Image src="cat-48" width={1400} height={410} alt="Service Coordinator USC training - live training environment" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* What You Get */}

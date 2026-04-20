@@ -280,8 +280,8 @@ export default function VscanTransmitterTraining() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-57" width={1200} height={900} alt="vScan & Tx training on a live utility site" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 733" }}>
+        <Image src="cat-57" width={1600} height={733} alt="vScan & Tx training on a live utility site" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* What You Get */}

@@ -261,8 +261,8 @@ export default function CatManager() {
       </div>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-51" width={1200} height={900} alt="CAT Manager training - live training environment" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 417" }}>
+        <Image src="cat-51" width={1400} height={417} alt="CAT Manager training - live training environment" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Who should attend */}

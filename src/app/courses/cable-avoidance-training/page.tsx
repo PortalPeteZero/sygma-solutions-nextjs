@@ -280,8 +280,8 @@ export default function CableAvoidanceTraining() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-62" width={1200} height={900} alt="Cable avoidance training on a live utility site" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "900 / 417" }}>
+        <Image src="cat-62" width={900} height={417} alt="Cable avoidance training on a live utility site" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* What You Get */}

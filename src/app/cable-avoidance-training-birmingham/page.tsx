@@ -110,7 +110,9 @@ export default function CableAvoidanceBirmingham() {
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-61-cable-avoidance-training-birmingham" width={1200} height={900} alt="CAT and Genny training" sizes="100vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 642" }}>
+        <Image src="cat-61-cable-avoidance-training-birmingham" width={1600} height={642} alt="CAT and Genny training" sizes="100vw" className="w-full h-full object-cover" />
+      </div>
 
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">

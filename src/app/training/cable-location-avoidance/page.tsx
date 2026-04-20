@@ -374,8 +374,8 @@ export default function UtilityAvoidanceHub() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-46" width={1200} height={900} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 649" }}>
+        <Image src="cat-46" width={1400} height={649} alt="Utility avoidance training group on site, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Genny-First methodology */}

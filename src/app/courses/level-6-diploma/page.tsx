@@ -159,8 +159,8 @@ export default function Level6Diploma() {
       </section>
 
       {/* Full-width image */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-59" alt="Level 6 Diploma utility mapping - advanced electromagnetic survey training" width={1200} height={900} className="w-full h-full object-contain" sizes="100vw" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 846" }}>
+        <Image src="cat-59" width={1600} height={846} alt="Level 6 Diploma utility mapping - advanced electromagnetic survey training" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Who it's for */}

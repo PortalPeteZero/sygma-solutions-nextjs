@@ -110,7 +110,9 @@ export default function CableAvoidanceScotland() {
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-58" width={1200} height={900} alt="CAT and Genny training" sizes="100vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1600 / 477" }}>
+        <Image src="cat-58" width={1600} height={477} alt="CAT and Genny training" sizes="100vw" className="w-full h-full object-cover" />
+      </div>
 
       {/* Why on-site */}
       <section className="bg-muted/30 py-14">

@@ -136,8 +136,8 @@ export default function Locations() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-51-locations" width={1200} height={900} alt="Training centre facilities and equipment" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 417" }}>
+        <Image src="cat-51-locations" width={1400} height={417} alt="Training centre facilities and equipment" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Regional Training Guides */}
@@ -190,8 +190,8 @@ export default function Locations() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-47-locations" width={1200} height={900} alt="Sygma on-site training UK delivery" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 253" }}>
+        <Image src="cat-47-locations" width={1400} height={253} alt="Sygma on-site training UK delivery" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* CTA */}

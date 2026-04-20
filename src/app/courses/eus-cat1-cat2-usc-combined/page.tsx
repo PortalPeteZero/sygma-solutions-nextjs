@@ -401,8 +401,8 @@ export default function EusCat12UscCombined() {
       </section>
 
       {/* Full-width image break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-47" width={1200} height={900} alt="Combined EUSR CAT1, CAT2 and USC on-site training delivery" sizes="100vw" className="w-full h-full object-contain" />
+      <div className="w-full overflow-hidden  bg-muted" style={{ aspectRatio: "1400 / 253" }}>
+        <Image src="cat-47" width={1400} height={253} alt="Combined EUSR CAT1, CAT2 and USC on-site training delivery" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Why Sygma */}
