@@ -39,7 +39,7 @@ export default function GennyFirstVideo() {
         { label: "CAT and Genny Training: The Genny First Approach Explained" },
       ]) }} />
       <InnerPageHero
-        image="cat-81"
+        image="cat-81-genny-first-in-practice-video"
         alt="Video guide showing the Genny-first cable detection method in practice"
         eyebrow="Knowledge Hub"
         headline="CAT & Genny Training: The Genny First Approach Explained"

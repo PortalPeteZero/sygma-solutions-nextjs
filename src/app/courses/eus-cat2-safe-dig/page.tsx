@@ -57,7 +57,7 @@ export default function EusCat2SafeDig() {
         eyebrow="Safe Dig and Advanced"
         headline="EUSR CAT2 Safe Dig: EUSR-Registered Safe Excavation Training"
         sub="The complete safe digging course. Classroom theory, live site practical, and written assessment. Built for every operative who excavates near buried services."
-        image="dig-11"
+        image="dig-11-eus-cat2-safe-dig"
         alt="EUSR CAT2 safe digging training with vacuum excavation and hand-dig demonstration"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
@@ -154,13 +154,13 @@ export default function EusCat2SafeDig() {
       <section className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="dig-19" width={1200} height={900} alt="Safe dig training in progress" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="dig-19-eus-cat2-safe-dig" width={1200} height={900} alt="Safe dig training in progress" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-77" width={1200} height={900} alt="On-site practical dig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-77-eus-cat2-safe-dig" width={1200} height={900} alt="On-site practical dig" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-09" width={1200} height={900} alt="Service exposure technique" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
+            <Image src="cat-09-eus-cat2-safe-dig" width={1200} height={900} alt="Service exposure technique" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain rounded-lg" />
           </div>
         </div>
       </section>
@@ -303,13 +303,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-69" width={1200} height={900} alt="EUSR CAT2 safe dig practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-69-eus-cat2-safe-dig" width={1200} height={900} alt="EUSR CAT2 safe dig practical training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-56" width={1200} height={900} alt="Safe excavation technique demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-56-eus-cat2-safe-dig" width={1200} height={900} alt="Safe excavation technique demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-55" width={1200} height={900} alt="Hand dig assessment near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-55-eus-cat2-safe-dig" width={1200} height={900} alt="Hand dig assessment near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>
@@ -495,13 +495,13 @@ export default function EusCat2SafeDig() {
       <div className="container mx-auto px-6 md:px-8 pb-10 max-w-5xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-08" width={1200} height={900} alt="Service exposure during safe dig training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-08-eus-cat2-safe-dig" width={1200} height={900} alt="Service exposure during safe dig training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-12" width={1200} height={900} alt="EUSR CAT2 on-site excavation assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-12-eus-cat2-safe-dig" width={1200} height={900} alt="EUSR CAT2 on-site excavation assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-06" width={1200} height={900} alt="Sygma safe dig training completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+            <Image src="cat-06-eus-cat2-safe-dig" width={1200} height={900} alt="Sygma safe dig training completion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </div>

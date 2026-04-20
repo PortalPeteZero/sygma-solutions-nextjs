@@ -58,9 +58,9 @@ export default function Level5Diploma() {
         headline="ProQual Level 5 Diploma in Utility Mapping and Surveying"
         sub="The highest operational qualification in utility mapping and surveying. Prove full professional competency across detection, surveying instruments, geometric principles, and ICT. Contact us to discuss enrolment and pricing."
         images={[
-          "em-06",
-          "em-02",
-          "em-05",
+          "em-06-level-5-diploma",
+          "em-02-level-5-diploma",
+          "em-05-level-5-diploma",
         ]}
         alts={["Electromagnetic survey techniques practised during Level 5 diploma training", "Professional GPR survey methodology taught on the ProQual Level 5 course", "Advanced ground penetrating radar interpretation during Level 5 utility mapping"]}
         breadcrumbs={[
@@ -94,13 +94,13 @@ export default function Level5Diploma() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-02" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="gpr-02-level-5-diploma" width={800} height={600} alt="Level 5 Diploma utility mapping - practical session" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-09" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="gpr-09-level-5-diploma" width={800} height={600} alt="Level 5 Diploma utility mapping - hands-on assessment" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-10" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="gpr-10-level-5-diploma" width={800} height={600} alt="Level 5 Diploma utility mapping - on-site delivery" sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -339,13 +339,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-04" width={1200} height={900} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-04-level-5-diploma" width={1200} height={900} alt="Level 5 Diploma practical training with equipment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-08" width={1200} height={900} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-08-level-5-diploma" width={1200} height={900} alt="GPR survey training for Level 5 qualification" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-06" width={1200} height={900} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-06-level-5-diploma" width={1200} height={900} alt="Advanced utility detection assessment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -547,13 +547,13 @@ export default function Level5Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-07" width={1200} height={900} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-07-level-5-diploma" width={1200} height={900} alt="Level 5 Diploma utility mapping training" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-01" width={1200} height={900} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-01-level-5-diploma" width={1200} height={900} alt="Ground penetrating radar practical session" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-05" width={1200} height={900} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="gpr-05-level-5-diploma" width={1200} height={900} alt="On-site Level 5 qualification assessment" sizes="100vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
     url: 'https://sygma-solutions.com/knowledge-hub/npors-vs-eusr',
     type: 'article',
-    images: [cloudinaryOgImage('cat-71', 'NPORS versus EUSR qualification')],
+    images: [cloudinaryOgImage('cat-71-npors-vs-eusr', 'NPORS versus EUSR qualification')],
   },
 };
 
@@ -54,7 +54,7 @@ export default function NporsVsEusr() {
             description: 'NPORS and EUSR both offer cable avoidance qualifications but they serve different purposes. This guide explains the differences, who accepts each one, and how to choose.',
             url: '/knowledge-hub/npors-vs-eusr',
             datePublished: '2026-03-10',
-            image: 'cat-84',
+            image: 'cat-84-npors-vs-eusr',
           }),
         }}
       />
@@ -72,7 +72,7 @@ export default function NporsVsEusr() {
       />
 
       <InnerPageHero
-        image="cat-13"
+        image="cat-13-npors-vs-eusr"
         alt="NPORS versus EUSR cable avoidance training accreditation comparison"
         eyebrow="Knowledge Hub"
         headline="NPORS vs EUSR Cable Avoidance"
@@ -120,13 +120,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-76" width={1200} height={900} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-76-npors-vs-eusr" width={1200} height={900} alt="Cable avoidance equipment in use during training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-68" width={1200} height={900} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-68-npors-vs-eusr" width={1200} height={900} alt="Practical utility detection demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-87" width={1200} height={900} alt="Safe excavation near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-87-npors-vs-eusr" width={1200} height={900} alt="Safe excavation near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -174,13 +174,13 @@ export default function NporsVsEusr() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-07" width={1200} height={900} alt="Delegates using CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-07-npors-vs-eusr" width={1200} height={900} alt="Delegates using CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-79" width={1200} height={900} alt="Utility avoidance assessment exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-79-npors-vs-eusr" width={1200} height={900} alt="Utility avoidance assessment exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-85" width={1200} height={900} alt="Team training on safe digging practices" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-85-npors-vs-eusr" width={1200} height={900} alt="Team training on safe digging practices" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

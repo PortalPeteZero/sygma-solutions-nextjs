@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'How Sygma designed a rail-specific CAT4 programme with surface laid cables module and ZSI Super User training for QTS Group.',
     url: 'https://sygma-solutions.com/knowledge-hub/qts-group-case-study',
     type: 'article',
-    images: [cloudinaryOgImage('cat-67', 'QTS Group rail-specific CAT4 training programme')],
+    images: [cloudinaryOgImage('cat-67-qts-group-case-study', 'QTS Group rail-specific CAT4 training programme')],
   },
 };
 
@@ -35,7 +35,7 @@ export default function QtsGroupCaseStudy() {
             description: 'How Sygma designed a rail-specific CAT4 programme with surface laid cables module and ZSI Super User training for QTS Group.',
             url: '/knowledge-hub/qts-group-case-study',
             datePublished: '2026-01-15',
-            image: 'cat-16',
+            image: 'cat-16-qts-group-case-study',
           }),
         }}
       />
@@ -47,7 +47,7 @@ export default function QtsGroupCaseStudy() {
       />
 
       <InnerPageHero
-        image="cat-83"
+        image="cat-83-qts-group-case-study"
         alt="QTS Group rail-specific cable avoidance training with surface laid cables module"
         eyebrow="Case Study"
         headline="QTS Group: Rail-Specific CAT4 and Surface Laid Cables"
@@ -119,13 +119,13 @@ export default function QtsGroupCaseStudy() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-64" width={1200} height={900} alt="Rail-specific cable avoidance training for QTS Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-64-qts-group-case-study" width={1200} height={900} alt="Rail-specific cable avoidance training for QTS Group" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-81" width={1200} height={900} alt="Practical cable avoidance assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-81-qts-group-case-study" width={1200} height={900} alt="Practical cable avoidance assessment on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-39" width={1200} height={900} alt="Safe digging practices near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-39-qts-group-case-study" width={1200} height={900} alt="Safe digging practices near underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

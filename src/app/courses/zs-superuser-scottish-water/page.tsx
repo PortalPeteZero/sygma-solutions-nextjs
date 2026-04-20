@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: 'Super user cat and genny training for the Scottish Water supply chain. Advanced location, strike investigation and coaching assessment.',
     url: 'https://sygma-solutions.com/courses/zs-superuser-scottish-water',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-57', width: 1200, height: 630 }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-57-zs-superuser-scottish-water', width: 1200, height: 630 }],
     type: 'website',
   },
 };
@@ -71,7 +71,7 @@ export default function ZsSuperuserScottishWater() {
         eyebrow="Utility Avoidance"
         headline="ZS Superuser: Advanced Location, Strike Investigation, and Coaching for Scottish Water Supply Chain"
         sub="Sygma's ZS Superuser course is the ZSI-specific super user cat and genny training programme, built for teams working within the Scottish Water supply chain. This advanced training course follows the same structure and standard as the EUSR Superuser, mapped to the Zero Strike Initiative framework for locating underground services and buried utilities."
-        image="cat-07"
+        image="cat-07-zs-superuser-scottish-water"
         alt="Scottish Water ZS Superuser cable avoidance training course"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
@@ -124,13 +124,13 @@ export default function ZsSuperuserScottishWater() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-79" width={1200} height={900} alt="ZS Superuser Scottish Water training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-79-zs-superuser-scottish-water" width={1200} height={900} alt="ZS Superuser Scottish Water training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-85" width={1200} height={900} alt="ZS Superuser Scottish Water training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-85-zs-superuser-scottish-water" width={1200} height={900} alt="ZS Superuser Scottish Water training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-54" width={1200} height={900} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-54-zs-superuser-scottish-water" width={1200} height={900} alt="Scottish Water utility avoidance site practical" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -324,7 +324,7 @@ export default function ZsSuperuserScottishWater() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-46" width={1200} height={900} alt="ZS Superuser Scottish Water training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-46-zs-superuser-scottish-water" width={1200} height={900} alt="ZS Superuser Scottish Water training - live training environment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Who should attend */}

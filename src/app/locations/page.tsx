@@ -83,7 +83,7 @@ export default function Locations() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden bg-foreground">
         <Image
-          src="cat-38"
+          src="cat-38-locations"
           alt="Sygma training locations nationwide"
           fill
           className="absolute inset-0 object-contain"
@@ -102,7 +102,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-93" width={1200} height={900} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-93-locations" width={1200} height={900} alt="Sygma training locations nationwide" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Location Cards */}
@@ -137,7 +137,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-51" width={1200} height={900} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-51-locations" width={1200} height={900} alt="Training centre facilities and equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Regional Training Guides */}
@@ -191,7 +191,7 @@ export default function Locations() {
 
       {/* Image Break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-47" width={1200} height={900} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
+        <Image src="cat-47-locations" width={1200} height={900} alt="Sygma on-site training UK delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" />
       </div>
 
       {/* CTA */}

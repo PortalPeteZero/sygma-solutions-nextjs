@@ -35,7 +35,7 @@ export default function CableAvoidanceLondon() {
 
       <div className="relative w-full overflow-hidden bg-foreground">
         <Image
-          src="cat-76"
+          src="cat-76-cable-avoidance-training-london"
           alt="Cable avoidance training in London"
           fill
           className="absolute inset-0 object-contain"
@@ -105,13 +105,13 @@ export default function CableAvoidanceLondon() {
 
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
-        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-68" width={1200} height={900} alt="Operative scanning with CAT4 on London site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-87" width={1200} height={900} alt="Genny signal application during cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
-        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-07" width={1200} height={900} alt="CAT and Genny practical training near London underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-68-cable-avoidance-training-london" width={1200} height={900} alt="Operative scanning with CAT4 on London site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-87-cable-avoidance-training-london" width={1200} height={900} alt="Genny signal application during cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
+        <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-07-cable-avoidance-training-london" width={1200} height={900} alt="CAT and Genny practical training near London underground services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-57" width={1200} height={900} alt="CAT and Genny training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-57-cable-avoidance-training-london" width={1200} height={900} alt="CAT and Genny training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
 
       {/* Course Content */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
@@ -157,7 +157,7 @@ export default function CableAvoidanceLondon() {
       </section>
 
       {/* Image Break */}
-      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-48" width={1200} height={900} alt="London utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
+      <div className="w-full overflow-hidden aspect-[21/9] bg-muted"><Image src="cat-48-cable-avoidance-training-london" width={1200} height={900} alt="London utility avoidance training site conditions" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain" /></div>
 
       {/* CITB Funding */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

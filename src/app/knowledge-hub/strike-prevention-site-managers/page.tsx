@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training requirements, supervision, and what to do when things go wrong.',
     url: 'https://sygma-solutions.com/knowledge-hub/strike-prevention-site-managers',
     type: 'article',
-    images: [cloudinaryOgImage('cat-65', 'Utility strike prevention')],
+    images: [cloudinaryOgImage('cat-65-strike-prevention-site-managers', 'Utility strike prevention')],
   },
 };
 
@@ -54,7 +54,7 @@ export default function StrikePreventionSiteManagers() {
             description: 'Practical guidance for site managers on preventing underground utility strikes. Covers pre-dig procedures, training requirements, supervision, and what to do when things go wrong.',
             url: '/knowledge-hub/strike-prevention-site-managers',
             datePublished: '2026-03-10',
-            image: 'cat-50',
+            image: 'cat-50-strike-prevention-site-managers',
           }),
         }}
       />
@@ -72,7 +72,7 @@ export default function StrikePreventionSiteManagers() {
       />
 
       <InnerPageHero
-        image="cat-80"
+        image="cat-80-strike-prevention-site-managers"
         eyebrow="Knowledge Hub"
         headline="Utility Strike Prevention: A Guide for Site Managers"
         sub="Most utility strikes are preventable. This guide covers the practical steps site managers can take to protect their teams, their programme, and their reputation."
@@ -119,13 +119,13 @@ export default function StrikePreventionSiteManagers() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-78" width={1200} height={900} alt="Strike prevention training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-78-strike-prevention-site-managers" width={1200} height={900} alt="Strike prevention training for site managers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-91" width={1200} height={900} alt="Utility locator equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-91-strike-prevention-site-managers" width={1200} height={900} alt="Utility locator equipment demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-03" width={1200} height={900} alt="Safe digging procedures near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-03-strike-prevention-site-managers" width={1200} height={900} alt="Safe digging procedures near buried services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -181,13 +181,13 @@ export default function StrikePreventionSiteManagers() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-38" width={1200} height={900} alt="On-site cable avoidance assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-38-strike-prevention-site-managers" width={1200} height={900} alt="On-site cable avoidance assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-15" width={1200} height={900} alt="Excavation safety management training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-15-strike-prevention-site-managers" width={1200} height={900} alt="Excavation safety management training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-67" width={1200} height={900} alt="Site managers reviewing utility avoidance procedures" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-67-strike-prevention-site-managers" width={1200} height={900} alt="Site managers reviewing utility avoidance procedures" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 

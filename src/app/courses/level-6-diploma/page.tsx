@@ -74,9 +74,9 @@ export default function Level6Diploma() {
         headline="ProQual Level 6 Diploma in Utility Mapping and Surveying Management"
         sub="The ProQual Level 6 utility mapping qualification is the highest in the utility surveying pathway. Designed for experienced professionals in geomatics and site surveying who are ready to lead teams, manage projects and drive operational excellence across infrastructure development and civil engineering programmes."
         images={[
-          "gpr-02",
-          "gpr-09",
-          "gpr-10",
+          "gpr-02-level-6-diploma",
+          "gpr-09-level-6-diploma",
+          "gpr-10-level-6-diploma",
         ]}
         alts={["Advanced electromagnetic locating for ProQual Level 6 utility mapping diploma", "Professional MALA GPR survey techniques at Level 6 diploma standard", "Complex ground penetrating radar data analysis during Level 6 training"]}
         breadcrumbs={[
@@ -107,13 +107,13 @@ export default function Level6Diploma() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-03" alt="Level 6 Diploma utility mapping - practical session" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="gpr-03-level-6-diploma" alt="Level 6 Diploma utility mapping - practical session" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-04" alt="Level 6 Diploma utility mapping - hands-on assessment" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="gpr-04-level-6-diploma" alt="Level 6 Diploma utility mapping - hands-on assessment" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="gpr-08" alt="Level 6 Diploma utility mapping - on-site delivery" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src="gpr-08-level-6-diploma" alt="Level 6 Diploma utility mapping - on-site delivery" width={800} height={600} className="rounded-lg w-full h-full object-contain" sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
         </div>
       </section>
@@ -290,13 +290,13 @@ export default function Level6Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-07" alt="Level 6 Diploma advanced training session" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="gpr-07-level-6-diploma" alt="Level 6 Diploma advanced training session" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-01" alt="Advanced utility survey training for Level 6" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="gpr-01-level-6-diploma" alt="Advanced utility survey training for Level 6" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="gpr-05" alt="Advanced electromagnetic detection training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="gpr-05-level-6-diploma" alt="Advanced electromagnetic detection training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>
 
@@ -452,13 +452,13 @@ export default function Level6Diploma() {
       {/* Image strip */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-04" alt="Level 6 Diploma utility management training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="em-04-level-6-diploma" alt="Level 6 Diploma utility management training" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-07" alt="GPR data interpretation for Level 6" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="em-07-level-6-diploma" alt="GPR data interpretation for Level 6" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="em-03" alt="Advanced qualification practical assessment" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src="em-03-level-6-diploma" alt="Advanced qualification practical assessment" width={800} height={600} className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
       </div>
 

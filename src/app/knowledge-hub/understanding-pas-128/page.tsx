@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
     url: 'https://sygma-solutions.com/knowledge-hub/understanding-pas-128',
     type: 'article',
-    images: [cloudinaryOgImage('cat-12', 'Understanding PAS 128 utility survey')],
+    images: [cloudinaryOgImage('cat-12-understanding-pas-128', 'Understanding PAS 128 utility survey')],
   },
 };
 
@@ -35,7 +35,7 @@ export default function UnderstandingPas128() {
             description: 'What PAS 128 covers, what the different survey types require, and why operatives working on PAS 128 projects need specific training.',
             url: '/knowledge-hub/understanding-pas-128',
             datePublished: '2026-03-09',
-            image: 'cat-06',
+            image: 'cat-06-understanding-pas-128',
           }),
         }}
       />
@@ -47,7 +47,7 @@ export default function UnderstandingPas128() {
       />
 
       <InnerPageHero
-        image="cat-01"
+        image="cat-01-understanding-pas-128"
         alt="Understanding PAS 128 utility survey standard and detection methodology"
         eyebrow="Knowledge Hub"
         headline="Understanding PAS 128: A Guide for Contractors and Clients"
@@ -81,13 +81,13 @@ export default function UnderstandingPas128() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-65" width={1200} height={900} alt="Ground penetrating radar survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-65-understanding-pas-128" width={1200} height={900} alt="Ground penetrating radar survey equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-50" width={1200} height={900} alt="Utility mapping and PAS128 survey demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-50-understanding-pas-128" width={1200} height={900} alt="Utility mapping and PAS128 survey demonstration" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-80" width={1200} height={900} alt="GPR data collection for PAS128 survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-80-understanding-pas-128" width={1200} height={900} alt="GPR data collection for PAS128 survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
@@ -125,13 +125,13 @@ export default function UnderstandingPas128() {
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-78" width={1200} height={900} alt="PAS128 survey practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-78-understanding-pas-128" width={1200} height={900} alt="PAS128 survey practical assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-91" width={1200} height={900} alt="Utility mapping team during field exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-91-understanding-pas-128" width={1200} height={900} alt="Utility mapping team during field exercise" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-03" width={1200} height={900} alt="GPR equipment used in PAS128 compliant survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-03-understanding-pas-128" width={1200} height={900} alt="GPR equipment used in PAS128 compliant survey" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
