@@ -8,50 +8,74 @@ const faqs = [
   {
     q: "What is CAT and Genny training?",
     a: "CAT and Genny training teaches operatives to use a cable locator (CAT) and signal generator (Genny) to find buried utilities before excavation. The course covers electromagnetic theory, all four locating modes, signal interpretation and depth estimation, with a practical site assessment to prove the skills. Sygma teaches a Genny-First methodology: connect the signal generator before relying on passive detection. Successful delegates can be assessed for an EUSR CAT1 card, ProQual CAT1 certificate or Sygma in-house certification.",
+    thumb: "cat-75",
+    thumbAlt: "CAT and Genny training overview -- operative using cable locator on site",
   },
   {
     q: "How long does a CAT and Genny course take?",
     a: "CAT and Genny training takes one or two days, depending on format. The one-day course covers theory and practical assessment for delegates with some experience. Two-day formats split classroom and site work, or add the ProQual CAT1 Plus Genny-First assessment element on day two. Open courses and bespoke on-site delivery are available across the UK.",
+    thumb: "cat-04",
+    thumbAlt: "CAT and Genny course duration -- outdoor training session",
   },
   {
     q: "Can CAT and Genny training be done online?",
-    a: "The classroom theory of CAT and Genny training can be delivered online for awareness and refresher purposes -- Sygma offers an online CAT4 HSG47 awareness course. However, the full assessed CAT and Genny qualification (EUSR CAT1, ProQual CAT1, NPORS CAT) requires a real site practical assessment and cannot be completed entirely online. The practical element is what proves competence and earns the card.",
+    a: "The classroom theory of CAT and Genny training can be delivered online for awareness and refresher purposes -- Sygma offers an online CAT4 HSG47 awareness course for online training at the awareness level. However, the full assessed CAT and Genny qualification (EUSR CAT1 or ProQual CAT1) requires a real site practical assessment and cannot be completed entirely online. The practical element is what proves competence and earns the card.",
+    thumb: "cat-89",
+    thumbAlt: "Online vs on-site CAT and Genny training -- practical CAT4 locator session",
   },
   {
     q: "How much does a CAT and Genny course cost?",
     a: "Available as an in-house day rate for up to 8 delegates at your site, or per person on open courses across the UK. Day rate varies by format (in-house certified, EUSR CAT1, ProQual CAT1) and one-day vs two-day. Travel is included with no hidden extras. CITB-levy employers may access training funding via the CITB Employer Network. Contact Sygma for a tailored quote.",
+    thumb: "cat-72",
+    thumbAlt: "CAT and Genny course cost -- delegates using locating equipment on site",
   },
   {
     q: "Do you need to be trained to use a CAT scanner?",
-    a: "Yes. HSG47 requires anyone using cable and pipe locating equipment to be trained and competent. Most principal contractors and utility companies require operatives to hold a recognised qualification such as EUSR CAT1, ProQual CAT1 or NPORS CAT before being allowed to use locating equipment on site.",
+    a: "Yes. HSG47 requires anyone using cable and pipe locating equipment to be trained and competent. Most principal contractors and utility companies require operatives to hold a recognised qualification such as EUSR CAT1 or ProQual CAT1 before being allowed to use locating equipment on site.",
+    thumb: "cat-14",
+    thumbAlt: "CAT scanner training requirement -- on-site CAT and Genny training assessment",
   },
   {
     q: "How long is the CAT and Genny qualification valid for?",
     a: "The EUSR CAT1 card is valid for 3 years. ProQual CAT1 certificates are also valid for 3 years. The Sygma in-house certificate has no fixed expiry but most employers require refresher training every 3 years. Sygma recommends booking renewal in the 3 months before expiry.",
+    thumb: "cat-11",
+    thumbAlt: "CAT and Genny qualification validity -- training assessment locating buried services",
   },
   {
     q: "Is EUSR CAT1 the same as EUS CAT1, or the same as CAT and Genny training?",
-    a: "EUSR CAT1 and EUS CAT1 are the same qualification -- EUSR (Energy and Utility Skills Register) is the awarding body, CAT1 is the standard. CAT and Genny training is the broader practical course; the EUSR CAT1 is the specific accredited qualification many employers ask for. Sygma delivers both: a full CAT and Genny course content with the option to be assessed for an EUSR CAT1 card on completion. Other accreditation routes available include ProQual CAT1 and NPORS CAT.",
+    a: "EUSR CAT1 and EUS CAT1 are the same qualification -- EUSR (Energy and Utility Skills Register) is the awarding body, CAT1 is the standard. CAT and Genny training is the broader practical course; the EUSR CAT1 is the specific accredited qualification many employers ask for. Sygma delivers both: a full CAT and Genny course content with the option to be assessed for an EUSR CAT1 card on completion. Other accreditation routes available include ProQual CAT1 and ProQual CAT1 Plus (two-day format).",
+    thumb: "cat-70",
+    thumbAlt: "EUSR CAT1 and CAT and Genny training -- hands-on Genny signal application",
   },
   {
     q: "What equipment do delegates need to bring?",
     a: "Each operative should bring the locator and signal generator they use on site. Sygma provides Radiodetection CAT4 and Genny4 as backup equipment. Any manufacturer's locator is suitable, including Vivax-Metrotech vLoc, Leica DSX, and Radiodetection RD8200/RD8100. If sharing equipment, a minimum ratio of one locator per three delegates is recommended.",
+    thumb: "cat-74",
+    thumbAlt: "CAT and Genny equipment for course -- Genny4 signal generator demonstration",
   },
   {
     q: "Can the course be tailored to our sites and risk profile?",
     a: "Yes. Bespoke elements can include your company's permit-to-dig procedures, your strike history, your site-specific hazards, and your documentation. The QTS surface-laid cables programme is one example of how the course can be customised around a client's exact needs.",
+    thumb: "cat-66",
+    thumbAlt: "Tailored CAT and Genny course -- delegates practising utility location techniques",
   },
   {
     q: "Is the course suitable for delegates with no previous locating experience?",
     a: "Yes. The course is accessible to delegates at any level. For complete beginners, the two-day format is recommended to allow sufficient time on the practical site.",
+    thumb: "cat-86",
+    thumbAlt: "CAT and Genny course for beginners -- practical utility location and excavation",
   },
   {
     q: "Can we combine this course with EUSR CAT2 Safe Dig?",
     a: "Yes. Sygma offers combined formats that incorporate EUSR CAT1, CAT2 Safe Dig and the Sygma CAT and Genny course content in a single programme. Contact us to discuss combined booking options.",
+    thumb: "cat-75",
+    thumbAlt: "Combined CAT1 and CAT2 training -- CAT and Genny course with Safe Dig",
   },
   {
     q: "What qualifications do Sygma trainers hold?",
     a: "All Sygma trainers are specialist utility location professionals with real-world field experience -- not generalist health and safety trainers. Many hold CICES membership, PAS128 field experience, and backgrounds managing large-scale infrastructure projects. You learn from people who have done the job.",
+    thumb: "cat-04",
+    thumbAlt: "Sygma CAT and Genny trainers -- delivering outdoor training",
   },
 ];
 
@@ -162,13 +186,13 @@ export default function GennyCatTraining() {
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard CAT and Genny Training</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Most standard CAT and Genny training teaches operatives to press the on button and walk. They know what the beep means. They do not know why the signal behaves differently in wet or disturbed ground, what happens to accuracy near a joint, or why their passive Power-mode reading is not telling them what they think it is.
+                Most standard CAT and Genny training teaches operatives to press the on button and walk. They know what the beep means. They do not know why the signal behaves differently in wet or disturbed ground, what happens to accuracy near a joint, or why their passive Power-mode reading is not telling them what they think it is. The result is <strong className="text-foreground">training courses that hand out certificates without changing how operatives approach the cat genny process on site</strong>.
               </p>
               <p>
-                The Sygma CAT and Genny training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
+                The Sygma CAT and Genny training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. <strong className="text-foreground">We put the signal generator first, because that is the methodology change that reduces service strikes</strong>. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
               </p>
               <p>
-                This course was designed after years of post-strike investigations. Operatives were technically trained and certificated but had never been taught to start a survey with the Genny, null out nearby services, or distrust a clear-looking signal. We address those confirmation biases and build a Genny-First mindset that becomes automatic, using HSE guidelines and industry best practice. Every principle is proved on your own site, on your own buried utilities.
+                This course was designed after years of post-strike investigations. Operatives were technically trained and certificated but had never been taught to start a survey with the Genny, null out nearby underground services, or distrust a clear-looking signal. We address those confirmation biases and build a <strong className="text-foreground">Genny-First mindset</strong> that becomes automatic, using <strong className="text-foreground">HSE guidelines</strong> and industry <strong className="text-foreground">best practice</strong>. Every principle is proved on your own site, on your own buried underground services.
               </p>
             </div>
           </div>
@@ -209,7 +233,7 @@ export default function GennyCatTraining() {
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why Cable Avoidance Tool Training Is Not Optional</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Thousands of underground services are struck across the UK every year. Cable strikes on electricity cables can cause fatal arc flash injuries; hitting gas mains or high-pressure water puts entire sites at risk. HSE guidelines in HSG47 require anyone locating underground utilities to be properly trained and assessed as competent, and HSE prosecutions for cable strikes carry significant fines and reputational damage that affects future tender work. Without proper cat and genny training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic service not carrying a detectable signal. Proper cable locating and service detection starts with the Genny applying a known signal before passive modes are ever used. That is the difference between a strike and a safe dig.
+              Thousands of underground services are struck across the UK every year. <strong className="text-foreground">Cable strikes on electricity cables can cause fatal arc flash injuries</strong>; hitting gas mains or high-pressure water puts entire sites at risk. HSE guidelines in HSG47 require anyone locating underground services to be properly trained and assessed as competent, and HSE prosecutions for cable strikes carry significant fines and reputational damage that affects future tender work. Without proper cat and genny training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. <strong className="text-foreground">Proper cable locating and service detection starts with the Genny applying a known signal before passive modes are ever used</strong>. That is the difference between a strike and a safe dig.
             </p>
           </div>
         </div>
@@ -245,20 +269,20 @@ export default function GennyCatTraining() {
               <div className="p-6">
                 <ul className="space-y-2">
                   {[
-                    "Reasons for using Genny & CAT: HSG47 and the legal, financial and human consequences of service strikes",
-                    "Legislation and guidance: HSG47, relevant national legislation, client and designer responsibilities",
-                    "Overview of utility networks: cable and pipe types, materials and connectivity",
+                    "Reasons for using Genny & CAT equipment: HSG47 and the legal, financial and human consequences of service strikes",
+                    "Legislation and HSE guidance: HSG47, relevant national legislation, HSE guidelines, client and designer responsibilities",
+                    "Overview of utility networks and underground services: cable and pipe types, materials and connectivity",
                     "Buried service plans (STATS): how to interpret plans including inaccuracies and limitations",
                     "Calibration requirements: correct storage, functional checks and pre-use inspection",
-                    "Electromagnetic theory: how a cable locator works, limitations, and myth-busting",
-                    "Controls and operation: correct use of locator and signal generator in all four modes (Power, Radio, Genny and Avoidance)",
-                    "Signal interpretation: locating joints, changes of direction and depth",
-                    "Signal distortion and its effects on location accuracy",
-                    "Transmitter applications: dual frequency, capacitance technique, earth positioning, blind induction sweeps and nulling out",
+                    "Electromagnetic theory: how the cat genny process detects underground services, limitations, and myth-busting",
+                    "Controls and operation: essential knowledge for correct use of the locator and signal generator in all four cat operating modes (Power, Radio, Genny and Avoidance)",
+                    "Signal interpretation: locating joints, changes of direction, depth, and safety procedures when readings are ambiguous",
+                    "Signal distortion and its effects on location accuracy during the cat genny survey",
+                    "Transmitter applications: dual frequency, capacitance technique, earth positioning, blind induction sweeps and nulling out using CAT & Genny equipment",
                     "Depth estimation: when and how to take depth readings, testing the results",
                     "Data logging (optional): how to use CAT Manager software to collect and analyse data",
                     "PAS128 survey levels: understanding different survey types",
-                    "Permits and paperwork: permits to dig, safe systems of work",
+                    "Permits and paperwork: permits to dig, safe systems of work, industry best practice",
                   ].map((item, i) => (
                     <li key={i} className="flex gap-3 text-sm text-muted-foreground">
                       <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
@@ -277,20 +301,20 @@ export default function GennyCatTraining() {
               </div>
               <div className="p-6">
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  The practical session takes delegates outside onto a real site to prove every safety principle taught in the classroom. Sygma uses your own site wherever possible, which means operatives are locating underground utilities on the same ground and the same utility types they will encounter daily.
+                  The practical session takes course attendees outside onto a real site to prove every safety procedure and practical skill taught in the classroom. Sygma uses your own site wherever possible, which means operatives are locating underground services on the same ground and the same utility types they will encounter daily.
                 </p>
                 <ul className="space-y-2">
                   {[
-                    "Reading and using service plans to plan the survey before any equipment is switched on",
-                    "Site visual checks: identifying above-ground indicators of buried services",
-                    "Using the Genny to apply a signal via direct connection, capacitance and induction",
-                    "Training in all four modes with strong emphasis on leading with the Genny at every stage",
-                    "Locating problem services: street lighting, LV services, small comms cables",
-                    "Locating joints, T-connections and changes of direction",
+                    "Reading and using service plans to plan the cat genny survey before any equipment is switched on",
+                    "Site visual checks: identifying above-ground indicators of buried underground services",
+                    "Using the Genny to apply a signal via direct connection, capacitance and induction (cat and genny scan technique)",
+                    "Training in all four cat operating modes with strong emphasis on leading with the Genny at every stage of the cat genny workflow",
+                    "Locating problem services: street lighting, LV services, small comms cables buried beneath live highway",
+                    "Locating joints, T-connections and changes of direction with the cat genny method",
                     "Effect of Genny earth positioning: operatives learn why moving the earth changes the locate",
                     "Blind induction sweeps and nulling out nearby services",
-                    "Full utility survey methodology: starting from plans and working systematically across the site",
-                    "Individual practical assessment: each operative assessed against a documented standard",
+                    "Full utility survey methodology: starting from plans and working systematically across the site using cat genny best practice",
+                    "Individual practical skills assessment: each operative assessed against a documented standard",
                   ].map((item, i) => (
                     <li key={i} className="flex gap-3 text-sm text-muted-foreground">
                       <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
@@ -321,15 +345,15 @@ export default function GennyCatTraining() {
             {[
               {
                 title: "EUSR CAT1 Accredited",
-                desc: "The industry-standard EUSR CAT1 qualification. On successful completion, your cat and genny certificate is registered on the EUSR database and you receive an EUSR ID card valid for 3 years. Widely recognised across UK construction sites and required by most principal contractors and utility companies."
+                desc: <><strong className="text-foreground">The industry-standard EUSR CAT1 qualification.</strong> On successful completion, your cat and genny certificate is registered on the EUSR database and you receive an EUSR ID card <strong className="text-foreground">valid for 3 years</strong>. Widely recognised across UK construction sites and required by most principal contractors and utility companies.</>
               },
               {
                 title: "ProQual CAT1 Accredited",
-                desc: "An externally accredited cat and genny qualification through ProQual, with all four EML modes assessed in the practical element. You receive a ProQual CAT1 certificate valid for 3 years. The ProQual CAT1 Plus two-day route includes the Genny-First methodology in its formal assessment criteria."
+                desc: <>An <strong className="text-foreground">externally accredited</strong> cat and genny qualification through ProQual, with all four EML modes assessed in the practical element. You receive a ProQual CAT1 certificate valid for 3 years. <strong className="text-foreground">The ProQual CAT1 Plus two-day route includes the Genny-First methodology in its formal assessment criteria.</strong></>
               },
               {
-                title: "NPORS CAT Assessment",
-                desc: "For organisations that use the NPORS card scheme, Sygma can deliver cat and genny training assessed to NPORS CAT standards. The NPORS CAT card is accepted on many construction sites as an alternative to EUSR CAT1, particularly where NPORS CAT is the primary competence card scheme in use."
+                title: "CITB Approved Training",
+                desc: "Sygma Solutions is a CITB Approved Training Organisation (ATO). Every cat and genny training course is delivered to CITB ATO standards for content, assessment and record-keeping. Employers who pay the CITB levy may be eligible for training funding support through the CITB Employer Network, with Sygma providing the documentation required to support funding applications."
               },
               {
                 title: "Sygma In-House Certified",
@@ -484,9 +508,9 @@ export default function GennyCatTraining() {
               <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
               <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
             </Link>
-            <Link href="/knowledge-hub/npors-vs-eusr" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</h3>
-              <p className="text-sm text-muted-foreground">How the two main accreditation schemes compare for cable avoidance training.</p>
+            <Link href="/knowledge-hub/eusr-card-renewal" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</h3>
+              <p className="text-sm text-muted-foreground">When and how to renew your EUSR CAT1 card before it expires.</p>
             </Link>
           </div>
         </div>
@@ -497,10 +521,15 @@ export default function GennyCatTraining() {
         <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions About CAT and Genny Training</h2>
         <div className="space-y-4">
-          {faqs.map(({ q, a }) => (
-            <div key={q} className="border border-border rounded-lg p-6">
-              <h3 className="font-bold text-foreground mb-3">{q}</h3>
-              <p className="text-muted-foreground leading-relaxed">{a}</p>
+          {faqs.map(({ q, a, thumb, thumbAlt }) => (
+            <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-start">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 overflow-hidden rounded-md bg-muted aspect-square">
+                <Image src={thumb} width={224} height={224} alt={thumbAlt} sizes="(max-width: 640px) 96px, 112px" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-bold text-foreground mb-3">{q}</h3>
+                <p className="text-muted-foreground leading-relaxed">{a}</p>
+              </div>
             </div>
           ))}
         </div>
