@@ -307,7 +307,6 @@ const nextConfig = {
       { source: '/category/vscan-training', destination: '/courses/vscan-and-transmitter-training', permanent: true },
       // SEO spider fixes
       { source: '/courses/level6diploma', destination: '/courses/level-6-diploma', permanent: true },
-      { source: '/courses/cat-and-genny-training', destination: '/courses/cat-and-genny-training', permanent: true },
       { source: '/courses/utility-mapping-training-bristol', destination: '/utility-mapping-training-bristol', permanent: true },
       // Other specific fixes
       { source: '/courses/qcf-level-3-utility-mapping-surveyor', destination: '/courses/level-3-certificate', permanent: true },
