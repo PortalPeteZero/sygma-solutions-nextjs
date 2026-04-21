@@ -554,7 +554,7 @@ export default function EusCat1() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Legal Requirement</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">EUSR CAT1 directly meets the training and competency requirements of HSG47 guidance on safe digging near buried services.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">EUSR CAT1 directly meets the training and competency requirements of <Link href="/courses/hsg47-training">HSG47 training</Link> on safe digging near buried services.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Trained Personnel</p>

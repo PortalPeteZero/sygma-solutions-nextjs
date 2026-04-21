@@ -245,7 +245,7 @@ export default function UtilityAvoidanceHub() {
                 Utility strike prevention depends on how operatives use their equipment, not just whether they own it. CAT-only working. Incorrect frequency selection. Genny connected once a fortnight, if at all. Confirmation of what is expected rather than investigation of what is actually there. This is the pattern behind the majority of buried service strikes, and it is not fixed by buying better kit.
               </p>
               <p>
-                Sygma's cable avoidance and underground service detection training programmes address the root cause. We cover electromagnetic theory in plain language, explain signal distortion, depth estimation errors, and the conditions under which a CAT signal is unreliable, and then prove it on site with real equipment. All courses meet the requirements of HSG47, the Health and Safety Executive's guidance on avoiding danger from underground services.
+                Sygma's cable avoidance and underground service detection training programmes address the root cause. We cover electromagnetic theory in plain language, explain signal distortion, depth estimation errors, and the conditions under which a CAT signal is unreliable, and then prove it on site with real equipment. All courses meet the requirements of <Link href="/courses/hsg47-training">HSG47</Link>, the Health and Safety Executive's guidance on avoiding danger from underground services.
               </p>
               <p>
                 Clients who implement our Genny-First methodology consistently report Genny usage increases of more than 50 percentage points. That is a direct, measurable reduction in site risk.

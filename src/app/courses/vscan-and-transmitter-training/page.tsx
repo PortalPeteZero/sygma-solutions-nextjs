@@ -445,7 +445,7 @@ export default function VscanTransmitterTraining() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">The course addresses all key elements of HSG47 guidance on preventing strikes on underground services.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">The course addresses all key elements of <Link href="/courses/hsg47-training">HSG47 guidance</Link> on preventing strikes on underground services.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
