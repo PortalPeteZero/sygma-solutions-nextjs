@@ -1,6 +1,45 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse } from 'next/server';
 
+// Fire server-side GA4 conversion events via Measurement Protocol.
+// Runs after every successful form submission regardless of browser consent state.
+// Non-blocking -- a GA4 failure never stops the form from completing.
+async function fireGA4Conversion(enquiry_type: string): Promise<void> {
+  const mpSecret = process.env.GA4_MP_API_SECRET;
+  if (!mpSecret) return;
+
+  const url = `https://www.google-analytics.com/mp/collect?measurement_id=G-QVFF0DPG6X&api_secret=${mpSecret}`;
+
+  await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      // Stable server-side client_id -- not tied to a browser session but
+      // sufficient for conversion counting in GA4.
+      client_id: 'server.sygma-solutions.com',
+      events: [
+        {
+          // GA4 recommended event for lead/enquiry conversions
+          name: 'generate_lead',
+          params: {
+            enquiry_type,
+            source: 'server',
+          },
+        },
+        {
+          // Mirrors the client-side form_submit event name for consistency
+          name: 'form_submit',
+          params: {
+            form_name: 'contact',
+            enquiry_type,
+            source: 'server',
+          },
+        },
+      ],
+    }),
+  });
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -48,6 +87,11 @@ export async function POST(request: Request) {
         { status: 502 }
       );
     }
+
+    // Fire GA4 server-side events -- non-blocking, never fails the form
+    fireGA4Conversion(body.enquiry_type).catch((err) =>
+      console.error('GA4 MP error (non-blocking):', err),
+    );
 
     return NextResponse.json({ success: true, data });
   } catch (err) {
