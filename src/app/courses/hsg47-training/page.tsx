@@ -13,19 +13,19 @@ const faqs = [
   },
   {
     q: "What is HSG47 training?",
-    a: "HSG47 training is the collective term for the training required by the HSE guidance document 'HSG47: Avoiding Danger from Underground Services.' It covers the correct use of cable avoidance tools (CAT and Genny) to locate and detect underground services before excavations begin, safe working procedures near buried utilities, and the competence requirements that duty holders must meet. In practice, HSG47 training refers to courses fulfilling the HSG47 competence standard -- typically EUSR Category 1, ProQual CAT1, or equivalent assessed cable avoidance training from a CITB Approved Training Organisation.",
+    a: "HSG47 training is the collective term for the training required by the HSE guidance document 'HSG47: Avoiding Danger from Underground Services.' It covers the correct use of cable avoidance tools (CAT and Genny) to locate, find and detect underground services before excavations begin, safe working procedures near buried utilities, and the competence requirements that duty holders must meet. In practice, HSG47 training refers to courses fulfilling the HSG47 competence standard -- typically EUSR Category 1, ProQual CAT1, or equivalent assessed cable avoidance training from a CITB Approved Training Organisation.",
     thumb: "cat-08-hsg47-training",
     thumbAlt: "What is HSG47 training -- cable avoidance and underground service location",
   },
   {
     q: "How long does HSG47 training take?",
-    a: "HSG47 training takes one or two days, depending on the course format and accreditation route. The one-day format covers CAT and Genny theory and a practical site assessment. Two-day formats add additional depth to the practical element or incorporate a second accreditation assessment. EUSR CAT1 and ProQual CAT1 both run as either one-day or two-day programmes. For complete beginners, the two-day format is recommended.",
+    a: "HSG47 training takes one or two days, depending on the course format and accreditation route. The one-day format covers CAT and Genny theory to verify work understanding, and a practical site assessment. Two-day formats add additional depth to the practical element or incorporate a second accreditation assessment. EUSR CAT1 and ProQual CAT1 both run as either one-day or two-day programmes. For complete beginners, the two-day format is recommended.",
     thumb: "cat-56-hsg47-training",
     thumbAlt: "How long does HSG47 training take -- on-site practical cable avoidance assessment",
   },
   {
     q: "What certificate do you get from HSG47 training?",
-    a: "The certificate depends on the accreditation route chosen. The most widely recognised is the EUSR Category 1 card (Utility Excavations Category 1), issued by the Energy and Utility Skills Register and valid for three years. It is recognised across UK construction, utilities, HV substations and highways sectors. ProQual CAT1 is an alternative accredited route that also produces a three-year assessed certificate. Sygma also issues its own in-house certificate of completion for companies that do not require an awarding body card. All certificates are backed by written and practical assessment records.",
+    a: "Delegates receive the EUSR Category 1 card (Utility Excavations Category 1) on the most widely recognised accreditation route. Issued by the Energy and Utility Skills Register and valid for three years, it is recognised across UK construction, utilities, HV substations and highways sectors. ProQual CAT1 is an alternative accredited route that also produces a three-year assessed certificate. Sygma also issues its own in-house certificate of completion for companies that do not require an awarding body card. All certificates are backed by written and practical assessment records.",
     thumb: "cat-84-hsg47-training",
     thumbAlt: "HSG47 training certificate -- EUSR CAT1 card and ProQual CAT1 qualification",
   },
@@ -49,13 +49,13 @@ const faqs = [
   },
   {
     q: "Can HSG47 training be done online?",
-    a: "Awareness-level HSG47 training can be completed online -- Sygma offers an online CAT4 HSG47 awareness course for this purpose. However, the full competence qualification -- EUSR CAT1 or ProQual CAT1 -- requires a practical site assessment and cannot be completed entirely online. The practical element is what proves competence and is what most principal contractors, utility companies and duty holders require on site.",
+    a: "Awareness-level HSG47 training can be completed online -- Sygma offers an online CAT4 HSG47 awareness course for this purpose. For information on that option, see the CAT4 HSG47 Awareness Online course page. However, the full competence qualification -- EUSR CAT1 or ProQual CAT1 -- requires a practical site assessment using live locating products and cannot be completed entirely online. The practical element is what proves competence and is what most principal contractors, utility companies and duty holders require on site.",
     thumb: "cat-84-hsg47-training",
     thumbAlt: "Can HSG47 training be done online -- online awareness vs assessed qualification",
   },
   {
     q: "Who needs HSG47 training on site?",
-    a: "Anyone who uses cable and pipe locating equipment before excavation, or who supervises or manages such work, should hold HSG47 training. This includes site operatives and groundworkers, civil engineers and site managers, utility workers and contractors, highways teams, and anyone with a duty to ensure safe digging near underground services. Duty holders -- including principal contractors and project managers -- are responsible for ensuring their teams are trained and competent.",
+    a: "Anyone who uses cable and pipe locating equipment before excavation, or who supervises or manages such work, should hold HSG47 training. This includes site operatives and groundworkers, civil engineers and site managers, utility workers and contractors, highways teams, and anyone with a duty to ensure safe digging near underground services. Duty holders -- including principal contractors and project managers -- are responsible for ensuring their teams are trained and competent. Note: underground services regulations in specific sectors may also require operatives to hold a recognised qualification before gaining access to certain work areas.",
     thumb: "cat-06-hsg47-training",
     thumbAlt: "Who needs HSG47 training -- site operatives, contractors and duty holders",
   },
@@ -107,7 +107,7 @@ export default function Hsg47Training() {
             <strong className="text-foreground">HSG47 training is the practical safety training required by the HSE guidance document &lsquo;Avoiding Danger from Underground Services.&rsquo;</strong> It covers the use of cable avoidance tools (CAT and Genny) to locate buried utilities before excavations begin, safe working procedures near underground services, and the skills required by duty holders to meet their competence obligations. HSG47 training is the recognised industry standard for anyone who works or manages work near buried cables, pipes, and underground services across the UK.
           </p>
           <p className="text-base text-muted-foreground leading-relaxed mt-4">
-            HSG47 outlines the competence principles and safety requirements for all activities involving excavation work near underground services. The guidance -- formally titled &lsquo;Avoiding Danger from Underground Services&rsquo; -- was developed in response to accident statistics showing thousands of service strikes occur annually. Training is aimed at all individuals involved in such tasks: the operatives carrying out the excavations, the stakeholders commissioning the work, and those responsible for implementing safe systems of work in accordance with HSG47. Completing an assessed course is intended to ensure that every hazard that can arise from buried services is identified before work begins.
+            HSG47 outlines the competence principles and safety requirements for all activities involving excavation work near underground services. The official HSG47 guidance avoiding danger from underground services was developed in response to accident statistics showing thousands of service strikes occur annually. Training is aimed at all individuals involved in such tasks: the operatives carrying out the excavations, the stakeholders commissioning the work, and those responsible for implementing safe systems of work in accordance with HSG47. Completing an assessed course is intended to ensure that every hazard that can arise from buried services is identified before work begins.
           </p>
         </div>
       </section>
@@ -190,7 +190,7 @@ export default function Hsg47Training() {
               </div>
               <div className="p-6 space-y-3">
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Covers the use of a cable locator (CAT) and signal generator (Genny) to detect underground services before excavations. Includes electromagnetic theory, all four detection modes, all types of electromagnetic location and signal application, practical site assessment, and the <strong className="text-foreground">Genny-First methodology</strong> that measurably reduces service strikes.
+                  Covers the use of cable detection products -- a cable locator (CAT) and signal generator (Genny) -- to detect underground services before excavations. Includes electromagnetic theory, all four detection modes, all types of electromagnetic location and signal application, practical site assessment, and the <strong className="text-foreground">Genny-First methodology</strong> that measurably reduces service strikes.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Available as <strong className="text-foreground">EUSR Category 1</strong>, ProQual CAT1, or Sygma in-house certification. CITB Approved.
@@ -210,7 +210,7 @@ export default function Hsg47Training() {
               </div>
               <div className="p-6 space-y-3">
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Covers the full cable avoidance procedure: obtaining and interpreting buried service drawings, advance planning and visual checks, permits to dig, safe excavation methods to avoid damage to buried services, and how to control underground service risk across a site. Includes safe working in proximity to live buried utilities. Designed for operatives, supervisors, and those responsible for safe systems of work.
+                  Covers the full cable avoidance procedure: obtaining and interpreting mapped utility drawings, advance planning and visual checks, permits to dig, safe excavation methods to avoid damage to buried services, and how to find and control underground service risk before any team gains access to the excavation area. Includes safe working in proximity to live buried utilities. Designed for operatives, supervisors, and those responsible for safe systems of work.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   CITB Approved. Delivered at your site with your plans and your risk profile.
@@ -256,7 +256,7 @@ export default function Hsg47Training() {
             <div className="border border-border rounded-lg bg-card p-5">
               <h3 className="font-bold text-foreground mb-2">EUSR Category 1</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                The <strong className="text-foreground">Energy and Utility Skills Register (EUSR) Category 1</strong> qualification -- formally Utility Excavations Category 1 -- is the most widely accepted route to demonstrating HSG47 training compliance. EUSR registration is required by most utility companies before operatives can work on or near buried cables. The card lasts three years and is recognised across UK construction, utilities, highways, and HV substations sectors. Working near HV substations or buried HV cables is a specific area where EUSR Category 1 is required by most principal contractors. Sygma delivers EUSR Category 1 as a one-day or two-day in-house course.
+                The <strong className="text-foreground">Energy and Utility Skills Register (EUSR) Category 1</strong> qualification -- formally Utility Excavations Category 1 -- is the most widely accepted route to demonstrating HSG47 training compliance. Operatives must be EUSR registered before most utility companies permit work on or near buried cables. The card lasts three years and is recognised across UK construction, utilities, highways, and HV substations sectors. Working near HV substations or buried HV cables is a specific area where EUSR Category 1 is required by most principal contractors. Sygma delivers EUSR Category 1 as a one-day or two-day in-house course.
               </p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
@@ -289,7 +289,7 @@ export default function Hsg47Training() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Specialism</p>
               <h3 className="text-base font-bold text-foreground mb-2">The UK&rsquo;s Only Independent Specialist</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">No surveys, no equipment sales, no manufacturer relationships. Underground utility location training is the only thing Sygma does. That means trainers with real field experience, unbiased methodology, and course content that genuinely reduces service strikes rather than just issuing certificates.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">No surveys, no equipment sales, no manufacturer relationships. Underground utility location training is the only thing Sygma does. That means trainers with real field experience, unbiased methodology, and course content that genuinely reduces service strikes across a variety of utility sectors, rather than just issuing certificates.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Methodology</p>
@@ -318,7 +318,7 @@ export default function Hsg47Training() {
               <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">UK Delivery</p>
               <h2 className="text-2xl font-black mb-4 text-foreground">HSG47 Training Across the UK</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Sygma delivers HSG47 training courses at client sites across the UK. Common delivery regions include:
+                HSG47 training courses are held at client sites across the UK. Common delivery regions include:
               </p>
               <ul className="space-y-2 mb-6">
                 {[
@@ -427,7 +427,7 @@ export default function Hsg47Training() {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-2xl font-black mb-4 text-foreground">Book HSG47 Training</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            EUSR Category 1 and Cable Avoidance courses delivered at your site, UK-wide. CITB approved. Travel included. Contact us to discuss requirements and get a tailored quote.
+            EUSR Category 1 and Cable Avoidance courses delivered at your site, UK-wide. CITB approved. Travel included. For information on costs and availability, contact us for a tailored quote.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
