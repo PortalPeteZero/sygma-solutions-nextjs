@@ -271,7 +271,7 @@ export default function Cat4HsgAwarenessOnline() {
                 This online awareness course provides the theoretical grounding that makes in-person training more effective. Delegates who complete this course and go on to attend a full EUSR CAT1 programme or CAT and Genny training will arrive with the electromagnetic theory already in place.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                For teams that need formal qualification rather than awareness, Sygma's EUSR CAT1, EUSR CAT2, ProQual CAT1, and CAT and Genny programmes are the natural next step.
+                For teams that need formal qualification rather than awareness, Sygma's assessed <Link href="/courses/hsg47-training">HSG47 training courses</Link> -- EUSR CAT1, ProQual CAT1, and CAT and Genny -- are the natural next step.
               </p>
             </div>
           </div>

@@ -445,6 +445,7 @@ export default function RqfLevel2Award() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">HSG47 Compliance</p>
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Requirements You Must Meet</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl">The RQF Level 2 Award meets the competence requirements defined by <Link href="/courses/hsg47-training">HSG47 training</Link> for anyone working near underground services.</p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: "Trained and Competent Operatives", desc: "Every operative must be trained in locator use and understand equipment limitations. The RQF Level 2 provides formal, documented evidence of competence." },

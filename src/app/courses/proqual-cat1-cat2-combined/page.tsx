@@ -417,7 +417,7 @@ export default function ProqualCat1Cat2Combined() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">HSG47 Compliance</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Competence Requirements Your Course Delivers</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">HSG47 defines what competent utility avoidance looks like. This course covers all six essential elements.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl"><Link href="/courses/hsg47-training">HSG47 training</Link> defines what competent utility avoidance looks like. This course covers all six essential elements.</p>
           <div className="grid md:grid-cols-2 gap-5">
             {[
               {

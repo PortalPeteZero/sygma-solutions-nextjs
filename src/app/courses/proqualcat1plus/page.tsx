@@ -505,7 +505,7 @@ export default function ProQualCat1Plus() {
             <div>
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulatory Framework</p>
               <h3 className="text-xl font-bold text-foreground mb-4">HSG47 Compliance</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">HSG47 requires that anyone using a cable locator must be trained and competent. ProQual CAT1 Plus exceeds this requirement with the most comprehensive practical assessment available. The course covers safe systems of work, service plan interpretation, correct use of equipment in all modes, and continuous scanning during excavation.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-3">The <Link href="/courses/hsg47-training">HSG47 training</Link> requirement covers anyone using a cable locator -- trained and competent in safe utility avoidance. ProQual CAT1 Plus exceeds this requirement with the most comprehensive practical assessment available. The course covers safe systems of work, service plan interpretation, correct use of equipment in all modes, and continuous scanning during excavation.</p>
               <p className="text-muted-foreground text-sm leading-relaxed">The ProQual certification provides auditable proof of competency that satisfies HSG47, GS6 and CDM requirements.</p>
             </div>
             <div>

@@ -572,6 +572,7 @@ export default function EusCat2SafeDig() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Standards and Regulations</p>
           <h2 className="text-2xl font-black mb-8 text-foreground">HSG47 Compliance</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl">EUSR CAT2 meets the safe excavation requirements of <Link href="/courses/hsg47-training">HSG47 training</Link> -- covering permits to dig, risk assessments, and safe working near live buried services.</p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
