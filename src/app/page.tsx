@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle, Phone } from 'lucide-react';
 import HeroCarousel from '@/components/HeroCarousel';
 import Image from 'next/image';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { faqPageSchema, localBusinessSchema, organizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
@@ -50,34 +51,9 @@ const faqs = [
 export default function Home() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
-        {
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: faqs.map(faq => ({
-            '@type': 'Question',
-            name: faq.q,
-            acceptedAnswer: { '@type': 'Answer', text: faq.a }
-          }))
-        },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'LocalBusiness',
-          name: 'Sygma Solutions',
-          url: 'https://sygma-solutions.com',
-          telephone: '02039718252',
-          image: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto/cat-34',
-          address: { '@type': 'PostalAddress', streetAddress: 'Platt Lane, Hindley', addressLocality: 'Wigan', postalCode: 'WN2 3PA', addressCountry: 'GB' }
-        },
-        {
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: 'Sygma Solutions',
-          url: 'https://sygma-solutions.com',
-          logo: { '@type': 'ImageObject', url: 'https://sygma-solutions.com/logo.webp', width: 200, height: 50 },
-          sameAs: ['https://www.linkedin.com/company/sygma-solutions']
-        }
-      ]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
 
       <h1 className="sr-only">Cable Avoidance Training and CAT & Genny Courses - UK Specialist Since 2004</h1>
       <HeroCarousel />

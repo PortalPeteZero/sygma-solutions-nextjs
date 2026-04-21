@@ -90,9 +90,7 @@ export function courseSchema(params: {
     ...(params.educationalLevel ? { "educationalLevel": params.educationalLevel } : {}),
     "offers": {
       "@type": "Offer",
-      "category": "Paid",
       "url": `${SITE_URL}${params.url}`,
-      "priceCurrency": "GBP",
       "availability": "https://schema.org/InStock",
     },
     "hasCourseInstance": {
