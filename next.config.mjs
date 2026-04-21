@@ -57,7 +57,6 @@ const nextConfig = {
       { source: '/forms', destination: '/contact', permanent: true },
       { source: '/downloads', destination: '/knowledge-hub', permanent: true },
       { source: '/courses-availability', destination: '/contact', permanent: true },
-      { source: '/courses/hsg47-training', destination: '/knowledge-hub/hsg47-explained', permanent: true },
       { source: '/courses/vscan-training', destination: '/courses/cat-and-genny-training', permanent: true },
       { source: '/courses/eus-1-cat-genny', destination: '/courses/eus-cat1', permanent: true },
       { source: '/courses/online-live-cat-genny', destination: '/courses/cat-and-genny-training', permanent: true },
