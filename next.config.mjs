@@ -399,7 +399,8 @@ const nextConfig = {
       { source: '/locations/:path((?!manchester|birmingham|london|bristol).+)', destination: '/locations', permanent: true },
 
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
-      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr).+)', destination: '/knowledge-hub', permanent: true },
+      // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
+      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
     ];
   },
 };
