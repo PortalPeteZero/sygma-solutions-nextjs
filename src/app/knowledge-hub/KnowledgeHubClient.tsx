@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
 import Image from 'next/image';
@@ -18,31 +18,32 @@ interface KnowledgeHubItem {
 }
 
 export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[] }) {
-  const [activeFilter, setActiveFilter] = useState<FilterType>("all");
+  const searchParams = useSearchParams();
+  const paramFilter = searchParams.get("filter");
+  const activeFilter: FilterType =
+    paramFilter === "articles" ? "article" :
+    paramFilter === "videos" ? "video" :
+    "all";
 
   const filteredItems =
     activeFilter === "all"
       ? items
       : items.filter((item) => item.type === activeFilter);
 
-  const filterButtons: { label: string; value: FilterType }[] = [
-    { label: "All", value: "all" },
-    { label: "Articles", value: "article" },
-    { label: "Videos", value: "video" },
+  const filterButtons: { label: string; href: string; value: FilterType }[] = [
+    { label: "All", href: "/knowledge-hub", value: "all" },
+    { label: "Articles", href: "/knowledge-hub?filter=articles", value: "article" },
+    { label: "Videos", href: "/knowledge-hub?filter=videos", value: "video" },
   ];
-
-  const handleFilter = (value: FilterType) => {
-    setActiveFilter(value);
-  };
 
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center gap-2 mb-8">
           {filterButtons.map((btn) => (
-            <button
+            <Link
               key={btn.value}
-              onClick={() => handleFilter(btn.value)}
+              href={btn.href}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors ${
                 activeFilter === btn.value
                   ? "bg-primary text-primary-foreground"
@@ -50,7 +51,7 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
               }`}
             >
               {btn.label}
-            </button>
+            </Link>
           ))}
         </div>
 

@@ -7,11 +7,11 @@ import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'HSG47 Guidance: Avoiding Danger from Underground Services | Sygma',
+  title: 'HSG47 Training: What It Requires and How Training Aligns | Sygma Solutions',
   description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training aligns.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained' },
   openGraph: {
-    title: 'HSG47 Guidance: What Underground Service Workers Need to Know',
+    title: 'HSG47 Training: What It Requires and How Training Aligns',
     description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training meets its obligations.",
     url: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained',
     type: 'article',

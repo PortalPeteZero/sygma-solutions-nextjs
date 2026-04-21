@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import InnerPageHero from "@/components/InnerPageHero";
 import Link from "next/link";
 import { knowledgeHubItems } from "@/data/knowledgeHubItems";
@@ -52,7 +53,9 @@ export default function KnowledgeHub() {
         </div>
       </section>
 
-      <KnowledgeHubClient items={knowledgeHubItems} />
+      <Suspense fallback={null}>
+        <KnowledgeHubClient items={knowledgeHubItems} />
+      </Suspense>
 
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
