@@ -117,7 +117,7 @@ export default function GennyCatTraining() {
       <section className="bg-background py-8">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">CAT and Genny training is a practical safety course that teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to find buried utilities before excavation.</strong> The course covers electromagnetic theory, four detection modes, and hands-on cable locating and service detection on a real site. It is the core cable avoidance training required under HSG47 for anyone working near underground services.
+            <strong className="text-foreground">CAT and Genny training is a practical safety course that teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to find buried utilities before excavation.</strong> The course covers electromagnetic theory, four detection modes, and hands-on cable locating and service detection on a real site. This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for anyone using cable locating equipment near underground services.
           </p>
         </div>
       </section>

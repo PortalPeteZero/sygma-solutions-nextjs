@@ -69,9 +69,22 @@ export default function Hsg47Explained() {
             <KnowledgeHubSidebar />
           </aside>
           <article className="min-w-0 flex-1 max-w-3xl">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               HSG47, published by the Health and Safety Executive, is the principal guidance document for avoiding danger from underground services during ground works. Its full title is "Avoiding danger from underground services" and it applies to anyone who plans, manages, or carries out work that involves breaking ground. If your organisation excavates, you need to know what HSG47 says and what it expects of you.
             </p>
+
+            <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-bold text-foreground mb-1">Looking to book HSG47 training courses?</p>
+                <p className="text-sm text-muted-foreground">This article explains the guidance. If you need to book assessed <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training courses</Link> -- EUSR CAT1, ProQual CAT1, or Cable Avoidance -- visit the course page.</p>
+              </div>
+              <Link
+                href="/courses/hsg47-training"
+                className="inline-flex items-center px-5 py-2.5 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors shrink-0"
+              >
+                View HSG47 Training Courses &rarr;
+              </Link>
+            </div>
 
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">What HSG47 Is (and What It Is Not)</h2>
 
@@ -160,6 +173,7 @@ export default function Hsg47Explained() {
             <div className="bg-primary/5 border border-border rounded-xl p-6 mt-4">
               <h3 className="font-bold text-foreground mb-2">Related Courses</h3>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/courses/hsg47-training" className="text-primary hover:underline font-semibold">HSG47 Training Courses -- EUSR CAT1 &amp; Cable Avoidance</Link></li>
                 <li><Link href="/courses/cat4-hsg47-awareness-online" className="text-primary hover:underline">CAT4 and HSG47 Awareness Online</Link></li>
                 <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
                 <li><Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1 Training</Link></li>

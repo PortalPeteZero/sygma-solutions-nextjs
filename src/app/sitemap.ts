@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ------------------------------------------------------------------ */
 
   const courseSlugs = [
+    'hsg47-training',
     'cable-avoidance-training',
     'eus-cat1',
     'proqualcat1-training',
