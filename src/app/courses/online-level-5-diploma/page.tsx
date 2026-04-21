@@ -1,5 +1,6 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { courseSchema } from '@/lib/schema';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
@@ -53,19 +54,13 @@ export default function OnlineLevel5Diploma() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Course',
+          __html: courseSchema({
             name: 'ProQual Level 5 Diploma in Utility Mapping and Surveying (Online)',
             description:
               'Ofqual-regulated Level 5 Diploma in Utility Mapping delivered online. Senior-level qualification with full assessor support and mentoring via MS Teams.',
-            url: 'https://sygma-solutions.com/courses/online-level-5-diploma',
-            provider: {
-              '@type': 'Organization',
-              name: 'Sygma Solutions',
-            },
-            educationalCredentialAwarded: 'Level 5 Diploma in Utility Surveying',
-            courseMode: 'online',
+            url: '/courses/online-level-5-diploma',
+            credential: 'Level 5 Diploma in Utility Surveying',
+            mode: ['online'],
           }),
         }}
       />

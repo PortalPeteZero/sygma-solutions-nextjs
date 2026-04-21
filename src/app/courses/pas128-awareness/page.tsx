@@ -1,5 +1,6 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import { Metadata } from 'next';
+import { courseSchema } from '@/lib/schema';
 import InnerPageHero from '@/components/InnerPageHero';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -52,19 +53,13 @@ export default function Pas128Awareness() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Course',
+          __html: courseSchema({
             name: 'PAS128 Awareness Training',
             description:
               'PAS128 awareness training for teams who commission or manage utility surveys. Understand survey quality levels, PAS128 drawings and the survey specification process.',
-            url: 'https://sygma-solutions.com/courses/pas128-awareness',
-            provider: {
-              '@type': 'Organization',
-              name: 'Sygma Solutions',
-            },
-            educationalCredentialAwarded: 'PAS128 Awareness Certificate',
-            courseMode: 'onsite',
+            url: '/courses/pas128-awareness',
+            credential: 'PAS128 Awareness Certificate',
+            mode: ['onsite'],
           }),
         }}
       />
