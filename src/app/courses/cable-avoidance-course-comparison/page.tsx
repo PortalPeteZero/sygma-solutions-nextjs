@@ -116,7 +116,7 @@ export default function CourseComparison() {
                 },
                 {
                   qual: "EUSR CAT1: EUSR Category 1",
-                  to: "/courses/eus-cat1",
+                  to: "/courses/eusr-cat1",
                   label: "EUSR CAT1 Accreditation",
                 },
                 {
@@ -432,12 +432,12 @@ export default function CourseComparison() {
                   {
                     situation: "Your contract or procurement framework requires EUSR CAT1 accreditation specifically",
                     rec: "EUSR CAT1",
-                    to: "/courses/eus-cat1",
+                    to: "/courses/eusr-cat1",
                   },
                   {
                     situation: "Your client specifies EUSR card holders",
                     rec: "EUSR CAT1",
-                    to: "/courses/eus-cat1",
+                    to: "/courses/eusr-cat1",
                   },
                   {
                     situation: "You want operatives accredited to a higher, externally audited standard than the EUSR minimum specification",

@@ -533,7 +533,7 @@ export default function VscanTransmitterTraining() {
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Qualification</p>
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">EUSR-registered qualification for operatives who need a formal card.</p>
-              <Link href="/courses/eus-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
+              <Link href="/courses/eusr-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
               </Link>
             </div>
@@ -590,7 +590,7 @@ export default function VscanTransmitterTraining() {
               Contact Us to Arrange Your Course
             </Link>
             <Link
-              href="/courses/eus-cat1"
+              href="/courses/eusr-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View EUSR CAT1 (Formal Qualification)

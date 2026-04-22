@@ -147,7 +147,7 @@ export default function EusrCardRenewal() {
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Can I Upgrade Instead of Just Renewing?</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Yes. Many operatives use their renewal as an opportunity to progress. Instead of simply rebooking EUSR CAT1, you could consider completing <Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1</Link>, which is an externally verified, ProQual-accredited qualification that also satisfies most client requirements. Alternatively, you could book <Link href="/courses/eus-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT2 Safe Dig</Link> to add excavation competency to your profile, or speak to your employer about <Link href="/osca" className="text-primary hover:underline">OSCA (On-Site Competency Assessment)</Link> to demonstrate your skills in a real working environment.
+            Yes. Many operatives use their renewal as an opportunity to progress. Instead of simply rebooking EUSR CAT1, you could consider completing <Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1</Link>, which is an externally verified, ProQual-accredited qualification that also satisfies most client requirements. Alternatively, you could book <Link href="/courses/eusr-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT2 Safe Dig</Link> to add excavation competency to your profile, or speak to your employer about <Link href="/osca" className="text-primary hover:underline">OSCA (On-Site Competency Assessment)</Link> to demonstrate your skills in a real working environment.
           </p>
 
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Frequently Asked Questions</h2>
@@ -165,7 +165,7 @@ export default function EusrCardRenewal() {
             <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which Qualification Do You Need?</Link></li>
-              <li><Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
+              <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
             </ul>
           </div>
 
@@ -174,7 +174,7 @@ export default function EusrCardRenewal() {
             <p className="text-muted-foreground mb-4">
               Sygma runs EUSR CAT1 courses regularly at Wigan and The Survey School in Worcester, and delivers on-site at client premises across the UK. Contact us to check availability and book your renewal.
             </p>
-            <Link href="/courses/eus-cat1" className="text-primary font-semibold hover:underline">View EUSR CAT1 Course Details &rsaquo;</Link>
+            <Link href="/courses/eusr-cat1" className="text-primary font-semibold hover:underline">View EUSR CAT1 Course Details &rsaquo;</Link>
           </div>
 
           </article>

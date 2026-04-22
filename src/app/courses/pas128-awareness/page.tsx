@@ -479,7 +479,7 @@ export default function Pas128Awareness() {
             {
               title: 'EUSR CAT and Genny Training',
               desc: 'For operatives who need locating skills before progressing to surveying. The foundation for PAS128 B survey work.',
-              href: '/courses/eus-cat1',
+              href: '/courses/eusr-cat1',
             },
           ].map(({ title, desc, href }) => (
             <Link

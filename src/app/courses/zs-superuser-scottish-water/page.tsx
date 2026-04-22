@@ -431,15 +431,15 @@ export default function ZsSuperuserScottishWater() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the EUSR pathway and Scottish Water supply chain requirements.</p>
           <div className="grid md:grid-cols-3 gap-5">
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation cat and genny training course and EUSR category qualification. Superuser prerequisite required for all delegates.</p>
             </Link>
-            <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation training course and permit requirements for avoiding danger from underground services. Superuser prerequisite required for all delegates.</p>
             </Link>
-            <Link href="/courses/eus-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR Superuser</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The standard super user cat and genny training course for non-Scottish Water teams. Same structure, EUSR framework.</p>
             </Link>
@@ -478,7 +478,7 @@ export default function ZsSuperuserScottishWater() {
             >
               Request a Quote
             </Link>
-            <Link href="/courses/eus-superuser"
+            <Link href="/courses/eusr-superuser"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View EUSR Superuser (Non-Scottish Water)

@@ -9,11 +9,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: 'EUSR CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
   description: 'EUSR CAT1 and ProQual CAT1 are not equivalent. This guide explains the key differences to help you choose the right cable avoidance course.',
-  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1' },
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/eusr-cat1-vs-proqual-cat1' },
   openGraph: {
     title: 'EUSR CAT1 vs ProQual CAT1 | Comparison Guide | Sygma',
     description: 'EUSR CAT1 and ProQual CAT1 are not equivalent. This guide explains the key differences to help you choose the right cable avoidance course.',
-    url: 'https://sygma-solutions.com/knowledge-hub/eus-cat1-vs-proqual-cat1',
+    url: 'https://sygma-solutions.com/knowledge-hub/eusr-cat1-vs-proqual-cat1',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
     type: 'website',
@@ -26,7 +26,7 @@ export default function EusCat1VsProQualCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: articleSchema({
         headline: "EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?",
         description: "EUSR CAT1 and ProQual CAT1 are not equivalent qualifications. This guide explains the key differences and helps you choose the right cable avoidance course.",
-        url: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
+        url: "/knowledge-hub/eusr-cat1-vs-proqual-cat1",
         datePublished: "2026-03-09",
         image: "cat-54-eus-cat1-vs-proqual-cat1",
       }) }} />
@@ -148,7 +148,7 @@ export default function EusCat1VsProQualCat1() {
           <div className="bg-primary/5 border border-border rounded-xl p-6 mt-4">
             <h3 className="font-bold text-foreground mb-2">Compare Courses</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
+              <li><Link href="/courses/eusr-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
               <li><Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1 Training</Link></li>
               <li><Link href="/courses/cable-avoidance-course-comparison" className="text-primary hover:underline">Full Course Comparison Guide</Link></li>
               <li><Link href="/contact" className="text-primary hover:underline">Not sure? Talk to our team</Link></li>

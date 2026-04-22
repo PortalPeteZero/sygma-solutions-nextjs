@@ -473,7 +473,7 @@ export default function RqfLevel2Award() {
             {
               title: "EUSR CAT1",
               desc: "EUSR-registered qualification. Common requirement in utility sector frameworks.",
-              href: "/courses/eus-cat1",
+              href: "/courses/eusr-cat1",
             },
             {
               title: "ProQual CAT1",
@@ -529,7 +529,7 @@ export default function RqfLevel2Award() {
             >
               Request a Quote
             </Link>
-            <Link href="/courses/eus-cat1"
+            <Link href="/courses/eusr-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               Compare With EUSR CAT1

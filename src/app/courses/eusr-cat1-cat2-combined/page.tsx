@@ -34,11 +34,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
   description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined' },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined' },
   openGraph: {
     title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
     description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
-    url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-combined',
+    url: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-60', width: 1200, height: 630 }],
     type: 'website',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 export default function EusCat12Combined() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 and 2 Training", description: "Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.", url: "/courses/eus-cat1-cat2-combined", credential: "EUSR CAT 1 and 2 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 and 2 Training", description: "Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.", url: "/courses/eusr-cat1-cat2-combined", credential: "EUSR CAT 1 and 2 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 and 2 Training" }]) }} />
 <InnerPageHero
@@ -468,7 +468,7 @@ export default function EusCat12Combined() {
               {
                 title: "EUSR CAT1",
                 desc: "Two-day location theory and practical. Detection only, without the safe dig element of this combined programme.",
-                link: "/courses/eus-cat1",
+                link: "/courses/eusr-cat1",
               },
               {
                 title: "ProQual CAT1 & CAT2 Combined",
@@ -548,7 +548,7 @@ export default function EusCat12Combined() {
             >
               Get in Touch for Your Team
             </Link>
-            <Link href="/courses/eus-cat1-cat2-usc-combined"
+            <Link href="/courses/eusr-cat1-cat2-usc-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View CAT1, CAT2 and USC Combined
