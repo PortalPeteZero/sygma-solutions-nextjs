@@ -35,11 +35,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
   description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig' },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat2-safe-dig' },
   openGraph: {
     title: 'EUSR CAT 2 Training | Safe Dig Course | Sygma',
     description: 'EUSR CAT2 safe excavation training covering HSG47 safe digging practice. EUSR-registered outcomes delivered by specialist utility avoidance trainers.',
-    url: 'https://sygma-solutions.com/courses/eus-cat2-safe-dig',
+    url: 'https://sygma-solutions.com/courses/eusr-cat2-safe-dig',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/dig-01', width: 1200, height: 630 }],
     type: 'website',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 export default function EusCat2SafeDig() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT2 Safe Dig Training', description: 'EUSR CAT2 safe excavation training from Sygma Solutions. EUSR-registered qualification covering HSG47 safe digging practice, proximity working, and live dig practical assessment.', url: '/courses/eus-cat2-safe-dig', credential: 'EUSR CAT2', duration: '1 day', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT2 Safe Dig Training', description: 'EUSR CAT2 safe excavation training from Sygma Solutions. EUSR-registered qualification covering HSG47 safe digging practice, proximity working, and live dig practical assessment.', url: '/courses/eusr-cat2-safe-dig', credential: 'EUSR CAT2', duration: '1 day', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR CAT2 Safe Dig' }]) }} />
 
@@ -618,7 +618,7 @@ export default function EusCat2SafeDig() {
             {
               title: "EUSR CAT1",
               desc: "Cable location qualification. Pairs with CAT2 for complete locate-and-dig competence.",
-              href: "/courses/eus-cat1",
+              href: "/courses/eusr-cat1",
             },
             {
               title: "ProQual CAT2",
@@ -628,7 +628,7 @@ export default function EusCat2SafeDig() {
             {
               title: "EUSR CAT1 and CAT2 Combined",
               desc: "Two-day combined course covering both location and safe excavation.",
-              href: "/courses/eus-cat1-cat2-combined",
+              href: "/courses/eusr-cat1-cat2-combined",
             },
           ].map(({ title, desc, href }) => (
             <div key={title} className="bg-muted/20 border border-border rounded-xl p-6">

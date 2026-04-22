@@ -85,7 +85,7 @@ export default function CableAvoidanceScotland() {
             <tbody>
               {[
                 { course: 'CAT and Genny Training (In-House Certificate)', href: '/courses/cable-avoidance-training', duration: '1 day', suitable: 'Operatives new to cable avoidance training.' },
-                { course: 'EUSR CAT1 (EUSR Category 1)', href: '/courses/eus-cat1', duration: '1 day', suitable: 'Industry-standard cable avoidance qualification.' },
+                { course: 'EUSR CAT1 (EUSR Category 1)', href: '/courses/eusr-cat1', duration: '1 day', suitable: 'Industry-standard cable avoidance qualification.' },
                 { course: 'ProQual CAT1 (Accredited by ProQual Accreditations)', href: '/courses/proqualcat1-training', duration: '1 day', suitable: 'Higher assessment standard for cable avoidance.' },
                 { course: 'ProQual CAT1 Plus (Most Advanced Available)', href: '/courses/proqualcat1plus', duration: '2 days', suitable: 'Operatives in complex, high-risk environments.' },
                 { course: 'Advanced Electromagnetic Location', href: '/courses/advanced-em-locator', duration: '1 day', suitable: 'Experienced operatives using RD8200 locators.' },

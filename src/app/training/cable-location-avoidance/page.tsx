@@ -23,7 +23,7 @@ const courseCards = [
     image: "cat-03",
   },
   {
-    to: "/courses/eus-cat1",
+    to: "/courses/eusr-cat1",
     title: "EUSR CAT1: Utility Avoidance",
     desc: "EUSR-registered CAT1 qualification. Full electromagnetic theory, practical CAT and Genny assessment, and written paper. Recognised across the utility sector.",
     duration: "1-2 Days",
@@ -47,7 +47,7 @@ const courseCards = [
     image: "cat-67",
   },
   {
-    to: "/courses/eus-cat2-safe-dig",
+    to: "/courses/eusr-cat2-safe-dig",
     title: "Safe Dig: EUSR CAT2",
     desc: "For lead operatives and site supervisors. Covers multi-utility site management, advanced plan interpretation, and supervising avoidance strategy. EUSR CAT2 certificate.",
     duration: "1 Day",
@@ -91,10 +91,10 @@ const courseCards = [
 const finderRows = [
   ["Fast HSG47-compliant cert for groundworkers", "1 day", "In-house Sygma Certificate", "Cable Avoidance Training (In-House)", "/courses/cable-avoidance-training"],
   ["HSG47-compliant vScan and transmitter training", "1 day", "In-house Sygma Certificate", "vScan & Tx Training", "/courses/vscan-and-transmitter-training"],
-  ["EUSR-registered CAT1 for utility sector work", "1-2 days", "EUSR CAT1 Certificate", "EUSR CAT1", "/courses/eus-cat1"],
+  ["EUSR-registered CAT1 for utility sector work", "1-2 days", "EUSR CAT1 Certificate", "EUSR CAT1", "/courses/eusr-cat1"],
   ["ProQual-accredited Level 2 qualification", "1-2 days", "ProQual CAT1 Award", "ProQual CAT1", "/courses/proqualcat1-training"],
   ["ProQual CAT1 with extended practical criteria", "2 days", "ProQual CAT1 Plus Award", "ProQual CAT1 Plus", "/courses/proqualcat1plus"],
-  ["Safe Dig/EUSR CAT2 for supervisors", "1 day", "EUSR CAT2 Certificate", "Safe Dig (EUSR CAT2)", "/courses/eus-cat2-safe-dig"],
+  ["Safe Dig/EUSR CAT2 for supervisors", "1 day", "EUSR CAT2 Certificate", "Safe Dig (EUSR CAT2)", "/courses/eusr-cat2-safe-dig"],
   ["ProQual CAT2 for advanced operatives", "2 days", "ProQual CAT2 Award", "ProQual CAT2", "/courses/proqualcat2"],
   ["ProQual-accredited CAT1 and CAT2 combined", "2 days", "ProQual Certificates", "ProQual CAT1 & CAT2 Combined", "/courses/proqual-cat1-cat2-combined"],
   ["Advanced EM for RD8200 and problem services", "1-2 days", "Sygma Advanced EM Certificate", "Advanced EM Training", "/courses/advanced-em-locator"],
@@ -573,7 +573,7 @@ export default function UtilityAvoidanceHub() {
         <h2 className="text-xl font-black mb-6 text-foreground">Further Resources</h2>
         <div className="grid sm:grid-cols-2 gap-4 mb-8">
           {[
-            { title: "EUSR CAT1 vs ProQual CAT1", desc: "Not sure which accreditation route is right? Compare the two main cable avoidance qualifications side by side.", to: "/knowledge-hub/eus-cat1-vs-proqual-cat1" },
+            { title: "EUSR CAT1 vs ProQual CAT1", desc: "Not sure which accreditation route is right? Compare the two main cable avoidance qualifications side by side.", to: "/knowledge-hub/eusr-cat1-vs-proqual-cat1" },
             { title: "EUSR Card Renewal", desc: "How to renew your EUSR card, what the process involves, and when to start.", to: "/knowledge-hub/eusr-card-renewal" },
             { title: "Strike Prevention for Site Managers", desc: "A site manager's guide to preventing utility strikes on construction projects.", to: "/knowledge-hub/strike-prevention-site-managers" },
             { title: "Understanding PAS 128", desc: "PAS 128 utility survey standards explained. What the classifications mean and why they matter.", to: "/knowledge-hub/understanding-pas-128" },

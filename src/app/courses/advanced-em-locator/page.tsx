@@ -511,11 +511,11 @@ export default function AdvancedEmLocator() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Continue your journey with these complementary training courses in utility avoidance and advanced location. Each course covers different types of practice and skills development.</p>
           <div className="grid md:grid-cols-3 gap-5">
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation qualification for anyone who uses cable avoidance tools to locate buried services. Prerequisite for advanced EM training courses.</p>
             </Link>
-            <Link href="/courses/eus-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-superuser" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR Superuser</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Advanced coaching and assessment competency. The next level for experienced operatives moving into supervisory roles.</p>
             </Link>

@@ -175,7 +175,7 @@ export default function Hsg47Explained() {
               <ul className="space-y-2 text-sm">
                 <li><Link href="/courses/hsg47-training" className="text-primary hover:underline font-semibold">HSG47 Training Courses -- EUSR CAT1 &amp; Cable Avoidance</Link></li>
                 <li><Link href="/courses/cat4-hsg47-awareness-online" className="text-primary hover:underline">CAT4 and HSG47 Awareness Online</Link></li>
-                <li><Link href="/courses/eus-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
+                <li><Link href="/courses/eusr-cat1" className="text-primary hover:underline">EUSR CAT1 Cable Avoidance Training</Link></li>
                 <li><Link href="/courses/proqualcat1-training" className="text-primary hover:underline">ProQual CAT1 Training</Link></li>
                 <li><Link href="/courses/plans-and-process" className="text-primary hover:underline">Plans and Process Training</Link></li>
               </ul>

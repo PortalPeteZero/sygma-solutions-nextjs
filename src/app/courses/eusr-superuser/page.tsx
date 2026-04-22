@@ -51,11 +51,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR Super User Cat and Genny | EUSR Accredited | Sygma',
   description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/eus-superuser' },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-superuser' },
   openGraph: {
     title: 'EUSR Super User Cat and Genny | EUSR Accredited | Sygma',
     description: 'EUSR super user cat and genny training. Advanced cable avoidance, strike investigation, calibration and on-site coaching. EUSR certified.',
-    url: 'https://sygma-solutions.com/courses/eus-superuser',
+    url: 'https://sygma-solutions.com/courses/eusr-superuser',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11-eus-superuser', width: 1200, height: 630 }],
     type: 'website',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 export default function EusSuperuser() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR Super User Cat and Genny Training', description: 'EUSR super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.', url: '/courses/eus-superuser', credential: 'EUSR Superuser Certificate', duration: '2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR Super User Cat and Genny Training', description: 'EUSR super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.', url: '/courses/eusr-superuser', credential: 'EUSR Superuser Certificate', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR Super User Cat and Genny' }]) }} />
 
@@ -483,11 +483,11 @@ export default function EusSuperuser() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's cat and genny training capability across the full EUSR pathway and beyond.</p>
           <div className="grid md:grid-cols-3 gap-5">
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1 Cat and Genny Training</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation cat and genny training course and EUSR category qualification. Essential prerequisite knowledge for cable avoidance tools and signal generators before moving toward a super user role.</p>
             </Link>
-            <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation training course and permit to dig for avoiding danger from underground services. Super user prerequisite required for all delegates.</p>
             </Link>
@@ -532,7 +532,7 @@ export default function EusSuperuser() {
               Enquire About Super User Cat and Genny Training
             </Link>
             <Link
-              href="/courses/eus-cat2-safe-dig"
+              href="/courses/eusr-cat2-safe-dig"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View EUSR CAT2 Safe Dig (Prerequisite)

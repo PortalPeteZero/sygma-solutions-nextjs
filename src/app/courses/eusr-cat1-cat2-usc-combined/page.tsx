@@ -35,11 +35,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
   description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined' },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-usc-combined' },
   openGraph: {
     title: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC | Sygma',
     description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.',
-    url: 'https://sygma-solutions.com/courses/eus-cat1-cat2-usc-combined',
+    url: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-usc-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-09-eus-cat1-cat2-usc-combined', width: 1200, height: 630 }],
     type: 'website',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 export default function EusCat12UscCombined() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC', description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.', url: '/courses/eus-cat1-cat2-usc-combined', credential: 'EUSR CAT1, EUSR CAT2, and USC', duration: '3 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT1 CAT & Genny Training with CAT2 and USC', description: 'EUSR CAT1 CAT and Genny training combined with CAT2 safe dig and USC content. Two-day classroom and on-site course delivered nationwide by Sygma Solutions.', url: '/courses/eusr-cat1-cat2-usc-combined', credential: 'EUSR CAT1, EUSR CAT2, and USC', duration: '3 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR CAT1, CAT2 and USC Combined' }]) }} />
 
@@ -564,7 +564,7 @@ export default function EusCat12UscCombined() {
               {
                 title: "EUSR CAT1",
                 desc: "Two-day location theory and practical. Detection only, without the safe dig element of this combined programme.",
-                link: "/courses/eus-cat1",
+                link: "/courses/eusr-cat1",
               },
               {
                 title: "ProQual CAT1 Plus",
@@ -652,7 +652,7 @@ export default function EusCat12UscCombined() {
               Enquire About This Course
             </Link>
             <Link
-              href="/courses/eus-cat1-cat2-combined"
+              href="/courses/eusr-cat1-cat2-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View CAT1 and CAT2 Combined (Without USC)

@@ -731,7 +731,7 @@ export default function ProQualCat1() {
               <h3 className="text-base font-bold text-foreground mb-2">ProQual CAT1 Plus</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Two-day advanced qualification with expanded practical element using Genny & CAT equipment. Includes the Genny-First methodology formalised into assessment criteria.</p>
             </Link>
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">EUSR-registered cable avoidance qualification. Required by many utility sector frameworks and network operators.</p>
             </Link>

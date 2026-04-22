@@ -50,11 +50,11 @@ const faqs = [
 export const metadata: Metadata = {
   title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
   description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
-  alternates: { canonical: 'https://sygma-solutions.com/courses/eus-cat1' },
+  alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1' },
   openGraph: {
     title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
     description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
-    url: 'https://sygma-solutions.com/courses/eus-cat1',
+    url: 'https://sygma-solutions.com/courses/eusr-cat1',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-75-eus-cat1', width: 1200, height: 630 }],
     type: 'website',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 export default function EusCat1() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 Training", description: "EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.", url: "/courses/eus-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 Training", description: "EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.", url: "/courses/eusr-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
@@ -428,7 +428,7 @@ export default function EusCat1() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <h2 className="text-xl font-black mb-6 text-foreground">Related Resources</h2>
           <div className="grid sm:grid-cols-2 gap-4">
-            <Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+            <Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
               <h3 className="font-bold text-foreground mb-2 text-sm">EUSR CAT1 vs ProQual CAT1</h3>
               <p className="text-sm text-muted-foreground">Not sure which route is right? Compare the two main cable avoidance qualification pathways.</p>
             </Link>

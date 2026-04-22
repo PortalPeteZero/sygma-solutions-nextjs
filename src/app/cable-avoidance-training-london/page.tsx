@@ -86,7 +86,7 @@ export default function CableAvoidanceLondon() {
             <tbody>
               {[
                 { course: 'CAT and Genny Training (In-House Certificate)', href: '/courses/cable-avoidance-training', duration: '1 day', suitable: 'Operatives new to cable avoidance training. Practical CAT and Genny instruction with Sygma in-house certificate issued same day.' },
-                { course: 'EUSR CAT1 (EUSR Category 1)', href: '/courses/eus-cat1', duration: '1 day', suitable: 'Teams that need EUSR card certification. Industry-standard cable avoidance qualification covering CAT and Genny operation and safety guidance.' },
+                { course: 'EUSR CAT1 (EUSR Category 1)', href: '/courses/eusr-cat1', duration: '1 day', suitable: 'Teams that need EUSR card certification. Industry-standard cable avoidance qualification covering CAT and Genny operation and safety guidance.' },
                 { course: 'ProQual CAT1 (Accredited by ProQual Accreditations)', href: '/courses/proqualcat1-training', duration: '1 day', suitable: 'Teams requiring a higher assessment standard for cable avoidance. Individually mapped, externally verified by ProQual Accreditations. Theory and practical assessment.' },
                 { course: 'ProQual CAT1 Plus (Most Advanced Available)', href: '/courses/proqualcat1plus', duration: '2 days', suitable: 'Operatives in complex, high-risk environments. The most advanced cable avoidance qualification in the UK.' },
                 { course: 'Advanced Electromagnetic Location', href: '/courses/advanced-em-locator', duration: '1 day', suitable: 'Experienced operatives. Using the RD8200 and related locators to their full capability.' },

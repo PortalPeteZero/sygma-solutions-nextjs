@@ -64,7 +64,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     category: "Qualifications",
     title: "EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?",
     desc: "These are not equivalent qualifications. This guide explains why ProQual CAT1 is a significantly more thorough assessment and helps you choose the right one for your team.",
-    href: "/knowledge-hub/eus-cat1-vs-proqual-cat1",
+    href: "/knowledge-hub/eusr-cat1-vs-proqual-cat1",
     type: "article",
     image: "cat-10",
   },

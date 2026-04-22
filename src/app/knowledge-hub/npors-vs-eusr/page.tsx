@@ -199,7 +199,7 @@ export default function NporsVsEusr() {
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
-                <li><Link href="/knowledge-hub/eus-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
+                <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
               </ul>
             </div>
 
@@ -208,7 +208,7 @@ export default function NporsVsEusr() {
               <p className="text-muted-foreground mb-4">
                 If you are not sure which qualification your team needs, get in touch. Sygma's trainers can advise on what your client requires and recommend the right course.
               </p>
-              <Link href="/courses/eus-cat1" className="text-primary font-semibold hover:underline">View EUSR CAT1 Course Details &rsaquo;</Link>
+              <Link href="/courses/eusr-cat1" className="text-primary font-semibold hover:underline">View EUSR CAT1 Course Details &rsaquo;</Link>
             </div>
           </article>
         </div>

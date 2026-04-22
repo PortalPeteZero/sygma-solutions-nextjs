@@ -122,7 +122,7 @@ export default function ServiceCoordinatorUsc() {
               Your company appoints the USC. Sygma trains them to carry out that role correctly. Completing the USC course does not register your delegate on the EUSR or any other qualification register (it trains the person your organisation has chosen to fill the role).
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              If your team needs the EUSR CAT1, CAT2, and USC content together as part of a combined programme, see the <Link href="/courses/eus-cat1-cat2-usc-combined" className="text-primary font-semibold underline underline-offset-2">EUSR CAT1, CAT2 and USC Combined</Link> page.
+              If your team needs the EUSR CAT1, CAT2, and USC content together as part of a combined programme, see the <Link href="/courses/eusr-cat1-cat2-usc-combined" className="text-primary font-semibold underline underline-offset-2">EUSR CAT1, CAT2 and USC Combined</Link> page.
             </p>
           </div>
         </div>
@@ -411,11 +411,11 @@ export default function ServiceCoordinatorUsc() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Build your team's capability across utility avoidance and coordination roles.</p>
           <div className="grid md:grid-cols-3 gap-5">
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">The foundation. USCs need to understand locating as well as coordinate it.</p>
             </Link>
-            <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation and permit requirements. Essential knowledge for USCs managing dig teams.</p>
             </Link>
@@ -460,7 +460,7 @@ export default function ServiceCoordinatorUsc() {
               Request a Quote
             </Link>
             <Link
-              href="/courses/eus-cat1-cat2-usc-combined"
+              href="/courses/eusr-cat1-cat2-usc-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View CAT1, CAT2 and USC Combined

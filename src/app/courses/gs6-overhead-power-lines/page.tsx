@@ -422,11 +422,11 @@ export default function Gs6OverheadPowerLines() {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related Training Courses</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Build a comprehensive safety programme across all utility avoidance hazards.</p>
           <div className="grid md:grid-cols-3 gap-5">
-            <Link href="/courses/eus-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat1" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Underground services avoidance. The complement to overhead line safety in a complete hazard awareness programme.</p>
             </Link>
-            <Link href="/courses/eus-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+            <Link href="/courses/eusr-cat2-safe-dig" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
               <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT2 Safe Dig</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Safe excavation techniques for buried services. Essential knowledge for teams working in multi-hazard environments.</p>
             </Link>
