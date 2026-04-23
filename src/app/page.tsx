@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import { ArrowRight, CheckCircle, Phone } from 'lucide-react';
 import HeroCarousel from '@/components/HeroCarousel';
 import Image from 'next/image';
@@ -337,9 +338,9 @@ export default function Home() {
             <Link href="/contact#enquiry-form" className="inline-flex items-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
               Get in Touch
             </Link>
-            <a href="tel:+442039718252" className="inline-flex items-center px-8 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors">
+            <PhoneLink className="inline-flex items-center px-8 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors">
               <Phone size={16} className="mr-2" /> 0203 971 8252
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>

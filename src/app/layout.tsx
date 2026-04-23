@@ -118,6 +118,16 @@ export default function RootLayout({
                   event_category: 'engagement',
                   event_label: 'tidio_chat'
                 });
+                // Server-side ping -- fires regardless of consent state
+                if (navigator.sendBeacon) {
+                  navigator.sendBeacon(
+                    '/api/track-click',
+                    new Blob(
+                      [JSON.stringify({ event: 'chat_started', value: 'tidio_chat' })],
+                      { type: 'application/json' }
+                    )
+                  );
+                }
               });
             }
           `}

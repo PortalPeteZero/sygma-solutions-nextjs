@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import Image from 'next/image';
 import { MapPin, Phone } from 'lucide-react';
 import { breadcrumbSchema, localBusinessSchema } from '@/lib/schema';
@@ -209,12 +210,11 @@ export default function Locations() {
               >
                 Get in Touch
               </Link>
-              <a
-                href="tel:+442039718252"
+              <PhoneLink
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors"
               >
                 <Phone size={16} /> 0203 971 8252
-              </a>
+              </PhoneLink>
             </div>
           </div>
         </div>

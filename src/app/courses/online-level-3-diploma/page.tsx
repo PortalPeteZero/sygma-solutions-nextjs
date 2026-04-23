@@ -1,5 +1,6 @@
 import InnerPageHero from "@/components/InnerPageHero";
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { CheckCircle } from "lucide-react";
@@ -530,12 +531,11 @@ export default function OnlineLevel3Diploma() {
             >
               Enquire About the Level 3
             </Link>
-            <a
-              href="tel:+442039718252"
+            <PhoneLink
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               Call Us
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>

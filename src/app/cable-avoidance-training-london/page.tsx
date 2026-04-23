@@ -1,6 +1,7 @@
 import { faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import Image from 'next/image';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
@@ -238,7 +239,7 @@ export default function CableAvoidanceLondon() {
           <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">Tell us how many delegates need cable avoidance training, the course duration you need, and your preferred dates. We will confirm availability and send a quote within one working day.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center px-6 py-3 rounded-md bg-primary-foreground text-primary font-bold text-sm hover:bg-primary-foreground/90 transition-colors">Get a London CAT and Genny Training Quote</Link>
-            <a href="tel:+442039718252" className="inline-flex items-center px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors">Call Us</a>
+            <PhoneLink className="inline-flex items-center px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors">Call Us</PhoneLink>
           </div>
         </div>
       </section>

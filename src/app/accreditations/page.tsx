@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 import { organizationSchema, breadcrumbSchema } from '@/lib/schema';
 
@@ -190,12 +191,11 @@ export default function AccreditationsPage() {
             >
               Contact Us
             </Link>
-            <a
-              href="tel:+442039718252"
+            <PhoneLink
               className="inline-block px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold hover:bg-primary-foreground/10"
             >
               Call Us
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>

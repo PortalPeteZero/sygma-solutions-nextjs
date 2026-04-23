@@ -1,6 +1,7 @@
 import InnerPageHero from "@/components/InnerPageHero";
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import {  breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import Image from 'next/image';
 
@@ -590,12 +591,11 @@ export default function CourseComparison() {
             >
               Request a Quote
             </Link>
-            <a
-              href="tel:+442039718252"
+            <PhoneLink
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               Call Us
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>

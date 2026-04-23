@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PhoneLink from '@/components/PhoneLink';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -246,9 +247,9 @@ export default function UtilityMappingBristolClient() {
             <Link href="/contact#enquiry-form" className="inline-flex items-center px-6 py-3 rounded-md bg-primary-foreground text-primary font-bold text-sm hover:bg-primary-foreground/90 transition-colors">
               Enquire About South West Training
             </Link>
-            <a href="tel:+442039718252" className="inline-flex items-center px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors">
+            <PhoneLink className="inline-flex items-center px-6 py-3 rounded-md border border-primary-foreground text-primary-foreground font-semibold text-sm hover:bg-primary-foreground/10 transition-colors">
               Call Us
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </section>
