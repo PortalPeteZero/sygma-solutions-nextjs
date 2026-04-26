@@ -6,20 +6,20 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 const faqs = [
               {
-                q: "Can we run CAT1 and CAT2 as separate courses instead?",
-                a: "Yes. Sygma offers standalone EUSR CAT1 and EUSR CAT2 programmes for organisations that need to train different groups or stagger their training. The combined programme is designed for teams that need both qualifications at the same time.",
+                q: "Can we run CAT 1 and CAT 2 as separate courses instead?",
+                a: "Yes. Sygma offers standalone EUSR CAT 1 and EUSR CAT 2 programmes for organisations that need to train different groups or stagger their training. The combined programme is designed for teams that need both qualifications at the same time.",
               },
               {
                 q: "What happens if our site fails the minimum requirements on the day?",
-                a: "The training will not proceed unless the minimum CAT2 site requirements are met. Sygma will assess site suitability before booking is confirmed. If your site is not suitable, we can advise on alternatives or arrange access to a different location.",
+                a: "The training will not proceed unless the minimum CAT 2 site requirements are met. Sygma will assess site suitability before booking is confirmed. If your site is not suitable, we can advise on alternatives or arrange access to a different location.",
               },
               {
                 q: "Do delegates need any prior experience?",
-                a: "No. The combined programme is designed to take delegates from no prior training through to EUSR CAT1 and CAT2 qualification in two days. The classroom content on day one provides all the foundation knowledge required for the practical work on day two.",
+                a: "No. The combined programme is designed to take delegates from no prior training through to EUSR CAT 1 and CAT 2 qualification in two days. The classroom content on day one provides all the foundation knowledge required for the practical work on day two.",
               },
               {
                 q: "Is this the same as ProQual Level 2 utility avoidance?",
-                a: "No. EUSR CAT1 and CAT2 are industry-recognised qualifications administered through EUSR. ProQual Level 2 is a regulated qualification on the RQF. Both cover utility avoidance, but through different frameworks. Many organisations accept EUSR recognition; some require the RQF qualification. Sygma can advise on which is appropriate for your team.",
+                a: "No. EUSR CAT 1 and CAT 2 are industry-recognised qualifications administered through EUSR. ProQual Level 2 is a regulated qualification on the RQF. Both cover utility avoidance, but through different frameworks. Many organisations accept EUSR recognition; some require the RQF qualification. Sygma can advise on which is appropriate for your team.",
               },
               {
                 q: "What if some delegates use equipment other than a Radiodetection locator?",
@@ -32,12 +32,12 @@ const faqs = [
             ];
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
-  description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
+  title: 'EUSR CAT 1 and 2 Combined Training -- Locate Utility Services (HSG47)',
+  description: 'Two-day EUSR CAT 1 and CAT 2 combined training. Locate Utility Services and Implement Safe Excavating Practices. HSG47-aligned, EUSR-registered, UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined' },
   openGraph: {
-    title: 'EUSR CAT 1 and 2 Training | Combined Course | Sygma',
-    description: 'Two-day EUSR CAT1 and CAT2 combined course. Utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.',
+    title: 'EUSR CAT 1 and 2 Combined Training -- Locate Utility Services (HSG47)',
+    description: 'Two-day EUSR CAT 1 and CAT 2 combined training. Locate Utility Services and Implement Safe Excavating Practices. HSG47-aligned, EUSR-registered, UK-wide.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-60', width: 1200, height: 630 }],
@@ -48,18 +48,19 @@ export const metadata: Metadata = {
 export default function EusCat12Combined() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR CAT 1 and 2 Training", description: "Two-day combined EUSR CAT1 and CAT2 course covering utility avoidance and safe excavation. EUSR-registered outcomes with CAT and Genny practical assessment.", url: "/courses/eusr-cat1-cat2-combined", credential: "EUSR CAT 1 and 2 Training Certificate", duration: "Variable", mode: ["onsite"] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 and Category 2 Combined Training - Locate Utility Services and Implement Safe Excavating Practices", description: "Two-day EUSR CAT 1 and CAT 2 combined training. Locate Utility Services (EUSR Category 1) and Implement Safe Excavating Practices (EUSR Category 2). HSG47-aligned, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1-cat2-combined", credential: "EUSR Category 1 and Category 2 Training Certificate", duration: "2 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 and 2 Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 and CAT 2 Combined Training" }]) }} />
 <InnerPageHero
-        eyebrow="Utility Avoidance"
-        headline="EUSR CAT1 and CAT2 Combined: Two-Day Utility Avoidance and Safe Dig Training"
-        sub="One programme. Two EUSR-recognised qualifications. Both CAT1 and CAT2 completed in two days at your site, with full theory, Genny-First practical, and a live safe dig assessment."
+        eyebrow="EUSR Category 1 and Category 2 Combined"
+        headline="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe Excavating Practices (HSG47)"
+        sub="Two days. Two EUSR-registered qualifications -- EUSR Category 1 (Locate Utility Services) and EUSR Category 2 (Implement Safe Excavating Practices). Full theory, Genny-First practical, live safe dig assessment, HSG47-aligned, delivered nationwide UK at your site or at Sygma's Wigan training centre."
         image="cat-01-eus-cat1-cat2-combined"
-        alt="Combined EUSR CAT1 and CAT2 cable avoidance training with practical field exercises"
+        alt="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe Excavating Practices (HSG47), Sygma Solutions"
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
-          { label: "EUSR CAT1 and CAT2 Combined" },
+          { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
+          { label: "EUSR CAT 1 and CAT 2 Combined Training" },
         ]}
       />
 
@@ -93,7 +94,7 @@ export default function EusCat12Combined() {
             ["Duration", "2 days (classroom and site)"],
             ["Format", "In-house at your site or Sygma Wigan"],
             ["Max Delegates", "8 per course"],
-            ["Qualifications", "EUSR CAT1 and EUSR CAT2"],
+            ["Qualifications", "EUSR CAT 1 and EUSR CAT 2"],
             ["Delivery", "Nationwide UK"],
           ].map(([label, value]) => (
             <div key={label} className="text-center">
@@ -108,13 +109,13 @@ export default function EusCat12Combined() {
       <section className="container mx-auto px-6 md:px-8 pb-6 max-w-4xl">
         <div className="grid grid-cols-3 gap-3">
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-65-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT1 and CAT2 combined training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-65-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training - practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-50-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT1 and CAT2 combined training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-50-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training - hands-on assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-80-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT1 and CAT2 combined training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-80-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training - on-site delivery" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -135,7 +136,7 @@ export default function EusCat12Combined() {
               },
               {
                 title: "New Entrants to Utilities",
-                desc: "The most efficient route to full EUSR CAT1 and CAT2 competency"
+                desc: "The most efficient route to full EUSR CAT 1 and CAT 2 competency"
               },
               {
                 title: "Organisations Wanting Comprehensive Training",
@@ -155,11 +156,11 @@ export default function EusCat12Combined() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT1 and CAT2?</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT 1 and CAT 2?</p>
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUSR Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Most organisations that send operatives for CAT1 training will eventually need CAT2 as well. CAT1 covers the detection side: electromagnetic theory, equipment operation, Genny application, and plan interpretation. CAT2 adds the excavation element: the safe dig, the permit to dig, the correct handling of exposed services, and the documented assessment that proves your operatives can work safely in proximity to live utilities.
+                Most organisations that send operatives for CAT 1 training will eventually need CAT 2 as well. CAT 1 covers the detection side: electromagnetic theory, equipment operation, Genny application, and plan interpretation. CAT 2 adds the excavation element: the safe dig, the permit to dig, the correct handling of exposed services, and the documented assessment that proves your operatives can work safely in proximity to live utilities.
               </p>
               <p>
                 Running them separately means two days of mobilisation, two sets of site preparation, and two invoices. The combined programme delivers both EUSR-recognised qualifications in a single two-day block, reducing disruption to your operations and keeping your team off the road for the minimum time necessary.
@@ -175,7 +176,7 @@ export default function EusCat12Combined() {
               ["Duration", "2 days (classroom and on-site)"],
               ["Format", "In-house at your site or Sygma's Wigan training centre"],
               ["Max Delegates", "8 per course"],
-              ["Qualifications", "EUSR CAT1 and EUSR CAT2 (Safe Dig)"],
+              ["Qualifications", "EUSR CAT 1 and EUSR CAT 2 (Safe Dig)"],
               ["Assessment", "Multiple choice questions (MCQs) + practical safe dig assessment"],
               ["Prerequisites", "None"],
               ["Equipment", "Sygma provides Radiodetection CAT4 and Genny4 as standard; delegates may bring their own locator and signal generator. This course can be delivered on any of the following: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX."],
@@ -257,10 +258,10 @@ export default function EusCat12Combined() {
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Delegates Receive</h2>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
-            { title: "EUSR CAT1 Certificate", desc: "EUSR-registered CAT1 accreditation. Recorded on the EUSR database and verifiable by employers and clients." },
-            { title: "EUSR CAT2 Certificate", desc: "EUSR-registered CAT2 Safe Dig accreditation. Confirms competency in safe excavation practices around buried services." },
-            { title: "Written Assessment Record", desc: "Documented evidence of theory knowledge across both CAT1 and CAT2 criteria." },
-            { title: "Practical Assessment Record", desc: "On-site assessment evidence covering cable and pipe location (CAT1) and safe excavation (CAT2)." },
+            { title: "EUSR CAT 1 Certificate", desc: "EUSR-registered CAT 1 accreditation. Recorded on the EUSR database and verifiable by employers and clients." },
+            { title: "EUSR CAT 2 Certificate", desc: "EUSR-registered CAT 2 Safe Dig accreditation. Confirms competency in safe excavation practices around buried services." },
+            { title: "Written Assessment Record", desc: "Documented evidence of theory knowledge across both CAT 1 and CAT 2 criteria." },
+            { title: "Practical Assessment Record", desc: "On-site assessment evidence covering cable and pipe location (CAT 1) and safe excavation (CAT 2)." },
           ].map(({ title, desc }) => (
             <div key={title} className="bg-muted/20 rounded-xl border border-border p-6">
               <h3 className="font-bold text-foreground mb-2">{title}</h3>
@@ -273,10 +274,10 @@ export default function EusCat12Combined() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-78-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT1 and CAT2 combined training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-78-eus-cat1-cat2-combined" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training practical session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-91-eus-cat1-cat2-combined" width={1200} height={900} alt="Safe dig technique demonstration during CAT2 training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-91-eus-cat1-cat2-combined" width={1200} height={900} alt="Safe dig technique demonstration during CAT 2 training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
           <Image src="cat-03-eus-cat1-cat2-combined" width={1200} height={900} alt="Cable avoidance and safe excavation combined assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
@@ -305,7 +306,7 @@ export default function EusCat12Combined() {
               </ul>
             </div>
             <div className="rounded-xl border border-border p-5 bg-background">
-              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT1 Location Area</h3>
+              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT 1 Location Area</h3>
               <ul className="space-y-2">
                 {[
                   "Area with detectable underground utilities near the training room",
@@ -320,7 +321,7 @@ export default function EusCat12Combined() {
               </ul>
             </div>
             <div className="rounded-xl border border-border p-5 bg-background">
-              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT2 Safe Dig Area (Minimum)</h3>
+              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT 2 Safe Dig Area (Minimum)</h3>
               <ul className="space-y-2">
                 {[
                   "A live dig area with buried metallic utilities. One power cable to a site cabin is not sufficient.",
@@ -338,7 +339,7 @@ export default function EusCat12Combined() {
           </div>
           <div className="mt-6 rounded-xl border border-border bg-amber-50 dark:bg-amber-950/20 p-5">
             <p className="text-sm font-bold text-foreground mb-1">Important</p>
-            <p className="text-sm text-muted-foreground">The training will not take place unless the minimum CAT2 site requirements are met. Each delegate must bring government-issued photographic ID. Sygma trainers typically arrive in a transit-van-sized vehicle (please advise at booking if there are height barriers or access restrictions).</p>
+            <p className="text-sm text-muted-foreground">The training will not take place unless the minimum CAT 2 site requirements are met. Each delegate must bring government-issued photographic ID. Sygma trainers typically arrive in a transit-van-sized vehicle (please advise at booking if there are height barriers or access restrictions).</p>
           </div>
         </div>
       </section>
@@ -365,20 +366,20 @@ export default function EusCat12Combined() {
 
       {/* Full-width image break */}
       <div className="w-full overflow-hidden aspect-[21/9] bg-muted">
-        <Image src="cat-92" width={1200} height={900} alt="EUSR CAT1 and CAT2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
+        <Image src="cat-92" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
       {/* Why Sygma */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Why Sygma</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Not All CAT1 Courses Are Created Equal</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Not All CAT 1 Courses Are Created Equal</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Our approach to utility avoidance training sets us apart from standard compliance courses. Here's what makes the difference.</p>
           <div className="grid md:grid-cols-2 gap-5">
             {[
               {
-                title: "Not All CAT1 Courses Are Created Equal",
-                desc: "Many CAT1 courses meet the minimum specification. Ours exceed it. We invest in the science and in your operatives' depth of understanding.",
+                title: "Not All CAT 1 Courses Are Created Equal",
+                desc: "Many CAT 1 courses meet the minimum specification. Ours exceed it. We invest in the science and in your operatives' depth of understanding.",
               },
               {
                 title: "Genny & CAT Methodology",
@@ -420,7 +421,7 @@ export default function EusCat12Combined() {
             {[
               {
                 title: "Trained and Competent",
-                desc: "Full theoretical foundation and practical assessment to confirmed EUSR CAT1 and CAT2 standards.",
+                desc: "Full theoretical foundation and practical assessment to confirmed EUSR CAT 1 and CAT 2 standards.",
               },
               {
                 title: "Safe System of Work",
@@ -461,17 +462,17 @@ export default function EusCat12Combined() {
           <div className="grid md:grid-cols-3 gap-5">
             {[
               {
-                title: "ProQual CAT1 Plus",
-                desc: "RQF-regulated alternative to EUSR CAT1. Covers electromagnetic location with additional depth on geology and cable theory.",
+                title: "ProQual CAT 1 Plus",
+                desc: "RQF-regulated alternative to EUSR CAT 1. Covers electromagnetic location with additional depth on geology and cable theory.",
                 link: "/courses/proqualcat1plus",
               },
               {
-                title: "EUSR CAT1",
+                title: "EUSR CAT 1",
                 desc: "Two-day location theory and practical. Detection only, without the safe dig element of this combined programme.",
                 link: "/courses/eusr-cat1",
               },
               {
-                title: "ProQual CAT1 & CAT2 Combined",
+                title: "ProQual CAT 1 & CAT 2 Combined",
                 desc: "The ProQual-accredited equivalent of this programme. Same content delivered through the ProQual framework.",
                 link: "/courses/proqual-cat1-cat2-combined",
               },
@@ -495,10 +496,10 @@ export default function EusCat12Combined() {
           <Image src="cat-15-eus-cat1-cat2-combined" width={1200} height={900} alt="Utility avoidance practical training on site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-67-eus-cat1-cat2-combined" width={1200} height={900} alt="Safe excavation assessment during EUSR CAT2" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-67-eus-cat1-cat2-combined" width={1200} height={900} alt="Safe excavation assessment during EUSR CAT 2" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-16-eus-cat1-cat2-combined" width={1200} height={900} alt="Combined CAT1 and CAT2 certificate training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-16-eus-cat1-cat2-combined" width={1200} height={900} alt="Combined CAT 1 and CAT 2 certificate training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
@@ -551,7 +552,7 @@ export default function EusCat12Combined() {
             <Link href="/courses/eusr-cat1-cat2-usc-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View CAT1, CAT2 and USC Combined
+              View CAT 1, CAT 2 and USC Combined
             </Link>
           </div>
         </div>
