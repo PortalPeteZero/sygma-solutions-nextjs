@@ -40,9 +40,10 @@ export function breadcrumbSchema(
 
 // Rough mapping from human duration strings to ISO 8601 durations for
 // Schema.org courseWorkload. We only need ballpark values; Google accepts
-// any valid ISO 8601 duration. Missing/unknown -> PT1D (1 day).
+// any valid ISO 8601 duration. Missing/unknown -> P1D (1 day).
+// P prefix = date duration; PT prefix = time-only -- days use P, not PT.
 function toISO8601Duration(input?: string): string {
-  if (!input) return "PT1D";
+  if (!input) return "P1D";
   const s = input.toLowerCase().trim();
   const m = s.match(/(\d+)\s*(?:hour|hr|h)/);
   if (m) return `PT${m[1]}H`;
@@ -50,8 +51,8 @@ function toISO8601Duration(input?: string): string {
   if (d) return `P${d[1]}D`;
   if (/half\s*day/.test(s)) return "PT4H";
   if (/part[-\s]?time/.test(s)) return "P1Y";
-  if (/variable|tailored/.test(s)) return "PT1D";
-  return "PT1D";
+  if (/variable|tailored/.test(s)) return "P1D";
+  return "P1D";
 }
 
 export function courseSchema(params: {
@@ -92,6 +93,8 @@ export function courseSchema(params: {
       "@type": "Offer",
       "url": `${SITE_URL}${params.url}`,
       "availability": "https://schema.org/InStock",
+      "priceCurrency": "GBP",
+      "category": "Paid",
     },
     "hasCourseInstance": {
       "@type": "CourseInstance",
