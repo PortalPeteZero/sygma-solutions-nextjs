@@ -8,42 +8,62 @@ const faqs = [
   {
     q: "What is EUSR CAT 1 training?",
     a: "EUSR CAT 1 is a one-day utility detection training course that leads to an EUSR-registered Category 1 Locate Utility Services qualification. It covers electromagnetic theory, correct use of Cat and Genny equipment in all four locator modes, utility service plan and drawings reading, safe digging practices aligned to HSG47, and a practical on-site assessment in real ground conditions. It is one of the most widely recognised utility detection qualifications in the UK gas, water, electricity, and telecoms sectors.",
+    thumb: "cat-04",
+    thumbAlt: "EUSR CAT 1 training overview -- Cat and Genny equipment in field use",
   },
   {
     q: "Is EUSR CAT 1 the same as EUS CAT 1?",
     a: "They are the same qualification. EUS and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUS CAT 1 and sometimes as EUSR CAT 1 or EUSR Category 1. All Sygma EUSR CAT 1 certificates are issued against EUSR-registered standards.",
+    thumb: "cat-30",
+    thumbAlt: "EUSR Category 1 certification card -- EUSR-registered standard",
   },
   {
     q: "What pass mark is required for EUSR CAT 1?",
     a: "The written multiple choice assessment requires a minimum pass mark of 80%. An oral assessment is available for delegates with dyslexia or reading difficulties. The practical on-site assessment is conducted on the day and assessed individually by the Sygma trainer.",
+    thumb: "cat-37",
+    thumbAlt: "EUSR CAT 1 written assessment -- 80% pass mark",
   },
   {
     q: "Is EUSR CAT 1 the same as ProQual CAT1?",
     a: "No. Both cover similar core skills but they are issued by different bodies against different criteria. EUSR CAT 1 is EUSR-registered. ProQual CAT1 is issued by ProQual Accreditations and includes additional individually assessed criteria, including clamp, capacitance, and blind induction assessed separately. See the comparison table on this page or the full ProQual CAT1 course page for details.",
+    thumb: "cat-42",
+    thumbAlt: "EUSR vs ProQual cable avoidance qualification comparison",
   },
   {
     q: "Can Sygma deliver EUSR CAT 1 on our site?",
     a: "Yes. Sygma delivers EUSR CAT 1 at client sites across the UK. Travel is included in the day rate. Sygma provides Radiodetection CAT4 and CAT4+ as standard, but the course works with any manufacturer's locator and signal generator. For alternative equipment, a minimum ratio of one locator per three delegates applies. Maximum 8 delegates per session.",
+    thumb: "cat-50",
+    thumbAlt: "Sygma EUSR CAT 1 on-site delivery -- nationwide UK utility detection training",
   },
   {
     q: "How long is an EUSR card valid for?",
     a: "An EUSR CAT 1 card is valid for 3 years from the date of issue. The expiry date is printed on the card. Most utility frameworks and principal contractors require a valid, in-date card as a condition of site access. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.",
+    thumb: "cat-21",
+    thumbAlt: "EUSR card valid for 3 years -- date of issue printed",
   },
   {
     q: "How do I renew my EUSR card?",
     a: "To renew your EUSR CAT 1 card you need to retake the full EUSR CAT 1 course and pass both the written and practical assessments. There is no shortened renewal route. The complete one-day EUSR Category 1 training programme must be completed again, including the multiple choice paper and the on-site practical. A new 3-year card is issued on successful completion.",
+    thumb: "cat-26",
+    thumbAlt: "EUSR card renewal -- full Category 1 retake required",
   },
   {
     q: "What happens if my EUSR CAT 1 card has expired?",
     a: "If your EUSR CAT 1 card has expired you cannot use it to demonstrate current competency and most utility operators will not allow you to locate on site. There is no grace period under EUSR rules. You will need to complete the full EUSR CAT 1 course again. If your card has recently lapsed, contact Sygma and we can usually get you onto the next available date.",
+    thumb: "cat-15",
+    thumbAlt: "Expired EUSR card -- retake required for utility detection competency",
   },
   {
     q: "Is EUSR CAT 1 training a legal requirement under HSG47?",
     a: "HSG47, the Health and Safety Executive's guidance on avoiding danger from underground services, requires operatives who use cable locating equipment to be trained and competent. EUSR CAT 1 is one of the most widely accepted ways of demonstrating that competency. While HSG47 does not mandate a specific qualification by name, holding an EUSR-registered qualification such as EUSR CAT 1 is the utility industry's standard way of meeting that legal duty.",
+    thumb: "cat-58",
+    thumbAlt: "HSG47 compliance -- EUSR CAT 1 Locate Utility Services qualification",
   },
   {
-    q: "Can we do EUSR CAT 1 and CAT2 training on the same day?",
-    a: "Yes, in most cases. Sygma regularly delivers combined EUSR CAT 1 and CAT2 days for clients who want to complete both levels in a single site visit. The combined day runs longer, typically from 8:00am to 5:30pm. The maximum of 8 delegates applies to the combined format as well. Both certificates are issued on the day. Contact Sygma to confirm availability for your team size and location.",
+    q: "Can we do EUSR CAT 1 and CAT 2 training on the same day?",
+    a: "Yes, in most cases. Sygma regularly delivers combined EUSR CAT 1 and CAT 2 days for clients who want to complete both levels in a single site visit. The combined day runs longer, typically from 8:00am to 5:30pm. The maximum of 8 delegates applies to the combined format as well. Both certificates are issued on the day. Contact Sygma to confirm availability for your team size and location.",
+    thumb: "cat-70",
+    thumbAlt: "Combined EUSR CAT 1 and CAT 2 training day -- two qualifications, one site visit",
   },
 ];
 
@@ -475,10 +495,15 @@ export default function EusCat1() {
         <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">FAQs</p>
         <h2 className="text-2xl font-black mb-8 text-foreground">EUSR CAT 1 Training: Frequently Asked Questions</h2>
         <div className="space-y-4">
-          {faqs.map(({ q, a }) => (
-            <div key={q} className="border border-border rounded-lg p-6">
-              <h3 className="font-bold text-foreground mb-3">{q}</h3>
-              <p className="text-muted-foreground leading-relaxed">{a}</p>
+          {faqs.map(({ q, a, thumb, thumbAlt }) => (
+            <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-center">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 overflow-hidden rounded-lg bg-muted aspect-square self-center">
+                <Image src={thumb} width={192} height={192} alt={thumbAlt} sizes="(max-width: 640px) 80px, 96px" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-bold text-foreground mb-2">{q}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{a}</p>
+              </div>
             </div>
           ))}
         </div>
