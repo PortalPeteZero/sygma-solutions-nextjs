@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Is EUSR CAT1 the same as EUS CAT1?",
-    a: "They are the same qualification. EUSR and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUSR CAT1 and sometimes as EUSR CAT1 or EUSR Category 1. All Sygma EUSR CAT1 certificates are issued against EUSR-registered standards.",
+    a: "They are the same qualification. EUS and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUS CAT1 and sometimes as EUSR CAT1 or EUSR Category 1. All Sygma EUSR CAT1 certificates are issued against EUSR-registered standards.",
   },
   {
     q: "What pass mark is required for EUSR CAT1?",
@@ -48,12 +48,12 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
-  description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
+  title: 'EUSR CAT1 / Category 1 Locate Utility Services Training | Cat & Genny',
+  description: 'EUSR CAT1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1' },
   openGraph: {
-    title: 'EUSR CAT 1 Training | Cat and Genny Course | Sygma',
-    description: 'EUSR CAT1 training producing EUSR-registered operatives. HSG47 built in. CAT and Genny practical assessment. UK-wide delivery.',
+    title: 'EUSR CAT1 / Category 1 Locate Utility Services Training | Cat & Genny',
+    description: 'EUSR CAT1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-75-eus-cat1', width: 1200, height: 630 }],
