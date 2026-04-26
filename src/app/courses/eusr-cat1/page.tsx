@@ -66,7 +66,7 @@ export default function EusCat1() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 Locate Utility Services Training", description: "EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "EUSR CAT 1 Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="EUSR CAT1: EUSR-Registered Utility Avoidance Training"
@@ -76,7 +76,7 @@ export default function EusCat1() {
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
           { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
-          { label: "EUSR CAT1" },
+          { label: "EUSR CAT 1 Training" },
         ]}
       />
 
