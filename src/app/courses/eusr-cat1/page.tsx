@@ -89,8 +89,8 @@ export default function EusCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="EUSR CAT 1: EUSR-Registered Utility Avoidance Training"
-        sub="EUSR CAT 1 and EUSR Category 1 training from the UK's only independent specialist. Full electromagnetic theory, practical Genny & CAT assessment, and written paper. HSG47 compliant. Recognised across the water, gas, electricity, and telecoms sectors."
+        headline="EUSR CAT 1 Training -- Locate Utility Services (HSG47)"
+        sub="EUSR Category 1 -- Locate Utility Services -- from the UK's only independent specialist. Full electromagnetic theory, practical Cat and Genny assessment, written paper, and on-site practical. HSG47 compliant safe digging and excavating practices. Recognised across the water, gas, electricity, and telecoms sectors."
         image="cat-56"
         alts={["Trainee scanning for underground utilities with a CAT4 locator on EUSR CAT 1 training", "Genny signal generator connected to a utility service point during EUSR CAT 1 Locate Utility Services training", "Practical cable avoidance exercise on an EUSR CAT 1 live training site", "Instructor guiding a trainee through CAT4 signal interpretation on an EUSR CAT 1 training course", "Close-up of CAT4 display showing utility signal detection during EUSR CAT 1 practical assessment", "Overhead view of a marked utility survey area during EUSR CAT 1 Cat and Genny training", "Group of trainees practising cable avoidance techniques on EUSR CAT 1 Cat and Genny training", "CAT4 and Genny equipment in use on EUSR Category 1 (CAT 1) accredited training -- HSG47 compliant"]}
         breadcrumbs={[
