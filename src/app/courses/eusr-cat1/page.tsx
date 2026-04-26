@@ -565,32 +565,32 @@ export default function EusCat1() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Minimum Spec Plus</p>
               <h3 className="text-base font-bold text-foreground mb-2">Not All CAT1 Courses Are Created Equal</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">EUSR sets a minimum spec. Some providers deliver to minimum. Sygma includes clamp, capacitance and blind induction in assessed practicals even though EUSR does not require it.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed"><strong>EUSR sets a minimum spec for utility detection.</strong> Some providers deliver to minimum. Sygma includes <strong>clamp, capacitance, and blind induction</strong> in assessed practicals even though EUSR does not require it for the EUSR Category 1 Locate Utility Services qualification.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Proven Methodology</p>
               <h3 className="text-base font-bold text-foreground mb-2">Genny-First Methodology</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Sygma-trained operatives show a 70-80% increase in Genny usage. This is not theory. It is measured through locator data downloads.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Sygma-trained operatives show a <strong>70-80% increase in Genny usage</strong> on real utility detection work. This is not theory -- it is <strong>measured through locator data downloads</strong> after the EUSR CAT 1 course.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Expertise</p>
               <h3 className="text-base font-bold text-foreground mb-2">Specialist Trainers</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Every trainer is directly employed by Sygma. All are ex-utility surveyors or ex-equipment manufacturer specialists. All TAQA qualified.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Every trainer is <strong>directly employed by Sygma</strong>. All are <strong>ex-utility surveyors or ex-equipment manufacturer specialists</strong>, fully <strong>TAQA qualified</strong> to deliver the EUSR Category 1 standard.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Real-World Assessment</p>
               <h3 className="text-base font-bold text-foreground mb-2">Real Practical Assessment</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Structured on-site practical using real equipment in real conditions. Not a tick-box exercise. The goal is a competent operative, not just a certificate.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed"><strong>Structured on-site practical</strong> using real equipment in real ground conditions. Not a tick-box exercise. The goal is a <strong>competent operative on safe digging and utility detection</strong>, not just a certificate.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">No Bias</p>
               <h3 className="text-base font-bold text-foreground mb-2">Independent</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Sygma has no surveys to sell, no equipment to push, no commercial relationship with any manufacturer. When we tell you something is wrong, we have no financial reason to soften that verdict.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Sygma has <strong>no surveys to sell, no equipment to push</strong>, no commercial relationship with any manufacturer. When we tell course attendees a technique is wrong, we have no financial reason to soften that verdict.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Convenience</p>
               <h3 className="text-base font-bold text-foreground mb-2">We Come to You</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Delivered at your site using your own plant, procedures and environment. Travel included in course rate. No hidden extras.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Delivered at your site using your own plant, procedures, and environment. <strong>Travel included in the course rate</strong>. No hidden extras. Choose a date that suits your team.</p>
             </div>
           </div>
         </div>
@@ -606,33 +606,87 @@ export default function EusCat1() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Trained Personnel</p>
               <h3 className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">HSG47 requires all personnel involved in excavation near underground services to be trained. EUSR CAT 1 directly meets this requirement.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed"><strong>HSG47 requires all personnel involved in excavation near underground services to be trained and competent.</strong> The EUSR CAT 1 Locate Utility Services qualification directly meets this requirement.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Safe System</p>
               <h3 className="text-base font-bold text-foreground mb-2">Safe System of Work</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">The course covers establishing and following safe digging procedures aligned with HSG47 guidance.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">The course covers establishing and following <strong>safe digging procedures and excavating practices</strong> aligned with HSG47 guidance and HSE best practice.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Planning</p>
               <h3 className="text-base font-bold text-foreground mb-2">Service Plan Checks</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Delegates learn to interpret utility records and service plans before breaking ground, as HSG47 requires.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Delegates learn to <strong>interpret utility drawings, service plans, and STATS records</strong> before breaking ground, as HSG47 requires for safe excavation.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Equipment Use</p>
               <h3 className="text-base font-bold text-foreground mb-2">Correct Use of Equipment</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Full practical training on Genny & CAT equipment covering Power, Radio, Genny and all signal application modes.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Full practical training on <strong>Cat and Genny equipment</strong> covering Power, Radio, Genny, and all <strong>utility detection signal application modes</strong>.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Visual Detection</p>
               <h3 className="text-base font-bold text-foreground mb-2">Visual Inspection</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Techniques for visual identification of surface markers, valve covers, and other indicators of buried services.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Techniques for <strong>visual identification of surface markers, valve covers, and indicators of buried services</strong> -- the first step in safe utility detection before locator work begins.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Documentation</p>
               <h3 className="text-base font-bold text-foreground mb-2">Evidenced Training Records</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">EUSR CAT 1 certification provides auditable proof of competency for HSG47 compliance documentation.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">The <strong>EUSR-registered Category 1 certification</strong> provides auditable proof of competency for HSG47 compliance documentation and procurement frameworks.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Schedule, Pricing & Booking -- responds to high-position GSC queries: 'cat 1 course' (pos 2), 'cat 1 certification' (pos 2), 'cat 1 certificate' (pos 8) */}
+      <section className="bg-muted/20 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Schedule, Pricing & Booking</p>
+          <h2 className="text-2xl font-black mb-4 text-foreground">EUSR CAT 1 Course Schedule and Pricing</h2>
+          <p className="text-muted-foreground mb-6 leading-relaxed">
+            The <strong>EUSR Category 1 Locate Utility Services</strong> course runs <strong>year-round</strong> at our Wigan HQ, at The Survey School in Worcester, and on client sites anywhere in the UK. Choose any available <strong>date</strong> that suits your team -- typical lead time is 1-3 weeks.
+          </p>
+          <div className="grid md:grid-cols-3 gap-5 mb-6">
+            <div className="bg-background border border-border rounded-lg p-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Open Course</p>
+              <p className="text-sm text-muted-foreground"><strong>Per-delegate booking</strong> at Wigan HQ or The Survey School. Best for teams of 1-2. Course attendees from multiple companies share the day.</p>
+            </div>
+            <div className="bg-background border border-border rounded-lg p-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">On-Site (Closed)</p>
+              <p className="text-sm text-muted-foreground"><strong>Site delivery, your team only.</strong> Up to 8 course attendees per session. Travel included in the day rate. Suitable for groundworkers, civil engineers, supervisors, and operatives.</p>
+            </div>
+            <div className="bg-background border border-border rounded-lg p-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined Day</p>
+              <p className="text-sm text-muted-foreground"><strong>EUSR CAT 1 + CAT 2 in one site visit.</strong> Two qualifications, two certificates issued on the day. Best value for teams needing both Locate Utility Services and Safe Excavating Practices.</p>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            <strong>Pricing</strong> is tailored to course size, location, and equipment requirements. <strong>CITB Employer Network funding</strong> may cover part of the course fee for eligible employers -- ask your CITB adviser. <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Request a quote with your preferred date and delegate count.</Link>
+          </p>
+        </div>
+      </section>
+
+      {/* Training in Action -- photo gallery (Surfer image-count target 28-46) */}
+      <section className="container mx-auto px-6 md:px-8 py-10 max-w-5xl">
+        <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Training in Action</p>
+        <h2 className="text-2xl font-black mb-6 text-foreground">EUSR CAT 1 Locate Utility Services -- Site Photos</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-13" width={1200} height={900} alt="EUSR CAT 1 trainee scanning utility services with cable locator" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-22" width={1200} height={900} alt="Cat and Genny practical training -- depth estimation and signal interpretation" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-33" width={1200} height={900} alt="EUSR Category 1 Locate Utility Services on-site assessment" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-44" width={1200} height={900} alt="Safe digging and excavation practices -- HSG47 compliance training" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-67" width={1200} height={900} alt="EUSR CAT 1 trainer leading on-site utility detection demonstration" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+          </div>
+          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <Image src="cat-88" width={1200} height={900} alt="EUSR Category 1 course attendees with Cat and Genny equipment" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
