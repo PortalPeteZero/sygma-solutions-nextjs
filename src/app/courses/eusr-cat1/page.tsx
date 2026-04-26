@@ -7,7 +7,7 @@ import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 const faqs = [
   {
     q: "What is EUSR CAT 1 training?",
-    a: "EUSR CAT 1 is a one-day utility avoidance training course that leads to an EUSR-registered Category 1 qualification. It covers electromagnetic theory, correct use of Genny & CAT equipment in all four modes, utility service plan reading, and a practical on-site assessment. It is one of the most widely recognised utility avoidance qualifications in the UK utility sector.",
+    a: "EUSR CAT 1 is a one-day utility detection training course that leads to an EUSR-registered Category 1 Locate Utility Services qualification. It covers electromagnetic theory, correct use of Cat and Genny equipment in all four locator modes, utility service plan and drawings reading, safe digging practices aligned to HSG47, and a practical on-site assessment in real ground conditions. It is one of the most widely recognised utility detection qualifications in the UK gas, water, electricity, and telecoms sectors.",
   },
   {
     q: "Is EUSR CAT 1 the same as EUS CAT 1?",
@@ -80,6 +80,13 @@ export default function EusCat1() {
         ]}
       />
 
+      {/* Definitional opener -- AI Overview eligible */}
+      <section className="container mx-auto px-6 md:px-8 pt-10 pb-2 max-w-4xl">
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          <strong>EUSR CAT 1 training</strong> -- formally known as the <strong>EUSR Category 1 Locate Utility Services</strong> qualification -- is a one-day course covering the safe location of underground utilities before excavation. Delegates learn to interpret utility drawings, detect buried services using a Cat and Genny, and follow safe digging practices aligned to HSE guidance and HSG47. On successful completion course attendees receive an EUSR-registered card valid for three years, recognised across UK gas, water, electricity, and telecoms contractors.
+        </p>
+      </section>
+
       {/* Key USP stats */}
       <section className="bg-foreground py-6">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
@@ -112,19 +119,19 @@ export default function EusCat1() {
             {[
               {
                 title: "Site Operatives",
-                desc: "Anyone who breaks ground or works near underground services.",
+                desc: "Operatives who break ground or work near underground utilities and buried services.",
               },
               {
                 title: "Groundworkers and Labourers",
-                desc: "Digging, excavating or working in the vicinity of buried utilities.",
+                desc: "Civil engineers, groundworkers, and labourers carrying out safe digging and excavation near utilities.",
               },
               {
                 title: "Supervisors and Managers",
-                desc: "Responsible for teams who carry out excavation or survey work.",
+                desc: "Supervisors responsible for course attendees and teams carrying out utility detection and excavation work.",
               },
               {
                 title: "New Entrants to Utilities",
-                desc: "Starting a career in utility avoidance, streetworks or civil engineering.",
+                desc: "Civil engineers and operatives starting a career in utility avoidance, streetworks, or buried services detection.",
               },
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
@@ -166,9 +173,9 @@ export default function EusCat1() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">EUSR CAT 1 Training: The EUSR-Registered Standard for Utility Avoidance</h2>
         <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">EUSR CAT 1 training (also known as EUSR CAT 1 or EUSR Category 1 training) is issued against EUSR-registered standards and is the utility sector's most widely recognised certificate of competence for operatives using Genny & CAT equipment. The qualification is required or preferred on the frameworks of many of the UK's largest utility contractors and network operators. All EUSR CAT 1 courses from Sygma meet the requirements of HSG47, the Health and Safety Executive's guidance on avoiding danger from underground services.</p>
-          <p className="text-muted-foreground leading-relaxed">Sygma's EUSR CAT 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every Sygma programme. The EUSR registration adds the sector recognition that many procurement and H&S frameworks require. The difference between this and the Sygma in-house certificate is not the training content. It is the awarding body.</p>
-          <p className="text-muted-foreground leading-relaxed">Not all EUSR CAT 1 providers deliver the same standard of training. The EUSR specification sets a minimum, and some providers deliver to that minimum. Sygma includes clamp, capacitance, and blind induction in assessed practicals even where EUSR does not require it. The result is an operative who can locate in real conditions, not just pass a multiple choice paper. Sygma-trained operatives consistently show a 70-80% increase in Genny usage post-course, measured through locator data downloads.</p>
+          <p className="text-muted-foreground leading-relaxed"><strong>EUSR CAT 1 training</strong> -- also written as <strong>EUSR Category 1</strong>, Cat 1, or the formal <strong>EUSR Category 1 Locate Utility Services</strong> qualification -- is issued against EUSR-registered standards and is the utility sector's most widely recognised certificate of competence for locating buried services with Cat and Genny equipment. The qualification is required or preferred on the frameworks of many of the UK's largest utility contractors and network operators handling gas, water, electricity, and telecoms infrastructure. All Sygma EUSR Category 1 courses meet the requirements of HSG47, the Health and Safety Executive's guidance for safe excavation near underground services.</p>
+          <p className="text-muted-foreground leading-relaxed">Sygma's EUSR Category 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every Sygma programme. The EUSR registration adds the sector recognition that procurement and H&S frameworks require for utility detection competency. The difference between this and the Sygma in-house certificate is not the training content -- it is the awarding body and the registered standard against which course attendees are individually assessed.</p>
+          <p className="text-muted-foreground leading-relaxed">Not all EUSR CAT 1 providers deliver the same standard of training. The EUSR specification sets a minimum, and some providers deliver to that minimum. Sygma includes clamp, capacitance, and blind induction in assessed practicals even where EUSR does not require it -- because real-world utility detection demands every technique, not just the basics. The result is an operative who can locate underground services in genuine site conditions, not just pass a multiple choice paper. Sygma-trained operatives consistently show a 70-80% increase in Genny usage post-course, measured through locator data downloads.</p>
         </div>
         <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="text-foreground font-semibold mb-2">Not sure whether you need EUSR CAT 1 or the Sygma in-house certificate?</p>
@@ -177,6 +184,21 @@ export default function EusCat1() {
             Compare all cable avoidance qualification routes &rsaquo;
           </Link>
         </div>
+      </section>
+
+      {/* EUSR Category 1 -- Locate Utility Services curriculum */}
+      <section className="container mx-auto px-6 md:px-8 pt-2 pb-10 max-w-4xl">
+        <h3 className="text-xl md:text-2xl font-black mb-4 text-foreground">EUSR Category 1: Locate Utility Services Curriculum</h3>
+        <p className="text-muted-foreground leading-relaxed mb-5">
+          The EUSR Category 1 Locate Utility Services qualification is built on the National Occupational Standards for utility detection. The curriculum covers the underpinning knowledge and practical skills required to locate buried services safely before excavation. <strong>Sygma's course delivers the full standard, not the minimum.</strong>
+        </p>
+        <ul className="space-y-3 text-muted-foreground text-sm">
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Utility drawings and service plans</strong> -- reading and interpreting STATS records, reconciling drawings with on-site reality, identifying limitations of recorded utilities data.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Cable avoidance equipment</strong> -- correct selection, pre-use checks, and operation of the Cat and Genny across power, radio, signal, and avoidance modes for accurate utility detection.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Detection and depth estimation</strong> -- locating utilities, signal interpretation, depth readings, and identifying problem services such as small communications cables and street-lighting circuits.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Safe digging and excavating practices</strong> -- following HSE guidelines and HSG47 best practice, applying safe systems of work, and integrating locate-detect-dig procedures into excavation.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Practical assessment</strong> -- on-site assessment in real ground conditions, individually assessed across all four locator modes, including blind induction and capacitance testing on buried services.</span></li>
+        </ul>
       </section>
 
       {/* 3-photo strip */}
@@ -593,8 +615,8 @@ export default function EusCat1() {
       {/* CTA */}
       <section className="bg-primary/5 border-y border-border py-14">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-black mb-4 text-foreground">Book Your EUSR CAT 1 Training</h2>
-          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book at our Wigan HQ, The Survey School in Worcester, or on your site anywhere in the UK. Travel included. Maximum 8 delegates. Contact us for a tailored quote.</p>
+          <h2 className="text-2xl font-black mb-4 text-foreground">Book Your EUSR CAT 1 Course</h2>
+          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book your <strong>EUSR Category 1 Locate Utility Services training course</strong> at our Wigan HQ, The Survey School in Worcester, or on your site anywhere in the UK. Choose your preferred date, travel is included, maximum 8 course attendees per session. Contact us for a tailored quote.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/contact#enquiry-form" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
               Book Now
