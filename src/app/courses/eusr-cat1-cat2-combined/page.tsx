@@ -218,13 +218,7 @@ export default function EusCat12Combined() {
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUSR Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Most organisations that send operatives for <strong>EUSR Category 1</strong> training will eventually need <strong>EUSR Category 2</strong> as well. Category 1 (formally <strong>Locate Utility Services</strong>) covers the detection side: electromagnetic theory, equipment operation, Genny application, utility drawings interpretation, and the safe system of work. Category 2 (formally <strong>Implement Safe (Digging) Excavating Practices</strong>) adds the excavation element: the safe dig area, the permit to dig, hand tools and handheld power tools, the correct handling of exposed services, and the documented assessment that proves your delegates can work safely in proximity to live buried utility services.
-              </p>
-              <p>
-                Running them separately means two days of mobilisation, two sets of site preparation, and two invoices. The combined programme delivers both <strong>EUSR-registered qualifications</strong> in a single two-day block, reducing disruption to your operations and keeping your team off the road for the minimum time necessary. The programme delivers approximately 13-14 <strong>guided learning hours</strong> -- 6-7 in classroom theory, 6-7 in on-site practical -- and culminates in an EUSR-published National Occupational Standards assessment for both categories.
-              </p>
-              <p>
-                Sygma trainers are specialists in the science of electromagnetic location. Day one builds the understanding -- legislation, HSG47 guidance, equipment science, drawings interpretation, excavation hazards. Day two tests whether delegates can apply it under real site conditions: full <Link href="/courses/cat-and-genny-training" className="underline text-primary">CAT and Genny</Link> location, signal generator deployment, and a live safe-dig assessment with hand tools and handheld power tools. By the end of the programme, your team holds both EUSR-registered Category 1 and Category 2 qualifications and has experienced a full locate-to-safe-dig sequence on a real site.
+                Most organisations that send operatives for <strong>EUSR Category 1</strong> training eventually need <strong>EUSR Category 2</strong>. Running them separately means two mobilisations and two invoices; the combined programme delivers both <strong>EUSR-registered qualifications</strong> in a single two-day block, approximately <strong>13-14 guided learning hours</strong>, with full <Link href="/courses/cat-and-genny-training" className="underline text-primary">CAT and Genny</Link> theory on day one and a live safe-dig assessment on day two. By close of programme your team holds both qualifications and has experienced the full locate-to-safe-dig sequence on a real site, applying HSG47 guidance throughout.
               </p>
             </div>
           </div>
@@ -392,39 +386,14 @@ export default function EusCat12Combined() {
         </div>
       </div>
 
-      {/* Schedule, Pricing & Booking */}
-      <section className="bg-muted/30 py-14">
-        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Schedule, Pricing &amp; Booking</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">EUSR CAT 1 and 2 Combined Course Cost, Dates and Booking Process</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-bold text-foreground mb-3">How Sygma Quotes EUSR CAT 1 and 2 Combined Training</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
-                All Sygma EUSR Category 1 and Category 2 combined training delegate fees are quoted <strong>exclusive of VAT</strong> (UK standard rate of 20%). The combined course cost is determined by:
-              </p>
-              <ul className="space-y-2 text-muted-foreground text-sm">
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Delegate numbers</strong>: from 1 (open public course) up to a hard maximum of 8 delegates per in-house course. Group rates apply from 4 delegates -- final per-delegate cost ex VAT improves with higher numbers.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Delivery format</strong>: open public course at Sygma Wigan vs in-house at your site. The Wigan venue carries no additional venue cost; in-house pricing is fully inclusive of trainer travel and overnight accommodation within mainland UK -- ex VAT, all-inclusive, no add-ons later.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Equipment requirements</strong>: Sygma provides Radiodetection CAT4 and Genny4 by default. Alternative equipment configurations (Vivax-Metrotech vLoc, Leica DSX, RD8200, RD8100) may affect quote depending on supply route.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Site readiness for the CAT 2 dig area</strong>: minimum 10m² live dig area with detectable buried utility services, full STATS plans, FR PPE, insulated digging tools required. If your site cannot host, delegates can attend at Sygma Wigan or a regional venue at no extra cost ex VAT.</span></li>
-              </ul>
-              <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
-                Final cost includes <strong>EUSR registration, written assessment, practical assessment, certificate, and EUSR card</strong> for both Category 1 and Category 2 -- ex VAT. <Link href="/contact#enquiry-form" className="underline text-primary">Contact Sygma</Link> with delegate count, location, and target dates for a bespoke quote, typically returned within one working day.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-3">Course Schedule, Lead Time and Card Delivery</h3>
-              <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed">
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Open public courses</strong>: scheduled monthly at Sygma's Wigan training centre and rotating regional venues. Contact for upcoming dates.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>In-house at your site</strong>: typically <strong>3-4 weeks lead time</strong> from confirmed booking, depending on trainer availability and your site readiness for the CAT 2 dig area assessment.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>EUSR card delivery</strong>: certificates and EUSR cards are issued within <strong>5-10 working days</strong> post-completion. Cards last 5 years before re-registration is required to maintain currency.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Course materials and assessment paperwork</strong>: all hand tools and handheld power tools for the safe dig assessment, locator and signal generator (or your own equipment), and CAT 2 area assessment paperwork are included as standard.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>CITB funding</strong>: Sygma is a CITB Approved Training Organisation. CITB-registered employers may access training funding -- contact your CITB adviser for current eligibility and details.</span></li>
-                <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Cancellation policy</strong>: bespoke per booking and confirmed in writing at quote stage; standard terms reflect 14 working days notice for full refund ex VAT.</span></li>
-              </ul>
-            </div>
-          </div>
+      {/* Pricing & Booking -- compact summary */}
+      <section className="bg-muted/30 py-10">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Pricing &amp; Booking</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">EUSR CAT 1 and 2 Combined Course Cost</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            All Sygma EUSR Category 1 and Category 2 combined training delegate fees are quoted <strong>exclusive of VAT</strong> (UK standard rate). Final cost depends on delegate numbers (max 8), delivery format (open course at Sygma Wigan or in-house at your site), site location, and equipment requirements. In-house pricing is <strong>fully inclusive of trainer travel and overnight accommodation</strong> within mainland UK, ex VAT, all-inclusive. Cost includes EUSR registration, written and practical assessment, certificate, and EUSR card for both Category 1 and Category 2 -- ex VAT. <strong>Card validity: 5 years.</strong> <strong>Lead time: typically 3-4 weeks</strong> from confirmed booking. <Link href="/contact#enquiry-form" className="underline text-primary">Contact Sygma</Link> with delegate count, location, and target dates for a bespoke quote, typically returned within one working day. CITB funding may be available for registered employers.
+          </p>
         </div>
       </section>
 
@@ -522,28 +491,20 @@ export default function EusCat12Combined() {
           <div className="grid md:grid-cols-2 gap-5">
             {[
               {
-                title: "Not All CAT 1 Courses Are Created Equal",
-                desc: <>Many <strong>EUSR Category 1</strong> courses meet the minimum specification. Ours exceed it. We invest in the <strong>science of electromagnetic location</strong> and in your operatives' depth of understanding.</>,
-              },
-              {
-                title: "Genny & CAT Methodology",
-                desc: <>Our integrated approach delivers a <strong>70-80% increase in operative confidence</strong> when working with difficult services and non-standard site conditions.</>,
-              },
-              {
                 title: "Specialist Trainers",
                 desc: <>Directly employed by Sygma. <strong>Ex-surveyors with real-world field experience</strong>. All TAQA qualified and current with industry standards.</>,
               },
               {
                 title: "Real Practical Assessment",
-                desc: <>On-site <strong>EUSR Category 2 practical safe dig assessment</strong> under real conditions. Not artificial scenarios in a training centre. Your delegates are assessed where they will actually work.</>,
+                desc: <>On-site <strong>EUSR Category 2 practical safe dig assessment</strong> under real conditions. Not artificial scenarios in a training centre.</>,
               },
               {
                 title: "Independent",
-                desc: <>No survey partnerships, no equipment sales, no commercial influence. We train your team to <strong>locate utility services and implement safe excavating practices</strong> safely and competently.</>,
+                desc: <>No survey partnerships, no equipment sales, no commercial influence. We train your team to <strong>locate utility services and implement safe excavating practices</strong> safely.</>,
               },
               {
                 title: "We Come to You",
-                desc: <>In-house delivery <strong>nationwide UK with travel fully included, ex VAT</strong>. Minimal disruption to your operations and your team stays home.</>,
+                desc: <>In-house delivery <strong>nationwide UK with travel fully included, ex VAT</strong>. Minimal disruption to your operations.</>,
               },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-background p-5">
@@ -572,20 +533,12 @@ export default function EusCat12Combined() {
                 desc: <>Permits to dig, risk assessments, <strong>site inspection protocols</strong>, and documented procedures.</>,
               },
               {
-                title: "Service Plan Checks",
-                desc: <><strong>STATS plan interpretation</strong>, limitations, quality levels, visual verification, and drawing interrogation.</>,
-              },
-              {
                 title: "Correct Use of Equipment",
-                desc: <>Locator and signal generator operation, signal interpretation, <strong>depth estimation</strong>, and troubleshooting.</>,
+                desc: <>Locator and signal generator operation, <strong>STATS plan interpretation</strong>, depth estimation, and troubleshooting.</>,
               },
               {
-                title: "Safe Excavation",
-                desc: <><strong>Practical safe dig assessment</strong> with exposure of live services, correct tool use, and reinstatement.</>,
-              },
-              {
-                title: "Evidenced Records",
-                desc: <>Written assessment, practical observation, and <strong>CAT Manager data logging</strong> for your records.</>,
+                title: "Safe Excavation & Records",
+                desc: <><strong>Practical safe dig assessment</strong> with exposure of live services, correct tool use, reinstatement, written assessment, and <strong>CAT Manager data logging</strong>.</>,
               },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-muted/40 p-5">
