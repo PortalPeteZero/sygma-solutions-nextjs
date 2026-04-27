@@ -513,30 +513,6 @@ export default function EusCat12Combined() {
         <Image src="cat-92" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
-      {/* Additional image strip -- EUSR Category 1 + Category 2 combined practical */}
-      <div className="container mx-auto px-6 md:px-8 py-6 max-w-5xl">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-08" width={1200} height={900} alt="EUSR Category 1 Locate Utility Services -- Cat and Genny field training delegate practical" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-12" width={1200} height={900} alt="EUSR Category 2 Implement Safe Excavating Practices -- live dig area assessment with hand tools" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-26" width={1200} height={900} alt="Sygma trainer delivering EUSR CAT 1 and CAT 2 combined programme on customer site, nationwide UK" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-37" width={1200} height={900} alt="EUSR CAT 1 written assessment classroom -- combined programme day one theory foundation" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-42" width={1200} height={900} alt="EUSR Category 2 safe dig practical -- exposing buried utility services with handheld power tools" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-            <Image src="cat-70" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training day -- two qualifications, one site visit" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
-          </div>
-        </div>
-      </div>
-
       {/* Why Sygma */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 max-w-5xl">
