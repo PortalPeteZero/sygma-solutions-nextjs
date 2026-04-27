@@ -100,8 +100,8 @@ export default function EusCat12Combined() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 and CAT 2 Combined Training" }]) }} />
 <InnerPageHero
-        eyebrow="EUSR Category 1 and Category 2 Combined Training"
-        headline="EUSR Category 1 and Category 2 Combined Training -- Locate Utility Services and Implement Safe Excavating Practices (HSG47)"
+        eyebrow="EUSR CAT 1 + CAT 2 Combined Training"
+        headline="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe Excavating Practices (HSG47)"
         sub="Two days. Two EUSR-registered qualifications -- EUSR Category 1 (Locate Utility Services) and EUSR Category 2 (Implement Safe Excavating Practices). Full theory, Genny-First practical, live safe dig assessment, HSG47-aligned, delivered nationwide UK at your site or at Sygma's Wigan training centre."
         image="cat-01-eus-cat1-cat2-combined"
         alt="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe Excavating Practices (HSG47), Sygma Solutions"
@@ -214,8 +214,8 @@ export default function EusCat12Combined() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine EUSR Category 1 and Category 2?</p>
-            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">EUSR Category 1 and Category 2: The Efficient Route to Full EUSR Recognition</h2>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Why Combine CAT 1 and CAT 2?</p>
+            <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Efficient Route to Full EUSR Recognition</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Most organisations that send operatives for <strong>EUSR Category 1</strong> training will eventually need <strong>EUSR Category 2</strong> as well. Category 1 (formally <strong>Locate Utility Services</strong>) covers the detection side: electromagnetic theory, equipment operation, Genny application, utility drawings interpretation, and the safe system of work. Category 2 (formally <strong>Implement Safe Excavating Practices</strong>) adds the excavation element: the safe dig area, the permit to dig, hand tools and handheld power tools, the correct handling of exposed services, and the documented assessment that proves your delegates can work safely in proximity to live buried utility services.
