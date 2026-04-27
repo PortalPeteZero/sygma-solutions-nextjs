@@ -117,19 +117,19 @@ export default function EusCat12Combined() {
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">21 Years</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">One Specialism</p>
+              <p className="text-3xl font-black text-accent mb-1"><strong>21 Years</strong></p>
+              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1"><strong>One Specialism</strong></p>
               <p className="text-xs text-white/60">Underground utility location training is all we do.</p>
             </div>
             <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">70-80%</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Increase in Genny Usage</p>
-              <p className="text-xs text-white/60">Measured through locator data downloads after Sygma training.</p>
+              <p className="text-3xl font-black text-accent mb-1"><strong>70-80%</strong></p>
+              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1"><strong>Increase in Genny Usage</strong></p>
+              <p className="text-xs text-white/60">Measured through <strong>locator data downloads</strong> after Sygma training.</p>
             </div>
             <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">Proven</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Strike Reduction Record</p>
-              <p className="text-xs text-white/60">Clients report measurable reductions in service strikes.</p>
+              <p className="text-3xl font-black text-accent mb-1"><strong>Proven</strong></p>
+              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1"><strong>Strike Reduction Record</strong></p>
+              <p className="text-xs text-white/60">Clients report measurable reductions in <strong>service strikes</strong>.</p>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function EusCat12Combined() {
               }
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
-                <h3 className="font-bold text-foreground mb-2">{p.title}</h3>
+                <h3 className="font-bold text-foreground mb-2"><strong>{p.title}</strong></h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -547,31 +547,31 @@ export default function EusCat12Combined() {
             {[
               {
                 title: "Not All CAT 1 Courses Are Created Equal",
-                desc: "Many CAT 1 courses meet the minimum specification. Ours exceed it. We invest in the science and in your operatives' depth of understanding.",
+                desc: <>Many <strong>EUSR Category 1</strong> courses meet the minimum specification. Ours exceed it. We invest in the <strong>science of electromagnetic location</strong> and in your operatives' depth of understanding.</>,
               },
               {
                 title: "Genny & CAT Methodology",
-                desc: "Our integrated approach delivers 70-80% increase in operative confidence when working with difficult services and non-standard site conditions.",
+                desc: <>Our integrated approach delivers a <strong>70-80% increase in operative confidence</strong> when working with difficult services and non-standard site conditions.</>,
               },
               {
                 title: "Specialist Trainers",
-                desc: "Directly employed by Sygma. Ex-surveyors with real-world field experience. All TAQA qualified and current with industry standards.",
+                desc: <>Directly employed by Sygma. <strong>Ex-surveyors with real-world field experience</strong>. All TAQA qualified and current with industry standards.</>,
               },
               {
                 title: "Real Practical Assessment",
-                desc: "On-site assessment under real conditions. Not artificial scenarios in a training centre. Your operatives are assessed where they will actually work.",
+                desc: <>On-site <strong>EUSR Category 2 practical safe dig assessment</strong> under real conditions. Not artificial scenarios in a training centre. Your delegates are assessed where they will actually work.</>,
               },
               {
                 title: "Independent",
-                desc: "No survey partnerships, no equipment sales, no commercial influence. We train your team to work safely and competently.",
+                desc: <>No survey partnerships, no equipment sales, no commercial influence. We train your team to <strong>locate utility services and implement safe excavating practices</strong> safely and competently.</>,
               },
               {
                 title: "We Come to You",
-                desc: "In-house delivery anywhere in the UK with travel fully included. Minimal disruption to your operations and your team stays home.",
+                desc: <>In-house delivery <strong>nationwide UK with travel fully included, ex VAT</strong>. Minimal disruption to your operations and your team stays home.</>,
               },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-background p-5">
-                <h3 className="font-bold text-foreground mb-2 text-sm">{item.title}</h3>
+                <h3 className="font-bold text-foreground mb-2 text-sm"><strong>{item.title}</strong></h3>
                 <p className="text-muted-foreground text-sm">{item.desc}</p>
               </div>
             ))}
@@ -589,31 +589,31 @@ export default function EusCat12Combined() {
             {[
               {
                 title: "Trained and Competent",
-                desc: "Full theoretical foundation and practical assessment to confirmed EUSR CAT 1 and CAT 2 standards.",
+                desc: <><strong>Full theoretical foundation</strong> and practical assessment to confirmed <strong>EUSR Category 1 and Category 2 standards</strong>.</>,
               },
               {
                 title: "Safe System of Work",
-                desc: "Permits to dig, risk assessments, site inspection protocols, and documented procedures.",
+                desc: <>Permits to dig, risk assessments, <strong>site inspection protocols</strong>, and documented procedures.</>,
               },
               {
                 title: "Service Plan Checks",
-                desc: "STATS plan interpretation, limitations, quality levels, visual verification, and drawing interrogation.",
+                desc: <><strong>STATS plan interpretation</strong>, limitations, quality levels, visual verification, and drawing interrogation.</>,
               },
               {
                 title: "Correct Use of Equipment",
-                desc: "Locator and signal generator operation, signal interpretation, depth estimation, and troubleshooting.",
+                desc: <>Locator and signal generator operation, signal interpretation, <strong>depth estimation</strong>, and troubleshooting.</>,
               },
               {
                 title: "Safe Excavation",
-                desc: "Practical safe dig assessment with exposure of live services, correct tool use, and reinstatement.",
+                desc: <><strong>Practical safe dig assessment</strong> with exposure of live services, correct tool use, and reinstatement.</>,
               },
               {
                 title: "Evidenced Records",
-                desc: "Written assessment, practical observation, and CAT Manager data logging for your records.",
+                desc: <>Written assessment, practical observation, and <strong>CAT Manager data logging</strong> for your records.</>,
               },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-muted/40 p-5">
-                <h3 className="font-bold text-foreground mb-2 text-sm">{item.title}</h3>
+                <h3 className="font-bold text-foreground mb-2 text-sm"><strong>{item.title}</strong></h3>
                 <p className="text-muted-foreground text-sm">{item.desc}</p>
               </div>
             ))}
