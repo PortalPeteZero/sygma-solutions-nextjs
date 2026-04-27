@@ -8,50 +8,74 @@ const faqs = [
               {
                 q: "Can we run CAT 1 and CAT 2 as separate courses instead?",
                 a: "Yes. Sygma offers standalone EUSR CAT 1 and EUSR CAT 2 programmes for organisations that need to train different groups or stagger their training. The combined programme is designed for teams that need both qualifications at the same time.",
+                thumb: "cat-65-eus-cat1-cat2-combined",
+                thumbAlt: "EUSR CAT 1 and CAT 2 combined training delegates working through both qualifications in one block",
               },
               {
                 q: "What happens if our site fails the minimum requirements on the day?",
                 a: "The training will not proceed unless the minimum CAT 2 site requirements are met. Sygma will assess site suitability before booking is confirmed. If your site is not suitable, we can advise on alternatives or arrange access to a different location.",
+                thumb: "cat-91-eus-cat1-cat2-combined",
+                thumbAlt: "Minimum CAT 2 safe dig site requirements -- live dig area with buried utility services for EUSR Category 2 assessment",
               },
               {
                 q: "Do delegates need any prior experience?",
                 a: "No. The combined programme is designed to take delegates from no prior training through to EUSR CAT 1 and CAT 2 qualification in two days. The classroom content on day one provides all the foundation knowledge required for the practical work on day two.",
+                thumb: "cat-50-eus-cat1-cat2-combined",
+                thumbAlt: "EUSR CAT 1 and CAT 2 combined training -- delegates with no prior experience taken to qualification in two days",
               },
               {
                 q: "Is this the same as ProQual Level 2 utility avoidance?",
                 a: "No. EUSR CAT 1 and CAT 2 are industry-recognised qualifications administered through EUSR. ProQual Level 2 is a regulated qualification on the RQF. Both cover utility avoidance, but through different frameworks. Many organisations accept EUSR recognition; some require the RQF qualification. Sygma can advise on which is appropriate for your team.",
+                thumb: "cat-16-eus-cat1-cat2-combined",
+                thumbAlt: "EUSR Category 1 and Category 2 certification card -- EUSR-registered qualifications, distinct from ProQual Level 2",
               },
               {
                 q: "What if some delegates use equipment other than a Radiodetection locator?",
                 a: "Delegates should bring their own equipment if they use a different manufacturer's locator, at a minimum ratio of one locator per three delegates. Sygma cannot carry a full stock of every manufacturer's equipment. The training covers universal locating and signal generation principles. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.",
+                thumb: "cat-15-eus-cat1-cat2-combined",
+                thumbAlt: "Delegates using their own locator equipment alongside Radiodetection CAT4 during EUSR Category 1 practical training",
               },
               {
                 q: "Can we run this at your Wigan training centre?",
                 a: "Yes. Sygma's dedicated training centre in Wigan includes live utility demonstration rigs and a safe dig area. It can be used at no additional venue cost for organisations that cannot host the training at their own site.",
+                thumb: "cat-67-eus-cat1-cat2-combined",
+                thumbAlt: "Sygma Wigan training centre -- live utility demonstration rigs and dedicated safe dig area for EUSR Category 1 and 2 combined courses",
               },
               {
                 q: "What is the difference between EUSR Category 1 and EUSR Category 2?",
                 a: "EUSR Category 1 -- formally titled Locate Utility Services -- covers the detection side: using a CAT and Genny to locate buried utility services, interpreting utility drawings and STATS plans, and applying the correct safe system of work. EUSR Category 2 -- formally Implement Safe Excavating Practices -- covers the excavation side: permits to dig, hand tools, handheld power tools, exposing buried services safely, supporting exposed services, and reinstatement. The combined course delivers both qualifications in a single two-day block.",
+                thumb: "cat-78-eus-cat1-cat2-combined",
+                thumbAlt: "EUSR Category 1 (Locate Utility Services) and EUSR Category 2 (Implement Safe Excavating Practices) -- the two qualifications side by side",
               },
               {
                 q: "How many guided learning hours does the EUSR CAT 1 and 2 combined course include?",
                 a: "Approximately 13-14 guided learning hours across the two-day programme: 6-7 hours of classroom theory on day one (legislation, electromagnetic theory, equipment science, utility drawings, excavation hazards) and 6-7 hours of on-site practical and assessment on day two (locate, expose, support, reinstate). Both EUSR-registered qualifications are issued on successful completion of the written and practical assessments.",
+                thumb: "cat-03-eus-cat1-cat2-combined",
+                thumbAlt: "13-14 guided learning hours across two days for EUSR Category 1 and Category 2 combined training -- classroom and on-site",
               },
               {
                 q: "How much does the EUSR CAT 1 and 2 combined training cost?",
                 a: "Sygma quotes all EUSR CAT 1 and 2 combined training delegate fees exclusive of VAT (UK standard rate). Final cost depends on delegate numbers, delivery format (open course at Sygma Wigan vs in-house at your site), and equipment requirements. In-house pricing is fully inclusive of trainer travel and overnight accommodation within mainland UK -- no add-ons later. Cost includes EUSR registration, assessment, certificate, and EUSR card for both Category 1 and Category 2. Contact Sygma for a bespoke quote, typically returned within one working day.",
+                thumb: "cat-80-eus-cat1-cat2-combined",
+                thumbAlt: "EUSR CAT 1 and 2 combined training delivered nationwide UK -- bespoke quote ex VAT, all-inclusive pricing for in-house delivery",
               },
               {
                 q: "How long does the EUSR Category 1 and Category 2 card last?",
                 a: "EUSR Category 1 and Category 2 cards are valid for 5 years from the date of registration on the EUSR database. After 5 years, delegates must complete an EUSR re-registration course (typically a half-day refresher) to maintain currency. The original assessment record is retained as evidence of training completion regardless of card expiry.",
+                thumb: "cat-30",
+                thumbAlt: "EUSR card -- 5-year validity from date of registration, applies to both EUSR Category 1 and Category 2 qualifications",
               },
               {
                 q: "Can the EUSR CAT 1 and 2 training be delivered online?",
                 a: "No. The combined programme requires hands-on practical assessment on a live dig area with buried utility services, which cannot be replicated online. The classroom theory element on day one could in principle be delivered remotely, but EUSR-registered Category 2 (Implement Safe Excavating Practices) specifically requires on-site practical assessment using hand tools and handheld power tools to expose buried services. All Sygma EUSR CAT 1 and 2 combined courses are delivered face-to-face -- at your site, a regional venue, or Sygma's Wigan training centre.",
+                thumb: "cat-92",
+                thumbAlt: "EUSR CAT 1 and CAT 2 face-to-face delivery -- on-site practical safe dig assessment cannot be delivered online",
               },
               {
                 q: "Does the combined course meet HSG47 requirements for utility avoidance training?",
                 a: "Yes. The HSG47 guidance defines six competence requirements for working safely around buried services: trained and competent operatives, a safe system of work, service plan checks, correct use of equipment, safe excavation, and evidenced records. The combined EUSR CAT 1 and CAT 2 programme covers all six. Day one delivers the theory, equipment training, and drawing interpretation. Day two delivers the practical safe dig assessment with documented records. See the Sygma HSG47 explainer for a full breakdown of how each element is delivered.",
+                thumb: "cat-58",
+                thumbAlt: "HSG47 compliance -- EUSR CAT 1 and CAT 2 combined training covers all six HSG47 competence requirements for safe utility avoidance",
               },
             ];
 
@@ -489,6 +513,30 @@ export default function EusCat12Combined() {
         <Image src="cat-92" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 on-site combined training, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-contain" />
       </div>
 
+      {/* Additional image strip -- EUSR Category 1 + Category 2 combined practical */}
+      <div className="container mx-auto px-6 md:px-8 py-6 max-w-5xl">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-08" width={1200} height={900} alt="EUSR Category 1 Locate Utility Services -- Cat and Genny field training delegate practical" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-12" width={1200} height={900} alt="EUSR Category 2 Implement Safe Excavating Practices -- live dig area assessment with hand tools" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-26" width={1200} height={900} alt="Sygma trainer delivering EUSR CAT 1 and CAT 2 combined programme on customer site, nationwide UK" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-37" width={1200} height={900} alt="EUSR CAT 1 written assessment classroom -- combined programme day one theory foundation" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-42" width={1200} height={900} alt="EUSR Category 2 safe dig practical -- exposing buried utility services with handheld power tools" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
+            <Image src="cat-70" width={1200} height={900} alt="EUSR CAT 1 and CAT 2 combined training day -- two qualifications, one site visit" sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+      </div>
+
       {/* Why Sygma */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -629,10 +677,15 @@ export default function EusCat12Combined() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Common Questions</p>
           <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
           <div className="space-y-4">
-            {faqs.map(({ q, a }) => (
-              <div key={q} className="border border-border rounded-lg p-6">
-                <h3 className="font-bold text-foreground mb-3">{q}</h3>
-                <p className="text-muted-foreground leading-relaxed">{a}</p>
+            {faqs.map(({ q, a, thumb, thumbAlt }) => (
+              <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 overflow-hidden rounded-lg bg-muted aspect-square self-center">
+                  <Image src={thumb} width={192} height={192} alt={thumbAlt} sizes="(max-width: 640px) 80px, 96px" className="w-full h-full object-cover" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-foreground mb-3">{q}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{a}</p>
+                </div>
               </div>
             ))}
           </div>
