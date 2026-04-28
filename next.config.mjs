@@ -232,6 +232,8 @@ const nextConfig = {
       { source: '/why-practical-experience-matters-more-than-manuals-in-cable-avoidance-training', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/the-evolution-of-cable-avoidance-tools', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/cable-avoidance-training-advice', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/cable-avoidance-training-for-network-rail', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/cable-avoidance-training-manchester-city-centre', destination: '/locations/manchester', permanent: true },
       { source: '/common-challenges-in-cable-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/strategies-and-best-practices-for-cable-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/some-things-to-consider-when-investing-in-cable-avoidance-tools', destination: '/training/cable-location-avoidance', permanent: true },
