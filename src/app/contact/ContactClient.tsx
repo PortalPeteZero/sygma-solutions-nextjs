@@ -31,6 +31,31 @@ export default function ContactClient() {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    // Capture paid-attribution signals so the server-side GA4 MP call can
+    // credit the conversion to the actual ad click rather than landing as
+    // (not set). Three sources, in priority order:
+    //   1. gclid in the current URL (user is on the same page they landed on)
+    //   2. _gcl_aw cookie (GTM Conversion Linker writes it when consent allows;
+    //      preserves gclid across in-site navigation)
+    //   3. localStorage 'sygma_gclid' (Providers persists it on landing, works
+    //      independent of consent so non-consenting users still attribute)
+    // _ga cookie carries the GA4 client_id; needed for session stitching when
+    // consent is given. Without consent it'll be empty -- gclid alone is then
+    // sufficient for paid-attribution-without-session.
+    const urlGclid = new URLSearchParams(window.location.search).get('gclid') || '';
+    const gclAwMatch = document.cookie.match(/_gcl_aw=GCL\.[^.]+\.([^;]+)/);
+    const cookieGclid = gclAwMatch ? gclAwMatch[1] : '';
+    let storedGclid = '';
+    try {
+      storedGclid = localStorage.getItem('sygma_gclid') || '';
+    } catch {
+      // localStorage unavailable (private mode quirks) -- fall through
+    }
+    const gclid = urlGclid || cookieGclid || storedGclid;
+
+    const gaCookieMatch = document.cookie.match(/_ga=GA1\.[^.]+\.([^.]+\.[^;]+)/);
+    const gaClientId = gaCookieMatch ? gaCookieMatch[1] : '';
+
     const payload = {
       full_name: formData.get('full_name') as string,
       company_name: formData.get('company_name') as string,
@@ -39,6 +64,8 @@ export default function ContactClient() {
       enquiry_type: formData.get('enquiry_type') as string,
       how_heard: (formData.get('how_heard') as string) || undefined,
       message: (formData.get('message') as string) || '',
+      gclid: gclid || undefined,
+      ga_client_id: gaClientId || undefined,
     };
 
     try {

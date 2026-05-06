@@ -4,36 +4,60 @@ import { NextResponse } from 'next/server';
 // Fire server-side GA4 conversion events via Measurement Protocol.
 // Runs after every successful form submission regardless of browser consent state.
 // Non-blocking -- a GA4 failure never stops the form from completing.
-async function fireGA4Conversion(enquiry_type: string): Promise<void> {
+//
+// Two new pieces of context (added 2026-05-07) that make paid-click attribution
+// actually work:
+//   - clientId: the user's real GA4 client_id read from their _ga cookie when
+//     consent allows. If supplied, server-side events stitch into the same user
+//     session that started with the ad click. If absent (no consent), we fall
+//     back to a stable server identifier -- conversion still counts but
+//     session stitching is lost.
+//   - gclid: read from the page URL or the _gcl_aw cookie (written by GTM's
+//     Conversion Linker). Sent in event params so GA4 attributes the
+//     conversion to the originating Google Ads click even without session
+//     stitching. This is the bit that fixes "form_submit shows (not set)
+//     instead of google / cpc" for no-consent users.
+async function fireGA4Conversion(opts: {
+  enquiry_type: string;
+  clientId?: string;
+  gclid?: string;
+}): Promise<void> {
+  const { enquiry_type, clientId, gclid } = opts;
   const mpSecret = process.env.GA4_MP_API_SECRET;
   if (!mpSecret) return;
 
   const url = `https://www.google-analytics.com/mp/collect?measurement_id=G-QVFF0DPG6X&api_secret=${mpSecret}`;
 
+  // Use the user's real GA4 client_id when supplied (full session stitch).
+  // Fallback to a stable server identifier when consent is not given so the
+  // event still counts even though session attribution can't be reconstructed.
+  const effectiveClientId = clientId || 'server.sygma-solutions.com';
+
+  // Common params for both events. Including gclid lets GA4 attribute the
+  // conversion to the originating paid click independently of session.
+  const baseParams: Record<string, string> = {
+    enquiry_type,
+    source: 'server',
+  };
+  if (gclid) {
+    baseParams.gclid = gclid;
+  }
+
   await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      // Stable server-side client_id -- not tied to a browser session but
-      // sufficient for conversion counting in GA4.
-      client_id: 'server.sygma-solutions.com',
+      client_id: effectiveClientId,
       events: [
         {
           // GA4 recommended event for lead/enquiry conversions
           name: 'generate_lead',
-          params: {
-            enquiry_type,
-            source: 'server',
-          },
+          params: { ...baseParams },
         },
         {
           // Mirrors the client-side form_submit event name for consistency
           name: 'form_submit',
-          params: {
-            form_name: 'contact',
-            enquiry_type,
-            source: 'server',
-          },
+          params: { ...baseParams, form_name: 'contact' },
         },
       ],
     }),
@@ -88,8 +112,15 @@ export async function POST(request: Request) {
       );
     }
 
-    // Fire GA4 server-side events -- non-blocking, never fails the form
-    fireGA4Conversion(body.enquiry_type).catch((err) =>
+    // Fire GA4 server-side events -- non-blocking, never fails the form.
+    // Forward gclid + ga_client_id from the browser so paid attribution
+    // actually credits the originating ad click instead of landing as
+    // (not set) for no-consent users.
+    fireGA4Conversion({
+      enquiry_type: body.enquiry_type,
+      clientId: typeof body.ga_client_id === 'string' ? body.ga_client_id : undefined,
+      gclid: typeof body.gclid === 'string' ? body.gclid : undefined,
+    }).catch((err) =>
       console.error('GA4 MP error (non-blocking):', err),
     );
 
