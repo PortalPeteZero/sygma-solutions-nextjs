@@ -158,9 +158,10 @@ export default function CitbFundingUtilityTraining() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/accreditations" className="text-primary hover:underline">Sygma Accreditations and Approvals</Link></li>
-                <li><Link href="/courses" className="text-primary hover:underline">View All Sygma Courses</Link></li>
-                <li><Link href="/contact" className="text-primary hover:underline">Contact Sygma</Link></li>
+                <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
+                <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+                <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which One Does Your Team Need?</Link></li>
+                <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
               </ul>
             </div>
           </article>

@@ -159,8 +159,10 @@ export default function MorganSindallCaseStudy() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Severn Trent Water: 2-Day Bespoke Manager Training</Link></li>
-                <li><Link href="/bespoke-training" className="text-primary hover:underline">When Does Your Organisation Need a Bespoke Programme?</Link></li>
+                <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Severn Trent Water Case Study</Link></li>
+                <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
               </ul>
             </div>
 

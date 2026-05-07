@@ -159,9 +159,10 @@ export default function SevernTrentWaterCaseStudy() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group: Bespoke Utility Avoidance Refresher</Link></li>
-                <li><Link href="/osca" className="text-primary hover:underline">OSCA: The Case for On-Site Competency Assessment</Link></li>
-                <li><Link href="/bespoke-training" className="text-primary hover:underline">When Does Your Organisation Need a Bespoke Programme?</Link></li>
+                <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall Case Study</Link></li>
+                <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
               </ul>
             </div>
           </article>

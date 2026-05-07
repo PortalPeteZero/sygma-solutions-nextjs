@@ -198,8 +198,10 @@ export default function NporsVsEusr() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</Link></li>
                 <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
-                <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which One Does Your Operative Need?</Link></li>
+                <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
+                <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
               </ul>
             </div>
 
