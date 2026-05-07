@@ -105,8 +105,8 @@ export default function GennyCatTraining() {
         eyebrow="Utility Avoidance"
         headline="CAT and Genny Training: The Course That Changes How Your Team Works on Site"
         sub="Not just Genny & CAT equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
-        image="cat-75"
-        alt="Operative practising cable detection during a CAT and Genny training course with Sygma Solutions"
+        image="cat-11"
+        alt="Sygma Solutions operative using a Radiodetection CAT4+ cable locator on site during a CAT and Genny training course"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
           { label: "CAT and Genny Training" },
