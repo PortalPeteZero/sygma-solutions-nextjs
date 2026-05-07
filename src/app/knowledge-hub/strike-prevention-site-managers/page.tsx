@@ -205,9 +205,10 @@ export default function StrikePreventionSiteManagers() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: What the Guidance Requires</Link></li>
+                <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
                 <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">4 Behaviours That Can Cause Cable Strikes on Site</Link></li>
-                <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Why You Should Always Connect the Genny First</Link></li>
+                <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
+                <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Severn Trent Water Case Study</Link></li>
               </ul>
             </div>
 

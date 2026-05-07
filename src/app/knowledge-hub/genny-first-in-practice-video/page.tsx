@@ -128,7 +128,22 @@ export default function GennyFirstVideo() {
             <ul className="space-y-2">
               <li>
                 <Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline font-medium">
-                  Why You Should Always Connect the Genny First
+                  The Genny-First Methodology
+                </Link>
+              </li>
+              <li>
+                <Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline font-medium">
+                  EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?
+                </Link>
+              </li>
+              <li>
+                <Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline font-medium">
+                  Kier Group Case Study
+                </Link>
+              </li>
+              <li>
+                <Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline font-medium">
+                  Severn Trent Water Case Study
                 </Link>
               </li>
             </ul>
