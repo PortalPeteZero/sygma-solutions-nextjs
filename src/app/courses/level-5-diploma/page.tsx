@@ -665,9 +665,9 @@ export default function Level5Diploma() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Knowledge Hub</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
-            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
-            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">PAS 128: a practical breakdown</Link></li>
+            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">How CITB funding works for cable-avoidance courses</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group: utility-avoidance training at scale</Link></li>
             <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall Case Study</Link></li>
           </ul>
         </div>

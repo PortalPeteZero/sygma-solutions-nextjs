@@ -639,8 +639,8 @@ export default function TsaIcesUtilityMapping() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
             <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
-            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
-            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Inside Kier's site-strike-prevention programme</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group: utility-avoidance training at scale</Link></li>
           </ul>
         </div>
       </section>

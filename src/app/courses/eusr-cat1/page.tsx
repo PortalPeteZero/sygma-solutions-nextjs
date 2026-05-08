@@ -697,9 +697,9 @@ export default function EusCat1() {
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
-            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
-            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</Link></li>
-            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">Understanding HSG47 in plain English</Link></li>
+            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 or ProQual CAT1? A side-by-side comparison</Link></li>
+            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">Renewing an EUSR CAT1 card -- a step-by-step</Link></li>
           </ul>
         </div>
       </section>

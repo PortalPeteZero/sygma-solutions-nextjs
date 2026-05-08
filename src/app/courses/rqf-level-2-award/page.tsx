@@ -521,10 +521,10 @@ export default function RqfLevel2Award() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Knowledge Hub</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</Link></li>
-            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
-            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
-            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
+            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 or ProQual CAT1? A side-by-side comparison</Link></li>
+            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">PAS 128: a practical breakdown</Link></li>
+            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">How CITB funding works for cable-avoidance courses</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
           </ul>
         </div>
       </section>

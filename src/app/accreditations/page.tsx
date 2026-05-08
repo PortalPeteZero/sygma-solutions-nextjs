@@ -177,6 +177,22 @@ export default function AccreditationsPage() {
           </div>
         </div>
       </section>
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Qualification Guidance</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">Articles comparing accreditation bodies and explaining qualification choices.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 or ProQual CAT1? A side-by-side comparison</Link></li>
+            <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS or EUSR? A practical comparison</Link></li>
+            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
 
       <section className="bg-primary text-primary-foreground py-14">
         <div className="max-w-2xl mx-auto px-4 text-center">

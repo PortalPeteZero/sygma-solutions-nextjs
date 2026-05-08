@@ -643,7 +643,7 @@ export default function EusCat12UscCombined() {
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</Link></li>
-            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">EUSR card renewal: what your team needs to know</Link></li>
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
             <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
           </ul>

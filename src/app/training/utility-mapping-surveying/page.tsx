@@ -408,6 +408,22 @@ export default function UtilityMappingHub() {
           </Link>
         </div>
       </section>
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Mapping & Surveying Reading</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">Articles on PAS 128, CITB funding routes, and case-study evidence from utility-mapping clients.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">PAS 128: a practical breakdown</Link></li>
+            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">How CITB funding works for cable-avoidance courses</Link></li>
+            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Inside Kier's site-strike-prevention programme</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">How QTS Group rolled out cable-avoidance training</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
 
       {/* CTA */}
       <section className="bg-primary/5 border-y border-border py-14">

@@ -439,9 +439,9 @@ export default function ManufacturerLocatorTraining() {
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
-            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
-            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
-            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
+            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group: bespoke utility-avoidance training</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">How QTS Group rolled out cable-avoidance training</Link></li>
           </ul>
         </div>
       </section>

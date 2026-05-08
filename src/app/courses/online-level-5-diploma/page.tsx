@@ -699,8 +699,8 @@ export default function OnlineLevel5Diploma() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
             <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
-            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
-            <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall Case Study</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group: utility-avoidance training at scale</Link></li>
+            <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall: utility-avoidance training across the business</Link></li>
           </ul>
         </div>
       </section>

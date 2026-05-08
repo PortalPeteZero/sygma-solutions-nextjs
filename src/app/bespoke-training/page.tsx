@@ -166,6 +166,22 @@ export default function BespokeTrainingPage() {
           </div>
         </div>
       </section>
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Bespoke Programmes in Practice</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">How Sygma has built bespoke utility-avoidance programmes with major clients.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group: bespoke utility-avoidance training</Link></li>
+            <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Inside the Severn Trent training programme</Link></li>
+            <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">How Morgan Sindall trained their groundworkers</Link></li>
+            <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
 
       <section className="bg-primary text-primary-foreground py-14">
         <div className="max-w-2xl mx-auto px-4 text-center">

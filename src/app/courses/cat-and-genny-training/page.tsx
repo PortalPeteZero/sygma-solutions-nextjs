@@ -8,8 +8,8 @@ const faqs = [
   {
     q: "What is CAT and Genny training?",
     a: "CAT and Genny training teaches operatives to use a cable locator (CAT) and signal generator (Genny) to find underground services before excavation. The course covers electromagnetic theory, all four locating modes, signal interpretation and depth estimation, with a practical site assessment to prove the skills. Sygma teaches a Genny-First methodology: connect the signal generator before relying on passive detection. Most training courses certificate and dismiss; Sygma also trains the mindset. Successful delegates can be assessed for an EUSR CAT1 card, ProQual CAT1 certificate or Sygma in-house certification.",
-    thumb: "cat-75",
-    thumbAlt: "CAT and Genny training overview -- operative using cable locator on site",
+    thumb: "cat-89",
+    thumbAlt: "Sygma delegate operating a Radiodetection CAT4+ cable locator -- the foundational CAT and Genny training equipment",
   },
   {
     q: "How long does a CAT and Genny course take?",
@@ -26,8 +26,8 @@ const faqs = [
   {
     q: "How much does a CAT and Genny course cost?",
     a: "Available as an in-house day rate for up to 8 delegates at your site, or per person on open courses across the UK. Day rate varies by format (in-house certified, EUSR CAT1, ProQual CAT1) and one-day vs two-day. Travel is included with no hidden extras. CITB-levy employers may access training funding via the CITB Employer Network. Contact Sygma for a tailored quote.",
-    thumb: "cat-72",
-    thumbAlt: "CAT and Genny course cost -- delegates using locating equipment on site",
+    thumb: "cat-66",
+    thumbAlt: "Sygma CAT and Genny course delegates with CAT4+ locators on a UK training site",
   },
   {
     q: "Do you need to be trained to use a CAT scanner?",
@@ -68,8 +68,8 @@ const faqs = [
   {
     q: "Can we combine this course with EUSR CAT2 Safe Dig?",
     a: "Yes. Sygma offers combined formats that incorporate EUSR CAT1, CAT2 Safe Dig and the Sygma CAT and Genny course content in a single programme. Contact us to discuss combined booking options.",
-    thumb: "cat-75",
-    thumbAlt: "Combined CAT1 and CAT2 training -- CAT and Genny course with Safe Dig",
+    thumb: "cat-70",
+    thumbAlt: "EUSR CAT1 and CAT2 combined CAT and Genny training -- two operatives using a CAT4 locator alongside Safe Dig assessment markers",
   },
   {
     q: "What qualifications do Sygma trainers hold?",

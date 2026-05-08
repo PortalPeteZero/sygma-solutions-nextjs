@@ -60,6 +60,22 @@ export default function OscaPage() {
           }),
         }}
       />
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">OSCA-Adjacent Reading</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">Site-strike prevention and HSG47 guidance that complements OSCA on-site competency assessments.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">Site-manager's playbook on cable-strike prevention</Link></li>
+            <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">4 Behaviours That Cause Cable Strikes on Site</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">Understanding HSG47 in plain English</Link></li>
+            <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Why Sygma teaches Genny-first locating</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
       
       <section className="relative overflow-hidden min-h-[400px] md:min-h-[480px] bg-foreground">
         <Image src="cat-54-osca" fill className="absolute inset-0 w-full h-full object-contain" priority sizes="100vw" alt="OSCA hero" />
