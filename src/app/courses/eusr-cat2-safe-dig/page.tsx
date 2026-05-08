@@ -473,7 +473,7 @@ export default function EusCat2SafeDig() {
               Get in Touch
             </Link>
           </div>
-          <p className="mt-5 text-sm text-muted-foreground">CITB-registered employers may be able to access <Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">training funding through the CITB Employer Network</Link>. Contact your CITB adviser for current eligibility and funding options. Sygma is a CITB Approved Training Organisation.</p>
+          <p className="mt-5 text-sm text-muted-foreground">CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser for current eligibility and funding options. Sygma is a CITB Approved Training Organisation.</p>
         </div>
       </section>
 
