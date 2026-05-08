@@ -458,7 +458,7 @@ export default function EusSuperuser() {
           <div className="border border-border rounded-lg bg-card p-5">
             <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Training Support</p>
             <h3 className="text-base font-bold text-foreground mb-2">Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding for cat and genny training courses. All Sygma courses exceed 51% practical.</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">CITB-registered employers in construction may be able to access Employer Network funding towards cat and genny training course costs. Super user training is recognised as professional development for utility location and may be supported through your Employer Network.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">CITB-registered employers in construction may be able to <Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">access Employer Network funding</Link> towards cat and genny training course costs. Super user training is recognised as professional development for utility location and may be supported through your Employer Network.</p>
           </div>
         </div>
       </section>

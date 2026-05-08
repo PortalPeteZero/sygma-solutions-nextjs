@@ -421,7 +421,7 @@ export default function ProQualCat1() {
               </div>
             ))}
           </div>
-          <p className="mt-5 text-sm text-muted-foreground">Not sure whether your framework requires ProQual or EUSR? <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check for you.</p>
+          <p className="mt-5 text-sm text-muted-foreground">Not sure whether your framework requires <Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">ProQual or EUSR</Link>? <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Contact us</Link> and we will check for you.</p>
         </div>
       </section>
 

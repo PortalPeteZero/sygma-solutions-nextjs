@@ -512,7 +512,7 @@ export default function ProQualCat1Plus() {
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Funding</p>
               <h3 className="text-xl font-bold text-foreground mb-4">CITB Employer Network</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-3">Sygma is a CITB Approved Training Organisation. All Sygma courses exceed 51% practical content, meeting CITB standards for hands-on training delivery.</p>
-              <p className="text-muted-foreground text-sm leading-relaxed">Speak to your CITB Employer Network adviser about funding for the ProQual CAT1 Plus programme.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Speak to your <Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Employer Network adviser about funding</Link> for the ProQual CAT1 Plus programme.</p>
             </div>
           </div>
         </div>

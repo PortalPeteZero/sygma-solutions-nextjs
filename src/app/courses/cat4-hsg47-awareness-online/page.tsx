@@ -387,7 +387,7 @@ export default function Cat4HsgAwarenessOnline() {
           <div className="border border-border rounded-lg bg-card p-5">
             <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Training Support</p>
             <h3 className="text-base font-bold text-foreground mb-2">Sygma is a CITB ATO. Contact your CITB Employer Network adviser about funding. All Sygma courses exceed 51% practical.</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">CITB-registered employers may be able to access Employer Network funding towards training costs. For the online format, discuss with your adviser how this awareness session fits into your learning and development plan.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">CITB-registered employers may be able to <Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">access Employer Network funding</Link> towards training costs. For the online format, discuss with your adviser how this awareness session fits into your learning and development plan.</p>
           </div>
         </div>
       </section>
