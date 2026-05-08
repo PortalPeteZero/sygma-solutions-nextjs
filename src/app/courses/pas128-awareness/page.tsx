@@ -591,9 +591,9 @@ export default function Pas128Awareness() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Knowledge Hub</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
+            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">What PAS 128 means for utility surveys</Link></li>
             <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
-            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
             <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
           </ul>
         </div>

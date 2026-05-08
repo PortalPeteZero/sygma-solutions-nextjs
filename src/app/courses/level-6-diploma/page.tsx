@@ -611,10 +611,10 @@ export default function Level6Diploma() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Related Knowledge Hub</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
-            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">CITB Funding for Utility Training</Link></li>
+            <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">What PAS 128 means for utility surveys</Link></li>
+            <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">How CITB funding works for cable-avoidance courses</Link></li>
             <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
-            <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall Case Study</Link></li>
+            <li><Link href="/knowledge-hub/morgan-sindall-case-study" className="text-primary hover:underline">Morgan Sindall: utility-avoidance training across the business</Link></li>
           </ul>
         </div>
       </section>

@@ -749,8 +749,8 @@ export default function ProQualCat1() {
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 vs ProQual CAT1: Which Does Your Operative Need?</Link></li>
-            <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which Does Your Team Need?</Link></li>
-            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS or EUSR? A practical comparison</Link></li>
+            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">Renewing an EUSR CAT1 card -- a step-by-step</Link></li>
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
           </ul>
         </div>

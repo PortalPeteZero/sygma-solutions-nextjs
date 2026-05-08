@@ -471,9 +471,9 @@ export default function PlansAndProcess() {
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Further Reading</h2>
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
-            <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">Utility Strike Prevention: A Guide for Site Managers</Link></li>
+            <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">How site managers can reduce utility strikes</Link></li>
             <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">4 Behaviours That Cause Cable Strikes on Site</Link></li>
-            <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
+            <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Why Sygma teaches Genny-first locating</Link></li>
           </ul>
         </div>
       </section>

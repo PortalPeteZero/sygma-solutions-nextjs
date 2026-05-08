@@ -314,6 +314,22 @@ export default function About() {
       </section>
 
       {/* Open Day CTA */}
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Sygma's Field Knowledge</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">A sample of the technical guidance Sygma trainers publish for the industry.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
+            <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Inside Kier's site-strike-prevention programme</Link></li>
+            <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Inside the Severn Trent training programme</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl text-center">
           <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Free Monthly Open Day: Wigan HQ</h2>

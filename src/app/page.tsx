@@ -328,6 +328,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* From the Knowledge Hub */}
+      <section className="bg-muted/30 py-12 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Featured Guidance</p>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-foreground">From the Knowledge Hub</h2>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-5">Hand-picked guides on cable avoidance, EUSR qualifications, and site-strike prevention from Sygma's specialist trainers.</p>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Connecting the Genny first: the case for it</Link></li>
+            <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
+            <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">Choosing between EUSR CAT1 and ProQual CAT1</Link></li>
+            <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">Four site behaviours behind most cable strikes</Link></li>
+          </ul>
+        </div>
+      </section>
+
+
 
       {/* CTA */}
       <section className="py-20 bg-primary/5 border-y border-border">
