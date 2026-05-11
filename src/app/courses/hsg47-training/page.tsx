@@ -199,7 +199,7 @@ export default function Hsg47Training() {
                   href="/courses/cat-and-genny-training"
                   className="inline-flex items-center text-sm font-semibold text-primary hover:text-primary/80 transition-colors mt-2"
                 >
-                  View CAT and Genny Training &rarr;
+                  View CAT and Genny Course &rarr;
                 </Link>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function Hsg47Training() {
           </div>
           <div className="mt-8 bg-muted/30 rounded-xl border border-border p-5">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Not sure which course?</strong> If your operatives need to use a CAT and Genny on site, they need <Link href="/courses/cat-and-genny-training" className="text-primary hover:text-primary/80 font-semibold">CAT and Genny Training</Link>. If your team needs to understand the full safe digging procedure and permit process, they need <Link href="/courses/cable-avoidance-training" className="text-primary hover:text-primary/80 font-semibold">Cable Avoidance Training</Link>. Many clients book both to fulfil the complete HSG47 training requirement for their workforce.
+              <strong className="text-foreground">Not sure which course?</strong> If your operatives need to use a CAT and Genny on site, they need <Link href="/courses/cat-and-genny-training" className="text-primary hover:text-primary/80 font-semibold">our cable avoidance training course</Link>. If your team needs to understand the full safe digging procedure and permit process, they need <Link href="/courses/cable-avoidance-training" className="text-primary hover:text-primary/80 font-semibold">Cable Avoidance Training</Link>. Many clients book both to fulfil the complete HSG47 training requirement for their workforce.
             </p>
           </div>
         </div>

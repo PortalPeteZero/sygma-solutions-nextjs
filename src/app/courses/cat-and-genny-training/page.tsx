@@ -81,12 +81,12 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'CAT and Genny Training | EUSR CAT1 & ProQual | UK Specialists',
-  description: "CAT and Genny training from the UK's only independent specialist. EUSR CAT1, ProQual accredited. On-site, travel included. CITB approved.",
+  title: 'CAT and Genny Training Course UK | EUSR CAT1 + ProQual | Sygma',
+  description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent specialist. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cat-and-genny-training' },
   openGraph: {
-    title: 'CAT and Genny Training | EUSR CAT1 & ProQual | UK Specialists',
-    description: "CAT and Genny training from the UK's only independent specialist. EUSR CAT1, ProQual accredited. On-site, travel included. CITB approved.",
+    title: 'CAT and Genny Training Course UK | EUSR CAT1 + ProQual | Sygma',
+    description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent specialist. Book today.',
     url: 'https://sygma-solutions.com/courses/cat-and-genny-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630, alt: 'CAT and Genny training assessment on site using CAT4 cable locator and Genny4 signal generator' }],
@@ -112,6 +112,29 @@ export default function GennyCatTraining() {
           { label: "CAT and Genny Training" },
         ]}
       />
+
+      {/* Above-fold CTA + trust strip — SEO audit 2026-05-11 */}
+      <section className="bg-primary/5 border-b border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl py-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs md:text-sm font-semibold text-muted-foreground">
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>EUSR-registered</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>ProQual-accredited</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>On-site UK-wide</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>Travel included</span>
+            </div>
+            <div className="flex flex-col md:items-end gap-1.5">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">From £95 per person</p>
+              <Link
+                href="/contact#enquiry-form"
+                className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >
+                Book CAT and Genny Training →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Opening definition -- AI Overview & PAA eligibility */}
       <section className="bg-background py-8">
@@ -718,6 +741,14 @@ export default function GennyCatTraining() {
           </div>
         </div>
       </section>
+
+      {/* Sticky mobile Book button — SEO audit 2026-05-11 */}
+      <Link
+        href="/contact#enquiry-form"
+        className="fixed bottom-4 right-4 z-50 md:hidden inline-flex items-center px-4 py-3 rounded-full bg-primary text-primary-foreground font-bold text-sm shadow-lg hover:bg-primary/90 transition-colors"
+      >
+        Book this course →
+      </Link>
     </>
   );
 }

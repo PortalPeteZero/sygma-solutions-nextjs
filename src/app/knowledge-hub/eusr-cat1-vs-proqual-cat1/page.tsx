@@ -125,6 +125,17 @@ export default function EusCat1VsProQualCat1() {
             Sygma delivers both. The quality of the training is the same regardless of which qualification route you choose. Our courses run from 8:30am to 4:00pm with a maximum of 8 delegates, all using Radiodetection CAT4 and Genny4 equipment. The course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX. The difference is in the assessment criteria and the awarding body, not in what your operatives learn on the day.
           </p>
 
+          {/* In-content CTA — SEO audit 2026-05-11 (route comparison-intent traffic to the course page) */}
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8 text-center">
+            <p className="text-sm text-muted-foreground mb-3">Decided EUSR CAT 1 is the right fit for your team?</p>
+            <Link
+              href="/courses/eusr-cat1"
+              className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors"
+            >
+              Book EUSR CAT 1 Training →
+            </Link>
+          </div>
+
           <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
             <div className="overflow-hidden aspect-[4/3] bg-muted">
               <Image src="cat-86-eus-cat1-vs-proqual-cat1" width={1200} height={900} alt="Team training on CAT and Genny equipment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
