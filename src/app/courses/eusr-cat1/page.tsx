@@ -68,12 +68,12 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT 1 / Category 1 Locate Utility Services Training | Cat & Genny',
-  description: 'EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.',
+  title: 'EUSR CAT 1 Training UK | Locate Utility Services Course | Sygma',
+  description: 'EUSR CAT 1 training. The EUSR Locate Utility Services qualification for cable avoidance under HSG47. EUSR-registered provider, on-site UK-wide. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1' },
   openGraph: {
-    title: 'EUSR CAT 1 / Category 1 Locate Utility Services Training | Cat & Genny',
-    description: 'EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.',
+    title: 'EUSR CAT 1 Training UK | Locate Utility Services Course | Sygma',
+    description: 'EUSR CAT 1 training. The EUSR Locate Utility Services qualification for cable avoidance under HSG47. EUSR-registered provider, on-site UK-wide. Book today.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-75-eus-cat1', width: 1200, height: 630, alt: 'EUSR CAT 1 / EUSR Category 1 Locate Utility Services Training -- Sygma Solutions' }],
@@ -99,6 +99,26 @@ export default function EusCat1() {
           { label: "EUSR CAT 1 Training" },
         ]}
       />
+
+      {/* Above-fold CTA + trust strip — SEO audit 2026-05-11 */}
+      <section className="bg-primary/5 border-b border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl py-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs md:text-sm font-semibold text-muted-foreground">
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>EUSR-registered</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>HSG47 compliant</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>On-site UK-wide</span>
+              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>Travel included</span>
+            </div>
+            <Link
+              href="/contact#enquiry-form"
+              className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
+            >
+              Book EUSR CAT 1 Training →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Definitional opener -- AI Overview eligible */}
       <section className="container mx-auto px-6 md:px-8 pt-10 pb-2 max-w-4xl">
@@ -665,6 +685,31 @@ export default function EusCat1() {
         </div>
       </section>
 
+      {/* Combined-course routing block — SEO audit 2026-05-11 (cluster disambiguation) */}
+      <section className="bg-accent/5 border-y border-accent/20 py-10">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined courses</p>
+          <h2 className="text-xl md:text-2xl font-black mb-3 text-foreground">Need EUSR CAT 1 + CAT 2 in one block?</h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            Many delegates take CAT 1 (Locate Utility Services) and CAT 2 (Safe Excavating Practices) together in a single site visit. Sygma offers two combined formats covering both qualifications on the day. Pick the format that fits your team.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/courses/eusr-cat1-cat2-combined" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">CAT 1 + CAT 2 combined</p>
+              <p className="font-bold text-foreground mb-1">EUSR CAT 1 + CAT 2 in a single day</p>
+              <p className="text-sm text-muted-foreground">Two qualifications, two certificates issued on the day. The most-booked combined format.</p>
+              <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
+            </Link>
+            <Link href="/courses/eusr-cat1-cat2-usc-combined" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">CAT 1 + CAT 2 + USC</p>
+              <p className="font-bold text-foreground mb-1">Three qualifications combined</p>
+              <p className="text-sm text-muted-foreground">Adds the Utility SafeControl (USC) qualification on top of CAT 1 + CAT 2. Best value for teams needing all three.</p>
+              <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Training in Action -- photo gallery (Surfer image-count target 28-46) */}
       <section className="container mx-auto px-6 md:px-8 py-10 max-w-5xl">
         <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Training in Action</p>
@@ -721,6 +766,14 @@ export default function EusCat1() {
           </div>
         </div>
       </section>
+
+      {/* Sticky mobile Book button — SEO audit 2026-05-11 */}
+      <Link
+        href="/contact#enquiry-form"
+        className="fixed bottom-4 right-4 z-50 md:hidden inline-flex items-center px-4 py-3 rounded-full bg-primary text-primary-foreground font-bold text-sm shadow-lg hover:bg-primary/90 transition-colors"
+      >
+        Book this course →
+      </Link>
     </>
 );
 }
