@@ -123,12 +123,15 @@ export default function GennyCatTraining() {
               <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>On-site UK-wide</span>
               <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>Travel included</span>
             </div>
-            <Link
-              href="/contact#enquiry-form"
-              className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
-            >
-              Book CAT and Genny Training →
-            </Link>
+            <div className="flex flex-col md:items-end gap-1.5">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">From £95 per person</p>
+              <Link
+                href="/contact#enquiry-form"
+                className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >
+                Book CAT and Genny Training →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
