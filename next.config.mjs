@@ -407,6 +407,62 @@ const nextConfig = {
       { source: '/training/:path((?!cable-location-avoidance|utility-mapping-surveying).+)', destination: '/courses', permanent: true },
       { source: '/locations/:path((?!manchester|birmingham|london|bristol).+)', destination: '/locations', permanent: true },
 
+      // 9.5b: Sibling-slug variants that the catch-all below excludes by prefix.
+      // The catch-all only triggers for top-level slugs that DON'T start with
+      // any allowed root (about, contact, osca, sitemap, etc.). So legacy
+      // variants like /about-us, /contact-us, /osca-training, /sitemap.html
+      // are blocked from the catch-all and 404 unless redirected explicitly.
+      // Found via live-probe 2026-05-13 (53 patterns total).
+
+      // about-* variants -> /about
+      { source: '/about-us', destination: '/about', permanent: true },
+      { source: '/about-us-2', destination: '/about', permanent: true },
+      { source: '/aboutus', destination: '/about', permanent: true },
+      { source: '/about-sygma', destination: '/about', permanent: true },
+      { source: '/about-the-company', destination: '/about', permanent: true },
+      { source: '/about-the-team', destination: '/about', permanent: true },
+      { source: '/about-our-company', destination: '/about', permanent: true },
+      { source: '/about-page', destination: '/about', permanent: true },
+
+      // contact-* variants -> /contact
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/contact-us-2', destination: '/contact', permanent: true },
+      { source: '/contactus', destination: '/contact', permanent: true },
+      { source: '/contact-page', destination: '/contact', permanent: true },
+      { source: '/contact-form', destination: '/contact', permanent: true },
+
+      // osca-* variants -> /osca
+      { source: '/osca-training', destination: '/osca', permanent: true },
+      { source: '/osca-test', destination: '/osca', permanent: true },
+      { source: '/osca-assessment', destination: '/osca', permanent: true },
+      { source: '/osca-course', destination: '/osca', permanent: true },
+      { source: '/osca-cert', destination: '/osca', permanent: true },
+      { source: '/osca-competency', destination: '/osca', permanent: true },
+
+      // pricing-* variants -> /pricing
+      { source: '/pricing-info', destination: '/pricing', permanent: true },
+      { source: '/pricing-page', destination: '/pricing', permanent: true },
+
+      // sitemap variants (WordPress format leftovers Google still has cached) -> /sitemap.xml
+      { source: '/sitemap.html', destination: '/sitemap.xml', permanent: true },
+      { source: '/sitemap_index.xml', destination: '/sitemap.xml', permanent: true },
+      { source: '/sitemap_index.xml.gz', destination: '/sitemap.xml', permanent: true },
+      { source: '/sitemap-1.xml', destination: '/sitemap.xml', permanent: true },
+      { source: '/sitemap-2.xml', destination: '/sitemap.xml', permanent: true },
+
+      // privacy-policy variant
+      { source: '/privacy-policy.html', destination: '/privacy-policy', permanent: true },
+
+      // Pagination archives that didn't resolve (catch-all excludes /courses and /knowledge-hub)
+      { source: '/courses/page/:n*', destination: '/courses', permanent: true },
+      { source: '/knowledge-hub/page/:n*', destination: '/knowledge-hub', permanent: true },
+
+      // City-specific cable-avoidance-training variants that don't have a built page.
+      // Real city pages live at /cable-avoidance-training-{london,birmingham,manchester,bristol}
+      // and Next.js routes those directly. All OTHER city variants -> the
+      // generic cable-avoidance category page.
+      { source: '/cable-avoidance-training-:city((?!london|birmingham|manchester|bristol).+)', destination: '/courses/cable-avoidance-training', permanent: true },
+
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
       { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|api|_next|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
