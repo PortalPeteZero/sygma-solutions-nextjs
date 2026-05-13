@@ -50,13 +50,20 @@ async function fireGA4Conversion(opts: {
       client_id: effectiveClientId,
       events: [
         {
-          // GA4 recommended event for lead/enquiry conversions
+          // GA4 recommended event for lead/enquiry conversions.
+          // This is the ONLY conversion the server-side MP path fires.
+          //
+          // We deliberately do NOT fire form_submit here:
+          //   - Client-side already fires form_submit via dataLayer (analytics.ts)
+          //     with proper page context (page=/contact).
+          //   - MP events arrive without a page_location, so any server-side
+          //     form_submit showed up in GA4 with page=(not set) and inflated
+          //     the form_submit conversion count by ~50% (8 of 24 events in
+          //     a sample week were the (not set) MP duplicates).
+          //   - generate_lead is sufficient to track no-consent users for
+          //     attribution / bidding -- it doesn't need form_submit as a
+          //     parallel signal.
           name: 'generate_lead',
-          params: { ...baseParams },
-        },
-        {
-          // Mirrors the client-side form_submit event name for consistency
-          name: 'form_submit',
           params: { ...baseParams, form_name: 'contact' },
         },
       ],
