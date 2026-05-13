@@ -414,6 +414,13 @@ const nextConfig = {
       // are blocked from the catch-all and 404 unless redirected explicitly.
       // Found via live-probe 2026-05-13 (53 patterns total).
 
+      // Legacy /images/* path (WordPress wp-content era). The single image
+      // GSC flagged was /images/homepage/CAT4-and-Genny-30.webp -- referenced
+      // in old structured data / backlinks. Redirect the whole /images/*
+      // prefix to /courses/cat-and-genny-training so any cached references
+      // route somewhere relevant rather than 404.
+      { source: '/images/:path*', destination: '/courses/cat-and-genny-training', permanent: true },
+
       // about-* variants -> /about
       { source: '/about-us', destination: '/about', permanent: true },
       { source: '/about-us-2', destination: '/about', permanent: true },

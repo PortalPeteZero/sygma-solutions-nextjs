@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
-import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
+import { courseSchema, faqPageSchema, breadcrumbSchema, videoObjectSchema } from "@/lib/schema";
 import Image from 'next/image';
 
 const faqs = [
@@ -52,6 +52,15 @@ export default function CableAvoidanceTraining() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cable Avoidance Training', description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses delivered nationwide by specialist utility avoidance trainers.', url: '/courses/cable-avoidance-training', duration: '1-2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cable Avoidance Training' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: videoObjectSchema({
+        name: 'Cable Avoidance Training: The Genny First Approach Explained',
+        description: 'Sygma Solutions explains why the standard Power, Radio, Genny scanning sequence is the wrong way round. Demonstrates the Genny-First methodology that locates buried utilities reliably and prevents cable strikes on site.',
+        url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
+        youtubeId: 'IgxGksU3WQ4',
+        uploadDate: '2026-04-15',
+        duration: 'PT4M30S',
+        thumbnailUrl: 'https://i.ytimg.com/vi/IgxGksU3WQ4/maxresdefault.jpg',
+      }) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
