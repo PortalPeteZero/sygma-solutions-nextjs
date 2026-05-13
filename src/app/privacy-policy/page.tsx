@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Sygma Solutions',
   description: 'Privacy policy for Sygma Solutions Ltd. How we collect, use, store, and protect your personal data when you use our website and training services.',
   alternates: { canonical: 'https://sygma-solutions.com/privacy-policy' },
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPolicyPage() {
