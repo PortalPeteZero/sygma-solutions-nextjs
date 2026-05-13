@@ -458,10 +458,12 @@ const nextConfig = {
       { source: '/knowledge-hub/page/:n*', destination: '/knowledge-hub', permanent: true },
 
       // City-specific cable-avoidance-training variants that don't have a built page.
-      // Real city pages live at /cable-avoidance-training-{london,birmingham,manchester,bristol}
-      // and Next.js routes those directly. All OTHER city variants -> the
-      // generic cable-avoidance category page.
-      { source: '/cable-avoidance-training-:city((?!london|birmingham|manchester|bristol).+)', destination: '/courses/cable-avoidance-training', permanent: true },
+      // Real city pages live at /cable-avoidance-training-{london,birmingham,manchester,scotland}
+      // (per the live sitemap as of 2026-05-13) and Next.js routes those
+      // directly. All OTHER city variants -> the generic cable-avoidance
+      // category page. NOTE: not "bristol" -- there's no real bristol page,
+      // earlier comment in this file referencing it was wrong.
+      { source: '/cable-avoidance-training-:city((?!london|birmingham|manchester|scotland).+)', destination: '/courses/cable-avoidance-training', permanent: true },
 
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
