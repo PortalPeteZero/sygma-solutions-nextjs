@@ -86,7 +86,7 @@ export default function GennyFirstMethodology() {
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">What the Manufacturers Say</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            This is not a point Sygma is making in isolation. The manufacturer documentation backs it up. The RadioDetection ABC book states that despite passive signals existing, the best signal to trace is an active signal that has been deliberately applied. The C-Scope manual advises that most buried metallic services not found in Radio mode should be detected using a generator. A Leica blog post suggests that passive-only detection could miss up to 60% of buried utilities. Based on Sygma's own CAT and Genny training data, the real-world figure may be closer to 70 to 80%.
+            This is not a point Sygma is making in isolation. The manufacturer documentation backs it up. The RadioDetection ABC book states that despite passive signals existing, the best signal to trace is an active signal that has been deliberately applied. The C-Scope manual advises that most buried metallic services not found in Radio mode should be detected using a generator. A Leica blog post suggests that passive-only detection could miss up to 60% of buried utilities. Based on Sygma's own <Link href="/courses/cat-and-genny-training" className="text-primary font-semibold hover:underline">CAT and Genny training</Link> data, the real-world figure may be closer to 70 to 80%.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">

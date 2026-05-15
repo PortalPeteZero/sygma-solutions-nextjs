@@ -28,7 +28,7 @@ const faqs = [
             },
             {
               q: "Is cat manager training relevant to the EUSR CAT1 or CAT2 cat and genny accreditation?",
-              a: "Cat manager data download is an optional module within the EUSR CAT1 cat and genny training course. This standalone cat manager online training session provides much greater depth on the c.a.t manager online system and is aimed at managers, supervisors, and coordinators rather than operative-level delegates.",
+              a: "Cat manager data download is an optional module within the EUSR CAT1 <a href=/courses/cat-and-genny-training>cat and genny training course</a>. This standalone cat manager online training session provides much greater depth on the c.a.t manager online system and is aimed at managers, supervisors, and coordinators rather than operative-level delegates.",
             },
             {
               q: "What is c.a.t manager online and how does it work as a remote management tool?",
@@ -308,7 +308,7 @@ export default function CatManager() {
           {faqs.map(({ q, a }) => (
             <div key={q} className="border border-border rounded-lg p-6">
               <h3 className="font-bold text-foreground mb-3">{q}</h3>
-              <p className="text-muted-foreground leading-relaxed">{a}</p>
+              <p className="text-muted-foreground leading-relaxed [&_a]:text-primary [&_a]:font-semibold [&_a:hover]:underline" dangerouslySetInnerHTML={{ __html: a }} />
             </div>
           ))}
         </div>

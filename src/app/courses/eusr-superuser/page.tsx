@@ -7,7 +7,7 @@ import Image from 'next/image';
 const faqs = [
               {
                 q: "Who is the EUSR super user cat and genny training course designed for?",
-                a: "The EUSR super user cat and genny training course is designed for experienced CAT1 and CAT2 operators who are moving into supervisory or lead operative roles, and who need to assess and coach other members of their team on locating utility services and underground utilities on site. It is also appropriate for managers responsible for monitoring cat and genny equipment usage, calibration compliance, and CAT Manager data to improve their team's practice in locating buried services safely.",
+                a: "The EUSR super user <a href=/courses/cat-and-genny-training>cat and genny training course</a> is designed for experienced CAT1 and CAT2 operators who are moving into supervisory or lead operative roles, and who need to assess and coach other members of their team on locating utility services and underground utilities on site. It is also appropriate for managers responsible for monitoring cat and genny equipment usage, calibration compliance, and CAT Manager data to improve their team's practice in locating buried services safely.",
               },
               {
                 q: "Is EUSR CAT2 mandatory as a prerequisite for this cat and genny training?",
@@ -397,7 +397,7 @@ export default function EusSuperuser() {
             {faqs.map(({ q, a }) => (
               <div key={q} className="border border-border rounded-lg p-6">
                 <h3 className="font-bold text-foreground mb-3">{q}</h3>
-                <p className="text-muted-foreground leading-relaxed">{a}</p>
+                <p className="text-muted-foreground leading-relaxed [&_a]:text-primary [&_a]:font-semibold [&_a:hover]:underline" dangerouslySetInnerHTML={{ __html: a }} />
               </div>
             ))}
           </div>

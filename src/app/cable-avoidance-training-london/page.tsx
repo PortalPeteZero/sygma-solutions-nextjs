@@ -25,7 +25,7 @@ export default function CableAvoidanceLondon() {
   { q: 'Can we do a half day cable avoidance training course in London?', a: 'Yes. We offer flexible half day training sessions for London teams with tight schedules. Half day cable avoidance courses cover core competency in CAT and Genny operation, practical instruction, and site-specific assessment.' },
   { q: 'Do you deliver cable avoidance training in London?', a: 'Yes. Sygma Solutions delivers cable avoidance and CAT and Genny training at client sites across London and the South East. We travel to your site and bring all CAT and Genny equipment, materials and assessment documentation.' },
   { q: 'What is the travel cost for training in London?', a: 'Travel costs for London deliveries are included in the course quote. Contact us with your site location and we will confirm the full cost. There are no hidden charges for cable avoidance training delivered anywhere in London or the South East.' },
-  { q: 'Can you deliver at our depot or site in the South East?', a: 'Yes. Sygma delivers CAT and Genny training at client premises across London and the South East including depots, live construction sites, training rooms and open yard space. We bring all cable avoidance equipment, signal generators and assessment materials.' },
+  { q: 'Can you deliver at our depot or site in the South East?', a: 'Yes. Sygma delivers <a href=/courses/cat-and-genny-training>CAT and Genny training</a> at client premises across London and the South East including depots, live construction sites, training rooms and open yard space. We bring all cable avoidance equipment, signal generators and assessment materials.' },
   { q: 'Is CITB funding available for cable avoidance training in London?', a: 'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered businesses may be able to access funding for cable avoidance and genny training courses through the CITB Employer Network model.' },
 ];
 
@@ -208,12 +208,12 @@ export default function CableAvoidanceLondon() {
               { q: 'How long is cable avoidance training?', a: 'Course duration depends on the qualification. Our in-house CAT and Genny training, EUSR CAT1 and ProQual CAT1 are 1 day courses (typically 7 hours). ProQual CAT1 Plus is 2 days for advanced competency. We also offer focused half day sessions for refresher training or induction. All genny training courses include theory, practical instruction, and assessment.' },
               { q: 'Do you deliver cable avoidance training in London?', a: 'Yes. Sygma Solutions delivers cable avoidance and CAT and Genny training at client sites across London and the South East. We travel to your site and bring all CAT and Genny equipment, materials and assessment documentation. On-site delivery means your operatives train on the ground they actually work on, using real underground services beneath your London site.' },
               { q: 'What is the travel cost for training in London?', a: 'Travel costs for London deliveries are included in the course quote. Contact us with your site location and we will confirm the full cost. There are no hidden charges for cable avoidance training delivered anywhere in London or the South East.' },
-              { q: 'Can you deliver at our depot or site in the South East?', a: 'Yes. Sygma delivers CAT and Genny training at client premises across London and the South East including depots, live construction sites, training rooms and open yard space. We bring all cable avoidance equipment, signal generators and assessment materials.' },
+              { q: 'Can you deliver at our depot or site in the South East?', a: 'Yes. Sygma delivers <a href=/courses/cat-and-genny-training>CAT and Genny training</a> at client premises across London and the South East including depots, live construction sites, training rooms and open yard space. We bring all cable avoidance equipment, signal generators and assessment materials.' },
               { q: 'Is CITB funding available for cable avoidance training in London?', a: 'Sygma Solutions is a CITB Approved Training Organisation. CITB-registered businesses may be able to access funding for cable avoidance and genny training courses through the CITB Employer Network model.' },
             ].map(({ q, a }) => (
               <div key={q} className="border border-border rounded-lg p-6 bg-background">
                 <h3 className="font-bold text-foreground mb-3">{q}</h3>
-                <p className="text-muted-foreground leading-relaxed">{a}</p>
+                <p className="text-muted-foreground leading-relaxed [&_a]:text-primary [&_a]:font-semibold [&_a:hover]:underline" dangerouslySetInnerHTML={{ __html: a }} />
               </div>
             ))}
           </div>

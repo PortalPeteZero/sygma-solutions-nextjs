@@ -151,7 +151,7 @@ export default function GennyFirstVideo() {
 
           <div className="border-t border-border pt-8">
             <p className="text-muted-foreground mb-4">
-              Ready to train your team in the Genny First approach? Sygma's CAT and Genny training covers the full methodology, connection techniques, data analysis, and site application — delivered on-site, UK-wide.
+              Ready to train your team in the Genny First approach? Sygma's <Link href="/courses/cat-and-genny-training" className="text-primary font-semibold hover:underline">CAT and Genny training</Link> covers the full methodology, connection techniques, data analysis, and site application — delivered on-site, UK-wide.
             </p>
             <Link
               href="/courses/cat-and-genny-training"

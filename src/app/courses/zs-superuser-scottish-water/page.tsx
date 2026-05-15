@@ -43,7 +43,7 @@ const faqs = [
             },
             {
               q: "Does the certification have an expiry date?",
-              a: "The ZS Superuser certification issued by Sygma is a recognised record of completing the training course and all associated assessments. While Sygma certification does not carry a fixed expiry date, best practice and Scottish Water's own requirements mean that refresher cat and genny training should be conducted regularly to maintain competency. EUSR category registrations carry their own expiry date and require re-assessment to maintain your qualification as a leading provider of safe utility location services.",
+              a: "The ZS Superuser certification issued by Sygma is a recognised record of completing the training course and all associated assessments. While Sygma certification does not carry a fixed expiry date, best practice and Scottish Water's own requirements mean that refresher <a href=/courses/cat-and-genny-training>cat and genny training</a> should be conducted regularly to maintain competency. EUSR category registrations carry their own expiry date and require re-assessment to maintain your qualification as a leading provider of safe utility location services.",
             },
           ];
 
@@ -364,7 +364,7 @@ export default function ZsSuperuserScottishWater() {
           {faqs.map(({ q, a }) => (
             <div key={q} className="border border-border rounded-lg p-6">
               <h3 className="font-bold text-foreground mb-3">{q}</h3>
-              <p className="text-muted-foreground leading-relaxed">{a}</p>
+              <p className="text-muted-foreground leading-relaxed [&_a]:text-primary [&_a]:font-semibold [&_a:hover]:underline" dangerouslySetInnerHTML={{ __html: a }} />
             </div>
           ))}
         </div>
