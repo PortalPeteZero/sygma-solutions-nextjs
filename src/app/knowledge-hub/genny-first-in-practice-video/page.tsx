@@ -30,7 +30,7 @@ export default function GennyFirstVideo() {
         description: "Sygma's 16-minute cable avoidance training video explains why connecting the signal generator first is the correct approach to underground utility location — not a last resort.",
         url: "/knowledge-hub/genny-first-in-practice-video",
         youtubeId: YOUTUBE_ID,
-        uploadDate: "2026-03-22",
+        uploadDate: "2026-03-22T00:00:00+00:00",
         duration: "PT16M7S",
         thumbnailUrl: `https://i.ytimg.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`,
       }) }} />

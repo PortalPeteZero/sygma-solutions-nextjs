@@ -105,7 +105,7 @@ export default function GennyCatTraining() {
         description: 'Sygma Solutions explains why the standard Power, Radio, Genny scanning sequence is the wrong way round. Demonstrates the Genny-First methodology that locates buried utilities reliably and prevents cable strikes on site.',
         url: 'https://sygma-solutions.com/courses/cat-and-genny-training',
         youtubeId: 'IgxGksU3WQ4',
-        uploadDate: '2026-04-15',
+        uploadDate: '2026-04-15T00:00:00+00:00',
         duration: 'PT4M30S',
         thumbnailUrl: 'https://i.ytimg.com/vi/IgxGksU3WQ4/maxresdefault.jpg',
       }) }} />

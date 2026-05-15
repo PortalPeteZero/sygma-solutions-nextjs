@@ -238,7 +238,7 @@ export function videoObjectSchema(params: {
     "embedUrl": `https://www.youtube.com/embed/${params.youtubeId}`,
     "contentUrl": `https://www.youtube.com/watch?v=${params.youtubeId}`,
     "thumbnailUrl": params.thumbnailUrl,
-    "uploadDate": params.uploadDate,
+    "uploadDate": /^\d{4}-\d{2}-\d{2}$/.test(params.uploadDate) ? `${params.uploadDate}T00:00:00+00:00` : params.uploadDate,
     "duration": params.duration,
     "publisher": ORG,
   });
