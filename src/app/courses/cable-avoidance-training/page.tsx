@@ -34,11 +34,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
-  description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses. Specialist utility avoidance trainers delivering nationwide.',
+  description: 'On-site cable avoidance training across the UK. EUSR CAT1, ProQual CAT1, and combined courses. Travel included. Independent. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-training' },
   openGraph: {
     title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
-    description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses. Specialist utility avoidance trainers delivering nationwide.',
+    description: 'On-site cable avoidance training across the UK. EUSR CAT1, ProQual CAT1, and combined courses. Travel included. Independent. Book today.',
     url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-66', width: 1200, height: 630 }],
@@ -373,11 +373,30 @@ export default function CableAvoidanceTraining() {
           </table>
         </div>
         <p className="text-sm text-muted-foreground mt-4">
+          Whether operatives need basic cable avoidance tool training, full EUSR CAT1 or ProQual CAT1 accreditation, or the advanced two-day ProQual CAT1 Plus format, the underlying course content is consistent. What changes is the assessment route and the depth of practical work.
+        </p>
+        <p className="text-sm text-muted-foreground mt-2">
           The two-day split format is particularly valuable where operatives benefit from applying classroom learning in real working conditions before returning for their assessed practical day. The gap of approximately three months allows behaviours to bed in and any gaps to be identified and corrected.
         </p>
         <p className="text-sm text-muted-foreground mt-2">
           All cable avoidance courses delivered by a CITB Approved Training Organisation.
         </p>
+      </section>
+
+      {/* Online vs On-Site format question */}
+      <section className="bg-muted/20 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="eyebrow mb-3">Format Question</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online vs On-Site Cable Avoidance Training</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Searches for "cable avoidance training online" are common. Sygma's full cable avoidance course is on-site by design. The reason is the practical assessment. A cable avoidance training course that does not include hands-on operation of a CAT and Genny on a real site cannot prove competence under HSG47, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. Online theory alone will not give an operative the qualification.
+            </p>
+            <p>
+              Where online training does work is the awareness layer: refreshers, supervisors who need to understand the equipment without operating it, and the HSG47 theory module that complements an on-site practical day. For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance. It is designed to pair with this on-site cable avoidance training rather than replace it.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Site requirements */}
@@ -482,12 +501,13 @@ export default function CableAvoidanceTraining() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for cable avoidance and safe digging procedure. It addresses all key elements of HSG47 guidance on preventing strikes on underground services.</p>
+          <p className="text-muted-foreground mb-4 max-w-2xl">This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for cable avoidance and safe digging procedure. It addresses all key elements of HSG47 guidance on preventing strikes on underground services.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">HSG47 is the Health and Safety Executive's guidance on avoiding danger from underground services. It places a clear duty on employers and site supervisors to identify hazards, plan work safely, and ensure operatives can locate underground services before excavation. This course covers each of the HSG47 requirements that apply to the operative on the ground: recognising the hazards, interpreting service plans, operating the equipment correctly, and working safely around buried gas, water, electricity, telecoms and district heating utilities.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
               <h3 className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Formal assessment ensures operatives meet competence standards for cable avoidance work.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Formal assessment ensures operatives meet competence standards for cable avoidance work. Delegates leave able to recognise the hazards and locate underground utilities safely.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Process</p>
