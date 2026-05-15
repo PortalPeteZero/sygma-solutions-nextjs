@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { ArrowRight, Play } from "lucide-react";
 import Image from 'next/image';
 
@@ -17,13 +18,34 @@ interface KnowledgeHubItem {
   youtubeId?: string;
 }
 
+const HASH_TO_FILTER: Record<string, FilterType> = {
+  articles: "article",
+  videos: "video",
+};
+
+function resolveFilter(hash: string, paramFilter: string | null): FilterType {
+  const h = (hash || "").replace(/^#/, "");
+  if (HASH_TO_FILTER[h]) return HASH_TO_FILTER[h];
+  if (paramFilter === "articles") return "article";
+  if (paramFilter === "videos") return "video";
+  return "all";
+}
+
 export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[] }) {
   const searchParams = useSearchParams();
   const paramFilter = searchParams.get("filter");
-  const activeFilter: FilterType =
-    paramFilter === "articles" ? "article" :
-    paramFilter === "videos" ? "video" :
-    "all";
+  const [activeFilter, setActiveFilter] = useState<FilterType>(() => resolveFilter("", paramFilter));
+
+  useEffect(() => {
+    const update = () => setActiveFilter(resolveFilter(window.location.hash, searchParams.get("filter")));
+    update();
+    window.addEventListener("hashchange", update);
+    window.addEventListener("popstate", update);
+    return () => {
+      window.removeEventListener("hashchange", update);
+      window.removeEventListener("popstate", update);
+    };
+  }, [searchParams]);
 
   const filteredItems =
     activeFilter === "all"
@@ -32,8 +54,8 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
 
   const filterButtons: { label: string; href: string; value: FilterType }[] = [
     { label: "All", href: "/knowledge-hub", value: "all" },
-    { label: "Articles", href: "/knowledge-hub?filter=articles", value: "article" },
-    { label: "Videos", href: "/knowledge-hub?filter=videos", value: "video" },
+    { label: "Articles", href: "/knowledge-hub#articles", value: "article" },
+    { label: "Videos", href: "/knowledge-hub#videos", value: "video" },
   ];
 
   return (
@@ -44,6 +66,8 @@ export default function KnowledgeHubClient({ items }: { items: KnowledgeHubItem[
             <Link
               key={btn.value}
               href={btn.href}
+              scroll={false}
+              onClick={() => setActiveFilter(btn.value)}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors ${
                 activeFilter === btn.value
                   ? "bg-primary text-primary-foreground"

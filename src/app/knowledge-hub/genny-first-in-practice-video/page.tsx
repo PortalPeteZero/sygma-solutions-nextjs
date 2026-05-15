@@ -52,7 +52,7 @@ export default function GennyFirstVideo() {
 
       <div className="lg:hidden bg-background pt-6 pb-2">
         <div className="container mx-auto px-6 md:px-8">
-          <Link href="/knowledge-hub?filter=videos" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground border border-border rounded-md px-3 py-1.5 transition-colors">
+          <Link href="/knowledge-hub#videos" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground border border-border rounded-md px-3 py-1.5 transition-colors">
             &larr; Back to Videos
           </Link>
         </div>

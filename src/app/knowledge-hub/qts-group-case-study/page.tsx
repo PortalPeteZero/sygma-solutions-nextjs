@@ -57,7 +57,7 @@ export default function QtsGroupCaseStudy() {
 
       <div className="lg:hidden bg-background pt-6 pb-2">
         <div className="container mx-auto px-6 md:px-8">
-          <Link href="/knowledge-hub?filter=articles" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground border border-border rounded-md px-3 py-1.5 transition-colors">
+          <Link href="/knowledge-hub#articles" className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground border border-border rounded-md px-3 py-1.5 transition-colors">
             ← Back to Articles
           </Link>
         </div>
