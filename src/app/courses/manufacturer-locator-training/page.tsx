@@ -56,7 +56,7 @@ export default function ManufacturerLocatorTraining() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Manufacturer-Specific Locator Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="Manufacturer-Specific Locator Training: vScan, CScope, and Other Pipe Locators"
+        headline="Manufacturer Locator Training | vScan, CScope & More"
         sub="One day. Up to eight delegates. Theory and practical training tailored to your specific pipe and cable locating equipment, using your own kit on a representative site. Multiple certification options available."
         image="cat-83-manufacturer-locator-training"
         alt="Manufacturer-specific cable locator training with CAT4 and Genny equipment"

@@ -55,7 +55,7 @@ export default function ProqualCat1Cat2Combined() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "ProQual CAT1 and CAT2 Combined" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="ProQual CAT1 and CAT2 Combined: Two-Day Utility Avoidance and Safe Dig Training"
+        headline="ProQual CAT1 & CAT2 Combined | 2-Day Training"
         sub="One programme. Two ProQual-recognised qualifications. Both CAT1 and CAT2 completed in two days at your site, with full theory, Genny-First practical, and a live safe dig assessment."
         image="dig-11-proqual-cat1-cat2-combined"
         alt="Combined ProQual CAT1 and CAT2 cable avoidance and safe digging training"

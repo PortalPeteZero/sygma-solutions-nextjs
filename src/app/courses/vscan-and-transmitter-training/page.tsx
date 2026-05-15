@@ -55,7 +55,7 @@ export default function VscanTransmitterTraining() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "vScan and Transmitter Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="vScan and Transmitter Training: The Course That Changes How Your Team Works on Site"
+        headline="vScan & Transmitter Training Course"
         sub="Not just vScan & Tx equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
         image="cat-73-vscan-and-transmitter-training"
         alt="Vscan and transmitter training for underground utility signal tracing"

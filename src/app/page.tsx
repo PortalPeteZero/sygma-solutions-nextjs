@@ -56,7 +56,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
 
-      <h1 className="sr-only">Cable Avoidance Training and CAT & Genny Courses - UK Specialist Since 2004</h1>
+      <h1 className="sr-only">Cable Avoidance Training & CAT & Genny Courses UK</h1>
       <HeroCarousel />
 
       {/* Key USP stats */}

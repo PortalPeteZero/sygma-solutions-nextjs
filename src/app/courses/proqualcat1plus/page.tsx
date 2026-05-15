@@ -69,7 +69,7 @@ export default function ProQualCat1Plus() {
           ]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="ProQual CAT1 Plus: The Most Advanced Utility Locating Qualification Available"
+        headline="ProQual CAT1 Plus Training | Advanced Utility Locator"
         sub="Two days. Forty-two individually assessed practical criteria. Seven advanced theory papers. Two qualifications. Built for operatives who need to locate in the conditions that basic training does not prepare them for."
         image="cat-01-proqualcat1plus"
         alt="ProQual CAT1 Plus advanced cable avoidance training course"

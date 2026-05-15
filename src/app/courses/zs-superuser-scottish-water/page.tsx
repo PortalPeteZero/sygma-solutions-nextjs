@@ -69,7 +69,7 @@ export default function ZsSuperuserScottishWater() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "ZS Superuser Cat and Genny" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="ZS Superuser: Advanced Location, Strike Investigation, and Coaching for Scottish Water Supply Chain"
+        headline="ZS Superuser Training for Scottish Water Supply Chain"
         sub="Sygma's ZS Superuser course is the ZSI-specific super user cat and genny training programme, built for teams working within the Scottish Water supply chain. This advanced training course follows the same structure and standard as the EUSR Superuser, mapped to the Zero Strike Initiative framework for locating underground services and buried utilities."
         image="cat-07-zs-superuser-scottish-water"
         alt="Scottish Water ZS Superuser cable avoidance training course"

@@ -55,7 +55,7 @@ export default function ProQualCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "ProQual CAT1" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="ProQual CAT1 Training: The Most Rigorous Utility Locating Qualification"
+        headline="ProQual CAT1 Training | Utility Locator Qualification"
         sub="14 theory criteria. 8 practical criteria. Every one must be met. A full written theory assessment and a full hands-on practical assessment covering all four locating modes and every Genny signal application method, mapped to HSG47, GS6, and CDM Regulations. Accredited by ProQual Accreditations."
         image="cat-66-proqualcat1-training"
         alt="ProQual CAT1 cable avoidance training with practical locator exercises"

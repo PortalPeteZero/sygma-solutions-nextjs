@@ -105,7 +105,7 @@ export default function Pas128Awareness() {
 
       <InnerPageHero
         eyebrow="Utility Mapping"
-        headline="PAS128 Awareness Training: Understand Utility Survey Drawings and the Survey Process"
+        headline="PAS128 Awareness Training | Read Utility Survey Drawings"
         sub="PAS128 is the British Standard for utility surveys and mapping. If your team works near buried services, manages utility survey contracts or needs to read and act on PAS128 survey drawings, this awareness course gives them the knowledge to do that confidently. Classroom delivery with an optional practical element."
         image="gpr-08"
         breadcrumbs={[

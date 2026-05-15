@@ -56,7 +56,7 @@ export default function PlansAndProcess() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Plans and Process Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="Plans and Process Training: Read Utility Plans Properly and Survey More Safely"
+        headline="Utility Plans & Process Training | Survey More Safely"
         sub="Most operatives can get hold of a utility plan. Far fewer can read one properly. From STATS and LSBUD to keys, scales, and regional network differences, delegates leave able to extract the right information from any plan and use it correctly on site."
         image="cat-12-plans-and-process"
         alt="Plans and process training covering utility survey planning and documentation"

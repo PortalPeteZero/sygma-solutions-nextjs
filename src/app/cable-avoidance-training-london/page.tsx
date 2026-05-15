@@ -46,7 +46,7 @@ export default function CableAvoidanceLondon() {
         <div className="absolute inset-0 border-l-4 border-accent" />
         <div className="relative flex flex-col justify-end p-8 md:p-12 h-full">
           <div className="eyebrow text-accent mb-2">Utility Avoidance</div>
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-primary-foreground mb-3">Cable Avoidance Training London | Nationwide Delivery, London Experienced</h1>
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-primary-foreground mb-3">Cable Avoidance Training London | EUSR & ProQual</h1>
           <p className="text-lg text-primary-foreground/80 max-w-3xl">Sygma Solutions delivers cable avoidance training and practical CAT and Genny equipment instruction at your site in London and across the South East. With 21 years delivering on capital projects, infrastructure sites and contractor premises nationwide, our specialist trainers come to you. Choose full day or half day training to suit your schedule. No travel costs for your team, no lost site time.</p>
           <nav className="flex items-center gap-2 mt-6 text-sm">
             <Link href="/locations" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Locations</Link>

@@ -56,7 +56,7 @@ export default function ServiceCoordinatorUsc() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Service Coordinator USC" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="Service Coordinator (USC) Training: Understanding the Role and Responsibilities"
+        headline="Service Coordinator (USC) Training | Role & Responsibilities"
         sub="The Underground Service Coordinator (USC) is an appointment made by the employer, not a qualification. This course prepares your appointed USC to source and review utility plans, interpret survey data, and complete the documentation the role demands."
         image="cat-04-service-coordinator-usc"
         alt="Utility service coordinator training covering safe excavation planning and supervision"

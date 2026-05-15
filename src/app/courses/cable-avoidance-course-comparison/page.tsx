@@ -59,7 +59,7 @@ export default function CourseComparison() {
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="EUSR CAT1 vs ProQual CAT1 vs ProQual CAT1 Plus: Which Cable Avoidance Course Is Right for Your Team?"
+        headline="Cable Avoidance Course Comparison | EUSR vs ProQual"
         sub="Three qualifications. One comparison. Sygma delivers all three. Use this page to understand the difference and choose what your team actually needs."
         image="cat-50-cable-avoidance-course-comparison"
         breadcrumbs={[

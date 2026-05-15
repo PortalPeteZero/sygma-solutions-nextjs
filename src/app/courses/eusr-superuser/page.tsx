@@ -71,7 +71,7 @@ export default function EusSuperuser() {
 
       <InnerPageHero
         eyebrow="EUSR Super User Cat and Genny Training"
-        headline="EUSR Superuser: Advanced Location, Calibration, Strike Investigation, and Coaching Assessment"
+        headline="EUSR Superuser Training | Advanced Locator Assessment"
         sub="The highest level of EUSR super user cat and genny training. Two days covering advanced cable avoidance tools and signal generator techniques, calibration, CAT Manager data analysis, USAG strike investigation, and the skills to assess and coach your team on locating underground services safely on site. Prerequisite: EUSR CAT1 and Safe Dig CAT2."
         image="cat-81-eus-superuser"
         alt="EUSR Superuser advanced cable avoidance training for experienced locator operators"

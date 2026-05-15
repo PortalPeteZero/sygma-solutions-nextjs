@@ -54,7 +54,7 @@ export default function Pas128Surveyor() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "5-Day PAS 128 Surveyor Course" }]) }} />
 <InnerPageHero
         eyebrow="Utility Mapping"
-        headline="5 Day PAS128 Utility Mapping and Surveying Course: Advanced Training for Utility Surveyors"
+        headline="5-Day PAS128 Utility Mapping & Surveying Course"
         sub="Five intensive days. Every PAS128 survey level from D through to B. Advanced electromagnetic and GPR training delivered by the most experienced utility mapping trainers and assessors in the UK. With a written exam and full practical assessment, this is the course that turns competent locators into confident surveyors."
         image="em-07-5-day-pas128-surveyor"
         breadcrumbs={[

@@ -83,7 +83,7 @@ export default function OscaPage() {
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
         <div className="relative z-10 container mx-auto px-6 md:px-8 pt-10 pb-12">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Assessment</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white max-w-4xl">OSCA</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white max-w-4xl">On-Site Competency Assessment (OSCA)</h1>
           <p className="text-white/75 max-w-xl">A 3-year training certificate tells you nothing about what your operative can do in month 18. OSCA does.</p>
         </div>
       </section>

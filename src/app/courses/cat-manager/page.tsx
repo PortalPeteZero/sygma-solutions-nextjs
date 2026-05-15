@@ -68,7 +68,7 @@ export default function CatManager() {
 
       <InnerPageHero
         eyebrow="CAT Manager Online Training"
-        headline="CAT Manager Online Training Course: Make Your Cat and Genny Data Work for You"
+        headline="CAT Manager Online Training | Use Your CAT & Genny Data"
         sub="Cat manager online training for managers and supervisors. Your cat and genny equipment records every locate. This half day course teaches you to use c.a.t manager online as a remote management tool to transfer usage data, check work quality across your entire team, identify training needs, and build the audit trail that protects your organisation from utility strikes."
         image="cat-75-cat-manager"
         alt="CAT Manager online training showing data management from CAT and Genny surveys"

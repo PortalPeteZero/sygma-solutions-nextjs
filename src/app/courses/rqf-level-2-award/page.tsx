@@ -53,7 +53,7 @@ export default function RqfLevel2Award() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "RQF Level 2 Utility Location Award" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="RQF Level 2 Award in Utility Location and Avoidance: A Nationally Recognised Qualification"
+        headline="RQF Level 2 Award in Utility Location & Avoidance"
         sub="The RQF Level 2 Award in Utility Location and Avoidance is the nationally recognised qualification for operatives working near buried services. Three delivery formats. Advanced content that goes beyond the qualification requirements. Knowledge and practical assessment included."
         image="cat-69-rqf-level-2-award"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"

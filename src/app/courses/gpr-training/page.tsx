@@ -53,7 +53,7 @@ export default function GprTraining() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/utility-mapping-surveying" }, { label: "GPR Training for Utility Surveyors" }]) }} />
 <InnerPageHero
         eyebrow="Utility Mapping"
-        headline="GPR Training: Theory, Practical Use and Post Processing for Utility Surveyors"
+        headline="GPR Training | Theory, Practical & Post Processing"
         sub="Ground Penetrating Radar is the detection method that reveals what an electromagnetic locator cannot. This two-module GPR training programme covers GPR technology from the science behind a radargram to GPS-integrated data collection and full post processing in Object Mapper software. Elevate your surveying skills with expert-led ground penetrating radar training. Book individually or take both modules together."
         image="gpr-02-gpr-training"
         alt="Ground penetrating radar training using professional GPR survey equipment"
