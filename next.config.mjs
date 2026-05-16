@@ -41,7 +41,7 @@ const nextConfig = {
       // === OLD SITE COURSE PAGES ===
       { source: '/courses/cat-genny-training', destination: '/courses/cat-and-genny-training', permanent: true },
       { source: '/courses/genny-cat-training', destination: '/courses/cat-and-genny-training', permanent: true },
-      { source: '/courses/rd8000-training-courses', destination: '/courses/manufacturer-locator-training', permanent: true },
+      { source: '/courses/rd8000-training-courses', destination: '/courses/advanced-em-locator', permanent: true },
       { source: '/courses/vivax-training', destination: '/courses/vscan-and-transmitter-training', permanent: true },
       { source: '/courses/pas128-utility-surveyor-training', destination: '/courses/5-day-pas128-surveyor', permanent: true },
       { source: '/courses/gps-introduction-to-total-station', destination: '/courses/tsa-ices-utility-mapping', permanent: true },
@@ -217,7 +217,7 @@ const nextConfig = {
       { source: '/advanced-techniques-for-identifying-ghost-signals-in-cable-avoidance', destination: '/courses/cat-and-genny-training', permanent: true },
       // General cable avoidance posts
       { source: '/cable-avoidance-training-is-critical-for-contractors-undertaking-groundwork', destination: '/training/cable-location-avoidance', permanent: true },
-      { source: '/cable-avoidance-training-for-safe-digging-and-excavation-work', destination: '/training/cable-location-avoidance', permanent: true },
+      { source: '/cable-avoidance-training-for-safe-digging-and-excavation-work', destination: '/courses/advanced-em-locator', permanent: true },
       { source: '/our-training-will-enable-a-qualification-in-cable-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/reduce-risk-stay-compliant-with-online-cable-avoidance-training', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/cable-avoidance-training-is-essential-for-those-who-need-to-locate-buried-services', destination: '/training/cable-location-avoidance', permanent: true },
@@ -311,7 +311,7 @@ const nextConfig = {
       { source: '/category/online-training-courses', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/category/pas256-course', destination: '/courses/5-day-pas128-surveyor', permanent: true },
       { source: '/category/qcf-level-3-utility-surveyor-qualification', destination: '/courses/level-3-certificate', permanent: true },
-      { source: '/category/rd8100-rd8000-training', destination: '/courses/manufacturer-locator-training', permanent: true },
+      { source: '/category/rd8100-rd8000-training', destination: '/courses/advanced-em-locator', permanent: true },
       { source: '/category/vscan-training', destination: '/courses/vscan-and-transmitter-training', permanent: true },
       // SEO spider fixes
       { source: '/courses/level6diploma', destination: '/courses/level-6-diploma', permanent: true },
