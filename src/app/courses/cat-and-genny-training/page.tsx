@@ -237,7 +237,7 @@ export default function GennyCatTraining() {
               ["Format", "Choice of: 1-day in-house certified, 1-day EUSR CAT1 accredited, 1-day ProQual CAT1 accredited, 2-day in-house certified, 2-day ProQual CAT1 Plus accredited, 2-day split certified (3 months apart)"],
               ["Location", "Delivered at your site nationwide | Wigan HQ available as alternative"],
               ["Max Delegates", "8 (all formats)"],
-              ["Assessment", "Written MCQ (70% pass) + practical assessment on site"],
+              ["Assessment", "Written MCQ (70% pass) + on-site hands-on assessment"],
               ["Certificate", "Certificate of completion with written and practical results"],
               ["Equipment", "Each operative should use their own site equipment. Sygma provide Radiodetection CAT4 and Genny4 as backup. Any manufacturer's locator and signal generator is suitable."],
               ["CITB", "CITB Approved Training Organisation"],
@@ -268,7 +268,10 @@ export default function GennyCatTraining() {
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Why Cable Avoidance Tool Training Is Not Optional</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Thousands of underground services are struck across the UK every year. <strong className="text-foreground">Cable strikes on electricity cables can cause fatal arc flash injuries</strong>; hitting gas mains or high-pressure water puts entire sites at risk. HSE guidelines in HSG47 require anyone locating underground services to be properly trained and assessed as competent, and HSE prosecutions for cable strikes carry significant fines and reputational damage that affects future tender work. Without proper cat and genny training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. <strong className="text-foreground">Proper cable locating and service detection starts with the Genny applying a known signal before passive modes are ever used</strong>. That is the difference between a strike and a safe dig.
+              Thousands of underground services are struck across the UK every year. <strong className="text-foreground">Cable strikes on electricity cables can cause fatal arc flash injuries</strong>; hitting gas mains or high-pressure water puts entire sites at risk. HSE guidelines in HSG47 require anyone locating underground services to be properly trained and assessed as competent on the cable avoidance tool before working near buried utilities. Without proper cable avoidance tool training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. <strong className="text-foreground">Proper cable locating and underground service detection starts with the Genny applying a known signal before passive modes are ever used</strong>. That is the difference between a strike and a safe dig.
+            </p>
+            <p>
+              The cable avoidance tool itself is only one half of the equipment story. The Genny tools — signal generator, induction clamp, sonde and earthing accessories — are what allow an operative to apply a controlled active signal to the buried network. Sygma trains operatives on every part of the Genny tools workflow, from direct-connect to capacitance, so the underground service detection process works whether the asset is bonded, isolated, or accessed remotely. Reading <strong className="text-foreground">cable plans (also called STATS or buried service drawings)</strong> alongside the cable avoidance tool readings is how operatives cross-check what is in the ground against the plan, identify discrepancies in the underground service detection picture, and avoid the strike that comes from trusting only one source. Confident use of the Genny tools is what separates competent locators from operatives who just know which button to press.
             </p>
           </div>
         </div>
@@ -320,10 +323,10 @@ export default function GennyCatTraining() {
               <div className="p-6">
                 <ul className="space-y-2">
                   {[
-                    "Reasons for using Genny & CAT equipment: HSG47 and the legal, financial and human consequences of service strikes",
-                    "Legislation and HSE guidance: HSG47, relevant national legislation, HSE guidelines, client and designer responsibilities",
-                    "Overview of utility networks and underground services: cable and pipe types, materials and connectivity",
-                    "Buried service plans (STATS): how to interpret plans including inaccuracies and limitations",
+                    "Reasons for using Genny & CAT equipment: HSG47 and the legal, financial and human consequences of service strikes on underground utilities",
+                    "Legislation and HSE guidance: HSG47, relevant national legislation, HSE guidelines, client and designer responsibilities for underground utilities",
+                    "Overview of utility networks and underground services: cable and pipe types, materials and connectivity across all buried underground utilities",
+                    "Buried service plans and cable plans (STATS): how to interpret cable plans including inaccuracies and limitations",
                     "Calibration requirements: correct storage, functional checks and pre-use inspection",
                     "Electromagnetic theory: how a cable locator detects underground services, limitations, and myth-busting",
                     "Controls and operation: essential knowledge for correct use of the locator and signal generator in all four cat operating modes (Power, Radio, Genny and Avoidance)",
@@ -356,8 +359,8 @@ export default function GennyCatTraining() {
                 </p>
                 <ul className="space-y-2">
                   {[
-                    "Reading and using service plans to plan the CAT and Genny survey before any equipment is switched on",
-                    "Site visual checks: identifying above-ground indicators of buried underground services",
+                    "Reading and using cable plans and service drawings to plan the CAT and Genny survey before any equipment is switched on",
+                    "Site visual checks: identifying above-ground indicators of buried underground services and underground utilities",
                     "Using the Genny to apply a signal via direct connection, capacitance and induction (cat and genny scan technique)",
                     "Training in all four cat operating modes with strong emphasis on leading with the Genny at every stage of the cable locating workflow",
                     "Locating problem services: street lighting, LV services, small comms cables buried beneath live highway",
@@ -408,7 +411,7 @@ export default function GennyCatTraining() {
               },
               {
                 title: "Sygma In-House Certified",
-                desc: "Sygma's own cat and genny certificate of completion, covering the same comprehensive content as accredited routes but without awarding body fees. Includes written and practical assessment results, a detailed skills record, and personalised pathway guidance on which qualification to progress to next."
+                desc: "Sygma's own cat and genny certificate of completion, covering the same comprehensive content as accredited routes but without awarding body fees. Includes written and hands-on skills assessment results, a detailed skills record, and personalised pathway guidance on which qualification to progress to next."
               },
             ].map((item, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
