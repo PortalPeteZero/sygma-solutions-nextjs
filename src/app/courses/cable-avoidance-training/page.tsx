@@ -33,11 +33,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
+  title: 'Cable Avoidance Training UK | EUSR & ProQual Courses | Sygma',
   description: 'On-site cable avoidance training across the UK. EUSR CAT1, ProQual CAT1, and combined courses. Travel included. Independent. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-training' },
   openGraph: {
-    title: 'Cable Avoidance Training | EUSR & ProQual | Sygma',
+    title: 'Cable Avoidance Training UK | EUSR & ProQual Courses | Sygma',
     description: 'On-site cable avoidance training across the UK. EUSR CAT1, ProQual CAT1, and combined courses. Travel included. Independent. Book today.',
     url: 'https://sygma-solutions.com/courses/cable-avoidance-training',
     siteName: 'Sygma Solutions',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 export default function CableAvoidanceTraining() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cable Avoidance Training', description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses delivered nationwide by specialist utility avoidance trainers.', url: '/courses/cable-avoidance-training', duration: '1-2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'Cable Avoidance Training', description: 'Cable avoidance training from Sygma Solutions. EUSR CAT1, ProQual CAT1, and combined courses delivered nationwide. Genny-First methodology, HSG47 compliant.', url: '/courses/cable-avoidance-training', duration: '1-2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cable Avoidance Training' }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: videoObjectSchema({
@@ -156,16 +156,16 @@ export default function CableAvoidanceTraining() {
             <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">The Problem with Standard Cable Avoidance Training</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Most standard cable avoidance training courses teach operatives to press the on button and walk over the area. They know what the beep means. They do not know why the signal behaves the way it does in different soil conditions, what happens to accuracy near a joint, or why their passive Power mode reading is not telling them what they think it is.
+                Most standard cable avoidance training courses teach operatives to press the on button and walk over the area. They know what the beep means. They do not know <strong>why the signal behaves the way it does in different soil conditions</strong>, what happens to accuracy near a joint, or why their passive Power mode reading is not telling them what they think it is.
               </p>
               <p>
-                The Sygma cable avoidance training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. Start with the Genny, exhaust every connection opportunity, verify what is in the ground before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
+                The Sygma cable avoidance training course was built to fix that. You will notice that Sygma says "Genny & CAT" rather than the industry standard "CAT and Genny". That is deliberate. The rest of the industry puts the locator first. We put the signal generator first, because that is the methodology change that reduces service strikes. <strong>Start with the Genny, exhaust every connection opportunity, verify what is in the ground</strong> before you rely on passive modes. That single change in workflow order is the difference between an operative who finds what is there and one who only confirms what they expected.
               </p>
               <p>
-                This cable avoidance course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the confirmation biases and pressure shortcuts that cause strikes. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives' own working environment.
+                This cable avoidance course was designed after years of post-strike investigations, in which Sygma trainers repeatedly found the same pattern: operatives who were technically trained, certificated and equipped but who had never been taught to start a survey with the Genny, to null out nearby services, or to distrust a signal that seems clear. We address the <strong>confirmation biases and pressure shortcuts that cause strikes</strong>. We build a Genny-First mindset that becomes automatic. And we prove everything on site, in your operatives' own working environment.
               </p>
               <p>
-                The result is a cable avoidance training course with a proven track record of reducing service strikes for organisations across the UK construction, utilities and infrastructure sectors.
+                The result is a cable avoidance training course with a <strong>proven track record of reducing service strikes</strong> for organisations across the UK construction, utilities and infrastructure sectors.
               </p>
             </div>
           </div>
@@ -194,8 +194,8 @@ export default function CableAvoidanceTraining() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="eyebrow mb-3">Why We Say It Differently</p>
           <h2 className="text-xl font-black mb-4 text-foreground">Genny & CAT, Not CAT & Genny</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training" or "cable avoidance training". We call it Genny & CAT. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every cable avoidance course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive readings alone.</p>
-          <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first and exhaust all transmitter connection opportunities before moving to induction." That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training" or "cable avoidance training". We call it Genny & CAT. The name reflects the methodology: <strong>start with the signal generator, apply a known signal, trace it, verify it</strong>. Only then move to passive modes. Every cable avoidance course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: <strong>the majority of preventable utility strikes happen when operatives skip the Genny</strong> and rely on passive readings alone.</p>
+          <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The <strong>ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first"</strong> and exhaust all transmitter connection opportunities before moving to induction. That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
         </div>
       </section>
 
@@ -390,7 +390,7 @@ export default function CableAvoidanceTraining() {
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online vs On-Site Cable Avoidance Training</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Searches for "cable avoidance training online" are common. Sygma's full cable avoidance course is on-site by design. The reason is the practical assessment. A cable avoidance training course that does not include hands-on operation of a CAT and Genny on a real site cannot prove competence under HSG47, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. Online theory alone will not give an operative the qualification.
+              Searches for "cable avoidance training online" are common. Sygma's full cable avoidance course is on-site by design. The reason is the practical assessment. A cable avoidance training course that does not include hands-on operation of a CAT and Genny on a real site <strong>cannot prove competence under HSG47</strong>, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. <strong>Online theory alone will not give an operative the qualification.</strong>
             </p>
             <p>
               Where online training does work is the awareness layer: refreshers, supervisors who need to understand the equipment without operating it, and the HSG47 theory module that complements an on-site practical day. For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance. It is designed to pair with this on-site cable avoidance training rather than replace it.
@@ -502,7 +502,7 @@ export default function CableAvoidanceTraining() {
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
           <p className="text-muted-foreground mb-4 max-w-2xl">This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for cable avoidance and safe digging procedure. It addresses all key elements of HSG47 guidance on preventing strikes on underground services.</p>
-          <p className="text-muted-foreground mb-8 max-w-2xl">HSG47 is the Health and Safety Executive's guidance on avoiding danger from underground services. It places a clear duty on employers and site supervisors to identify hazards, plan work safely, and ensure operatives can locate underground services before excavation. This course covers each of the HSG47 requirements that apply to the operative on the ground: recognising the hazards, interpreting service plans, operating the equipment correctly, and working safely around buried gas, water, electricity, telecoms and district heating utilities.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">HSG47 is the Health and Safety Executive's guidance on <strong>avoiding danger from underground services</strong>. It places a clear duty on employers and site supervisors to <strong>identify hazards, plan work safely, and ensure operatives can locate underground services before excavation</strong>. This course covers each of the HSG47 requirements that apply to the operative on the ground: recognising the hazards, interpreting service plans, operating the equipment correctly, and working safely around <strong>buried gas, water, electricity, telecoms and district heating utilities</strong>.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
@@ -637,7 +637,7 @@ export default function CableAvoidanceTraining() {
           <p className="eyebrow mb-3">See It In Action</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">The Genny First Approach on Site</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-            Watch Pete Ashcroft walk through the Genny First methodology in practice, why the signal generator goes on before passive modes, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma cable avoidance training course.
+            Watch Pete Ashcroft walk through the Genny First methodology in practice, <strong>why the signal generator goes on before passive modes</strong>, how to apply it in different site conditions, and what the data shows about miss rates when it is left until last. This is the approach at the core of every Sygma cable avoidance training course.
           </p>
           <div className="rounded-xl overflow-hidden border border-border mb-6 aspect-video w-full">
             <iframe
@@ -663,7 +663,7 @@ export default function CableAvoidanceTraining() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Available in Your Region</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">City-Specific Cable Avoidance Training</h2>
           <p className="text-muted-foreground mb-5 text-sm leading-relaxed">
-            Sygma delivers cable avoidance training across the UK at your site. Find region-specific information including local delivery options, travel arrangements, and CITB funding routes.
+            Sygma delivers <strong>cable avoidance training across the UK at your site</strong>. Find region-specific information including local delivery options, travel arrangements, and CITB funding routes.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm">
             <Link href="/cable-avoidance-training-london" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">

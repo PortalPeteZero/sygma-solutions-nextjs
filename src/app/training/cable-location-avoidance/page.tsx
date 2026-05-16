@@ -150,11 +150,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'Cable Location and Avoidance Courses | EUSR | Sygma',
-  description: 'HSG47 compliant cable avoidance training from an independent specialist. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Delivered UK-wide.',
+  description: 'HSG47 compliant cable avoidance training. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Independent. Delivered UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/training/cable-location-avoidance' },
   openGraph: {
     title: 'Cable Location and Avoidance Courses | EUSR | Sygma',
-    description: 'HSG47 compliant cable avoidance training from an independent specialist. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Delivered UK-wide.',
+    description: 'HSG47 compliant cable avoidance training. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Independent. Delivered UK-wide.',
     url: 'https://sygma-solutions.com/training/cable-location-avoidance',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
