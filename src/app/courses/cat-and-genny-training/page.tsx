@@ -112,7 +112,7 @@ export default function GennyCatTraining() {
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="CAT & Genny Training Course UK | EUSR & ProQual"
+        headline="CAT and Genny Training Course UK | EUSR & ProQual"
         sub="Not just Genny & CAT equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
         image="cat-11"
         alt="Sygma Solutions operative using a Radiodetection CAT4+ cable locator on site during a CAT and Genny training course"
