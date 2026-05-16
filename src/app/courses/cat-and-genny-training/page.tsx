@@ -292,7 +292,10 @@ export default function GennyCatTraining() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="eyebrow mb-3">Course Content</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-10 text-foreground">CAT and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">CAT and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
+          <p className="text-muted-foreground leading-relaxed mb-10 max-w-3xl">
+            The classroom covers electromagnetic theory and the four detection modes. The practical session moves to site with the <strong className="text-foreground">Genny tools</strong> — signal generator, induction clamp, sonde, earthing accessories — to apply active signals and trace <strong className="text-foreground">underground utilities</strong> in real conditions. <strong className="text-foreground">Cable plans</strong> and service drawings are cross-checked against locator readings throughout.
+          </p>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Theory */}
             <div className="rounded-xl border border-border bg-background overflow-hidden">
@@ -572,6 +575,7 @@ export default function GennyCatTraining() {
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
           <p className="text-muted-foreground mb-4 max-w-2xl">HSG47 is the Health and Safety Executive's guidance on <strong className="text-foreground">avoiding danger from underground services</strong>. It places a clear duty on employers and site supervisors to identify hazards, plan work safely, and ensure operatives can <strong className="text-foreground">locate underground services before excavation</strong>.</p>
+          <p className="text-muted-foreground mb-4 max-w-2xl">HSG47 specifically requires <strong className="text-foreground">underground service detection</strong> before any excavation begins. Operatives must identify <strong className="text-foreground">hazards</strong> from buried cables, gas mains, fibre optic lines and plastic pipes — services that passive detection alone often misses. Striking an electricity cable can cause fatal arc-flash injury; hitting a gas main risks the entire site. Comprehensive training in active signal generation and verified service detection is the legal duty HSG47 places on employers.</p>
           <p className="text-muted-foreground mb-8 max-w-2xl">This course addresses every key element of HSG47 guidance on preventing strikes on underground services. Each part of this safety training maps back to a specific HSG47 requirement, with practical skills assessed on real <strong className="text-foreground">buried gas, water, electricity, telecoms and district heating utilities</strong> during the site-based session.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
