@@ -82,11 +82,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Course UK | EUSR CAT1 + ProQual | Sygma',
-  description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent specialist. Book today.',
+  description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cat-and-genny-training' },
   openGraph: {
     title: 'CAT and Genny Training Course UK | EUSR CAT1 + ProQual | Sygma',
-    description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent specialist. Book today.',
+    description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent. Book today.',
     url: 'https://sygma-solutions.com/courses/cat-and-genny-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-11', width: 1200, height: 630, alt: 'CAT and Genny training assessment on site using CAT4 cable locator and Genny4 signal generator' }],
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
 export default function GennyCatTraining() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training', description: 'Cat and genny training courses from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide by specialist utility avoidance trainers.', url: '/courses/cat-and-genny-training', duration: '1-2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training', description: 'CAT and Genny training from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Genny-First methodology, HSG47 compliant.', url: '/courses/cat-and-genny-training', duration: '1-2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'CAT and Genny Training' }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: videoObjectSchema({
@@ -148,8 +148,11 @@ export default function GennyCatTraining() {
       {/* Opening definition -- AI Overview & PAA eligibility */}
       <section className="bg-background py-8">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">CAT and Genny training is a practical safety course that teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to find buried utilities before excavation.</strong> The course covers electromagnetic theory, four detection modes, and hands-on cable locating and service detection on a real site. This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for anyone using cable locating equipment near underground services.
+          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+            <strong className="text-foreground">CAT and Genny training is a practical safety course that teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to find buried cables and pipes before excavation.</strong> Sometimes called "cat scanner training", it covers electromagnetic theory, four detection modes, signal interpretation, and hands-on cable locating and service detection on a real site. The course teaches operatives how to <strong className="text-foreground">locate underground utilities safely</strong> using both active signals from the transmitter and passive signals from the ground itself.
+          </p>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for anyone using cable locating equipment near underground services. <strong className="text-foreground">Successful delegates can be assessed for an EUSR CAT1 card, ProQual CAT1 certificate, or Sygma in-house certification.</strong>
           </p>
         </div>
       </section>
@@ -253,7 +256,7 @@ export default function GennyCatTraining() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="eyebrow mb-3">Why We Say It Differently</p>
           <h2 className="text-xl font-black mb-4 text-foreground">Genny & CAT, Not CAT & Genny</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training". We call it Genny & CAT. The name reflects the methodology: start with the signal generator, apply a known signal, trace it, verify it. Only then move to passive modes. Every course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive readings alone.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training". We call it Genny & CAT. The name reflects the methodology: <strong className="text-foreground">start with the signal generator, apply a known signal, trace the signal across the site, verify it before relying on passive readings</strong>. Active signals from the Genny are reliable; passive signals from the ground are easily misread. Every course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: <strong className="text-foreground">the majority of preventable utility strikes happen when operatives skip the Genny and rely on passive signals alone</strong>.</p>
           <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first and exhaust all transmitter connection opportunities before moving to induction." That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
         </div>
       </section>
@@ -266,6 +269,22 @@ export default function GennyCatTraining() {
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               Thousands of underground services are struck across the UK every year. <strong className="text-foreground">Cable strikes on electricity cables can cause fatal arc flash injuries</strong>; hitting gas mains or high-pressure water puts entire sites at risk. HSE guidelines in HSG47 require anyone locating underground services to be properly trained and assessed as competent, and HSE prosecutions for cable strikes carry significant fines and reputational damage that affects future tender work. Without proper cat and genny training, operatives rely on passive detection modes alone, which miss the majority of buried cables, fibre optic lines, plastic gas pipes and any metallic underground service not carrying a detectable signal. <strong className="text-foreground">Proper cable locating and service detection starts with the Genny applying a known signal before passive modes are ever used</strong>. That is the difference between a strike and a safe dig.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Online vs On-Site format question */}
+      <section className="bg-muted/20 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="eyebrow mb-3">Format Question</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online vs On-Site CAT and Genny Training</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Searches for "<strong className="text-foreground">CAT and Genny training online</strong>" and "<strong className="text-foreground">cat and genny course online</strong>" are common. Sygma's full CAT and Genny course is on-site by design. The reason is the practical assessment: a CAT and Genny course that does not include hands-on operation of a CAT and Genny on a real site <strong className="text-foreground">cannot prove competence under HSG47</strong>, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. <strong className="text-foreground">Online theory alone will not give an operative the qualification.</strong>
+            </p>
+            <p>
+              Where online training does work is the awareness layer: refreshers, supervisors who need to understand the equipment without operating it, and the HSG47 theory module that complements an on-site practical day. For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance. It is designed to pair with this on-site CAT and Genny training rather than replace it.
             </p>
           </div>
         </div>
@@ -486,10 +505,10 @@ export default function GennyCatTraining() {
             </div>
             <div>
               <p className="eyebrow mb-3">UK Delivery</p>
-              <h3 className="text-xl font-black mb-4 text-foreground">CAT and Genny Training Across the UK</h3>
+              <h3 className="text-xl font-black mb-4 text-foreground">CAT and Genny Training Near You, Across the UK</h3>
               <div className="bg-background rounded-xl border border-border p-5 mb-4">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-3">
-                  Sygma delivers CAT and Genny training courses at client sites across the UK. Common delivery regions include London and the South East, Manchester and the North West, Birmingham and the Midlands, Bristol and the South West, Scotland, and across Northern England. Travel is included in the day rate with no hidden extras, so course attendees from anywhere in the UK can book without worrying about additional costs.
+                  Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers CAT and Genny training courses at client sites anywhere in the UK. Common delivery regions include London and the South East, Manchester and the North West, Birmingham and the Midlands, Bristol and the South West, Scotland, and across Northern England. <strong className="text-foreground">Travel is included in the day rate with no hidden extras</strong>, so course attendees from anywhere in the UK can book without worrying about additional costs.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Our training centre in Wigan is available as an alternative venue at no cost, with full welfare facilities for delegates travelling in.
@@ -572,7 +591,8 @@ export default function GennyCatTraining() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Regulation</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">The course addresses all key elements of HSG47 health and safety guidance on preventing strikes on underground services. Every element of this safety training and our wider training courses maps back to a specific HSG47 requirement, with practical skills assessed on real underground services during the site-based session.</p>
+          <p className="text-muted-foreground mb-4 max-w-2xl">HSG47 is the Health and Safety Executive's guidance on <strong className="text-foreground">avoiding danger from underground services</strong>. It places a clear duty on employers and site supervisors to identify hazards, plan work safely, and ensure operatives can <strong className="text-foreground">locate underground services before excavation</strong>.</p>
+          <p className="text-muted-foreground mb-8 max-w-2xl">This course addresses every key element of HSG47 guidance on preventing strikes on underground services. Each part of this safety training maps back to a specific HSG47 requirement, with practical skills assessed on real <strong className="text-foreground">buried gas, water, electricity, telecoms and district heating utilities</strong> during the site-based session.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
