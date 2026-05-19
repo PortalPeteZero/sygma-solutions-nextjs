@@ -147,10 +147,10 @@ export default function Hsg47Training() {
           </p>
           <ul className="space-y-3 mb-6">
             {[
-              ["Site operatives and groundworkers", "anyone who picks up a CAT or Genny to locate utility services before excavations begin — the core audience."],
-              ["Civil engineers and site supervisors", "those responsible for supervising excavation work and ensuring safe systems of work are followed."],
-              ["Utility workers and contractors", "operatives working on or near buried cables, pipes and infrastructure for utility companies, highways authorities and network operators."],
-              ["Duty holders and principal contractors", "project managers, principal contractors and designers all have a legal duty to ensure their teams can safely detect utility services before excavation."],
+              ["Site operatives and groundworkers", "anyone who picks up a CAT and Genny (cat genny) to locate utility services before excavations begin — the core audience for HSG47."],
+              ["Civil engineers and site supervisors", "those responsible for supervising excavation work, interpreting utility drawings, and ensuring safe systems of work are followed near utility services."],
+              ["Utility workers and contractors", "operatives working on or near buried utility services, pipes and infrastructure for utility companies, National Grid sites, highways authorities and network operators."],
+              ["Duty holders and principal contractors", "project managers, principal contractors and safety professionals all have a legal duty to ensure their teams can safely detect utility services before excavation. National occupational standards apply."],
             ].map(([title, desc]) => (
               <li key={title} className="flex gap-3 text-sm">
                 <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
@@ -170,7 +170,7 @@ export default function Hsg47Training() {
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Course Routes</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">What&rsquo;s Covered?</h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            Two complementary areas: using cable avoidance tools and underground services detection devices to safely detect utility services, and managing safe digging procedures around buried utilities. Sygma offers dedicated courses for each, delivered at your site UK-wide. Coverage includes utility drawings, line search documents and approved detection methods before excavation.
+            Two complementary areas: using cable avoidance tools and underground services detection devices to safely detect utility services, and managing safe digging procedures around buried utility services. Sygma offers dedicated cat genny and cable avoidance courses for each, delivered at your site UK-wide. Coverage includes utility drawings, line search documents and approved detection methods to locate utility services before excavation. Safety critical for any work near buried services or on National Grid infrastructure.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-xl border border-border bg-card overflow-hidden">
@@ -180,7 +180,7 @@ export default function Hsg47Training() {
               </div>
               <div className="p-6 space-y-3">
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Cable locator (CAT) + signal generator (Genny) used to detect underground services before excavation. Electromagnetic theory, all four detection modes, practical site assessment, and the <strong className="text-foreground">Genny-First methodology</strong> that measurably reduces service strikes. Delegates also learn to use genny devices effectively as part of the detection process.
+                  Cable locator (CAT) + signal generator (Genny) used to detect utility services before excavation. Cat genny equipment fundamentals, electromagnetic theory, all four detection modes, practical site assessment, and the <strong className="text-foreground">Genny-First methodology</strong> that measurably reduces service strikes. Delegates also learn to use genny devices effectively as part of the detection process. Approved detection methods for locating buried utility services.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Available as <strong className="text-foreground">EUSR Category 1</strong>, ProQual CAT1, or Sygma in-house certification. CITB Approved.
@@ -200,7 +200,7 @@ export default function Hsg47Training() {
               </div>
               <div className="p-6 space-y-3">
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  The full safe-digging procedure: utility drawings, advance planning, permits to dig, identifying buried utility services from utility surveying records, safety critical excavation methods, and how to control underground service risk before any team gains access.
+                  The full safe-digging procedure: utility drawings, advance planning, permits to dig, identifying buried utility services from utility surveying records, safety critical excavation methods, and how to locate utility services and control underground risk before any team gains access. National occupational standards for safety professionals.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   CITB Approved. Delivered at your site with your plans and your risk profile.
@@ -246,7 +246,7 @@ export default function Hsg47Training() {
             <div className="border border-border rounded-lg bg-card p-5">
               <h3 className="font-bold text-foreground mb-2">EUSR Category 1</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                <strong className="text-foreground">EUSR Category 1</strong> — formally Utility Excavations Category 1: Locate Utility Services — is the most widely accepted route to HSG47 Avoiding Danger compliance. Delivered to national occupational standards. Card lasts three years (expiry date on card), recognised across UK construction, utilities, highways and HV substations. One-day or two-day in-house format.
+                <strong className="text-foreground">EUSR Category 1: Locate Utility Services</strong> — formally Utility Excavations Category 1: Locate Utility Services — is the most widely accepted route to HSG47 Avoiding Danger compliance. Delivered to national occupational standards. Card lasts three years (expiry date on card), recognised across UK construction, utilities, highways and HV substations. The EUSR scheme for operatives who need to locate utility services before excavation. One-day or two-day in-house format.
               </p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
@@ -294,7 +294,7 @@ export default function Hsg47Training() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Trainers</p>
               <h3 className="text-base font-bold text-foreground mb-2">Directly Employed, TAQA Qualified</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">All Sygma trainers are directly employed ex-utility surveyors, safety professionals or ex-equipment manufacturer specialists. They have carried out the work they teach — credibility no generalist health and safety company can replicate.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">All Sygma trainers are directly employed ex-utility surveyors, safety professionals or ex-equipment manufacturer specialists. They have carried out the work they teach across National Grid sites and utility services contracts — credibility no generalist health and safety company can replicate.</p>
             </div>
           </div>
         </div>
