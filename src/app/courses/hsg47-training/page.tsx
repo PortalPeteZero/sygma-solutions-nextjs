@@ -69,11 +69,11 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: 'HSG47 Training | EUSR Compliant Courses | Sygma Solutions',
-  description: "HSG47 training from the UK's only independent specialist. EUSR Category 1 and Cable Avoidance courses. CITB approved. On-site delivery, UK-wide.",
+  description: "HSG47 training from Sygma. EUSR Category 1 and Cable Avoidance courses. CITB approved. On-site delivery UK-wide. Directly employed trainers.",
   alternates: { canonical: 'https://sygma-solutions.com/courses/hsg47-training' },
   openGraph: {
     title: 'HSG47 Training | EUSR Compliant Courses | Sygma Solutions',
-    description: "HSG47 training from the UK's only independent specialist. EUSR Category 1 and Cable Avoidance courses. CITB approved. On-site delivery, UK-wide.",
+    description: "HSG47 training from Sygma. EUSR Category 1 and Cable Avoidance courses. CITB approved. On-site delivery UK-wide. Directly employed trainers.",
     url: 'https://sygma-solutions.com/courses/hsg47-training',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-84-hsg47-training', width: 1200, height: 630, alt: 'HSG47 training courses from Sygma Solutions -- EUSR CAT1 and cable avoidance' }],
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
 export default function Hsg47Training() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'HSG47 Training', description: 'HSG47 training courses from Sygma Solutions. EUSR CAT1 and Cable Avoidance training delivered nationwide by specialist utility avoidance trainers. CITB approved.', url: '/courses/hsg47-training', duration: '1-2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'HSG47 Training', description: 'HSG47 training courses from Sygma Solutions. EUSR CAT1 and Cable Avoidance training delivered nationwide. CITB approved. Genny-First methodology.', url: '/courses/hsg47-training', duration: '1-2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Courses', to: '/courses' }, { label: 'HSG47 Training' }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
 
@@ -277,7 +277,7 @@ export default function Hsg47Training() {
 
       {/* Full-width image strip */}
       <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1585 / 341" }}>
-        <Image src="cat-63-hsg47-training" width={1585} height={341} alt="HSG47 training delivered on-site across the UK by Sygma Solutions specialist trainers" sizes="100vw" className="w-full h-full object-cover" />
+        <Image src="cat-63-hsg47-training" width={1585} height={341} alt="HSG47 training delivered on-site across the UK by directly employed Sygma Solutions trainers" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* Why Sygma */}
