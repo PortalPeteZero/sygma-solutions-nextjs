@@ -187,6 +187,8 @@ export default function AccreditationsPage() {
             <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 or ProQual CAT1? A side-by-side comparison</Link></li>
             <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS or EUSR? A practical comparison</Link></li>
             <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training: EUSR-accredited courses</Link></li>
+
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 explained -- the HSE guide for utility avoidance</Link></li>
           </ul>
         </div>

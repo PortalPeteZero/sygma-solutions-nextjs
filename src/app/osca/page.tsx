@@ -69,6 +69,8 @@ export default function OscaPage() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">Site-manager's playbook on cable-strike prevention</Link></li>
             <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">4 Behaviours That Cause Cable Strikes on Site</Link></li>
+            <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training: EUSR-accredited courses</Link></li>
+
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">Understanding HSG47 in plain English</Link></li>
             <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Why Sygma teaches Genny-first locating</Link></li>
           </ul>
