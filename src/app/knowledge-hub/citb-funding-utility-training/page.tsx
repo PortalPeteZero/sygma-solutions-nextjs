@@ -161,6 +161,8 @@ export default function CitbFundingUtilityTraining() {
                 <li><Link href="/knowledge-hub/understanding-pas-128" className="text-primary hover:underline">Understanding PAS 128</Link></li>
                 <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
                 <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which One Does Your Team Need?</Link></li>
+                <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training: EUSR-accredited courses</Link></li>
+
                 <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
               </ul>
             </div>

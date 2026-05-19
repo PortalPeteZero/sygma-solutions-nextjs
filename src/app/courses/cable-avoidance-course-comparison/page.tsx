@@ -581,6 +581,8 @@ export default function CourseComparison() {
             <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">Choosing between EUSR CAT1 and ProQual CAT1</Link></li>
             <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which Does Your Team Need?</Link></li>
             <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
+            <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training: EUSR-accredited courses</Link></li>
+
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
           </ul>
         </div>
