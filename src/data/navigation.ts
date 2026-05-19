@@ -20,10 +20,10 @@ export const mainNav: NavMenu[] = [
       {
         group: 'Operator Courses',
         items: [
-          { label: 'Cable Avoidance Training', to: '/courses/cable-avoidance-training' },
-          { label: 'HSG47 Training', to: '/courses/hsg47-training' },
           { label: 'CAT & Genny Training', to: '/courses/cat-and-genny-training' },
+          { label: 'Cable Avoidance Training', to: '/courses/cable-avoidance-training' },
           { label: 'EUSR CAT 1', to: '/courses/eusr-cat1' },
+          { label: 'HSG47 Training', to: '/courses/hsg47-training' },
           { label: 'ProQual CAT1', to: '/courses/proqualcat1-training' },
           { label: 'ProQual CAT1 Plus', to: '/courses/proqualcat1plus' },
           { label: 'RQF Level 2 Award', to: '/courses/rqf-level-2-award' },
@@ -123,10 +123,10 @@ export const topBarLinks: FooterLink[] = [
 /* ------------------------------------------------------------------ */
 
 export const footerUtilityAvoidanceLinks: FooterLink[] = [
-  { label: 'Cable Avoidance Training', href: '/courses/cable-avoidance-training' },
-  { label: 'HSG47 Training', href: '/courses/hsg47-training' },
   { label: 'CAT & Genny Training', href: '/courses/cat-and-genny-training' },
+  { label: 'Cable Avoidance Training', href: '/courses/cable-avoidance-training' },
   { label: 'EUSR CAT 1', href: '/courses/eusr-cat1' },
+  { label: 'HSG47 Training', href: '/courses/hsg47-training' },
   { label: 'EUSR CAT 2 Safe Dig', href: '/courses/eusr-cat2-safe-dig' },
   { label: 'EUSR CAT 1 & CAT 2 Combined', href: '/courses/eusr-cat1-cat2-combined' },
   { label: 'ProQual CAT1 & CAT2 Combined', href: '/courses/proqual-cat1-cat2-combined' },
