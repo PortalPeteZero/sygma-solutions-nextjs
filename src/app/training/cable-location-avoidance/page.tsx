@@ -149,12 +149,12 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Cable Location and Avoidance Courses | EUSR | Sygma',
-  description: 'HSG47 compliant cable avoidance training. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Independent. Delivered UK-wide.',
+  title: 'Cable Avoidance Courses | Compare EUSR, ProQual & CAT Routes | Sygma',
+  description: 'Compare Sygma cable avoidance courses. EUSR CAT1, ProQual CAT1, CAT and Genny and in-house routes. HSG47 compliant. Independent. Delivered UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/training/cable-location-avoidance' },
   openGraph: {
-    title: 'Cable Location and Avoidance Courses | EUSR | Sygma',
-    description: 'HSG47 compliant cable avoidance training. EUSR CAT1, ProQual CAT1, CAT and Genny courses. Independent. Delivered UK-wide.',
+    title: 'Cable Avoidance Courses | Compare EUSR, ProQual & CAT Routes | Sygma',
+    description: 'Compare Sygma cable avoidance courses. EUSR CAT1, ProQual CAT1, CAT and Genny and in-house routes. HSG47 compliant. Independent. Delivered UK-wide.',
     url: 'https://sygma-solutions.com/training/cable-location-avoidance',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
@@ -167,14 +167,14 @@ export default function UtilityAvoidanceHub() {
     <>
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Cable Avoidance Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Cable Avoidance Courses" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="Cable Avoidance Training That Changes How Your Operatives Work"
+        headline="Cable Avoidance Courses: Compare Every Route"
         sub="EUSR CAT1, ProQual, and in-house certificate courses. All underpinned by electromagnetic theory, Genny-First methodology, and 21 years of specialist field experience."
         image="cat-82-cable-location-avoidance"
         alt="Cable location and avoidance training courses overview showing CAT and Genny equipment"
-        breadcrumbs={[{ label: "Cable Avoidance Training" }]}
+        breadcrumbs={[{ label: "Cable Avoidance Courses" }]}
       />
 
       {/* Key USP stats boxes */}
