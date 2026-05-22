@@ -37,7 +37,6 @@ export default function CatAndGennyTrainingLondon() {
 
       {/* Hero */}
       <div className="relative w-full overflow-hidden bg-foreground">
-        <Image src="cat-14" alt="CAT and Genny training in London" fill className="absolute inset-0 object-contain" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
         <div className="absolute inset-0 border-l-4 border-accent" />
         <div className="relative flex flex-col justify-end p-8 md:p-12 h-full">
@@ -107,11 +106,6 @@ export default function CatAndGennyTrainingLondon() {
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-69" width={1200} height={900} alt="Practical CAT and Genny equipment training in London" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
       </div>
 
-      {/* Image break */}
-      <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1600 / 733" }}>
-        <Image src="cat-77" width={1600} height={733} alt="CAT and Genny equipment training in London" sizes="100vw" className="w-full h-full object-cover" />
-      </div>
-
       {/* What you'll learn — equipment angle */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <p className="eyebrow text-primary mb-3">Equipment Skills</p>
@@ -154,11 +148,6 @@ export default function CatAndGennyTrainingLondon() {
           </div>
         </div>
       </section>
-
-      {/* Image break */}
-      <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1400 / 410" }}>
-        <Image src="cat-90" width={1400} height={410} alt="On-site CAT and Genny training conditions in London" sizes="100vw" className="w-full h-full object-cover" />
-      </div>
 
       {/* CITB */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">

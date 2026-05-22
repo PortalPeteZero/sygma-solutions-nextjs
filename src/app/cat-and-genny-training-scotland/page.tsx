@@ -36,7 +36,6 @@ export default function CatAndGennyTrainingScotland() {
 
       {/* Hero */}
       <div className="relative w-full overflow-hidden bg-foreground">
-        <Image src="cat-68" alt="CAT and Genny training in Scotland" fill className="absolute inset-0 object-contain" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/30" />
         <div className="absolute inset-0 border-l-4 border-accent" />
         <div className="relative flex flex-col justify-end p-8 md:p-12 h-full">
@@ -103,11 +102,6 @@ export default function CatAndGennyTrainingScotland() {
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-07" width={1200} height={900} alt="CAT4 cable avoidance tool in use on a site in Scotland" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-79" width={1200} height={900} alt="Genny signal generator during CAT and Genny training in Scotland" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted"><Image src="cat-85" width={1200} height={900} alt="Practical CAT and Genny equipment training in the Central Belt" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" /></div>
-      </div>
-
-      {/* Image break */}
-      <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1600 / 733" }}>
-        <Image src="cat-76" width={1600} height={733} alt="CAT and Genny equipment training in Scotland" sizes="100vw" className="w-full h-full object-cover" />
       </div>
 
       {/* What you'll learn */}
