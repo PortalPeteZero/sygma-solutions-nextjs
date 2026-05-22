@@ -127,6 +127,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cable-avoidance-training-birmingham`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/cable-avoidance-training-manchester`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/cable-avoidance-training-scotland`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/cat-and-genny-training-london`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/cat-and-genny-training-birmingham`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/cat-and-genny-training-manchester`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/cat-and-genny-training-scotland`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/utility-mapping-training-bristol`, changeFrequency: 'monthly', priority: 0.6 },
   ];
 

@@ -493,6 +493,9 @@ export default function GennyCatTraining() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-3">
                   Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers CAT and Genny training courses at client sites anywhere in the UK. Common delivery regions include <Link href="/locations/london" className="text-primary hover:underline">London and the South East</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester and the North West</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham and the Midlands</Link>, <Link href="/locations/bristol" className="text-primary hover:underline">Bristol and the South West</Link>, <Link href="/cable-avoidance-training-scotland" className="text-primary hover:underline">Scotland</Link>, and across Northern England. <strong className="text-foreground">Travel is included in the day rate with no hidden extras</strong>.
                 </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  Dedicated CAT and Genny city course pages: <Link href="/cat-and-genny-training-london" className="text-primary hover:underline">London</Link>, <Link href="/cat-and-genny-training-birmingham" className="text-primary hover:underline">Birmingham</Link>, <Link href="/cat-and-genny-training-manchester" className="text-primary hover:underline">Manchester</Link> and <Link href="/cat-and-genny-training-scotland" className="text-primary hover:underline">Scotland</Link>.
+                </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Our training centre in Wigan is available as an alternative venue at no cost, with full welfare facilities for delegates travelling in.
                 </p>
