@@ -1,4 +1,4 @@
-import { faqPageSchema, breadcrumbSchema } from '@/lib/schema';
+import { courseSchema, faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PhoneLink from '@/components/PhoneLink';
@@ -30,6 +30,7 @@ export default function CatAndGennyTrainingScotland() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training Scotland', description: 'On-site CAT and Genny equipment training (CAT4 and Genny) across the Central Belt and mainland Scotland. EUSR CAT 1 and ProQual accredited, CITB Approved Training Organisation.', url: '/cat-and-genny-training-scotland', duration: '1 day', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "All Courses", to: "/courses" }, { label: "CAT and Genny Training Scotland" }]) }} />
 

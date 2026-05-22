@@ -201,6 +201,18 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
         </div>
       </section>
 
+      {/* Dedicated city course pages (cities that have them) */}
+      {['london', 'birmingham', 'manchester'].includes(data.slug) && (
+        <section className="container mx-auto px-6 md:px-8 py-10 max-w-4xl text-center">
+          <p className="text-sm text-muted-foreground">
+            Dedicated course pages for {data.slug.charAt(0).toUpperCase() + data.slug.slice(1)}:{' '}
+            <Link href={`/cat-and-genny-training-${data.slug}`} className="text-primary font-semibold hover:underline">CAT and Genny Training</Link>
+            {' · '}
+            <Link href={`/cable-avoidance-training-${data.slug}`} className="text-primary font-semibold hover:underline">Cable Avoidance Training</Link>
+          </p>
+        </section>
+      )}
+
       {/* CTA */}
       <section className="bg-primary border-y border-border py-16 px-4">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl text-center">
