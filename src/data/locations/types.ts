@@ -17,6 +17,7 @@ export interface SectorItem {
 
 export interface CourseItem {
   course: string;
+  href: string;
   desc: string;
 }
 

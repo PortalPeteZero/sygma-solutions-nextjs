@@ -156,7 +156,7 @@ export default function LocationTemplate({ data }: { data: LocationPageData }) {
               {data.courses.map((card) => (
                 <Link
                   key={card.course}
-                  href="/courses"
+                  href={card.href}
                   className="block rounded-lg border border-border bg-background p-5 hover:border-primary transition-colors"
                 >
                   <p className="mb-2 text-sm font-bold text-foreground">{card.course}</p>
