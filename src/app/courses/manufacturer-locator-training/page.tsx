@@ -411,6 +411,10 @@ export default function ManufacturerLocatorTraining() {
               <h3 className="text-base font-bold text-foreground mb-2">Plans and Process Training</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Master utility plan interpretation. The first step before any locating work begins.</p>
             </Link>
+            <Link href="/courses/advanced-em-locator" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+              <h3 className="text-base font-bold text-foreground mb-2">RD8200, RD8000 &amp; RD8100 Training</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Radiodetection RD-series and advanced electromagnetic locator training &mdash; our dedicated Advanced EM Locator course.</p>
+            </Link>
           </div>
         </div>
       </section>
