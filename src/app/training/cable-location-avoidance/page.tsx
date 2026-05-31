@@ -618,7 +618,7 @@ export default function UtilityAvoidanceHub() {
               href="/courses/cable-avoidance-training"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View In-House Certificate Course
+              View Cable Avoidance Training Course
             </Link>
           </div>
         </div>

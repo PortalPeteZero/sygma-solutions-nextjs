@@ -213,7 +213,7 @@ export default function Home() {
               <p className="text-muted-foreground leading-relaxed mb-4">The Genny is a <strong>signal generator</strong> that applies a specific signal to a target conductor. The CAT then detects that signal. Together, these cable avoidance tools are significantly more reliable than passive detection techniques alone. Proper genny training ensures operatives understand how to locate underground cables and avoid underground services using the correct genny tools and techniques. But most operatives on UK construction sites reach for the CAT and never connect the Genny.</p>
               <p className="text-muted-foreground leading-relaxed mb-4">Sygma's CAT and Genny training starts with the signal generator because that is where strike prevention actually begins. Clients who implement our <strong>Genny-First methodology</strong> report a 70 to 80% measurable increase in genny adoption. That is not a training statistic. That is a site where operatives carry out CAT and Genny work with the right techniques, every single day.</p>
               <Link href="/courses/cable-avoidance-training" className="inline-flex items-center px-5 py-2.5 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors">
-                See Our Cable Avoidance Courses <ArrowRight size={14} className="ml-1.5" />
+                See Our Cable Avoidance Training Course <ArrowRight size={14} className="ml-1.5" />
               </Link>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">

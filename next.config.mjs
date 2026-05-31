@@ -217,7 +217,7 @@ const nextConfig = {
       { source: '/advanced-techniques-for-identifying-ghost-signals-in-cable-avoidance', destination: '/courses/cat-and-genny-training', permanent: true },
       // General cable avoidance posts
       { source: '/cable-avoidance-training-is-critical-for-contractors-undertaking-groundwork', destination: '/training/cable-location-avoidance', permanent: true },
-      { source: '/cable-avoidance-training-for-safe-digging-and-excavation-work', destination: '/courses/advanced-em-locator', permanent: true },
+      { source: '/cable-avoidance-training-for-safe-digging-and-excavation-work', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/our-training-will-enable-a-qualification-in-cable-avoidance', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/reduce-risk-stay-compliant-with-online-cable-avoidance-training', destination: '/training/cable-location-avoidance', permanent: true },
       { source: '/cable-avoidance-training-is-essential-for-those-who-need-to-locate-buried-services', destination: '/training/cable-location-avoidance', permanent: true },

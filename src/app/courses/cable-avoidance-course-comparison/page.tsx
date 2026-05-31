@@ -98,6 +98,7 @@ export default function CourseComparison() {
           <p>
             This page is for procurement managers, H&S leads, and site managers who need to decide which cable avoidance qualification to specify for their operatives.
           </p>
+          <p>For the broader course context, see the main <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline font-semibold">Cable Avoidance Training</Link> page. For the comparison of the three accredited routes, read on.</p>
           <p>If you already know which qualification you want, go straight to the relevant course page:</p>
         </div>
         <div className="overflow-x-auto rounded-xl border border-border max-w-3xl">

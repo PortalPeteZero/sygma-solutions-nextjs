@@ -138,7 +138,7 @@ export default function CitbFundingUtilityTraining() {
             <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Which Sygma Courses Qualify?</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Sygma delivers a range of utility avoidance and cable avoidance courses. Those that fall within the CITB framework are eligible for grant claims. The specific courses and grant values can change as the CITB updates its funding schedule, so we always recommend confirming eligibility at the time of booking. As a general guide, our EUSR and ProQual cable avoidance courses, safe digging courses, and plans and process training are typically within scope.
+              Sygma delivers a range of utility avoidance and <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline font-semibold">cable avoidance courses</Link>. Those that fall within the CITB framework are eligible for grant claims. The specific courses and grant values can change as the CITB updates its funding schedule, so we always recommend confirming eligibility at the time of booking. As a general guide, our EUSR and ProQual cable avoidance courses, safe digging courses, and plans and process training are typically within scope.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
