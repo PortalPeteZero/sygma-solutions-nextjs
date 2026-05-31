@@ -46,11 +46,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'RD8200 Training | Advanced EM Locator | Sygma Solutions',
+  title: 'RD8200 & RD8000 Training | Advanced EM Locator | Sygma Solutions',
   description: 'RD8200 and advanced EM locator training from Sygma. RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, sonde, and HV cable location.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/advanced-em-locator' },
   openGraph: {
-    title: 'RD8200 Training | Advanced EM Locator | Sygma Solutions',
+    title: 'RD8200 & RD8000 Training | Advanced EM Locator | Sygma Solutions',
     description: 'RD8200 and advanced EM locator training from Sygma. RD8100, Vivax vLoc, Leica Ultra. CICES-mapped. Signal clamp, sonde, and HV cable location.',
     url: 'https://sygma-solutions.com/courses/advanced-em-locator',
     siteName: 'Sygma Solutions',
@@ -62,14 +62,14 @@ export const metadata: Metadata = {
 export default function AdvancedEmLocator() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'RD8200 Training | Advanced EM Locator', description: 'Advanced electromagnetic locator training covering RD8200, RD8100, Vivax vLoc, and Leica Ultra. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location.', url: '/courses/advanced-em-locator', credential: 'CICES GEUS01 Item E', duration: '2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'RD8200 & RD8000 Training | Advanced EM Locator', description: 'Advanced electromagnetic locator training covering RD8200, RD8100, Vivax vLoc, and Leica Ultra. CICES-mapped. Signal clamp, capacitance, sonde, and HV cable location.', url: '/courses/advanced-em-locator', credential: 'CICES GEUS01 Item E', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Advanced EM Locator' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="RD8200 & RD8000 | Advanced EM Locator Training"
-        sub="Advanced training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot."
+        sub="Advanced RD8200 and RD8000 training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot."
         image="em-04-advanced-em-locator"
         breadcrumbs={[
           { label: "Training", href: "/training/cable-location-avoidance" },
