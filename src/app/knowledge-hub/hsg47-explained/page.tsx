@@ -7,12 +7,12 @@ import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'HSG47 Training: What It Requires and How Training Aligns | Sygma Solutions',
-  description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training aligns.",
+  title: 'HSG47 Explained: HSE Guidance on Underground Services | Sygma Solutions',
+  description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how the guidance works in practice.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained' },
   openGraph: {
-    title: 'HSG47 Training: What It Requires and How Training Aligns',
-    description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how cable avoidance training meets its obligations.",
+    title: 'HSG47 Explained: HSE Guidance on Underground Services',
+    description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how the guidance works in practice.",
     url: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained',
     type: 'article',
     images: [cloudinaryOgImage('cat-71-hsg47-explained', 'HSG47 safe digging practices')],
@@ -31,8 +31,8 @@ export default function Hsg47Explained() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: articleSchema({
-            headline: 'HSG47 Training: What HSG47 Requires and How Cable Avoidance Training Aligns',
-            description: 'What is HSG47 and what training does it require? The HSE guidance for avoiding danger from underground services explained, with how cable avoidance training maps to its requirements.',
+            headline: 'HSG47 Explained: HSE Guidance on Underground Services',
+            description: 'What is HSG47, who does it apply to, and what does it require? The HSE guidance for avoiding danger from underground services explained in plain English.',
             url: '/knowledge-hub/hsg47-explained',
             datePublished: '2026-03-09',
             image: 'cat-84-hsg47-explained',
@@ -50,7 +50,7 @@ export default function Hsg47Explained() {
         image="cat-13-hsg47-explained"
         alt="HSG47 safe digging practices explained with practical excavation guidance"
         eyebrow="Knowledge Hub"
-        headline="HSG47 Training: What It Requires and How Training Aligns"
+        headline="HSG47 Explained: HSE Guidance on Underground Services"
         sub="HSG47 is the principal guidance document for avoiding danger from underground services. This guide explains the key requirements and how cable avoidance training maps to them."
         breadcrumbs={breadcrumbs}
       />
@@ -75,7 +75,7 @@ export default function Hsg47Explained() {
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center gap-4">
               <div className="flex-1">
-                <p className="font-bold text-foreground mb-1">Looking to book HSG47 training courses?</p>
+                <p className="font-bold text-foreground mb-1">Looking to book a course?</p>
                 <p className="text-sm text-muted-foreground">This article explains the guidance. If you need to book assessed <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training courses</Link> -- EUSR CAT1, ProQual CAT1, or Cable Avoidance -- visit the course page.</p>
               </div>
               <Link
