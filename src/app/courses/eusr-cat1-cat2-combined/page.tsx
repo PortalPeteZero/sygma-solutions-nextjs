@@ -199,6 +199,10 @@ export default function EusCat12Combined() {
               {
                 title: "Organisations Wanting Comprehensive Training",
                 desc: "Companies that want their workforce trained in both locating and safe digging in one visit"
+              },
+              {
+                title: "Course Eligibility",
+                desc: "No formal qualifications required to attend. Candidates must usually be at least 16 years old and have a basic level of English to complete the written multiple-choice assessment. The combined programme is suitable for delegates with no prior utility-detection experience."
               }
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
@@ -299,6 +303,7 @@ export default function EusCat12Combined() {
             { label: "Surface Removal", text: "Surface removal with correct positioning relative to identified services" },
             { label: "Horizontal Excavation", text: "Horizontal excavation to expose the indicated service below the remaining surface" },
             { label: "Supporting Exposed Services", text: "Supporting exposed services where required" },
+            { label: "Soil Type Awareness", text: "Understanding and managing different soil types as a critical aspect of safe excavation practice: ground stability, support requirements, and excavation method selection appropriate to the conditions encountered" },
             { label: "Reinstatement", text: "Reinstatement completion" },
             { label: "MCQ Assessment", text: "Multiple choice questions (MCQs) at the end of the programme" },
           ].map(({ label, text }, i) => (

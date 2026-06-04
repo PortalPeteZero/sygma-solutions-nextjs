@@ -693,8 +693,11 @@ export default function EusCat1() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined courses</p>
           <h2 className="text-xl md:text-2xl font-black mb-3 text-foreground">Need EUSR CAT 1 + CAT 2 in one block?</h2>
-          <p className="text-muted-foreground leading-relaxed mb-5">
+          <p className="text-muted-foreground leading-relaxed mb-3">
             Many delegates take CAT 1 (Locate Utility Services) and CAT 2 (Safe Excavating Practices) together in a single site visit. Sygma offers two combined formats covering both qualifications on the day. Pick the format that fits your team.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            Looking at the <Link href="/courses/eusr-cat1-cat2-combined" className="underline text-primary">EUSR CAT 1 &amp; 2 combined course cost</Link> for a specific team size, or <Link href="/courses/eusr-cat1-cat2-combined" className="underline text-primary">EUSR CAT 1 &amp; 2 training near you</Link> on your own site? The combined course page covers delegate-count pricing, in-house format options nationwide UK, and a bespoke quote returned within one working day.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/courses/eusr-cat1-cat2-combined" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
