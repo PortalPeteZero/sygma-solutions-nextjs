@@ -29,6 +29,14 @@ export interface KnowledgeItem {
 
 export const knowledgeHubItems: KnowledgeItem[] = [
   {
+    category: "Underground Utilities",
+    title: "Detecting Plastic Gas Service Pipes: Methods and Their Limits",
+    desc: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site. Prepared with The Clancy Group.",
+    href: "/knowledge-hub/detecting-plastic-gas-service-pipes",
+    type: "article",
+    image: "cat-67",
+  },
+  {
     category: "Utility Avoidance",
     title: "4 Behaviours That Can Cause Cable Strikes on Site",
     desc: "Most cable strikes trace back to the same four failure patterns in the pre-excavation survey. Understanding them is the first step to preventing them.",
