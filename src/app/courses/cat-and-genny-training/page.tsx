@@ -549,6 +549,10 @@ export default function GennyCatTraining() {
               <h3 className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</h3>
               <p className="text-sm text-muted-foreground">When and how to renew your EUSR CAT1 card before it expires.</p>
             </Link>
+            <Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block sm:col-span-2">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Detecting Plastic Gas Service Pipes: Methods and Their Limits</h3>
+              <p className="text-sm text-muted-foreground">Where CAT and Genny stop working: plastic gas pipes are invisible to electromagnetic detection. Field note covering Gas Tracker II, sonde, GPR, and trial-hole methods. Prepared by Sygma for The Clancy Group.</p>
+            </Link>
           </div>
         </div>
       </section>

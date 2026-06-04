@@ -218,6 +218,7 @@ export default function UtilityStrikesFirst20Metres() {
                 <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">Utility Strike Prevention: A Guide for Site Managers</Link></li>
                 <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
                 <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="text-primary hover:underline">Why CAT and Genny don't find plastic gas service pipes (and what does)</Link></li>
               </ul>
             </div>
 
