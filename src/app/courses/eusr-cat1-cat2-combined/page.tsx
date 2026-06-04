@@ -256,22 +256,25 @@ export default function EusCat12Combined() {
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              "Legislation and guidance relating to buried services, including HSG47 and company-specific policy",
-              "Site-specific risk assessments, company procedures, and permits to dig",
-              "Excavation hazards: Leptospirosis, asbestos, silica dust, noise, vibration, loose ground, groundwater",
-              "Utility plan interpretation: STATS plans, limitations of drawings, visual survey process",
-              "Electromagnetic theory: how a CAT and Genny work, signal distortion, equipment limitations",
-              "Locator controls and operation: all four modes (Power, Radio, Genny, Avoidance), Strike Alert, signal interpretation",
-              "Signal generator application: dual frequency, capacitance mode for non-earthed cables, earth positioning, blind induction search, effective nulling",
-              "Depth estimation: how to take locator depth readings and how to test them",
-              "CAT Manager data logging (optional): recording, exporting CSV and KML, analysing data patterns",
-              "Excavation techniques: exposing services, hand tools, handheld power tools, horizontal excavation",
-              "Trench support, maintaining excavation safety, and dangers of using services as a handhold",
-              "Course content aligns with Locate Utility Services (HSG47) training requirements",
-            ].map((item, i) => (
+              { label: "Legislation and HSG47", text: "Legislation and guidance relating to buried services, including HSG47 and company-specific policy" },
+              { label: "Risk Assessments and Permits", text: "Site-specific risk assessments, company procedures, and permits to dig" },
+              { label: "Excavation Hazards", text: "Excavation hazards: Leptospirosis, asbestos, silica dust, noise, vibration, loose ground, groundwater" },
+              { label: "Utility Plan Interpretation", text: "Utility plan interpretation: STATS plans, limitations of drawings, visual survey process" },
+              { label: "Electromagnetic Theory", text: "Electromagnetic theory: how a CAT and Genny work, signal distortion, equipment limitations" },
+              { label: "Locator Controls and Operation", text: "Locator controls and operation: all four modes (Power, Radio, Genny, Avoidance), Strike Alert, signal interpretation" },
+              { label: "Signal Generator Application", text: "Signal generator application: dual frequency, capacitance mode for non-earthed cables, earth positioning, blind induction search, effective nulling" },
+              { label: "Depth Estimation", text: "Depth estimation: how to take locator depth readings and how to test them" },
+              { label: "CAT Manager Data Logging", text: "CAT Manager data logging (optional): recording, exporting CSV and KML, analysing data patterns" },
+              { label: "Hand Tools and Power Tools", text: "Excavation techniques: exposing services, hand tools, handheld power tools, horizontal excavation" },
+              { label: "Trench Support and Safety", text: "Trench support, maintaining excavation safety, and dangers of using services as a handhold" },
+              { label: "Locate Utility Services Alignment", text: "Course content aligns with Locate Utility Services (HSG47) training requirements" },
+            ].map(({ label, text }, i) => (
               <div key={i} className="flex gap-3 items-start bg-background border border-border rounded-lg p-4">
                 <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
-                <span className="text-muted-foreground text-sm">{item}</span>
+                <div className="flex-1">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</h4>
+                  <span className="text-muted-foreground text-sm">{text}</span>
+                </div>
               </div>
             ))}
           </div>
@@ -287,21 +290,24 @@ export default function EusCat12Combined() {
         </p>
         <div className="grid md:grid-cols-2 gap-4">
           {[
-            "Using STATS plans and existing site information to identify underground services and indicated utility routes before work begins",
-            "Visual site inspection prior to any location activity",
-            "Equipment function checks: confirming the locator and signal generator are in satisfactory operating condition",
-            "Locating in all modes, confirming service routes, taking and testing depth readings",
-            "Signal generator application for problem services including street lighting and small comms cables",
-            "Completing a risk assessment and permit to dig before excavation commences",
-            "Surface removal with correct positioning relative to identified services",
-            "Horizontal excavation to expose the indicated service below the remaining surface",
-            "Supporting exposed services where required",
-            "Reinstatement completion",
-            "Multiple choice questions (MCQs) at the end of the programme",
-          ].map((item, i) => (
+            { label: "STATS Plan Review", text: "Using STATS plans and existing site information to identify underground services and indicated utility routes before work begins" },
+            { label: "Visual Site Inspection", text: "Visual site inspection prior to any location activity" },
+            { label: "Equipment Function Checks", text: "Equipment function checks: confirming the locator and signal generator are in satisfactory operating condition" },
+            { label: "Locating and Depth Testing", text: "Locating in all modes, confirming service routes, taking and testing depth readings" },
+            { label: "Signal Generator for Problem Services", text: "Signal generator application for problem services including street lighting and small comms cables" },
+            { label: "Risk Assessment and Permit to Dig", text: "Completing a risk assessment and permit to dig before excavation commences" },
+            { label: "Surface Removal", text: "Surface removal with correct positioning relative to identified services" },
+            { label: "Horizontal Excavation", text: "Horizontal excavation to expose the indicated service below the remaining surface" },
+            { label: "Supporting Exposed Services", text: "Supporting exposed services where required" },
+            { label: "Reinstatement", text: "Reinstatement completion" },
+            { label: "MCQ Assessment", text: "Multiple choice questions (MCQs) at the end of the programme" },
+          ].map(({ label, text }, i) => (
             <div key={i} className="flex gap-3 items-start bg-muted/30 border border-border rounded-lg p-4">
               <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
-              <span className="text-muted-foreground text-sm">{item}</span>
+              <div className="flex-1">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</h4>
+                <span className="text-muted-foreground text-sm">{text}</span>
+              </div>
             </div>
           ))}
         </div>
@@ -321,13 +327,28 @@ export default function EusCat12Combined() {
             <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
               Delegates learn how to <strong>locate underground utility services</strong> safely using a CAT and Genny, interpret utility drawings and STATS plans, and apply the <Link href="/knowledge-hub/hsg47-explained" className="underline text-primary">HSG47 guidance</Link> for working safely in proximity to buried utility services.
             </p>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Electromagnetic theory and locator operation in all four modes (Power, Radio, Genny, Avoidance)</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Signal generator (Genny) application -- blind induction, capacitance mode, dual frequency for problem services</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Utility drawings interpretation: STATS plans, quality levels, drawing limitations, visual survey process</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Site-specific risk assessment, the safe system of work, safe digging practices, and the locator's role in <Link href="/courses/cat-and-genny-training" className="underline text-primary">CAT and Genny training</Link> outcomes</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Equivalent to the <Link href="/courses/eusr-cat1" className="underline text-primary">standalone EUSR CAT 1 course</Link> -- delivered as day one of the combined programme</span></li>
-            </ul>
+            <div className="space-y-3 text-muted-foreground text-sm">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Electromagnetic Theory and Locator Modes</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Electromagnetic theory and locator operation in all four modes (Power, Radio, Genny, Avoidance)</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Signal Generator Application</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Signal generator (Genny) application: blind induction, capacitance mode, dual frequency for problem services</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Utility Drawings Interpretation</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Utility drawings interpretation: STATS plans, quality levels, drawing limitations, visual survey process</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Safe System of Work</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Site-specific risk assessment, the safe system of work, safe digging practices, and the locator's role in <Link href="/courses/cat-and-genny-training" className="underline text-primary">CAT and Genny training</Link> outcomes</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Standalone Course Equivalent</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Equivalent to the <Link href="/courses/eusr-cat1" className="underline text-primary">standalone EUSR CAT 1 course</Link>, delivered as day one of the combined programme</span></p>
+              </div>
+            </div>
           </div>
           <div className="bg-muted/30 rounded-xl border border-border p-6">
             <h3 className="text-xl font-black mb-3 text-foreground">EUSR Category 2: Implement Safe (Digging) Excavating Practices</h3>
@@ -335,13 +356,28 @@ export default function EusCat12Combined() {
             <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
               Delegates demonstrate they can <strong>implement safe excavating practices</strong> on a live dig area: applying the permit to dig, exposing services with <strong>hand tools and handheld power tools</strong>, supporting exposed services, and learning to safely excavate and maintain holes and trenches in accordance with national standards, including proper procedures to maintain holes during and after excavation, and reinstating the excavation safely.
             </p>
-            <ul className="space-y-2 text-muted-foreground text-sm">
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Permit to dig, risk assessment, and pre-excavation site inspection following HSG47 guidance</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Surface removal and horizontal excavation to expose buried utility services</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Hand tools and handheld power tools -- safe usage near live services, including handling of hazards (asbestos, silica dust, leptospirosis) and understanding their role in safe excavation practices</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Exposed services support, procedures to maintain holes and trenches, reinstatement completion, documented assessment record</span></li>
-              <li className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Equivalent to the <Link href="/courses/eusr-cat2-safe-dig" className="underline text-primary">standalone EUSR CAT 2 Safe Dig course</Link> -- delivered as day two of the combined programme</span></li>
-            </ul>
+            <div className="space-y-3 text-muted-foreground text-sm">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Implement Safe Excavating Practices</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Permit to dig, risk assessment, and pre-excavation site inspection following HSG47 guidance</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Surface Removal and Excavation</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Surface removal and horizontal excavation to expose buried utility services</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Hand Tools and Power Tools</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Hand tools and handheld power tools: safe usage near live services, including handling of hazards (asbestos, silica dust, leptospirosis) and understanding their role in safe excavation practices</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Service Support and Reinstatement</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Exposed services support, procedures to maintain holes and trenches, reinstatement completion, documented assessment record</span></p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Standalone Course Equivalent</h4>
+                <p className="flex gap-2"><span className="text-accent font-bold shrink-0">&#8250;</span><span>Equivalent to the <Link href="/courses/eusr-cat2-safe-dig" className="underline text-primary">standalone EUSR CAT 2 Safe Dig course</Link>, delivered as day two of the combined programme</span></p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -349,9 +385,32 @@ export default function EusCat12Combined() {
         <div className="mt-8 rounded-xl border border-border bg-muted/30 p-6">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Guided Learning Hours</p>
           <h3 className="font-black text-foreground mb-3">Total Programme Hours and Assessment Standards</h3>
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            The combined programme delivers <strong>approximately 13-14 guided learning hours</strong> across the two-day block: <strong>6-7 hours of classroom theory</strong> on day one (legislation, electromagnetic theory, equipment science, utility drawings, excavation hazards) and <strong>6-7 hours of on-site practical and assessment</strong> on day two (locate, expose, support, reinstate), including practical assessment relevant to utility excavations. All delegates complete a written multiple-choice assessment and a practical observation against EUSR-published National Occupational Standards. Both qualifications are recorded on the EUSR database within 5 working days of course completion, and EUSR cards are issued within 5-10 working days. Both Category 1 and Category 2 qualifications carry a 5-year validity before re-registration is required.
-          </p>
+          <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">EUSR Minimum and Sygma Delivery</h4>
+              <p>
+                EUSR specifies a <strong>minimum of 9 guided learning hours</strong> across the Category 1 and Category 2 combined programme. Sygma delivers <strong>approximately 13-14 guided learning hours</strong> across the two-day block, giving delegates more time on locator theory, practical assessment, and HSG47-aligned safe excavation.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Day One Classroom Theory</h4>
+              <p>
+                <strong>6-7 hours of classroom theory</strong> on day one: legislation, electromagnetic theory, equipment science, utility drawings, excavation hazards.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Day Two Practical and Assessment</h4>
+              <p>
+                <strong>6-7 hours of on-site practical and assessment</strong> on day two: locate, expose, support, reinstate, including practical assessment relevant to utility excavations. All delegates complete a written multiple-choice assessment and a practical observation against EUSR-published National Occupational Standards.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Card Validity and Registration</h4>
+              <p>
+                Both qualifications are recorded on the EUSR database within 5 working days of course completion, and EUSR cards are issued within 5-10 working days. Both Category 1 and Category 2 qualifications carry a 5-year validity before re-registration is required.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -392,9 +451,38 @@ export default function EusCat12Combined() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Pricing &amp; Booking</p>
           <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">EUSR Cat 1 & 2 Combined Course Cost</h2>
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            All Sygma EUSR Category 1 and Category 2 combined training delegate fees are quoted <strong>exclusive of VAT</strong> (UK standard rate). Final cost depends on delegate numbers (max 8), delivery format (open course at Sygma Wigan or in-house at your site), site location, and equipment requirements. In-house pricing is <strong>fully inclusive of trainer travel and overnight accommodation</strong> within mainland UK, ex VAT, all-inclusive. Cost includes EUSR registration, written and practical assessment, certificate, and EUSR card for both Category 1 and Category 2 -- ex VAT. <strong>Card validity: 5 years.</strong> <strong>Lead time: typically 3-4 weeks</strong> from confirmed booking. <Link href="/contact#enquiry-form" className="underline text-primary">Contact Sygma</Link> with delegate count, location, and target dates for a bespoke quote, typically returned within one working day. CITB funding may be available for registered employers.
-          </p>
+          <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Pricing Basis</h4>
+              <p>
+                All Sygma EUSR Category 1 and Category 2 combined training delegate fees are quoted <strong>exclusive of VAT</strong> (UK standard rate). Final cost depends on delegate numbers (max 8), delivery format (open course at Sygma Wigan or in-house at your site), site location, and equipment requirements.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Delivery Format Options</h4>
+              <p>
+                In-house pricing is <strong>fully inclusive of trainer travel and overnight accommodation</strong> within mainland UK, ex VAT, all-inclusive. Open courses run at Sygma Wigan.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">What Is Included</h4>
+              <p>
+                Cost includes EUSR registration, written and practical assessment, certificate, and EUSR card for both Category 1 and Category 2, ex VAT. <strong>Card validity: 5 years.</strong>
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Lead Time</h4>
+              <p>
+                <strong>Lead time: typically 3-4 weeks</strong> from confirmed booking. <Link href="/contact#enquiry-form" className="underline text-primary">Contact Sygma</Link> with delegate count, location, and target dates for a bespoke quote, typically returned within one working day.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">CITB Funding</h4>
+              <p>
+                CITB funding may be available for registered employers.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -464,16 +552,34 @@ export default function EusCat12Combined() {
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Funding Support</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Sygma Solutions is a CITB Approved Training Organisation. CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.
-            </p>
+            <div className="space-y-3 text-muted-foreground leading-relaxed">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">CITB Approved Training Organisation</h4>
+                <p>Sygma Solutions is a CITB Approved Training Organisation.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Employer Network Funding</h4>
+                <p>CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.</p>
+              </div>
+            </div>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Equipment</p>
             <h2 className="text-2xl font-black mb-4 text-foreground">Equipment Provision</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Sygma provides Radiodetection CAT4 and Genny4 as standard equipment. If delegates use a different manufacturer's locator or signal generator, they must bring their own equipment at a minimum ratio of one locator per three delegates. Each delegate bringing their own equipment is strongly encouraged as it allows the practical element to be conducted using the tools they will use on site. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.
-            </p>
+            <div className="space-y-3 text-muted-foreground leading-relaxed">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Sygma Provided Equipment</h4>
+                <p>Sygma provides Radiodetection CAT4 and Genny4 as standard equipment.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Delegate Brought Equipment</h4>
+                <p>If delegates use a different manufacturer's locator or signal generator, they must bring their own equipment at a minimum ratio of one locator per three delegates. Each delegate bringing their own equipment is strongly encouraged as it allows the practical element to be conducted using the tools they will use on site.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Compatible Manufacturers</h4>
+                <p>This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
