@@ -176,6 +176,7 @@ export default function GennyFirstMethodology() {
 
               <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
               <li><Link href="/knowledge-hub/utility-strikes-first-20-metres" className="text-primary hover:underline">4 Behaviours That Can Cause Cable Strikes on Site</Link></li>
+              <li><Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="text-primary hover:underline">Detecting Plastic Gas Pipes: Methods That Work and Where They Fail</Link></li>
             </ul>
           </div>
 

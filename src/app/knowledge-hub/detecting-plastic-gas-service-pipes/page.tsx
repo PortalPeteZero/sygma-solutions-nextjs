@@ -4,18 +4,18 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import KnowledgeHubSidebar from "@/components/KnowledgeHubSidebar";
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { CLOUDINARY_BASE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Detecting Plastic Gas Service Pipes: Methods and Their Limits | Sygma',
-  description: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site.",
+  description: "Why CAT and Genny don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, trial holes) can and can't do on a UK site.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes' },
   openGraph: {
     title: 'Detecting Plastic Gas Service Pipes: Methods and Their Limits | Sygma',
-    description: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site.",
+    description: "Why CAT and Genny don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, trial holes) can and can't do on a UK site.",
     url: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes',
     siteName: SITE_NAME,
-    images: [DEFAULT_OG_IMAGE],
+    images: [{ url: `${CLOUDINARY_BASE}/cat-44`, width: 1200, height: 630 }],
     type: 'article',
   },
 };
@@ -73,7 +73,7 @@ export default function DetectingPlasticGasServicePipes() {
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">01 &middot; Why Genny and CAT don't see them</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            A standard locator setup is a signal generator (Genny) paired with a Cable Avoidance Tool (CAT). It works by detecting electromagnetic fields. Either the conductor is radiating its own signal in Power mode, or the Genny is energising it so the CAT can pick it up. Plastic isn't a conductor, so there is nothing to detect.
+            A standard locator setup is a <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">signal generator (Genny)</Link> paired with a <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Tool (CAT)</Link>. It works by detecting electromagnetic fields. Either the conductor is radiating its own signal in Power mode, or the Genny is energising it so the CAT can pick it up. Plastic isn't a conductor, so there is nothing to detect.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -155,7 +155,7 @@ export default function DetectingPlasticGasServicePipes() {
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">04 &middot; Ground Penetrating Radar</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            GPR is the most promising non-invasive option, and we've had real success with it on plastic gas services. It works by sending a radar pulse into the ground and reading the reflections from anything with different dielectric properties.
+            <Link href="/courses/gpr-training" className="text-primary hover:underline">Ground Penetrating Radar</Link> is the most promising non-invasive option, and we've had real success with it on plastic gas services. It works by sending a radar pulse into the ground and reading the reflections from anything with different dielectric properties.
           </p>
 
           <figure className="my-8">
@@ -240,7 +240,7 @@ export default function DetectingPlasticGasServicePipes() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Plans rarely show the service itself. They generally show the main, and the assumption is that the service runs from the main to the meter. In a textbook install, that's a 90-degree branch off the main, in the footpath, into the property at the meter position. The team is "expecting it" within a defined corridor and can trial-hole or hand-dig to expose it.
+            Plans rarely show the service itself. They generally show the main, and the assumption is that the service runs from the main to the meter. In a textbook install, that's a 90-degree branch off the main, in the footpath, into the property at the meter position. The team is "expecting it" within a defined corridor and can trial-hole or <Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">hand-dig to expose it under HSG47 guidance</Link>.
           </p>
 
           <figure className="my-8">
@@ -310,8 +310,12 @@ export default function DetectingPlasticGasServicePipes() {
             There isn't one method that finds every plastic gas service pipe before the spade goes in. Gas Tracker II and sonde insertion need gas-qualified access at the customer end. GPR works in the right ground but struggles with smaller-diameter, deeper, or moled services. Plans and visual judgement narrow the corridor without eliminating the surprises.
           </p>
 
-          <p className="text-muted-foreground leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed mb-6">
             Detecting plastic gas pipes is a layered problem, not a single-tool one. Every method covered above has a place. None of them, on its own, removes the strike risk.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            For teams working around buried services on UK sites, the practical answer is competence in multiple methods and a clear-eyed view of when each one fails. Sygma's <Link href="/courses/gpr-training" className="text-primary hover:underline">GPR Training</Link>, <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link>, and <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined</Link> cover these methods alongside the safe-dig protocols that protect the team when the method runs out.
           </p>
 
           <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">

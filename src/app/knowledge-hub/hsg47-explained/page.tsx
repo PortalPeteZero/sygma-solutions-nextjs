@@ -169,6 +169,7 @@ export default function Hsg47Explained() {
                 <li><Link href="/knowledge-hub/strike-prevention-site-managers" className="text-primary hover:underline">Utility Strike Prevention: A Guide for Site Managers</Link></li>
                 <li><Link href="/knowledge-hub/severn-trent-water-case-study" className="text-primary hover:underline">Severn Trent Water Case Study</Link></li>
                 <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
+                <li><Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="text-primary hover:underline">Detecting Plastic Gas Service Pipes: Methods and Their Limits</Link></li>
               </ul>
             </div>
 
