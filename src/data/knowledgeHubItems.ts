@@ -29,6 +29,14 @@ export interface KnowledgeItem {
 
 export const knowledgeHubItems: KnowledgeItem[] = [
   {
+    category: "Industry Investigation",
+    title: "The AML Pro by SSI Locators: A Physics-Led Investigation",
+    desc: "An evidence-led examination of the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and where it sits in UK PAS 128 and HSG47 practice.",
+    href: "/knowledge-hub/aml-pro-ssi-locators",
+    type: "article",
+    image: "gpr-12-gpr-training",
+  },
+  {
     category: "Underground Utilities",
     title: "Detecting Plastic Gas Service Pipes: Methods and Their Limits",
     desc: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site. Prepared with The Clancy Group.",
