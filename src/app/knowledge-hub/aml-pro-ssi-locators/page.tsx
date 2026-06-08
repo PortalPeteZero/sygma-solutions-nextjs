@@ -243,8 +243,8 @@ export default function AmlProSsiLocators() {
       />
 
       <InnerPageHero
-        image={HERO_ID}
-        alt="Ground-penetrating radar in use on a Sygma utility-detection training course"
+        image="/articles/aml-pro/aml-hero.jpg"
+        alt="SubSurface Instruments' own marketing illustration of the AML Pro locating buried pipe"
         eyebrow="Knowledge Hub · Industry Investigation"
         headline="The AML Pro by SSI Locators: A Physics-Led Investigation"
         sub={`Fourteen years on the market and still "All-New". A handheld that claims to find buried plastic pipe 20 feet down through wet clay. Real solution, or electronic dowsing rod?`}
@@ -289,7 +289,7 @@ export default function AmlProSsiLocators() {
 
           <article className="min-w-0 flex-1 max-w-3xl">
             <p className="text-sm text-muted-foreground mb-6">
-              Published <strong className="text-foreground">{PUBLISHED}</strong> · Updated <strong className="text-foreground">{UPDATED}</strong> · By Pete Ashcroft, Sygma Solutions Ltd · Approx. 40 minute read · <a href="#s0" className="text-primary hover:underline">Jump to the verdict &darr;</a>
+              Published <strong className="text-foreground">{PUBLISHED}</strong> · Updated <strong className="text-foreground">{UPDATED}</strong> · By Pete Ashcroft, Sygma Solutions Ltd · Approx. 40 minute read · Hero: SSI marketing illustration · <a href="#s0" className="text-primary hover:underline">Jump to the verdict &darr;</a>
             </p>
 
             <div className="bg-muted/50 border border-border border-l-4 border-l-accent rounded-r-md px-5 py-4 mb-6 text-sm text-foreground/80 leading-relaxed">
