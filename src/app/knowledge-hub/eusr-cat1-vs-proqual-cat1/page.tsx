@@ -151,6 +151,7 @@ export default function EusCat1VsProQualCat1() {
           <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
             <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Course</Link></li>
               <li><Link href="/knowledge-hub/npors-vs-eusr" className="text-primary hover:underline">NPORS vs EUSR: Which One Does Your Team Need?</Link></li>
               <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">How to Renew Your EUSR Card</Link></li>
               <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>

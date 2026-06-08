@@ -523,6 +523,10 @@ export default function AdvancedEmLocator() {
               <h3 className="text-base font-bold text-foreground mb-2">Plans and Process Training</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">Master utility plan interpretation. Understand how plans integrate with the locating survey from start to finish.</p>
             </Link>
+            <Link href="/courses/cable-avoidance-training" className="border border-border rounded-lg bg-card p-5 hover:shadow-md transition-shadow block">
+              <h3 className="text-base font-bold text-foreground mb-2">Cable Avoidance Training</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">The core EUSR and ProQual cable avoidance course covering CAT and Genny use to locate buried services before excavation.</p>
+            </Link>
           </div>
         </div>
       </section>

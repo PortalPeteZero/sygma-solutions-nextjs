@@ -205,6 +205,7 @@ export default function StrikePreventionSiteManagers() {
             <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
               <h3 className="font-bold text-foreground mb-3">Related Reading</h3>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training Courses</Link></li>
                 <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training: EUSR-accredited courses</Link></li>
 
                 <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
