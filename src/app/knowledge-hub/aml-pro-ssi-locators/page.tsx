@@ -4,6 +4,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { CLOUDINARY_BASE, SITE_NAME } from "@/lib/metadata";
+import ReadingProgress from "./ReadingProgress";
+import OnThisPageNav from "./OnThisPageNav";
 
 /*
  * Knowledge Hub article: The AML Pro by SSI Locators, A Physics-Led Investigation.
@@ -218,6 +220,7 @@ const TOC: { id: string; label: string }[] = [
 export default function AmlProSsiLocators() {
   return (
     <>
+      <ReadingProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -268,14 +271,7 @@ export default function AmlProSsiLocators() {
       <div className="bg-background py-16">
         <div className="container mx-auto px-6 md:px-8 flex gap-12 items-start">
           <aside className="hidden lg:block w-64 shrink-0 sticky top-24">
-            <div className="text-xs font-bold uppercase tracking-widest text-foreground mb-3">On this page</div>
-            <nav className="border-l border-border">
-              {TOC.map((t) => (
-                <a key={t.id} href={`#${t.id}`} className="block py-1 pl-3 -ml-px border-l border-transparent text-sm text-muted-foreground hover:text-primary hover:border-primary transition-colors">
-                  {t.label}
-                </a>
-              ))}
-            </nav>
+            <OnThisPageNav items={TOC} />
             <div className="bg-muted/60 rounded-lg p-4 mt-6">
               <strong className="block text-sm text-foreground mb-1.5">Train your team properly</strong>
               <p className="text-xs text-muted-foreground leading-relaxed mb-3">
