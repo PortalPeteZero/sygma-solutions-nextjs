@@ -245,7 +245,7 @@ export default function AmlProSsiLocators() {
       <InnerPageHero
         image="/articles/aml-pro/aml-hero.jpg"
         alt="SubSurface Instruments' own marketing illustration of the AML Pro locating buried pipe"
-        eyebrow="Knowledge Hub · Industry Investigation"
+        eyebrow="Knowledge Hub"
         headline="The AML Pro by SSI Locators: A Physics-Led Investigation"
         sub={`Fourteen years on the market and still "All-New". A handheld that claims to find buried plastic pipe 20 feet down through wet clay. Real solution, or electronic dowsing rod?`}
         breadcrumbs={[
@@ -288,8 +288,11 @@ export default function AmlProSsiLocators() {
           </aside>
 
           <article className="min-w-0 flex-1 max-w-3xl">
+            <p className="text-base text-muted-foreground leading-relaxed mb-4">
+              An evidence-based examination of a handheld pipe-locating device sold for $8,250 / £6,200, the marketing claims it carries, the physics those claims must reconcile with, and the place it occupies in the UK underground-utility detection market. <strong className="text-foreground">The first few minutes carry the whole case; everything after is the evidence behind it, every claim sourced.</strong>
+            </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Published <strong className="text-foreground">{PUBLISHED}</strong> · Updated <strong className="text-foreground">{UPDATED}</strong> · By Pete Ashcroft, Sygma Solutions Ltd · Approx. 40 minute read · Hero: SSI marketing illustration · <a href="#s0" className="text-primary hover:underline">Jump to the verdict &darr;</a>
+              Published <strong className="text-foreground">{PUBLISHED}</strong> · Updated <strong className="text-foreground">{UPDATED}</strong> · By Pete Ashcroft, Sygma Solutions Ltd · Approx. 40 minute full read · Hero: SSI marketing illustration · <a href="#s0" className="text-primary hover:underline">Jump to the verdict &darr;</a>
             </p>
 
             <div className="bg-muted/50 border border-border border-l-4 border-l-accent rounded-r-md px-5 py-4 mb-6 text-sm text-foreground/80 leading-relaxed">
