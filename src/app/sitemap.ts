@@ -81,6 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ------------------------------------------------------------------ */
 
   const knowledgeHubSlugs = [
+    'aml-pro-ssi-locators',
+    'detecting-plastic-gas-service-pipes',
     'utility-strikes-first-20-metres',
     'genny-first-methodology',
     'genny-first-in-practice-video',
