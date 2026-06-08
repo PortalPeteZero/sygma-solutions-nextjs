@@ -537,6 +537,7 @@ export default function GprTraining() {
             <li><Link href="/knowledge-hub/citb-funding-utility-training" className="text-primary hover:underline">How CITB funding works for cable-avoidance courses</Link></li>
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">Understanding HSG47 in plain English</Link></li>
             <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
+            <li><Link href="/knowledge-hub/aml-pro-ssi-locators" className="text-primary hover:underline">The AML Pro: a 2.45 GHz "GPR alternative" examined</Link></li>
           </ul>
         </div>
       </section>

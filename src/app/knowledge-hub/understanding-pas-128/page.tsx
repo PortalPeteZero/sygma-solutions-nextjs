@@ -148,6 +148,7 @@ export default function UnderstandingPas128() {
                 <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">HSG47 Explained: The HSE Guide on Avoiding Underground Services</Link></li>
                 <li><Link href="/knowledge-hub/kier-group-case-study" className="text-primary hover:underline">Kier Group Case Study</Link></li>
                 <li><Link href="/knowledge-hub/qts-group-case-study" className="text-primary hover:underline">QTS Group Case Study</Link></li>
+                <li><Link href="/knowledge-hub/aml-pro-ssi-locators" className="text-primary hover:underline">Can the AML Pro deliver PAS 128 evidence? A physics-led investigation</Link></li>
               </ul>
             </div>
 

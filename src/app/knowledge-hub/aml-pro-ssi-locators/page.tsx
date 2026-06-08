@@ -20,12 +20,12 @@ const HERO_ID = "gpr-12-gpr-training";
 export const metadata: Metadata = {
   title: "The AML Pro by SSI Locators: A Physics-Led Investigation | Sygma",
   description:
-    "An evidence-led look at the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and where it sits in UK PAS 128 and HSG47 practice.",
+    "An evidence-led look at the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and its place under UK PAS 128 and HSG47.",
   alternates: { canonical: "https://sygma-solutions.com/knowledge-hub/aml-pro-ssi-locators" },
   openGraph: {
     title: "The AML Pro by SSI Locators: A Physics-Led Investigation | Sygma",
     description:
-      "An evidence-led look at the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and where it sits in UK PAS 128 and HSG47 practice.",
+      "An evidence-led look at the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and its place under UK PAS 128 and HSG47.",
     url: "https://sygma-solutions.com/knowledge-hub/aml-pro-ssi-locators",
     siteName: SITE_NAME,
     images: [{ url: `${CLOUDINARY_BASE}/${HERO_ID}`, width: 1200, height: 630 }],
