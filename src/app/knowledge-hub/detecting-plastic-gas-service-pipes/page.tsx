@@ -179,34 +179,38 @@ export default function DetectingPlasticGasServicePipes() {
 
           <figure className="my-8">
             <div className="bg-muted/30 border border-border rounded-lg p-4 overflow-x-auto">
-              <svg viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gprTitle gprDesc" className="w-full h-auto max-w-full">
-                <title id="gprTitle">GPR resolution: pipe diameter as percentage of depth</title>
-                <desc id="gprDesc">Two scenarios. Left: a 100mm pipe at 1000mm depth sits at 10 percent ratio, within GPR resolution range. Right: a 25mm pipe at 450mm depth sits at about 5.6 percent, below typical GPR resolution.</desc>
-                <rect x="0" y="0" width="720" height="290" fill="#fbfaf6"/>
+              <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gprTitle gprDesc" className="w-full h-auto max-w-full">
+                <title id="gprTitle">GPR resolution: pipe diameter as a percentage of depth</title>
+                <desc id="gprDesc">Two pipes shown as circular cross-sections against a normalised depth bar. Left: a 100mm pipe at 1000mm depth is a 10 percent diameter-to-depth ratio, at the edge of GPR resolution. Right: a 25mm pipe at 450mm depth is about 5.6 percent, below typical GPR resolution.</desc>
+                <rect x="0" y="0" width="720" height="300" fill="#fbfaf6"/>
                 <g>
-                  <text x="180" y="32" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="700" fill="#0a2540">100mm pipe at 1000mm depth</text>
-                  <text x="180" y="52" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#2e7d4f" fontWeight="600">Ratio: 10.0% &middot; within GPR range</text>
-                  <rect x="40" y="68" width="280" height="180" fill="#e8d9b8"/>
-                  <line x1="40" y1="68" x2="320" y2="68" stroke="#0a2540" strokeWidth="2"/>
-                  <rect x="145" y="56" width="70" height="14" fill="#0a2540" rx="2"/>
-                  <text x="180" y="66" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="9" fill="#fff" fontWeight="700">GPR</text>
-                  <line x1="330" y1="68" x2="330" y2="228" stroke="#4a4a4a" strokeWidth="1" strokeDasharray="4,3"/>
-                  <text x="338" y="151" fontFamily="Inter, sans-serif" fontSize="11" fill="#4a4a4a">1000mm</text>
-                  <ellipse cx="180" cy="228" rx="22" ry="9" fill="#ffc20e" stroke="#0a2540" strokeWidth="1.5"/>
-                  <text x="180" y="262" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="10" fill="#0a2540">100mm &Oslash;</text>
+                  <text x="180" y="30" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="700" fill="#0a2540">100mm pipe at 1000mm depth</text>
+                  <text x="180" y="51" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#2e7d4f" fontWeight="600">Ratio 10.0% &middot; within GPR range</text>
+                  <rect x="40" y="72" width="275" height="200" fill="#e8d9b8"/>
+                  <line x1="40" y1="72" x2="315" y2="72" stroke="#0a2540" strokeWidth="2"/>
+                  <rect x="135" y="60" width="70" height="14" fill="#0a2540" rx="2"/>
+                  <text x="170" y="70" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="9" fill="#fff" fontWeight="700">GPR</text>
+                  <line x1="325" y1="72" x2="325" y2="238" stroke="#4a4a4a" strokeWidth="1" strokeDasharray="4,3"/>
+                  <line x1="320" y1="72" x2="330" y2="72" stroke="#4a4a4a" strokeWidth="1"/>
+                  <line x1="320" y1="238" x2="330" y2="238" stroke="#4a4a4a" strokeWidth="1"/>
+                  <text x="333" y="159" fontFamily="Inter, sans-serif" fontSize="11" fill="#4a4a4a">1000mm</text>
+                  <circle cx="170" cy="238" r="9" fill="#ffc20e" stroke="#0a2540" strokeWidth="1.5"/>
+                  <text x="170" y="262" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="11" fill="#0a2540" fontWeight="600">100mm &Oslash;</text>
                 </g>
-                <line x1="360" y1="22" x2="360" y2="270" stroke="#c8d0db" strokeWidth="1"/>
-                <g transform="translate(370,0)">
-                  <text x="160" y="32" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="700" fill="#0a2540">25mm pipe at 450mm depth (footpath)</text>
-                  <text x="160" y="52" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#b00020" fontWeight="600">Ratio: 5.6% &middot; below typical resolution</text>
-                  <rect x="20" y="68" width="280" height="180" fill="#e8d9b8"/>
-                  <line x1="20" y1="68" x2="300" y2="68" stroke="#0a2540" strokeWidth="2"/>
-                  <rect x="125" y="56" width="70" height="14" fill="#0a2540" rx="2"/>
-                  <text x="160" y="66" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="9" fill="#fff" fontWeight="700">GPR</text>
-                  <line x1="310" y1="68" x2="310" y2="142" stroke="#4a4a4a" strokeWidth="1" strokeDasharray="4,3"/>
-                  <text x="318" y="108" fontFamily="Inter, sans-serif" fontSize="11" fill="#4a4a4a">450mm</text>
-                  <ellipse cx="160" cy="142" rx="6" ry="3" fill="#ffc20e" stroke="#0a2540" strokeWidth="1"/>
-                  <text x="160" y="166" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="10" fill="#0a2540">25mm &Oslash;</text>
+                <line x1="360" y1="22" x2="360" y2="280" stroke="#c8d0db" strokeWidth="1"/>
+                <g transform="translate(360,0)">
+                  <text x="180" y="30" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="700" fill="#0a2540">25mm pipe at 450mm depth (footpath)</text>
+                  <text x="180" y="51" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#b00020" fontWeight="600">Ratio 5.6% &middot; below typical resolution</text>
+                  <rect x="22" y="72" width="275" height="200" fill="#e8d9b8"/>
+                  <line x1="22" y1="72" x2="297" y2="72" stroke="#0a2540" strokeWidth="2"/>
+                  <rect x="132" y="60" width="70" height="14" fill="#0a2540" rx="2"/>
+                  <text x="167" y="70" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="9" fill="#fff" fontWeight="700">GPR</text>
+                  <line x1="307" y1="72" x2="307" y2="238" stroke="#4a4a4a" strokeWidth="1" strokeDasharray="4,3"/>
+                  <line x1="302" y1="72" x2="312" y2="72" stroke="#4a4a4a" strokeWidth="1"/>
+                  <line x1="302" y1="238" x2="312" y2="238" stroke="#4a4a4a" strokeWidth="1"/>
+                  <text x="315" y="159" fontFamily="Inter, sans-serif" fontSize="11" fill="#4a4a4a">450mm</text>
+                  <circle cx="167" cy="238" r="5" fill="#ffc20e" stroke="#0a2540" strokeWidth="1.5"/>
+                  <text x="167" y="262" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="11" fill="#0a2540" fontWeight="600">25mm &Oslash;</text>
                 </g>
               </svg>
             </div>
