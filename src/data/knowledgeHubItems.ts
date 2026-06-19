@@ -38,8 +38,8 @@ export const knowledgeHubItems: KnowledgeItem[] = [
   },
   {
     category: "Underground Utilities",
-    title: "Detecting Plastic Gas Service Pipes: Methods and Their Limits",
-    desc: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site. Prepared with The Clancy Group.",
+    title: "Detecting Plastic Pipes: Methods and Their Limits",
+    desc: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on a real UK site.",
     href: "/knowledge-hub/detecting-plastic-gas-service-pipes",
     type: "article",
     image: "cat-67",

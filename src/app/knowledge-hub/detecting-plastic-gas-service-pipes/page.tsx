@@ -7,12 +7,12 @@ import Image from 'next/image';
 import { CLOUDINARY_BASE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Detecting Plastic Gas Service Pipes: Methods and Their Limits | Sygma',
-  description: "Why CAT and Genny don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, trial holes) can and can't do on a UK site.",
+  title: 'Detecting Plastic Pipes: Methods and Their Limits | Sygma',
+  description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on a UK site.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes' },
   openGraph: {
-    title: 'Detecting Plastic Gas Service Pipes: Methods and Their Limits | Sygma',
-    description: "Why CAT and Genny don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, trial holes) can and can't do on a UK site.",
+    title: 'Detecting Plastic Pipes: Methods and Their Limits | Sygma',
+    description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on a UK site.",
     url: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes',
     siteName: SITE_NAME,
     images: [{ url: `${CLOUDINARY_BASE}/cat-44`, width: 1200, height: 630 }],
@@ -24,26 +24,26 @@ export default function DetectingPlasticGasServicePipes() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: articleSchema({
-        headline: "Detecting Plastic Gas Service Pipes: Methods and Their Limits",
-        description: "Why Genny and CAT don't find plastic gas service pipes, and what each alternative (Gas Tracker II acoustic, sonde, GPR, plans + trial holes) can and can't do on a real UK site.",
+        headline: "Detecting Plastic Pipes: Methods and Their Limits",
+        description: "Why Genny and CAT can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, plans + trial holes) can and can't do on a real UK site.",
         url: "/knowledge-hub/detecting-plastic-gas-service-pipes",
         datePublished: "2026-06-04",
-        dateModified: "2026-06-16",
+        dateModified: "2026-06-19",
         image: "cat-44",
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
         { label: "Knowledge Hub", to: "/knowledge-hub" },
-        { label: "Detecting Plastic Gas Service Pipes" },
+        { label: "Detecting Plastic Pipes" },
       ]) }} />
       <InnerPageHero
         image="cat-44"
-        alt="Detecting plastic gas service pipes on a UK site with CAT, Genny, Gas Tracker, GPR and trial holes"
+        alt="Detecting plastic gas and water pipes on a UK site with CAT, Genny, Gas Tracker, GPR and trial holes"
         eyebrow="Field Note · Underground Utilities"
-        headline="Detecting Plastic Gas Service Pipes: Methods and Their Limits"
-        sub="Strikes on plastic gas service pipes are one of the harder problems in utility detection. The pipes don't show up on the kit most teams carry, and the methods that can find them all come with practical limits that matter on a real UK job site."
+        headline="Detecting Plastic Pipes: Methods and Their Limits"
+        sub="Plastic pipes, gas and water alike, are one of the harder problems in utility detection. They don't show up on the kit most teams carry, and the methods that can find them all come with practical limits that matter on a real UK job site."
         breadcrumbs={[
           { label: "Knowledge Hub", to: "/knowledge-hub" },
-          { label: "Detecting Plastic Gas Service Pipes" },
+          { label: "Detecting Plastic Pipes" },
         ]}
       />
 
@@ -63,7 +63,7 @@ export default function DetectingPlasticGasServicePipes() {
           <article className="min-w-0 flex-1 max-w-3xl">
 
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Strikes on plastic gas service pipes are one of the harder problems in utility detection. The pipes don't show up on the kit most teams carry, and every method that can find them comes with a practical limit that matters once you're on a real site. Here's what's available, and where each one runs out of road.
+            Strikes on plastic pipes, gas and water alike, are one of the harder problems in utility detection. They don't show up on the kit most teams carry, and every method that can find them comes with a practical limit that matters once you're on a real site. Gas brings the obvious danger, but a struck water main makes its own expensive mess, and the detection problem is much the same either way. Here's what's available, and where each one runs out of road.
           </p>
 
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">01 &middot; Why Genny and CAT don't see them</h2>
@@ -77,7 +77,11 @@ export default function DetectingPlasticGasServicePipes() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            It's worth being clear about what that rules out, because the marketing around locators muddies it. No electromagnetic locator finds a bare plastic pipe, whatever the brochure says. The HSE makes the same point in HSG47: locators, with the possible exception of ground-penetrating radar, will not detect plastic pipes unless a metallic tracer wire was laid with them, a tracing rod is fed into the pipe, or RFID markers were fitted. If none of that went in with the pipe, it is invisible to EM kit. That single fact sits behind everything below, and it's why any handheld claiming to find bare plastic at depth deserves a hard look first. We took one such claim apart in our <Link href="/knowledge-hub/aml-pro-ssi-locators" className="text-primary hover:underline">investigation into the AML Pro by SSI Locators</Link>.
+            Water tells the same story in a different colour. A modern UK water service is blue MDPE, usually 25mm, and every bit as non-conductive as the gas pipe running near it. Older water mains were iron and will still answer a CAT, but the blue plastic that has replaced them will not. Gas or water, once the pipe is plastic there is nothing for the locator to clamp onto.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            It's worth being clear about what that rules out, because the marketing around locators muddies it. No electromagnetic (EM) locator finds a bare plastic pipe, whatever the brochure says. The HSE makes the same point in HSG47: locators, with the possible exception of ground-penetrating radar, will not detect plastic pipes unless a metallic tracer wire was laid with them, a tracing rod is fed into the pipe, or RFID markers were fitted. If none of that went in with the pipe, it is invisible to EM kit. That single fact sits behind everything below, and it's why any handheld claiming to find bare plastic at depth deserves a hard look first. We took one such claim apart in our <Link href="/knowledge-hub/aml-pro-ssi-locators" className="text-primary hover:underline">investigation into the AML Pro by SSI Locators</Link>.
           </p>
 
           <figure className="my-8">
@@ -102,7 +106,40 @@ export default function DetectingPlasticGasServicePipes() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">02 &middot; Acoustic location: Gas Tracker II</h2>
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">02 &middot; Plastic water pipes: deeper, lower stakes, same blind spot</h2>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Everything so far applies to any plastic pipe, but a water service differs from a gas one in two ways that matter on site. The first is depth. A gas service sits at 375mm to 450mm of cover under IGEM/TD/4. A water service goes deeper: the Water Supply (Water Fittings) Regulations 1999 put it between 750mm and 1350mm below the surface, deep enough to keep it clear of frost. So the typical water pipe is roughly twice as far down as the gas one, which takes a hard detection problem and makes it harder.
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-4 my-8">
+            <div className="border border-border rounded-lg bg-card p-4">
+              <p className="text-2xl font-black text-foreground mb-1">25 mm</p>
+              <p className="text-xs text-muted-foreground">Typical outside diameter for a UK domestic blue MDPE water service.</p>
+            </div>
+            <div className="border border-border rounded-lg bg-card p-4">
+              <p className="text-2xl font-black text-foreground mb-1">750 mm</p>
+              <p className="text-xs text-muted-foreground">Minimum cover for a water service (Water Supply (Water Fittings) Regulations 1999).</p>
+            </div>
+            <div className="border border-border rounded-lg bg-card p-4">
+              <p className="text-2xl font-black text-foreground mb-1">1350 mm</p>
+              <p className="text-xs text-muted-foreground">Maximum cover under the same regulations. Gas sits at just 375 to 450mm.</p>
+            </div>
+          </div>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            A word of caution on all of these figures, gas and water alike: they are what the regulations call for, not a promise of what is in the ground. Services get laid shallow to clear an obstruction, ground levels are cut down or built up long after the pipe went in, resurfacing adds or strips cover, and older services predate the current rules altogether. We have dug expecting a pipe at the depth the standard sets and found it at half that. The shallower-than-spec pipe is the dangerous one, because the team digs in confident it is still well below them. Treat any quoted cover depth as a starting assumption to prove on site, never a guarantee.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            The second difference is consequence. A struck water pipe will not ignite, so it does not carry the immediate danger to life that a gas strike does. But it is far from harmless. A cut main floods the excavation in seconds, undermines the trench, cuts off supply to everyone downstream, and can pull contamination back into the network through the open end. Add the repair bill, the traffic management and the third-party claims, and a water strike is an expensive, disruptive day even when nobody is hurt.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            The methods below apply to water as much as gas, with one practical difference. Access is usually easier, since a water service can often be reached at the stop tap or boundary box rather than needing a gas-qualified meter removal. The physics is unchanged though. There is still nothing for a CAT and Genny to find, GPR still has to resolve a small pipe against the ground around it, and the extra depth only widens that gap. Where a tracer wire, detectable tape or a marker went in with the pipe, it can be found. Where nothing did, a water pipe is every bit as invisible as a gas one.
+          </p>
+
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">03 &middot; Acoustic location: Gas Tracker II</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
             The standard non-invasive option for plastic gas services is acoustic location. The most established product in the UK is the Gas Tracker II, made by MADE-SA in France and distributed in the UK by A.T.M.S. (Advantech Marketing Services). It's the kit most utility-detection specialists reach for when the supply is plastic.
@@ -131,7 +168,7 @@ export default function DetectingPlasticGasServicePipes() {
             It also works less well over soft ground than over tarmac or paving slabs, where the soil compaction between pipe and surface gives the cleanest signal. Pipes inserted in ducts or old metal carrier pipes often can't be traced at all.
           </p>
 
-          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">03 &middot; Sonde or camera insertion</h2>
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">04 &middot; Sonde or camera insertion</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
             A similar route is to insert a sonde (a small radio-frequency transmitter on a flexible rod) or a self-tracing CCTV camera into the pipe and locate it from the surface as it travels along.
@@ -152,10 +189,10 @@ export default function DetectingPlasticGasServicePipes() {
             <figcaption className="text-xs text-muted-foreground italic mt-2">A pipe sonde fitted to a flexible push rod. Detectable from the surface as it travels along the pipe, but only useful once the pipe has been opened at the customer end.</figcaption>
           </figure>
 
-          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">04 &middot; Ground Penetrating Radar</h2>
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">05 &middot; Ground Penetrating Radar</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            <Link href="/courses/gpr-training" className="text-primary hover:underline">Ground Penetrating Radar</Link> is the most promising non-invasive option, and we've had real success with it on plastic gas services. It works by sending a radar pulse into the ground and reading the reflections from anything with different dielectric properties.
+            <Link href="/courses/gpr-training" className="text-primary hover:underline">Ground Penetrating Radar</Link> is the most promising non-invasive option, and we've had real success with it on plastic services. It works by sending a radar pulse into the ground and reading the reflections from anything with different dielectric properties. For a fuller primer on the method, Guideline Geo, who manufacture GPR systems, keep a clear <a href="https://guidelinegeo.com/methods/ground-penetrating-radar-gpr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">overview of how ground-penetrating radar works</a>.
           </p>
 
           <figure className="my-8">
@@ -174,7 +211,7 @@ export default function DetectingPlasticGasServicePipes() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            <strong className="text-foreground">Resolution.</strong> A widely-cited rule of thumb in GPR practice is that a target should be at least roughly 10% of the depth at which it's buried in order to be reliably resolved. A 25mm domestic gas service at the IGEM/TD/4 minimum cover of 450mm in a footpath comes out at about 5.6%. A 32mm service at the same depth is about 7.1%. Both sit below the 10% threshold, and in practice the pipe itself is often invisible.
+            <strong className="text-foreground">Resolution.</strong> A widely-cited rule of thumb in GPR practice is that a target should be at least roughly 10% of the depth at which it's buried in order to be reliably resolved. A 25mm domestic gas service at the IGEM/TD/4 minimum cover of 450mm in a footpath comes out at about 5.6%. A 32mm service at the same depth is about 7.1%. A blue water service is deeper again, so it scores worse: a 25mm pipe at 750mm of cover works out around 3.3%. All of these sit well below the 10% threshold, and in practice the pipe itself is often invisible.
           </p>
 
           <figure className="my-8">
@@ -237,7 +274,7 @@ export default function DetectingPlasticGasServicePipes() {
             The same fact makes the dig phase harder. There's no sand bed, no warning tape, no change in ground conditions. The first sign the pipe is there is often the strike itself.
           </p>
 
-          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">05 &middot; Plans, visual cues and trial holes</h2>
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">06 &middot; Plans, visual cues and trial holes</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
             The fallback most teams reach for is a combination of plans, visual judgement, and careful exposure.
@@ -308,7 +345,7 @@ export default function DetectingPlasticGasServicePipes() {
             Asking a team to allow for every angle and direction the pipe might take from the house to the main is not a realistic instruction. The corridor of probability is wider than it looks on paper, and it changes property by property.
           </p>
 
-          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">06 &middot; How other countries design the problem out</h2>
+          <h2 className="text-2xl font-black text-foreground mb-4 mt-10">07 &middot; How other countries design the problem out</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
             Everything above is about finding a pipe that's already in the ground with nothing built in to help you. There's another way to look at it: make the pipe findable the day it goes in, so nobody is ever stood over wet clay guessing with a radar. The UK leans hard on detection after the fact. Plenty of other countries lean harder on prevention at installation, and it's worth knowing how, because it explains a lot of the kit you'll come across and it's where most of the strike risk actually lives.
@@ -319,7 +356,7 @@ export default function DetectingPlasticGasServicePipes() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            <strong className="text-foreground">Detectable tape and marker balls.</strong> Buried a foot or so above the pipe, detectable warning tape is plastic film with a thin aluminium core: a visual warning if you dig onto it, and a metal target a detector can catch before you do. Colour follows the standard gas-yellow code across the US, Canada, Australia and New Zealand. Electronic marker balls go a step further: passive, battery-free tuned circuits, effectively low-frequency RFID, dropped over joints, tees and crossings. A locator pings a frequency and the marker answers back with position and depth, down to about 1.5 metres. The clever part is the frequency is coded by utility, so the locator only hears the service it's after, 83.0 kHz for gas and so on. Markers flag points rather than the whole run, so they're usually a belt-and-braces measure alongside tracer wire.
+            <strong className="text-foreground">Detectable tape and marker balls.</strong> Buried a foot or so above the pipe, detectable warning tape is plastic film with a thin aluminium core: a visual warning if you dig onto it, and a metal target a detector can catch before you do. Colour follows the standard code, gas-yellow for gas and blue for water, across the US, Canada, Australia and New Zealand. Electronic marker balls go a step further: passive, battery-free tuned circuits, effectively low-frequency RFID, dropped over joints, tees and crossings. A locator pings a frequency and the marker answers back with position and depth, down to about 1.5 metres. The clever part is the frequency is coded by utility, so the locator only hears the service it's after, 83.0 kHz for gas and so on. Markers flag points rather than the whole run, so they're usually a belt-and-braces measure alongside tracer wire.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -333,11 +370,11 @@ export default function DetectingPlasticGasServicePipes() {
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">Where this leaves us</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            There isn't one method that finds every plastic gas service pipe before the spade goes in. Gas Tracker II and sonde insertion need gas-qualified access at the customer end. GPR works in the right ground but struggles with smaller-diameter, deeper, or moled services. Plans and visual judgement narrow the corridor without eliminating the surprises. And the international picture says the same thing from the other side: the countries making real progress did it by building locatability in at installation, not by inventing a better way to find bare plastic from the surface.
+            There isn't one method that finds every plastic pipe before the spade goes in. Gas Tracker II and sonde insertion need gas-qualified access at the customer end. GPR works in the right ground but struggles with smaller-diameter, deeper, or moled services. Plans and visual judgement narrow the corridor without eliminating the surprises. And the international picture says the same thing from the other side: the countries making real progress did it by building locatability in at installation, not by inventing a better way to find bare plastic from the surface.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Detecting plastic gas pipes is a layered problem, not a single-tool one. Every method covered above has a place, none of them removes the strike risk on its own, and any kit that promises to is worth treating with caution.
+            Detecting plastic pipes is a layered problem, not a single-tool one. Every method covered above has a place, none of them removes the strike risk on its own, and any kit that promises to is worth treating with caution.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-8">
@@ -359,6 +396,8 @@ export default function DetectingPlasticGasServicePipes() {
               <li>3M Electronic Marker System (EMS) ball markers (gas 83.0 kHz, utility-coded frequencies).</li>
               <li>Netherlands WIBON / KLIC (mandatory pre-excavation notification and digital records); France DT-DICT accuracy classes.</li>
               <li>ASCE 38 and AS 5488 utility-data quality levels; PAS 128 (UK equivalent).</li>
+              <li>Water Supply (Water Fittings) Regulations 1999, Schedule 2 (depth of underground water service pipes: not less than 750mm, not more than 1350mm).</li>
+              <li>Guideline Geo, Ground Penetrating Radar (GPR) method overview, <a href="https://guidelinegeo.com/methods/ground-penetrating-radar-gpr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">guidelinegeo.com</a> (further reading on GPR principles, resolution and ground conditions).</li>
             </ol>
           </div>
 
