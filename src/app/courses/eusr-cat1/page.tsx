@@ -9,19 +9,19 @@ const faqs = [
     q: "What is EUSR CAT 1 training?",
     a: "EUSR CAT 1 is a one-day utility detection training course that leads to an EUSR-registered Category 1 Locate Utility Services qualification. It covers electromagnetic theory, correct use of Cat and Genny equipment in all four locator modes, utility service plan and drawings reading, safe digging practices aligned to HSG47, and a practical on-site assessment in real ground conditions. It is one of the most widely recognised utility detection qualifications in the UK gas, water, electricity, and telecoms sectors.",
     thumb: "cat-04",
-    thumbAlt: "EUSR CAT 1 training overview -- Cat and Genny equipment in field use",
+    thumbAlt: "EUSR CAT 1 training overview, Cat and Genny equipment in field use",
   },
   {
     q: "Is EUSR CAT 1 the same as EUS CAT 1?",
     a: "They are the same qualification. EUS and EUSR both refer to the Energy and Utility Skills Register. The qualification is sometimes written as EUS CAT 1 and sometimes as EUSR CAT 1 or EUSR Category 1. All Sygma EUSR CAT 1 certificates are issued against EUSR-registered standards.",
     thumb: "cat-30",
-    thumbAlt: "EUSR Category 1 certification card -- EUSR-registered standard",
+    thumbAlt: "EUSR Category 1 certification card, EUSR-registered standard",
   },
   {
     q: "What pass mark is required for EUSR CAT 1?",
     a: "The written multiple choice assessment requires a minimum pass mark of 80%. An oral assessment is available for delegates with dyslexia or reading difficulties. The practical on-site assessment is conducted on the day and assessed individually by the Sygma trainer.",
     thumb: "cat-37",
-    thumbAlt: "EUSR CAT 1 written assessment -- 80% pass mark",
+    thumbAlt: "EUSR CAT 1 written assessment, 80% pass mark",
   },
   {
     q: "Is EUSR CAT 1 the same as ProQual CAT1?",
@@ -33,37 +33,37 @@ const faqs = [
     q: "Can Sygma deliver EUSR CAT 1 on our site?",
     a: "Yes. Sygma delivers EUSR CAT 1 at client sites across the UK. Travel is included in the day rate. Sygma provides Radiodetection CAT4 and CAT4+ as standard, but the course works with any manufacturer's locator and signal generator. For alternative equipment, a minimum ratio of one locator per three delegates applies. Maximum 8 delegates per session.",
     thumb: "cat-50",
-    thumbAlt: "Sygma EUSR CAT 1 on-site delivery -- nationwide UK utility detection training",
+    thumbAlt: "Sygma EUSR CAT 1 on-site delivery, nationwide UK utility detection training",
   },
   {
     q: "How long is an EUSR card valid for?",
     a: "An EUSR CAT 1 card is valid for 3 years from the date of issue. The expiry date is printed on the card. Most utility frameworks and principal contractors require a valid, in-date card as a condition of site access. Sygma recommends booking renewal training in the 3 months before expiry to avoid any lapse in certification.",
     thumb: "cat-21",
-    thumbAlt: "EUSR card valid for 3 years -- date of issue printed",
+    thumbAlt: "EUSR card valid for 3 years, date of issue printed",
   },
   {
     q: "How do I renew my EUSR card?",
     a: "To renew your EUSR CAT 1 card you need to retake the full EUSR CAT 1 course and pass both the written and practical assessments. There is no shortened renewal route. The complete one-day EUSR Category 1 training programme must be completed again, including the multiple choice paper and the on-site practical. A new 3-year card is issued on successful completion.",
     thumb: "cat-26",
-    thumbAlt: "EUSR card renewal -- full Category 1 retake required",
+    thumbAlt: "EUSR card renewal, full Category 1 retake required",
   },
   {
     q: "What happens if my EUSR CAT 1 card has expired?",
     a: "If your EUSR CAT 1 card has expired you cannot use it to demonstrate current competency and most utility operators will not allow you to locate on site. There is no grace period under EUSR rules. You will need to complete the full EUSR CAT 1 course again. If your card has recently lapsed, contact Sygma and we can usually get you onto the next available date.",
     thumb: "cat-15",
-    thumbAlt: "Expired EUSR card -- retake required for utility detection competency",
+    thumbAlt: "Expired EUSR card, retake required for utility detection competency",
   },
   {
     q: "Is EUSR CAT 1 training a legal requirement under HSG47?",
     a: "HSG47, the Health and Safety Executive's guidance on avoiding danger from underground services, requires operatives who use cable locating equipment to be trained and competent. EUSR CAT 1 is one of the most widely accepted ways of demonstrating that competency. While HSG47 does not mandate a specific qualification by name, holding an EUSR-registered qualification such as EUSR CAT 1 is the utility industry's standard way of meeting that legal duty.",
     thumb: "cat-58",
-    thumbAlt: "HSG47 compliance -- EUSR CAT 1 Locate Utility Services qualification",
+    thumbAlt: "HSG47 compliance, EUSR CAT 1 Locate Utility Services qualification",
   },
   {
     q: "Can we do EUSR CAT 1 and CAT 2 training on the same day?",
     a: "Yes, in most cases. Sygma regularly delivers combined EUSR CAT 1 and CAT 2 days for clients who want to complete both levels in a single site visit. The combined day runs longer, typically from 8:00am to 5:30pm. The maximum of 8 delegates applies to the combined format as well. Both certificates are issued on the day. Contact Sygma to confirm availability for your team size and location.",
     thumb: "cat-70",
-    thumbAlt: "Combined EUSR CAT 1 and CAT 2 training day -- two qualifications, one site visit",
+    thumbAlt: "Combined EUSR CAT 1 and CAT 2 training day, two qualifications, one site visit",
   },
 ];
 
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     description: 'EUSR CAT 1 training. The EUSR Locate Utility Services qualification for cable avoidance under HSG47. EUSR-registered provider, on-site UK-wide. Book today.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1',
     siteName: 'Sygma Solutions',
-    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-75-eus-cat1', width: 1200, height: 630, alt: 'EUSR CAT 1 / EUSR Category 1 Locate Utility Services Training -- Sygma Solutions' }],
+    images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-75-eus-cat1', width: 1200, height: 630, alt: 'EUSR CAT 1 / EUSR Category 1 Locate Utility Services Training, Sygma Solutions' }],
     type: 'website',
   },
 };
@@ -89,10 +89,10 @@ export default function EusCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
-        headline="EUSR CAT 1 Training -- Locate Utility Services (HSG47)"
-        sub="EUSR Category 1 -- Locate Utility Services -- from the UK's only independent specialist. Full electromagnetic theory, practical Cat and Genny assessment, written paper, and on-site practical. HSG47 compliant safe digging and excavating practices. Recognised across the water, gas, electricity, and telecoms sectors."
+        headline="EUSR CAT 1 Training: Locate Utility Services (HSG47)"
+        sub="EUSR Category 1 Locate Utility Services from the UK's only independent specialist. Full electromagnetic theory, practical Cat and Genny assessment, written paper, and on-site practical. HSG47-compliant safe digging and excavating practices, recognised across the water, gas, electricity, and telecoms sectors."
         image="cat-56"
-        alts={["Trainee scanning for underground utilities with a CAT4 locator on EUSR CAT 1 training", "Genny signal generator connected to a utility service point during EUSR CAT 1 Locate Utility Services training", "Practical cable avoidance exercise on an EUSR CAT 1 live training site", "Instructor guiding a trainee through CAT4 signal interpretation on an EUSR CAT 1 training course", "Close-up of CAT4 display showing utility signal detection during EUSR CAT 1 practical assessment", "Overhead view of a marked utility survey area during EUSR CAT 1 Cat and Genny training", "Group of trainees practising cable avoidance techniques on EUSR CAT 1 Cat and Genny training", "CAT4 and Genny equipment in use on EUSR Category 1 (CAT 1) accredited training -- HSG47 compliant"]}
+        alts={["Trainee scanning for underground utilities with a CAT4 locator on EUSR CAT 1 training", "Genny signal generator connected to a utility service point during EUSR CAT 1 Locate Utility Services training", "Practical cable avoidance exercise on an EUSR CAT 1 live training site", "Instructor guiding a trainee through CAT4 signal interpretation on an EUSR CAT 1 training course", "Close-up of CAT4 display showing utility signal detection during EUSR CAT 1 practical assessment", "Overhead view of a marked utility survey area during EUSR CAT 1 Cat and Genny training", "Group of trainees practising cable avoidance techniques on EUSR CAT 1 Cat and Genny training", "CAT4 and Genny equipment in use on EUSR Category 1 (CAT 1) accredited training, HSG47 compliant"]}
         breadcrumbs={[
           { label: "Training", to: "/training/cable-location-avoidance" },
           { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
@@ -123,10 +123,10 @@ export default function EusCat1() {
         </div>
       </section>
 
-      {/* Definitional opener -- AI Overview eligible */}
+      {/* Definitional opener, AI Overview eligible */}
       <section className="container mx-auto px-6 md:px-8 pt-10 pb-2 max-w-4xl">
         <p className="text-lg text-muted-foreground leading-relaxed">
-          <strong>EUSR CAT 1 training</strong> -- formally known as the <strong>EUSR Category 1 Locate Utility Services</strong> qualification -- is a one-day <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">cable avoidance course</Link> covering the safe location of underground utilities before excavation. Delegates learn to interpret utility drawings, detect buried services using a Cat and Genny, and follow safe digging practices aligned to HSE guidance and <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47</Link>. On successful completion course attendees receive an EUSR-registered card valid for three years, recognised across UK gas, water, electricity, and telecoms contractors.
+          <strong>EUSR CAT 1 training</strong>,formally known as the <strong>EUSR Category 1 Locate Utility Services</strong> qualification, is a one-day <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">cable avoidance course</Link> covering the safe location of underground utilities before excavation. Delegates learn to interpret utility drawings, detect buried services using a Cat and Genny, and follow safe digging practices aligned to HSE guidance and <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47</Link>. On successful completion course attendees receive an EUSR-registered card valid for three years, recognised across UK gas, water, electricity, and telecoms contractors.
         </p>
       </section>
 
@@ -216,9 +216,8 @@ export default function EusCat1() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">EUSR CAT 1 Training: The EUSR-Registered Standard for Utility Avoidance</h2>
         <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed"><strong>EUSR CAT 1 training</strong> -- also written as <strong>EUSR Category 1</strong>, Cat 1, or the formal <strong>EUSR Category 1 Locate Utility Services</strong> qualification -- is issued against EUSR-registered standards and is the utility sector's most widely recognised certificate of competence for locating buried services with <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">Cat and Genny equipment</Link>. The qualification is required or preferred on the frameworks of many of the UK's largest utility contractors and network operators handling gas, water, electricity, and telecoms infrastructure. All Sygma EUSR Category 1 courses meet the requirements of <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47</Link>, the Health and Safety Executive's guidance for safe excavation near underground services.</p>
-          <p className="text-muted-foreground leading-relaxed">Sygma's EUSR Category 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every Sygma programme. The EUSR registration adds the sector recognition that procurement and H&S frameworks require for utility detection competency. The difference between this and the Sygma in-house certificate is not the training content -- it is the awarding body and the registered standard against which course attendees are individually assessed. Many delegates progress on to <Link href="/courses/eusr-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT 2 Safe Dig</Link> or take both qualifications in a <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">combined CAT 1 + CAT 2 day</Link>.</p>
-          <p className="text-muted-foreground leading-relaxed">Not all EUSR CAT 1 providers deliver the same standard of training. The EUSR specification sets a minimum, and some providers deliver to that minimum. Sygma includes clamp, capacitance, and blind induction in assessed practicals even where EUSR does not require it -- because real-world utility detection demands every technique, not just the basics. The result is an operative who can locate underground services in genuine site conditions, not just pass a multiple choice paper. Sygma-trained operatives consistently show a 70-80% increase in Genny usage post-course, measured through <Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">locator data downloads using the Genny-First methodology</Link>.</p>
+          <p className="text-muted-foreground leading-relaxed"><strong>EUSR CAT 1 training</strong>, also written as <strong>EUSR Category 1</strong> or the formal <strong>EUSR Category 1 Locate Utility Services</strong> qualification, is issued against EUSR-registered standards and is the utility sector's most widely recognised certificate of competence for locating buried services with <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">Cat and Genny equipment</Link>. It is required or preferred on the frameworks of many of the UK's largest utility contractors handling gas, water, electricity, and telecoms infrastructure, and every Sygma course meets <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47</Link>, the HSE's guidance for safe excavation near underground services.</p>
+          <p className="text-muted-foreground leading-relaxed">Sygma's Category 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every programme; the EUSR registration adds the sector recognition procurement frameworks require. Sygma also assesses clamp, capacitance, and blind induction even where the EUSR minimum does not, so delegates leave able to locate in real site conditions, not just pass a paper. Many progress to <Link href="/courses/eusr-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT 2 Safe Dig</Link> or take both in a <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">combined CAT 1 and CAT 2 day</Link>.</p>
         </div>
         <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="text-foreground font-semibold mb-2">Not sure whether you need EUSR CAT 1 or the Sygma in-house certificate?</p>
@@ -229,18 +228,18 @@ export default function EusCat1() {
         </div>
       </section>
 
-      {/* EUSR Category 1 -- Locate Utility Services curriculum */}
+      {/* EUSR Category 1, Locate Utility Services curriculum */}
       <section className="container mx-auto px-6 md:px-8 pt-2 pb-10 max-w-4xl">
         <h3 className="text-xl md:text-2xl font-black mb-4 text-foreground">EUSR Category 1: Locate Utility Services Curriculum</h3>
         <p className="text-muted-foreground leading-relaxed mb-5">
           The EUSR Category 1 Locate Utility Services qualification is built on the National Occupational Standards for utility detection. The curriculum covers the underpinning knowledge and practical skills required to locate buried services safely before excavation. <strong>Sygma's course delivers the full standard, not the minimum.</strong>
         </p>
         <ul className="space-y-3 text-muted-foreground text-sm">
-          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Utility drawings and service plans</strong> -- reading and interpreting STATS records, reconciling drawings with on-site reality, identifying limitations of recorded utilities data.</span></li>
-          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Cable avoidance equipment</strong> -- correct selection, pre-use checks, and operation of the Cat and Genny across power, radio, signal, and avoidance modes for accurate utility detection.</span></li>
-          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Detection and depth estimation</strong> -- locating utilities, signal interpretation, depth readings, and identifying problem services such as small communications cables and street-lighting circuits.</span></li>
-          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Safe digging and excavating practices</strong> -- following HSE guidelines and HSG47 best practice, applying safe systems of work, and integrating locate-detect-dig procedures into excavation.</span></li>
-          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Practical assessment</strong> -- on-site assessment in real ground conditions, individually assessed across all four locator modes, including blind induction and capacitance testing on buried services.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Utility drawings and service plans</strong>,reading and interpreting STATS records, reconciling drawings with on-site reality, identifying limitations of recorded utilities data.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Cable avoidance equipment</strong>,correct selection, pre-use checks, and operation of the Cat and Genny across power, radio, signal, and avoidance modes for accurate utility detection.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Detection and depth estimation</strong>,locating utilities, signal interpretation, depth readings, and identifying problem services such as small communications cables and street-lighting circuits.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Safe digging and excavating practices</strong>,following HSE guidelines and HSG47 best practice, applying safe systems of work, and integrating locate-detect-dig procedures into excavation.</span></li>
+          <li className="flex gap-3"><span className="text-accent font-bold shrink-0">&#8250;</span><span><strong>Practical assessment</strong>,on-site assessment in real ground conditions, individually assessed across all four locator modes, including blind induction and capacitance testing on buried services.</span></li>
         </ul>
       </section>
 
@@ -251,10 +250,10 @@ export default function EusCat1() {
             <Image src="cat-55" width={1200} height={900} alt="EUSR CAT 1 training delegates using Cat and Genny equipment for safe utility location" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-08" width={1200} height={900} alt="EUSR CAT 1 practical cable avoidance assessment -- countryside training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-08" width={1200} height={900} alt="EUSR CAT 1 practical cable avoidance assessment, countryside training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
           <div className="aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-            <Image src="cat-12" width={1200} height={900} alt="On-site practical cable avoidance training with signal generator -- EUSR CAT 1 Locate Utility Services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
+            <Image src="cat-12" width={1200} height={900} alt="On-site practical cable avoidance training with signal generator, EUSR CAT 1 Locate Utility Services" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-lg w-full h-full object-contain" />
           </div>
         </div>
       </section>
@@ -268,14 +267,10 @@ export default function EusCat1() {
               <tbody>
                 {[
                   ["Course Name", "EUSR CAT 1: Utility Avoidance Training"],
-                  ["Awarding Body", "EUSR (Energy and Utility Skills Register)"],
-                  ["Also Known As", "EUSR CAT 1, EUSR Category 1, EUSR Cat 1 utility training"],
-                  ["Duration", "One day (typically 8:30am to 4:00pm)"],
+                  ["Awarding Body", "EUSR (Energy and Utility Skills Register)"],                  ["Duration", "One day (typically 8:30am to 4:00pm)"],
                   ["Format", "Classroom theory (morning) followed by on-site practical assessment (afternoon)"],
                   ["Assessment", "Multiple choice written paper: 80% minimum pass mark. Oral assessment available for delegates with dyslexia or reading difficulties. On-site practical assessment in all Genny & CAT modes."],
-                  ["Certificate", "EUSR CAT 1 certificate (EUSR-registered). Issued on successful completion."],
-                  ["Max Delegates", "8 per session"],
-                  ["Suitable For", "Groundworkers, plant operators, and operatives in the utility sector requiring EUSR-registered certification"],
+                  ["Certificate", "EUSR CAT 1 certificate (EUSR-registered). Issued on successful completion."],                  ["Suitable For", "Groundworkers, plant operators, and operatives in the utility sector requiring EUSR-registered certification"],
                   ["Equipment", "Sygma provides Radiodetection CAT4 and CAT4+ as standard. This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX. For on-site delivery, delegates should bring the equipment they use on site. Minimum ratio of one locator per 3 delegates."],
                   ["CITB", "CITB Approved Training Organisation. Employers may be eligible for CITB Employer Network funding support. Contact your CITB adviser."],
                   ["Delivery", "Wigan HQ | The Survey School, Worcester | On-site nationwide (travel included)"],
@@ -328,19 +323,19 @@ export default function EusCat1() {
       {/* Image strip after What You Get */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-06" width={1200} height={900} alt="EUSR CAT 1 practical training with cable locator -- Cat and Genny qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-06" width={1200} height={900} alt="EUSR CAT 1 practical training with cable locator, Cat and Genny qualification" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
           <Image src="cat-01" width={1200} height={900} alt="Genny signal generator connection during EUSR CAT 1 Locate Utility Services assessment" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-65" width={1200} height={900} alt="On-site utility detection training -- EUSR Category 1 registration course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-65" width={1200} height={900} alt="On-site utility detection training, EUSR Category 1 registration course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
       {/* Full day agenda */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <h2 className="text-2xl font-black mb-8 text-foreground">EUSR CAT 1 Full Day Agenda</h2>
+        <h2 className="text-2xl font-black mb-8 text-foreground">Full Day Agenda</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
@@ -373,77 +368,8 @@ export default function EusCat1() {
 
       {/* Full-width image */}
       <div className="w-full overflow-hidden bg-muted" style={{ aspectRatio: "1585 / 341" }}>
-        <Image src="cat-63" width={1585} height={341} alt="EUSR CAT 1 on-site training group -- Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-cover" />
+        <Image src="cat-63" width={1585} height={341} alt="EUSR CAT 1 on-site training group, Sygma Solutions UK-wide delivery" sizes="100vw" className="w-full h-full object-cover" />
       </div>
-
-      {/* Learning outcomes */}
-      <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <h2 className="text-2xl font-black mb-8 text-foreground">What Delegates Will Be Able to Do</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-black text-foreground mb-4 text-lg border-b border-accent pb-2">Compliance and Understanding</h3>
-            <ul className="space-y-3">
-              {[
-                "Explain HSG47 requirements and the legal basis for using buried service locators before excavation",
-                "Read and interpret utility service plans (STATS) in relation to a live site",
-                "Describe the financial and safety consequences of utility strikes",
-              ].map((item) => (
-                <li key={item} className="flex gap-3 text-muted-foreground text-sm">
-                  <span className="text-accent font-bold text-base shrink-0">&#8250;</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-black text-foreground mb-4 text-lg border-b border-accent pb-2">Electromagnetic Theory</h3>
-            <ul className="space-y-3">
-              {[
-                "Explain how a locator generates and detects signals in each of the four EML modes",
-                "Identify conditions that cause signal distortion, depth errors, and missed services",
-                "Explain why passive Power and Radio signals alone cannot provide a complete site picture",
-              ].map((item) => (
-                <li key={item} className="flex gap-3 text-muted-foreground text-sm">
-                  <span className="text-accent font-bold text-base shrink-0">&#8250;</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-black text-foreground mb-4 text-lg border-b border-accent pb-2">Equipment Operation</h3>
-            <ul className="space-y-3">
-              {[
-                "Correctly operate a cable locator in all four modes: Power, Radio, Genny, and Avoidance",
-                "Connect and use a signal generator including earthing, dual frequency, and capacitance methods",
-                "Perform blind induction sweeps and null services accurately",
-                "Locate problem services including street lighting, LV services, and small communications cables",
-                "Take and verify depth readings using the locator's depth estimation function",
-              ].map((item) => (
-                <li key={item} className="flex gap-3 text-muted-foreground text-sm">
-                  <span className="text-accent font-bold text-base shrink-0">&#8250;</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-black text-foreground mb-4 text-lg border-b border-accent pb-2">On-Site Procedure</h3>
-            <ul className="space-y-3">
-              {[
-                "Conduct a complete site visual inspection and service plan reconciliation before excavation",
-                "Start every locate with Genny to establish a positive identification baseline",
-                "Follow a methodical, repeatable locating procedure that reduces the risk of a missed service",
-              ].map((item) => (
-                <li key={item} className="flex gap-3 text-muted-foreground text-sm">
-                  <span className="text-accent font-bold text-base shrink-0">&#8250;</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
 
       {/* EUSR CAT 1 vs ProQual CAT1 comparison */}
       <section className="bg-muted/20 py-14">
@@ -535,7 +461,7 @@ export default function EusCat1() {
       {/* Image strip before upgrade paths */}
       <div className="grid grid-cols-3 gap-3">
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
-          <Image src="cat-80" width={1200} height={900} alt="Cable avoidance practical assessment -- EUSR CAT 1 Cat and Genny training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+          <Image src="cat-80" width={1200} height={900} alt="Cable avoidance practical assessment, EUSR CAT 1 Cat and Genny training site" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
         <div className="overflow-hidden rounded-lg aspect-[4/3] bg-muted">
           <Image src="cat-78" width={1200} height={900} alt="EUSR CAT 1 delegates using cable locator equipment for utility detection" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
@@ -593,7 +519,7 @@ export default function EusCat1() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Proven Methodology</p>
               <h3 className="text-base font-bold text-foreground mb-2">Genny-First Methodology</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Sygma-trained operatives show a <strong>70-80% increase in Genny usage</strong> on real utility detection work. This is not theory -- it is <strong>measured through locator data downloads</strong> after the EUSR CAT 1 course.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Sygma-trained operatives show a <strong>70-80% increase in Genny usage</strong> on real utility detection work. This is not theory, it is <strong>measured through locator data downloads</strong> after the EUSR CAT 1 course.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Expertise</p>
@@ -624,49 +550,18 @@ export default function EusCat1() {
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Legal Requirement</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">HSG47 Compliance</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl">EUSR CAT 1 directly meets the training and competency requirements of <Link href="/courses/hsg47-training">HSG47 training</Link> on safe digging near buried services.</p>
-          <div className="grid md:grid-cols-2 gap-5">
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Trained Personnel</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed"><strong>HSG47 requires all personnel involved in excavation near underground services to be trained and competent.</strong> The EUSR CAT 1 Locate Utility Services qualification directly meets this requirement.</p>
-            </div>
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Safe System</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Safe System of Work</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">The course covers establishing and following <strong>safe digging procedures and excavating practices</strong> aligned with HSG47 guidance and HSE best practice.</p>
-            </div>
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Planning</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Service Plan Checks</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Delegates learn to <strong>interpret utility drawings, service plans, and STATS records</strong> before breaking ground, as HSG47 requires for safe excavation.</p>
-            </div>
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Equipment Use</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Correct Use of Equipment</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Full practical training on <strong>Cat and Genny equipment</strong> covering Power, Radio, Genny, and all <strong>utility detection signal application modes</strong>.</p>
-            </div>
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Visual Detection</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Visual Inspection</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Techniques for <strong>visual identification of surface markers, valve covers, and indicators of buried services</strong> -- the first step in safe utility detection before locator work begins.</p>
-            </div>
-            <div className="border border-border rounded-lg bg-card p-5">
-              <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Documentation</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Evidenced Training Records</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">The <strong>EUSR-registered Category 1 certification</strong> provides auditable proof of competency for HSG47 compliance documentation and procurement frameworks.</p>
-            </div>
-          </div>
+          <p className="text-muted-foreground mb-4 max-w-2xl">EUSR CAT 1 directly meets the training and competency requirements of <Link href="/courses/hsg47-training">HSG47 training</Link> on safe digging near buried services. HSG47 requires everyone working near underground services to be trained and competent, and the EUSR-registered Category 1 qualification is the utility sector's standard way of evidencing that.</p>
+          <p className="text-muted-foreground mb-0 max-w-2xl">The course covers safe systems of work, interpreting utility drawings and STATS records before breaking ground, correct use of Cat and Genny equipment across all four modes, and visual identification of surface indicators, with the EUSR-registered certificate providing auditable proof of competency for procurement frameworks.</p>
         </div>
       </section>
 
-      {/* Course Schedule, Pricing & Booking -- responds to high-position GSC queries: 'cat 1 course' (pos 2), 'cat 1 certification' (pos 2), 'cat 1 certificate' (pos 8) */}
+      {/* Course Schedule, Pricing & Booking, responds to high-position GSC queries: 'cat 1 course' (pos 2), 'cat 1 certification' (pos 2), 'cat 1 certificate' (pos 8) */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Schedule, Pricing & Booking</p>
           <h2 className="text-2xl font-black mb-4 text-foreground">EUSR CAT 1 Course Schedule and Pricing</h2>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            The <strong>EUSR Category 1 Locate Utility Services</strong> course runs <strong>year-round</strong> at our Wigan HQ, at The Survey School in Worcester, and on client sites anywhere in the UK. Choose any available <strong>date</strong> that suits your team -- typical lead time is 1-3 weeks.
+            The <strong>EUSR Category 1 Locate Utility Services</strong> course runs <strong>year-round</strong> at our Wigan HQ, at The Survey School in Worcester, and on client sites anywhere in the UK. Choose any available <strong>date</strong> that suits your team, typical lead time is 1-3 weeks.
           </p>
           <div className="grid md:grid-cols-3 gap-5 mb-6">
             <div className="bg-background border border-border rounded-lg p-5">
@@ -683,7 +578,7 @@ export default function EusCat1() {
             </div>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <strong>Pricing</strong> is tailored to course size, location, and equipment requirements. <strong>CITB Employer Network funding</strong> may cover part of the course fee for eligible employers -- ask your CITB adviser. <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Request a quote with your preferred date and delegate count.</Link>
+            <strong>Pricing</strong> is tailored to course size, location, and equipment requirements. <strong>CITB Employer Network funding</strong> may cover part of the course fee for eligible employers, ask your CITB adviser. <Link href="/contact#enquiry-form" className="text-primary font-semibold hover:underline">Request a quote with your preferred date and delegate count.</Link>
           </p>
         </div>
       </section>
@@ -716,22 +611,22 @@ export default function EusCat1() {
         </div>
       </section>
 
-      {/* Training in Action -- photo gallery (Surfer image-count target 28-46) */}
+      {/* Training in Action, photo gallery (Surfer image-count target 28-46) */}
       <section className="container mx-auto px-6 md:px-8 py-10 max-w-5xl">
         <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Training in Action</p>
-        <h2 className="text-2xl font-black mb-6 text-foreground">EUSR CAT 1 Locate Utility Services -- Site Photos</h2>
+        <h2 className="text-2xl font-black mb-6 text-foreground">EUSR CAT 1 Locate Utility Services, Site Photos</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
             <Image src="cat-13" width={1200} height={900} alt="EUSR CAT 1 trainee scanning utility services with cable locator" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-            <Image src="cat-22" width={1200} height={900} alt="Cat and Genny practical training -- depth estimation and signal interpretation" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+            <Image src="cat-22" width={1200} height={900} alt="Cat and Genny practical training, depth estimation and signal interpretation" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
             <Image src="cat-33" width={1200} height={900} alt="EUSR Category 1 Locate Utility Services on-site assessment" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-            <Image src="cat-44" width={1200} height={900} alt="Safe digging and excavation practices -- HSG47 compliance training" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
+            <Image src="cat-44" width={1200} height={900} alt="Safe digging and excavation practices, HSG47 compliance training" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
             <Image src="cat-67" width={1200} height={900} alt="EUSR CAT 1 trainer leading on-site utility detection demonstration" sizes="(max-width: 768px) 50vw, 33vw" className="w-full h-full object-cover" />
@@ -750,7 +645,7 @@ export default function EusCat1() {
             <li><Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">The Genny-First Methodology</Link></li>
             <li><Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:underline">Understanding HSG47 in plain English</Link></li>
             <li><Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR CAT1 or ProQual CAT1? A side-by-side comparison</Link></li>
-            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">Renewing an EUSR CAT1 card -- a step-by-step</Link></li>
+            <li><Link href="/knowledge-hub/eusr-card-renewal" className="text-primary hover:underline">Renewing an EUSR CAT1 card, a step-by-step</Link></li>
           </ul>
         </div>
       </section>
