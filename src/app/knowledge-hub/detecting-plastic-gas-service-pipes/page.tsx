@@ -8,11 +8,11 @@ import { CLOUDINARY_BASE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'Detecting Plastic Pipes: Methods and Their Limits | Sygma',
-  description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on a UK site.",
+  description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on site.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes' },
   openGraph: {
     title: 'Detecting Plastic Pipes: Methods and Their Limits | Sygma',
-    description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on a UK site.",
+    description: "Why CAT and Genny can't find plastic gas or water pipes, and what each alternative (acoustic, sonde, GPR, tracer wire, trial holes) can and can't do on site.",
     url: 'https://sygma-solutions.com/knowledge-hub/detecting-plastic-gas-service-pipes',
     siteName: SITE_NAME,
     images: [{ url: `${CLOUDINARY_BASE}/cat-44`, width: 1200, height: 630 }],

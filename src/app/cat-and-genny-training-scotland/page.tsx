@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: 'CAT and Genny Training Scotland | EUSR CAT 1',
-  description: 'CAT and Genny training across Scotland. On-site CAT4 and Genny equipment courses in Edinburgh, Glasgow and the Central Belt. EUSR CAT 1, ProQual accredited. CITB ATO.',
+  description: 'CAT and Genny training across Scotland. On-site CAT4 and Genny courses in Edinburgh, Glasgow and the Central Belt. EUSR CAT 1, ProQual accredited. CITB ATO.',
   alternates: { canonical: 'https://sygma-solutions.com/cat-and-genny-training-scotland' },
   openGraph: {
     title: 'CAT and Genny Training Scotland | EUSR CAT 1',
-    description: 'CAT and Genny training across Scotland. On-site CAT4 and Genny equipment courses in Edinburgh, Glasgow and the Central Belt. EUSR CAT 1, ProQual accredited. CITB ATO.',
+    description: 'CAT and Genny training across Scotland. On-site CAT4 and Genny courses in Edinburgh, Glasgow and the Central Belt. EUSR CAT 1, ProQual accredited. CITB ATO.',
     url: 'https://sygma-solutions.com/cat-and-genny-training-scotland',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
