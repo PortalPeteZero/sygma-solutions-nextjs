@@ -18,7 +18,7 @@ const spec = [
 
 const cert = [
   { name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own Super User certificate of competence, issued on completion.' },
-  { name: 'EUSR', body: 'EUSR registration', cost: 'EUSR card', unit: 'fee per person', note: 'Nationally recognised EUSR registration. Registration fee charged per person.' },
+  { name: 'EUSR', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
 ];
 
 type ThItem = { t: string; d: string };
