@@ -4,53 +4,57 @@ import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
 
-/* Shared body for Sygma course-agenda pages. The two routes (HSG47-led and
-   EUS Cat 1-led) render this with a different hero headline/strapline only —
-   all the agenda content below is identical, so it lives in one place. */
+/* Shared body for the 2-day Super User agenda pages (Coach + Damage
+   Investigation). Same course, headlined differently — hero comes in as props. */
 
-const covers = ['Genny and CAT', 'Cable Avoidance', 'HSG47', 'EUS Cat 1', 'Advanced CAT1'];
+const covers = ['2 Day Super User Coach', 'Super User Damage Investigation', 'Super User Locator', 'Locator Coach'];
 
 const spec = [
-  { k: 'Duration', v: 'One day', s: '08:00 – ~15:00' },
-  { k: 'Group size', v: 'Max 8', s: 'Per trainer, per day' },
+  { k: 'Duration', v: 'Two days', s: 'Classroom + practical' },
+  { k: 'Group size', v: 'Max 8', s: 'Per trainer' },
   { k: 'Delivery', v: 'On-site UK-wide', s: 'or our Wigan centre' },
-  { k: 'Assessment', v: '80% pass', s: 'Written + practical' },
+  { k: 'Prerequisite', v: 'EUS Cat 1', s: 'or equivalent (not Cat 2)' },
 ];
 
 const cert = [
-  { name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own certificate of competence, issued on the day.' },
-  { name: 'EUSR Cat 1', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
-  { name: 'ProQual Level 2', body: 'Regulated award', cost: '+£35', unit: 'per person', note: 'ProQual Level 2 Award — a regulated qualification.' },
+  { name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own Super User certificate of competence, issued on completion.' },
+  { name: 'EUSR', body: 'EUSR registration', cost: 'EUSR card', unit: 'fee per person', note: 'Nationally recognised EUSR registration. Registration fee charged per person.' },
 ];
 
 type ThItem = { t: string; d: string };
 const theoryGroups: { theme: string; items: ThItem[] }[] = [
   {
-    theme: 'Legislation, safety & responsibility',
+    theme: 'Risk, legislation & safe digging',
     items: [
-      { t: 'Why we locate before we dig', d: 'The reasons for using buried pipe & cable locators, and the health, safety and financial consequences when it goes wrong — with real "getting it wrong" examples demonstrated and discussed.' },
-      { t: 'HSG47, legislation & company policy', d: 'How to comply with HSG47 (Avoiding Danger from Underground Services), the other national legislation that applies, and the company policy documentation that sits around it.' },
-      { t: 'Understanding a permit to dig', d: 'What a permit to dig is for, what it does and does not authorise, and where it sits within a safe system of work.' },
+      { t: 'Underground service strikes — the risks & HSG47', d: 'The real risks of utility strikes and how the course content maps to HSG47, with company-specific examples of strikes and the lessons learned.' },
+      { t: 'Permit to dig', d: 'How to complete and sign off a permit to dig, and where it sits in the company\'s safe system of work.' },
+      { t: 'Company policy & safe-dig policy', d: 'How the techniques apply to the company\'s own policies and safe-dig procedures.' },
     ],
   },
   {
-    theme: 'Plans & drawings',
+    theme: 'Plans & detection theory',
     items: [
-      { t: 'Reading Buried Service Plans (STATS)', d: 'Interpreting the different types of utility service plan, including their keys and symbols — and what they do, and don\'t, tell you about the ground beneath your feet.' },
-      { t: 'PAS128 drawings & surveys', d: 'How to read PAS128 drawings, and the important difference between a PAS128 survey and a Utility STATS plan.' },
+      { t: 'Buried Service Plans (STATS)', d: 'Interpreting different plan types — including their inaccuracies and limitations — and using the plans to plan the correct detection technique.' },
+      { t: 'Electromagnetic theory & myth-busting', d: 'How a pipe & cable locator works, the theory and limitations, tips & tricks, and an honest account of what the equipment can and cannot locate.' },
+      { t: 'Controls & operation, Genny-first', d: 'Correct use of the locator and signal transmitter in all modes, with strong emphasis on transmitter (Genny) use — and how to promote the Genny-first message with site teams.' },
+      { t: 'Signal interpretation & distortion', d: 'Interpreting the signal, locating joints and changes of direction/depth, and understanding signal distortion and its effect on location accuracy.' },
+      { t: 'Transmitter techniques', d: 'Dual-frequency applications and capacitance for small/non-earthed cables; effective earthing and earth positioning; blind induction search and effective nulling; depth estimation.' },
+      { t: 'Complex utility networks', d: 'Worked examples of complex networks and how to plan and perform the survey across them.' },
     ],
   },
   {
-    theme: 'The science of detection',
+    theme: 'CAT data download & analysis',
     items: [
-      { t: 'Electromagnetic theory', d: 'How pipe & cable locators actually work — the underlying theory, the real-world limitations, and the practical tips and tricks that only come with experience.' },
-      { t: 'Myth busting', d: 'A dedicated session on what the equipment genuinely can and cannot locate, so delegates leave with realistic expectations of the kit rather than false confidence.' },
+      { t: 'CAT Manager — getting the data', d: 'How to get the recorded data off the CAT and export it to CSV and KML files.' },
+      { t: 'Analysis tools & reports', d: 'Importing data into the CAT Analysis tool and CAT Manager online, and creating reports from it.' },
+      { t: 'Reading the data', d: 'Analysing raw data — usage patterns, and spotting good and bad practice in how the kit is being used on site.' },
     ],
   },
   {
-    theme: 'Recorded data (optional)',
+    theme: 'Investigation & coaching',
     items: [
-      { t: 'Data logging & C.A.T. Manager', d: 'Using C.A.T. Manager software to download and analyse recorded locator data, so usage can be reviewed and evidenced — C.A.T.4 specific.' },
+      { t: 'Utility strike investigation', d: 'How to conduct a utility-strike investigation and complete a USAG cable-strike form.' },
+      { t: 'Coaching others', d: 'Coaching tips, assessment planning and structure — how to support and assess site operatives effectively.' },
     ],
   },
 ];
@@ -58,89 +62,54 @@ const theoryGroups: { theme: string; items: ThItem[] }[] = [
 type Module = { no: string; title: string; tag: string; blurb: string; img: string; items: string[] };
 const modules: Module[] = [
   {
-    no: '01', title: 'Pre-survey', tag: 'Plan before you scan', img: 'cat-15',
-    blurb: 'Before a single sweep, delegates learn to read the ground from the plans and prove the kit is fit to use.',
+    no: '01', title: 'Survey & location, all modes', tag: 'Genny first', img: 'cat-09',
+    blurb: 'Advanced, confident use of the kit across a full utility survey — led with the Genny.',
     items: [
-      'Read utility plans from all providers, including keys and symbols',
-      'Complete a visual survey alongside the plans, spotting surface indications of services',
-      'Pre-use equipment checks — function check and in-service date check',
-      'Understand the limitations of electromagnetic locators',
-      'Plan the survey using the Genny and CAT based on the site',
-      'Understand a permit to dig',
+      'Use service plans + visual checks to establish routes before any work',
+      'Correct use of the locator & transmitter in all modes; benefits of the combination & dual frequency',
+      'Conduct a utility survey starting with the Genny',
+      'Street-light locating; LV service & main tracing, including joints',
+      'HV detection; communication cable location',
+      'Induction — blind sweeps and nulling out',
+      'Capacitance techniques; the effect of repositioning the Genny earth',
     ],
   },
   {
-    no: '02', title: 'Transmitter (Genny) applications', tag: 'Genny first', img: 'cat-09',
-    blurb: 'The heart of the course. Every way to apply a signal — and how to confirm it has actually taken.',
+    no: '02', title: 'Assessment & coaching', tag: 'Coach & assess', img: 'cat-16',
+    blurb: 'The Super User difference — proving you can locate in your own right, then coach and assess others.',
     items: [
-      'Direct connection to a known utility; correct earthing; confirm the connection and signal',
-      'Signal to a street-light cable via direct connection, correct technique and distance',
-      'Signal to a domestic LV service at a property or building',
-      'High-frequency signal using a capacitance technique',
-      'Signal applied using the signal clamp, correct technique and distance',
-      'Induced signal to a known target, correct technique and distance',
-      'Blind induction sweep in two directions across a site',
-      'Null out a buried utility',
-      'Check for airborne signal in all inductive applications',
-    ],
-  },
-  {
-    no: '03', title: 'Locating — pinpointing & tracing', tag: 'Find it, prove it', img: 'cat-50',
-    blurb: 'Turning a signal into a marked, traced, depth-checked line on the ground.',
-    items: [
-      'Control sensitivity to locate then pinpoint the utility',
-      'Determine direction, trace using the correct technique and mark its position',
-      'Identify sudden signal loss and explain why it can occur',
-      'Locate a joint — T-connection / bend',
-      'Recognise being too close to the transmitter; correct erratic sensitivity',
-      'Depth estimates at the correct distances; know when depth is unreliable; check it two ways',
-    ],
-  },
-  {
-    no: '04', title: 'General technique & strategy', tag: 'Work the whole site', img: 'cat-42',
-    blurb: 'The judgement that separates a competent operative from a button-pusher.',
-    items: [
-      'Use the plans to apply the transmitter signal in the best place throughout the survey',
-      'Limitations of locating HV cables, and inducing a signal to find them',
-      'Transmitter first — exhaust all connection options before induction, all active before passive',
-      'Dual-frequency transmitters — the benefits of both frequencies',
-      'Limitations of induction (the signal is not "selective"); when to run a blind sweep',
-      'Continuously scan as the excavation progresses, and why',
-      'Strike Alert — uses and how to disable',
-    ],
-  },
-  {
-    no: '05', title: 'Passive (Power & Radio)', tag: 'The final sweep', img: 'cat-70',
-    blurb: 'Catching what an applied signal can\'t — power and radio passive detection, done correctly.',
-    items: [
-      'Power survey using the sensitivity control appropriately and the correct search technique',
-      'Radio survey using the sensitivity control appropriately and the correct search technique',
+      'Complete your own POW risk assessment before the practical',
+      'Sygma Standard practical assessment — locating services in your own right',
+      'Coach and assess each other, with Sygma supporting individually (ideally on working teams nearby)',
+      'Problem scenarios found on site and resolved',
+      'Coaching competency checks — practical',
+      'Coaching tips, assessment planning and structure',
     ],
   },
 ];
 
-const accred = ['EUSMUNC06', 'EUSEPUS044', 'HSG47', 'HSG150'];
+const accred = ['HSG47', 'EUS Cat 1', 'USAG'];
 
 const requirements = [
+  'Each delegate must already hold EUS Cat 1 (or equivalent) — Cat 2 is not required',
   'STATS plans (buried service drawings) for the practical site — Sygma can supply for an agreed cost',
+  'Ideally, access to working teams / live sites nearby for the coaching & assessment element',
   'Delegates ideally bring their own kit; Sygma bring enough Genny4 & C.A.T.4+ for a standard course (non-C.A.T.4+ kit: 1 locator per 3 people)',
   'On-site parking suitable for a transit-sized van',
-  'A room that seats all delegates + trainer, with welfare facilities and a wall/screen for a projector',
-  'Enough desk space per delegate (notes + written exam)',
+  'A room that seats all delegates + trainer, with welfare facilities and a wall/screen for a projector (or our Wigan centre)',
   'Appropriate PPE per national, company and H&S requirements',
-  'A practical area with numerous buried metallic utilities nearby (one cable to a cabin is not enough)',
+  'A practical area with numerous buried metallic utilities nearby',
   'Host risk assessment of the site and training room; brief the trainer on any risks',
   'Government photographic ID per delegate (driving licence, passport or residence permit)',
 ];
 
 const contents = [
   { id: 'certificates', label: 'Certificates' },
-  { id: 'theory', label: 'Theory' },
+  { id: 'classroom', label: 'Classroom' },
   { id: 'practical', label: 'Practical' },
   { id: 'requirements', label: 'On the day' },
   { id: 'assessment', label: 'Assessment' },
 ];
-
 
 export type CourseAgendaHero = {
   h1: React.ReactNode;
@@ -150,17 +119,17 @@ export type CourseAgendaHero = {
   breadcrumbLabel: string;
 };
 
-export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl, breadcrumbLabel }: CourseAgendaHero) {
+export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaUrl, breadcrumbLabel }: CourseAgendaHero) {
   return (
     <div className="agenda-doc">
       <style dangerouslySetInnerHTML={{ __html: PRINT_CSS }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: schemaName, description: 'One-day utility location and avoidance training to HSG47, using the Genny and CAT. Theory, five practical disciplines and assessment, with in-house, EUSR Cat 1 or ProQual Level 2 certificate options.', url: schemaUrl, credential: 'EUS Cat 1 / Sygma / ProQual Level 2', duration: '1 day', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: schemaName, description: 'Two-day Super User utility location & avoidance training, building on EUS Cat 1. Advanced location, CAT data analysis, on-site coaching and competency assessment, and utility-strike investigation. In-house or EUSR certificate.', url: schemaUrl, credential: 'Sygma Super User / EUSR', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Courses', to: '/courses' }, { label: breadcrumbLabel }]) }} />
 
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
         <div className="absolute inset-0 imgbox">
-          <FallbackImage src="cat-56" alt="Sygma trainer and delegates locating buried utilities with a CAT and Genny on a live training site" fill priority sizes="100vw" className="object-cover opacity-[0.65]" />
+          <FallbackImage src="cat-56" alt="Sygma Super User utility location training on a live site" fill priority sizes="100vw" className="object-cover opacity-[0.65]" />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-foreground/25" />
         </div>
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
@@ -173,7 +142,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
           <div className="inline-flex items-center gap-3 rounded-md border border-accent/50 bg-accent/10 px-4 py-2">
             <span className="text-xs font-black uppercase tracking-[0.28em] text-accent">Course Agenda</span>
             <span className="h-3.5 w-px bg-accent/40" />
-            <span className="text-[11px] font-bold uppercase tracking-widest text-white/60">One-day course outline</span>
+            <span className="text-[11px] font-bold uppercase tracking-widest text-white/60">Two-day course outline</span>
           </div>
           <h1 className="mt-5 text-4xl md:text-6xl font-black leading-[1.0] tracking-tight max-w-4xl">{h1}</h1>
           <p className="hero-strapline mt-4 text-xl md:text-3xl font-bold text-white tracking-tight">{strapline}</p>
@@ -185,7 +154,6 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
               ))}
             </div>
           </div>
-          <p className="mt-5 text-base text-white/70 max-w-2xl leading-relaxed print:hidden">The full agenda for our standard one-day course — what we cover in the classroom and on the ground, how every delegate is assessed, and your certificate options. Same course, whichever of the names above you know it by.</p>
           <div className="mt-6 flex flex-wrap items-center gap-3 print:hidden">
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-accent text-white font-bold text-sm hover:bg-accent/90 transition-colors">Enquire about this course →</Link>
             <PrintButton label="Save as PDF" />
@@ -213,24 +181,32 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         </div>
       </nav>
 
+      {/* ============ PREREQUISITE ============ */}
+      <section className="container mx-auto px-6 md:px-8 max-w-6xl pt-10">
+        <div className="flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.06] px-5 py-4">
+          <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
+          <p className="text-sm text-foreground leading-relaxed"><span className="font-bold">Prerequisite:</span> delegates must already hold <span className="font-bold">EUS Cat 1 (or equivalent)</span>. This is an advanced course that builds on Cat 1 — <span className="font-bold">Cat 2 is not required</span>.</p>
+        </div>
+      </section>
+
       {/* ============ CERTIFICATES ============ */}
-      <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24">
+      <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24 mt-10">
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="mb-6">
             <Eyebrow>Certificate options</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">One course, your choice of badge</h2>
-            <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">The content and assessment are identical whichever route you choose. Pick the certificate your scheme or client requires.</p>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">Your choice of certificate</h2>
+            <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">The course is identical whichever certificate you choose. Pick the one your scheme or client requires.</p>
           </div>
           <div className="mb-8 flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.08] px-5 py-4">
             <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
-            <p className="text-sm text-white/85 leading-relaxed"><span className="font-bold text-white">These are certificate fees, not the course price.</span> They are charged per person, <span className="font-bold text-white">on top of the course fee</span>. The course itself is quoted separately, based on your numbers and whether we deliver on-site or you take open-course seats.</p>
+            <p className="text-sm text-white/85 leading-relaxed"><span className="font-bold text-white">Certificate fees are separate from the course price.</span> The EUSR registration fee is charged per person, on top of the course fee. The course itself is quoted separately, based on your numbers and delivery.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-5 print-cols-3">
+          <div className="grid md:grid-cols-2 gap-5 print-cols-2">
             {cert.map((c) => (
               <div key={c.name} className="cert-card group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors pb-keep">
                 <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
                 <p className="mt-3 text-xl font-black">{c.name}</p>
-                <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certificate fee</p>
+                <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certificate</p>
                 <p className="mt-1 text-3xl font-black text-accent">{c.cost} <span className="text-sm font-bold text-white/50">{c.unit}</span></p>
                 <p className="mt-3 text-sm text-white/70 leading-relaxed">{c.note}</p>
               </div>
@@ -239,26 +215,26 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         </div>
       </section>
 
-      {/* ============ USP — above the minimum standard ============ */}
+      {/* ============ OBJECTIVE ============ */}
       <section className="container mx-auto px-6 md:px-8 max-w-6xl pt-14 md:pt-16">
         <div className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
-          <Eyebrow>Above the minimum standard</Eyebrow>
-          <p className="mt-4 text-2xl md:text-3xl font-black text-foreground leading-snug tracking-tight">EUS Cat 1 sets a minimum specification. Sygma deliver well above it.</p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">This is a practical-intensive course — over half the day is hands-on — assessed against a fuller set of competencies than the minimum standard requires, with a strong Genny-first emphasis throughout. The detail of how each session covers the standard is set out below.</p>
+          <Eyebrow>What delegates leave able to do</Eyebrow>
+          <p className="mt-4 text-2xl md:text-3xl font-black text-foreground leading-snug tracking-tight">Locate in their own right — then coach, assess and investigate.</p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Over two flexible days of classroom and practical, delegates gain advanced Genny and CAT theory, become practically competent across all modes, learn to download and analyse CAT data, and develop the skills to support, coach and assess site operatives — and to investigate a utility strike and complete a USAG form.</p>
         </div>
       </section>
 
-      {/* ============ THEORY ============ */}
-      <section id="theory" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16 scroll-mt-24">
+      {/* ============ CLASSROOM ============ */}
+      <section id="classroom" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16 scroll-mt-24">
         <div className="grid md:grid-cols-12 gap-10 items-center mb-10">
           <div className="md:col-span-7">
             <Eyebrow>In the classroom</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Theory</h2>
-            <p className="mt-5 text-lg text-muted-foreground leading-relaxed max-w-xl">The why behind the kit — the law, the plans, the physics of detection, and an honest account of what the equipment can and can&apos;t do. It is the grounding every delegate needs before a single sweep on the practical.</p>
+            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Classroom</h2>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed max-w-xl">Advanced theory across the kit, the data and the legislation — plus the investigation and coaching knowledge that defines a Super User.</p>
           </div>
           <div className="md:col-span-5 imgbox">
             <div className="rounded-2xl overflow-hidden border border-border shadow-sm aspect-[4/3] relative">
-              <FallbackImage src="cat-37" alt="Classroom theory session on Sygma EUS Cat 1 utility detection training" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover" />
+              <FallbackImage src="cat-37" alt="Classroom session on Sygma Super User utility location training" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover" />
             </div>
           </div>
         </div>
@@ -269,9 +245,9 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
                 <span className="text-sm font-black text-accent tabular-nums">{String(gi + 1).padStart(2, '0')}</span>
                 <h3 className="text-sm md:text-base font-black uppercase tracking-[0.18em] text-foreground whitespace-nowrap">{g.theme}</h3>
                 <span className="flex-1 h-px bg-border" />
-                <span className="text-xs font-bold text-muted-foreground">{g.items.length} {g.items.length === 1 ? 'topic' : 'topics'}</span>
+                <span className="text-xs font-bold text-muted-foreground">{g.items.length} topics</span>
               </div>
-              <div className={g.items.length === 1 ? 'grid grid-cols-1 gap-5' : 'grid md:grid-cols-2 gap-5 print-cols-2'}>
+              <div className="grid md:grid-cols-2 gap-5 print-cols-2">
                 {g.items.map((it) => (
                   <div key={it.t} className="rounded-xl border border-border bg-card p-6 hover:border-accent/40 hover:shadow-sm transition-all pb-keep">
                     <div className="flex items-start gap-3">
@@ -294,14 +270,14 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="max-w-2xl mb-10">
             <Eyebrow>On the ground · the practical</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Five disciplines, assessed individually</h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed">More than half the day is hands-on. Every delegate is trained and assessed on each of the following — strong emphasis throughout on Genny use and the Genny-and-CAT combination.</p>
+            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Practical & coaching</h2>
+            <p className="mt-4 text-muted-foreground leading-relaxed">A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on proving competence both as an operator and as a coach.</p>
           </div>
           <div className="space-y-6">
             {modules.map((m, idx) => (
               <div key={m.no} className="mod-card grid md:grid-cols-12 gap-0 rounded-2xl overflow-hidden border border-border bg-card shadow-sm">
                 <div className={`imgbox md:col-span-4 relative min-h-[220px] ${idx % 2 ? 'md:order-2' : ''}`}>
-                  <FallbackImage src={m.img} alt={`${m.title} — practical Genny and CAT training`} fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" />
+                  <FallbackImage src={m.img} alt={`${m.title} — Super User practical training`} fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent md:bg-gradient-to-r" />
                   <div className="absolute top-5 left-5 flex items-baseline gap-2">
                     <span className="text-5xl font-black text-white/90 leading-none">{m.no}</span>
@@ -310,7 +286,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
                 <div className="md:col-span-8 p-7 md:p-9">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="text-[10px] font-black uppercase tracking-widest text-accent border border-accent/40 rounded-full px-3 py-1">{m.tag}</span>
-                    <span className="text-xs font-bold text-muted-foreground">{m.items.length} competencies</span>
+                    <span className="text-xs font-bold text-muted-foreground">{m.items.length} elements</span>
                   </div>
                   <h3 className="mt-3 text-2xl font-black text-foreground tracking-tight">{m.title}</h3>
                   <p className="mt-2 text-muted-foreground text-sm leading-relaxed max-w-2xl">{m.blurb}</p>
@@ -333,7 +309,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
       <section id="requirements" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-14 scroll-mt-24">
         <Eyebrow>On the day</Eyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight text-foreground">What we need from the host site</h2>
-        <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl">Sygma bring the equipment, the trainer and the expertise. To run a full, properly-assessed day, the site needs:</p>
+        <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl">Sygma bring the equipment, the trainer and the expertise. To run a full two-day Super User course, the site needs:</p>
         <ul className="mt-8 grid md:grid-cols-2 gap-x-10 gap-y-2 print-cols-2">
           {requirements.map((r, i) => (
             <li key={i} className="flex gap-3 text-foreground/80 leading-relaxed border-b border-border pb-2.5">
@@ -349,16 +325,13 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         <div className="container mx-auto px-6 md:px-8 max-w-6xl grid md:grid-cols-2 gap-12 print-cols-2">
           <div>
             <Eyebrow>Assessment</Eyebrow>
-            <div className="mt-4 flex items-end gap-4">
-              <span className="text-7xl font-black text-accent leading-none">80%</span>
-              <span className="text-sm text-white/70 pb-2 leading-snug">minimum pass mark on the written paper</span>
-            </div>
-            <p className="mt-6 text-white/70 leading-relaxed">A multiple-choice written assessment, plus a practical assessed individually by the Sygma trainer on the day. Delegates with dyslexia or reading difficulties may sit an oral assessment.</p>
+            <h2 className="mt-3 text-2xl font-black tracking-tight">Assessed continuously across the two days</h2>
+            <p className="mt-3 text-white/70 leading-relaxed text-sm">Delegates complete several assessments: a knowledge-based paper; their own POW risk assessment before the practical; the Sygma Standard practical (locating services in their own right); a coaching-and-assessing-others assessment using the Sygma coaching sheet; and a permit to break ground (customer-specific where possible, otherwise the Sygma permit).</p>
           </div>
           <div>
             <Eyebrow>Accreditation &amp; standards</Eyebrow>
-            <h2 className="mt-3 text-2xl font-black tracking-tight">EUS Category 1: Locate Utility Services (HSG47)</h2>
-            <p className="mt-3 text-white/70 leading-relaxed text-sm">The industry-agreed standard for safely detecting utility services using recognised, approved methods. Derived from National Occupational Standards and HSE guidance:</p>
+            <h2 className="mt-3 text-2xl font-black tracking-tight">Sygma Super User, or EUSR-registered</h2>
+            <p className="mt-3 text-white/70 leading-relaxed text-sm">Builds on EUS Cat 1, to HSG47 — covering advanced location, CAT data analysis, on-site coaching and competency assessment, and utility-strike investigation:</p>
             <div className="chip-group mt-5 flex flex-wrap gap-2.5">
               {accred.map((a) => (
                 <span key={a} className="font-mono text-xs font-bold text-white/90 bg-white/[0.06] border border-white/15 rounded px-3 py-1.5">{a}</span>
@@ -374,7 +347,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
           <div>
             <Eyebrow>Next step</Eyebrow>
             <h2 className="mt-2 text-2xl md:text-3xl font-black tracking-tight">Arrange this course or check dates</h2>
-            <p className="mt-2 text-white/70 max-w-xl text-sm leading-relaxed">On-site UK-wide or open courses at our Wigan centre. Send us your numbers and location and we&apos;ll come back with dates and a price.</p>
+            <p className="mt-2 text-white/70 max-w-xl text-sm leading-relaxed">On-site UK-wide or at our Wigan centre. Send us your numbers and location and we&apos;ll come back with dates and a price.</p>
           </div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-accent text-white font-bold hover:bg-accent/90 transition-colors">Enquire &rarr;</Link>
