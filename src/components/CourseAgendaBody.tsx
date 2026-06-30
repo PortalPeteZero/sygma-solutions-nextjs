@@ -146,7 +146,7 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 
 const PRINT_CSS = `
 @media print {
-  @page { size: A4; margin: 12mm; }
+  @page { size: A4; margin: 11mm; }
   header, footer, .cky-consent-container, .cky-overlay, [class*="cky-"] { display: none !important; }
   main { padding-top: 0 !important; min-height: 0 !important; }
   body { background: #fff !important; }
@@ -164,13 +164,23 @@ const PRINT_CSS = `
   .agenda-doc .mod-grid { display: block !important; }
   .agenda-doc .mod-card { border: none !important; border-top: 1px solid #e6e6e6 !important; border-radius: 0 !important; box-shadow: none !important; margin-top: 12px !important; break-inside: auto; }
   .agenda-doc .mod-card > div { padding: 8px 0 0 0 !important; }
-  .agenda-doc section { padding: 9px 0 !important; border: none !important; }
-  .agenda-doc .pb-keep { break-inside: avoid; }
-  .agenda-doc h1 { font-size: 22pt !important; line-height: 1.08 !important; }
-  .agenda-doc h2 { font-size: 14pt !important; margin-top: 6pt !important; }
-  .agenda-doc h3 { font-size: 11.5pt !important; }
+  .agenda-doc section { padding: 7px 0 !important; border: none !important; }
+  /* Let sections flow and fill pages; protect only small atomic units (a single
+     card, the chip group) so nothing splits ugly — never whole sections, which
+     would jump and leave gaps. */
+  .agenda-doc .pb-keep, .agenda-doc .chip-group { break-inside: avoid; }
+  .agenda-doc h1 { font-size: 18pt !important; line-height: 1.06 !important; margin-top: 8pt !important; }
+  .agenda-doc h2 { font-size: 13.5pt !important; margin-top: 5pt !important; }
+  .agenda-doc h3 { font-size: 11pt !important; }
+  /* compact the hero strapline + spec values for print */
+  .agenda-doc .hero-strapline { font-size: 12.5pt !important; }
+  .agenda-doc .spec-val { font-size: 12pt !important; }
+  .agenda-doc .spec-cell { padding: 4px 8px 4px 0 !important; }
+  /* compact the certificate cards so the whole section fits on page 1 */
+  .agenda-doc .cert-card { padding: 12px 14px !important; }
+  .agenda-doc .cert-card .text-3xl { font-size: 15pt !important; }
   .agenda-doc a { text-decoration: none !important; }
-  .agenda-doc { font-size: 10pt !important; }
+  .agenda-doc { font-size: 9.5pt !important; }
 }
 `;
 
@@ -208,7 +218,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
             <span className="text-[11px] font-bold uppercase tracking-widest text-white/60">One-day course outline</span>
           </div>
           <h1 className="mt-5 text-4xl md:text-6xl font-black leading-[1.0] tracking-tight max-w-4xl">{h1}</h1>
-          <p className="mt-4 text-xl md:text-3xl font-bold text-white tracking-tight">{strapline}</p>
+          <p className="hero-strapline mt-4 text-xl md:text-3xl font-bold text-white tracking-tight">{strapline}</p>
           <div className="mt-5">
             <p className="text-[11px] font-black uppercase tracking-widest text-white/40 mb-2.5">This agenda covers</p>
             <div className="flex flex-wrap gap-2">
@@ -217,7 +227,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
               ))}
             </div>
           </div>
-          <p className="mt-5 text-base text-white/70 max-w-2xl leading-relaxed">The full agenda for our standard one-day course — what we cover in the classroom and on the ground, how every delegate is assessed, and your certificate options. Same course, whichever of the names above you know it by.</p>
+          <p className="mt-5 text-base text-white/70 max-w-2xl leading-relaxed print:hidden">The full agenda for our standard one-day course — what we cover in the classroom and on the ground, how every delegate is assessed, and your certificate options. Same course, whichever of the names above you know it by.</p>
           <div className="mt-6 flex flex-wrap items-center gap-3 print:hidden">
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-accent text-white font-bold text-sm hover:bg-accent/90 transition-colors">Enquire about this course →</Link>
             <PrintButton label="Save as PDF" />
@@ -226,9 +236,9 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         <div className="relative border-t border-white/10 bg-white/[0.03] backdrop-blur-sm">
           <div className="container mx-auto px-6 md:px-8 max-w-6xl grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10 print-cols-4">
             {spec.map((s) => (
-              <div key={s.k} className="py-5 md:py-6 px-4 first:pl-0">
+              <div key={s.k} className="spec-cell py-5 md:py-6 px-4 first:pl-0">
                 <p className="text-[10px] font-black uppercase tracking-widest text-white/40">{s.k}</p>
-                <p className="text-xl md:text-2xl font-black text-white mt-1">{s.v}</p>
+                <p className="spec-val text-xl md:text-2xl font-black text-white mt-1">{s.v}</p>
                 <p className="text-xs text-accent mt-0.5">{s.s}</p>
               </div>
             ))}
@@ -259,7 +269,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
           </div>
           <div className="grid md:grid-cols-3 gap-5 print-cols-3">
             {cert.map((c) => (
-              <div key={c.name} className="group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors pb-keep">
+              <div key={c.name} className="cert-card group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors pb-keep">
                 <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
                 <p className="mt-3 text-xl font-black">{c.name}</p>
                 <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certificate fee</p>
@@ -391,7 +401,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
             <Eyebrow>Accreditation &amp; standards</Eyebrow>
             <h2 className="mt-3 text-2xl font-black tracking-tight">EUS Category 1: Locate Utility Services (HSG47)</h2>
             <p className="mt-3 text-white/70 leading-relaxed text-sm">The industry-agreed standard for safely detecting utility services using recognised, approved methods. Derived from National Occupational Standards and HSE guidance:</p>
-            <div className="mt-5 flex flex-wrap gap-2.5">
+            <div className="chip-group mt-5 flex flex-wrap gap-2.5">
               {accred.map((a) => (
                 <span key={a} className="font-mono text-xs font-bold text-white/90 bg-white/[0.06] border border-white/15 rounded px-3 py-1.5">{a}</span>
               ))}
