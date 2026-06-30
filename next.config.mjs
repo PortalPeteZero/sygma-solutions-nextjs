@@ -474,7 +474,7 @@ const nextConfig = {
 
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
-      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|cat-and-genny|api|_next|articles|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
+      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|cat-and-genny|api|_next|articles|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|agendas|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
     ];
   },
 };
