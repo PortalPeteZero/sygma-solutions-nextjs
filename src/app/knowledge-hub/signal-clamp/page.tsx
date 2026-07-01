@@ -151,7 +151,15 @@ export default function SignalClampArticle() {
 
           <h3 className="text-xl font-black text-foreground mb-3 mt-8">Congested ground and trial holes</h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Footpaths packed with cables are the hardest case. Getting an induction signal cleanly onto every service is difficult, and shallower cables mask deeper ones. This is where trial holes earn their place. Once a service is exposed in the trial hole, a clamp goes straight onto it, so each cable can be clamped in turn and traced out individually. One trial hole, worked this way, turns a difficult survey into a set of clean, separate traces, which is exactly the discipline that sits alongside <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 safe digging</Link>.
+            Footpaths packed with cables are the hardest case. Getting an induction signal cleanly onto every service is difficult and slow, and induction is limited to 33 kHz, so shallower cables mask deeper ones and the target gets lost in the crowd.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            This is where the clamp and the trial hole work together, and it is one of the clamp's most important benefits on complex ground. To clamp a buried cable you first have to expose it, so carrying a clamp encourages teams to dig proper trial holes rather than guess from a surface scan. That is a safety gain in its own right: the trial hole verifies the depth and position of what is actually down there before anyone breaks ground in earnest, which is exactly the discipline that sits alongside <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 safe digging</Link>.
+          </p>
+
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Once the services are exposed in the trial hole, a clamp goes straight onto each one in turn. Every cable is positively identified and given its own clean signal, so it can be traced out individually with confidence. Clamping an exposed service this way is far more reliable than trying to induce a signal onto it, where the signal spreads into everything around it and the trace becomes a guess. One trial hole, worked with a clamp, turns a difficult and uncertain survey into a set of clean, separate, confident traces.
           </p>
 
           <figure className="my-8">
@@ -194,7 +202,7 @@ export default function SignalClampArticle() {
 
           <h3 className="text-xl font-black text-foreground mb-3 mt-8">HV cables</h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            High voltage is the strongest case of all. There is no safe way to make a direct connection to an HV cable, and induction struggles because HV sits deep and is often masked by the shallower cables above it. The reliable way to get a signal onto HV is to expose it in a trial hole and clamp it, which puts a clean signal straight onto the cable where a strike does the most damage.
+            High voltage is the strongest case of all. There is no safe way to make a direct connection to an HV cable, and induction struggles because HV sits deep and is often masked by the shallower cables above it. The reliable way to get a signal onto HV is to expose it in a trial hole and clamp it. That does two things at once: it puts a clean signal straight onto the cable where a strike does the most damage, and it encourages a trial hole to be dug on that cable in the first place, which is the safest way to approach an HV run.
           </p>
 
           <figure className="my-8">
