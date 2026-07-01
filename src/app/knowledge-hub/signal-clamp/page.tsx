@@ -151,7 +151,7 @@ export default function SignalClampArticle() {
 
           <h3 className="text-xl font-black text-foreground mb-3 mt-8">Congested ground and trial holes</h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Footpaths packed with cables are the hardest case. Getting an induction signal cleanly onto every service is difficult and slow, and induction is limited to 33 kHz, so shallower cables mask deeper ones and the target gets lost in the crowd.
+            Footpaths packed with cables are the hardest case. Induction radiates into every service in range, not just the target, so in congested ground it lights everything up. A shallower cable, or a better-conducting one, takes the signal and screens the deeper cables behind it, so the line you actually want gets lost in the crowd.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -202,7 +202,7 @@ export default function SignalClampArticle() {
 
           <h3 className="text-xl font-black text-foreground mb-3 mt-8">HV cables</h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            High voltage is the strongest case of all. There is no safe way to make a direct connection to an HV cable, and induction struggles because HV sits deep and is often masked by the shallower cables above it. The reliable way to get a signal onto HV is to expose it in a trial hole and clamp it. That does two things at once: it puts a clean signal straight onto the cable where a strike does the most damage, and it encourages a trial hole to be dug on that cable in the first place, which is the safest way to approach an HV run.
+            HV is a strong case. There is no way to make a direct connection to an HV cable, and induction struggles because HV sits deeper and is often masked by the shallower cables above it. So the reliable way to get a signal onto HV is to expose it in a trial hole and clamp it. The team exposes the cable, confirms its position, and clamps it, and from that point it traces cleanly for the rest of the job. Because you cannot clamp HV without exposing it first, carrying a clamp encourages a trial hole to be dug on it.
           </p>
 
           <figure className="my-8">
@@ -225,22 +225,22 @@ export default function SignalClampArticle() {
             </div>
             <div className="border border-border rounded-lg bg-card p-4">
               <p className="text-2xl font-black text-foreground mb-1">Far more</p>
-              <p className="text-xs text-muted-foreground">The cost of a single utility strike: repair, standby, delay, reinstatement, penalty, and on HV a safety risk.</p>
+              <p className="text-xs text-muted-foreground">The cost of a single utility strike: repair, standby, delay, reinstatement, and the client penalty.</p>
             </div>
           </div>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Set the price of the clamp against the cost of a single utility strike: the repair, the standby, the programme delay and reinstatement, the client penalty, and on HV a genuine safety risk. A clamp pays for itself many times over the first time it prevents a strike. As risk reduction per pound spent, there are few better buys.
+            Set the price of the clamp against the cost of a single utility strike: the repair, the standby, the programme delay and reinstatement, and the client penalty. A clamp pays for itself many times over the first time it prevents a strike. As risk reduction per pound spent, there are few better buys.
           </p>
 
           <h2 className="text-2xl font-black text-foreground mb-4 mt-10">The bottom line</h2>
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            The value of a signal clamp comes down to one thing, a confident trace instead of a guess. It finds services that induction cannot follow, it separates one cable from the crowd in congested ground, and it puts a clean signal on the cables where a strike does the most damage. Every confident trace is a strike that does not happen.
+            The value of a signal clamp comes down to one thing, a confident trace instead of a guess. It finds services that induction cannot follow, it separates one cable from the crowd in congested ground, and it puts a clean signal on the services that are hardest to find any other way. Every confident trace is a strike that does not happen.
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-8">
-            If your teams carry a Genny and CAT but not a clamp, they are working without the one tool that covers the hardest and most dangerous services. It is a small addition to the kit and a large addition to what they can safely locate. Using one well is a skill worth training for, as part of a <Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Genny-First approach</Link> to safe location. Sygma covers the clamp alongside every other signal-application method on our <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">CAT and Genny Training</Link> and <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link> courses.
+            If your teams carry a Genny and CAT but not a clamp, they are working without the one tool that covers the hardest services to find. It is a small addition to the kit and a large addition to what they can safely locate. Using one well is a skill worth training for, as part of a <Link href="/knowledge-hub/genny-first-methodology" className="text-primary hover:underline">Genny-First approach</Link> to safe location. Sygma covers the clamp alongside every other signal-application method on our <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">CAT and Genny Training</Link> and <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link> courses.
           </p>
 
           <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
