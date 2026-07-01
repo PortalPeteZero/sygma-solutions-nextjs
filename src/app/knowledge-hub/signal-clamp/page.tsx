@@ -9,11 +9,11 @@ import { SITE_NAME } from '@/lib/metadata';
 const OG_IMAGE = 'https://sygma-solutions.com/articles/signal-clamp/hero-collage.jpg';
 
 export const metadata: Metadata = {
-  title: 'The Signal Clamp: What It Does and When to Use It | Sygma Solutions',
+  title: 'The Signal Clamp: What It Does and When to Use It | Sygma',
   description: "What a signal clamp is, how it compares with direct connection and induction, and the situations on site where it finds the services a Genny and CAT miss.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/signal-clamp' },
   openGraph: {
-    title: 'The Signal Clamp: What It Does and When to Use It | Sygma Solutions',
+    title: 'The Signal Clamp: What It Does and When to Use It | Sygma',
     description: "What a signal clamp is, how it compares with direct connection and induction, and the situations on site where it finds the services a Genny and CAT miss.",
     url: 'https://sygma-solutions.com/knowledge-hub/signal-clamp',
     siteName: SITE_NAME,
