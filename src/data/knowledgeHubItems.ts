@@ -34,7 +34,7 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     desc: "A Genny and CAT find most buried services, but not all. What a signal clamp does, how it compares with direct connection and induction, and where it earns its place on site.",
     href: "/knowledge-hub/signal-clamp",
     type: "article",
-    image: "/articles/signal-clamp/clamp-comms-cable-access-box.jpeg",
+    image: "/articles/signal-clamp/hero-collage.jpg",
   },
   {
     category: "Industry Investigation",

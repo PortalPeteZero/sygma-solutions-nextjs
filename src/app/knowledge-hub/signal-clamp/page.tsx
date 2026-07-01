@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { SITE_NAME } from '@/lib/metadata';
 
-const OG_IMAGE = 'https://sygma-solutions.com/articles/signal-clamp/clamp-comms-cable-access-box.jpeg';
+const OG_IMAGE = 'https://sygma-solutions.com/articles/signal-clamp/hero-collage.jpg';
 
 export const metadata: Metadata = {
   title: 'The Signal Clamp: What It Does and When to Use It | Sygma Solutions',
@@ -58,8 +58,8 @@ export default function SignalClampArticle() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(FAQS) }} />
 
       <InnerPageHero
-        image="/articles/signal-clamp/clamp-comms-cable-access-box.jpeg"
-        alt="A signal clamp fitted around a communications cable in a footway access box, with the Genny transmitter feeding it"
+        image="/articles/signal-clamp/hero-collage.jpg"
+        alt="A signal clamp clipped around a cable, and Genny transmitters at open access chambers on cable-location jobs"
         eyebrow="Field Note · Cable Location"
         headline="The Signal Clamp: What It Does, and When You Need One"
         sub="A Genny and CAT will find most buried services, but not all of them. The signal clamp is the tool that puts a clean, reliable signal on the ones they miss."
