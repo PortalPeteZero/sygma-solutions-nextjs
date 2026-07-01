@@ -29,6 +29,14 @@ export interface KnowledgeItem {
 
 export const knowledgeHubItems: KnowledgeItem[] = [
   {
+    category: "CAT and Genny",
+    title: "The Signal Clamp: What It Does, and When You Need One",
+    desc: "A Genny and CAT find most buried services, but not all. What a signal clamp does, how it compares with direct connection and induction, and where it earns its place on site.",
+    href: "/knowledge-hub/signal-clamp",
+    type: "article",
+    image: "/articles/signal-clamp/clamp-comms-cable-access-box.jpeg",
+  },
+  {
     category: "Industry Investigation",
     title: "The AML Pro by SSI Locators: A Physics-Led Investigation",
     desc: "An evidence-led examination of the SubSurface Instruments AML Pro pipe locator: the 2.45 GHz physics, the patent record, and where it sits in UK PAS 128 and HSG47 practice.",

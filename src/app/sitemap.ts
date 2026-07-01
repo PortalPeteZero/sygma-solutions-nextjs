@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ------------------------------------------------------------------ */
 
   const knowledgeHubSlugs = [
+    'signal-clamp',
     'aml-pro-ssi-locators',
     'detecting-plastic-gas-service-pipes',
     'utility-strikes-first-20-metres',
