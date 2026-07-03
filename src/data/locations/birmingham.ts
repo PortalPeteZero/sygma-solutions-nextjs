@@ -83,8 +83,8 @@ export const locationData: LocationPageData = {
     description: 'At The Survey School in Worcester, or at your site anywhere in the Midlands. Contact us to discuss dates, group size, and course requirements.',
     primaryLabel: 'Book a Course',
     primaryHref: '/contact',
-    secondaryLabel: 'Courses in the Midlands',
-    secondaryHref: '/cable-avoidance-training-birmingham',
+    secondaryLabel: 'View All Courses',
+    secondaryHref: '/courses',
     phone: '0203 971 8252',
   },
 };

@@ -661,25 +661,25 @@ export default function CableAvoidanceTraining() {
       <section className="bg-muted/30 py-12 border-t border-border">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Available in Your Region</p>
-          <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">City-Specific Cable Avoidance Training</h2>
+          <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Cable Avoidance Training in Your Region</h2>
           <p className="text-muted-foreground mb-5 text-sm leading-relaxed">
             Sygma delivers <strong>cable avoidance training across the UK at your site</strong>. Find region-specific information including local delivery options, travel arrangements, and CITB funding routes.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 text-sm">
-            <Link href="/cable-avoidance-training-london" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
-              <p className="font-semibold text-foreground mb-1">Cable Avoidance Training London</p>
+            <Link href="/locations/london" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="font-semibold text-foreground mb-1">London and the South East</p>
               <p className="text-muted-foreground text-xs">London, Home Counties, the South East. CAT and Genny courses at your site.</p>
             </Link>
-            <Link href="/cable-avoidance-training-birmingham" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
-              <p className="font-semibold text-foreground mb-1">Cable Avoidance Training Birmingham</p>
+            <Link href="/locations/birmingham" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="font-semibold text-foreground mb-1">Birmingham and the Midlands</p>
               <p className="text-muted-foreground text-xs">Birmingham, the Midlands, Staffordshire. EUSR and ProQual accredited.</p>
             </Link>
-            <Link href="/cable-avoidance-training-manchester" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
-              <p className="font-semibold text-foreground mb-1">Cable Avoidance Training Manchester</p>
+            <Link href="/locations/manchester" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="font-semibold text-foreground mb-1">Manchester and the North West</p>
               <p className="text-muted-foreground text-xs">Manchester, the North West, Liverpool, Lancashire. On-site delivery.</p>
             </Link>
-            <Link href="/cable-avoidance-training-scotland" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
-              <p className="font-semibold text-foreground mb-1">Cable Avoidance Training Scotland</p>
+            <Link href="/locations" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="font-semibold text-foreground mb-1">Scotland</p>
               <p className="text-muted-foreground text-xs">Edinburgh, Glasgow, the Central Belt. Cable avoidance courses delivered on site.</p>
             </Link>
           </div>

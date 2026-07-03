@@ -80,12 +80,12 @@ const faqs = [
             ];
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT 1 & 2 | CAT 1 and 2 Training: Locate Utility Services',
-  description: 'Two-day EUSR Cat 1 & 2 / Cat 1 and 2 training. Locate utility services & implement safe (digging) excavating practices. HSG47, EUSR-registered.',
+  title: 'EUSR CAT 1 & 2 Combined Training | Two-Day Course | Sygma',
+  description: 'EUSR CAT 1 & 2 combined training. Two-day course delivering both EUSR-registered qualifications, Category 1 and Category 2. HSG47-aligned, UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined' },
   openGraph: {
-    title: 'EUSR CAT 1 & 2 | CAT 1 and 2 Training: Locate Utility Services',
-    description: 'Two-day EUSR Cat 1 & 2 / Cat 1 and 2 training. Locate utility services & implement safe (digging) excavating practices. HSG47, EUSR-registered.',
+    title: 'EUSR CAT 1 & 2 Combined Training | Two-Day Course | Sygma',
+    description: 'EUSR CAT 1 & 2 combined training. Two-day course delivering both EUSR-registered qualifications, Category 1 and Category 2. HSG47-aligned, UK-wide.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1-cat2-combined',
     siteName: 'Sygma Solutions',
     images: [{ url: 'https://res.cloudinary.com/dqf1mp7en/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/cat-60', width: 1200, height: 630 }],
@@ -101,7 +101,7 @@ export default function EusCat12Combined() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 and CAT 2 Combined Training" }]) }} />
 <InnerPageHero
         eyebrow="EUSR Category 1 & 2 Combined Training"
-        headline="EUSR CAT 1 and 2 Training | CAT 1 & 2 Combined: Locate Utility Services & Implement Safe (Digging) Excavating Practices"
+        headline="EUSR CAT 1 & 2 Combined Training: Two Qualifications in Two Days"
         sub="Two days. Two EUSR-registered qualifications -- EUSR Category 1 (Locate Utility Services) and EUSR Category 2 (Implement Safe (Digging) Excavating Practices). Full theory, Genny-First practical, live safe dig assessment, HSG47-aligned, delivered nationwide UK at your site or at Sygma's Wigan training centre."
         image="cat-01-eus-cat1-cat2-combined"
         alt="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe (Digging) Excavating Practices (HSG47), Sygma Solutions"
@@ -598,7 +598,7 @@ export default function EusCat12Combined() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 max-w-5xl">
           <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Why Sygma</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Not All CAT 1 Courses Are Created Equal</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Not All CAT 1 & 2 Courses Are Created Equal</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl">Our approach to utility avoidance training sets us apart from standard compliance courses, as it is specifically designed for safety professionals and site operatives responsible for utility detection and excavation safety. Here's what makes the difference.</p>
           <div className="grid md:grid-cols-2 gap-5">
             {[

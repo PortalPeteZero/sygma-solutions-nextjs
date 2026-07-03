@@ -13,6 +13,15 @@ const nextConfig = {
     return [
       // Training hub retired 2026-07-03 (SEO recovery plan phase 1 item 4): 1 click/836 imp in 90d, was outranking the course page
       { source: '/training/cable-location-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
+      // Standalone city SEO pages retired 2026-07-03 (2 clicks/90d across all 8; cannibalised the course pages; /locations/* is the kept geo system)
+      { source: '/cable-avoidance-training-london', destination: '/courses/cable-avoidance-training', permanent: true },
+      { source: '/cable-avoidance-training-birmingham', destination: '/courses/cable-avoidance-training', permanent: true },
+      { source: '/cable-avoidance-training-manchester', destination: '/courses/cable-avoidance-training', permanent: true },
+      { source: '/cable-avoidance-training-scotland', destination: '/courses/cable-avoidance-training', permanent: true },
+      { source: '/cat-and-genny-training-london', destination: '/courses/cat-and-genny-training', permanent: true },
+      { source: '/cat-and-genny-training-birmingham', destination: '/courses/cat-and-genny-training', permanent: true },
+      { source: '/cat-and-genny-training-manchester', destination: '/courses/cat-and-genny-training', permanent: true },
+      { source: '/cat-and-genny-training-scotland', destination: '/courses/cat-and-genny-training', permanent: true },
       // === SERVICE PAGES (redirect to training category pages) ===
       { source: '/services/utility-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/services/utility-mapping', destination: '/training/utility-mapping-surveying', permanent: true },

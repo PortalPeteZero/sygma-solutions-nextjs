@@ -76,8 +76,8 @@ export const locationData: LocationPageData = {
     description: 'On-site at your premises anywhere in London or the South East. Travel included. Contact us to discuss dates, group size, and course requirements.',
     primaryLabel: 'Book a Course',
     primaryHref: '/contact',
-    secondaryLabel: 'Courses in London',
-    secondaryHref: '/cable-avoidance-training-london',
+    secondaryLabel: 'View All Courses',
+    secondaryHref: '/courses',
     phone: '0203 971 8252',
   },
 };

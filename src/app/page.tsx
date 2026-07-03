@@ -8,12 +8,12 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 import { faqPageSchema, localBusinessSchema, organizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
-  description: 'UK specialist in cable avoidance and CAT and Genny training. EUSR CAT1, ProQual, CITB ATO. On-site across the UK. Book your course today.',
+  title: 'Sygma Solutions | Underground Utility Location Training UK',
+  description: 'UK specialist in underground utility location and avoidance training. EUSR CAT1, ProQual, CITB ATO. On-site across the UK. Book your course today.',
   alternates: { canonical: 'https://sygma-solutions.com/' },
   openGraph: {
-    title: 'Cable Avoidance Training | CAT and Genny | Sygma Solutions',
-    description: 'UK specialist in cable avoidance and CAT and Genny training. EUSR CAT1, ProQual, CITB ATO. On-site across the UK.',
+    title: 'Sygma Solutions | Underground Utility Location Training UK',
+    description: 'UK specialist in underground utility location and avoidance training. EUSR CAT1, ProQual, CITB ATO. On-site across the UK.',
     url: 'https://sygma-solutions.com/',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
@@ -56,7 +56,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
 
-      <h1 className="sr-only">Cable Avoidance Training & CAT & Genny Courses UK</h1>
+      <h1 className="sr-only">Sygma Solutions: Underground Utility Location and Avoidance Training Courses UK</h1>
       <HeroCarousel />
 
       {/* Key USP stats */}
@@ -89,7 +89,7 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Proven Record in Reducing Strikes and Raising Genny Detection Rates</p>
               <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">21 Years. A Proven Record in Reducing Utility Strikes and Raising Competence on Site.</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">Since 2004, Sygma has delivered <strong>CAT and Genny training</strong> and <strong>cable avoidance courses</strong> to some of the UK's largest infrastructure and utilities contractors. Not as a module in a broader programme. Not with freelance trainers hired per course. As a <strong>dedicated cable avoidance specialist</strong> with directly employed staff, one subject, and results that clients can measure on site.</p>
+              <p className="text-muted-foreground leading-relaxed mb-4">Since 2004, Sygma has delivered <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline"><strong>CAT and Genny training</strong></Link> and <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline"><strong>cable avoidance courses</strong></Link> to some of the UK's largest infrastructure and utilities contractors. Not as a module in a broader programme. Not with freelance trainers hired per course. As a <strong>dedicated cable avoidance specialist</strong> with directly employed staff, one subject, and results that clients can measure on site.</p>
               <p className="text-muted-foreground leading-relaxed mb-6">Clients who implement our Genny-First methodology report a <strong>70 to 80% measurable increase in Genny usage</strong> among trained operatives. That is not a delegate satisfaction score. That is fewer strikes, every working day.</p>
               <Link href="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
                 See Our Courses <ArrowRight size={16} className="ml-2" />
@@ -297,7 +297,7 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/cable-avoidance-training-scotland" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
+              <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/locations" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">
               <Image src="cat-10" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />

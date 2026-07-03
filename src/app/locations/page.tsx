@@ -56,14 +56,6 @@ const regionalGuides = [
   { name: 'Birmingham and the Midlands', desc: 'On-site cable avoidance and utility training across the West Midlands, East Midlands and Staffordshire.', to: '/locations/birmingham' },
   { name: 'London and the South East', desc: 'Training delivered at your site across London, the Home Counties and the wider South East.', to: '/locations/london' },
   { name: 'Bristol and the South West', desc: 'Utility mapping and cable avoidance training across Bristol, Somerset, Devon and the South West.', to: '/locations/bristol' },
-  { name: 'Cable Avoidance Training London', desc: 'CAT and Genny, EUSR CAT1, and ProQual courses delivered on-site across London and the South East.', to: '/cable-avoidance-training-london' },
-  { name: 'Cable Avoidance Training Birmingham', desc: 'Cable avoidance courses for Midlands-based teams. CITB-funded places available.', to: '/cable-avoidance-training-birmingham' },
-  { name: 'Cable Avoidance Training Manchester', desc: 'Cable avoidance and utility location training across Manchester, Liverpool, and the North West.', to: '/cable-avoidance-training-manchester' },
-  { name: 'Cable Avoidance Training Scotland', desc: 'On-site cable avoidance training delivered across Scotland, including Edinburgh, Glasgow and the Central Belt.', to: '/cable-avoidance-training-scotland' },
-  { name: 'CAT and Genny Training London', desc: 'On-site CAT4 and Genny equipment courses across London and the South East. EUSR CAT 1 and ProQual routes.', to: '/cat-and-genny-training-london' },
-  { name: 'CAT and Genny Training Birmingham', desc: 'CAT4 and Genny equipment training across Birmingham and the Midlands. EUSR CAT 1, ProQual, CITB ATO.', to: '/cat-and-genny-training-birmingham' },
-  { name: 'CAT and Genny Training Manchester', desc: 'CAT4 and Genny equipment training across Manchester and the North West. EUSR CAT 1, ProQual, CITB ATO.', to: '/cat-and-genny-training-manchester' },
-  { name: 'CAT and Genny Training Scotland', desc: 'On-site CAT4 and Genny equipment courses across the Central Belt and mainland Scotland. EUSR CAT 1, ProQual.', to: '/cat-and-genny-training-scotland' },
   { name: 'Utility Mapping Training Bristol', desc: 'PAS 128 surveyor training, GPR courses and utility mapping qualifications at The Survey School in Worcester, serving the South West.', to: '/utility-mapping-training-bristol' },
 ];
 
