@@ -652,6 +652,10 @@ export default function EusCat2SafeDig() {
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
+              <Link href="/courses/gs6-overhead-power-lines" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+                <p className="mb-1 text-sm font-semibold text-foreground">GS6 Overhead Power Lines</p>
+                <p className="text-xs text-muted-foreground">Awareness training for safe working near overhead lines. The above-ground complement to buried-services safety.</p>
+              </Link>
           </div>
         </div>
       </section>

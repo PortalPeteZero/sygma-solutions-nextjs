@@ -3,12 +3,13 @@ import { Phone } from 'lucide-react';
 import Image from 'next/image';
 import FallbackImage from '@/components/FallbackImage';
 import type { LocationPageData } from '@/data/locations/types';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, organizationSchema } from '@/lib/schema';
 
 export default function LocationTemplate({ data }: { data: LocationPageData }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Locations", to: "/locations" }, { label: data.slug.charAt(0).toUpperCase() + data.slug.slice(1) }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
       
       {/* Hero Section */}
       <div className="relative w-full overflow-hidden bg-foreground">

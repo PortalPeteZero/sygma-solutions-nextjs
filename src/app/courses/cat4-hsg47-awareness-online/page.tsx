@@ -34,11 +34,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'CAT4 & HSG47 Awareness Online | Cable Avoidance Training | Sygma',
+  title: 'CAT4 & HSG47 Awareness Online Course | Sygma Solutions',
   description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cat4-hsg47-awareness-online' },
   openGraph: {
-    title: 'CAT4 & HSG47 Awareness Online | Cable Avoidance Training | Sygma',
+    title: 'CAT4 & HSG47 Awareness Online Course | Sygma Solutions',
     description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.',
     url: 'https://sygma-solutions.com/courses/cat4-hsg47-awareness-online',
     siteName: 'Sygma Solutions',
@@ -428,6 +428,10 @@ export default function Cat4HsgAwarenessOnline() {
               <Link href="/bespoke-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
+              </Link>
+              <Link href="/courses/gs6-overhead-power-lines" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+                <p className="mb-1 text-sm font-semibold text-foreground">GS6 Overhead Power Lines</p>
+                <p className="text-xs text-muted-foreground">Awareness training for safe working near overhead lines. The above-ground complement to buried-services safety.</p>
               </Link>
           </div>
         </div>

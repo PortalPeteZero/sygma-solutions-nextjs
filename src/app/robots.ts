@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: ['/', '/_next/static/'],
         // Block crawl-budget sinks that GSC Coverage report 2026-05-13 confirmed
         // Google was wasting time on. The URLs either don't exist (redirect),
         // exist but shouldn't be indexed (/api/, /feed/), or are legacy

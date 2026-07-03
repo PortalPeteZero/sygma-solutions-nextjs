@@ -7,7 +7,7 @@ import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'CITB Funding for Utility Training | The 2026 Position | Sygma',
+  title: 'CITB Funding for Utility Training in 2026 | Sygma',
   description: 'How the CITB Employer Network model works, what it means for your training budget, and how Sygma can help you access it.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/citb-funding-utility-training' },
   openGraph: {

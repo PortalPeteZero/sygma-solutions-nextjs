@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Training Course Prices & Booking | Sygma Solutions',
@@ -69,6 +70,7 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Pricing" }]) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

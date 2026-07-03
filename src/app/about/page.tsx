@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import Image from 'next/image';
-import { organizationSchema } from "@/lib/schema";
+import { breadcrumbSchema, organizationSchema } from "@/lib/schema";
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'About Sygma Solutions | UK Cable Avoidance Training Specialist',
+  title: 'About Sygma Solutions | UK Utility Training Specialist',
   description: 'Sygma Solutions is the UK\'s only independent cable avoidance training specialist. 21 years. One subject. Expert trainers. Not tied to any manufacturer.',
   alternates: { canonical: 'https://sygma-solutions.com/about' },
   openGraph: {
-    title: 'About Sygma Solutions | UK Cable Avoidance Training Specialist',
+    title: 'About Sygma Solutions | UK Utility Training Specialist',
     description: 'Sygma Solutions is the UK\'s only independent cable avoidance training specialist. 21 years. One subject. Expert trainers. Not tied to any manufacturer.',
     url: 'https://sygma-solutions.com/about',
     siteName: SITE_NAME,
@@ -61,6 +61,7 @@ export default function About() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "About Sygma" }]) }} />
       <InnerPageHero
         eyebrow="About Sygma Solutions"
         headline="One Subject. Expert Specialists."

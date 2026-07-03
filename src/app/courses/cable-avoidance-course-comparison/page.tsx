@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT1 vs ProQual CAT1 vs CAT1 Plus | Cable Avoidance | Sygma',
+  title: 'EUSR CAT1 vs ProQual CAT1 vs CAT1 Plus Compared | Sygma',
   description: 'Compare EUSR CAT1, ProQual CAT1, and ProQual CAT1 Plus cable avoidance qualifications. Which course is right for your team?',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison' },
   openGraph: {
-    title: 'EUSR CAT1 vs ProQual CAT1 vs CAT1 Plus | Cable Avoidance | Sygma',
+    title: 'EUSR CAT1 vs ProQual CAT1 vs CAT1 Plus Compared | Sygma',
     description: 'Compare EUSR CAT1, ProQual CAT1, and ProQual CAT1 Plus cable avoidance qualifications. Which course is right for your team?',
     url: 'https://sygma-solutions.com/courses/cable-avoidance-course-comparison',
     siteName: 'Sygma Solutions',

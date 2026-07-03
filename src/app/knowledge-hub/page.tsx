@@ -6,6 +6,7 @@ import { knowledgeHubItems } from "@/data/knowledgeHubItems";
 import KnowledgeHubClient from './KnowledgeHubClient';
 import Image from 'next/image';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Utility Training Guides & Articles | Sygma Solutions',
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 export default function KnowledgeHub() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Knowledge Hub" }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "CollectionPage",

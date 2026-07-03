@@ -571,6 +571,10 @@ export default function VscanTransmitterTraining() {
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
+              <Link href="/courses/manufacturer-locator-training" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+                <p className="mb-1 text-sm font-semibold text-foreground">Manufacturer-Specific Locator Training</p>
+                <p className="text-xs text-muted-foreground">Familiarisation on your own fleet's locator models, delivered alongside any qualification course.</p>
+              </Link>
           </div>
         </div>
       </section>

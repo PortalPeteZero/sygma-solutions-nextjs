@@ -514,6 +514,10 @@ export default function OnlineLevel3Diploma() {
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
+              <Link href="/courses/online-level-5-diploma" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+                <p className="mb-1 text-sm font-semibold text-foreground">Online Level 5 Diploma</p>
+                <p className="text-xs text-muted-foreground">The senior utility mapping qualification, delivered fully online via MS Teams.</p>
+              </Link>
           </div>
         </div>
       </section>

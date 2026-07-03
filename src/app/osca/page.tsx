@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'On-Site Competency Assessment | OSCA | Sygma Solutions',
@@ -43,6 +44,7 @@ export default function OscaPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "OSCA" }]) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
