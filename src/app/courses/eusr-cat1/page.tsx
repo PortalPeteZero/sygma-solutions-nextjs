@@ -86,7 +86,7 @@ export default function EusCat1() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 Locate Utility Services Training", description: "EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="EUSR CAT 1 Training: Locate Utility Services (HSG47)"
@@ -94,7 +94,7 @@ export default function EusCat1() {
         image="cat-56"
         alts={["Trainee scanning for underground utilities with a CAT4 locator on EUSR CAT 1 training", "Genny signal generator connected to a utility service point during EUSR CAT 1 Locate Utility Services training", "Practical cable avoidance exercise on an EUSR CAT 1 live training site", "Instructor guiding a trainee through CAT4 signal interpretation on an EUSR CAT 1 training course", "Close-up of CAT4 display showing utility signal detection during EUSR CAT 1 practical assessment", "Overhead view of a marked utility survey area during EUSR CAT 1 Cat and Genny training", "Group of trainees practising cable avoidance techniques on EUSR CAT 1 Cat and Genny training", "CAT4 and Genny equipment in use on EUSR Category 1 (CAT 1) accredited training, HSG47 compliant"]}
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
           { label: "EUSR CAT 1 Training" },
         ]}
@@ -221,8 +221,8 @@ export default function EusCat1() {
         </div>
         <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="text-foreground font-semibold mb-2">Not sure whether you need EUSR CAT 1 or the Sygma in-house certificate?</p>
-          <p className="text-muted-foreground text-sm mb-3">Use the course finder on the Utility Avoidance Training hub page to identify the right route for your workforce.</p>
-          <Link href="/training/cable-location-avoidance#course-finder" className="text-primary font-semibold text-sm hover:underline">
+          <p className="text-muted-foreground text-sm mb-3">Browse the full course index to identify the right route for your workforce.</p>
+          <Link href="/courses" className="text-primary font-semibold text-sm hover:underline">
             Compare all cable avoidance qualification routes &rsaquo;
           </Link>
         </div>

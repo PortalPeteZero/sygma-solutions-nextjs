@@ -58,7 +58,7 @@ export default function RqfLevel2Award() {
         image="cat-69-rqf-level-2-award"
         alt="RQF Level 2 utility location award training with electromagnetic detection equipment"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "RQF Level 2 Award" },
         ]}
       />

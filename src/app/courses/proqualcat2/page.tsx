@@ -250,7 +250,7 @@ export default function ProQualCat2Page() {
               {
                 title: "Utility Avoidance Hub",
                 desc: "Browse all utility avoidance and location training courses.",
-                link: "/training/cable-location-avoidance",
+                link: "/courses",
               },
               {
                 title: "Cable Avoidance",

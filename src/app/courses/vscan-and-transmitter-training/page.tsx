@@ -52,7 +52,7 @@ export default function VscanTransmitterTraining() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "vScan and Transmitter Training Course", description: "vScan and transmitter training that changes how your team works on site. Delivered by the UK's only independent specialist in underground utility location and avoidance.", url: "/courses/vscan-and-transmitter-training", credential: "vScan and Transmitter Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "vScan and Transmitter Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "vScan and Transmitter Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="vScan & Transmitter Training Course"
@@ -60,7 +60,7 @@ export default function VscanTransmitterTraining() {
         image="cat-73-vscan-and-transmitter-training"
         alt="Vscan and transmitter training for underground utility signal tracing"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "vScan and Transmitter Training" },
         ]}
       />

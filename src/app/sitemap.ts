@@ -26,7 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ------------------------------------------------------------------ */
 
   const trainingHubs: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/training/cable-location-avoidance`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/training/utility-mapping-surveying`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 

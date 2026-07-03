@@ -53,7 +53,7 @@ export default function Gs6OverheadPowerLines() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "GS6 Overhead Power Lines Training", description: "GS6 overhead power lines awareness and safe working training. Covers approach distances, risk assessment and safe systems of work near overhead lines.", url: "/courses/gs6-overhead-power-lines", credential: "GS6 Overhead Power Lines Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "GS6 Overhead Power Lines" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "GS6 Overhead Power Lines" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="GS6 Overhead Power Lines: Awareness and Safe Working Training"
@@ -61,7 +61,7 @@ export default function Gs6OverheadPowerLines() {
         image="cat-66-gs6-overhead-power-lines"
         alt="GS6 overhead power lines awareness training for safe working near electrical hazards"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "GS6 Overhead Power Lines" },
         ]}
       />
@@ -486,7 +486,7 @@ export default function Gs6OverheadPowerLines() {
               Enquire About This Course
             </Link>
             <Link
-              href="/training/cable-location-avoidance"
+              href="/courses"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View All Utility Avoidance Training

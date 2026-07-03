@@ -98,7 +98,7 @@ export default function EusCat12Combined() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 and Category 2 Combined Training - Locate Utility Services and Implement Safe (Digging) Excavating Practices", description: "Two-day EUSR CAT 1 and CAT 2 combined training. Locate Utility Services (EUSR Category 1) and Implement Safe (Digging) Excavating Practices (EUSR Category 2). HSG47-aligned, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1-cat2-combined", credential: "EUSR Category 1 and Category 2 Training Certificate", duration: "2 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 and CAT 2 Combined Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 and CAT 2 Combined Training" }]) }} />
 <InnerPageHero
         eyebrow="EUSR Category 1 & 2 Combined Training"
         headline="EUSR CAT 1 and 2 Training | CAT 1 & 2 Combined: Locate Utility Services & Implement Safe (Digging) Excavating Practices"
@@ -106,7 +106,7 @@ export default function EusCat12Combined() {
         image="cat-01-eus-cat1-cat2-combined"
         alt="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe (Digging) Excavating Practices (HSG47), Sygma Solutions"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
           { label: "EUSR CAT 1 and CAT 2 Combined Training" },
         ]}

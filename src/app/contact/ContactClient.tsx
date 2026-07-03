@@ -9,7 +9,7 @@ import { trackFormSubmit, trackPhoneClick, trackEmailClick, trackEvent } from '@
 import Image from 'next/image';
 
 const quickLinks = [
-  { label: 'Browse all Utility Avoidance courses', href: '/training/cable-location-avoidance' },
+  { label: 'Browse all Utility Avoidance courses', href: '/courses' },
   { label: 'Browse all Utility Mapping courses', href: '/training/utility-mapping-surveying' },
   { label: 'OSCA on-site competency assessment', href: '/osca' },
   { label: 'Bespoke and corporate training programmes', href: '/bespoke-training' },
@@ -173,7 +173,7 @@ export default function ContactClient() {
                 <div className="border border-primary/40 rounded-xl bg-primary/5 p-10 text-center">
                   <p className="text-2xl font-black text-foreground mb-3">Message Received</p>
                   <p className="text-muted-foreground leading-relaxed">Your message has been received. A member of the Sygma team will be in touch within one working day.</p>
-                  <p className="text-sm text-muted-foreground mt-4">In the meantime, you can <Link href="/training/cable-location-avoidance" className="text-primary hover:underline">browse our courses</Link> or learn about our <Link href="/bespoke-training" className="text-primary hover:underline">bespoke training programmes</Link>.</p>
+                  <p className="text-sm text-muted-foreground mt-4">In the meantime, you can <Link href="/courses" className="text-primary hover:underline">browse our courses</Link> or learn about our <Link href="/bespoke-training" className="text-primary hover:underline">bespoke training programmes</Link>.</p>
                 </div>
               ) : (
                 <form id="enquiry-form" method="POST" onSubmit={handleSubmit} className="space-y-5">

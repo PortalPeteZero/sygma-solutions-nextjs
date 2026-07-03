@@ -52,7 +52,7 @@ export default function ProqualCat1Cat2Combined() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual CAT1 and CAT2 Combined Course", description: "Two-day combined ProQual CAT1 and CAT2 course covering utility avoidance and safe excavation. ProQual-accredited outcomes with CAT and Genny practical assessment.", url: "/courses/proqual-cat1-cat2-combined", credential: "ProQual CAT1 and CAT2", duration: "2 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "ProQual CAT1 and CAT2 Combined" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "ProQual CAT1 and CAT2 Combined" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 & CAT2 Combined | 2-Day Training"
@@ -60,7 +60,7 @@ export default function ProqualCat1Cat2Combined() {
         image="dig-11-proqual-cat1-cat2-combined"
         alt="Combined ProQual CAT1 and CAT2 cable avoidance and safe digging training"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "ProQual CAT1 and CAT2 Combined" },
         ]}
       />

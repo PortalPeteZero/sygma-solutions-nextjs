@@ -53,7 +53,7 @@ export default function PlansAndProcess() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "Plans and Process Training", description: "Learn to read utility plans properly and survey more safely. Covers plan interpretation, HSG47 requirements and practical application for site teams.", url: "/courses/plans-and-process", credential: "Plans and Process Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Plans and Process Training" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Plans and Process Training" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="Utility Plans & Process Training | Survey More Safely"
@@ -61,7 +61,7 @@ export default function PlansAndProcess() {
         image="cat-12-plans-and-process"
         alt="Plans and process training covering utility survey planning and documentation"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "Plans and Process Training" },
         ]}
       />
@@ -495,7 +495,7 @@ export default function PlansAndProcess() {
               Request a Quote
             </Link>
             <Link
-              href="/training/cable-location-avoidance"
+              href="/courses"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View All Utility Avoidance Training

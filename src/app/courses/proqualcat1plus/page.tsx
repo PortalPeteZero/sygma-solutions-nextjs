@@ -64,7 +64,7 @@ export default function ProQualCat1Plus() {
           }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
-            { label: "Training", to: "/training/cable-location-avoidance" },
+            { label: "Training", to: "/courses" },
             { label: "ProQual CAT1 Plus", to: "/courses/proqualcat1plus" },
           ]) }} />
 <InnerPageHero
@@ -74,7 +74,7 @@ export default function ProQualCat1Plus() {
         image="cat-01-proqualcat1plus"
         alt="ProQual CAT1 Plus advanced cable avoidance training course"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "ProQual CAT1 Plus" },
         ]}
       />

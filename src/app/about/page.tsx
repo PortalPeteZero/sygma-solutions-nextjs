@@ -338,7 +338,7 @@ export default function About() {
             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
               Book Your Open Day Place
             </Link>
-            <Link href="/training/cable-location-avoidance" className="inline-flex items-center justify-center px-8 py-3 rounded-md border border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+            <Link href="/courses" className="inline-flex items-center justify-center px-8 py-3 rounded-md border border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
               Browse All Courses
             </Link>
           </div>

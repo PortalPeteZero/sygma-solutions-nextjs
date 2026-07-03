@@ -402,7 +402,7 @@ export default function UtilityMappingHub() {
             <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Bespoke Training</h4>
             <p className="text-sm text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
           </Link>
-          <Link href="/training/cable-location-avoidance" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
+          <Link href="/courses" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
             <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Utility Avoidance Training</h4>
             <p className="text-sm text-muted-foreground">CAT and Genny training courses, EUSR accreditation, and cable avoidance qualifications to help locate buried services safely.</p>
           </Link>

@@ -55,7 +55,7 @@ export default function CourseComparison() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'Cable Avoidance Course Comparison' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'Cable Avoidance Course Comparison' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
@@ -63,7 +63,7 @@ export default function CourseComparison() {
         sub="Three qualifications. One comparison. Sygma delivers all three. Use this page to understand the difference and choose what your team actually needs."
         image="cat-50-cable-avoidance-course-comparison"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "Course Comparison" },
         ]}
       />

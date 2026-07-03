@@ -52,7 +52,7 @@ export default function Cat4HsgAwarenessOnline() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT4 and HSG47 Awareness Online Training', description: 'Online CAT4 and HSG47 awareness training from Sygma Solutions. Foundation cable avoidance knowledge for operatives working near underground services.', url: '/courses/cat4-hsg47-awareness-online', duration: 'half day', mode: ['online'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'CAT4 and HSG47 Awareness Online' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'CAT4 and HSG47 Awareness Online' }]) }} />
 
       <InnerPageHero
         eyebrow="Utility Avoidance"
@@ -61,7 +61,7 @@ export default function Cat4HsgAwarenessOnline() {
         image="cat-83-cat4-hsg47-awareness-online"
         alt="Online CAT4 and HSG47 awareness training course overview"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "CAT4 HSG47 Awareness Online" },
         ]}
       />

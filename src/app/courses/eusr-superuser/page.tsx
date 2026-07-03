@@ -67,7 +67,7 @@ export default function EusSuperuser() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR Super User Cat and Genny Training', description: 'EUSR super user cat and genny training course covering advanced cable avoidance tools, signal generator operation, calibration, strike investigation, and on-site coaching assessment.', url: '/courses/eusr-superuser', credential: 'EUSR Superuser Certificate', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR Super User Cat and Genny' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'EUSR Super User Cat and Genny' }]) }} />
 
       <InnerPageHero
         eyebrow="EUSR Super User Cat and Genny Training"
@@ -76,7 +76,7 @@ export default function EusSuperuser() {
         image="cat-81-eus-superuser"
         alt="EUSR Superuser advanced cable avoidance training for experienced locator operators"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "EUSR Superuser" },
         ]}
       />

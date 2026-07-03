@@ -31,7 +31,7 @@ const whyPoints = [
 ];
 
 const pathways = [
-  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/training/cable-location-avoidance', image: 'cat-83' },
+  { title: 'Utility Avoidance and Site Safety', desc: 'From Cable Avoidance and CAT & Genny to EUSR accredited courses and specialist operator qualifications.', cta: 'View Courses', href: '/courses', image: 'cat-83' },
   { title: 'Professional Utility Mapping', desc: 'PAS 128 Surveyor training, GPR, RQF and ProQual qualifications from Level 2 Award to Level 6 Diploma.', cta: 'View Courses', href: '/training/utility-mapping-surveying', image: 'cat-64' },
   { title: 'OSCA: On-Site Competency Assessment', desc: 'Digital, GPS-stamped on-site assessment that fills the compliance gap between formal training cycles.', cta: 'Find Out More', href: '/osca', image: 'cat-81' },
   { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-39' },
@@ -91,7 +91,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">21 Years. A Proven Record in Reducing Utility Strikes and Raising Competence on Site.</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">Since 2004, Sygma has delivered <strong>CAT and Genny training</strong> and <strong>cable avoidance courses</strong> to some of the UK's largest infrastructure and utilities contractors. Not as a module in a broader programme. Not with freelance trainers hired per course. As a <strong>dedicated cable avoidance specialist</strong> with directly employed staff, one subject, and results that clients can measure on site.</p>
               <p className="text-muted-foreground leading-relaxed mb-6">Clients who implement our Genny-First methodology report a <strong>70 to 80% measurable increase in Genny usage</strong> among trained operatives. That is not a delegate satisfaction score. That is fewer strikes, every working day.</p>
-              <Link href="/training/cable-location-avoidance" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
+              <Link href="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
                 See Our Courses <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>

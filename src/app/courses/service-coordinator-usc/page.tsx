@@ -53,7 +53,7 @@ export default function ServiceCoordinatorUsc() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "Service Coordinator (USC) Training", description: "Service Coordinator USC training covering utility service coordination roles and responsibilities. For teams managing works near buried services.", url: "/courses/service-coordinator-usc", credential: "USC Appointment Training Certificate", duration: "1-3 days", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "Service Coordinator USC" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Service Coordinator USC" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="Service Coordinator (USC) Training | Role & Responsibilities"
@@ -61,7 +61,7 @@ export default function ServiceCoordinatorUsc() {
         image="cat-04-service-coordinator-usc"
         alt="Utility service coordinator training covering safe excavation planning and supervision"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "Service Coordinator USC" },
         ]}
       />

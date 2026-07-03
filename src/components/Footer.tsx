@@ -75,7 +75,7 @@ export function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/training/cable-location-avoidance" className="text-primary text-xs font-semibold hover:underline">
+                <Link href="/courses" className="text-primary text-xs font-semibold hover:underline">
                   View all &rarr;
                 </Link>
               </li>

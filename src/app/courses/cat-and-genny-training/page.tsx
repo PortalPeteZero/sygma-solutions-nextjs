@@ -98,7 +98,7 @@ export default function GennyCatTraining() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training', description: 'CAT and Genny training from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Genny-First methodology, HSG47 compliant.', url: '/courses/cat-and-genny-training', duration: '1-2 days', mode: ['onsite'] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'CAT and Genny Training' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'CAT and Genny Training' }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: videoObjectSchema({
         name: 'CAT and Genny Training: The Genny First Approach Explained',
@@ -117,7 +117,7 @@ export default function GennyCatTraining() {
         image="cat-11"
         alt="Sygma Solutions operative using a Radiodetection CAT4+ cable locator on site during a CAT and Genny training course"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "CAT and Genny Training" },
         ]}
       />

@@ -15,7 +15,7 @@ export interface FooterLink { label: string; href: string }
 export const mainNav: NavMenu[] = [
   {
     label: 'Utility Avoidance',
-    href: '/training/cable-location-avoidance',
+    href: '/courses',
     children: [
       {
         group: 'Operator Courses',

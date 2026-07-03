@@ -166,7 +166,7 @@ export default function CoursesPage() {
         <div className="container mx-auto px-6 md:px-8">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Utility Avoidance Courses</h2>
-            <p className="text-muted-foreground">Cable location, safe dig, supervisor, and specialist courses. <Link href="/training/cable-location-avoidance" className="text-primary font-semibold hover:underline">View the Utility Avoidance hub</Link></p>
+            <p className="text-muted-foreground">Cable location, safe dig, supervisor, and specialist courses.</p>
           </div>
           {avoidanceNav?.children?.map((group: NavGroup) => (
             <div key={group.group} className="mb-8">

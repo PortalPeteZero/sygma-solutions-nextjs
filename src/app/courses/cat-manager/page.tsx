@@ -64,7 +64,7 @@ export default function CatManager() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT Manager Online Training Course', description: 'CAT Manager online training course for managers and supervisors. Learn to use c.a.t manager online as a remote management tool, transfer usage data from cat and genny equipment, check work quality across your entire team, and reduce utility strikes through structured analysis.', url: '/courses/cat-manager', credential: 'CAT Manager Certificate', duration: 'half day', mode: ['onsite', 'online'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'CAT Manager Online Training' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'CAT Manager Online Training' }]) }} />
 
       <InnerPageHero
         eyebrow="CAT Manager Online Training"
@@ -73,7 +73,7 @@ export default function CatManager() {
         image="cat-75-cat-manager"
         alt="CAT Manager online training showing data management from CAT and Genny surveys"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "CAT Manager Training" },
         ]}
       />

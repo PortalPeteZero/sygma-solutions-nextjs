@@ -74,7 +74,7 @@ export default function ZsSuperuserScottishWater() {
         image="cat-07-zs-superuser-scottish-water"
         alt="Scottish Water ZS Superuser cable avoidance training course"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "ZS Superuser: Scottish Water" },
         ]}
       />

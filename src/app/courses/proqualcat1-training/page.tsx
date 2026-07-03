@@ -52,7 +52,7 @@ export default function ProQualCat1() {
           
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual CAT1 Utility Locating Training", description: "ProQual-accredited 1-day utility locating course covering theory (T1-T14) and hands-on practical assessment (P1-P8). Covers all four locating modes including direct connection, induction, nulling, Power and Radio passive modes.", url: "/courses/proqualcat1-training", credential: "ProQual Level 2 Award in Utility Avoidance", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/training/cable-location-avoidance" }, { label: "ProQual CAT1" }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "ProQual CAT1" }]) }} />
 <InnerPageHero
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 Training | Utility Locator Qualification"
@@ -60,7 +60,7 @@ export default function ProQualCat1() {
         image="cat-66-proqualcat1-training"
         alt="ProQual CAT1 cable avoidance training with practical locator exercises"
         breadcrumbs={[
-          { label: "Training", to: "/training/cable-location-avoidance" },
+          { label: "Training", to: "/courses" },
           { label: "ProQual CAT1" },
         ]}
       />

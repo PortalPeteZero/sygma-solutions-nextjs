@@ -51,7 +51,7 @@ export default function EusCat2SafeDig() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'EUSR CAT2 Safe Dig Training', description: 'EUSR CAT2 safe excavation training from Sygma Solutions. EUSR-registered qualification covering HSG47 safe digging practice, proximity working, and live dig practical assessment.', url: '/courses/eusr-cat2-safe-dig', credential: 'EUSR CAT2', duration: '1 day', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/training/cable-location-avoidance' }, { label: 'EUSR CAT2 Safe Dig' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'EUSR CAT2 Safe Dig' }]) }} />
 
       <InnerPageHero
         eyebrow="Safe Dig and Advanced"
@@ -60,7 +60,7 @@ export default function EusCat2SafeDig() {
         image="dig-11-eus-cat2-safe-dig"
         alt="EUSR CAT2 safe digging training with vacuum excavation and hand-dig demonstration"
         breadcrumbs={[
-          { label: "Training", href: "/training/cable-location-avoidance" },
+          { label: "Training", href: "/courses" },
           { label: "EUSR CAT2 Safe Dig" },
         ]}
       />
