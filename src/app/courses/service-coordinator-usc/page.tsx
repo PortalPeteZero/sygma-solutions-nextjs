@@ -122,7 +122,7 @@ export default function ServiceCoordinatorUsc() {
               Your company appoints the USC. Sygma trains them to carry out that role correctly. Completing the USC course does not register your delegate on the EUSR or any other qualification register (it trains the person your organisation has chosen to fill the role).
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              If your team needs the EUSR CAT1, CAT2, and USC content together as part of a combined programme, see the <Link href="/courses/eusr-cat1-cat2-usc-combined" className="text-primary font-semibold underline underline-offset-2">EUSR CAT1, CAT2 and USC Combined</Link> page.
+              If your team needs the EUSR CAT1 and CAT2 qualifications alongside the USC role training, see the <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary font-semibold underline underline-offset-2">EUSR CAT 1 & CAT 2 Combined</Link> page — USC content can be delivered as part of the same on-site programme.
             </p>
           </div>
         </div>
@@ -475,10 +475,10 @@ export default function ServiceCoordinatorUsc() {
               Request a Quote
             </Link>
             <Link
-              href="/courses/eusr-cat1-cat2-usc-combined"
+              href="/courses/eusr-cat1-cat2-combined"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View CAT1, CAT2 and USC Combined
+              View CAT 1 & CAT 2 Combined
             </Link>
           </div>
         </div>

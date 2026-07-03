@@ -36,7 +36,6 @@ const courseExtras: Record<string, CourseExtra> = {
   '/courses/proqualcat2': { slug: 'proqualcat2', desc: 'ProQual-accredited safe dig assessment covering hand dig techniques and excavation risk management.', duration: '1 day', cert: 'ProQual Certificate' },
   '/courses/eusr-cat1-cat2-combined': { slug: 'eusr-cat1-cat2-combined', desc: 'Combined EUSR CAT1 and CAT2 in one package. Cable avoidance plus safe dig.', duration: '2 days', cert: 'EUSR Card (dual)' },
   '/courses/proqual-cat1-cat2-combined': { slug: 'proqual-cat1-cat2-combined', desc: 'ProQual-accredited combined CAT1 and CAT2 with externally verified assessment.', duration: '2 days', cert: 'ProQual Certificate' },
-  '/courses/eusr-cat1-cat2-usc-combined': { slug: 'eusr-cat1-cat2-usc-combined', desc: 'Triple-accredited: EUSR CAT1, CAT2 Safe Dig, and Utility Strike Coordinator in one programme.', duration: '3 days', cert: 'EUSR Card (triple)' },
   '/courses/cat-manager': { slug: 'cat-manager', desc: 'Online CAT Manager course for supervisors overseeing cable avoidance operations.', duration: 'Online', cert: 'Certificate of Attendance' },
   '/courses/eusr-superuser': { slug: 'eusr-superuser', desc: 'EUSR Superuser Locator for supervisors who need to verify operative competency in the field.', duration: '1 day', cert: 'EUSR Card' },
   '/courses/zs-superuser-scottish-water': { slug: 'zs-superuser-scottish-water', desc: 'ZS Superuser certification for Scottish Water contractor supervisors.', duration: '1 day', cert: 'ZS Card' },

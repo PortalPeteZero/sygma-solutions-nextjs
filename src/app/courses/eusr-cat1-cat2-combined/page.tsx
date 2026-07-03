@@ -778,10 +778,10 @@ export default function EusCat12Combined() {
             >
               Get in Touch for Your Team
             </Link>
-            <Link href="/courses/eusr-cat1-cat2-usc-combined"
+            <Link href="/courses/service-coordinator-usc"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
-              View CAT 1, CAT 2 and USC Combined
+              Add USC: Service Coordinator Course
             </Link>
           </div>
         </div>

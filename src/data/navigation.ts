@@ -37,7 +37,6 @@ export const mainNav: NavMenu[] = [
           { label: 'ProQual CAT2 Safe Dig', to: '/courses/proqualcat2' },
           { label: 'EUSR CAT 1 & CAT 2 Combined', to: '/courses/eusr-cat1-cat2-combined' },
           { label: 'ProQual CAT1 & CAT2 Combined', to: '/courses/proqual-cat1-cat2-combined' },
-          { label: 'EUSR CAT 1, CAT 2 & USC', to: '/courses/eusr-cat1-cat2-usc-combined' },
         ],
       },
       {

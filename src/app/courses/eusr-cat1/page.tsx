@@ -601,10 +601,10 @@ export default function EusCat1() {
               <p className="text-sm text-muted-foreground">Two qualifications, two certificates issued on the day. The most-booked combined format.</p>
               <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
             </Link>
-            <Link href="/courses/eusr-cat1-cat2-usc-combined" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">CAT 1 + CAT 2 + USC</p>
-              <p className="font-bold text-foreground mb-1">Three qualifications combined</p>
-              <p className="text-sm text-muted-foreground">Adds the Utility SafeControl (USC) qualification on top of CAT 1 + CAT 2. Best value for teams needing all three.</p>
+            <Link href="/courses/service-coordinator-usc" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">USC — Service Coordinator</p>
+              <p className="font-bold text-foreground mb-1">Utility SafeControl role training</p>
+              <p className="text-sm text-muted-foreground">For the person your organisation appoints to coordinate safe working around buried services. Runs alongside CAT 1 and CAT 2 on-site.</p>
               <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
             </Link>
           </div>

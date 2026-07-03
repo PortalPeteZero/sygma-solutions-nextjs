@@ -47,7 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'proqualcat2',
     'eusr-cat1-cat2-combined',
     'proqual-cat1-cat2-combined',
-    'eusr-cat1-cat2-usc-combined',
     'cat-manager',
     'eusr-superuser',
     'zs-superuser-scottish-water',

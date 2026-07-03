@@ -63,7 +63,9 @@ const nextConfig = {
       { source: '/courses/eus-cat2-safe-dig', destination: '/courses/eusr-cat2-safe-dig', permanent: true },
       { source: '/courses/eus-superuser', destination: '/courses/eusr-superuser', permanent: true },
       { source: '/courses/eus-cat1-cat2-combined', destination: '/courses/eusr-cat1-cat2-combined', permanent: true },
-      { source: '/courses/eus-cat1-cat2-usc-combined', destination: '/courses/eusr-cat1-cat2-usc-combined', permanent: true },
+      { source: '/courses/eus-cat1-cat2-usc-combined', destination: '/courses/eusr-cat1-cat2-combined', permanent: true },
+      // USC-combined page retired 2026-07-03 (Pete: zero search demand; 1 click/90d) — consolidate into the Cat 1 & 2 combined page
+      { source: '/courses/eusr-cat1-cat2-usc-combined', destination: '/courses/eusr-cat1-cat2-combined', permanent: true },
       { source: '/knowledge-hub/eus-cat1-vs-proqual-cat1', destination: '/knowledge-hub/eusr-cat1-vs-proqual-cat1', permanent: true },
       { source: '/courses/eus-1-cat-genny', destination: '/courses/eusr-cat1', permanent: true },
       { source: '/courses/online-live-cat-genny', destination: '/courses/cat-and-genny-training', permanent: true },
