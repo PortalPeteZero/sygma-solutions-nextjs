@@ -26,7 +26,7 @@ export default function Page() {
       strapline={<>HSG47 <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> Cable Avoidance</>}
       schemaName="EUS Category 1: Locate Utility Services (HSG47) — Genny and CAT training"
       schemaUrl="/agendas/eus-category-1-locate-utility-services"
-      breadcrumbLabel="Course Agenda — EUS Category 1 Locate Utility Services"
+      breadcrumbLabel="EUS Category 1 Locate Utility Services"
     />
   );
 }

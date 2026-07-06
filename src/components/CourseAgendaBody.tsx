@@ -155,7 +155,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
     <div className="agenda-doc">
       <style dangerouslySetInnerHTML={{ __html: PRINT_CSS }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: schemaName, description: 'One-day utility location and avoidance training to HSG47, using the Genny and CAT. Theory, five practical disciplines and assessment, with in-house, EUSR Cat 1 or ProQual Level 2 certificate options.', url: schemaUrl, credential: 'EUS Cat 1 / Sygma / ProQual Level 2', duration: '1 day', mode: ['onsite'] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Courses', to: '/courses' }, { label: breadcrumbLabel }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Course Agendas', to: '/agendas' }, { label: breadcrumbLabel }]) }} />
 
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
@@ -167,8 +167,8 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         <div className="relative container mx-auto px-6 md:px-8 max-w-6xl py-8 md:py-12 animate-in fade-in slide-in-from-bottom-3 duration-700">
           <nav className="flex items-center gap-2 text-xs text-white/50 mb-8 print:hidden" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
-            <Link href="/courses" className="hover:text-white">Courses</Link><span>/</span>
-            <span className="text-white/80">Course Agenda</span>
+            <Link href="/agendas" className="hover:text-white">Course Agendas</Link><span>/</span>
+            <span className="text-white/80">{breadcrumbLabel}</span>
           </nav>
           <div className="inline-flex items-center gap-3 rounded-md border border-accent/50 bg-accent/10 px-4 py-2">
             <span className="text-xs font-black uppercase tracking-[0.28em] text-accent">Course Agenda</span>

@@ -85,7 +85,7 @@ function AgendaGrid({ cards }: { cards: AgendaCard[] }) {
 export default function Page() {
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Courses', to: '/courses' }, { label: 'Course Agendas' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Course Agendas' }]) }} />
 
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
@@ -93,7 +93,6 @@ export default function Page() {
         <div className="relative container mx-auto px-6 md:px-8 max-w-6xl py-10 md:py-14">
           <nav className="flex items-center gap-2 text-xs text-white/50 mb-8" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white">Home</Link><span>/</span>
-            <Link href="/courses" className="hover:text-white">Courses</Link><span>/</span>
             <span className="text-white/80">Course Agendas</span>
           </nav>
           <div className="inline-flex items-center gap-3 rounded-md border border-accent/50 bg-accent/10 px-4 py-2">

@@ -26,7 +26,7 @@ export default function Page() {
       strapline={<>Genny and CAT <span className="text-accent">·</span> incorporating EUS Cat 1</>}
       schemaName="HSG47 Utility Detection & Avoidance Training (Genny and CAT, incorporating EUS Cat 1)"
       schemaUrl="/agendas/hsg47-utility-detection-and-avoidance"
-      breadcrumbLabel="Course Agenda — HSG47 Utility Detection & Avoidance"
+      breadcrumbLabel="HSG47 Utility Detection & Avoidance"
     />
   );
 }

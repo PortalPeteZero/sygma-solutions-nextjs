@@ -25,7 +25,7 @@ export default function Page() {
       strapline={<>Advanced locator competency <span className="text-accent">·</span> coaching &amp; assessing others</>}
       schemaName="2 Day Super User Coach — Utility Location & Avoidance"
       schemaUrl="/agendas/super-user-coach"
-      breadcrumbLabel="Course Agenda — 2 Day Super User Coach"
+      breadcrumbLabel="2 Day Super User Coach"
     />
   );
 }

@@ -25,7 +25,7 @@ export default function Page() {
       strapline={<>Advanced locator competency <span className="text-accent">·</span> strike investigation &amp; data analysis</>}
       schemaName="2 Day Super User Damage Investigations — Utility Location & Avoidance"
       schemaUrl="/agendas/super-user-damage-investigation"
-      breadcrumbLabel="Course Agenda — 2 Day Super User Damage Investigations"
+      breadcrumbLabel="2 Day Super User Damage Investigations"
     />
   );
 }
