@@ -225,7 +225,7 @@ export default function TestBeforeTouchPage() {
                   <p className="text-3xl font-black text-primary">£15&nbsp;&ndash;&nbsp;£20 <span className="text-base font-semibold text-muted-foreground">per unit</span></p>
                   <p className="text-xs text-muted-foreground italic">depending on specification and supplier</p>
                 </div>
-                <div className="mt-auto relative w-full h-28 rounded-lg overflow-hidden">
+                <div className="mt-auto relative w-full aspect-[4/3] rounded-lg overflow-hidden">
                   <Image src={costImg} alt="Gloved hand testing a metal street-furniture pole with a voltstick" fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 33vw" />
                 </div>
               </div>
