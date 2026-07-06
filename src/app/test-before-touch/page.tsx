@@ -2,36 +2,35 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
+  Users,
+  AlertTriangle,
+  CheckCircle2,
   ShieldCheck,
   SearchCheck,
-  ScrollText,
+  ClipboardCheck,
   PoundSterling,
-  Users,
   ShoppingCart,
   GraduationCap,
-  ClipboardCheck,
   Eye,
   RefreshCw,
-  CheckCircle2,
-  ArrowRight,
+  Check,
   Zap,
-  AlertTriangle,
+  ChevronRight,
+  ArrowRight,
+  type LucideIcon,
 } from 'lucide-react';
 import { SITE_NAME } from '@/lib/metadata';
 import { breadcrumbSchema } from '@/lib/schema';
 import heroImg from './voltstick-hero.jpg';
 import productImg from './voltstick-product.jpg';
 import cabinetImg from './voltstick-cabinet.jpg';
+import costImg from './voltstick-cost.jpg';
 import ogImg from './voltstick-og.jpg';
-
-const NAVY = '#0B1F3A';
-const GREEN = '#1E8A4C';
-const YELLOW = '#FFD200';
 
 export const metadata: Metadata = {
   title: 'Test Before Touch: Voltsticks for Street Furniture Safety | Sygma Solutions',
   description:
-    'A simple pre-contact voltstick check can prevent a life-changing electrical incident on street furniture. Why every field team should adopt Test Before Touch, and how Sygma helps embed it.',
+    'A simple pre-contact voltstick check can prevent a life-changing electrical incident on street furniture. The full case for adopting Test Before Touch, and how Sygma helps embed it.',
   alternates: { canonical: 'https://sygma-solutions.com/test-before-touch' },
   openGraph: {
     title: 'Test Before Touch: Voltsticks for Street Furniture Safety',
@@ -52,20 +51,30 @@ export const metadata: Metadata = {
 };
 
 const benefits = [
-  { icon: ShieldCheck, title: 'Improved safety', desc: 'Cuts the risk of shock, burns and serious injury to your people, contractors and the public.' },
-  { icon: SearchCheck, title: 'Risk reduction', desc: 'Flags potentially live equipment before anyone makes physical contact with it.' },
-  { icon: ScrollText, title: 'Compliance', desc: 'Supports your duties under HSWA 1974 and EAWR 1989, showing reasonably practicable care.' },
-  { icon: PoundSterling, title: 'Low cost, high impact', desc: 'A few pounds per unit set against the cost of a single electrical incident.' },
-  { icon: Users, title: 'Stronger culture', desc: 'Builds a visible Test Before Touch culture across every team, every site.' },
+  { icon: ShieldCheck, title: 'Improved Safety', points: ['Reduces the risk of electric shock, burns and serious injury.', 'Helps protect your people, contractors and the public.'] },
+  { icon: SearchCheck, title: 'Risk Reduction', points: ['Identifies potentially live equipment before contact.', 'Reduces exposure to hidden electrical faults.'] },
+  { icon: ClipboardCheck, title: 'Legal & Regulatory Compliance', points: ['Supports compliance with health & safety legislation (HSWA 1974, EAWR 1989).', 'Demonstrates reasonably practicable steps to protect your workforce.'] },
+  { icon: PoundSterling, title: 'Financial Benefits', points: ['A low-cost investment with high impact.', 'Helps reduce the cost of accidents, claims, downtime, damage and reputational harm.'] },
+  { icon: Users, title: 'Culture & Reputation', points: ['Reinforces a Test Before Touch culture.', 'Demonstrates a visible commitment to working safely and responsibly.'] },
 ];
 
 const steps = [
   { icon: ShoppingCart, title: 'Procure', desc: 'Provide approved voltsticks for all relevant team members.' },
-  { icon: GraduationCap, title: 'Train', desc: 'Practical training on correct use, limitations and daily function testing.' },
-  { icon: ClipboardCheck, title: 'Implement', desc: 'Make the check mandatory before any contact with electrically connected street furniture.' },
-  { icon: Eye, title: 'Monitor', desc: 'Supervisors check compliance through site inspections and safety audits.' },
-  { icon: RefreshCw, title: 'Review', desc: 'Review effectiveness and incident data regularly, and refine as needed.' },
+  { icon: GraduationCap, title: 'Train', desc: 'Provide practical training on correct use, limitations and daily function testing.' },
+  { icon: ClipboardCheck, title: 'Implement', desc: 'Make the voltstick check mandatory before any physical contact.' },
+  { icon: Eye, title: 'Monitor', desc: 'Supervisors monitor compliance through site inspections and safety audits.' },
+  { icon: RefreshCw, title: 'Review', desc: 'Regularly review process effectiveness and incident data.' },
 ];
+
+/* Shared card + coloured-header building blocks */
+function CardHeader({ icon: Icon, title, tone }: { icon: LucideIcon; title: string; tone: 'navy' | 'blue' }) {
+  return (
+    <div className={`flex items-center gap-3 px-5 py-4 ${tone === 'navy' ? 'bg-foreground' : 'bg-primary'}`}>
+      <Icon size={22} className="text-white shrink-0" />
+      <h2 className="text-lg font-bold uppercase tracking-wide text-white">{title}</h2>
+    </div>
+  );
+}
 
 export default function TestBeforeTouchPage() {
   return (
@@ -86,257 +95,219 @@ export default function TestBeforeTouchPage() {
           }),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Test Before Touch' }]) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Test Before Touch' }]) }} />
 
-      {/* ===== HERO (split: copy left, photo right) ===== */}
-      <section className="relative" style={{ backgroundColor: NAVY }}>
-        <div className="grid lg:grid-cols-2">
-          {/* Photo */}
-          <div className="relative order-1 lg:order-2 min-h-[280px] sm:min-h-[360px] lg:min-h-[600px]">
-            <Image
-              src={heroImg}
-              alt="Engineer in hi-vis testing a live street cabinet with a voltstick"
-              fill
-              className="object-cover object-center"
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            {/* seam blend into the navy panel on desktop */}
-            <div
-              className="hidden lg:block absolute inset-y-0 left-0 w-40"
-              style={{ background: `linear-gradient(to right, ${NAVY}, transparent)` }}
-              aria-hidden="true"
-            />
-          </div>
-          {/* Copy */}
-          <div className="relative order-2 lg:order-1 flex items-center">
-            <div className="w-full px-6 md:px-10 lg:px-14 py-12 lg:py-16">
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em]" style={{ color: YELLOW }}>
-                Safety Recommendation
-              </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.02]">
-                Test Before
-                <br />
-                Touch
+      {/* ===== HERO (light) ===== */}
+      <section className="bg-white border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-14">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* copy */}
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent mb-4">Safety Recommendation</p>
+              <h1 className="text-4xl md:text-5xl font-black text-foreground leading-[1.05]">
+                A Recommendation to Adopt <span className="text-primary">Voltsticks</span>
               </h1>
-              <div className="mt-4 h-1.5 w-16 rounded-full" style={{ backgroundColor: YELLOW }} aria-hidden="true" />
-              <p className="mt-5 text-lg md:text-xl text-white/75 max-w-lg leading-relaxed">
-                One quick, low-cost check before you touch electrically connected street furniture. It is the difference
-                between assuming it is dead and knowing it is safe.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/contact#enquiry-form"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md font-bold text-white transition-colors"
-                  style={{ backgroundColor: GREEN }}
-                >
-                  Talk to Sygma <ArrowRight size={18} />
-                </Link>
-                <Link
-                  href="#the-plan"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md border border-white/25 text-white font-bold hover:bg-white/10 transition-colors"
-                >
-                  See how it works
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              <p className="mt-4 text-lg text-muted-foreground">Improving safety. Reducing risk. Protecting people.</p>
 
-      {/* ===== HAZARD BANNER ===== */}
-      <section>
-        <div style={{ backgroundColor: YELLOW }}>
-          <div className="container mx-auto px-6 py-4 flex items-center justify-center gap-3">
-            <Zap size={26} className="text-black shrink-0" fill="currentColor" />
-            <span className="text-2xl md:text-3xl font-black uppercase tracking-tight text-black">Test Before Touch</span>
-            <Zap size={26} className="text-black shrink-0" fill="currentColor" />
-          </div>
-        </div>
-        <div className="bg-black">
-          <p className="container mx-auto px-6 py-2.5 text-center text-sm md:text-base font-bold uppercase tracking-wide text-white">
-            A simple check today can prevent a <span style={{ color: YELLOW }}>life-changing incident</span> tomorrow.
-          </p>
-        </div>
-      </section>
-
-      {/* ===== RISK + SOLUTION (matched cards) ===== */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-6">
-          {/* RISK */}
-          <article className="flex flex-col rounded-2xl overflow-hidden border border-border shadow-sm">
-            <div className="flex items-center gap-3 px-6 py-4" style={{ backgroundColor: NAVY }}>
-              <AlertTriangle size={22} style={{ color: YELLOW }} />
-              <h2 className="text-xl font-bold text-white">The Risk</h2>
-            </div>
-            <div className="relative h-56">
-              <Image src={cabinetImg} alt="Green street cabinet with a danger high-voltage warning sign" fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 50vw" />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <p className="text-muted-foreground leading-relaxed">
-                Lighting columns, traffic signals, feeder pillars, EV charging points and illuminated signs can all become
-                live through faults, damaged cables, water ingress or bad installations.
-              </p>
-              <div className="mt-5 flex items-start gap-3 rounded-lg p-4" style={{ backgroundColor: '#0B1F3A0D' }}>
-                <AlertTriangle size={20} className="shrink-0 mt-0.5" style={{ color: NAVY }} />
-                <p className="font-semibold text-foreground">
-                  Live electricity is not visible. You cannot see the danger, but contact can kill.
+              {/* hazard banner */}
+              <div className="mt-7 max-w-lg">
+                <div className="bg-[#FFD200] px-5 py-3 rounded-t-md flex items-center gap-3">
+                  <span className="text-2xl md:text-3xl font-black uppercase tracking-tight text-black">Test Before Touch</span>
+                  <Zap size={26} className="text-black shrink-0" fill="currentColor" />
+                </div>
+                <p className="bg-black text-white text-xs md:text-sm font-bold uppercase tracking-wide px-5 py-2.5 rounded-b-md">
+                  A simple check today can prevent a <span className="text-[#FFD200]">life-changing incident</span> tomorrow.
                 </p>
               </div>
-            </div>
-          </article>
 
-          {/* SOLUTION */}
-          <article className="flex flex-col rounded-2xl overflow-hidden border border-border shadow-sm">
-            <div className="flex items-center gap-3 px-6 py-4" style={{ backgroundColor: GREEN }}>
-              <CheckCircle2 size={22} className="text-white" />
-              <h2 className="text-xl font-bold text-white">The Solution</h2>
-            </div>
-            <div className="relative h-56 bg-white flex items-center justify-center px-8">
-              <div className="relative w-full aspect-[1037/272]">
-                <Image src={productImg} alt="A yellow and black voltstick non-contact voltage detector, tip glowing red" fill className="object-contain" sizes="(max-width: 768px) 90vw, 45vw" />
+              <div className="mt-7">
+                <Link href="/contact#enquiry-form" className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors">
+                  Talk to Sygma <ArrowRight size={18} />
+                </Link>
               </div>
             </div>
-            <div className="flex flex-1 flex-col p-6">
-              <p className="text-muted-foreground leading-relaxed">
-                A voltstick is a non-contact voltage detector. Held near the equipment, it signals the possible presence
-                of voltage before anyone makes contact.
-              </p>
-              <p className="mt-5 flex items-start gap-3 font-semibold text-foreground">
-                <CheckCircle2 size={20} className="shrink-0 mt-0.5" style={{ color: GREEN }} />
-                Make it routine on every asset and &ldquo;we assumed&rdquo; becomes &ldquo;we checked&rdquo;.
-              </p>
+
+            {/* photo */}
+            <div className="relative w-full aspect-[3/2] rounded-xl overflow-hidden shadow-lg ring-1 ring-border">
+              <Image src={heroImg} alt="Engineer in hi-vis testing a live street cabinet with a voltstick" fill className="object-cover object-center" priority sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      {/* ===== BENEFITS (5 matched cards) ===== */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: '#F4F6F9' }}>
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] mb-2" style={{ color: GREEN }}>
-            Why it pays off
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">Five reasons to adopt it</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {benefits.map((b) => {
-              const Icon = b.icon;
-              return (
-                <div
-                  key={b.title}
-                  className="flex flex-col h-full rounded-xl bg-white border border-border p-5 shadow-sm"
-                >
-                  <div
-                    className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                    style={{ backgroundColor: '#1E8A4C1A' }}
-                  >
-                    <Icon size={24} style={{ color: GREEN }} />
+      {/* ===== BODY (light grey, colour-blocked cards) ===== */}
+      <div className="bg-[#EEF1F5]">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16 space-y-6">
+
+          {/* Row 1: Executive Summary / Risk / Solution */}
+          <div className="grid md:grid-cols-3 gap-6 items-stretch">
+            {/* Executive Summary */}
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={Users} title="Executive Summary" tone="navy" />
+              <div className="p-5 flex-1 space-y-4 text-sm text-muted-foreground leading-relaxed">
+                <p>Adopt the routine, mandatory use of voltsticks (non-contact voltage detectors) for all work on or around electrically connected street furniture.</p>
+                <p>This small investment significantly improves workforce safety, reduces the risk of electric-shock incidents, supports legal compliance and strengthens a proactive safety culture.</p>
+              </div>
+            </article>
+
+            {/* The Risk */}
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={AlertTriangle} title="The Risk" tone="navy" />
+              <div className="p-5 flex-1 flex flex-col gap-4">
+                <div className="flex gap-4">
+                  <div className="relative w-24 shrink-0 rounded-lg overflow-hidden self-start">
+                    <Image src={cabinetImg} alt="Green street cabinet with a danger high-voltage warning sign" className="w-full h-auto" sizes="120px" placeholder="blur" />
                   </div>
-                  <h3 className="font-bold mb-2 leading-snug">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Lighting columns, traffic signals, feeder pillars, EV charging points and illuminated signs can become live through faults, damaged cables, water ingress or incorrect installations.
+                  </p>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+                <p className="mt-auto text-sm font-bold text-foreground">Live electricity may not be visible, but it can cause serious injury or a fatality.</p>
+              </div>
+            </article>
 
-      {/* ===== COST BAND ===== */}
-      <section className="py-14" style={{ backgroundColor: NAVY }}>
-        <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row md:items-center gap-8">
-          <div className="flex items-center gap-5 shrink-0">
-            <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: YELLOW }}>
-              <PoundSterling size={30} className="text-black" />
-            </div>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Estimated investment</p>
-              <p className="text-4xl md:text-5xl font-black text-white">
-                £15&nbsp;&ndash;&nbsp;£20 <span className="text-lg font-semibold text-white/60">per unit</span>
-              </p>
-            </div>
+            {/* The Solution */}
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={CheckCircle2} title="The Solution" tone="blue" />
+              <div className="p-5 flex-1 flex flex-col gap-4 text-sm text-muted-foreground leading-relaxed">
+                <p>Adopt the routine use of voltsticks as a standard pre-contact safety check on all electrically connected street furniture. A simple, quick and effective check that identifies the possible presence of voltage before anyone touches the equipment.</p>
+                <div className="mt-auto relative w-full aspect-[1037/272]">
+                  <Image src={productImg} alt="A yellow and black voltstick non-contact voltage detector, tip glowing red" fill className="object-contain object-center" sizes="(max-width: 768px) 90vw, 30vw" />
+                </div>
+              </div>
+            </article>
           </div>
-          <p className="text-white/75 leading-relaxed md:border-l md:border-white/15 md:pl-8">
-            Voltsticks are one of the most cost-effective safety controls available. A few pounds per person, weighed
-            against the cost of a single strike: injury, claims, downtime, damage and reputational harm.
-          </p>
-        </div>
-      </section>
 
-      {/* ===== IMPLEMENTATION STEPPER ===== */}
-      <section id="the-plan" className="py-16 md:py-20 bg-white scroll-mt-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] mb-2" style={{ color: GREEN }}>
-            From intention to practice
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">A five-step rollout</h2>
-          <div className="relative">
-            {/* connector line (desktop) */}
-            <div
-              className="hidden lg:block absolute top-7 left-[10%] right-[10%] h-0.5"
-              style={{ backgroundColor: '#1E8A4C33' }}
-              aria-hidden="true"
-            />
-            <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-              {steps.map((s, i) => {
-                const Icon = s.icon;
+          {/* Row 2: Key Benefits */}
+          <section className="rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+            <div className="bg-foreground px-5 py-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide text-white">Key Benefits</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
+              {benefits.map((b) => {
+                const Icon = b.icon;
                 return (
-                  <li key={s.title} className="relative flex flex-col items-center text-center">
-                    <div
-                      className="relative z-10 w-14 h-14 rounded-full flex items-center justify-center text-white font-black text-lg mb-4 ring-8 ring-white"
-                      style={{ backgroundColor: GREEN }}
-                    >
-                      {i + 1}
+                  <div key={b.title} className="p-5 flex flex-col">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                        <Icon size={20} className="text-primary" />
+                      </span>
+                      <h3 className="text-sm font-bold uppercase tracking-wide text-foreground leading-tight">{b.title}</h3>
                     </div>
-                    <Icon size={22} style={{ color: NAVY }} className="mb-2" />
-                    <h3 className="font-bold mb-1">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-                  </li>
+                    <ul className="space-y-2">
+                      {b.points.map((p) => (
+                        <li key={p} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                          <Check size={14} className="text-primary shrink-0 mt-1" />
+                          <span>{p}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 );
               })}
-            </ol>
+            </div>
+          </section>
+
+          {/* Row 3: Cost + Implementation */}
+          <div className="grid lg:grid-cols-3 gap-6 items-stretch">
+            {/* Cost */}
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={PoundSterling} title="Cost Consideration" tone="navy" />
+              <div className="p-5 flex-1 flex flex-col gap-4">
+                <div className="flex items-center gap-4">
+                  <span className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <PoundSterling size={26} className="text-primary" />
+                  </span>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Voltsticks are an affordable, low-cost piece of equipment.</p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Estimated investment</p>
+                  <p className="text-3xl font-black text-primary">£15&nbsp;&ndash;&nbsp;£20 <span className="text-base font-semibold text-muted-foreground">per unit</span></p>
+                  <p className="text-xs text-muted-foreground italic">depending on specification and supplier</p>
+                </div>
+                <div className="mt-auto relative w-full h-28 rounded-lg overflow-hidden">
+                  <Image src={costImg} alt="Gloved hand testing a metal street-furniture pole with a voltstick" fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 33vw" />
+                </div>
+              </div>
+            </article>
+
+            {/* Implementation */}
+            <article className="flex flex-col h-full lg:col-span-2 rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={ClipboardCheck} title="Proposed Implementation Plan" tone="navy" />
+              <div className="p-5 flex-1">
+                <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-2">
+                  {steps.map((s, i) => {
+                    const Icon = s.icon;
+                    return (
+                      <li key={s.title} className="relative flex lg:flex-col items-start lg:items-center lg:text-center gap-3 lg:gap-2">
+                        <div className="flex flex-col items-center shrink-0">
+                          <span className="w-9 h-9 rounded-full bg-primary text-primary-foreground text-sm font-black flex items-center justify-center">{i + 1}</span>
+                        </div>
+                        <div>
+                          <div className="flex items-center lg:justify-center gap-2 mb-1">
+                            <Icon size={18} className="text-foreground" />
+                            <h3 className="text-sm font-bold uppercase tracking-wide text-foreground">{s.title}</h3>
+                          </div>
+                          <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+                        </div>
+                        {i < steps.length - 1 && (
+                          <ChevronRight size={18} className="hidden lg:block absolute -right-1 top-3 text-primary/40" />
+                        )}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
 
-      {/* ===== HOW SYGMA HELPS ===== */}
-      <section className="py-16 md:py-20" style={{ backgroundColor: GREEN }}>
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/70 mb-3">How Sygma helps</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-            We turn Test Before Touch into everyday practice
-          </h2>
-          <p className="text-white/85 leading-relaxed max-w-2xl mx-auto">
-            Sygma Solutions builds the voltstick check into your Safe Systems of Work, RAMS and training programmes, and
-            delivers the practical training your teams need to use the equipment correctly and with confidence.
-          </p>
-          <Link
-            href="/contact#enquiry-form"
-            className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-md bg-white font-bold transition-colors hover:bg-white/90"
-            style={{ color: GREEN }}
-          >
-            Talk to Sygma <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section>
+          {/* Row 4: Conclusion + Recommendation + Closing */}
+          <div className="grid md:grid-cols-3 gap-6 items-stretch">
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={Check} title="Conclusion" tone="navy" />
+              <div className="p-5 flex-1 text-sm text-muted-foreground leading-relaxed space-y-3">
+                <p>Adopting voltsticks is a simple, effective and cost-efficient measure that improves safety, reduces risk and supports legal obligations.</p>
+                <p>It aligns with a commitment to safeguarding people and delivering operations to the highest safety standards.</p>
+              </div>
+            </article>
 
-      {/* ===== CLOSING BANNER ===== */}
-      <section style={{ backgroundColor: NAVY }}>
-        <div className="max-w-5xl mx-auto px-6 py-14 md:py-16 text-center">
-          <Zap size={44} className="mx-auto mb-4" style={{ color: YELLOW }} fill="currentColor" />
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight" style={{ color: YELLOW }}>
-            Test Before Touch
-          </h2>
-          <p className="mt-3 text-lg md:text-2xl font-semibold text-white">
-            A simple check today can prevent a life-changing incident tomorrow.
-          </p>
-          <p className="mt-6 text-xs md:text-sm uppercase tracking-[0.25em] text-white/50 font-bold">
-            A proactive check today. A safe tomorrow. Protect people. Prevent harm.
+            <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
+              <CardHeader icon={Check} title="Recommendation" tone="blue" />
+              <div className="p-5 flex-1 text-sm text-muted-foreground leading-relaxed">
+                <p>Approve the mandatory use of voltsticks for all work on or around electrically connected street furniture, and incorporate this requirement into your Safe Systems of Work, RAMS and training programmes.</p>
+              </div>
+            </article>
+
+            {/* Closing banner */}
+            <div className="flex flex-col justify-center rounded-xl bg-foreground p-6 text-center">
+              <Zap size={34} className="mx-auto mb-3 text-[#FFD200]" fill="currentColor" />
+              <p className="text-2xl md:text-3xl font-black uppercase tracking-tight text-[#FFD200] leading-none">Test Before Touch</p>
+              <p className="mt-3 text-sm font-bold uppercase text-white leading-snug">
+                A simple check today can prevent a <span className="text-accent">life-changing</span> incident tomorrow.
+              </p>
+            </div>
+          </div>
+
+          {/* How Sygma helps */}
+          <section className="rounded-xl bg-primary text-primary-foreground px-6 py-8 md:px-10 md:py-10 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary-foreground/70 mb-2">How Sygma helps</p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">We turn Test Before Touch into everyday practice</h2>
+            <p className="text-primary-foreground/85 max-w-2xl mx-auto leading-relaxed">
+              Sygma Solutions builds the voltstick check into your Safe Systems of Work, RAMS and training programmes, and delivers the practical training your teams need to use the equipment correctly and with confidence.
+            </p>
+            <Link href="/contact#enquiry-form" className="mt-6 inline-flex items-center gap-2 px-7 py-3 rounded-md bg-white text-primary font-bold hover:bg-white/90 transition-colors">
+              Talk to Sygma <ArrowRight size={18} />
+            </Link>
+          </section>
+        </div>
+
+        {/* Footer strip */}
+        <div className="bg-foreground">
+          <p className="max-w-6xl mx-auto px-4 py-4 text-center text-xs md:text-sm font-bold uppercase tracking-wide text-white/80">
+            A proactive check today. A safe tomorrow. <span className="text-[#FFD200]">Test Before Touch.</span> Protect people. Prevent harm.
           </p>
         </div>
-      </section>
+      </div>
     </>
   );
 }
