@@ -20,32 +20,26 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { SITE_NAME } from '@/lib/metadata';
-import { breadcrumbSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema } from '@/lib/schema';
 import heroImg from './voltstick-hero.jpg';
 import productImg from './voltstick-product.jpg';
 import cabinetImg from './voltstick-cabinet.jpg';
-import ogImg from './voltstick-og.jpg';
+
+const OG_IMAGE = 'https://sygma-solutions.com/articles/test-before-touch/hero.jpg';
 
 export const metadata: Metadata = {
-  title: 'Test Before Touch: Voltsticks for Street Furniture Safety | Sygma Solutions',
+  title: 'Test Before Touch: Voltsticks on Street Furniture | Sygma',
   description:
-    'A simple pre-contact voltstick check can prevent a life-changing electrical incident on street furniture. The full case for adopting Test Before Touch, and how Sygma helps embed it.',
-  alternates: { canonical: 'https://sygma-solutions.com/test-before-touch' },
+    'Why every team working on electrically connected street furniture should adopt voltsticks. The risk, the fix, the benefits, and how to roll out Test Before Touch.',
+  alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/test-before-touch' },
   openGraph: {
-    title: 'Test Before Touch: Voltsticks for Street Furniture Safety',
+    title: 'Test Before Touch: Voltsticks on Street Furniture',
     description:
-      'A simple pre-contact voltstick check can prevent a life-changing electrical incident on street furniture. Improving safety, reducing risk, protecting people.',
-    url: 'https://sygma-solutions.com/test-before-touch',
+      'Why every team working on electrically connected street furniture should adopt voltsticks. The risk, the fix, the benefits, and how to roll out Test Before Touch.',
+    url: 'https://sygma-solutions.com/knowledge-hub/test-before-touch',
     siteName: SITE_NAME,
-    images: [
-      {
-        url: `https://sygma-solutions.com${ogImg.src}`,
-        width: 1200,
-        height: 630,
-        alt: 'Test Before Touch: engineer testing a live street cabinet with a voltstick',
-      },
-    ],
-    type: 'website',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Engineer testing a live street cabinet with a voltstick' }],
+    type: 'article',
   },
 };
 
@@ -78,23 +72,17 @@ function CardHeader({ icon: Icon, title, tone }: { icon: LucideIcon; title: stri
 export default function TestBeforeTouchPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            name: 'Test Before Touch: Voltstick Safety',
-            serviceType: 'Workplace electrical safety training and implementation',
-            description:
-              'Adopting the routine use of voltsticks as a pre-contact safety check on electrically connected street furniture, embedded into Safe Systems of Work, RAMS and training.',
-            provider: { '@type': 'Organization', name: 'Sygma Solutions', url: 'https://sygma-solutions.com' },
-            areaServed: { '@type': 'Country', name: 'United Kingdom' },
-            url: 'https://sygma-solutions.com/test-before-touch',
-          }),
-        }}
-      />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Test Before Touch' }]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: articleSchema({
+        headline: 'Test Before Touch: Voltsticks on Street Furniture',
+        description: 'Why every team working on electrically connected street furniture should adopt voltsticks: the risk, the fix, the benefits, and how to roll out Test Before Touch.',
+        url: '/knowledge-hub/test-before-touch',
+        datePublished: '2026-07-06',
+        dateModified: '2026-07-06',
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([
+        { label: 'Knowledge Hub', to: '/knowledge-hub' },
+        { label: 'Test Before Touch' },
+      ]) }} />
 
       {/* ===== HERO (light) ===== */}
       <section className="bg-white border-b border-border">
@@ -102,6 +90,13 @@ export default function TestBeforeTouchPage() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* copy */}
             <div>
+              <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-1.5 text-xs text-muted-foreground">
+                <Link href="/" className="hover:text-primary">Home</Link>
+                <ChevronRight size={12} />
+                <Link href="/knowledge-hub" className="hover:text-primary">Knowledge Hub</Link>
+                <ChevronRight size={12} />
+                <span className="text-foreground font-medium">Test Before Touch</span>
+              </nav>
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent mb-4">Safety Recommendation</p>
               <h1 className="text-4xl md:text-5xl font-black text-foreground leading-[1.05]">
                 A Recommendation to Adopt <span className="text-primary">Voltsticks</span>

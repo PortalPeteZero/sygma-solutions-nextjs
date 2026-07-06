@@ -37,6 +37,8 @@ const nextConfig = {
       // Catch-all for any remaining /services/* paths
       { source: '/services/:path*', destination: '/courses', permanent: true },
       // === FOOTER/LEGACY LINK REDIRECTS ===
+      // Test Before Touch moved into the Knowledge Hub (2026-07-06)
+      { source: '/test-before-touch', destination: '/knowledge-hub/test-before-touch', permanent: true },
       { source: '/privacy', destination: '/privacy-policy', permanent: true },
       { source: '/blog', destination: '/knowledge-hub', permanent: true },
       { source: '/sitemap.htm', destination: '/courses', permanent: true },
@@ -487,7 +489,7 @@ const nextConfig = {
 
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
-      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|cat-and-genny|api|_next|articles|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|agendas|test-before-touch|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
+      { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|cat-and-genny|api|_next|articles|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|agendas|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
     ];
   },
 };

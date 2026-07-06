@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/accreditations`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/bespoke-training`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/osca`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/test-before-touch`, changeFrequency: 'monthly', priority: 0.6 },
     // /privacy-policy excluded -- noindexed page should not be in sitemap
   ];
 
@@ -80,6 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /* ------------------------------------------------------------------ */
 
   const knowledgeHubSlugs = [
+    'test-before-touch',
     'signal-clamp',
     'aml-pro-ssi-locators',
     'detecting-plastic-gas-service-pipes',

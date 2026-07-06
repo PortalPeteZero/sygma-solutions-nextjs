@@ -29,6 +29,14 @@ export interface KnowledgeItem {
 
 export const knowledgeHubItems: KnowledgeItem[] = [
   {
+    category: "Site Safety",
+    title: "Test Before Touch: Voltsticks on Street Furniture",
+    desc: "Lighting columns, feeder pillars, traffic signals and EV points can all go live. Why a voltstick check before contact is the simplest control on site, and how to roll it out.",
+    href: "/knowledge-hub/test-before-touch",
+    type: "article",
+    image: "/articles/test-before-touch/hero.jpg",
+  },
+  {
     category: "CAT and Genny",
     title: "The Signal Clamp: What It Does, and When You Need One",
     desc: "A Genny and CAT find most buried services, but not all. What a signal clamp does, how it compares with direct connection and induction, and where it earns its place on site.",
