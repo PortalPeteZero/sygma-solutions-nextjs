@@ -247,14 +247,15 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
                 <span className="flex-1 h-px bg-border" />
                 <span className="text-xs font-bold text-muted-foreground">{g.items.length} topics</span>
               </div>
-              <div className="grid md:grid-cols-2 gap-5 print-cols-2">
+              {/* Agenda-style: full-width stacked rows, never side-by-side cards. print-cols-2 keeps the PDF compact. */}
+              <div className="grid grid-cols-1 gap-3 print-cols-2">
                 {g.items.map((it) => (
-                  <div key={it.t} className="rounded-xl border border-border bg-card p-6 hover:border-accent/40 hover:shadow-sm transition-all pb-keep">
+                  <div key={it.t} className="rounded-xl border border-border bg-card px-6 py-4 hover:border-accent/40 hover:shadow-sm transition-all pb-keep">
                     <div className="flex items-start gap-3">
-                      <span className="shrink-0 mt-1 w-2 h-2 rounded-full bg-accent" />
+                      <span className="shrink-0 mt-1.5 w-2 h-2 rounded-full bg-accent" />
                       <div>
                         <p className="font-bold text-foreground leading-snug">{it.t}</p>
-                        <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{it.d}</p>
+                        <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{it.d}</p>
                       </div>
                     </div>
                   </div>
