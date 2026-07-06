@@ -45,6 +45,33 @@ const standardCourse: AgendaCard[] = [
   },
 ];
 
+const cat2Course: AgendaCard[] = [
+  {
+    href: '/agendas/eus-category-2-safe-digging',
+    eyebrow: 'One day',
+    title: <>EUS Category 2: <span className="text-accent">Implement Safe Digging</span></>,
+    strapline: 'Safe Dig · from locate to excavate',
+    chips: ['Safe Dig', 'EUS Cat 2', 'Assessed live dig'],
+  },
+  {
+    href: '/agendas/proqual-cat2',
+    eyebrow: 'One day',
+    title: <>ProQual Cat 2: <span className="text-accent">Safe Digging</span></>,
+    strapline: 'Safe Dig · from locate to excavate',
+    chips: ['Safe Dig', 'ProQual Cat 2', 'Assessed live dig'],
+  },
+];
+
+const combined: AgendaCard[] = [
+  {
+    href: '/agendas/eus-cat1-cat2-combined',
+    eyebrow: 'Two days',
+    title: <>EUS Cat 1 &amp; 2 <span className="text-accent">Combined</span></>,
+    strapline: 'Locate, then excavate — two qualifications in two days',
+    chips: ['EUS Cat 1', 'EUS Cat 2', 'Live dig'],
+  },
+];
+
 const superUser: AgendaCard[] = [
   {
     href: '/agendas/super-user-coach',
@@ -111,6 +138,35 @@ export default function Page() {
           <p className="mt-3 text-muted-foreground max-w-2xl text-sm leading-relaxed">Our core one-day course goes by several names — Genny and CAT, Cable Avoidance, HSG47, EUS Cat 1. It's the same course and the same agenda; open whichever version matches the name you know it by.</p>
         </div>
         <AgendaGrid cards={standardCourse} />
+      </section>
+
+      {/* ============ CAT 2 SAFE DIG ============ */}
+      <section className="bg-muted/40 border-y border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16">
+          <div className="mb-7">
+            <Eyebrow>The safe dig course</Eyebrow>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black text-foreground tracking-tight">Cat 2 — safe digging</h2>
+            <p className="mt-3 text-muted-foreground max-w-2xl text-sm leading-relaxed">From locate to excavate: planning the dig, breaking ground safely and exposing a real buried service on an assessed live dig. One course, two certification routes — open the agenda for the one you use.</p>
+          </div>
+          <AgendaGrid cards={cat2Course} />
+          <Link href="/agendas/cat2-delivery-and-site-requirements" className="mt-5 flex items-center justify-between gap-4 rounded-2xl border-l-4 border-l-accent border border-border bg-card px-6 py-5 hover:border-accent/60 hover:shadow-md transition-all">
+            <div>
+              <p className="font-black text-foreground">Cat 2 — Delivery options &amp; site requirements</p>
+              <p className="text-sm text-muted-foreground mt-1">There&apos;s more than one way to run this course — at our centre, on your site, or on your live jobs. Every option side by side, with exactly what each one needs.</p>
+            </div>
+            <span className="text-accent font-black text-xl shrink-0">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* ============ COMBINED ============ */}
+      <section className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16">
+        <div className="mb-7">
+          <Eyebrow>Both qualifications, one block</Eyebrow>
+          <h2 className="mt-3 text-3xl md:text-4xl font-black text-foreground tracking-tight">The two-day combined course</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl text-sm leading-relaxed">Day one locates the services; day two digs to them safely. Delegates leave with both EUS Cat 1 and EUS Cat 2.</p>
+        </div>
+        <AgendaGrid cards={combined} />
       </section>
 
       {/* ============ SUPER USER ============ */}
