@@ -24,7 +24,6 @@ import { breadcrumbSchema } from '@/lib/schema';
 import heroImg from './voltstick-hero.jpg';
 import productImg from './voltstick-product.jpg';
 import cabinetImg from './voltstick-cabinet.jpg';
-import costImg from './voltstick-cost.jpg';
 import ogImg from './voltstick-og.jpg';
 
 export const metadata: Metadata = {
@@ -213,7 +212,7 @@ export default function TestBeforeTouchPage() {
             {/* Cost */}
             <article className="flex flex-col h-full rounded-xl overflow-hidden bg-card border border-border shadow-sm">
               <CardHeader icon={PoundSterling} title="Cost Consideration" tone="navy" />
-              <div className="p-5 flex-1 flex flex-col gap-4">
+              <div className="p-5 flex-1 flex flex-col justify-center gap-5">
                 <div className="flex items-center gap-4">
                   <span className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <PoundSterling size={26} className="text-primary" />
@@ -224,9 +223,6 @@ export default function TestBeforeTouchPage() {
                   <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Estimated investment</p>
                   <p className="text-3xl font-black text-primary">£15&nbsp;&ndash;&nbsp;£20 <span className="text-base font-semibold text-muted-foreground">per unit</span></p>
                   <p className="text-xs text-muted-foreground italic">depending on specification and supplier</p>
-                </div>
-                <div className="mt-auto relative w-full aspect-[16/10] rounded-lg overflow-hidden">
-                  <Image src={costImg} alt="Gloved hand testing a metal street-furniture pole with a voltstick" fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 33vw" />
                 </div>
               </div>
             </article>
