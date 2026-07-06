@@ -225,7 +225,7 @@ export default function TestBeforeTouchPage() {
                   <p className="text-3xl font-black text-primary">£15&nbsp;&ndash;&nbsp;£20 <span className="text-base font-semibold text-muted-foreground">per unit</span></p>
                   <p className="text-xs text-muted-foreground italic">depending on specification and supplier</p>
                 </div>
-                <div className="mt-auto relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+                <div className="mt-auto relative w-full aspect-[16/10] rounded-lg overflow-hidden">
                   <Image src={costImg} alt="Gloved hand testing a metal street-furniture pole with a voltstick" fill className="object-cover object-center" sizes="(max-width: 1024px) 100vw, 33vw" />
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default function TestBeforeTouchPage() {
             {/* Implementation */}
             <article className="flex flex-col h-full lg:col-span-2 rounded-xl overflow-hidden bg-card border border-border shadow-sm">
               <CardHeader icon={ClipboardCheck} title="Proposed Implementation Plan" tone="navy" />
-              <div className="p-5 flex-1">
+              <div className="p-5 flex-1 flex flex-col justify-center">
                 <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-2">
                   {steps.map((s, i) => {
                     const Icon = s.icon;
