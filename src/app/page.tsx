@@ -37,6 +37,53 @@ const pathways = [
   { title: 'Bespoke and Corporate Training', desc: 'Programmes designed around your site protocols, risk profile, and workforce. We come to you.', cta: 'Talk to Us', href: '/bespoke-training', image: 'cat-39' },
 ];
 
+const courseGroups = [
+  { heading: 'EUSR Accredited', courses: [
+    { name: 'EUSR CAT 1', href: '/courses/eusr-cat1' },
+    { name: 'EUSR CAT 2 Safe Dig', href: '/courses/eusr-cat2-safe-dig' },
+    { name: 'EUSR CAT 1 & CAT 2 Combined', href: '/courses/eusr-cat1-cat2-combined' },
+    { name: 'EUSR Superuser Locator', href: '/courses/eusr-superuser' },
+    { name: 'ZS Superuser (Scottish Water)', href: '/courses/zs-superuser-scottish-water' },
+  ] },
+  { heading: 'ProQual & RQF', courses: [
+    { name: 'ProQual CAT1', href: '/courses/proqualcat1-training' },
+    { name: 'ProQual CAT1 Plus', href: '/courses/proqualcat1plus' },
+    { name: 'ProQual CAT2 Safe Dig', href: '/courses/proqualcat2' },
+    { name: 'ProQual CAT1 & CAT2 Combined', href: '/courses/proqual-cat1-cat2-combined' },
+    { name: 'RQF Level 2 Award', href: '/courses/rqf-level-2-award' },
+  ] },
+  { heading: 'Diplomas & Certificates', courses: [
+    { name: 'Level 3 Certificate', href: '/courses/level-3-certificate' },
+    { name: 'Level 4 Diploma', href: '/courses/level-4-diploma' },
+    { name: 'Level 5 Diploma', href: '/courses/level-5-diploma' },
+    { name: 'Level 6 Diploma', href: '/courses/level-6-diploma' },
+    { name: 'Online Level 3 Diploma', href: '/courses/online-level-3-diploma' },
+    { name: 'Online Level 5 Diploma', href: '/courses/online-level-5-diploma' },
+  ] },
+  { heading: 'Cable Avoidance & HSG47', courses: [
+    { name: 'CAT and Genny Training', href: '/courses/cat-and-genny-training' },
+    { name: 'Cable Avoidance Training', href: '/courses/cable-avoidance-training' },
+    { name: 'Cable Avoidance Comparison', href: '/courses/cable-avoidance-course-comparison' },
+    { name: 'HSG47 Training', href: '/courses/hsg47-training' },
+    { name: 'CAT4 HSG47 Awareness (Online)', href: '/courses/cat4-hsg47-awareness-online' },
+    { name: 'GS6 Overhead Power Lines', href: '/courses/gs6-overhead-power-lines' },
+  ] },
+  { heading: 'Surveying, Mapping & GPR', courses: [
+    { name: 'GPR Training', href: '/courses/gpr-training' },
+    { name: 'TSA & ICES Utility Mapping', href: '/courses/tsa-ices-utility-mapping' },
+    { name: '5-Day PAS128 Surveyor', href: '/courses/5-day-pas128-surveyor' },
+    { name: 'PAS128 Awareness', href: '/courses/pas128-awareness' },
+    { name: 'Plans & Process', href: '/courses/plans-and-process' },
+    { name: 'Service Coordinator (USC)', href: '/courses/service-coordinator-usc' },
+  ] },
+  { heading: 'Locator Equipment & Specialist', courses: [
+    { name: 'Advanced EM Locator', href: '/courses/advanced-em-locator' },
+    { name: 'Manufacturer-Specific Locator', href: '/courses/manufacturer-locator-training' },
+    { name: 'vScan & Transmitter Training', href: '/courses/vscan-and-transmitter-training' },
+    { name: 'CAT Manager', href: '/courses/cat-manager' },
+  ] },
+];
+
 const faqs = [
   { q: 'What is underground utility location training?', a: 'Underground utility location training teaches operatives and supervisors the techniques needed to <strong>locate underground services and avoid danger from buried utilities</strong> before and during excavation. Course content covers electromagnetic signal principles, CAT and Genny operation, interpreting site plans, safe digging best practice, and the legal and procedural framework under HSG47.' },
   { q: 'What is a CAT and Genny?', a: 'A CAT (Cable Avoidance Tool) is a handheld device used to detect underground cables and services by picking up electromagnetic signals. A Genny (signal generator) is used alongside the CAT. The Genny clamps onto a target conductor and applies a known signal, which the CAT then detects and traces accurately. Together, a CAT and Genny are significantly more reliable than using the CAT on its own. The CAT\'s passive modes — Power and Radio — can miss services that are not energised or not producing a strong enough signal. The Genny removes much of that uncertainty. Every Sygma CAT and Genny training course covers how to use both pieces of cable avoidance equipment correctly, starting with the signal generator.' },
@@ -312,6 +359,32 @@ export default function Home() {
           <p className="text-2xl md:text-3xl font-black">21 years. One subject. Delivered where it matters.</p>
         </div>
       </div>
+
+      {/* All training courses -- internal-link map to every course page */}
+      <section className="py-20 bg-muted/20 border-t border-border">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Every Course We Run</p>
+          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">All Our Training Courses</h2>
+          <p className="text-lg text-muted-foreground mb-10 max-w-3xl">From one-day cable avoidance courses to full Level 6 diplomas, Sygma delivers the complete underground utility location and surveying pathway. Browse every course by route:</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {courseGroups.map((group) => (
+              <div key={group.heading} className="rounded-xl border border-border bg-card p-6">
+                <h3 className="text-sm font-black uppercase tracking-wide text-foreground mb-4 pb-3 border-b border-border">{group.heading}</h3>
+                <ul className="space-y-2.5">
+                  {group.courses.map((c) => (
+                    <li key={c.href}>
+                      <Link href={c.href} className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors">{c.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link href="/courses" className="inline-flex items-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">See all courses <ArrowRight size={14} className="ml-1.5" /></Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-20 bg-background">
