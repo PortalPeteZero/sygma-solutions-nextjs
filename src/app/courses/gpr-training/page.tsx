@@ -32,11 +32,11 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'GPR Training | Ground Penetrating Radar Courses | Sygma Solutions',
+  title: 'GPR Training | Ground Penetrating Radar Courses | Sygma',
   description: 'Ground penetrating radar training from GPR specialists. Module 1 (theory + practical) and Module 2 (post-processing). MALA-certified delivery. UK-wide.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/gpr-training' },
   openGraph: {
-    title: 'GPR Training | Ground Penetrating Radar Courses | Sygma Solutions',
+    title: 'GPR Training | Ground Penetrating Radar Courses | Sygma',
     description: 'Ground penetrating radar training from GPR specialists. Module 1 (theory + practical) and Module 2 (post-processing). MALA-certified delivery. UK-wide.',
     url: 'https://sygma-solutions.com/courses/gpr-training',
     siteName: 'Sygma Solutions',

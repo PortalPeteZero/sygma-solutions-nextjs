@@ -7,7 +7,7 @@ import { cloudinaryOgImage } from '@/lib/metadata';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'HSG47 Explained: HSE Guidance on Underground Services | Sygma Solutions',
+  title: 'HSG47 Explained: HSE Guidance on Underground Services',
   description: "HSG47 is the HSE's guide on avoiding danger from underground services. What it requires, who it applies to, and how the guidance works in practice.",
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/hsg47-explained' },
   openGraph: {

@@ -81,11 +81,11 @@ const faqs = [
 
 
 export const metadata: Metadata = {
-  title: 'CAT and Genny Training Course | EUSR CAT1 & ProQual | On-Site UK',
+  title: 'CAT and Genny Training | EUSR CAT1 & ProQual | On-Site UK',
   description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/cat-and-genny-training' },
   openGraph: {
-    title: 'CAT and Genny Training Course | EUSR CAT1 & ProQual | On-Site UK',
+    title: 'CAT and Genny Training | EUSR CAT1 & ProQual | On-Site UK',
     description: 'On-site CAT and Genny training across the UK. EUSR CAT1 and ProQual CAT1 accredited, half or full day. Travel included. Independent. Book today.',
     url: 'https://sygma-solutions.com/courses/cat-and-genny-training',
     siteName: 'Sygma Solutions',
