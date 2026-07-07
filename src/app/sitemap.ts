@@ -133,6 +133,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /*  (utility/redirect pages -- not indexable content)                   */
   /* ------------------------------------------------------------------ */
 
+  // Attach lastModified to every entry so the sitemap carries a <lastmod>
+  // freshness signal (was missing entirely -> Google had no cue to re-crawl).
+  // `now` is the build/deploy time, refreshed on every deploy.
   return [
     ...staticPages,
     ...trainingHubs,
@@ -140,5 +143,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...knowledgeHubPages,
     ...locationPages,
     ...seoLandingPages,
-  ];
+  ].map((entry) => ({ lastModified: now, ...entry }));
 }
