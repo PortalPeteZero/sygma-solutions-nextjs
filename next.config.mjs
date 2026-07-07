@@ -487,6 +487,12 @@ const nextConfig = {
       // earlier comment in this file referencing it was wrong.
       { source: '/cable-avoidance-training-:city((?!london|birmingham|manchester|scotland).+)', destination: '/courses/cable-avoidance-training', permanent: true },
 
+      // === BARE COURSE SLUGS -> their /courses/ page (MUST precede the catch-all below) ===
+      // The natural/old URL for each course (e.g. /cat-and-genny-training, /eusr-cat1)
+      // was being swept to /knowledge-hub by the catch-all, or 404ing. Route each bare
+      // course slug to its real course page. Destination pages all return 200 (no loop).
+      { source: '/:slug(5-day-pas128-surveyor|advanced-em-locator|cable-avoidance-course-comparison|cable-avoidance-training|cat-and-genny-training|cat-manager|cat4-hsg47-awareness-online|eusr-cat1|eusr-cat1-cat2-combined|eusr-cat2-safe-dig|eusr-superuser|gpr-training|gs6-overhead-power-lines|hsg47-training|level-3-certificate|level-4-diploma|level-5-diploma|level-6-diploma|manufacturer-locator-training|online-level-3-diploma|online-level-5-diploma|pas128-awareness|plans-and-process|proqual-cat1-cat2-combined|proqualcat1-training|proqualcat1plus|proqualcat2|rqf-level-2-award|service-coordinator-usc|tsa-ices-utility-mapping|vscan-and-transmitter-training|zs-superuser-scottish-water)', destination: '/courses/:slug', permanent: true },
+
       // === PHASE 9.6: CATCH-ALL FOR REMAINING OLD WORDPRESS BLOG POSTS (MUST BE LAST) ===
       // NOTE: allow-list must include IndexNow verification key filename (93myyfw...). Anything else served from /public at root also needs an entry here.
       { source: '/:slug((?!courses|training|knowledge-hub|locations|case-studies|about|contact|pricing|osca|bespoke-training|accreditations|privacy-policy|thank-you|sitemap|design|utility-mapping|cable-avoidance|cat-and-genny|api|_next|articles|images|favicon|logo|icon|manifest|robots|downloads|category|services|mala-gpr|agendas|93myyfwu1byms8f99y6pj8xt57sx5rxu).+)', destination: '/knowledge-hub', permanent: true },
