@@ -34,11 +34,11 @@ const faqs = [
           ];
 
 export const metadata: Metadata = {
-  title: 'ProQual Level 3 Utility Mapping Certificate | Sygma Solutions',
+  title: 'ProQual Level 3 Utility Mapping Certificate | Sygma',
   description: 'ProQual Level 3 Certificate in Utility Mapping and Surveying. Ofqual-regulated, work-based assessment. Gateway to Level 4 and 5 Diploma. CITB approved.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/level-3-certificate' },
   openGraph: {
-    title: 'ProQual Level 3 Utility Mapping Certificate | Sygma Solutions',
+    title: 'ProQual Level 3 Utility Mapping Certificate | Sygma',
     description: 'ProQual Level 3 Certificate in Utility Mapping and Surveying. Ofqual-regulated, work-based assessment. Gateway to Level 4 and 5 Diploma. CITB approved.',
     url: 'https://sygma-solutions.com/courses/level-3-certificate',
     siteName: 'Sygma Solutions',

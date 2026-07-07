@@ -68,11 +68,11 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'EUSR CAT 1 Training UK | Locate Utility Services Course | Sygma',
+  title: 'EUSR CAT 1 Training UK | Locate Utility Services Course',
   description: 'EUSR CAT 1 training. The EUSR Locate Utility Services qualification for cable avoidance under HSG47. EUSR-registered provider, on-site UK-wide. Book today.',
   alternates: { canonical: 'https://sygma-solutions.com/courses/eusr-cat1' },
   openGraph: {
-    title: 'EUSR CAT 1 Training UK | Locate Utility Services Course | Sygma',
+    title: 'EUSR CAT 1 Training UK | Locate Utility Services Course',
     description: 'EUSR CAT 1 training. The EUSR Locate Utility Services qualification for cable avoidance under HSG47. EUSR-registered provider, on-site UK-wide. Book today.',
     url: 'https://sygma-solutions.com/courses/eusr-cat1',
     siteName: 'Sygma Solutions',
