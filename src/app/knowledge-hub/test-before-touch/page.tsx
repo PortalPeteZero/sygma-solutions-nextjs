@@ -30,12 +30,12 @@ const OG_IMAGE = 'https://sygma-solutions.com/articles/test-before-touch/hero.jp
 export const metadata: Metadata = {
   title: 'Test Before Touch: Voltsticks on Street Furniture | Sygma',
   description:
-    'Why every team working on electrically connected street furniture should adopt voltsticks. The risk, the fix, the benefits, and how to roll out Test Before Touch.',
+    'Why teams on electrically connected street furniture should adopt voltsticks: the risk, the fix, the benefits, and how to roll out Test Before Touch.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/test-before-touch' },
   openGraph: {
     title: 'Test Before Touch: Voltsticks on Street Furniture',
     description:
-      'Why every team working on electrically connected street furniture should adopt voltsticks. The risk, the fix, the benefits, and how to roll out Test Before Touch.',
+      'Why teams on electrically connected street furniture should adopt voltsticks: the risk, the fix, the benefits, and how to roll out Test Before Touch.',
     url: 'https://sygma-solutions.com/knowledge-hub/test-before-touch',
     siteName: SITE_NAME,
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Engineer testing a live street cabinet with a voltstick' }],

@@ -246,7 +246,7 @@ export default function AmlProSsiLocators() {
       />
 
       <InnerPageHero
-        image="/articles/aml-pro/aml-hero.jpg"
+        image="/articles/aml-pro/aml-hero.webp"
         alt="SubSurface Instruments' own marketing illustration of the AML Pro locating buried pipe"
         eyebrow="Knowledge Hub"
         headline="The AML Pro by SSI Locators: A Physics-Led Investigation"
