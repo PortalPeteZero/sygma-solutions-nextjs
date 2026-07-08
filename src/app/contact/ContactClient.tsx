@@ -197,7 +197,16 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <label htmlFor="enquiry_type" className="text-sm font-semibold text-foreground block mb-1.5">Training Interest *</label>
-                    <input id="enquiry_type" type="text" name="enquiry_type" required placeholder="e.g. CAT and Genny training, cable avoidance, GPR, PAS 128..." className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
+                    <select id="enquiry_type" name="enquiry_type" required defaultValue="" className="w-full border border-border rounded-lg px-4 py-2.5 text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40">
+                      <option value="" disabled>Please select a course…</option>
+                      <option>Genny and CAT training</option>
+                      <option>EUSR Cat 1</option>
+                      <option>Cat 2</option>
+                      <option>HSG47 Training</option>
+                      <option>Utility Mapping Training</option>
+                      <option>GPR Training</option>
+                      <option>ProQual Level 3-6 Utility Mapping Qualification</option>
+                    </select>
                   </div>
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
