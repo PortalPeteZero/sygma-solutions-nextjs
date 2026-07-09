@@ -370,8 +370,16 @@ export default function Page() {
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
         <div className="absolute inset-0 imgbox">
-          <FallbackImage src="cat-56" alt="Sygma trainer and delegates on combined Cat 1 and Cat 2 training" fill priority sizes="100vw" className="object-cover opacity-[0.65]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-foreground/25" />
+          {/* Two-image collage: locating with the Genny (day one) | the assessed live dig (day two) */}
+          <div className="absolute inset-0 grid grid-cols-5">
+            <div className="relative col-span-3">
+              <FallbackImage src="cat-50" alt="Locating a buried service with the Genny transmitter on day one" fill priority sizes="60vw" className="object-cover opacity-[0.7]" />
+            </div>
+            <div className="relative col-span-2 border-l-2 border-accent/60">
+              <FallbackImage src="dig-19-eus-cat2-safe-dig" alt="A safely exposed buried service on the day-two live dig" fill sizes="40vw" className="object-cover opacity-[0.7]" />
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/70 to-foreground/40" />
         </div>
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
         <div className="relative container mx-auto px-6 md:px-8 max-w-6xl py-8 md:py-12 animate-in fade-in slide-in-from-bottom-3 duration-700">
