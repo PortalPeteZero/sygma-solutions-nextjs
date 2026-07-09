@@ -57,7 +57,7 @@ export default function ProqualCat1Cat2Combined() {
         eyebrow="Utility Avoidance"
         headline="ProQual CAT1 & CAT2 Combined | 2-Day Training"
         sub="One programme. Two ProQual-recognised qualifications. Both CAT1 and CAT2 completed in two days at your site, with full theory, Genny-First practical, and a live safe dig assessment."
-        image="dig-11-proqual-cat1-cat2-combined"
+        image="cat-06-hsg47-training"
         alt="Combined ProQual CAT1 and CAT2 cable avoidance and safe digging training"
         breadcrumbs={[
           { label: "Training", to: "/courses" },

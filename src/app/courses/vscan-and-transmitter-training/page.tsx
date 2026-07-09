@@ -57,7 +57,7 @@ export default function VscanTransmitterTraining() {
         eyebrow="Utility Avoidance"
         headline="vScan & Transmitter Training Course"
         sub="Not just vScan & Tx equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
-        image="cat-73-vscan-and-transmitter-training"
+        image="cat-06-hsg47-training"
         alt="Vscan and transmitter training for underground utility signal tracing"
         breadcrumbs={[
           { label: "Training", to: "/courses" },

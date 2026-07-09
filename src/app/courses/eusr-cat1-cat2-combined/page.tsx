@@ -103,7 +103,7 @@ export default function EusCat12Combined() {
         eyebrow="EUSR Category 1 & 2 Combined Training"
         headline="EUSR CAT 1 & 2 Combined Training: Two Qualifications in Two Days"
         sub="Two days. Two EUSR-registered qualifications -- EUSR Category 1 (Locate Utility Services) and EUSR Category 2 (Implement Safe (Digging) Excavating Practices). Full theory, Genny-First practical, live safe dig assessment, HSG47-aligned, delivered nationwide UK at your site or at Sygma's Wigan training centre."
-        image="cat-01-eus-cat1-cat2-combined"
+        image="cat-06-hsg47-training"
         alt="EUSR CAT 1 and CAT 2 Combined Training -- Locate Utility Services and Implement Safe (Digging) Excavating Practices (HSG47), Sygma Solutions"
         breadcrumbs={[
           { label: "Training", to: "/courses" },
