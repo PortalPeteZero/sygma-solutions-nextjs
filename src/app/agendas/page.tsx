@@ -89,6 +89,16 @@ const superUser: AgendaCard[] = [
   },
 ];
 
+const proqualLevel2: AgendaCard[] = [
+  {
+    href: '/agendas/proqual-level-2-award',
+    eyebrow: 'Two days',
+    title: <>ProQual Level 2 Award <span className="text-accent">in Utility Avoidance</span></>,
+    strapline: 'Advanced utility location · a regulated QCF Level 2 qualification',
+    chips: ['ProQual Level 2', 'QCF Level 2', 'HSG47 & PAS128'],
+  },
+];
+
 function AgendaGrid({ cards }: { cards: AgendaCard[] }) {
   return (
     <div className="grid md:grid-cols-2 gap-5">
@@ -179,6 +189,16 @@ export default function Page() {
           </div>
           <AgendaGrid cards={superUser} />
         </div>
+      </section>
+
+      {/* ============ PROQUAL LEVEL 2 AWARD ============ */}
+      <section className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16">
+        <div className="mb-7">
+          <Eyebrow>Regulated qualification — two days</Eyebrow>
+          <h2 className="mt-3 text-3xl md:text-4xl font-black text-foreground tracking-tight">ProQual Level 2 Award</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl text-sm leading-relaxed">Advanced utility location training leading to the nationally recognised, regulated ProQual (QCF) Level 2 Award in Utility Avoidance — with additional content that meets and exceeds the qualification.</p>
+        </div>
+        <AgendaGrid cards={proqualLevel2} />
       </section>
 
       {/* ============ CTA ============ */}
