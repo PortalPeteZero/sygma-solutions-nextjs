@@ -5,14 +5,24 @@ import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
 import AccreditationStrip from '@/components/AccreditationStrip';
 
-/* Shared body for the 2-day Super User agenda pages (Coach + Damage
-   Investigation). Same course, headlined differently — hero comes in as props. */
+/* Shared body for the two 2-day Super User agenda pages. Same base course, two variants:
+   - 'coach'  → the Super User Locator (Coach) agenda, verbatim from the official PDF: full
+                classroom + practical detail, including the coaching / assess-others content.
+   - 'damage' → the Super User Damage Investigations agenda: the same base course with the
+                coaching content removed, and the strike-investigation + CAT data-download
+                content expanded into their own detailed sections.
+   All content is grounded in the Super User Locator Course Agenda PDF (objectives, classroom,
+   practical, assessment) — the damage variant only re-weights that same vetted content. */
 
-const covers = ['2 Day Super User Coach', 'Super User Damage Investigation', 'Super User Locator', 'Locator Coach'];
+export type SuperUserVariant = 'coach' | 'damage';
+
+type ThItem = { t: string; d: string };
+type Group = { theme: string; items: ThItem[] };
+type Module = { no: string; title: string; tag: string; blurb: string; img: string; items: string[] };
 
 const spec = [
-  { k: 'Duration', v: 'Two days', s: 'Classroom + practical' },
-  { k: 'Group size', v: 'Max 8', s: 'Per trainer' },
+  { k: 'Duration', v: 'Two days', s: 'Classroom + practical, flexible' },
+  { k: 'Group size', v: 'Max 6', s: 'Per trainer' },
   { k: 'Delivery', v: 'On-site UK-wide', s: 'or our Wigan centre' },
   { k: 'Prerequisite', v: 'EUS Cat 1', s: 'or equivalent (not Cat 2)' },
 ];
@@ -22,82 +32,164 @@ const cert = [
   { name: 'EUSR', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
 ];
 
-type ThItem = { t: string; d: string };
-const theoryGroups: { theme: string; items: ThItem[] }[] = [
+/* ===== Classroom theory — shared groups (both variants) ===== */
+const sharedTheory: Group[] = [
   {
     theme: 'Risk, legislation & safe digging',
     items: [
-      { t: 'Underground service strikes — the risks & HSG47', d: 'The real risks of utility strikes and how the course content maps to HSG47, with company-specific examples of strikes and the lessons learned.' },
-      { t: 'Permit to dig', d: 'How to complete and sign off a permit to dig, and where it sits in the company\'s safe system of work.' },
-      { t: 'Company policy & safe-dig policy', d: 'How the techniques apply to the company\'s own policies and safe-dig procedures.' },
+      { t: 'Underground service strikes — the risks & HSG47', d: 'The real risks of striking a buried service, and how the course content maps to HSG47.' },
+      { t: 'Permit to dig', d: 'How to complete and sign off a permit to dig, and where it sits within the company\'s safe system of work.' },
+      { t: 'Company policy & safe-dig policy', d: 'How the techniques apply to the company\'s own policies and safe-digging procedures.' },
+      { t: 'Company examples of strikes & lessons learned', d: 'Real, company-specific examples of utility strikes worked through in the classroom, and the lessons taken from each.' },
     ],
   },
   {
-    theme: 'Plans & detection theory',
+    theme: 'Plans & survey planning',
     items: [
       { t: 'Buried Service Plans (STATS)', d: 'Interpreting different plan types — including their inaccuracies and limitations — and using the plans to plan the correct detection technique.' },
-      { t: 'Electromagnetic theory & myth-busting', d: 'How a pipe & cable locator works, the theory and limitations, tips & tricks, and an honest account of what the equipment can and cannot locate.' },
-      { t: 'Controls & operation, Genny-first', d: 'Correct use of the locator and signal transmitter in all modes, with strong emphasis on transmitter (Genny) use — and how to promote the Genny-first message with site teams.' },
-      { t: 'Signal interpretation & distortion', d: 'Interpreting the signal, locating joints and changes of direction/depth, and understanding signal distortion and its effect on location accuracy.' },
-      { t: 'Transmitter techniques', d: 'Dual-frequency applications and capacitance for small/non-earthed cables; effective earthing and earth positioning; blind induction search and effective nulling; depth estimation.' },
-      { t: 'Complex utility networks', d: 'Worked examples of complex networks and how to plan and perform the survey across them.' },
+      { t: 'Planning the detection technique', d: 'How to use the plans to plan the correct utility detection technique for the site in front of you.' },
+      { t: 'Complex utility networks', d: 'Worked examples of complex networks and how to plan and perform the utility survey across them.' },
     ],
   },
   {
-    theme: 'CAT data download & analysis',
+    theme: 'Advanced detection theory & equipment',
     items: [
-      { t: 'CAT Manager — getting the data', d: 'How to get the recorded data off the CAT and export it to CSV and KML files.' },
-      { t: 'Analysis tools & reports', d: 'Importing data into the CAT Analysis tool and CAT Manager online, and creating reports from it.' },
-      { t: 'Reading the data', d: 'Analysing raw data — usage patterns, and spotting good and bad practice in how the kit is being used on site.' },
-    ],
-  },
-  {
-    theme: 'Investigation & coaching',
-    items: [
-      { t: 'Utility strike investigation', d: 'How to conduct a utility-strike investigation and complete a USAG cable-strike form.' },
-      { t: 'Coaching others', d: 'Coaching tips, assessment planning and structure — how to support and assess site operatives effectively.' },
+      { t: 'Electromagnetic theory & myth-busting', d: 'How a pipe & cable locator works, the theory and its limitations, tips & tricks, and an honest account of what the equipment can and cannot locate.' },
+      { t: 'Promoting Genny-first with site teams', d: 'How to effectively promote the message of Genny-first with the teams you support.' },
+      { t: 'Controls & operation', d: 'Correct use of the cable locator and signal transmitter in all modes, with strong emphasis on transmitter (Genny) use.' },
+      { t: 'Signal interpretation', d: 'Interpreting the signal, and locating service joints and changes of direction and depth.' },
+      { t: 'Signal distortion', d: 'Signal distortion and its effects on location accuracy.' },
+      { t: 'Transmitter techniques', d: 'Dual-frequency applications and capacitance for small or non-earthed cables; effective earthing and earth positioning; blind induction search and effective nulling of services.' },
+      { t: 'Depth estimation', d: 'How to perform depth readings and how to test the results.' },
     ],
   },
 ];
 
-type Module = { no: string; title: string; tag: string; blurb: string; img: string; items: string[] };
-const modules: Module[] = [
-  {
-    no: '01', title: 'Survey & location, all modes', tag: 'Genny first', img: 'cat-09',
-    blurb: 'Advanced, confident use of the kit across a full utility survey — led with the Genny.',
-    items: [
-      'Use service plans + visual checks to establish routes before any work',
-      'Correct use of the locator & transmitter in all modes; benefits of the combination & dual frequency',
-      'Conduct a utility survey starting with the Genny',
-      'Street-light locating; LV service & main tracing, including joints',
-      'HV detection; communication cable location',
-      'Induction — blind sweeps and nulling out',
-      'Capacitance techniques; the effect of repositioning the Genny earth',
-    ],
-  },
-  {
-    no: '02', title: 'Assessment & coaching', tag: 'Coach & assess', img: 'cat-16',
-    blurb: 'The Super User difference — proving you can locate in your own right, then coach and assess others.',
-    items: [
-      'Complete your own POW risk assessment before the practical',
-      'Sygma Standard practical assessment — locating services in your own right',
-      'Coach and assess each other, with Sygma supporting individually (ideally on working teams nearby)',
-      'Problem scenarios found on site and resolved',
-      'Coaching competency checks — practical',
-      'Coaching tips, assessment planning and structure',
-    ],
-  },
-];
+/* CAT data download & analysis — present in FULL for both variants (verbatim from the PDF) */
+const dataGroup: Group = {
+  theme: 'CAT data download & analysis',
+  items: [
+    { t: 'CAT Manager — getting the data', d: 'How to get the recorded data off the CAT.' },
+    { t: 'Exporting the data', d: 'Exporting the data to CSV and KML files.' },
+    { t: 'CAT Analysis tool & reports', d: 'Importing the data into the CAT Analysis tool and creating reports.' },
+    { t: 'CAT Manager Online & reports', d: 'Importing data into CAT Manager Online and creating reports.' },
+    { t: 'Reading the data', d: 'Analysing raw data — looking at usage patterns and spotting good and bad practice in how the kit is being used on site.' },
+  ],
+};
+
+/* Fifth theory group differs by variant */
+const coachG5: Group = {
+  theme: 'Investigation & coaching',
+  items: [
+    { t: 'Utility strike investigation & the USAG form', d: 'How to conduct a utility-strike investigation and complete a USAG cable-strike form.' },
+    { t: 'Coaching others', d: 'Coaching tips, and assessment planning and structure — how to support and assess site operatives effectively.' },
+  ],
+};
+const damageG5: Group = {
+  theme: 'Utility strike investigation',
+  items: [
+    { t: 'Conducting a strike investigation', d: 'How to conduct a utility-strike investigation — establishing what happened on site and why.' },
+    { t: 'Completing the USAG strike form', d: 'Completing the USAG utility strike report form accurately and in full.' },
+    { t: 'Data as evidence', d: 'Using downloaded CAT data and usage patterns as evidence — spotting the good and bad practice behind an incident.' },
+    { t: 'Lessons learned', d: 'Turning findings into lessons learned and feeding them back into safe-dig practice to prevent recurrence.' },
+  ],
+};
+
+const theoryFor = (v: SuperUserVariant): Group[] =>
+  v === 'coach'
+    ? [...sharedTheory, dataGroup, coachG5]
+    : [...sharedTheory, dataGroup, damageG5];
+
+/* ===== Practical — module 1 is shared; module 2 differs by variant ===== */
+const locationModule: Module = {
+  no: '01', title: 'Utility survey & location, all modes', tag: 'Genny first', img: 'cat-09',
+  blurb: 'Advanced, confident use of the kit across a full utility survey — led with the Genny, on real ground.',
+  items: [
+    'Use service plans and existing site information to establish routes, with visual checks before any work begins',
+    'Correct use of the equipment in all modes, confirming and locating buried mains & services from the plans and visual inspection',
+    'The benefits of always using the cable locator & signal transmitter combination, including dual frequency where applicable',
+    'Conduct a utility survey starting with the Genny',
+    'Street-light locating',
+    'LV service and main tracing, including the location of joints',
+    'HV detection',
+    'Communication cable location',
+    'Induction — including blind sweeps and nulling out',
+    'Applying capacitance techniques',
+    'The effect of repositioning the Genny earth',
+    'A practical assessment on each delegate',
+  ],
+};
+const coachModule: Module = {
+  no: '02', title: 'Coaching & assessing others', tag: 'Coach & assess', img: 'cat-16',
+  blurb: 'The Super User difference — proving you can locate in your own right, then coach and assess others.',
+  items: [
+    'Delegates coach and assess each other, with Sygma supporting individually — ideally on working teams nearby',
+    'More hands-on time with the equipment, with individual support',
+    'Complete assessment forms and score each other',
+    'Coaching tips, and assessment planning and structure',
+    'Problem scenarios found on site and resolved',
+    'Coaching competency checks — practical',
+  ],
+};
+const damageModule: Module = {
+  no: '02', title: 'Strike investigation & data analysis', tag: 'Investigate & analyse', img: 'cat-50',
+  blurb: 'Turning the kit and its data into evidence — download, analyse, and work an investigation to a completed USAG form.',
+  items: [
+    'Download the recorded data off the CAT and export it to CSV and KML files',
+    'Import the data into the CAT Analysis tool and CAT Manager Online, and create reports',
+    'Analyse raw data — usage patterns, and good and bad practice on site',
+    'Work a utility strike investigation from the evidence',
+    'Complete a USAG utility strike report form',
+    'Problem scenarios found on site and resolved',
+  ],
+};
+
+const modulesFor = (v: SuperUserVariant): Module[] =>
+  v === 'coach' ? [locationModule, coachModule] : [locationModule, damageModule];
+
+/* ===== Objectives (from the PDF) — flat list, coaching objective dropped on the damage variant ===== */
+const objectivesFor = (v: SuperUserVariant): string[] => {
+  const base = [
+    'Understand the risks related to utility strikes and HSG47',
+    'Conduct a utility survey pre-excavation',
+    'Download CAT data, and export and analyse it',
+    'Understand how the data applies to site surveying',
+    'Complete a permit to dig',
+    'Be practically competent in the use of location equipment',
+    'Support teams on site in utility location and avoidance',
+  ];
+  const coachOnly = ['Coach and complete a documented assessment on site operatives'];
+  const tail = [
+    'Complete on-site assessments in utility location and avoidance',
+    'Conduct a utility strike investigation and complete a USAG cable strike form',
+    'Advanced knowledge in the theory of Genny and CAT operation',
+    'Know what to look for in a site survey',
+  ];
+  return v === 'coach' ? [...base, ...coachOnly, ...tail] : [...base, ...tail];
+};
+
+/* ===== Assessment (from the PDF) — Assessment 2 (coaching) dropped on the damage variant ===== */
+const assessmentFor = (v: SuperUserVariant): string[] => {
+  const head = [
+    'A knowledge-based assessment in the classroom',
+    'Each delegate completes their own POW risk assessment before the practical',
+    'Assessment 1 — the Sygma Standard practical: locating services in their own right',
+  ];
+  const coachStep = ['Assessment 2 — coaching and assessing others effectively, using the Assessment 1 document alongside the Sygma coaching sheet'];
+  const damageStep = ['A worked utility strike investigation, evidenced with CAT data and a completed USAG form'];
+  const tail = ['A permit to break ground — customer-specific where possible, otherwise the Sygma permit'];
+  return v === 'coach' ? [...head, ...coachStep, ...tail] : [...head, ...damageStep, ...tail];
+};
 
 const accred = ['HSG47', 'EUS Cat 1', 'USAG'];
 
 const requirements = [
   'Each delegate must already hold EUS Cat 1 (or equivalent) — Cat 2 is not required',
   'STATS plans (buried service drawings) for the practical site — Sygma can supply for an agreed cost',
-  'Ideally, access to working teams / live sites nearby for the coaching & assessment element',
+  'Ideally, access to working teams or live sites nearby for the on-site assessment element',
   'Delegates ideally bring their own kit; Sygma bring enough Genny4 & C.A.T.4+ for a standard course (non-C.A.T.4+ kit: 1 locator per 3 people)',
   'On-site parking suitable for a transit-sized van',
-  'A room that seats all delegates + trainer, with welfare facilities and a wall/screen for a projector (or our Wigan centre)',
+  'A room that seats all delegates and the trainer, with welfare facilities and a wall or screen for a projector (or our Wigan centre)',
   'Appropriate PPE per national, company and H&S requirements',
   'A practical area with numerous buried metallic utilities nearby',
   'Host risk assessment of the site and training room; brief the trainer on any risks',
@@ -105,6 +197,7 @@ const requirements = [
 ];
 
 const contents = [
+  { id: 'objectives', label: 'Objectives' },
   { id: 'certificates', label: 'Certificates' },
   { id: 'classroom', label: 'Classroom' },
   { id: 'practical', label: 'Practical' },
@@ -112,19 +205,33 @@ const contents = [
   { id: 'assessment', label: 'Assessment' },
 ];
 
-export type CourseAgendaHero = {
+export type SuperUserHero = {
+  variant: SuperUserVariant;
   h1: React.ReactNode;
   strapline: React.ReactNode;
+  covers: string[];
+  lead: string;
+  objectiveHeadline: string;
   schemaName: string;
+  schemaDescription: string;
   schemaUrl: string;
   breadcrumbLabel: string;
 };
 
-export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaUrl, breadcrumbLabel }: CourseAgendaHero) {
+export default function SuperUserAgendaBody({ variant, h1, strapline, covers, lead, objectiveHeadline, schemaName, schemaDescription, schemaUrl, breadcrumbLabel }: SuperUserHero) {
+  const theoryGroups = theoryFor(variant);
+  const modules = modulesFor(variant);
+  const objectives = objectivesFor(variant);
+  const assessment = assessmentFor(variant);
+  const practicalHeading = variant === 'coach' ? 'Practical & coaching' : 'Practical & investigation';
+  const practicalBlurb = variant === 'coach'
+    ? 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on proving competence both as an operator and as a coach.'
+    : 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on turning the kit and its data into evidence for a strike investigation.';
+
   return (
     <div className="agenda-doc">
       <style dangerouslySetInnerHTML={{ __html: PRINT_CSS }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: schemaName, description: 'Two-day Super User utility location & avoidance training, building on EUS Cat 1. Advanced location, CAT data analysis, on-site coaching and competency assessment, and utility-strike investigation. In-house or EUSR certificate.', url: schemaUrl, credential: 'Sygma Super User / EUSR', duration: '2 days', mode: ['onsite'] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: schemaName, description: schemaDescription, url: schemaUrl, credential: 'Sygma Super User / EUSR', duration: '2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Course Agendas', to: '/agendas' }, { label: breadcrumbLabel }]) }} />
 
       {/* ============ HERO ============ */}
@@ -143,7 +250,7 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
           <div className="inline-flex items-center gap-3 rounded-md border border-accent/50 bg-accent/10 px-4 py-2">
             <span className="text-xs font-black uppercase tracking-[0.28em] text-accent">Course Agenda</span>
             <span className="h-3.5 w-px bg-accent/40" />
-            <span className="text-[11px] font-bold uppercase tracking-widest text-white/60">Two-day course outline</span>
+            <span className="text-[11px] font-bold uppercase tracking-widest text-white/60">Two-day course outline · in full</span>
           </div>
           <h1 className="mt-5 text-4xl md:text-6xl font-black leading-[1.0] tracking-tight max-w-4xl">{h1}</h1>
           <p className="hero-strapline mt-4 text-xl md:text-3xl font-bold text-white tracking-tight">{strapline}</p>
@@ -155,6 +262,7 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
               ))}
             </div>
           </div>
+          <p className="mt-5 text-base text-white/70 max-w-2xl leading-relaxed print:hidden">{lead}</p>
           <div className="mt-6 flex flex-wrap items-center gap-3 print:hidden">
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-accent text-white font-bold text-sm hover:bg-accent/90 transition-colors">Enquire about this course →</Link>
             <PrintButton label="Save as PDF" />
@@ -188,12 +296,29 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
       <section className="container mx-auto px-6 md:px-8 max-w-6xl pt-10">
         <div className="flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.06] px-5 py-4">
           <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
-          <p className="text-sm text-foreground leading-relaxed"><span className="font-bold">Prerequisite:</span> delegates must already hold <span className="font-bold">EUS Cat 1 (or equivalent)</span>. This is an advanced course that builds on Cat 1 — <span className="font-bold">Cat 2 is not required</span>.</p>
+          <p className="text-sm text-foreground leading-relaxed"><span className="font-bold">Prerequisite:</span> each delegate must already hold <span className="font-bold">EUS Cat 1 (or equivalent)</span>. This is an advanced course that builds on Cat 1 — <span className="font-bold">Cat 2 is not required</span>. Maximum <span className="font-bold">6 delegates</span> per trainer.</p>
         </div>
       </section>
 
+      {/* ============ OBJECTIVES ============ */}
+      <section id="objectives" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-14 scroll-mt-24">
+        <div className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
+          <Eyebrow>Course objectives</Eyebrow>
+          <p className="mt-4 text-2xl md:text-3xl font-black text-foreground leading-snug tracking-tight">{objectiveHeadline}</p>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Over two flexible days of classroom and practical, alternating between inside and outside time to find the right mix, every delegate will be able to:</p>
+        </div>
+        <ul className="mt-8 grid md:grid-cols-2 gap-x-10 gap-y-2 print-cols-2">
+          {objectives.map((o, i) => (
+            <li key={i} className="flex gap-3 text-foreground/80 leading-relaxed border-b border-border pb-2.5">
+              <span className="shrink-0 mt-0.5 text-accent font-black">✓</span>
+              <span className="text-[15px]">{o}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* ============ CERTIFICATES ============ */}
-      <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24 mt-10">
+      <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24">
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="mb-6">
             <Eyebrow>Certificate options</Eyebrow>
@@ -218,22 +343,13 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
         </div>
       </section>
 
-      {/* ============ OBJECTIVE ============ */}
-      <section className="container mx-auto px-6 md:px-8 max-w-6xl pt-14 md:pt-16">
-        <div className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
-          <Eyebrow>What delegates leave able to do</Eyebrow>
-          <p className="mt-4 text-2xl md:text-3xl font-black text-foreground leading-snug tracking-tight">Locate in their own right — then coach, assess and investigate.</p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">Over two flexible days of classroom and practical, delegates gain advanced Genny and CAT theory, become practically competent across all modes, learn to download and analyse CAT data, and develop the skills to support, coach and assess site operatives — and to investigate a utility strike and complete a USAG form.</p>
-        </div>
-      </section>
-
       {/* ============ CLASSROOM ============ */}
       <section id="classroom" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-16 scroll-mt-24">
         <div className="grid md:grid-cols-12 gap-10 items-center mb-10">
           <div className="md:col-span-7">
             <Eyebrow>In the classroom</Eyebrow>
             <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Classroom</h2>
-            <p className="mt-5 text-lg text-muted-foreground leading-relaxed max-w-xl">Advanced theory across the kit, the data and the legislation — plus the investigation and coaching knowledge that defines a Super User.</p>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed max-w-xl">Advanced theory across the kit, the data and the legislation — the full depth a Super User needs before supporting, assessing and investigating on live sites.</p>
           </div>
           <div className="md:col-span-5 imgbox">
             <div className="rounded-2xl overflow-hidden border border-border shadow-sm aspect-[4/3] relative">
@@ -248,7 +364,7 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
                 <span className="text-sm font-black text-accent tabular-nums">{String(gi + 1).padStart(2, '0')}</span>
                 <h3 className="text-sm md:text-base font-black uppercase tracking-[0.18em] text-foreground whitespace-nowrap">{g.theme}</h3>
                 <span className="flex-1 h-px bg-border" />
-                <span className="text-xs font-bold text-muted-foreground">{g.items.length} topics</span>
+                <span className="text-xs font-bold text-muted-foreground">{g.items.length} {g.items.length === 1 ? 'topic' : 'topics'}</span>
               </div>
               {/* Agenda-style: full-width stacked rows, never side-by-side cards. print-cols-2 keeps the PDF compact. */}
               <div className="grid grid-cols-1 gap-3 print-cols-2">
@@ -274,8 +390,8 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="max-w-2xl mb-10">
             <Eyebrow>On the ground · the practical</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Practical & coaching</h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed">A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on proving competence both as an operator and as a coach.</p>
+            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">{practicalHeading}</h2>
+            <p className="mt-4 text-muted-foreground leading-relaxed">{practicalBlurb}</p>
           </div>
           <div className="space-y-6">
             {modules.map((m, idx) => (
@@ -330,12 +446,20 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
           <div>
             <Eyebrow>Assessment</Eyebrow>
             <h2 className="mt-3 text-2xl font-black tracking-tight">Assessed continuously across the two days</h2>
-            <p className="mt-3 text-white/70 leading-relaxed text-sm">Delegates complete several assessments: a knowledge-based paper; their own POW risk assessment before the practical; the Sygma Standard practical (locating services in their own right); a coaching-and-assessing-others assessment using the Sygma coaching sheet; and a permit to break ground (customer-specific where possible, otherwise the Sygma permit).</p>
+            <p className="mt-3 text-white/70 leading-relaxed text-sm">Delegates complete several assessments across the two days:</p>
+            <ul className="mt-5 space-y-2.5">
+              {assessment.map((a, i) => (
+                <li key={i} className="flex gap-2.5 text-sm text-white/80 leading-snug">
+                  <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                  <span>{a}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <div>
             <Eyebrow>Accreditation &amp; standards</Eyebrow>
-            <h2 className="mt-3 text-2xl font-black tracking-tight">Sygma Super User, or EUSR-registered</h2>
-            <p className="mt-3 text-white/70 leading-relaxed text-sm">Builds on EUS Cat 1, to HSG47 — covering advanced location, CAT data analysis, on-site coaching and competency assessment, and utility-strike investigation:</p>
+            <h2 className="mt-3 text-2xl font-black tracking-tight">Builds on EUS Cat 1, to HSG47</h2>
+            <p className="mt-3 text-white/70 leading-relaxed text-sm">An advanced competency course covering advanced location, CAT data analysis, and utility-strike investigation to the USAG standard:</p>
             <div className="chip-group mt-5 flex flex-wrap gap-2.5">
               {accred.map((a) => (
                 <span key={a} className="font-mono text-xs font-bold text-white/90 bg-white/[0.06] border border-white/15 rounded px-3 py-1.5">{a}</span>

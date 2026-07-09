@@ -21,9 +21,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <SuperUserAgendaBody
+      variant="coach"
       h1={<>2 Day Super User <span className="text-accent">Coach</span></>}
       strapline={<>Advanced locator competency <span className="text-accent">·</span> coaching &amp; assessing others</>}
+      covers={['Super User Locator', '2 Day Super User Coach', 'Locator Coach', 'Advanced CAT & Genny']}
+      lead="The full two-day Super User Locator (Coach) agenda in one document — advanced Genny and CAT theory, CAT data download and analysis, and the coaching and assessment skills to support and sign off site operatives. Every classroom and practical topic is set out below."
+      objectiveHeadline="Locate in their own right, then coach, assess and investigate."
       schemaName="2 Day Super User Coach — Utility Location & Avoidance"
+      schemaDescription="Two-day Super User Locator (Coach) course building on EUS Cat 1. Advanced location, CAT data download and analysis, on-site coaching and competency assessment of operatives, and utility-strike investigation. In-house or EUSR certificate."
       schemaUrl="/agendas/super-user-coach"
       breadcrumbLabel="2 Day Super User Coach"
     />

@@ -21,9 +21,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <SuperUserAgendaBody
+      variant="damage"
       h1={<>2 Day Super User <span className="text-accent">Damage Investigations</span></>}
       strapline={<>Advanced locator competency <span className="text-accent">·</span> strike investigation &amp; data analysis</>}
+      covers={['Super User Locator', 'Damage Investigation', 'Utility Strike Investigation', 'CAT Data Analysis']}
+      lead="The full two-day Super User Damage Investigations agenda in one document — advanced Genny and CAT theory, in-depth CAT data download and analysis, and conducting a utility strike investigation to a completed USAG form. Every classroom and practical topic is set out below."
+      objectiveHeadline="Locate in their own right, then investigate strikes and analyse the data."
       schemaName="2 Day Super User Damage Investigations — Utility Location & Avoidance"
+      schemaDescription="Two-day Super User Damage Investigations course building on EUS Cat 1. Advanced location, in-depth CAT data download and analysis, and utility-strike investigation with the USAG form. In-house or EUSR certificate."
       schemaUrl="/agendas/super-user-damage-investigation"
       breadcrumbLabel="2 Day Super User Damage Investigations"
     />
