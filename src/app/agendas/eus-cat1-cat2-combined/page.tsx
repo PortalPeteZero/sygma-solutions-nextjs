@@ -142,6 +142,21 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ============ ACCREDITATIONS (test strip) ============ */}
+      <section className="border-b border-border bg-muted/30 py-7 print:hidden">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+          <p className="text-center text-[11px] font-black uppercase tracking-[0.22em] text-muted-foreground mb-6">Accredited &amp; approved by</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/accreditations/eusr-approved-provider.webp" alt="EUSR Approved Provider" className="h-11 md:h-12 w-auto" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/accreditations/proqual.png" alt="ProQual accredited" className="h-16 md:h-20 w-auto" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/accreditations/citb-ato.jpg" alt="CITB Approved Training Organisation" className="h-12 md:h-14 w-auto" />
+          </div>
+        </div>
+      </section>
+
       {/* ============ STICKY CONTENTS ============ */}
       <nav className="sticky top-[88px] md:top-[100px] z-30 bg-background/90 backdrop-blur border-b border-border print:hidden">
         <div className="container mx-auto px-6 md:px-8 max-w-6xl flex gap-6 overflow-x-auto text-sm font-bold text-muted-foreground">
