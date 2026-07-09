@@ -94,8 +94,7 @@ const requirements = [
 const accred = ['ProQual', 'QCF Level 2', 'HSG47', 'PAS128'];
 
 const contents = [
-  { id: 'objectives', label: 'Objectives' },
-  { id: 'certificate', label: 'Qualification' },
+  { id: 'overview', label: 'Overview' },
   { id: 'day1', label: 'Day 1' },
   { id: 'day2', label: 'Day 2' },
   { id: 'requirements', label: 'Requirements' },
@@ -221,39 +220,43 @@ export default function Page() {
         </div>
       </nav>
 
-      {/* ============ OBJECTIVES ============ */}
-      <section id="objectives" className="container mx-auto px-6 md:px-8 max-w-6xl py-12 md:py-14 scroll-mt-24">
-        <div className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
-          <Eyebrow>Above the standard</Eyebrow>
-          <p className="mt-4 text-2xl md:text-3xl font-black text-foreground leading-snug tracking-tight">A regulated qualification, delivered above the minimum standard.</p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">This course achieves the nationally recognised QCF Level 2 in Utility Location and Avoidance. Sygma include additional advanced content in both the theory and the practical that meets and exceeds the requirements of the qualification. By the end, every delegate will:</p>
-        </div>
-        <ul className="mt-8 grid md:grid-cols-2 gap-x-10 gap-y-2 print-cols-2">
-          {objectives.map((o, i) => (
-            <li key={i} className="flex gap-3 text-foreground/80 leading-relaxed border-b border-border pb-2.5">
-              <span className="shrink-0 mt-0.5 text-accent font-black">✓</span>
-              <span className="text-[15px]">{o}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {/* ============ CERTIFICATE (single route) ============ */}
-      <section id="certificate" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24">
-        <div className="container mx-auto px-6 md:px-8 max-w-6xl grid md:grid-cols-2 gap-10 items-center print-cols-2">
-          <div>
-            <Eyebrow>The qualification</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">ProQual Level 2 Award in Utility Avoidance</h2>
-            <p className="mt-4 text-white/70 leading-relaxed text-sm max-w-xl">A single, regulated certification route. On passing both the knowledge-based and practical assessments, delegates achieve the ProQual (QCF) Level 2 Award in Utility Location and Avoidance — a nationally recognised qualification.</p>
-          </div>
-          <div className="cert-card rounded-2xl border border-white/10 bg-white/[0.04] p-7 pb-keep">
-            <div className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/accreditations/proqual.png" alt="ProQual accredited centre" className="h-16 w-auto" />
+      {/* ============ OVERVIEW BANNER: qualification + objectives + certification ============ */}
+      <section id="overview" className="container mx-auto px-6 md:px-8 max-w-6xl py-9 md:py-11 scroll-mt-24">
+        <div className="rounded-2xl border border-border bg-card overflow-hidden pb-keep">
+          <div className="grid md:grid-cols-12">
+            {/* left: qualification + objectives */}
+            <div className="md:col-span-8 p-6 md:p-8 border-b md:border-b-0 md:border-r border-border">
+              <Eyebrow>The qualification</Eyebrow>
+              <h2 className="mt-2 text-xl md:text-2xl font-black tracking-tight text-foreground leading-snug">ProQual Level 2 Award in Utility Avoidance</h2>
+              <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">A nationally recognised, regulated QCF Level 2 qualification. Sygma include additional advanced content in both the theory and the practical that meets and exceeds the requirements of the award.</p>
+              <p className="mt-5 text-[11px] font-black uppercase tracking-widest text-muted-foreground">Course objectives</p>
+              <ul className="mt-3 grid sm:grid-cols-2 gap-x-8 gap-y-2 print-cols-2">
+                {objectives.map((o, i) => (
+                  <li key={i} className="flex gap-2.5 text-foreground/80 leading-snug">
+                    <span className="shrink-0 mt-0.5 text-accent font-black">✓</span>
+                    <span className="text-[13.5px]">{o}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certification fee</p>
-            <p className="mt-1 text-3xl font-black text-accent">£35 <span className="text-sm font-bold text-white/50">per person</span></p>
-            <p className="mt-3 text-sm text-white/70 leading-relaxed">The ProQual registration and certification fee, charged per person. It is separate from and on top of the course fee, which is quoted separately based on your numbers and how the course is delivered.</p>
+            {/* right: certification */}
+            <div className="md:col-span-4 p-6 md:p-8 bg-muted/40">
+              <div className="flex items-center gap-3.5">
+                <div className="rounded-lg bg-white p-2.5 shrink-0 border border-border">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/accreditations/proqual.png" alt="ProQual accredited centre" className="h-12 w-auto" />
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-accent">Certification</p>
+                  <p className="text-sm font-black text-foreground leading-tight mt-0.5">Single regulated route</p>
+                </div>
+              </div>
+              <div className="mt-4 flex items-baseline gap-2">
+                <span className="text-3xl font-black text-accent">£35</span>
+                <span className="text-xs font-bold text-muted-foreground">per person</span>
+              </div>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">The ProQual registration and certification fee, per person. Separate from and on top of the course fee, which is quoted on your numbers and delivery.</p>
+            </div>
           </div>
         </div>
       </section>
