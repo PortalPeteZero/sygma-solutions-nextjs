@@ -369,17 +369,20 @@ export default function Page() {
 
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
-        <div className="absolute inset-0 imgbox">
-          {/* Two-image collage: locating with the Genny (day one) | the assessed live dig (day two) */}
-          <div className="absolute inset-0 grid grid-cols-5">
-            <div className="relative col-span-3">
-              <FallbackImage src="cat-50" alt="Locating a buried service with the Genny transmitter on day one" fill priority sizes="60vw" className="object-cover opacity-[0.7]" />
+        <div className="absolute inset-y-0 right-0 w-full md:w-[48%] imgbox">
+          {/* Right-side collage — locating with the Genny (top) · the assessed live dig (bottom).
+              Kept on the right and bright so the Genny is clearly visible; text stays on the dark left. */}
+          <div className="absolute inset-0 grid grid-rows-2">
+            <div className="relative border-b-2 border-accent/50">
+              <FallbackImage src="cat-50" alt="Locating a buried service with the Genny transmitter" fill priority sizes="(max-width:768px) 100vw, 48vw" className="object-cover" />
             </div>
-            <div className="relative col-span-2 border-l-2 border-accent/60">
-              <FallbackImage src="dig-19-eus-cat2-safe-dig" alt="A safely exposed buried service on the day-two live dig" fill sizes="40vw" className="object-cover opacity-[0.7]" />
+            <div className="relative">
+              <FallbackImage src="dig-11-eus-cat2-safe-dig" alt="Hand-digging to safely expose a buried service on the assessed live dig" fill sizes="(max-width:768px) 100vw, 48vw" className="object-cover" />
             </div>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/70 to-foreground/40" />
+          {/* blend the left edge of the panel into the dark hero for headline legibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/35 to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-px bg-accent/40" />
         </div>
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
         <div className="relative container mx-auto px-6 md:px-8 max-w-6xl py-8 md:py-12 animate-in fade-in slide-in-from-bottom-3 duration-700">
