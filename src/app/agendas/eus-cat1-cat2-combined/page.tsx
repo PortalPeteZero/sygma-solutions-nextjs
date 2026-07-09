@@ -4,6 +4,7 @@ import FallbackImage from '@/components/FallbackImage';
 import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
+import AccreditationStrip from '@/components/AccreditationStrip';
 
 /* EUS Cat 1 & 2 Combined agenda — a merge of the Cat 1 (locate) and Cat 2 (safe dig) agendas
    into one two-day outline. Day summaries here; the two standalone agendas carry full depth
@@ -142,20 +143,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ============ ACCREDITATIONS (test strip) ============ */}
-      <section className="border-b border-border bg-muted/30 py-2.5 print:hidden">
-        <div className="container mx-auto px-6 md:px-8 max-w-6xl flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5 md:flex-nowrap md:justify-between md:gap-x-6">
-          <p className="text-[11px] font-black uppercase tracking-[0.22em] text-muted-foreground shrink-0 whitespace-nowrap">Accredited &amp; approved by</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-9 gap-y-1.5 md:gap-x-14">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/eusr-approved-provider.webp" alt="EUSR Approved Provider" className="h-11 md:h-12 w-auto" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/proqual.png" alt="ProQual accredited" className="h-12 md:h-14 w-auto" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/citb-ato.jpg" alt="CITB Approved Training Organisation" className="h-10 md:h-11 w-auto" />
-          </div>
-        </div>
-      </section>
+      <AccreditationStrip />
 
       {/* ============ STICKY CONTENTS ============ */}
       <nav className="sticky top-[88px] md:top-[100px] z-30 bg-background/90 backdrop-blur border-b border-border print:hidden">

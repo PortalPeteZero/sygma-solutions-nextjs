@@ -3,6 +3,7 @@ import FallbackImage from '@/components/FallbackImage';
 import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
+import AccreditationStrip from '@/components/AccreditationStrip';
 
 /* Shared body for the 2-day Super User agenda pages (Coach + Damage
    Investigation). Same course, headlined differently — hero comes in as props. */
@@ -171,6 +172,8 @@ export default function SuperUserAgendaBody({ h1, strapline, schemaName, schemaU
           </div>
         </div>
       </section>
+
+      <AccreditationStrip />
 
       {/* ============ STICKY CONTENTS ============ */}
       <nav className="sticky top-[88px] md:top-[100px] z-30 bg-background/90 backdrop-blur border-b border-border print:hidden">

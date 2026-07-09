@@ -3,6 +3,7 @@ import FallbackImage from '@/components/FallbackImage';
 import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
+import AccreditationStrip from '@/components/AccreditationStrip';
 
 /* Shared body for Sygma course-agenda pages. The two routes (HSG47-led and
    EUS Cat 1-led) render this with a different hero headline/strapline only —
@@ -203,6 +204,8 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
           </div>
         </div>
       </section>
+
+      <AccreditationStrip />
 
       {/* ============ STICKY CONTENTS ============ */}
       <nav className="sticky top-[88px] md:top-[100px] z-30 bg-background/90 backdrop-blur border-b border-border print:hidden">

@@ -3,6 +3,7 @@ import FallbackImage from '@/components/FallbackImage';
 import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
+import AccreditationStrip from '@/components/AccreditationStrip';
 
 /* Shared body for the Sygma Cat 2 (safe dig) course-agenda pages. Two routes render this —
    the EUS Cat 2 variant and the ProQual Cat 2 variant. The course content is identical;
@@ -183,6 +184,8 @@ export default function Cat2AgendaBody(v: Cat2Variant) {
           </div>
         </div>
       </section>
+
+      <AccreditationStrip />
 
       {/* ============ STICKY CONTENTS ============ */}
       <nav className="sticky top-[88px] md:top-[100px] z-30 bg-background/90 backdrop-blur border-b border-border print:hidden">
