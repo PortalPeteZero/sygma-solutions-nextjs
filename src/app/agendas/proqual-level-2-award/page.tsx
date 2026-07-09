@@ -93,12 +93,85 @@ const requirements = [
 
 const accred = ['ProQual', 'QCF Level 2', 'HSG47', 'PAS128'];
 
+/* ===== Official ProQual qualification specification (Ofqual 601/1855/6) ===== */
+const qualFacts: [string, string][] = [
+  ['Full qualification title', 'ProQual Level 2 Award in Utility Avoidance and the Location of Buried Services in Construction'],
+  ['Ofqual qualification number', '601/1855/6'],
+  ['Level', 'Level 2'],
+  ['Mandatory unit', 'L/505/7112 — Utility Location and Avoidance in Construction'],
+  ['Guided learning hours', '10'],
+  ['Total qualification time', '20'],
+  ['Assessment', 'Pass or fail. Internally assessed and verified by centre staff, with external quality assurance by ProQual verifiers.'],
+  ['Framework', 'Regulated Qualifications Framework (RQF)'],
+  ['Awarding body', 'ProQual Awarding Body, regulated by Ofqual'],
+];
+
+type LO = { lo: string; ac: [string, string][] };
+const learningOutcomes: LO[] = [
+  {
+    lo: 'Understand published guidance covering utility avoidance in the location of buried services in construction',
+    ac: [
+      ['1.1', 'Explain what is meant by a Safe System of Work'],
+      ['1.2', 'Describe the difference between legislation and guidance'],
+      ['1.3', 'Explain the reasons why excavations take place'],
+      ['1.4', 'Describe the consequences of an underground service strike'],
+    ],
+  },
+  {
+    lo: 'Understand the importance of regulations related to the location of buried services in construction',
+    ac: [
+      ['2.1', 'Describe client responsibility in terms of buried services'],
+      ['2.2', 'Describe the responsibility of construction designers in terms of buried services'],
+      ['2.3', 'Describe how to identify when it is necessary to make alterations to a project due to the presence of buried services'],
+    ],
+  },
+  {
+    lo: 'Understand the advantages of obtaining accurate information related to the positioning of underground services',
+    ac: [
+      ['3.1', 'Identify different types of drawings used in services location'],
+      ['3.2', 'Describe types of inaccuracies that may be found in drawings'],
+      ['3.3', 'Explain how the data and detail on drawings may have limitations'],
+      ['3.4', 'Describe how regional differences may exist on drawings'],
+    ],
+  },
+  {
+    lo: 'Understand the requirements for the maintenance of underground service location equipment',
+    ac: [
+      ['4.1', 'Describe the calibration requirements of the equipment'],
+      ['4.2', 'Describe the reasons for the correct storage and carriage of equipment including ancillaries'],
+      ['4.3', 'Demonstrate equipment functionality including ancillaries'],
+      ['4.4', 'Demonstrate the use of control measures for faulty equipment including ancillaries'],
+    ],
+  },
+  {
+    lo: 'Be able to recognise electro-magnetic fields and their relationship to underground service location',
+    ac: [
+      ['5.1', 'Demonstrate how to apply active signals to services'],
+      ['5.2', 'Describe the use of passive signals in service location'],
+      ['5.3', 'Describe how service depth is obtained when using electro-magnetic location methods'],
+      ['5.4', 'Demonstrate how to accurately position services when using service location equipment'],
+      ['5.5', 'Describe the limitations of electro-magnetic location in areas of heavy service congestion'],
+      ['5.6', 'Describe the effects of metallic structures on electro-magnetic service location'],
+      ['5.7', 'Describe the types of services, including construction materials, that can be located using electro-magnetic location'],
+    ],
+  },
+  {
+    lo: 'Be able to close out a site',
+    ac: [
+      ['6.1', 'Demonstrate final site sweeping procedures'],
+      ['6.2', 'Describe site surface marking standards'],
+      ['6.3', 'Explain site handover requirements'],
+    ],
+  },
+];
+
 const contents = [
   { id: 'overview', label: 'Overview' },
   { id: 'day1', label: 'Day 1' },
   { id: 'day2', label: 'Day 2' },
   { id: 'requirements', label: 'Requirements' },
   { id: 'assessment', label: 'Assessment' },
+  { id: 'qualification', label: 'The qualification' },
 ];
 
 /* Agenda-style stacked topic rows (title + description). */
@@ -348,6 +421,81 @@ export default function Page() {
               {accred.map((a) => (
                 <span key={a} className="font-mono text-xs font-bold text-white/90 bg-white/[0.06] border border-white/15 rounded px-3 py-1.5">{a}</span>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ OFFICIAL QUALIFICATION SPECIFICATION ============ */}
+      <section id="qualification" className="bg-muted/40 border-y border-border py-12 md:py-16 scroll-mt-24">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+          <div className="max-w-2xl mb-10">
+            <Eyebrow>The regulated qualification, in full</Eyebrow>
+            <h2 className="mt-3 text-3xl md:text-5xl font-black tracking-tight text-foreground">Official qualification specification</h2>
+            <p className="mt-4 text-muted-foreground leading-relaxed">The formal ProQual specification behind the award — the qualification profile, who it is for, and the exact learning outcomes and assessment criteria every candidate is assessed against.</p>
+          </div>
+
+          {/* Qualification profile */}
+          <div className="rounded-2xl border border-border bg-card overflow-hidden mb-6 pb-keep">
+            <dl className="divide-y divide-border">
+              {qualFacts.map(([k, v]) => (
+                <div key={k} className="grid md:grid-cols-3 gap-1 md:gap-6 px-6 py-3.5">
+                  <dt className="text-[11px] font-black uppercase tracking-widest text-muted-foreground md:pt-0.5">{k}</dt>
+                  <dd className="md:col-span-2 text-[15px] text-foreground/85 leading-snug">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          {/* Who it's for + entry requirements */}
+          <div className="grid md:grid-cols-2 gap-5 mb-12 print-cols-2">
+            <div className="rounded-2xl border border-border bg-card p-6 pb-keep">
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent">Who it is for</p>
+              <p className="mt-3 text-sm text-foreground/80 leading-relaxed">Aimed at site managers, supervisors and excavation operatives, to give them an understanding of how to avoid danger from underground services. It is also appropriate for site operatives responsible for clearing an area prior to and during an excavation.</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-6 pb-keep">
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent">Entry requirements</p>
+              <p className="mt-3 text-sm text-foreground/80 leading-relaxed">There are no formal entry requirements. Centres carry out an initial assessment of each candidate&apos;s skills and knowledge to identify any gaps and help plan the assessment.</p>
+            </div>
+          </div>
+
+          {/* Learning outcomes & assessment criteria */}
+          <div className="mb-6">
+            <h3 className="text-2xl md:text-3xl font-black tracking-tight text-foreground">Learning outcomes &amp; assessment criteria</h3>
+            <p className="mt-2 text-sm font-bold text-muted-foreground">Unit L/505/7112 — Utility Location and Avoidance in Construction</p>
+            <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-3xl">Candidates must produce valid, authentic and sufficient evidence against every criterion below. One piece of evidence may satisfy more than one learning outcome or criterion.</p>
+          </div>
+          <div className="space-y-4">
+            {learningOutcomes.map((lo, i) => (
+              <div key={i} className="rounded-2xl border border-border bg-card p-6 md:p-7 pb-keep">
+                <div className="flex items-start gap-4 md:gap-5">
+                  <span className="text-xl md:text-2xl font-black text-accent tabular-nums shrink-0 leading-none mt-0.5">{String(i + 1).padStart(2, '0')}</span>
+                  <div className="flex-1">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Learning outcome {i + 1} — the learner will</p>
+                    <p className="mt-1 font-black text-foreground leading-snug">{lo.lo}</p>
+                    <ul className="mt-4 grid sm:grid-cols-2 gap-x-8 gap-y-2.5 print-cols-2">
+                      {lo.ac.map(([code, text]) => (
+                        <li key={code} className="flex gap-2.5 text-[13.5px] text-foreground/75 leading-snug">
+                          <span className="font-mono text-xs font-black text-accent shrink-0 tabular-nums">{code}</span>
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Evidence + certification */}
+          <div className="grid md:grid-cols-2 gap-5 mt-8 print-cols-2">
+            <div className="rounded-2xl border border-border bg-card p-6 pb-keep">
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent">Evidence &amp; assessment</p>
+              <p className="mt-3 text-sm text-foreground/80 leading-relaxed">Candidates produce evidence demonstrating all the learning outcomes and assessment criteria. Evidence can include assignments, projects and reports; worksheets; a portfolio of evidence; records of oral and/or written questioning; and candidate test papers.</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-6 pb-keep">
+              <p className="text-[10px] font-black uppercase tracking-widest text-accent">Certification</p>
+              <p className="mt-3 text-sm text-foreground/80 leading-relaxed">On success, candidates receive a certificate listing the unit achieved, and a certificate giving the full qualification title: ProQual Level 2 Award in Utility Avoidance and the Location of Buried Services in Construction.</p>
             </div>
           </div>
         </div>
