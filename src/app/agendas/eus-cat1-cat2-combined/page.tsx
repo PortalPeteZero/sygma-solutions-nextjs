@@ -143,16 +143,16 @@ export default function Page() {
       </section>
 
       {/* ============ ACCREDITATIONS (test strip) ============ */}
-      <section className="border-b border-border bg-muted/30 py-7 print:hidden">
-        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-          <p className="text-center text-[11px] font-black uppercase tracking-[0.22em] text-muted-foreground mb-6">Accredited &amp; approved by</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16">
+      <section className="border-b border-border bg-muted/30 py-3.5 print:hidden">
+        <div className="container mx-auto px-6 md:px-8 max-w-6xl flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:flex-nowrap md:justify-between md:gap-x-6">
+          <p className="text-[11px] font-black uppercase tracking-[0.22em] text-muted-foreground shrink-0 whitespace-nowrap">Accredited &amp; approved by</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 md:gap-x-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/eusr-approved-provider.webp" alt="EUSR Approved Provider" className="h-11 md:h-12 w-auto" />
+            <img src="/accreditations/eusr-approved-provider.webp" alt="EUSR Approved Provider" className="h-8 md:h-9 w-auto" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/proqual.png" alt="ProQual accredited" className="h-16 md:h-20 w-auto" />
+            <img src="/accreditations/proqual.png" alt="ProQual accredited" className="h-11 md:h-12 w-auto" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/accreditations/citb-ato.jpg" alt="CITB Approved Training Organisation" className="h-12 md:h-14 w-auto" />
+            <img src="/accreditations/citb-ato.jpg" alt="CITB Approved Training Organisation" className="h-9 md:h-10 w-auto" />
           </div>
         </div>
       </section>
