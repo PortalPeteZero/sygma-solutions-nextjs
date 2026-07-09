@@ -66,7 +66,7 @@ export default function CableAvoidanceTraining() {
         eyebrow="Utility Avoidance"
         headline="Cable Avoidance Training UK | EUSR & ProQual Courses"
         sub="Not just CAT and Genny equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
-        image="cat-88-cable-avoidance-training"
+        image="cat-06-hsg47-training"
         alt="CAT and Genny cable avoidance training equipment laid out for a practical session"
         breadcrumbs={[
           { label: "Training", href: "/courses" },

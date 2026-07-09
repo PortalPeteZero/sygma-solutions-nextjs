@@ -70,7 +70,7 @@ export default function AdvancedEmLocator() {
         eyebrow="Utility Avoidance"
         headline="RD8200 & RD8000 | Advanced EM Locator Training"
         sub="Advanced RD8200 and RD8000 training courses for precision locators. One day theory. One day on a real site near a substation. HV location, distorted field analysis, capacitance, signal clamp, depth verification, sonde, and induction sweeps. For operators who need to locate what a standard course cannot."
-        image="em-04-advanced-em-locator"
+        image="cat-06-hsg47-training"
         breadcrumbs={[
           { label: "Training", href: "/courses" },
           { label: "Advanced EM Locator" },

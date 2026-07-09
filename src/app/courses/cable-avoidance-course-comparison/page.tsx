@@ -61,7 +61,7 @@ export default function CourseComparison() {
         eyebrow="Utility Avoidance"
         headline="Cable Avoidance Course Comparison | EUSR vs ProQual"
         sub="Three qualifications. One comparison. Sygma delivers all three. Use this page to understand the difference and choose what your team actually needs."
-        image="cat-50-cable-avoidance-course-comparison"
+        image="cat-06-hsg47-training"
         breadcrumbs={[
           { label: "Training", href: "/courses" },
           { label: "Course Comparison" },

@@ -58,7 +58,7 @@ export default function Cat4HsgAwarenessOnline() {
         eyebrow="Utility Avoidance"
         headline="CAT4 HSG47 Awareness Online Training"
         sub="Half a day via Microsoft Teams. Up to 12 delegates. Full HSG47 theory, electromagnetic science, PAS128 drawing interpretation, and optional CAT Manager data download, without your team leaving the site."
-        image="cat-83-cat4-hsg47-awareness-online"
+        image="cat-06-hsg47-training"
         alt="Online CAT4 and HSG47 awareness training course overview"
         breadcrumbs={[
           { label: "Training", href: "/courses" },
