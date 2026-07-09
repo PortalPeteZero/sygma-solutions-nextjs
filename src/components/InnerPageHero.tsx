@@ -40,6 +40,10 @@ export default function InnerPageHero({
   const hasImage = Boolean(resolvedImage);
   const [imgSrc, setImgSrc] = useState(resolvedImage || FALLBACK_IMAGE);
 
+  /* The shared HSG47 hero shot places the Genny low in the frame; nudge the crop
+     down so its base isn't cut off. Every other image keeps the centred crop. */
+  const objectPos = imgSrc === 'cat-06-hsg47-training' ? 'object-[center_68%]' : 'object-center';
+
   /* Always prepend "Home" breadcrumb if not already present */
   const fullBreadcrumbs =
     breadcrumbs.length > 0 && breadcrumbs[0].label !== 'Home'
@@ -54,7 +58,7 @@ export default function InnerPageHero({
           src={imgSrc}
           alt={resolvedAlt}
           fill
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className={`absolute inset-0 h-full w-full object-cover ${objectPos}`}
           priority
           sizes="100vw"
           onError={() => setImgSrc(FALLBACK_IMAGE)}

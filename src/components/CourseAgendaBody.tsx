@@ -161,7 +161,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
       {/* ============ HERO ============ */}
       <section className="relative bg-foreground text-white overflow-hidden">
         <div className="absolute inset-0 imgbox">
-          <FallbackImage src="cat-56" alt="Sygma trainer and delegates locating buried utilities with a CAT and Genny on a live training site" fill priority sizes="100vw" className="object-cover opacity-[0.65]" />
+          <FallbackImage src="cat-06-hsg47-training" alt="Sygma delegates locating buried services with the Genny and CAT on a training day" fill priority sizes="100vw" className="object-cover object-[center_68%]" />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-foreground/25" />
         </div>
         <div className="absolute top-0 left-0 right-0 h-1 bg-accent" />
