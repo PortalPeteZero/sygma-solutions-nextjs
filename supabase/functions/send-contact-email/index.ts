@@ -1,3 +1,9 @@
+// send-contact-email — Supabase edge function (project mwkpgzjcpltdcdgotryv).
+// AUTO-DEPLOYED: pushing a change to this file on main triggers
+// .github/workflows/deploy-contact-fn.yml, which deploys it live. Push = live.
+// (Vercel does NOT deploy this — supabase/ is excluded from the Next build.)
+// To change enquiry routing, edit recipientsFor() below and push.
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
