@@ -508,8 +508,8 @@ export default function Page() {
           </div>
           <div className="cert-card rounded-2xl border border-white/10 bg-white/[0.04] p-7 pb-keep">
             <p className="text-[10px] font-black uppercase tracking-widest text-accent">EUSR registration</p>
-            <p className="mt-4 text-2xl font-black">Included for both categories</p>
-            <p className="mt-3 text-sm text-white/70 leading-relaxed">On the combined course, EUSR registration, assessment and the EUSR card for both Category 1 and Category 2 are included in the quoted cost. Card validity: 5 years.</p>
+            <p className="mt-4 text-2xl font-black">One registration covers both categories</p>
+            <p className="mt-3 text-sm text-white/70 leading-relaxed">When the two days run back to back, the combined course carries a single EUSR registration of £34 + VAT per person, covering both Category 1 and Category 2 — charged alongside the course fee. If the days are split, each day is treated as a separate course with its own £34 registration. Card validity: 5 years.</p>
           </div>
         </div>
       </section>
