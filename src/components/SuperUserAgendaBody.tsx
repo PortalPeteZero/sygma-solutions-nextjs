@@ -14,7 +14,7 @@ import AccreditationStrip from '@/components/AccreditationStrip';
    All content is grounded in the Super User Locator Course Agenda PDF (objectives, classroom,
    practical, assessment) — the damage variant only re-weights that same vetted content. */
 
-export type SuperUserVariant = 'coach' | 'damage';
+export type SuperUserVariant = 'coach' | 'damage' | 'both';
 
 type ThItem = { t: string; d: string };
 type Group = { theme: string; items: ThItem[] };
@@ -95,10 +95,21 @@ const damageG5: Group = {
   ],
 };
 
-const theoryFor = (v: SuperUserVariant): Group[] =>
-  v === 'coach'
-    ? [...sharedTheory, dataGroup, coachG5]
-    : [...sharedTheory, dataGroup, damageG5];
+/* Coaching-only group for the combined variant: appended AFTER the deep investigation module
+   (damageG5) so the 'both' page carries the full strike-investigation detail AND the coaching
+   content — nothing from either single course is dropped. */
+const coachingG: Group = {
+  theme: 'Coaching & assessing others',
+  items: [
+    { t: 'Coaching others', d: 'Coaching tips, and assessment planning and structure — how to support and assess site operatives effectively.' },
+  ],
+};
+
+const theoryFor = (v: SuperUserVariant): Group[] => {
+  if (v === 'coach') return [...sharedTheory, dataGroup, coachG5];
+  if (v === 'damage') return [...sharedTheory, dataGroup, damageG5];
+  return [...sharedTheory, dataGroup, damageG5, coachingG]; // both: deep investigation + coaching
+};
 
 /* ===== Practical — module 1 is shared; module 2 differs by variant ===== */
 const locationModule: Module = {
@@ -144,8 +155,11 @@ const damageModule: Module = {
   ],
 };
 
-const modulesFor = (v: SuperUserVariant): Module[] =>
-  v === 'coach' ? [locationModule, coachModule] : [locationModule, damageModule];
+const modulesFor = (v: SuperUserVariant): Module[] => {
+  if (v === 'coach') return [locationModule, coachModule];
+  if (v === 'damage') return [locationModule, damageModule];
+  return [locationModule, damageModule, { ...coachModule, no: '03' }]; // both: Genny first → investigate → coach
+};
 
 /* ===== Objectives (from the PDF) — flat list, coaching objective dropped on the damage variant ===== */
 const objectivesFor = (v: SuperUserVariant): string[] => {
@@ -165,7 +179,7 @@ const objectivesFor = (v: SuperUserVariant): string[] => {
     'Advanced knowledge in the theory of Genny and CAT operation',
     'Know what to look for in a site survey',
   ];
-  return v === 'coach' ? [...base, ...coachOnly, ...tail] : [...base, ...tail];
+  return v === 'damage' ? [...base, ...tail] : [...base, ...coachOnly, ...tail];
 };
 
 /* ===== Assessment (from the PDF) — Assessment 2 (coaching) dropped on the damage variant ===== */
@@ -178,7 +192,9 @@ const assessmentFor = (v: SuperUserVariant): string[] => {
   const coachStep = ['Assessment 2 — coaching and assessing others effectively, using the Assessment 1 document alongside the Sygma coaching sheet'];
   const damageStep = ['A worked utility strike investigation, evidenced with CAT data and a completed USAG form'];
   const tail = ['A permit to break ground — customer-specific where possible, otherwise the Sygma permit'];
-  return v === 'coach' ? [...head, ...coachStep, ...tail] : [...head, ...damageStep, ...tail];
+  if (v === 'coach') return [...head, ...coachStep, ...tail];
+  if (v === 'damage') return [...head, ...damageStep, ...tail];
+  return [...head, ...damageStep, ...coachStep, ...tail]; // both
 };
 
 const accred = ['HSG47', 'EUS Cat 1', 'USAG'];
@@ -194,6 +210,14 @@ const requirements = [
   'A practical area with numerous buried metallic utilities nearby',
   'Host risk assessment of the site and training room; brief the trainer on any risks',
   'Government photographic ID per delegate (driving licence, passport or residence permit)',
+];
+
+/* The three flavours of the same two-day Super User course — the chooser block that appears at
+   the top of all three agenda pages, with the current one highlighted. */
+const flavours: { key: SuperUserVariant; href: string; label: string; who: string }[] = [
+  { key: 'damage', href: '/agendas/super-user-damage-investigation', label: 'Damage Investigations', who: 'For safety professionals and technical leads who need a deep understanding of the kit and the data, and how to conduct a strike investigation to a completed USAG form.' },
+  { key: 'coach', href: '/agendas/super-user-coach', label: 'Coaching', who: 'For those in a supervisory or support role backing teams on site: coaching, assessing and signing off site operatives.' },
+  { key: 'both', href: '/agendas/super-user-coach-and-investigations', label: 'Coaching & Investigations', who: 'For those who need to do both: run the investigation and coach the team off the back of it. The complete Super User.' },
 ];
 
 const contents = [
@@ -223,10 +247,12 @@ export default function SuperUserAgendaBody({ variant, h1, strapline, covers, le
   const modules = modulesFor(variant);
   const objectives = objectivesFor(variant);
   const assessment = assessmentFor(variant);
-  const practicalHeading = variant === 'coach' ? 'Practical & coaching' : 'Practical & investigation';
+  const practicalHeading = variant === 'coach' ? 'Practical & coaching' : variant === 'damage' ? 'Practical & investigation' : 'Practical, investigation & coaching';
   const practicalBlurb = variant === 'coach'
     ? 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on proving competence both as an operator and as a coach.'
-    : 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on turning the kit and its data into evidence for a strike investigation.';
+    : variant === 'damage'
+    ? 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — and on turning the kit and its data into evidence for a strike investigation.'
+    : 'A flexible mix of inside and outside time over the two days. Strong emphasis on the Genny throughout — proving competence as an operator, turning the data into evidence for a strike investigation, and coaching and assessing others.';
 
   return (
     <div className="agenda-doc">
@@ -297,6 +323,31 @@ export default function SuperUserAgendaBody({ variant, h1, strapline, covers, le
         <div className="flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.06] px-5 py-4">
           <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
           <p className="text-sm text-foreground leading-relaxed"><span className="font-bold">Prerequisite:</span> each delegate must already hold <span className="font-bold">EUS Cat 1 (or equivalent)</span>. This is an advanced course that builds on Cat 1 — <span className="font-bold">Cat 2 is not required</span>. Maximum <span className="font-bold">6 delegates</span> per trainer.</p>
+        </div>
+      </section>
+
+      {/* ============ THREE FLAVOURS CHOOSER ============ */}
+      <section className="container mx-auto px-6 md:px-8 max-w-6xl pt-10 print:hidden">
+        <Eyebrow>Three ways to take Super User</Eyebrow>
+        <p className="mt-3 text-lg text-muted-foreground leading-relaxed max-w-3xl">The same advanced two-day Super User course, in three flavours. Pick the one that matches the role — or the combined course if you need both.</p>
+        <div className="mt-6 grid md:grid-cols-3 gap-4">
+          {flavours.map((f) => {
+            const current = f.key === variant;
+            const inner = (
+              <div className={`h-full rounded-2xl border p-6 transition-colors ${current ? 'border-accent bg-accent/[0.06]' : 'border-border bg-card hover:border-accent/50 hover:shadow-sm'}`}>
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-base font-black text-foreground tracking-tight">{f.label}</p>
+                  {current
+                    ? <span className="text-[10px] font-black uppercase tracking-widest text-accent border border-accent/40 rounded-full px-2.5 py-1 whitespace-nowrap">Viewing this one</span>
+                    : <span className="text-accent font-black" aria-hidden="true">&rarr;</span>}
+                </div>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{f.who}</p>
+              </div>
+            );
+            return current
+              ? <div key={f.key}>{inner}</div>
+              : <Link key={f.key} href={f.href} className="block">{inner}</Link>;
+          })}
         </div>
       </section>
 

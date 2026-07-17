@@ -87,6 +87,13 @@ const superUser: AgendaCard[] = [
     strapline: 'Advanced locator competency · strike investigation & data analysis',
     chips: ['Advanced location', 'CAT data analysis', 'Strike investigation (USAG)'],
   },
+  {
+    href: '/agendas/super-user-coach-and-investigations',
+    eyebrow: 'Two days',
+    title: <>2 Day Super User <span className="text-accent">Coach &amp; Damage Investigations</span></>,
+    strapline: 'Advanced locator competency · strike investigation, data analysis & coaching',
+    chips: ['Strike investigation (USAG)', 'CAT data analysis', 'Coaching & assessment'],
+  },
 ];
 
 const proqualLevel2: AgendaCard[] = [
