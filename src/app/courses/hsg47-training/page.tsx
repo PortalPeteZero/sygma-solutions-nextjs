@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import InnerPageHero from "@/components/InnerPageHero";
+import CourseTopBlock from "@/components/CourseTopBlock";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -93,29 +93,16 @@ export default function Hsg47Training() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Courses', to: '/courses' }, { label: 'HSG47 Training' }]) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
 
-      <InnerPageHero
-        eyebrow="Underground Services"
-        headline="HSG47 Training: EUSR Compliant Courses for Underground Services"
-        sub="The course required by the HSG47 Avoiding Danger guidance for safe excavation near utility services. EUSR Category 1 and ProQual CAT1 course routes. CITB approved. UK-wide delivery."
+      <CourseTopBlock
+        h1={<>HSG47 <span className="text-accent">Training</span></>}
+        strapline={<>Genny and CAT <span className="text-accent">·</span> EUSR Cat 1 and ProQual routes</>}
+        covers={['HSG47', 'HSG47 Training', 'Underground Services', 'Genny and CAT', 'EUSR Cat 1', 'ProQual Cat 1']}
+        breadcrumbLabel="HSG47 Training"
         image="cat-06-hsg47-training"
-        alt="HSG47 training — operative using cable locator to detect utility services before excavation"
-        breadcrumbs={[
-          { label: "Courses", href: "/courses" },
-          { label: "HSG47 Training" },
-        ]}
+        alt="HSG47 training — operative using a cable locator to detect utility services before excavation"
+        ctaLabel="Book HSG47 Training →"
+        agendaHref="/agendas/hsg47-utility-detection-and-avoidance"
       />
-
-      {/* Opening definition */}
-      <section className="bg-background py-8">
-        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">HSG47 training is the practical course required by the HSE guidance document &lsquo;Avoiding Danger from Underground Services.&rsquo;</strong> It covers cable avoidance tools used to locate utility services HSG47 standard before excavations begin, safe working procedures near buried utilities, and the duty holder competence obligations under national occupational standards. The recognised industry course standard for anyone working near buried cables, pipes and utility services across the UK.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed mt-4">
-            The course exists because accident statistics show thousands of service strikes occur annually. Aimed at delegates from operations, the stakeholders commissioning work, and safety professionals responsible for safe systems of work. Successful completion routes to an EUSR Category 1 card (Utility Excavations Category 1 Locate Utility Services) or ProQual CAT1 qualification — both three-year cards with a printed expiry date.
-          </p>
-        </div>
-      </section>
 
       {/* Key USP stats */}
       <section className="bg-foreground py-6">

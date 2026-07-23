@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import InnerPageHero from "@/components/InnerPageHero";
+import CourseTopBlock from "@/components/CourseTopBlock";
 import { courseSchema, faqPageSchema, breadcrumbSchema, videoObjectSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -110,52 +110,16 @@ export default function GennyCatTraining() {
         thumbnailUrl: 'https://i.ytimg.com/vi/IgxGksU3WQ4/maxresdefault.jpg',
       }) }} />
 
-      <InnerPageHero
-        eyebrow="Utility Avoidance"
-        headline="CAT and Genny Training Course"
-        sub="Not just Genny & CAT equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
+      <CourseTopBlock
+        h1={<>CAT and Genny <span className="text-accent">Training</span></>}
+        strapline={<>Genny and CAT <span className="text-accent">·</span> incorporating EUSR Cat 1</>}
+        covers={['CAT and Genny', 'Genny and CAT', 'Cable Avoidance', 'HSG47', 'EUSR Cat 1', 'Cat Scanner']}
+        breadcrumbLabel="CAT and Genny Training"
         image="cat-06-hsg47-training"
         alt="Sygma Solutions operative using a Radiodetection CAT4+ cable locator on site during a CAT and Genny training course"
-        breadcrumbs={[
-          { label: "Training", href: "/courses" },
-          { label: "CAT and Genny Training" },
-        ]}
+        ctaLabel="Book CAT and Genny Training →"
+        agendaHref="/agendas/hsg47-utility-detection-and-avoidance"
       />
-
-      {/* Above-fold CTA + trust strip — SEO audit 2026-05-11 */}
-      <section className="bg-primary/5 border-b border-border">
-        <div className="container mx-auto px-6 md:px-8 max-w-5xl py-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs md:text-sm font-semibold text-muted-foreground">
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>EUSR-registered</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>ProQual-accredited</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>On-site UK-wide</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>Travel included</span>
-            </div>
-            <div className="flex flex-col md:items-end gap-1.5">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary">Tailored pricing, open or on-site</p>
-              <Link
-                href="/contact#enquiry-form"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
-              >
-                Book CAT and Genny Training →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Opening definition,AI Overview & PAA eligibility */}
-      <section className="bg-background py-8">
-        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            <strong className="text-foreground">CAT and Genny training is a practical safety course that teaches operatives how to use a cable locator (CAT) and signal generator (Genny) to find buried cables and pipes before excavation.</strong> Sometimes called "cat scanner training", it covers electromagnetic theory, four detection modes, signal interpretation, and hands-on cable locating and service detection on a real site. The course teaches operatives how to <strong className="text-foreground">locate underground utilities safely</strong> using both active signals from the transmitter and passive signals from the ground itself.
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            This course fulfils the <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training</Link> requirement for anyone using cable locating equipment near underground services. <strong className="text-foreground">Successful delegates can be assessed for an EUSR CAT1 card, ProQual CAT1 certificate, or Sygma in-house certification.</strong>
-          </p>
-        </div>
-      </section>
 
       {/* Key USP stats */}
       <section className="bg-foreground py-6">

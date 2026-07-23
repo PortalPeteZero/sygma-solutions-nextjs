@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import InnerPageHero from "@/components/InnerPageHero";
+import CourseTopBlock from "@/components/CourseTopBlock";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 const faqs = [
@@ -87,41 +87,16 @@ export default function EusCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 Locate Utility Services Training", description: "EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
-<InnerPageHero
-        eyebrow="Utility Avoidance"
-        headline="EUSR CAT 1 Training: Locate Utility Services (HSG47)"
-        sub="EUSR Category 1 Locate Utility Services from the UK's only independent specialist. Full electromagnetic theory, practical Cat and Genny assessment, written paper, and on-site practical. HSG47-compliant safe digging and excavating practices, recognised across the water, gas, electricity, and telecoms sectors."
+      <CourseTopBlock
+        h1={<>EUSR Cat 1 <span className="text-accent">Training</span></>}
+        strapline={<>Locate Utility Services <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> HSG47</>}
+        covers={['EUSR Cat 1', 'EUSR Cat 1 Training', 'Locate Utility Services', 'Genny and CAT', 'Cable Avoidance', 'HSG47']}
+        breadcrumbLabel="EUSR Cat 1 Training"
         image="cat-06-hsg47-training"
-        alts={["Trainee scanning for underground utilities with a CAT4 locator on EUSR CAT 1 training", "Genny signal generator connected to a utility service point during EUSR CAT 1 Locate Utility Services training", "Practical cable avoidance exercise on an EUSR CAT 1 live training site", "Instructor guiding a trainee through CAT4 signal interpretation on an EUSR CAT 1 training course", "Close-up of CAT4 display showing utility signal detection during EUSR CAT 1 practical assessment", "Overhead view of a marked utility survey area during EUSR CAT 1 Cat and Genny training", "Group of trainees practising cable avoidance techniques on EUSR CAT 1 Cat and Genny training", "CAT4 and Genny equipment in use on EUSR Category 1 (CAT 1) accredited training, HSG47 compliant"]}
-        breadcrumbs={[
-          { label: "Training", to: "/courses" },
-          { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" },
-          { label: "EUSR CAT 1 Training" },
-        ]}
+        alt="Trainee scanning for underground utilities with a CAT4 locator on EUSR Cat 1 training"
+        ctaLabel="Book EUSR Cat 1 Training →"
+        agendaHref="/agendas/eus-category-1-locate-utility-services"
       />
-
-      {/* Above-fold CTA + trust strip — SEO audit 2026-05-11 */}
-      <section className="bg-primary/5 border-b border-border">
-        <div className="container mx-auto px-6 md:px-8 max-w-5xl py-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs md:text-sm font-semibold text-muted-foreground">
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>EUSR-registered</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>HSG47 compliant</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>On-site UK-wide</span>
-              <span className="inline-flex items-center"><span className="text-accent mr-1.5">●</span>Travel included</span>
-            </div>
-            <div className="flex flex-col md:items-end gap-1.5">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary">Tailored pricing, open or on-site</p>
-              <Link
-                href="/contact#enquiry-form"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
-              >
-                Book EUSR CAT 1 Training →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Definitional opener, AI Overview eligible */}
       <section className="container mx-auto px-6 md:px-8 pt-10 pb-2 max-w-4xl">

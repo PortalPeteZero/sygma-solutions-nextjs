@@ -1,6 +1,6 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import Link from 'next/link';
-import InnerPageHero from "@/components/InnerPageHero";
+import CourseTopBlock from "@/components/CourseTopBlock";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -53,16 +53,14 @@ export default function ProQualCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual CAT1 Utility Locating Training", description: "ProQual-accredited 1-day utility locating course covering theory (T1-T14) and hands-on practical assessment (P1-P8). Covers all four locating modes including direct connection, induction, nulling, Power and Radio passive modes.", url: "/courses/proqualcat1-training", credential: "ProQual Level 2 Award in Utility Avoidance", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "ProQual CAT1" }]) }} />
-<InnerPageHero
-        eyebrow="Utility Avoidance"
-        headline="ProQual CAT1 Training | Utility Locator Qualification"
-        sub="14 theory criteria. 8 practical criteria. Every one must be met. A full written theory assessment and a full hands-on practical assessment covering all four locating modes and every Genny signal application method, mapped to HSG47, GS6, and CDM Regulations. Accredited by ProQual Accreditations."
+      <CourseTopBlock
+        h1={<>ProQual Cat 1 <span className="text-accent">Training</span></>}
+        strapline={<>Utility Locator Qualification <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> HSG47</>}
+        covers={['ProQual Cat 1', 'ProQual Cat 1 Training', 'Genny and CAT', 'Cable Avoidance', 'HSG47', 'Utility Locator']}
+        breadcrumbLabel="ProQual Cat 1 Training"
         image="cat-06-hsg47-training"
-        alt="ProQual CAT1 cable avoidance training with practical locator exercises"
-        breadcrumbs={[
-          { label: "Training", to: "/courses" },
-          { label: "ProQual CAT1" },
-        ]}
+        alt="ProQual Cat 1 cable avoidance training with practical locator exercises"
+        ctaLabel="Book ProQual Cat 1 Training →"
       />
 
       {/* Key USP stats */}

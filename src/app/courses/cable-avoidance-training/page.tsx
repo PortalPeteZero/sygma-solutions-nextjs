@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import InnerPageHero from "@/components/InnerPageHero";
+import CourseTopBlock from "@/components/CourseTopBlock";
 import { courseSchema, faqPageSchema, breadcrumbSchema, videoObjectSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -62,16 +62,15 @@ export default function CableAvoidanceTraining() {
         thumbnailUrl: 'https://i.ytimg.com/vi/IgxGksU3WQ4/maxresdefault.jpg',
       }) }} />
 
-      <InnerPageHero
-        eyebrow="Utility Avoidance"
-        headline="Cable Avoidance Training UK | EUSR & ProQual Courses"
-        sub="Not just CAT and Genny equipment operation. The scientific understanding and field-verified habits that eliminate service strikes."
+      <CourseTopBlock
+        h1={<>Cable Avoidance <span className="text-accent">Training</span></>}
+        strapline={<>Genny and CAT <span className="text-accent">·</span> HSG47 <span className="text-accent">·</span> incorporating EUSR Cat 1</>}
+        covers={['Cable Avoidance', 'Cable Avoidance Training', 'Genny and CAT', 'CAT and Genny', 'HSG47', 'EUSR Cat 1']}
+        breadcrumbLabel="Cable Avoidance Training"
         image="cat-06-hsg47-training"
         alt="CAT and Genny cable avoidance training equipment laid out for a practical session"
-        breadcrumbs={[
-          { label: "Training", href: "/courses" },
-          { label: "Cable Avoidance Training" },
-        ]}
+        ctaLabel="Book Cable Avoidance Training →"
+        agendaHref="/agendas/hsg47-utility-detection-and-avoidance"
       />
 
       {/* Key USP stats */}
