@@ -17,7 +17,7 @@ import data from '@/data/course-dates.json';
 
 const DAY_RATE = 965;          // on-site day rate, up to 8 delegates
 const MAX_DELEGATES = 8;
-const FROM_PER_PERSON = 125;   // Pete, 24 Jul 2026 (note: 965/8 = £120.63 — 125 is his stated figure)
+const FROM_PER_PERSON = 121;   // Pete, 24 Jul 2026 — £965/8 = £120.63, rounded up to a whole pound
 
 type Course = { date: string; family: string | null; title: string; venue: string | null; cap: number | null; placesLeft: number | null };
 
