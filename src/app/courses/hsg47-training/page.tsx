@@ -336,6 +336,26 @@ export default function Hsg47Training() {
         </div>
       </section>
 
+
+      {/* FAQs — visible subset (full set still in faqPageSchema for rich snippets) */}
+      <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
+        <p className="eyebrow mb-3">Common Questions</p>
+        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {visibleFaqs.map(({ q, a, thumb, thumbAlt }) => (
+            <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-center">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 overflow-hidden rounded-lg bg-muted aspect-square self-center">
+                <Image src={thumb} width={192} height={192} alt={thumbAlt} sizes="(max-width: 640px) 80px, 96px" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-bold text-foreground mb-2">{q}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Related Reading — bold <p> not H3 to keep H2-H6 count in range */}
       <section className="bg-muted/20 border-y border-border py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
@@ -360,26 +380,6 @@ export default function Hsg47Training() {
           </div>
         </div>
       </section>
-
-      {/* FAQs — visible subset (full set still in faqPageSchema for rich snippets) */}
-      <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
-        <p className="eyebrow mb-3">Common Questions</p>
-        <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
-        <div className="space-y-4">
-          {visibleFaqs.map(({ q, a, thumb, thumbAlt }) => (
-            <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-center">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 overflow-hidden rounded-lg bg-muted aspect-square self-center">
-                <Image src={thumb} width={192} height={192} alt={thumbAlt} sizes="(max-width: 640px) 80px, 96px" className="w-full h-full object-cover" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-foreground mb-2">{q}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">{a}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Also Consider */}
       <section className="border-t border-border py-10">
         <div className="container mx-auto max-w-3xl px-4">

@@ -81,7 +81,7 @@ export default function CableAvoidanceTraining() {
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Who Is This Course For</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Designed For</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">Who this course is for</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -370,7 +370,7 @@ export default function CableAvoidanceTraining() {
           <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online vs On-Site Cable Avoidance Training</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Searches for "cable avoidance training online" are common. Sygma's full cable avoidance course is on-site by design. The reason is the practical assessment. A cable avoidance training course that does not include hands-on operation of a CAT and Genny on a real site <strong>cannot prove competence under HSG47</strong>, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. <strong>Online theory alone will not give an operative the qualification.</strong>
+              The full assessed qualification is delivered on site. The practical assessment is the reason. A cable avoidance training course that does not include hands-on operation of a Genny and CAT on a real site <strong>cannot prove competence under HSG47</strong>, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. <strong>Online theory alone will not give an operative the qualification.</strong>
             </p>
             <p>
               Where online training does work is the awareness layer: refreshers, supervisors who need to understand the equipment without operating it, and the HSG47 theory module that complements an on-site practical day. For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance. It is designed to pair with this on-site cable avoidance training rather than replace it.
@@ -385,7 +385,7 @@ export default function CableAvoidanceTraining() {
           <div className="grid md:grid-cols-2 gap-10">
             <div>
               <p className="eyebrow mb-3">Site Requirements</p>
-              <h2 className="text-xl font-black mb-6 text-foreground">What You Need to Provide</h2>
+              <h2 className="text-xl font-black mb-6 text-foreground">What you need on the day</h2>
               <div className="space-y-3">
                 {[
                   ["STATS Plans", "Buried service drawings appropriate to the practical site. If plans are not available, Sygma can supply plans at an additional cost agreed prior to booking."],
@@ -437,30 +437,6 @@ export default function CableAvoidanceTraining() {
         </div>
       </div>
 
-      {/* Related Reading */}
-      <section className="bg-muted/20 border-y border-border py-14">
-        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
-              <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
-            </Link>
-            <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
-              <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
-            </Link>
-            <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
-              <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
-            </Link>
-            <Link href="/knowledge-hub/npors-vs-eusr" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</h3>
-              <p className="text-sm text-muted-foreground">How the two main accreditation schemes compare for cable avoidance training.</p>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
@@ -559,6 +535,30 @@ export default function CableAvoidanceTraining() {
         </div>
       </section>
 
+      {/* Related Reading */}
+      <section className="bg-muted/20 border-y border-border py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
+              <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
+            </Link>
+            <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
+              <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
+            </Link>
+            <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
+              <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
+            </Link>
+            <Link href="/knowledge-hub/npors-vs-eusr" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</h3>
+              <p className="text-sm text-muted-foreground">How the two main accreditation schemes compare for cable avoidance training.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* Related Courses */}
       <section className="py-16 bg-muted/20">
         <div className="container mx-auto px-4 max-w-5xl">

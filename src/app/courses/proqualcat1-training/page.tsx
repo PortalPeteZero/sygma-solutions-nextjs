@@ -81,7 +81,7 @@ export default function ProQualCat1() {
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Who Is This Course For</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Designed For</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">Who this course is for</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
