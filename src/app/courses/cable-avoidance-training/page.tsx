@@ -7,6 +7,14 @@ import Image from 'next/image';
 
 const faqs = [
             {
+              q: "How much does cable avoidance training cost?",
+              a: "Sygma charges <strong>per course, not per person</strong>. Whether you send 4 delegates or 8, the course fee stays the same. Travel within the UK mainland is included. There are no hidden fees beyond the awarding body accreditation charge where applicable. Contact us for a quote.",
+            },
+            {
+              q: "Is cable avoidance training a legal requirement?",
+              a: "HSG47 and the CDM Regulations place a duty on employers to ensure that anyone involved in excavation work is competent in avoiding danger from underground services. Cable avoidance training is effectively a <strong>legal requirement</strong> for anyone who carries out street works or excavation near buried cables and utility services. While there is no single law that says you must hold a specific CAT and Genny certificate, the legal framework requires employers to demonstrate that their workforce has been properly trained. In practice, most principal contractors and utility companies require a recognised cable avoidance course qualification such as EUSR CAT1 or ProQual CAT1 before allowing operatives on site. Failure to provide adequate training can result in <strong>enforcement action, fines, and criminal prosecution</strong> if a cable strike leads to injury.",
+            },
+            {
               q: "What equipment do our operatives need to bring?",
               a: "Each operative should bring the locator and signal generator they use on site. Sygma provide Radiodetection CAT4 and Genny4 as backup equipment to run a standard course if delegates do not have their own. Any manufacturer's locator is suitable, including Vivax-Metrotech vLoc, Leica DSX, and Radiodetection RD8200/RD8100. If sharing equipment, a minimum ratio of one locator per three delegates is recommended.",
             },

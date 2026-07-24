@@ -14,24 +14,28 @@ const faqs = [
   },
   {
     q: "How long does a CAT and Genny course take?",
+    paa: true,
     a: "One or two days. One-day format covers theory plus assessment for delegates with some experience. Two-day formats split classroom and site work, or add the ProQual CAT1 Plus Genny-First assessment on day two.",
     thumb: "cat-04",
     thumbAlt: "CAT and Genny course duration, outdoor training session",
   },
   {
     q: "Can CAT and Genny training be done online?",
+    paa: true,
     a: "Classroom theory can be delivered online for awareness and refreshers, Sygma offers a CAT4 HSG47 awareness online course for that. The full assessed qualification (EUSR CAT1 or ProQual CAT1) requires a real site practical and cannot be completed entirely online.",
     thumb: "cat-89",
     thumbAlt: "Online vs on-site CAT and Genny training, practical CAT4 locator session",
   },
   {
     q: "How much does a CAT and Genny course cost?",
+    paa: true,
     a: "In-house day rate for up to 8 delegates at your site, or per person on open courses. Travel included, no hidden extras. CITB-levy employers may access funding via the CITB Employer Network. Contact us for a tailored quote.",
     thumb: "cat-66",
     thumbAlt: "Sygma CAT and Genny course delegates with CAT4+ locators on a UK training site",
   },
   {
     q: "Do you need to be trained to use a CAT scanner?",
+    paa: true,
     a: "Yes. HSG47 requires anyone using cable and pipe locating equipment to be trained and competent. Most principal contractors and utility companies require a recognised qualification before allowing operatives to use locating equipment on site.",
     thumb: "cat-14",
     thumbAlt: "CAT scanner training requirement, on-site CAT and Genny training assessment",
@@ -100,7 +104,7 @@ export default function GennyCatTraining() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: 'CAT and Genny Training', description: 'CAT and Genny training from Sygma Solutions. EUSR and ProQual-accredited cable avoidance training delivered nationwide. Genny-First methodology, HSG47 compliant.', url: '/courses/cat-and-genny-training', duration: '1-2 days', mode: ['onsite'] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: 'Training', to: '/courses' }, { label: 'CAT and Genny Training' }]) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs.filter(f => f.paa)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: videoObjectSchema({
         name: 'CAT and Genny Training: The Genny First Approach Explained',
         description: 'Sygma Solutions explains why the standard Power, Radio, Genny scanning sequence is the wrong way round. Demonstrates the Genny-First methodology that locates buried utilities reliably and prevents cable strikes on site.',
@@ -458,13 +462,19 @@ export default function GennyCatTraining() {
         <p className="eyebrow mb-3">Common Questions</p>
         <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">Frequently Asked Questions</h2>
         <div className="space-y-4">
-          {faqs.map(({ q, a, thumb, thumbAlt }) => (
+          {faqs.map(({ q, a, thumb, thumbAlt, paa }) => (
             <div key={q} className="border border-border rounded-lg p-6 flex gap-5 items-center">
               <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 overflow-hidden rounded-lg bg-muted aspect-square self-center">
                 <Image src={thumb} width={192} height={192} alt={thumbAlt} sizes="(max-width: 640px) 80px, 96px" className="w-full h-full object-cover" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-foreground mb-2">{q}</h3>
+                {/* Only the four questions Google's own People-Also-Ask box asks stay as headings
+                    and in the FAQ schema. The other eight keep every word but render as bold text:
+                    12 question-headings + 12 schema entries made a commercial course page read as a
+                    reference article (24 Jul 2026). Nothing is lost to the reader. */}
+                {paa
+                  ? <h3 className="font-bold text-foreground mb-2">{q}</h3>
+                  : <p className="font-bold text-foreground mb-2">{q}</p>}
                 <p className="text-muted-foreground leading-relaxed text-sm">{a}</p>
               </div>
             </div>
