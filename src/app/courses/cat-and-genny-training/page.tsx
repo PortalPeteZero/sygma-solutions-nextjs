@@ -118,32 +118,10 @@ export default function GennyCatTraining() {
         image="cat-06-hsg47-training"
         alt="Sygma Solutions operative using a Radiodetection CAT4+ cable locator on site during a CAT and Genny training course"
         ctaLabel="Book CAT and Genny Training →"
-        agendaHref="/agendas/hsg47-utility-detection-and-avoidance"
+        proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: '70-80%', k: 'Increase in Genny Usage', s: 'Measured through locator data downloads after Sygma training.' }, { v: 'Proven', k: 'Strike Reduction Record', s: 'Clients report measurable reductions in service strikes.' }]}
       />
 
-      {/* Key USP stats */}
-      <section className="bg-foreground py-6">
-        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">21 Years</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">One Specialism</p>
-              <p className="text-xs text-white/60">Underground utility location training is all we do.</p>
-            </div>
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">70-80%</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Increase in Genny Usage</p>
-              <p className="text-xs text-white/60">Measured through locator data downloads after Sygma training.</p>
-            </div>
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">Proven</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Strike Reduction Record</p>
-              <p className="text-xs text-white/60">Clients report measurable reductions in service strikes.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Who This Course Is For */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">

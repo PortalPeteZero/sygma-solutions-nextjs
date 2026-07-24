@@ -101,32 +101,10 @@ export default function Hsg47Training() {
         image="cat-06-hsg47-training"
         alt="HSG47 training — operative using a cable locator to detect utility services before excavation"
         ctaLabel="Book HSG47 Training →"
-        agendaHref="/agendas/hsg47-utility-detection-and-avoidance"
+        proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: 'EUSR + CITB', k: 'Accredited Course Routes', s: 'EUSR Category 1, ProQual CAT1, CITB Approved Training Organisation.' }, { v: 'UK-Wide', k: 'On-Site Delivery', s: 'Travel included. Course delivered at your premises, nationwide.' }]}
       />
 
-      {/* Key USP stats */}
-      <section className="bg-foreground py-6">
-        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">21 Years</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">One Specialism</p>
-              <p className="text-xs text-white/60">Underground utility location training is all we do.</p>
-            </div>
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">EUSR + CITB</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">Accredited Course Routes</p>
-              <p className="text-xs text-white/60">EUSR Category 1, ProQual CAT1, CITB Approved Training Organisation.</p>
-            </div>
-            <div className="bg-white/5 rounded-xl border border-accent/30 p-5 text-center">
-              <p className="text-3xl font-black text-accent mb-1">UK-Wide</p>
-              <p className="text-xs font-bold text-white uppercase tracking-wider mb-1">On-Site Delivery</p>
-              <p className="text-xs text-white/60">Travel included. Course delivered at your premises, nationwide.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Who Needs It — bulleted list (no H3s) */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">

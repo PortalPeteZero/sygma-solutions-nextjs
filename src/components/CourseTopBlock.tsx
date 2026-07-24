@@ -23,6 +23,7 @@ import { Eyebrow } from '@/components/agendaShared';
 
 export type CertOption = { name: string; body: string; cost: string; unit: string; note: string };
 export type SpecCell = { k: string; v: string; s: string };
+export type ProofStat = { v: string; k: string; s: string };
 
 /* The standard three certificate routes. Identical content and assessment on each — the choice is
    the badge. Fees are CERTIFICATE fees only; the course itself is always quoted (no price anchor
@@ -48,15 +49,26 @@ export type CourseTopBlockProps = {
   image: string;
   alt: string;
   ctaLabel: string;
-  agendaHref?: string;          // renders "View the full agenda" — also an internal link to the agenda
+  /* ⚠ NO agenda link, deliberately. Every /agendas/* page is `index: false` and the set is kept
+     unlinked on purpose -- not in the nav, not in the sitemap, no inbound links from anywhere.
+     A "View the full agenda" button was added here on 23 Jul and REMOVED on 24 Jul at Pete's
+     challenge: it was never asked for, and it pointed indexed commercial pages at a deliberately
+     de-indexed library. Do not reintroduce it without an explicit decision from Pete. */
   intro?: string;
   spec?: SpecCell[];
   cert?: CertOption[];
+  /* The page's own proof stats (21 Years / 70-80% / Proven). Passed in rather than hard-coded
+     because HSG47 carries a different trio. Rendered as a slim DIVIDED strip, deliberately not
+     as cards: a second card grid directly under the certificate cards on the same dark ground
+     read as one undifferentiated wall of six boxes with ~80px of dead space through the middle
+     (Pete, 24 Jul 2026). The strip echoes the hero spec strip instead, so the section closes
+     with the same visual language it opened with. */
+  proof?: ProofStat[];
 };
 
 export default function CourseTopBlock({
-  h1, strapline, covers, breadcrumbLabel, image, alt, ctaLabel, agendaHref,
-  intro, spec = STANDARD_SPEC, cert = STANDARD_CERT,
+  h1, strapline, covers, breadcrumbLabel, image, alt, ctaLabel,
+  intro, spec = STANDARD_SPEC, cert = STANDARD_CERT, proof,
 }: CourseTopBlockProps) {
   const introText = intro ??
     'What we cover in the classroom and on the ground, how every delegate is assessed, and your ' +
@@ -95,9 +107,6 @@ export default function CourseTopBlock({
           <p className="mt-5 text-base text-white/70 max-w-2xl leading-relaxed">{introText}</p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link href="/contact#enquiry-form" className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-accent text-white font-bold text-sm hover:bg-accent/90 transition-colors">{ctaLabel}</Link>
-            {agendaHref && (
-              <Link href={agendaHref} className="inline-flex items-center justify-center px-6 py-3.5 rounded-md bg-white text-foreground font-bold text-sm hover:bg-white/90 transition-colors">View the full agenda →</Link>
-            )}
           </div>
         </div>
         <div className="relative border-t border-white/10 bg-white/[0.03] backdrop-blur-sm">
@@ -127,17 +136,36 @@ export default function CourseTopBlock({
             <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
             <p className="text-sm text-white/85 leading-relaxed"><span className="font-bold text-white">These are certificate fees, not the course price.</span> They are charged per person, <span className="font-bold text-white">on top of the course fee</span>. The course itself is quoted separately, based on your numbers and whether we deliver on-site or you take open-course seats.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 gap-4">
             {cert.map((c) => (
-              <div key={c.name} className="cert-card group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors">
+              <div key={c.name} className="cert-card flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-6 hover:border-accent/50 transition-colors">
                 <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
-                <p className="mt-3 text-xl font-black">{c.name}</p>
-                <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certificate fee</p>
-                <p className="mt-1 text-3xl font-black text-accent">{c.cost} <span className="text-sm font-bold text-white/50">{c.unit}</span></p>
-                <p className="mt-3 text-sm text-white/70 leading-relaxed">{c.note}</p>
+                <p className="mt-2 text-xl font-black leading-tight">{c.name}</p>
+                {/* Fee on one baseline across all three cards -- "Included" is a word and "+£34" a
+                    number, so without the flex-baseline row they sat at visibly different heights. */}
+                <p className="mt-4 flex flex-wrap items-baseline gap-x-2 text-3xl font-black text-accent">
+                  {c.cost}<span className="text-sm font-bold text-white/50">{c.unit}</span>
+                </p>
+                {/* mt-auto pins every note to the card floor, so the three cards read as one row
+                    rather than three ragged blocks. */}
+                <p className="mt-auto pt-3 text-sm text-white/70 leading-relaxed">{c.note}</p>
               </div>
             ))}
           </div>
+
+          {proof && proof.length > 0 && (
+            <div className="mt-10 border-t border-white/10 pt-7">
+              <div className="grid grid-cols-1 sm:grid-cols-3 sm:divide-x divide-white/10">
+                {proof.map((p) => (
+                  <div key={p.k} className="px-0 sm:px-6 py-3 sm:py-0 first:sm:pl-0 last:sm:pr-0">
+                    <p className="text-3xl font-black text-accent leading-none">{p.v}</p>
+                    <p className="mt-1.5 text-[11px] font-black uppercase tracking-widest text-white">{p.k}</p>
+                    <p className="mt-1 text-xs text-white/60 leading-relaxed">{p.s}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </>
