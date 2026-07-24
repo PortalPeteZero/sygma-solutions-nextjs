@@ -1,0 +1,54 @@
+{
+  "generated": "2026-07-24",
+  "source": "public.ee_public_courses (Command Centre)",
+  "courses": [
+    {
+      "date": "2026-08-17",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": 6
+    },
+    {
+      "date": "2026-09-07",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": 5
+    },
+    {
+      "date": "2026-10-19",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": 7
+    },
+    {
+      "date": "2026-10-20",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": null
+    },
+    {
+      "date": "2026-11-09",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": null
+    },
+    {
+      "date": "2026-11-10",
+      "family": "cat1",
+      "title": "EUSR Cat 1 / CAT and Genny",
+      "venue": null,
+      "cap": 8,
+      "placesLeft": null
+    }
+  ]
+}

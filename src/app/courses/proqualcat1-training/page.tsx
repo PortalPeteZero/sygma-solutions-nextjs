@@ -1,6 +1,7 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import Link from 'next/link';
 import CourseTopBlock from "@/components/CourseTopBlock";
+import CourseDates from "@/components/CourseDates";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -63,6 +64,8 @@ export default function ProQualCat1() {
         ctaLabel="Book ProQual Cat 1 Training →"
         proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: '70-80%', k: 'Increase in Genny Usage', s: 'Measured through locator data downloads after Sygma training.' }, { v: 'Proven', k: 'Strike Reduction Record', s: 'Clients report measurable reductions in service strikes.' }]}
       />
+
+      <CourseDates family="cat1" />
 
       
       {/* Hero CTA Bar */}

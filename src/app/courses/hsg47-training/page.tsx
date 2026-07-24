@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CourseTopBlock from "@/components/CourseTopBlock";
+import CourseDates from "@/components/CourseDates";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -103,6 +104,8 @@ export default function Hsg47Training() {
         ctaLabel="Book HSG47 Training →"
         proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: 'EUSR + CITB', k: 'Accredited Course Routes', s: 'EUSR Category 1, ProQual CAT1, CITB Approved Training Organisation.' }, { v: 'UK-Wide', k: 'On-Site Delivery', s: 'Travel included. Course delivered at your premises, nationwide.' }]}
       />
+
+      <CourseDates family="cat1" />
 
       
       {/* Who Needs It — bulleted list (no H3s) */}
