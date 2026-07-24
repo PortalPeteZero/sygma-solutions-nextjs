@@ -129,7 +129,7 @@ export default function GennyCatTraining() {
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Who Is This Course For</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Designed For</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">Who this course is for</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -205,14 +205,14 @@ export default function GennyCatTraining() {
       {/* Online vs On-Site format question */}
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="eyebrow mb-3">Format Question</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Online vs On-Site Training</h2>
+          <p className="eyebrow mb-3">Delivery</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">Can this course be done online?</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Searches for "<strong className="text-foreground">cat and genny training online</strong>" are common, but Sygma's full course is on-site by design. The reason is the practical assessment: a course without hands-on operation on a real site <strong className="text-foreground">cannot prove competence under HSG47</strong>, and cannot be assessed against the EUSR CAT1 or ProQual CAT1 practical criteria. Online theory alone will not give an operative the qualification.
+              The full assessed qualification is delivered on site. The practical assessment is the reason: EUSR CAT1 and ProQual CAT1 both require hands-on operation on real buried services, and <strong className="text-foreground">competence under HSG47 cannot be demonstrated from a screen</strong>. Online theory on its own will not give an operative the qualification.
             </p>
             <p>
-              Where online does work is the awareness layer: refreshers and supervisors who need to understand the equipment without operating it. For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance, designed to pair with on-site training rather than replace it.
+              Online does have a place. For the awareness layer, refreshers and supervisors who need to understand the equipment without operating it, For that, Sygma offers a <Link href="/courses/cat4-hsg47-awareness-online" className="text-primary font-semibold hover:underline">CAT4 HSG47 Awareness Online</Link> course covering theory, data download and HSG47 compliance, designed to pair with on-site training rather than replace it.
             </p>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function GennyCatTraining() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="eyebrow mb-3">Course Content</p>
-          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">CAT and Genny Course Content: Cable Avoidance Training on Your Ground</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">What the course covers</h2>
           <p className="text-muted-foreground leading-relaxed mb-10 max-w-3xl">
             The classroom covers electromagnetic theory and the four detection modes. The practical session moves to site with the <strong className="text-foreground">Genny tools</strong> (signal generator, induction clamp, sonde, earthing accessories) to apply active signals and trace <strong className="text-foreground">underground utilities</strong> in real conditions. <strong className="text-foreground">Cable plans</strong> and service drawings are cross-checked against locator readings throughout.
           </p>
@@ -400,7 +400,7 @@ export default function GennyCatTraining() {
           <div className="grid md:grid-cols-2 gap-10">
             <div>
               <p className="eyebrow mb-3">Site Requirements</p>
-              <h2 className="text-xl font-black mb-6 text-foreground">What You Need to Provide</h2>
+              <h2 className="text-xl font-black mb-6 text-foreground">What you need on the day</h2>
               <div className="space-y-3">
                 {[
                   ["STATS Plans", "Buried service drawings appropriate to the practical site. If plans are not available, Sygma can supply plans at an additional cost agreed prior to booking."],
@@ -452,34 +452,6 @@ export default function GennyCatTraining() {
         </div>
       </div>
 
-      {/* Related Reading */}
-      <section className="bg-muted/20 border-y border-border py-14">
-        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
-              <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
-            </Link>
-            <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
-              <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
-            </Link>
-            <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
-              <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
-            </Link>
-            <Link href="/knowledge-hub/eusr-card-renewal" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</h3>
-              <p className="text-sm text-muted-foreground">When and how to renew your EUSR CAT1 card before it expires.</p>
-            </Link>
-            <Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block sm:col-span-2">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Detecting Plastic Gas Service Pipes: Methods and Their Limits</h3>
-              <p className="text-sm text-muted-foreground">Where CAT and Genny stop working: plastic gas pipes are invisible to electromagnetic detection. Field note covering Gas Tracker II, sonde, GPR, and trial-hole methods. Prepared by Sygma for The Clancy Group.</p>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* FAQs */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
@@ -536,6 +508,34 @@ export default function GennyCatTraining() {
         </div>
       </section>
 
+      {/* Related Reading */}
+      <section className="bg-muted/20 border-y border-border py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
+              <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
+            </Link>
+            <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
+              <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
+            </Link>
+            <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
+              <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
+            </Link>
+            <Link href="/knowledge-hub/eusr-card-renewal" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
+              <h3 className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</h3>
+              <p className="text-sm text-muted-foreground">When and how to renew your EUSR CAT1 card before it expires.</p>
+            </Link>
+            <Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block sm:col-span-2">
+              <h3 className="font-bold text-foreground mb-2 text-sm">Detecting Plastic Gas Service Pipes: Methods and Their Limits</h3>
+              <p className="text-sm text-muted-foreground">Where CAT and Genny stop working: plastic gas pipes are invisible to electromagnetic detection. Field note covering Gas Tracker II, sonde, GPR, and trial-hole methods. Prepared by Sygma for The Clancy Group.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* Related Courses */}
       <section className="py-16 bg-muted/20">
         <div className="container mx-auto px-4 max-w-5xl">
