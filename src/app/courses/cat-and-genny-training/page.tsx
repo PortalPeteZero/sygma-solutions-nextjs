@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import CourseTopBlock from "@/components/CourseTopBlock";
 import CourseDates from "@/components/CourseDates";
+import CourseReviews from "@/components/CourseReviews";
 import { courseSchema, faqPageSchema, breadcrumbSchema, videoObjectSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -481,6 +482,8 @@ export default function GennyCatTraining() {
           ))}
         </div>
       </section>
+
+      <CourseReviews />
 
       {/* HSG47 Compliance */}
       <section className="py-16 bg-background">
