@@ -110,7 +110,7 @@ export default function CableAvoidanceTraining() {
               },
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
-                <h3 className="font-bold text-foreground mb-2">{p.title}</h3>
+                <p className="font-bold text-foreground mb-2">{p.title}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -184,6 +184,16 @@ export default function CableAvoidanceTraining() {
           <h2 className="text-xl font-black mb-4 text-foreground">Genny & CAT, Not CAT & Genny</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">The industry calls it "CAT and Genny training" or "cable avoidance training". We call it Genny & CAT. The name reflects the methodology: <strong>start with the signal generator, apply a known signal, trace it, verify it</strong>. Only then move to passive modes. Every cable avoidance course Sygma delivers follows this order because 21 years of post-strike investigation data tells us the same thing: <strong>the majority of preventable utility strikes happen when operatives skip the Genny</strong> and rely on passive readings alone.</p>
           <p className="text-muted-foreground leading-relaxed">This is not a marketing exercise. The <strong>ProQual CAT1 Plus specification (PP3.3) now requires candidates to "conduct a survey using the transmitter first"</strong> and exhaust all transmitter connection opportunities before moving to induction. That is the Genny-First methodology formalised into externally audited qualification criteria. Sygma helped write that standard. No other training provider or awarding body has embedded this principle into their assessment criteria.</p>
+        </div>
+      </section>
+
+      {/* Cable Avoidance Tool Training */}
+      <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">The Equipment</p>
+          <h2 className="text-3xl font-black text-foreground mb-4">Cable Avoidance Tool Training</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">The CAT is the cable avoidance tool itself, and using it properly is a trained skill, not a matter of switching it on and sweeping. This course covers the tool in depth: the passive Power and Radio modes and what each can and cannot detect, why passive sweeps alone never guarantee a clear dig area, and the pre-use checks that confirm the cable avoidance tool is functioning correctly before every use.</p>
+          <p className="text-muted-foreground leading-relaxed">Delegates train on the tool paired with the signal generator from the start, because that is how reliable location actually works on site. If your operatives already carry a CAT but have never had formal cable avoidance tool training, this is the course that turns the box in the van into a strike-prevention instrument.</p>
         </div>
       </section>
 
@@ -306,7 +316,7 @@ export default function CableAvoidanceTraining() {
               },
             ].map((item, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
-                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="font-bold text-foreground mb-2">{item.title}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -418,7 +428,7 @@ export default function CableAvoidanceTraining() {
             </div>
             <div>
               <p className="eyebrow mb-3">CITB Funding</p>
-              <h3 className="text-xl font-black mb-4 text-foreground">CITB Approved Training Organisation</h3>
+              <p className="text-xl font-black mb-4 text-foreground">CITB Approved Training Organisation</p>
               <div className="bg-background rounded-xl border border-border p-5">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   Sygma Solutions is a CITB Approved Training Organisation. Employers who pay the CITB levy may still be able to access training funding support through the CITB Employer Network.
@@ -453,7 +463,7 @@ export default function CableAvoidanceTraining() {
         <div className="space-y-4">
           {faqs.map(({ q, a }) => (
             <div key={q} className="border border-border rounded-lg p-6">
-              <h3 className="font-bold text-foreground mb-3">{q}</h3>
+              <p className="font-bold text-foreground mb-3">{q}</p>
               <p className="text-muted-foreground leading-relaxed">{a}</p>
             </div>
           ))}
@@ -470,32 +480,32 @@ export default function CableAvoidanceTraining() {
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Competence</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</h3>
+              <p className="text-base font-bold text-foreground mb-2">Trained and Competent Operatives</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Formal assessment ensures operatives meet competence standards for cable avoidance work. Delegates leave able to recognise the hazards and locate underground utilities safely.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Process</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Safe System of Work</h3>
+              <p className="text-base font-bold text-foreground mb-2">Safe System of Work</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Classroom and practical training covers systematic approach to service location.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Planning</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Service Plan Checks</h3>
+              <p className="text-base font-bold text-foreground mb-2">Service Plan Checks</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Reading, interpreting and cross-checking buried service drawings before work begins.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Equipment</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Correct Use of Equipment</h3>
+              <p className="text-base font-bold text-foreground mb-2">Correct Use of Equipment</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Training in all four locating modes (Power, Radio, Genny and Avoidance) with emphasis on correct operation and limitations.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Verification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Visual Inspection</h3>
+              <p className="text-base font-bold text-foreground mb-2">Visual Inspection</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Site visual checks for above-ground indicators of buried services before and during work.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Records</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Evidenced Training Records</h3>
+              <p className="text-base font-bold text-foreground mb-2">Evidenced Training Records</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Written and practical assessment results provided for compliance documentation and audit.</p>
             </div>
           </div>
@@ -511,32 +521,32 @@ export default function CableAvoidanceTraining() {
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Content</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Content That Exceeds Industry Standards</h3>
+              <p className="text-base font-bold text-foreground mb-2">Content That Exceeds Industry Standards</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Whether you choose in-house, <Link href="/knowledge-hub/eusr-cat1-vs-proqual-cat1" className="text-primary hover:underline">EUSR or ProQual</Link>, Sygma content goes above and beyond qualification specifications. This comprehensive approach is something you will only find in a Sygma course.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Methodology</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Genny-First Methodology</h3>
+              <p className="text-base font-bold text-foreground mb-2">Genny-First Methodology</p>
               <p className="text-sm text-muted-foreground leading-relaxed">70-80% increase in Genny usage among Sygma-trained operatives. Measured through locator data downloads.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">People</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Specialist Trainers</h3>
+              <p className="text-base font-bold text-foreground mb-2">Specialist Trainers</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Directly employed. Ex-utility surveyors or ex-equipment manufacturer specialists. TAQA qualified.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Assessment</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Real Practical Assessment</h3>
+              <p className="text-base font-bold text-foreground mb-2">Real Practical Assessment</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Structured on-site practical in real conditions. The goal is competent operatives, not just certificates.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Approach</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Independent</h3>
+              <p className="text-base font-bold text-foreground mb-2">Independent</p>
               <p className="text-sm text-muted-foreground leading-relaxed">No surveys, no equipment, no manufacturer relationships. Unbiased training.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Delivery</p>
-              <h3 className="text-base font-bold text-foreground mb-2">We Come to You</h3>
+              <p className="text-base font-bold text-foreground mb-2">We Come to You</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Delivered at your site. Travel included. No hidden extras.</p>
             </div>
           </div>
@@ -549,19 +559,19 @@ export default function CableAvoidanceTraining() {
           <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</p>
               <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
             </Link>
             <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</p>
               <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
             </Link>
             <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</p>
               <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
             </Link>
             <Link href="/knowledge-hub/npors-vs-eusr" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">NPORS vs EUSR Qualification Routes</p>
               <p className="text-sm text-muted-foreground">How the two main accreditation schemes compare for cable avoidance training.</p>
             </Link>
           </div>
@@ -576,7 +586,7 @@ export default function CableAvoidanceTraining() {
           <div className="grid md:grid-cols-3 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Qualification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
+              <p className="text-base font-bold text-foreground mb-2">EUSR CAT1</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">EUSR-registered qualification for operatives who need a formal card.</p>
               <Link href="/courses/eusr-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -584,7 +594,7 @@ export default function CableAvoidanceTraining() {
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Assessment</p>
-              <h3 className="text-base font-bold text-foreground mb-2">ProQual CAT1</h3>
+              <p className="text-base font-bold text-foreground mb-2">ProQual CAT1</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">Accredited qualification with all four EML modes in the practical assessment.</p>
               <Link href="/courses/proqualcat1-training" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -592,7 +602,7 @@ export default function CableAvoidanceTraining() {
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Vivax-Metrotech</p>
-              <h3 className="text-base font-bold text-foreground mb-2">vScan & Tx Training</h3>
+              <p className="text-base font-bold text-foreground mb-2">vScan & Tx Training</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">The Vivax-Metrotech vScan and transmitter equivalent of this course, using the same Sygma methodology.</p>
               <Link href="/courses/vscan-and-transmitter-training" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
