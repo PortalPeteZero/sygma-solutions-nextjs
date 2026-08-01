@@ -155,7 +155,7 @@ export default function GennyCatTraining() {
               },
             ].map((p, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
-                <h3 className="font-bold text-foreground mb-2">{p.title}</h3>
+                <p className="font-bold text-foreground mb-2">{p.title}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -340,7 +340,7 @@ export default function GennyCatTraining() {
               },
             ].map((item, i) => (
               <div key={i} className="border border-border rounded-lg bg-card p-5">
-                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="font-bold text-foreground mb-2">{item.title}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -504,17 +504,17 @@ export default function GennyCatTraining() {
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Methodology</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Genny-First Methodology</h3>
+              <p className="text-base font-bold text-foreground mb-2">Genny-First Methodology</p>
               <p className="text-sm text-muted-foreground leading-relaxed">70-80% increase in Genny usage among Sygma-trained operatives. Measured through locator data downloads.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">People</p>
-              <h3 className="text-base font-bold text-foreground mb-2">Specialist Trainers</h3>
+              <p className="text-base font-bold text-foreground mb-2">Specialist Trainers</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Directly employed. Ex-utility surveyors or ex-equipment manufacturer specialists. TAQA qualified.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Delivery</p>
-              <h3 className="text-base font-bold text-foreground mb-2">We Come to You</h3>
+              <p className="text-base font-bold text-foreground mb-2">We Come to You</p>
               <p className="text-sm text-muted-foreground leading-relaxed">Delivered at your site. Travel included. No hidden extras. Independent: no surveys, no equipment sales, no manufacturer relationships.</p>
             </div>
           </div>
@@ -527,23 +527,23 @@ export default function GennyCatTraining() {
           <h2 className="text-xl font-black mb-6 text-foreground">Related Reading</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/knowledge-hub/genny-first-methodology" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">Genny-First Methodology</p>
               <p className="text-sm text-muted-foreground">Why Sygma teaches Genny-first and how it increases buried utility detection rates.</p>
             </Link>
             <Link href="/knowledge-hub/hsg47-explained" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">HSG47 Explained</p>
               <p className="text-sm text-muted-foreground">The HSE guidance that underpins all cable avoidance work. What it says and why it matters.</p>
             </Link>
             <Link href="/knowledge-hub/strike-prevention-site-managers" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">Strike Prevention for Site Managers</p>
               <p className="text-sm text-muted-foreground">Practical guidance for site managers on reducing utility strike risk on construction projects.</p>
             </Link>
             <Link href="/knowledge-hub/eusr-card-renewal" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block">
-              <h3 className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">EUSR Card Renewal</p>
               <p className="text-sm text-muted-foreground">When and how to renew your EUSR CAT1 card before it expires.</p>
             </Link>
             <Link href="/knowledge-hub/detecting-plastic-gas-service-pipes" className="rounded-lg border border-border bg-background p-5 hover:shadow-md transition-shadow block sm:col-span-2">
-              <h3 className="font-bold text-foreground mb-2 text-sm">Detecting Plastic Gas Service Pipes: Methods and Their Limits</h3>
+              <p className="font-bold text-foreground mb-2 text-sm">Detecting Plastic Gas Service Pipes: Methods and Their Limits</p>
               <p className="text-sm text-muted-foreground">Where CAT and Genny stop working: plastic gas pipes are invisible to electromagnetic detection. Field note covering Gas Tracker II, sonde, GPR, and trial-hole methods. Prepared by Sygma for The Clancy Group.</p>
             </Link>
           </div>
@@ -558,7 +558,7 @@ export default function GennyCatTraining() {
           <div className="grid md:grid-cols-3 gap-5">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Qualification</p>
-              <h3 className="text-base font-bold text-foreground mb-2">EUSR CAT1</h3>
+              <p className="text-base font-bold text-foreground mb-2">EUSR CAT1</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">EUSR-registered qualification for operatives who need a formal card.</p>
               <Link href="/courses/eusr-cat1" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -566,7 +566,7 @@ export default function GennyCatTraining() {
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Assessment</p>
-              <h3 className="text-base font-bold text-foreground mb-2">ProQual CAT1</h3>
+              <p className="text-base font-bold text-foreground mb-2">ProQual CAT1</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">Accredited qualification with all four EML modes in the practical assessment.</p>
               <Link href="/courses/proqualcat1-training" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -574,7 +574,7 @@ export default function GennyCatTraining() {
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Vivax-Metrotech</p>
-              <h3 className="text-base font-bold text-foreground mb-2">vScan & Tx Training</h3>
+              <p className="text-base font-bold text-foreground mb-2">vScan & Tx Training</p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">The Vivax-Metrotech vScan and transmitter equivalent of this course, using the same Sygma methodology.</p>
               <Link href="/courses/vscan-and-transmitter-training" className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors">
                 View Course &rarr;
@@ -587,7 +587,7 @@ export default function GennyCatTraining() {
       {/* Also Consider */}
       <section className="border-t border-border py-10">
         <div className="container mx-auto max-w-3xl px-4">
-          <h3 className="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Also Consider</h3>
+          <p className="mb-4 text-sm font-bold uppercase tracking-widest text-accent">Also Consider</p>
           <div className="grid gap-4 sm:grid-cols-2">
               <Link href="/osca" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">OSCA Assessment</p>
