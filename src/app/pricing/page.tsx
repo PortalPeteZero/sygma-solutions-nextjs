@@ -21,7 +21,9 @@ export default function PricingPage() {
   const benefits = [
     {
       title: 'Per course, not per person',
-      desc: 'Sygma charges a single course fee for the whole group. Whether you send 4 people or 8, the fee is the same. There is no per-delegate pricing and no incentive for us to overstate group sizes.',
+      // ⛔ Do not restate "there is no per-delegate pricing" here. The course pages carry a
+      // "from £x per delegate" figure, so that absolute claim reads as a contradiction. Pete, 1 Aug 2026.
+      desc: 'Sygma charges a single course fee for the whole group. Whether you send 4 people or 8, the fee is the same. There is no incentive for us to overstate group sizes.',
     },
     {
       title: 'Travel included',

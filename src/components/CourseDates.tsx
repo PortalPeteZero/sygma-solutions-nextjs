@@ -15,9 +15,8 @@ import data from '@/data/course-dates.json';
    ⚠ Rows with a null venue render WITHOUT a venue line. Do not substitute a default: an invented
    venue on a public booking block is a factual claim we cannot support. Same for places-left. */
 
-const DAY_RATE = 965;          // on-site day rate, up to 8 delegates
 const MAX_DELEGATES = 8;
-const FROM_PER_PERSON = 121;   // Pete, 24 Jul 2026 — £965/8 = £120.63, rounded up to a whole pound
+const FROM_PER_PERSON = 121;   // the ONLY price that may appear on a public page (Pete, 24 Jul 2026)
 
 type Course = { date: string; family: string | null; title: string; venue: string | null; cap: number | null; placesLeft: number | null };
 
@@ -52,8 +51,10 @@ export default function CourseDates({
               From £{FROM_PER_PERSON}
               <span className="ml-1.5 text-sm font-bold text-muted-foreground">per delegate</span>
             </p>
+            {/* ⛔ NEVER put the on-site day rate back on a public page. Pete, 1 Aug 2026: a line
+                stating the group day rate was published 24 Jul and pulled on sight. The per-delegate
+                "from" figure is the only price that goes public. Do not re-derive or restate it. */}
             <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
-              Based on a £{DAY_RATE} day rate for up to {MAX_DELEGATES} delegates at your site, travel included.
               Certificate fees are charged separately.
             </p>
           </div>
