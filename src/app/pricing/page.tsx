@@ -5,11 +5,11 @@ import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Training Course Prices & Booking | Sygma Solutions',
-  description: 'Sygma charges one course fee per group, not per person. Travel is included. Find out how our per-course pricing model works and get a quote.',
+  description: 'Sygma training is quoted for your requirements. Travel is included and there are no hidden extras. Contact us for a fixed quotation with no obligation.',
   alternates: { canonical: 'https://sygma-solutions.com/pricing' },
   openGraph: {
     title: 'Training Course Prices & Booking | Sygma Solutions',
-    description: 'Sygma charges one course fee per group, not per person. Travel is included.',
+    description: 'Sygma training is quoted for your requirements. Travel is included and there are no hidden extras.',
     url: 'https://sygma-solutions.com/pricing',
     siteName: SITE_NAME,
     images: [DEFAULT_OG_IMAGE],
@@ -20,10 +20,11 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   const benefits = [
     {
-      title: 'Per course, not per person',
-      // ⛔ Do not restate "there is no per-delegate pricing" here. The course pages carry a
-      // "from £x per delegate" figure, so that absolute claim reads as a contradiction. Pete, 1 Aug 2026.
-      desc: 'Sygma charges a single course fee for the whole group. Whether you send 4 people or 8, the fee is the same. There is no incentive for us to overstate group sizes.',
+      // ⛔ NO price figure on this page, and NO "per course, not per person" claim. Pete, 1 Aug 2026:
+      // the only price Sygma states publicly is the "from £x per delegate" figure on the five
+      // avoidance course pages. This page covers the whole range, so it is quote-only.
+      title: 'Quoted for your requirements',
+      desc: 'Every course is quoted on the course you need, the number of delegates, and where we deliver it. Contact us and we will confirm a fixed price with no obligation.',
     },
     {
       title: 'Travel included',
@@ -41,16 +42,16 @@ export default function PricingPage() {
 
   const faqs = [
     {
-      q: 'Why does Sygma charge per course and not per person?',
-      a: 'Because the cost drivers in our business are trainer time and travel, not headcount. Charging per course means you pay a fair rate regardless of whether you have 4 people or 8. It also means there is no incentive for us to overstate group sizes.',
+      q: 'How is a Sygma course priced?',
+      a: 'Every course is quoted for your specific requirements: the course you need, the number of delegates, and where we deliver it. Travel within the UK mainland is included and there are no hidden extras. Contact us and we will confirm a fixed quotation with no obligation.',
     },
     {
       q: 'What is the maximum group size?',
-      a: 'The maximum group size for practical utility avoidance courses is 8 delegates. For theory-only or awareness modules, groups of up to 12 can be accommodated. If you have more than 8 people to train, we book additional sessions at the same day rate.',
+      a: 'The maximum group size for practical utility avoidance courses is 8 delegates. For theory-only or awareness modules, groups of up to 12 can be accommodated. If you have more than 8 people to train, we book additional sessions.',
     },
     {
       q: 'Is there a minimum group size?',
-      a: 'There is no minimum. We have delivered courses to groups of 3 and groups of 8. The course fee is the same either way.',
+      a: 'There is no minimum. We have delivered courses to groups of 3 and groups of 8. Contact us with your group size and we will quote for it.',
     },
     {
       q: 'What is not included in the course fee?',
@@ -109,8 +110,8 @@ export default function PricingPage() {
       
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Per Course, Not Per Person. No Surprises.</h1>
-          <p className="text-xl mb-8">Sygma charges one fixed course fee for your whole group. Travel is included. There are no hidden extras. Contact us for a quote tailored to your requirements.</p>
+          <h1 className="text-5xl font-bold mb-4">Clear Pricing. No Surprises.</h1>
+          <p className="text-xl mb-8">Travel is included. There are no hidden extras. Contact us for a quote tailored to your requirements.</p>
         </div>
       </section>
 
