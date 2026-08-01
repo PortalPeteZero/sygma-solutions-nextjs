@@ -262,9 +262,9 @@ export default function CourseComparison() {
                 },
                 {
                   label: "Pricing",
-                  eus: "Per course, not per person. Contact Sygma.",
-                  pq1: "Per course, not per person. Contact Sygma.",
-                  pq1p: "Per course, not per person. Contact Sygma.",
+                  eus: "Fixed price on site, per delegate on open courses. Contact Sygma.",
+                  pq1: "Fixed price on site, per delegate on open courses. Contact Sygma.",
+                  pq1p: "Fixed price on site, per delegate on open courses. Contact Sygma.",
                 },
               ].map(({ label, eus, pq1, pq1p }, i) => (
                 <tr key={label} className={i % 2 === 0 ? "bg-background" : "bg-muted/20"}>

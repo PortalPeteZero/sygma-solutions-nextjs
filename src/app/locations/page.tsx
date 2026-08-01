@@ -40,7 +40,7 @@ const locations = [
     desc: 'Most Sygma courses can be delivered at your site, yard, or premises anywhere on the UK mainland. Travel is included in the course fee. On-site delivery requires a suitable indoor space for theory and briefing elements, and outdoor access for practical exercises.',
     address: 'Anywhere on the UK mainland',
     courses: 'All Utility Avoidance courses, OSCA on-site competency assessments, Bespoke and corporate programmes.',
-    notes: 'Travel and expenses included in day rate. Site requirements confirmed at enquiry stage.',
+    notes: 'Travel and expenses included. Site requirements confirmed at enquiry stage.',
   },
   {
     name: 'Virtual Delivery (MS Teams)',

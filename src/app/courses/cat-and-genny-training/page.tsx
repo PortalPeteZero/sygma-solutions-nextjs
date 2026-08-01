@@ -30,7 +30,7 @@ const faqs = [
   {
     q: "How much does a CAT and Genny course cost?",
     paa: true,
-    a: "In-house day rate for up to 8 delegates at your site, or per person on open courses. Travel included, no hidden extras. CITB-levy employers may access funding via the CITB Employer Network. Contact us for a tailored quote.",
+    a: "On site, one fixed price for your group of up to 8 delegates at your premises. Open courses are priced per delegate. Travel included, no hidden extras. CITB-levy employers may access funding via the CITB Employer Network. Contact us for a tailored quote.",
     thumb: "cat-66",
     thumbAlt: "Sygma CAT and Genny course delegates with CAT4+ locators on a UK training site",
   },
@@ -433,7 +433,7 @@ export default function GennyCatTraining() {
               <h3 className="text-xl font-black mb-4 text-foreground">Training Near You, Across the UK</h3>
               <div className="bg-background rounded-xl border border-border p-5 mb-4">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-3">
-                  Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers at client sites anywhere in the UK. Common delivery regions include <Link href="/locations/london" className="text-primary hover:underline">London and the South East</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester and the North West</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham and the Midlands</Link>, <Link href="/locations/bristol" className="text-primary hover:underline">Bristol and the South West</Link>, <Link href="/locations" className="text-primary hover:underline">Scotland</Link>, and across Northern England. <strong className="text-foreground">Travel is included in the day rate with no hidden extras</strong>.
+                  Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers at client sites anywhere in the UK. Common delivery regions include <Link href="/locations/london" className="text-primary hover:underline">London and the South East</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester and the North West</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham and the Midlands</Link>, <Link href="/locations/bristol" className="text-primary hover:underline">Bristol and the South West</Link>, <Link href="/locations" className="text-primary hover:underline">Scotland</Link>, and across Northern England. <strong className="text-foreground">Travel is included with no hidden extras</strong>.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Regional delivery pages: <Link href="/locations/london" className="text-primary hover:underline">London</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester</Link> and <Link href="/locations" className="text-primary hover:underline">Scotland</Link>.

@@ -268,7 +268,7 @@ export default function UtilityMappingHub() {
               { title: 'External Audit You Can Trust', body: "Every ProQual qualification awarded through Sygma is assessed by Sygma trainers and externally audited by the awarding body. That oversight is what gives your certificate credibility with clients, frameworks, and procurement teams." },
               { title: 'Trainers Who Are Active Surveyors', body: 'Our trainers are not ex-industry. They are current industry professionals who locate buried services and conduct utility surveys on live PAS128 survey projects. They know what is actually happening on survey sites right now.' },
               { title: 'PAS128 Grounded Throughout', body: 'Every course in this hub is built around PAS128. Not as an afterthought or a reference standard, but as the framework that determines how every element of the training is structured.' },
-              { title: 'Fixed-Fee Pricing with No Hidden Costs', body: 'Our qualification programmes are priced per course, not per person. Course fees include all learning materials, assessment support, and tutor time. ProQual registration fees are charged at cost with no markup.' },
+              { title: 'Fixed-Fee Pricing with No Hidden Costs', body: 'Our qualification programmes are quoted for your requirements. Course fees include all learning materials, assessment support, and tutor time. ProQual registration fees are charged at cost with no markup. Contact us for a quote.' },
               { title: 'Flexible Delivery', body: 'Open courses or in-house delivery nationwide UK. Online delivery via MS Teams for experienced professionals.' },
             ].map((item) => (
               <div key={item.title} className="bg-background rounded-xl border border-border p-6">

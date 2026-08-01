@@ -298,7 +298,7 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-widest text-accent mb-3">Simple Pricing</p>
               <h2 className="text-3xl font-black text-foreground mb-4">One Course Fee. One Group. One Invoice.</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">Sygma charges per course, not per person. Whether you send 4 people or 8, the course fee stays the same. Travel within the UK mainland is included. There are no hidden fees beyond the awarding body accreditation charge where applicable.</p>
+              <p className="text-muted-foreground leading-relaxed mb-4">On site, Sygma charges one fixed price for your group. Open courses are priced per delegate. Travel within the UK mainland is included. There are no hidden fees beyond the awarding body accreditation charge where applicable. Contact us for a quote.</p>
               <p className="text-muted-foreground leading-relaxed mb-6">CITB-registered employers may be able to access funding through the CITB Employer Network scheme. We can help you check eligibility.</p>
               <Link href="/contact#enquiry-form" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold text-sm hover:bg-primary/90 transition-colors">
                 Book a Course <ArrowRight size={14} className="ml-1.5" />
@@ -306,7 +306,7 @@ export default function Home() {
             </div>
             <div className="space-y-3">
               {[
-                { label: 'Pricing model', detail: 'Per course, not per person' },
+                { label: 'Pricing model', detail: 'Fixed price on site, per delegate on open courses' },
                 { label: 'Travel', detail: 'Included across UK mainland' },
                 { label: 'Group size', detail: 'Up to 8 delegates per course' },
                 { label: 'CITB funding', detail: 'Employer Network funding may apply' },

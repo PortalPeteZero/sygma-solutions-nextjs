@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "How much does the course cost?",
-    a: "Priced as an in-house day rate for up to 8 delegates at your premises, or per person on open course dates. Travel is included with no hidden extras. The course cost varies by format — EUSR Category 1 and ProQual CAT1 carry additional awarding body fees plus EUSR registration. CITB levy-paying employers may be eligible for funding support through the CITB Employer Network. Contact Sygma for a tailored quote with available course dates.",
+    a: "On site, one fixed price for your group of up to 8 delegates at your premises. Open course dates are priced per delegate. Travel is included with no hidden extras. The course cost varies by format — EUSR Category 1 and ProQual CAT1 carry additional awarding body fees plus EUSR registration. CITB levy-paying employers may be eligible for funding support through the CITB Employer Network. Contact Sygma for a tailored quote with available course dates.",
     thumb: "cat-06-hsg47-training",
     thumbAlt: "Course cost — in-house delivery for up to 8 delegates",
   },
@@ -253,7 +253,7 @@ export default function Hsg47Training() {
             EUSR Category 1 course content is structured around locate utility services hsg47 protocol: pre-dig planning from utility drawings, signal generator and cable locator use, all four detection modes, the Genny-First methodology, and the safe-dig sequence that follows. Each delegate assessed against EUSR national occupational standards. Category 1 Locate Utility Services registration is processed on the completion date; 1 Locate Utility Services framework is the formal name on the card.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            In-house EUSR Category 1 course dates available on request — pick a date that suits, up to 8 delegates per course at your premises, travel and EUSR registration included in the day rate. Open course dates also available at the Wigan course centre. The locate utility services hsg47 syllabus is identical across in-house and open delivery — same assessment, same EUSR Category 1 card.
+            In-house EUSR Category 1 course dates available on request — pick a date that suits, up to 8 delegates per course at your premises, travel and EUSR registration included. Open course dates also available at the Wigan course centre. The locate utility services hsg47 syllabus is identical across in-house and open delivery — same assessment, same EUSR Category 1 card.
           </p>
         </div>
       </section>
@@ -277,7 +277,7 @@ export default function Hsg47Training() {
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Delivery</p>
               <h3 className="text-base font-bold text-foreground mb-2">Your Premises, Nationwide</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Every course delivered at your premises across the UK. Travel included in the course day rate, no hidden extras. Your delegates learn on the same ground and buried utility services they encounter daily — not on a generic training centre rig. Course dates flexible.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Every course delivered at your premises across the UK. Travel included, no hidden extras. Your delegates learn on the same ground and buried utility services they encounter daily — not on a generic training centre rig. Course dates flexible.</p>
             </div>
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Trainers</p>
@@ -315,7 +315,7 @@ export default function Hsg47Training() {
                 ))}
               </ul>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Travel included in the course day rate with no hidden extras. Sygma&rsquo;s training centre in Wigan is available as an alternative venue at no additional cost — open course dates also available there.
+                Travel included with no hidden extras. Sygma&rsquo;s training centre in Wigan is available as an alternative venue at no additional cost — open course dates also available there.
               </p>
             </div>
             <div className="space-y-4">

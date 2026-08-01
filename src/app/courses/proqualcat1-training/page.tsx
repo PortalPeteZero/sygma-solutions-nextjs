@@ -512,10 +512,10 @@ export default function ProQualCat1() {
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-4xl">
         <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Pricing</p>
         <h2 className="text-2xl font-black mb-8 text-foreground">Simple, Transparent Pricing</h2>
-        <p className="text-muted-foreground mb-6">Sygma charges per course, not per person. Whether you send 4 delegates or 8, the course fee stays the same. Travel within the UK mainland is included. ProQual registration fee is included in the course price. No hidden extras.</p>
+        <p className="text-muted-foreground mb-6">On site, Sygma charges one fixed price for your group. Open courses are priced per delegate. Travel within the UK mainland is included. ProQual registration fee is included in the course price. No hidden extras. Contact us for a quote.</p>
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           {[
-            ["Per course, not per person", "One fixed fee covers your whole group of up to 8 delegates."],
+            ["On site or open course", "On site, one fixed price covers your group of up to 8 delegates. Open courses are priced per delegate."],
             ["Travel included", "At Sygma HQ (Wigan), The Survey School (Worcester), or on-site at your premises."],
             ["No hidden extras", "ProQual registration, assessment materials, and post-course feedback included."],
           ].map(([title, desc]) => (

@@ -179,7 +179,7 @@ export default function EusCat2SafeDig() {
                   ["Course Format", "Classroom theory + On-site practical dig + MCQ assessment"],
                   ["Assessment", "Multiple choice questions (MCQs) and practical on-site observation"],
                   ["Maximum Delegates", "8 per session"],
-                  ["Pricing", "Per course, not per person. Contact Sygma for a quote."],
+                  ["Pricing", "Fixed price on site, per delegate on open courses. Contact Sygma for a quote."],
                   ["Delivery Options", "On-site at client premises (nationwide) or Sygma HQ, Wigan"],
                   ["Equipment", "Locator and signal generator equipment provided; delegates encouraged to bring own equipment. Sygma provides Radiodetection CAT4 and Genny4 as standard, This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX"],
                   ["Site Requirement", "Live dig area with buried metallic utilities and meeting or conference room"],
@@ -455,10 +455,10 @@ export default function EusCat2SafeDig() {
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Pricing</p>
           <h2 className="text-2xl font-black mb-8 text-foreground">Simple, Transparent Pricing</h2>
-          <p className="text-muted-foreground mb-6">Sygma charges per course, not per person. Whether you send 4 delegates or 8, the course fee stays the same. Travel within the UK mainland is included.</p>
+          <p className="text-muted-foreground mb-6">On site, Sygma charges one fixed price for your group. Open courses are priced per delegate. Travel within the UK mainland is included. Contact us for a quote.</p>
           <div className="grid md:grid-cols-3 gap-4 mb-6">
             {[
-              ["Per course, not per person", "One fixed fee covers your whole group of up to 8 delegates."],
+              ["On site or open course", "On site, one fixed price covers your group of up to 8 delegates. Open courses are priced per delegate."],
               ["Travel included", "Delivery at your site or Sygma HQ in Wigan. No travel surcharge."],
               ["Combined packages available", "Need EUSR CAT1 and CAT2? We offer combined multi-day packages."],
             ].map(([title, desc]) => (

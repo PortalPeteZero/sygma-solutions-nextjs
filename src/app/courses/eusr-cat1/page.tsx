@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Can Sygma deliver EUSR CAT 1 on our site?",
-    a: "Yes. Sygma delivers EUSR CAT 1 at client sites across the UK. Travel is included in the day rate. Sygma provides Radiodetection CAT4 and CAT4+ as standard, but the course works with any manufacturer's locator and signal generator. For alternative equipment, a minimum ratio of one locator per three delegates applies. Maximum 8 delegates per session.",
+    a: "Yes. Sygma delivers EUSR CAT 1 at client sites across the UK. Travel is included. Sygma provides Radiodetection CAT4 and CAT4+ as standard, but the course works with any manufacturer's locator and signal generator. For alternative equipment, a minimum ratio of one locator per three delegates applies. Maximum 8 delegates per session.",
     thumb: "cat-50",
     thumbAlt: "Sygma EUSR CAT 1 on-site delivery, nationwide UK utility detection training",
   },
@@ -526,7 +526,7 @@ export default function EusCat1() {
             </div>
             <div className="bg-background border border-border rounded-lg p-5">
               <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">On-Site (Closed)</p>
-              <p className="text-sm text-muted-foreground"><strong>Site delivery, your team only.</strong> Up to 8 course attendees per session. Travel included in the day rate. Suitable for groundworkers, civil engineers, supervisors, and operatives.</p>
+              <p className="text-sm text-muted-foreground"><strong>Site delivery, your team only.</strong> Up to 8 course attendees per session. Travel included. Suitable for groundworkers, civil engineers, supervisors, and operatives.</p>
             </div>
             <div className="bg-background border border-border rounded-lg p-5">
               <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined Day</p>

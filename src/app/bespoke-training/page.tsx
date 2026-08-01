@@ -7,7 +7,7 @@ import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Bespoke Utility Training Programmes | Sygma Solutions',
-  description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Priced per programme, not per head. Built around your sites and procedures.',
+  description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
   alternates: { canonical: 'https://sygma-solutions.com/bespoke-training' },
   openGraph: {
     title: 'Bespoke Utility Training Programmes | Sygma Solutions',
@@ -43,7 +43,7 @@ export default function BespokeTrainingPage() {
         '@context': 'https://schema.org',
         '@type': 'Service',
         name: 'Bespoke Utility Training Programmes',
-        description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Priced per programme, not per head. Built around your sites and procedures.',
+        description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
         provider: { '@type': 'Organization', name: 'Sygma Solutions', url: 'https://sygma-solutions.com' },
         areaServed: { '@type': 'Country', name: 'United Kingdom' },
         url: 'https://sygma-solutions.com/bespoke-training',
@@ -136,8 +136,8 @@ export default function BespokeTrainingPage() {
 
       <section className="py-16 bg-background">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Per Programme, Not Per Person.</h2>
-          <p className="text-muted-foreground leading-relaxed mb-8">Bespoke programmes are priced per programme, not per delegate. There is no per-head charge that increases as your group grows. Travel within the UK mainland is included.</p>
+          <h2 className="text-3xl font-bold mb-6">Quoted for the Programme.</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">Bespoke programmes are quoted for the programme, not per delegate. Travel within the UK mainland is included. Contact us for a quote.</p>
           <Link
             href="/contact#enquiry-form"
             className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-bold hover:bg-primary/90"

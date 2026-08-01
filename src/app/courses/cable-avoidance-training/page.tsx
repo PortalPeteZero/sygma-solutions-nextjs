@@ -8,7 +8,7 @@ import Image from 'next/image';
 const faqs = [
             {
               q: "How much does cable avoidance training cost?",
-              a: "Sygma charges <strong>per course, not per person</strong>. Whether you send 4 delegates or 8, the course fee stays the same. Travel within the UK mainland is included. There are no hidden fees beyond the awarding body accreditation charge where applicable. Contact us for a quote.",
+              a: "On site, Sygma charges <strong>one fixed price for your group</strong>. Open courses are priced per delegate. Travel within the UK mainland is included. There are no hidden fees beyond the awarding body accreditation charge where applicable. Contact us for a quote.",
             },
             {
               q: "Is cable avoidance training a legal requirement?",

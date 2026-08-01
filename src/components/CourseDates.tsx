@@ -16,7 +16,15 @@ import data from '@/data/course-dates.json';
    venue on a public booking block is a factual claim we cannot support. Same for places-left. */
 
 const MAX_DELEGATES = 8;
-const FROM_PER_PERSON = 121;   // the ONLY price that may appear on a public page (Pete, 24 Jul 2026)
+
+/* ⛔ PRICING RULE — Pete, 1 Aug 2026. Sygma charges two ways and only ONE of them may be published:
+     · ON SITE  = a fixed day rate for the group. NEVER goes on a public page, in any form.
+     · OPEN COURSE = a genuine per-delegate rate. A "from" figure here is fine.
+   Do NOT publish a per-person figure alongside "day rate for up to 8": £121 x 8 = £968 hands the
+   day rate to anyone who multiplies. That is exactly what happened between 24 Jul and 1 Aug 2026,
+   and the old FROM_PER_PERSON = 121 was the day rate divided by 8, not an open-course price.
+   Set this ONLY to a real open-course delegate price given by Pete. null renders no figure. */
+const OPEN_COURSE_FROM: number | null = null;
 
 type Course = { date: string; family: string | null; title: string; venue: string | null; cap: number | null; placesLeft: number | null };
 
@@ -41,23 +49,20 @@ export default function CourseDates({
             <Eyebrow>Dates &amp; availability</Eyebrow>
             <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight text-foreground">{heading}</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{intro}</p>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">Certificate fees are charged separately.</p>
           </div>
-          {/* Per-person price. The site does not carry a fixed course price; this is the on-site day
-              rate expressed per delegate, which is how buyers ask for it. Certificate fees are extra
-              and are set out in the certificate block above. */}
-          <div className="shrink-0 rounded-2xl border border-accent/40 bg-accent/[0.06] px-6 py-5">
-            <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">On-site day rate, per person</p>
-            <p className="mt-1 text-3xl font-black text-accent leading-none">
-              From £{FROM_PER_PERSON}
-              <span className="ml-1.5 text-sm font-bold text-muted-foreground">per delegate</span>
-            </p>
-            {/* ⛔ NEVER put the on-site day rate back on a public page. Pete, 1 Aug 2026: a line
-                stating the group day rate was published 24 Jul and pulled on sight. The per-delegate
-                "from" figure is the only price that goes public. Do not re-derive or restate it. */}
-            <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
-              Certificate fees are charged separately.
-            </p>
-          </div>
+          {OPEN_COURSE_FROM !== null && (
+            <div className="shrink-0 rounded-2xl border border-accent/40 bg-accent/[0.06] px-6 py-5">
+              <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Open course places</p>
+              <p className="mt-1 text-3xl font-black text-accent leading-none">
+                From £{OPEN_COURSE_FROM}
+                <span className="ml-1.5 text-sm font-bold text-muted-foreground">per delegate</span>
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                Certificate fees are charged separately.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Two delivery routes, stated BEFORE the dates table. Without this the table reads as
@@ -69,7 +74,8 @@ export default function CourseDates({
             <h3 className="mt-2 text-xl font-black text-foreground">On-site, at your premises</h3>
             <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">
               We come to you, anywhere in the UK, on a date that suits you — using your own equipment, your
-              plans and your site. Up to {MAX_DELEGATES} delegates on one day rate, travel included.
+              plans and your site. One fixed price for your group of up to {MAX_DELEGATES}, travel included.
+              Contact us for a quote.
               <span className="font-semibold text-foreground"> You are not limited to the dates below.</span>
             </p>
             <Link href="/contact#enquiry-form" className="mt-4 inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-xs font-bold text-white transition-colors hover:bg-accent/90">
@@ -81,7 +87,7 @@ export default function CourseDates({
             <h3 className="mt-2 text-xl font-black text-foreground">Book individual places</h3>
             <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">
               Scheduled open courses for one or two delegates, or when you do not have a suitable site of
-              your own. Priced per person. The next available dates are listed below.
+              your own. Priced per delegate. The next available dates are listed below.
             </p>
             <a href="#dates-table" className="mt-4 inline-flex items-center justify-center rounded-md border border-border bg-muted/40 px-5 py-2.5 text-xs font-bold text-foreground transition-colors hover:bg-muted">
               See the dates ↓
