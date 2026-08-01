@@ -111,8 +111,8 @@ export default function Hsg47Training() {
       {/* Who Needs It — bulleted list (no H3s) */}
       <section className="bg-muted/30 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Who Needs It</p>
-          <h2 className="text-2xl font-black mb-6 text-foreground">Who Needs This Course?</h2>
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Who Needs HSG47 Training</p>
+          <h2 className="text-2xl font-black mb-6 text-foreground">Who Needs HSG47 Training?</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             <strong className="text-foreground">HSG47 requires anyone using cable and pipe locating equipment to be trained and assessed as competent.</strong> That applies to delegates using the equipment and to the duty holders responsible for safe management. In practice:
           </p>
@@ -139,7 +139,7 @@ export default function Hsg47Training() {
       <section className="bg-background py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Course Routes</p>
-          <h2 className="text-2xl font-black mb-4 text-foreground">What Does the Course Cover?</h2>
+          <h2 className="text-2xl font-black mb-4 text-foreground">What Does HSG47 Training Cover?</h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
             Two complementary areas: using cable avoidance tools and underground services detection devices to safely detect utility services, and managing safe excavation procedures around buried utility services. Sygma delivers each course at your premises UK-wide. Coverage includes utility drawings, line search documents, approved detection methods and the locate utility services HSG47 protocol before any dig begins. The course is safety critical for any work near buried services or on National Grid infrastructure.
           </p>
@@ -193,6 +193,47 @@ export default function Hsg47Training() {
         </div>
       </section>
 
+      {/* What HSG47 requires, and how the training meets it.
+          WHY THIS SECTION EXISTS (1 Aug 2026): Google was serving /knowledge-hub/hsg47-explained
+          for 21 of the 24 commercial HSG47 terms, because the explainer was the only page on the
+          domain that actually discussed what HSG47 REQUIRES. Someone searching "hsg47 training"
+          wants to know what the guidance demands and whether the course delivers it. That content
+          now lives here, on the page that can answer them. Requirements below mirror the four
+          areas set out on the explainer, which is our own summary of the HSE guidance. */}
+      <section className="bg-background py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">HSG47 Competence</p>
+          <h2 className="text-2xl font-black mb-4 text-foreground">What HSG47 Requires, and How the Training Meets It</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            HSG47 is the HSE guidance for avoiding danger from underground services. It is not
+            legislation, but it sets out what the HSE considers good practice, and it expects the
+            people doing the work to be trained and assessed as competent. Each course Sygma
+            delivers is built around the four areas the guidance sets out.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              ["Planning the work",
+               "HSG47 expects current plans from every relevant asset owner before ground is broken, collated into one picture of what is below the surface. The course covers obtaining and interpreting utility drawings, reconciling records from different asset owners, and recognising where plans cannot be relied on."],
+              ["Locating services",
+               "HSG47 is explicit that plans alone are not sufficient and that locating equipment should be used on site. It references the CAT and Genny specifically, and expects active detection, not passive alone. The course covers all four detection modes, signal application, signal interpretation and depth estimation, taught Genny-First."],
+              ["Safe digging practices",
+               "Once services are located and marked, HSG47 sets out how excavation should proceed: hand digging within defined proximity zones, correct use of mechanical plant, and the different precautions for electricity, gas, water and telecoms. The course covers the full safe-dig sequence and the permit process around it."],
+              ["Competence",
+               "HSG47 expects anyone using cable and pipe locating equipment to be trained and assessed as competent, and expects duty holders to be able to evidence it. Each route below carries a formal assessment and a dated certificate, which is what a principal contractor's permit system asks to see."],
+            ].map(([title, body]) => (
+              <div key={title} className="rounded-xl border border-border bg-card p-6">
+                <h3 className="font-bold text-foreground mb-2">{title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground leading-relaxed">
+            For the guidance itself rather than the training, read{' '}
+            <Link href="/knowledge-hub/hsg47-explained" className="text-primary hover:text-primary/80 font-semibold">HSG47 explained</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* Photo grid */}
       <section className="container mx-auto px-6 md:px-8 pb-12 max-w-5xl">
         <div className="grid grid-cols-3 gap-4">
@@ -212,7 +253,7 @@ export default function Hsg47Training() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Accreditation</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Accreditation Routes</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">HSG47 Training Accreditation Routes</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="border border-border rounded-lg bg-card p-5">
               <h3 className="font-bold text-foreground mb-2">EUSR Category 1 Locate Utility Services</h3>
@@ -262,7 +303,7 @@ export default function Hsg47Training() {
       <section className="bg-muted/20 py-14">
         <div className="container mx-auto px-6 md:px-8 max-w-5xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Why Choose Sygma</p>
-          <h2 className="text-2xl font-black mb-8 text-foreground">Why Sygma for This Course</h2>
+          <h2 className="text-2xl font-black mb-8 text-foreground">Why Sygma for HSG47 Training</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border border-border rounded-lg bg-card p-5">
               <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Specialism</p>
@@ -294,7 +335,7 @@ export default function Hsg47Training() {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">UK Delivery</p>
-              <h2 className="text-2xl font-black mb-4 text-foreground">UK-Wide Course Delivery</h2>
+              <h2 className="text-2xl font-black mb-4 text-foreground">UK-Wide HSG47 Training Delivery</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Course delivery at client premises across the UK. Common delivery regions:
               </p>
@@ -400,7 +441,7 @@ export default function Hsg47Training() {
       {/* CTA */}
       <section className="bg-primary/5 border-y border-border py-14">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-black mb-4 text-foreground">Book Your Course</h2>
+          <h2 className="text-2xl font-black mb-4 text-foreground">Book HSG47 Training</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             EUSR Category 1 and Cable Avoidance course routes delivered at your premises, UK-wide. CITB approved. Travel included. EUSR registration included in the course price. For current course dates and pricing, contact us for a tailored quote.
           </p>

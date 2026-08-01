@@ -136,29 +136,29 @@ export default function Hsg47Explained() {
               HSG47 requires that anyone who uses cable locating equipment is competent to do so. Competence means having the knowledge, skills, and experience to use the equipment correctly, interpret the results accurately, and make safe decisions based on what the equipment is telling them. The guidance does not specify a particular qualification, but it makes clear that training is expected and that competence must be maintained.
             </p>
 
-            <h2 className="text-2xl font-black text-foreground mb-4 mt-10">How Training Maps to HSG47</h2>
-
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Every cable avoidance course that Sygma delivers is structured around the principles in HSG47. Our courses cover plans interpretation, all four locating modes, all Genny signal application methods, signal interpretation, depth estimation, and safe digging practices. The assessment criteria in both our EUSR CAT1 and ProQual CAT1 courses map directly to the competence expectations set out in the guidance.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              For supervisors and managers who need to understand the planning and management requirements of HSG47 without the hands-on locator training, our CAT4 and HSG47 Awareness Online course covers the guidance in detail, including the responsibilities of each duty holder and the practical steps required to comply.
-            </p>
-
+            {/* ⛔ LANE DISCIPLINE — thinned 1 Aug 2026. This was an H2, "How Training Maps to
+                HSG47", carrying three paragraphs of course detail and three training photos. It
+                was the explainer's only training-topic heading, and Google was serving THIS page
+                for 21 of the 24 commercial HSG47 terms instead of /courses/hsg47-training. The
+                course detail now lives on the course page, where it belongs. Keep this to one
+                paragraph and a link. Do NOT re-add course content, headings with "training" in
+                them, or training imagery. See the HSG47 Two-Page Lane Split decision. */}
             <p className="text-muted-foreground leading-relaxed mb-8">
-              HSG47 is not a box to tick. It is the baseline standard for safe excavation in the UK. If your organisation is not following it, you are exposed to both safety risk and regulatory risk. The starting point is making sure your people are trained, competent, and equipped to follow the process it describes.
+              HSG47 is not a box to tick. It is the baseline standard for safe excavation in the UK, and it
+              expects the people doing the work to be trained and assessed as competent. If you need the
+              assessed courses rather than the guidance, see{' '}
+              <Link href="/courses/hsg47-training" className="text-primary font-semibold hover:underline">HSG47 training courses</Link>.
             </p>
 
             <div className="grid grid-cols-3 gap-1 rounded-lg overflow-hidden my-10">
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-07-hsg47-explained" width={1200} height={900} alt="Practical cable avoidance training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-07-hsg47-explained" width={1200} height={900} alt="Locating buried services before excavation under HSG47" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-79-hsg47-explained" width={1200} height={900} alt="Excavation safety assessment session" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-79-hsg47-explained" width={1200} height={900} alt="Assessing excavation risk against HSG47 guidance" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="overflow-hidden aspect-[4/3] bg-muted">
-                <Image src="cat-85-hsg47-explained" width={1200} height={900} alt="Team completing utility avoidance course" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
+                <Image src="cat-85-hsg47-explained" width={1200} height={900} alt="Hand digging within the HSG47 proximity zone" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-contain hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
 
