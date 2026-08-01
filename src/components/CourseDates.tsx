@@ -17,14 +17,12 @@ import data from '@/data/course-dates.json';
 
 const MAX_DELEGATES = 8;
 
-/* ⛔ PRICING RULE — Pete, 1 Aug 2026. Sygma charges two ways and only ONE of them may be published:
+/* ⛔ PRICING RULE — Pete, 1 Aug 2026. Sygma charges two ways and only ONE may be published:
      · ON SITE  = a fixed day rate for the group. NEVER goes on a public page, in any form.
-     · OPEN COURSE = a genuine per-delegate rate. A "from" figure here is fine.
-   Do NOT publish a per-person figure alongside "day rate for up to 8": £121 x 8 = £968 hands the
-   day rate to anyone who multiplies. That is exactly what happened between 24 Jul and 1 Aug 2026,
-   and the old FROM_PER_PERSON = 121 was the day rate divided by 8, not an open-course price.
-   Set this ONLY to a real open-course delegate price given by Pete. null renders no figure. */
-const OPEN_COURSE_FROM: number | null = null;
+     · OPEN COURSE = a per-delegate rate. "From £121 per delegate" IS the published price.
+   Pete's decision, stated twice on 1 Aug: keep the from-£121. The line that had to go was
+   "Based on a £965 day rate for up to 8 delegates", not this figure. Do not remove it again. */
+const OPEN_COURSE_FROM: number | null = 121;
 
 type Course = { date: string; family: string | null; title: string; venue: string | null; cap: number | null; placesLeft: number | null };
 
@@ -49,7 +47,9 @@ export default function CourseDates({
             <Eyebrow>Dates &amp; availability</Eyebrow>
             <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight text-foreground">{heading}</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{intro}</p>
-            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">Certificate fees are charged separately.</p>
+            {OPEN_COURSE_FROM === null && (
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">Certificate fees are charged separately.</p>
+            )}
           </div>
           {OPEN_COURSE_FROM !== null && (
             <div className="shrink-0 rounded-2xl border border-accent/40 bg-accent/[0.06] px-6 py-5">
