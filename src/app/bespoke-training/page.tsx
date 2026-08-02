@@ -7,7 +7,7 @@ import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Bespoke Utility Training Programmes | Sygma Solutions',
-  description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
+  description: 'Bespoke utility avoidance training on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
   alternates: { canonical: 'https://sygma-solutions.com/bespoke-training' },
   openGraph: {
     title: 'Bespoke Utility Training Programmes | Sygma Solutions',
@@ -43,7 +43,7 @@ export default function BespokeTrainingPage() {
         '@context': 'https://schema.org',
         '@type': 'Service',
         name: 'Bespoke Utility Training Programmes',
-        description: 'Bespoke utility avoidance training delivered on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
+        description: 'Bespoke utility avoidance training on-site at your premises, UK-wide. Quoted for the programme, not per delegate. Built around your sites and procedures.',
         provider: { '@type': 'Organization', name: 'Sygma Solutions', url: 'https://sygma-solutions.com' },
         areaServed: { '@type': 'Country', name: 'United Kingdom' },
         url: 'https://sygma-solutions.com/bespoke-training',
