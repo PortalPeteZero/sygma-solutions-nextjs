@@ -44,7 +44,13 @@ export default function CourseDates({
      /courses/proqualcat1-training advertised open dates titled "EUSR Cat 1 / CAT and Genny" —
      EUSR-badged dates on a ProQual-accredited page, the same class of error as the certificate
      block. Pass `families` (or nothing) and, where a page must be stricter, `titleMatch`.
-     The SSOT is public.ee_public_courses -> src/data/course-dates.json. */
+     The SSOT is public.ee_public_courses -> src/data/course-dates.json.
+
+     ⛔ /courses/hsg47-training and /courses/cable-avoidance-training KEEP the cat1 open dates.
+     Pete confirmed this explicitly on 3 Aug 2026 ("leave hsg47 and cable avoidance as they are").
+     Those two, with cat-and-genny, are the SAME physical course with a choice of badge -- which is
+     why they also keep all three certificate cards. The open course is that course, EUSR-badged,
+     so its dates belong on them. This is a DECISION, not an oversight: do not "tidy" it later. */
   const all = (data.courses as Course[]) || [];
   const wanted = families ?? (family ? [family] : null);
   let courses = wanted ? all.filter((c) => c.family && wanted.includes(c.family)) : all;
