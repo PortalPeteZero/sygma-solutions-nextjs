@@ -19,9 +19,9 @@ const spec = [
 ];
 
 const cert = [
-  { name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own certificate of competence, issued on the day.' },
-  { name: 'EUSR Cat 1', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
-  { name: 'ProQual Level 2', body: 'Regulated award', cost: '+£35', unit: 'per person', note: 'ProQual Level 2 Award — a regulated qualification.' },
+  { key: 'inhouse', name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own certificate of competence, issued on the day.' },
+  { key: 'eusr', name: 'EUSR Cat 1', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
+  { key: 'proqual', name: 'ProQual Level 2', body: 'Regulated award', cost: '+£35', unit: 'per person', note: 'ProQual Level 2 Award — a regulated qualification.' },
 ];
 
 type ThItem = { t: string; d: string };
@@ -151,7 +151,9 @@ export type CourseAgendaHero = {
   breadcrumbLabel: string;
 };
 
-export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl, breadcrumbLabel }: CourseAgendaHero) {
+export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl, breadcrumbLabel, certs }: CourseAgendaHero & { certs?: string[] }) {
+  // Only the badges this course actually carries. See the note above the cert array.
+  const shown = certs ? cert.filter((c) => c.key && certs.includes(c.key)) : cert;
   return (
     <div className="agenda-doc">
       <style dangerouslySetInnerHTML={{ __html: PRINT_CSS }} />
@@ -221,7 +223,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="mb-6">
             <Eyebrow>Certificate options</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">One course, your choice of badge</h2>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">{shown.length > 1 ? 'One course, your choice of badge' : `Accredited to ${shown[0]?.name}`}</h2>
             <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">The content and assessment are identical whichever route you choose. Pick the certificate your scheme or client requires.</p>
           </div>
           <div className="mb-8 flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.08] px-5 py-4">
@@ -229,7 +231,7 @@ export default function CourseAgendaBody({ h1, strapline, schemaName, schemaUrl,
             <p className="text-sm text-white/85 leading-relaxed"><span className="font-bold text-white">These are certificate fees, not the course price.</span> They are charged per person, <span className="font-bold text-white">on top of the course fee</span>. The course itself is quoted separately, based on your numbers and whether we deliver on-site or you take open-course seats.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-5 print-cols-3">
-            {cert.map((c) => (
+            {shown.map((c) => (
               <div key={c.name} className="cert-card group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors pb-keep">
                 <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
                 <p className="mt-3 text-xl font-black">{c.name}</p>

@@ -88,7 +88,10 @@ export default function EusCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "EUSR Category 1 Locate Utility Services Training", description: "EUSR CAT 1 Locate Utility Services training (EUSR Category 1). Cable avoidance and Cat and Genny training. HSG47 compliant, EUSR-registered, UK-wide.", url: "/courses/eusr-cat1", credential: "EUSR CAT 1 Training Certificate", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "Cable Avoidance Training", to: "/courses/cable-avoidance-training" }, { label: "EUSR CAT 1 Training" }]) }} />
+      {/* ⛔ C004 EUS Category 1 = eusr_reg only in ee_catalogue. EUSR is the ONLY badge.
+          Only HSG47, Cable Avoidance and CAT and Genny offer a choice of badge -- Pete, 3 Aug 2026. */}
       <CourseTopBlock
+        certs={['eusr']}
         h1={<>EUSR Cat 1 <span className="text-accent">Training</span></>}
         strapline={<>Locate Utility Services <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> HSG47</>}
         covers={['EUSR Cat 1', 'EUSR Cat 1 Training', 'Locate Utility Services', 'Genny and CAT', 'Cable Avoidance', 'HSG47']}

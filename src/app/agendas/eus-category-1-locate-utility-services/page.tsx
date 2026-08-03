@@ -20,8 +20,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  // ⛔ C004 EUS Category 1 = eusr_reg only in ee_catalogue. EUSR is the ONLY badge.
+  // Only HSG47, Cable Avoidance and CAT and Genny offer a choice -- Pete, 3 Aug 2026.
   return (
     <CourseAgendaBody
+      certs={['eusr']}
       h1={<>EUS Category 1: <span className="text-accent">Locate Utility Services</span></>}
       strapline={<>HSG47 <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> Cable Avoidance</>}
       schemaName="EUS Category 1: Locate Utility Services (HSG47) — Genny and CAT training"

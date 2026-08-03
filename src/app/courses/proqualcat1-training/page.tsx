@@ -54,7 +54,10 @@ export default function ProQualCat1() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: courseSchema({ name: "ProQual CAT1 Utility Locating Training", description: "ProQual-accredited 1-day utility locating course covering theory (T1-T14) and hands-on practical assessment (P1-P8). Covers all four locating modes including direct connection, induction, nulling, Power and Radio passive modes.", url: "/courses/proqualcat1-training", credential: "ProQual Level 2 Award in Utility Avoidance", duration: "1 day", mode: ["onsite"] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqPageSchema(faqs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema([{ label: "Training", to: "/courses" }, { label: "ProQual CAT1" }]) }} />
+      {/* ⛔ ProQual CAT1 is accredited to ProQual. It carries no EUSR or in-house badge.
+          Only HSG47, Cable Avoidance and CAT and Genny offer a choice of badge -- Pete, 3 Aug 2026. */}
       <CourseTopBlock
+        certs={['proqual']}
         h1={<>ProQual Cat 1 <span className="text-accent">Training</span></>}
         strapline={<>Utility Locator Qualification <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> HSG47</>}
         covers={['ProQual Cat 1', 'ProQual Cat 1 Training', 'Genny and CAT', 'Cable Avoidance', 'HSG47', 'Utility Locator']}

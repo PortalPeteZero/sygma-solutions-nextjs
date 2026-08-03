@@ -21,17 +21,28 @@ import { Eyebrow } from '@/components/agendaShared';
    This block replaces the InnerPageHero + trust strip + the unauthorised "opening definition"
    block that commit 8415fb6 added on 16 May 2026 to chase a Surfer score. */
 
-export type CertOption = { name: string; body: string; cost: string; unit: string; note: string };
+export type CertOption = { key?: string; name: string; body: string; cost: string; unit: string; note: string };
 export type SpecCell = { k: string; v: string; s: string };
 export type ProofStat = { v: string; k: string; s: string };
 
 /* The standard three certificate routes. Identical content and assessment on each — the choice is
    the badge. Fees are CERTIFICATE fees only; the course itself is always quoted (no price anchor
    on the site — standing decision, see the property README). */
+/* ⛔ WHICH BADGES A PAGE MAY ADVERTISE — Pete, 3 Aug 2026.
+   "these accredited courses are accredited to that specific cert, the only options are hsg47,
+   cable avoidance, cat and genny".
+   An ACCREDITED course carries exactly ONE badge: the one in its name. EUSR CAT 1 is EUSR only.
+   ProQual CAT1 is ProQual only. Only the three generic courses -- HSG47, Cable Avoidance, CAT and
+   Genny -- genuinely offer a choice, because their content is the same whichever badge you take.
+   The SSOT is public.ee_catalogue.cert_options: C004 EUS Cat 1 = ["eusr_reg"], C015/C017 ProQual =
+   ["proqual_cat"]/["proqual_l2"], C001/C049 = ["sygma_inhouse"].
+   Until 3 Aug this block was hardcoded to all three on every page that used it, so
+   /courses/eusr-cat1 advertised a ProQual badge and a Sygma in-house badge on a course that
+   carries neither. Pass `certs` to say what the page actually sells. */
 export const STANDARD_CERT: CertOption[] = [
-  { name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own certificate of competence, issued on the day.' },
-  { name: 'EUSR Cat 1', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
-  { name: 'ProQual Level 2', body: 'Regulated award', cost: '+£35', unit: 'per person', note: 'ProQual Level 2 Award — a regulated qualification.' },
+  { key: 'inhouse', name: 'Sygma In-House', body: 'Sygma certificate', cost: 'Included', unit: 'no certificate fee', note: 'Our own certificate of competence, issued on the day.' },
+  { key: 'eusr', name: 'EUSR Cat 1', body: 'EUSR registration', cost: '+£34', unit: 'per person', note: 'Nationally recognised EUSR registration card.' },
+  { key: 'proqual', name: 'ProQual Level 2', body: 'Regulated award', cost: '+£35', unit: 'per person', note: 'ProQual Level 2 Award — a regulated qualification.' },
 ];
 
 export const STANDARD_SPEC: SpecCell[] = [
@@ -57,6 +68,7 @@ export type CourseTopBlockProps = {
   intro?: string;
   spec?: SpecCell[];
   cert?: CertOption[];
+  certs?: string[];   // which badge keys this course ACTUALLY carries; omit = all three
   /* The page's own proof stats (21 Years / 70-80% / Proven). Passed in rather than hard-coded
      because HSG47 carries a different trio. Rendered as a slim DIVIDED strip, deliberately not
      as cards: a second card grid directly under the certificate cards on the same dark ground
@@ -68,11 +80,14 @@ export type CourseTopBlockProps = {
 
 export default function CourseTopBlock({
   h1, strapline, covers, breadcrumbLabel, image, alt, ctaLabel,
-  intro, spec = STANDARD_SPEC, cert = STANDARD_CERT, proof,
+  intro, spec = STANDARD_SPEC, cert = STANDARD_CERT, certs, proof,
 }: CourseTopBlockProps) {
   const introText = intro ??
     'What we cover in the classroom and on the ground, how every delegate is assessed, and your ' +
     'certificate options. Same course, whichever of the names above you know it by.';
+  // Only the badges this course actually carries. See the note above STANDARD_CERT.
+  const shown = certs ? cert.filter((c) => c.key && certs.includes(c.key)) : cert;
+
 
   return (
     <>
@@ -128,16 +143,18 @@ export default function CourseTopBlock({
       <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24">
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="mb-6">
-            <Eyebrow>Certificate options</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">One course, your choice of badge</h2>
-            <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">The content and assessment are identical whichever route you choose. Pick the certificate your scheme or client requires.</p>
+            <Eyebrow>{shown.length > 1 ? 'Certificate options' : 'Certification'}</Eyebrow>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">{shown.length > 1 ? 'One course, your choice of badge' : `Accredited to ${shown[0]?.name}`}</h2>
+            <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">{shown.length > 1
+              ? 'The content and assessment are identical whichever route you choose. Pick the certificate your scheme or client requires.'
+              : 'This course is accredited to one certificate. There is no alternative badge for it.'}</p>
           </div>
           <div className="mb-8 flex items-start gap-3 rounded-xl border border-accent/40 bg-accent/[0.08] px-5 py-4">
             <span className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-black">!</span>
             <p className="text-sm text-white/85 leading-relaxed"><span className="font-bold text-white">These are certificate fees, not the course price.</span> They are charged per person, <span className="font-bold text-white">on top of the course fee</span>. The course itself is quoted separately, based on your numbers and whether we deliver on-site or you take open-course seats.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
-            {cert.map((c) => (
+          <div className={`grid gap-4 ${shown.length > 1 ? "md:grid-cols-3" : "max-w-md"}`}>
+            {shown.map((c) => (
               <div key={c.name} className="cert-card flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-6 hover:border-accent/50 transition-colors">
                 <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
                 <p className="mt-2 text-xl font-black leading-tight">{c.name}</p>
