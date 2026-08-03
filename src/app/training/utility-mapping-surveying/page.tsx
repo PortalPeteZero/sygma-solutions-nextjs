@@ -406,9 +406,9 @@ export default function UtilityMappingHub() {
             <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Utility Avoidance Training</h4>
             <p className="text-sm text-muted-foreground">CAT and Genny training courses, EUSR accreditation, and cable avoidance qualifications to help locate buried services safely.</p>
           </Link>
-          <Link href="/utility-mapping-training-bristol" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
-            <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Utility Mapping Training Bristol</h4>
-            <p className="text-sm text-muted-foreground">PAS128 and utility mapping courses at The Survey School, serving Bristol and the South West.</p>
+          <Link href="/courses/5-day-pas128-surveyor" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
+            <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">PAS128 Surveyor Training</h4>
+            <p className="text-sm text-muted-foreground">The five-day PAS128 utility surveyor course at The Survey School, serving Bristol and the South West.</p>
           </Link>
           <Link href="/courses/online-level-5-diploma" className="group bg-background rounded-xl border border-border p-6 hover:border-primary/40 hover:shadow-sm transition-all">
             <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Online Level 5 Diploma</h4>

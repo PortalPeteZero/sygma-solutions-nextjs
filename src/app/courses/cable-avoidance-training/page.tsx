@@ -665,25 +665,30 @@ export default function CableAvoidanceTraining() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Available in Your Region</p>
           <h2 className="text-xl md:text-2xl font-black mb-5 text-foreground">Cable Avoidance Training in Your Region</h2>
           <p className="text-muted-foreground mb-5 text-sm leading-relaxed">
-            Sygma delivers <strong>cable avoidance training across the UK at your site</strong>. Find region-specific information including local delivery options, travel arrangements, and CITB funding routes.
+            Sygma delivers <strong>cable avoidance training across the UK at your site</strong>. Travel is included, with no mileage charges and no accommodation surcharges.
           </p>
+          {/* ⛔ These are PLAIN CARDS, not links. The regional pages they used to point at were
+              retired; the coverage they carried now lives here. Do NOT re-add hover:border-primary
+              or transition-colors: on a non-clickable div they promise a click that does nothing.
+              Scotland deliberately keeps its original wording — there is no Scottish coverage data
+              anywhere in the repo and inventing towns is not on. */}
           <div className="grid sm:grid-cols-2 gap-3 text-sm">
-            <Link href="/locations/london" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+            <div className="rounded-lg border border-border bg-background p-4">
               <p className="font-semibold text-foreground mb-1">London and the South East</p>
-              <p className="text-muted-foreground text-xs">London, Home Counties, the South East. CAT and Genny courses at your site.</p>
-            </Link>
-            <Link href="/locations/birmingham" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="text-muted-foreground text-xs">All London boroughs, Canary Wharf, the City and Westminster. Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, Berkshire, Hampshire and Sussex, plus Reading, Slough, Watford, Dartford, Croydon and Bromley.</p>
+            </div>
+            <div className="rounded-lg border border-border bg-background p-4">
               <p className="font-semibold text-foreground mb-1">Birmingham and the Midlands</p>
-              <p className="text-muted-foreground text-xs">Birmingham, the Midlands, Staffordshire. EUSR and ProQual accredited.</p>
-            </Link>
-            <Link href="/locations/manchester" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="text-muted-foreground text-xs">Birmingham, Wolverhampton, Coventry, Dudley, Walsall, Solihull and Sandwell. Nottingham, Leicester, Derby, Northampton and Lincoln, plus Worcestershire, Warwickshire, Staffordshire and Shropshire.</p>
+            </div>
+            <div className="rounded-lg border border-border bg-background p-4">
               <p className="font-semibold text-foreground mb-1">Manchester and the North West</p>
-              <p className="text-muted-foreground text-xs">Manchester, the North West, Liverpool, Lancashire. On-site delivery.</p>
-            </Link>
-            <Link href="/locations" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <p className="text-muted-foreground text-xs">Manchester, Salford, Stockport, Oldham, Bolton, Bury, Trafford and Wigan. Liverpool, Wirral, St Helens, Preston, Blackburn and Lancaster, plus Chester, Crewe, Warrington and Macclesfield.</p>
+            </div>
+            <div className="rounded-lg border border-border bg-background p-4">
               <p className="font-semibold text-foreground mb-1">Scotland</p>
               <p className="text-muted-foreground text-xs">Edinburgh, Glasgow, the Central Belt. Cable avoidance courses delivered on site.</p>
-            </Link>
+            </div>
           </div>
         </div>
       </section>

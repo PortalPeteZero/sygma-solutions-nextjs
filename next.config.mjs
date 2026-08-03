@@ -13,7 +13,9 @@ const nextConfig = {
     return [
       // Training hub retired 2026-07-03 (SEO recovery plan phase 1 item 4): 1 click/836 imp in 90d, was outranking the course page
       { source: '/training/cable-location-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
-      // Standalone city SEO pages retired 2026-07-03 (2 clicks/90d across all 8; cannibalised the course pages; /locations/* is the kept geo system)
+      // Standalone city SEO pages retired 2026-07-03 (2 clicks/90d across all 8; cannibalised the course pages).
+      // The /locations/* system that replaced them was itself retired 2026-08-03 -- it never reached the head
+      // terms (2 impressions of 455 on "cat and genny training") and its coverage now lives on the course pages.
       { source: '/cable-avoidance-training-london', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/cable-avoidance-training-birmingham', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/cable-avoidance-training-manchester', destination: '/courses/cable-avoidance-training', permanent: true },
@@ -248,7 +250,10 @@ const nextConfig = {
       { source: '/the-evolution-of-cable-avoidance-tools', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/cable-avoidance-training-advice', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/cable-avoidance-training-for-network-rail', destination: '/courses/cable-avoidance-training', permanent: true },
-      { source: '/cable-avoidance-training-manchester-city-centre', destination: '/locations/manchester', permanent: true },
+      // was -> /locations/manchester (retired 2026-08-03). REPOINT, never delete: middleware.ts GONE_PATHS:191
+      // carries a 410 for this same path, and config redirects run BEFORE middleware, so deleting this line
+      // would wake the 410 and tell Google the URL is permanently gone.
+      { source: '/cable-avoidance-training-manchester-city-centre', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/common-challenges-in-cable-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/strategies-and-best-practices-for-cable-avoidance', destination: '/courses/cable-avoidance-training', permanent: true },
       { source: '/some-things-to-consider-when-investing-in-cable-avoidance-tools', destination: '/courses/cable-avoidance-training', permanent: true },
@@ -330,7 +335,7 @@ const nextConfig = {
       { source: '/category/vscan-training', destination: '/courses/vscan-and-transmitter-training', permanent: true },
       // SEO spider fixes
       { source: '/courses/level6diploma', destination: '/courses/level-6-diploma', permanent: true },
-      { source: '/courses/utility-mapping-training-bristol', destination: '/utility-mapping-training-bristol', permanent: true },
+      { source: '/courses/utility-mapping-training-bristol', destination: '/training/utility-mapping-surveying', permanent: true },
       // Other specific fixes
       { source: '/courses/qcf-level-3-utility-mapping-surveyor', destination: '/courses/level-3-certificate', permanent: true },
       { source: '/courses/mala-hdr', destination: '/training/utility-mapping-surveying', permanent: true },
@@ -420,7 +425,12 @@ const nextConfig = {
       { source: '/case-studies/:path*', destination: '/knowledge-hub', permanent: true },
       { source: '/mala-gpr/:path*', destination: '/courses/gpr-training', permanent: true },
       { source: '/training/:path((?!cable-location-avoidance|utility-mapping-surveying).+)', destination: '/courses', permanent: true },
-      { source: '/locations/:path((?!manchester|birmingham|london|bristol).+)', destination: '/locations', permanent: true },
+      // /locations/* retired 2026-08-03. ONE rule for every child, plus /locations itself below --
+      // the old rule sent children to /locations, which would now be a second hop.
+      { source: '/locations/:path*', destination: '/courses/cat-and-genny-training', permanent: true },
+      { source: '/locations', destination: '/courses/cat-and-genny-training', permanent: true },
+      // Bristol held the utility-mapping geo terms, so it goes where its sibling goes, not to cat-and-genny.
+      { source: '/utility-mapping-training-bristol', destination: '/training/utility-mapping-surveying', permanent: true },
 
       // 9.5b: Sibling-slug variants that the catch-all below excludes by prefix.
       // The catch-all only triggers for top-level slugs that DON'T start with

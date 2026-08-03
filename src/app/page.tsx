@@ -330,18 +330,21 @@ export default function Home() {
               <h2 className="text-3xl font-black text-foreground mb-4">We Come to You</h2>
               <p className="text-muted-foreground leading-relaxed mb-8">Sygma delivers <strong>90% of CAT and Genny training at the client's site</strong>, using their own plant and procedures. Your team learns on the ground they work on. Whether your project involves civil engineering works, street works near buried services, or excavation on live utility networks, our trainers deliver on your site. <strong>Travel across the UK mainland is included</strong> in every course fee.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                {/* Plain tiles, not links: the /locations pages were retired 2026-08-03 and their
+                    coverage now lives on the course pages. hover:border-primary deliberately removed
+                    with the <Link> -- on a non-clickable tile it promises a click that does nothing. */}
                 {[
-                  { city: 'Manchester and the North West', link: '/locations/manchester' },
-                  { city: 'Birmingham and the Midlands', link: '/locations/birmingham' },
-                  { city: 'London and the South East', link: '/locations/london' },
-                  { city: 'Bristol and the South West', link: '/locations/bristol' },
-                ].map((loc) => (
-                  <Link key={loc.city} href={loc.link} className="border border-border rounded-lg p-4 bg-card text-center hover:border-primary transition-colors">
-                    <p className="text-sm font-semibold text-foreground">{loc.city}</p>
-                  </Link>
+                  'Manchester and the North West',
+                  'Birmingham and the Midlands',
+                  'London and the South East',
+                  'Bristol and the South West',
+                ].map((city) => (
+                  <div key={city} className="border border-border rounded-lg p-4 bg-card text-center">
+                    <p className="text-sm font-semibold text-foreground">{city}</p>
+                  </div>
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground mt-4">Plus <Link href="/locations" className="text-primary font-semibold hover:underline">Scotland</Link>, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
+              <p className="text-sm text-muted-foreground mt-4">Plus Scotland, Wales, and everywhere in between. Sygma training centre is in Wigan for open courses. Some qualifications are also available <Link href="/courses/online-level-3-diploma" className="text-primary font-semibold hover:underline">fully online via MS Teams</Link>.</p>
             </div>
             <div className="rounded-xl overflow-hidden border border-border aspect-[4/3] bg-muted">
               <Image src="cat-10" width={1200} height={900} alt="On-site training delivery across the UK" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" />

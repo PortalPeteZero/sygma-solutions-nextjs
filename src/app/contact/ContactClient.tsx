@@ -14,7 +14,6 @@ const quickLinks = [
   { label: 'OSCA on-site competency assessment', href: '/osca' },
   { label: 'Bespoke and corporate training programmes', href: '/bespoke-training' },
   { label: 'How our pricing works', href: '/pricing' },
-  { label: 'Training locations and delivery options', href: '/locations' },
 ];
 
 export default function ContactClient() {

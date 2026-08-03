@@ -431,12 +431,27 @@ export default function GennyCatTraining() {
             <div>
               <p className="eyebrow mb-3">UK Delivery</p>
               <h3 className="text-xl font-black mb-4 text-foreground">Training Near You, Across the UK</h3>
+              {/* ⛔ "CAT and Genny training near me" below is an EXACT-MATCH TARGET PHRASE, not prose.
+                  The house voice rule ("Genny and CAT" in body copy) does NOT apply to it: it is the
+                  exact term this page is measured on (150/mo). Leave it exactly as written. */}
               <div className="bg-background rounded-xl border border-border p-5 mb-4">
                 <p className="text-muted-foreground text-sm leading-relaxed mb-3">
-                  Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers at client sites anywhere in the UK. Common delivery regions include <Link href="/locations/london" className="text-primary hover:underline">London and the South East</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester and the North West</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham and the Midlands</Link>, <Link href="/locations/bristol" className="text-primary hover:underline">Bristol and the South West</Link>, <Link href="/locations" className="text-primary hover:underline">Scotland</Link>, and across Northern England. <strong className="text-foreground">Travel is included with no hidden extras</strong>.
+                  Looking for <strong className="text-foreground">CAT and Genny training near me</strong>? Sygma delivers at client sites anywhere in the UK, and travel is included with no hidden extras. Our trainers come to your depot, yard or project compound.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <strong className="text-foreground">London and the South East.</strong> All London boroughs, Canary Wharf, the City of London and Westminster, plus Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, Berkshire, Hampshire and Sussex, and the Thames Valley and M25 corridor including Reading, Slough, Watford, Dartford, Croydon and Bromley.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <strong className="text-foreground">Manchester and the North West.</strong> Manchester, Salford, Stockport, Oldham, Rochdale, Bolton, Bury, Tameside, Trafford and Wigan, plus Liverpool, Wirral, St Helens, Knowsley, Sefton, Preston, Blackburn, Burnley and Lancaster, and Cheshire including Chester, Crewe, Warrington, Macclesfield, Northwich and Ellesmere Port.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <strong className="text-foreground">Birmingham and the Midlands.</strong> Birmingham, Wolverhampton, Coventry, Dudley, Walsall, Solihull and Sandwell, plus Nottingham, Leicester, Derby, Northampton, Lincoln and Loughborough, and the surrounding counties of Worcestershire, Warwickshire, Staffordshire, Shropshire, Herefordshire and Gloucestershire.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <strong className="text-foreground">Bristol and the South West.</strong> Bristol, Bath, South Gloucestershire and North Somerset, plus Exeter, Plymouth, Taunton, Truro, Torbay and Barnstaple, and Dorset and Wiltshire including Bournemouth, Poole, Salisbury, Swindon and Chippenham.
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Regional delivery pages: <Link href="/locations/london" className="text-primary hover:underline">London</Link>, <Link href="/locations/birmingham" className="text-primary hover:underline">Birmingham</Link>, <Link href="/locations/manchester" className="text-primary hover:underline">Manchester</Link> and <Link href="/locations" className="text-primary hover:underline">Scotland</Link>.
+                  <strong className="text-foreground">Scotland and across Northern England</strong> as well. Tell us where your team is based and we will come to you.
                 </p>
               </div>
             </div>

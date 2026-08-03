@@ -112,21 +112,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   /*  Locations                                                          */
   /* ------------------------------------------------------------------ */
 
-  const locationPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/locations`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/locations/manchester`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/locations/birmingham`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/locations/london`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/locations/bristol`, changeFrequency: 'monthly', priority: 0.6 },
-  ];
-
   /* ------------------------------------------------------------------ */
   /*  SEO landing pages                                                  */
   /* ------------------------------------------------------------------ */
-
-  const seoLandingPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/utility-mapping-training-bristol`, changeFrequency: 'monthly', priority: 0.6 },
-  ];
 
   /* ------------------------------------------------------------------ */
   /*  Excluded: /thank-you, /design-your-programme, /designyourprogramme */
@@ -141,7 +129,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...trainingHubs,
     ...coursePages,
     ...knowledgeHubPages,
-    ...locationPages,
-    ...seoLandingPages,
   ].map((entry) => ({ lastModified: now, ...entry }));
 }

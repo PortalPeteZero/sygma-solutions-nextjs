@@ -113,7 +113,6 @@ export const topBarLinks: FooterLink[] = [
   { label: 'All Courses', href: '/courses' },
   { label: 'About', href: '/about' },
   { label: 'Accreditations & Partners', href: '/accreditations' },
-  { label: 'Locations', href: '/locations' },
   { label: 'Bespoke', href: '/bespoke-training' },
 ]
 
@@ -149,7 +148,6 @@ export const footerCompanyLinks: FooterLink[] = [
   { label: 'Bespoke Training', href: '/bespoke-training' },
   { label: 'Accreditations & Partners', href: '/accreditations' },
   { label: 'Knowledge Hub', href: '/knowledge-hub' },
-  { label: 'Locations', href: '/locations' },
   { label: 'Pricing & Availability', href: '/pricing' },
   { label: 'Contact Us', href: '/contact' },
 ]
