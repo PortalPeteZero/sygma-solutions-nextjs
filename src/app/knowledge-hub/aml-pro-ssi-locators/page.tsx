@@ -1505,7 +1505,7 @@ USB: yes (firmware + GPS export)`}</Verbatim>
                 <li><Link href="/courses/gpr-training" className="text-primary hover:underline font-semibold">GPR Training</Link></li>
                 <li><Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link></li>
                 <li><Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">CAT and Genny Training</Link></li>
-                <li><Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined Training</Link></li>
+                <li><Link href="/courses/eusr-cat1" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined Training</Link></li>
                 <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training</Link></li>
               </ul>
             </div>

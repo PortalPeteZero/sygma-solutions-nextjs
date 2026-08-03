@@ -41,7 +41,6 @@ const courseGroups = [
   { heading: 'EUSR Accredited', courses: [
     { name: 'EUSR CAT 1', href: '/courses/eusr-cat1' },
     { name: 'EUSR CAT 2 Safe Dig', href: '/courses/eusr-cat2-safe-dig' },
-    { name: 'EUSR CAT 1 & CAT 2 Combined', href: '/courses/eusr-cat1-cat2-combined' },
     { name: 'EUSR Superuser Locator', href: '/courses/eusr-superuser' },
     { name: 'ZS Superuser (Scottish Water)', href: '/courses/zs-superuser-scottish-water' },
   ] },

@@ -513,7 +513,7 @@ export default function EusSuperuser() {
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Cat and Genny Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored cat and genny training programme around your site risks, equipment calibration needs, and team size.</p>
               </Link>
-              <Link href="/courses/eusr-cat1-cat2-combined" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/courses/eusr-cat1" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">EUSR CAT 1 &amp; 2 Combined Training</p>
                 <p className="text-xs text-muted-foreground">Need both Super User prerequisites? Category 1 and Category 2 delivered together in one two-day combined course.</p>
               </Link>

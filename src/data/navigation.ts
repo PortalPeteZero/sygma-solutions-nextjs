@@ -35,7 +35,6 @@ export const mainNav: NavMenu[] = [
         items: [
           { label: 'EUSR CAT 2 Safe Dig', to: '/courses/eusr-cat2-safe-dig' },
           { label: 'ProQual CAT2 Safe Dig', to: '/courses/proqualcat2' },
-          { label: 'EUSR CAT 1 & CAT 2 Combined', to: '/courses/eusr-cat1-cat2-combined' },
           { label: 'ProQual CAT1 & CAT2 Combined', to: '/courses/proqual-cat1-cat2-combined' },
         ],
       },
@@ -126,7 +125,6 @@ export const footerUtilityAvoidanceLinks: FooterLink[] = [
   { label: 'EUSR CAT 1', href: '/courses/eusr-cat1' },
   { label: 'HSG47 Training', href: '/courses/hsg47-training' },
   { label: 'EUSR CAT 2 Safe Dig', href: '/courses/eusr-cat2-safe-dig' },
-  { label: 'EUSR CAT 1 & CAT 2 Combined', href: '/courses/eusr-cat1-cat2-combined' },
   { label: 'ProQual CAT1 & CAT2 Combined', href: '/courses/proqual-cat1-cat2-combined' },
   { label: 'vScan & Tx Training', href: '/courses/vscan-and-transmitter-training' },
   { label: 'Advanced EM Locator', href: '/courses/advanced-em-locator' },

@@ -44,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'vscan-and-transmitter-training',
     'eusr-cat2-safe-dig',
     'proqualcat2',
-    'eusr-cat1-cat2-combined',
     'proqual-cat1-cat2-combined',
     'cat-manager',
     'eusr-superuser',

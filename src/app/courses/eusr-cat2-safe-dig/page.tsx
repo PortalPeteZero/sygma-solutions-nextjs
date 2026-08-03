@@ -609,6 +609,120 @@ export default function EusCat2SafeDig() {
         </div>
       </section>
 
+
+      {/* ⛔ MIGRATED 3 Aug 2026 from /courses/eusr-cat1-cat2-combined when it was retired
+          (Release B of plan-avoidance-consolidation). These are the ON-SITE DELIVERY blocks —
+          site requirements, equipment, funding — which are the CAT 2 shape of the work.
+          ANTI-COMPETITION RULE 2: this page must NOT carry "CAT 1 & 2", "combined" or "two-day"
+          phrasing in any heading, title, meta or link anchor. The combined route is referred to in
+          PROSE ONLY, once, below the fold, linking to the CAT 1 page which owns that language.
+          The "Expand Your Team's Utility Avoidance Capability" block from the retired page was
+          deliberately NOT carried here — it is written in "CAT 1 & 2" language throughout. */}
+      <section className="bg-muted/20 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Site Requirements</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-8 text-foreground">What Your Site Must Provide</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl border border-border p-5 bg-background">
+              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">Classroom</h3>
+              <ul className="space-y-2">
+                {[
+                  "Meeting or conference room with seating for all delegates and the trainer",
+                  "Space for a projector and a clear wall or projection screen",
+                  "Welfare facilities and adequate desk space for written assessment",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground text-sm">
+                    <span className="text-accent font-bold shrink-0">&#8250;</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-xl border border-border p-5 bg-background">
+              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT 1 Location Area</h3>
+              <ul className="space-y-2">
+                {[
+                  "Area with detectable underground utilities near the training room",
+                  "Multiple utility types present (not just a single power cable)",
+                  "STATS plans for the site provided by the client in advance",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground text-sm">
+                    <span className="text-accent font-bold shrink-0">&#8250;</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-xl border border-border p-5 bg-background">
+              <h3 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">CAT 2 Safe Dig Area (Minimum)</h3>
+              <ul className="space-y-2">
+                {[
+                  "A live dig area with buried metallic utilities. One power cable to a site cabin is not sufficient.",
+                  "Open area of at least 10m squared, ground suitable for a hand dig",
+                  "Full buried service plans available",
+                  "Delegates must have FR PPE and insulated digging tools",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground text-sm">
+                    <span className="text-accent font-bold shrink-0">&#8250;</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="mt-6 rounded-xl border border-border bg-amber-50 dark:bg-amber-950/20 p-5">
+            <p className="text-sm font-bold text-foreground mb-1">Important</p>
+            <p className="text-sm text-muted-foreground">The training will not take place unless the minimum CAT 2 site requirements are met. Each delegate must bring government-issued photographic ID. Sygma trainers typically arrive in a transit-van-sized vehicle (please advise at booking if there are height barriers or access restrictions).</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">CITB Funding</p>
+            <h2 className="text-2xl font-black mb-4 text-foreground">Funding Support</h2>
+            <div className="space-y-3 text-muted-foreground leading-relaxed">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">CITB Approved Training Organisation</h4>
+                <p>Sygma Solutions is a CITB Approved Training Organisation.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Employer Network Funding</h4>
+                <p>CITB-registered employers may be able to access training funding support through the CITB Employer Network. Contact your CITB adviser directly for current eligibility and funding options.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Equipment</p>
+            <h2 className="text-2xl font-black mb-4 text-foreground">Equipment Provision</h2>
+            <div className="space-y-3 text-muted-foreground leading-relaxed">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Sygma Provided Equipment</h4>
+                <p>Sygma provides Radiodetection CAT4 and Genny4 as standard equipment.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Delegate Brought Equipment</h4>
+                <p>If delegates use a different manufacturer's locator or signal generator, they must bring their own equipment at a minimum ratio of one locator per three delegates. Each delegate bringing their own equipment is strongly encouraged as it allows the practical element to be conducted using the tools they will use on site.</p>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Compatible Manufacturers</h4>
+                <p>This course can be delivered on any of the following equipment: Radiodetection CAT4, CAT4+, RD8200, RD8100, Vivax-Metrotech vLoc, or Leica DSX.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-muted/20 py-10">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Already hold Category 1?</p>
+          <p className="text-muted-foreground leading-relaxed">
+            If your team still needs the locating qualification as well as safe digging, both can be taken together in a single site visit. The <Link href="/courses/eusr-cat1" className="underline text-primary">EUSR CAT 1 course page</Link> covers that route, its day structure and its pricing.
+          </p>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
         <p className="mb-3 text-sm font-bold uppercase tracking-widest text-accent">Other Training Options</p>
@@ -626,9 +740,13 @@ export default function EusCat2SafeDig() {
               href: "/courses/proqualcat2",
             },
             {
-              title: "EUSR CAT1 and CAT2 Combined",
-              desc: "Two-day combined course covering both location and safe excavation.",
-              href: "/courses/eusr-cat1-cat2-combined",
+              // Relabelled 3 Aug 2026. This card pointed at the retired combined page; repointing it
+              // at CAT 1 left the label describing a page that no longer exists, and an anchor
+              // reading "CAT1 and CAT2 Combined" on THIS page is exactly what anti-competition
+              // rule 2 forbids. The CAT 1 page owns the combined language now.
+              title: "EUSR CAT1 Locate Utility Services",
+              desc: "The locating qualification. Its page also covers taking both qualifications in one visit.",
+              href: "/courses/eusr-cat1",
             },
           ].map(({ title, desc, href }) => (
             <div key={title} className="bg-muted/20 border border-border rounded-xl p-6">

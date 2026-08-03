@@ -625,7 +625,7 @@ export default function CableAvoidanceTraining() {
                 <p className="mb-1 text-sm font-semibold text-foreground">Bespoke Training</p>
                 <p className="text-xs text-muted-foreground">Design a tailored programme around your site risks, equipment, and team size.</p>
               </Link>
-              <Link href="/courses/eusr-cat1-cat2-combined" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
+              <Link href="/courses/eusr-cat1" className="block rounded-lg border border-border bg-background p-4 hover:border-primary transition-colors">
                 <p className="mb-1 text-sm font-semibold text-foreground">EUSR CAT 1 &amp; 2 Combined Training</p>
                 <p className="text-xs text-muted-foreground">Both EUSR qualifications, Category 1 and Category 2, delivered together in one two-day combined course.</p>
               </Link>

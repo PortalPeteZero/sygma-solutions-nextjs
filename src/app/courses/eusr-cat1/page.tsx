@@ -173,7 +173,7 @@ export default function EusCat1() {
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-foreground">EUSR CAT 1 Training: The EUSR-Registered Standard for Utility Avoidance</h2>
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed"><strong>EUSR CAT 1 training</strong>, also written as <strong>EUSR Category 1</strong> or the formal <strong>EUSR Category 1 Locate Utility Services</strong> qualification, is issued against EUSR-registered standards and is the utility sector's most widely recognised certificate of competence for locating buried services with <Link href="/courses/cat-and-genny-training" className="text-primary hover:underline">Cat and Genny equipment</Link>. It is required or preferred on the frameworks of many of the UK's largest utility contractors handling gas, water, electricity, and telecoms infrastructure, and every Sygma course meets <Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47</Link>, the HSE's guidance for safe excavation near underground services.</p>
-          <p className="text-muted-foreground leading-relaxed">Sygma's Category 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every programme; the EUSR registration adds the sector recognition procurement frameworks require. Sygma also assesses clamp, capacitance, and blind induction even where the EUSR minimum does not, so delegates leave able to locate in real site conditions, not just pass a paper. Many progress to <Link href="/courses/eusr-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT 2 Safe Dig</Link> or take both in a <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">combined CAT 1 and CAT 2 day</Link>.</p>
+          <p className="text-muted-foreground leading-relaxed">Sygma's Category 1 course delivers the same depth of electromagnetic theory and Genny-First methodology that runs through every programme; the EUSR registration adds the sector recognition procurement frameworks require. Sygma also assesses clamp, capacitance, and blind induction even where the EUSR minimum does not, so delegates leave able to locate in real site conditions, not just pass a paper. Many progress to <Link href="/courses/eusr-cat2-safe-dig" className="text-primary hover:underline">EUSR CAT 2 Safe Dig</Link> or take both in a <Link href="/courses/eusr-cat1" className="text-primary hover:underline">combined CAT 1 and CAT 2 day</Link>.</p>
         </div>
         <div className="mt-8 bg-primary/5 border border-primary/20 rounded-lg p-6">
           <p className="text-foreground font-semibold mb-2">Not sure whether you need EUSR CAT 1 or the Sygma in-house certificate?</p>
@@ -540,29 +540,198 @@ export default function EusCat1() {
       </section>
 
       {/* Combined-course routing block — SEO audit 2026-05-11 (cluster disambiguation) */}
+      {/* ⛔ COMBINED ROUTE — migrated here 3 Aug 2026 when /courses/eusr-cat1-cat2-combined was
+          retired (Release B of plan-avoidance-consolidation). The combined page was taking CAT 2's
+          own terms while CAT 1 took the combined language, so the "1 & 2" material lives HERE and
+          the safe-dig material lives on the CAT 2 page.
+          ANTI-COMPETITION RULE: this page owns the "CAT 1 & 2" / "combined" / "two-day" language.
+          The CAT 2 page must NOT carry that phrasing in any heading, title, meta or link anchor —
+          it refers to the combined route in prose only and links here. Do not move it back.
+          The previous block here linked three times at the combined page; after its 301 those
+          became links to this page. Removed. */}
       <section className="bg-accent/5 border-y border-accent/20 py-10">
         <div className="container mx-auto px-6 md:px-8 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined courses</p>
-          <h2 className="text-xl md:text-2xl font-black mb-3 text-foreground">Need EUSR CAT 1 + CAT 2 in one block?</h2>
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Combined route</p>
+          <h2 className="text-xl md:text-2xl font-black mb-3 text-foreground">EUSR CAT 1 &amp; CAT 2 Combined: Both Qualifications in One Visit</h2>
           <p className="text-muted-foreground leading-relaxed mb-3">
-            Many delegates take CAT 1 (Locate Utility Services) and CAT 2 (Safe Excavating Practices) together in a single site visit. Sygma offers two combined formats covering both qualifications on the day. Pick the format that fits your team.
+            Many delegates take CAT 1 (Locate Utility Services) and CAT 2 (Implement Safe Digging Practices) together in a single two-day block. Two qualifications, two certificates, one site visit. Everything below covers that combined route.
           </p>
-          <p className="text-muted-foreground leading-relaxed mb-5">
-            Looking at the <Link href="/courses/eusr-cat1-cat2-combined" className="underline text-primary">EUSR CAT 1 &amp; 2 combined course cost</Link> for a specific team size, or <Link href="/courses/eusr-cat1-cat2-combined" className="underline text-primary">EUSR CAT 1 &amp; 2 training near you</Link> on your own site? The combined course page covers delegate-count pricing, in-house format options nationwide UK, and a bespoke quote returned within one working day.
+          <p className="text-muted-foreground leading-relaxed">
+            If you need CAT 2 on its own, see <Link href="/courses/eusr-cat2-safe-dig" className="underline text-primary">EUSR CAT 2 Safe Dig training</Link>. For the person coordinating safe working around buried services, see <Link href="/courses/service-coordinator-usc" className="underline text-primary">Service Coordinator (USC)</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* Day One / Day Two structure — CAT 1 ONLY. Anti-competition rule 4 declares the merge failed
+          if a safe-dig term ranks via a page other than the CAT 2 page, and Day Two IS the safe-dig
+          half. It stays here, and nothing describing it goes on the CAT 2 page. */}
+      <section className="bg-muted/20 py-14">
+        <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day One</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Day One: EUSR Category 1 (Locate Utility Services) Theory Foundation</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl">
+            The classroom element covers the complete theoretical foundation required for both qualifications, focusing on safe digging practices and the skills needed to locate underground services and underground utility services, providing essential learning for safe utility detection and excavation. Delegates work through the underpinning knowledge before the practical site element on day two.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/courses/eusr-cat1-cat2-combined" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">CAT 1 + CAT 2 combined</p>
-              <p className="font-bold text-foreground mb-1">EUSR CAT 1 + CAT 2 in a single day</p>
-              <p className="text-sm text-muted-foreground">Two qualifications, two certificates issued on the day. The most-booked combined format.</p>
-              <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
-            </Link>
-            <Link href="/courses/service-coordinator-usc" className="block bg-background border border-border rounded-lg p-5 hover:border-primary transition-colors">
-              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">USC — Service Coordinator</p>
-              <p className="font-bold text-foreground mb-1">Utility SafeControl role training</p>
-              <p className="text-sm text-muted-foreground">For the person your organisation appoints to coordinate safe working around buried services. Runs alongside CAT 1 and CAT 2 on-site.</p>
-              <p className="mt-3 text-sm font-semibold text-primary">View course →</p>
-            </Link>
+            {[
+              { label: "Legislation and HSG47", text: "Legislation and guidance relating to buried services, including HSG47 and company-specific policy" },
+              { label: "Risk Assessments and Permits", text: "Site-specific risk assessments, company procedures, and permits to dig" },
+              { label: "Excavation Hazards", text: "Excavation hazards: Leptospirosis, asbestos, silica dust, noise, vibration, loose ground, groundwater" },
+              { label: "Utility Plan Interpretation", text: "Utility plan interpretation: STATS plans, limitations of drawings, visual survey process" },
+              { label: "Electromagnetic Theory", text: "Electromagnetic theory: how a CAT and Genny work, signal distortion, equipment limitations" },
+              { label: "Locator Controls and Operation", text: "Locator controls and operation: all four modes (Power, Radio, Genny, Avoidance), Strike Alert, signal interpretation" },
+              { label: "Signal Generator Application", text: "Signal generator application: dual frequency, capacitance mode for non-earthed cables, earth positioning, blind induction search, effective nulling" },
+              { label: "Depth Estimation", text: "Depth estimation: how to take locator depth readings and how to test them" },
+              { label: "CAT Manager Data Logging", text: "CAT Manager data logging (optional): recording, exporting CSV and KML, analysing data patterns" },
+              { label: "Hand Tools and Power Tools", text: "Excavation techniques: exposing services, hand tools, handheld power tools, horizontal excavation" },
+              { label: "Trench Support and Safety", text: "Trench support, maintaining excavation safety, and dangers of using services as a handhold" },
+              { label: "Locate Utility Services Alignment", text: "Course content aligns with Locate Utility Services (HSG47) training requirements" },
+            ].map(({ label, text }, i) => (
+              <div key={i} className="flex gap-3 items-start bg-background border border-border rounded-lg p-4">
+                <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
+                <div className="flex-1">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</h4>
+                  <span className="text-muted-foreground text-sm">{text}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-6 md:px-8 py-14 max-w-5xl">
+        <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Day Two</p>
+        <h2 className="text-2xl md:text-3xl font-black mb-3 text-foreground">Day Two: EUSR Category 2 -- Implement Safe (Digging) Excavating Practices Practical Assessment</h2>
+        <p className="text-muted-foreground mb-8 max-w-2xl">
+          The site element moves delegates from knowledge into application, ensuring they learn to perform excavation and utility locating tasks safely. All site work takes place at the client's premises or a pre-agreed location with suitable underground utilities. Delegates learn to safely excavate and maintain holes and trenches as part of their excavation work, ensuring compliance with industry standards.
+        </p>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            { label: "STATS Plan Review", text: "Using STATS plans and existing site information to identify underground services and indicated utility routes before work begins" },
+            { label: "Visual Site Inspection", text: "Visual site inspection prior to any location activity" },
+            { label: "Equipment Function Checks", text: "Equipment function checks: confirming the locator and signal generator are in satisfactory operating condition" },
+            { label: "Locating and Depth Testing", text: "Locating in all modes, confirming service routes, taking and testing depth readings" },
+            { label: "Signal Generator for Problem Services", text: "Signal generator application for problem services including street lighting and small comms cables" },
+            { label: "Risk Assessment and Permit to Dig", text: "Completing a risk assessment and permit to dig before excavation commences" },
+            { label: "Surface Removal", text: "Surface removal with correct positioning relative to identified services" },
+            { label: "Horizontal Excavation", text: "Horizontal excavation to expose the indicated service below the remaining surface" },
+            { label: "Supporting Exposed Services", text: "Supporting exposed services where required" },
+            { label: "Soil Type Awareness", text: "Understanding and managing different soil types as a critical aspect of safe excavation practice: ground stability, support requirements, and excavation method selection appropriate to the conditions encountered" },
+            { label: "Reinstatement", text: "Reinstatement completion" },
+            { label: "MCQ Assessment", text: "Multiple choice questions (MCQs) at the end of the programme" },
+          ].map(({ label, text }, i) => (
+            <div key={i} className="flex gap-3 items-start bg-muted/30 border border-border rounded-lg p-4">
+              <span className="text-accent font-black shrink-0 mt-0.5">&#8250;</span>
+              <div className="flex-1">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">{label}</h4>
+                <span className="text-muted-foreground text-sm">{text}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-muted/30 py-10">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">Pricing &amp; Booking</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">EUSR Cat 1 & 2 Combined Course Cost</h2>
+          <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Pricing Basis</h4>
+              <p>
+                All Sygma EUSR Category 1 and Category 2 combined training delegate fees are quoted <strong>exclusive of VAT</strong> (UK standard rate). Final cost depends on delegate numbers (max 8), delivery format (open course at Sygma Wigan or in-house at your site), site location, and equipment requirements.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Delivery Format Options</h4>
+              <p>
+                In-house pricing is <strong>fully inclusive of trainer travel and overnight accommodation</strong> within mainland UK, ex VAT, all-inclusive. Open courses run at Sygma Wigan.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">What Is Included</h4>
+              <p>
+                Cost includes EUSR registration, written and practical assessment, certificate, and EUSR card for both Category 1 and Category 2, ex VAT. <strong>Card validity: 5 years.</strong>
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Lead Time</h4>
+              <p>
+                <strong>Lead time: typically 3-4 weeks</strong> from confirmed booking. <Link href="/contact#enquiry-form" className="underline text-primary">Contact Sygma</Link> with delegate count, location, and target dates for a bespoke quote, typically returned within one working day.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-1">CITB Funding</h4>
+              <p>
+                CITB funding may be available for registered employers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">Why Sygma</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Not All CAT 1 & 2 Courses Are Created Equal</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl">Our approach to utility avoidance training sets us apart from standard compliance courses, as it is specifically designed for safety professionals and site operatives responsible for utility detection and excavation safety. Here's what makes the difference.</p>
+          <div className="grid md:grid-cols-2 gap-5">
+            {[
+              {
+                title: "Specialist Trainers",
+                desc: <>Directly employed by Sygma. <strong>Ex-surveyors with real-world field experience</strong>. All TAQA qualified and current with industry standards.</>,
+              },
+              {
+                title: "Real Practical Assessment",
+                desc: <>On-site <strong>EUSR Category 2 practical safe dig assessment</strong> under real conditions. Not artificial scenarios in a training centre.</>,
+              },
+              {
+                title: "Independent",
+                desc: <>No survey partnerships, no equipment sales, no commercial influence. We train your team to <strong>locate utility services and implement safe excavating practices</strong> safely.</>,
+              },
+              {
+                title: "We Come to You",
+                desc: <>In-house delivery <strong>nationwide UK with travel fully included, ex VAT</strong>. Minimal disruption to your operations.</>,
+              },
+            ].map((item, i) => (
+              <div key={i} className="rounded-lg border border-border bg-background p-5">
+                <h3 className="font-bold text-foreground mb-2 text-sm"><strong>{item.title}</strong></h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <p className="text-xs font-semibold tracking-wide text-accent uppercase mb-2">HSG47 Compliance</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Competence Requirements Your Course Delivers</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl"><Link href="/courses/hsg47-training">HSG47 training</Link> defines what competent utility avoidance looks like. This course covers all six essential elements.</p>
+          <div className="grid md:grid-cols-2 gap-5">
+            {[
+              {
+                title: "Trained and Competent",
+                desc: <><strong>Full theoretical foundation</strong> and practical assessment to confirmed <strong>EUSR Category 1 and Category 2 standards</strong>.</>,
+              },
+              {
+                title: "Safe System of Work",
+                desc: <>Permits to dig, risk assessments, <strong>site inspection protocols</strong>, and documented procedures.</>,
+              },
+              {
+                title: "Correct Use of Equipment",
+                desc: <>Locator and signal generator operation, <strong>STATS plan interpretation</strong>, depth estimation, and troubleshooting.</>,
+              },
+              {
+                title: "Safe Excavation & Records",
+                desc: <><strong>Practical safe dig assessment</strong> with exposure of live services, correct tool use, reinstatement, written assessment, and <strong>CAT Manager data logging</strong>.</>,
+              },
+            ].map((item, i) => (
+              <div key={i} className="rounded-lg border border-border bg-muted/40 p-5">
+                <h3 className="font-bold text-foreground mb-2 text-sm"><strong>{item.title}</strong></h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

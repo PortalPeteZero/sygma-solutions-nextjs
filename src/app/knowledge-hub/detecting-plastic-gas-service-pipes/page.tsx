@@ -378,7 +378,7 @@ export default function DetectingPlasticGasServicePipes() {
           </p>
 
           <p className="text-muted-foreground leading-relaxed mb-8">
-            For teams working around buried services on UK sites, the practical answer is competence in multiple methods and a clear-eyed view of when each one fails. Sygma's <Link href="/courses/gpr-training" className="text-primary hover:underline">GPR Training</Link>, <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link>, and <Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined</Link> cover these methods alongside the safe-dig protocols that protect the team when the method runs out.
+            For teams working around buried services on UK sites, the practical answer is competence in multiple methods and a clear-eyed view of when each one fails. Sygma's <Link href="/courses/gpr-training" className="text-primary hover:underline">GPR Training</Link>, <Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link>, and <Link href="/courses/eusr-cat1" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined</Link> cover these methods alongside the safe-dig protocols that protect the team when the method runs out.
           </p>
 
           <div className="bg-muted/30 border border-border rounded-xl p-6 mt-8">
@@ -416,7 +416,7 @@ export default function DetectingPlasticGasServicePipes() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/courses/cat-and-genny-training" className="text-primary hover:underline font-semibold">CAT and Genny Training</Link></li>
               <li><Link href="/courses/cable-avoidance-training" className="text-primary hover:underline">Cable Avoidance Training</Link></li>
-              <li><Link href="/courses/eusr-cat1-cat2-combined" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined Training</Link></li>
+              <li><Link href="/courses/eusr-cat1" className="text-primary hover:underline">EUSR CAT 1 and CAT 2 Combined Training</Link></li>
               <li><Link href="/courses/hsg47-training" className="text-primary hover:underline">HSG47 Training</Link></li>
               <li><Link href="/training/utility-mapping-surveying" className="text-primary hover:underline">Utility Mapping and Surveying</Link></li>
             </ul>

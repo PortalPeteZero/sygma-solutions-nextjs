@@ -465,7 +465,7 @@ export default function ProqualCat1Cat2Combined() {
               {
                 title: "EUSR CAT1 and CAT2 Combined",
                 desc: "The EUSR equivalent of this ProQual programme. Two-day combined EUSR CAT1 and CAT2 covering the same content through the EUSR framework.",
-                link: "/courses/eusr-cat1-cat2-combined",
+                link: "/courses/eusr-cat1",
               },
               {
                 title: "ProQual CAT1",
@@ -568,7 +568,7 @@ export default function ProqualCat1Cat2Combined() {
               Get in Touch for Your Team
             </Link>
             <Link
-              href="/courses/eusr-cat1-cat2-combined"
+              href="/courses/eusr-cat1"
               className="inline-flex items-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
             >
               View EUSR CAT1 and CAT2 Combined
