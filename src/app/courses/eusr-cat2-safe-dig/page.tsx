@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import InnerPageHero from "@/components/InnerPageHero";
+import CourseDates from "@/components/CourseDates";
 import { courseSchema, faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 import Image from 'next/image';
 
@@ -64,6 +65,12 @@ export default function EusCat2SafeDig() {
           { label: "EUSR CAT2 Safe Dig" },
         ]}
       />
+
+      {/* ⛔ ADDED 3 Aug 2026. This page showed NO open dates while two live EUSR Cat 2 Safe Dig dates
+          existed in public.ee_public_courses (20 Oct and 10 Nov 2026) — the inverse of the fault on
+          the ProQual page, which showed dates belonging to a different course. A page shows its own
+          course's dates: no more, and no fewer. */}
+      <CourseDates families={['cat2']} titleMatch="Cat 2" />
 
       {/* Key USP stats */}
       <section className="bg-foreground py-6">

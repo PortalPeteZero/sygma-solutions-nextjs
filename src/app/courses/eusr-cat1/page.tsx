@@ -102,7 +102,7 @@ export default function EusCat1() {
         proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: '70-80%', k: 'Increase in Genny Usage', s: 'Measured through locator data downloads after Sygma training.' }, { v: 'Proven', k: 'Strike Reduction Record', s: 'Clients report measurable reductions in service strikes.' }]}
       />
 
-      <CourseDates family="cat1" />
+      <CourseDates families={['cat1']} titleMatch="EUSR Cat 1" />
 
       {/* Definitional opener, AI Overview eligible */}
       <section className="container mx-auto px-6 md:px-8 pt-10 pb-2 max-w-4xl">

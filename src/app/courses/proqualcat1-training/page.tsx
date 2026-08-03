@@ -68,7 +68,10 @@ export default function ProQualCat1() {
         proof={[{ v: '21 Years', k: 'One Specialism', s: 'Underground utility location training is all we do.' }, { v: '70-80%', k: 'Increase in Genny Usage', s: 'Measured through locator data downloads after Sygma training.' }, { v: 'Proven', k: 'Strike Reduction Record', s: 'Clients report measurable reductions in service strikes.' }]}
       />
 
-      <CourseDates family="cat1" />
+      <CourseDates
+        families={['proqual']}
+        emptyNote="ProQual CAT1 is not run as an open course. We deliver it on your site UK-wide, on a date that suits you, travel included."
+      />
 
       
       {/* Hero CTA Bar */}

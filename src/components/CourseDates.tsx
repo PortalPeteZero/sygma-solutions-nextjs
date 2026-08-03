@@ -35,9 +35,20 @@ export default function CourseDates({
   heading = 'Next available course dates',
   intro = 'Open course places on our scheduled dates, or we deliver on your site on a date that suits you.',
   family,
-}: { heading?: string; intro?: string; family?: string }) {
+  families,
+  titleMatch,
+  emptyNote,
+}: { heading?: string; intro?: string; family?: string; families?: string[]; titleMatch?: string; emptyNote?: string }) {
+  /* ⛔ A PAGE SHOWS ONLY ITS OWN COURSE'S DATES — Pete, 3 Aug 2026: "those pages should only show
+     their own". `family` alone is too coarse: every avoidance page passed family="cat1", so
+     /courses/proqualcat1-training advertised open dates titled "EUSR Cat 1 / CAT and Genny" —
+     EUSR-badged dates on a ProQual-accredited page, the same class of error as the certificate
+     block. Pass `families` (or nothing) and, where a page must be stricter, `titleMatch`.
+     The SSOT is public.ee_public_courses -> src/data/course-dates.json. */
   const all = (data.courses as Course[]) || [];
-  const courses = family ? all.filter((c) => c.family === family) : all;
+  const wanted = families ?? (family ? [family] : null);
+  let courses = wanted ? all.filter((c) => c.family && wanted.includes(c.family)) : all;
+  if (titleMatch) courses = courses.filter((c) => (c.title || '').toLowerCase().includes(titleMatch.toLowerCase()));
 
   return (
     <section id="dates" className="bg-muted/30 border-y border-border py-12 md:py-14 scroll-mt-24">
@@ -143,7 +154,7 @@ export default function CourseDates({
         ) : (
           <div className="rounded-2xl border border-border bg-background px-6 py-8 text-center">
             <p className="text-sm text-muted-foreground">
-              No open dates listed at the moment — we schedule on demand and deliver on your site UK-wide.
+              {emptyNote ?? 'No open dates listed at the moment — we schedule on demand and deliver on your site UK-wide.'}
             </p>
           </div>
         )}
