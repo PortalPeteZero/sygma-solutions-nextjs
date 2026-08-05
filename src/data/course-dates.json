@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-05",
   "source": "public.ee_public_courses (Command Centre)",
   "courses": [
     {
@@ -16,7 +16,7 @@
       "title": "EUSR Cat 1 / CAT and Genny",
       "venue": "Sygma Solutions, Wigan",
       "cap": 8,
-      "placesLeft": 5
+      "placesLeft": 2
     },
     {
       "date": "2026-10-19",
