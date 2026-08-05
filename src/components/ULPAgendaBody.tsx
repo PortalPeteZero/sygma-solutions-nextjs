@@ -241,7 +241,9 @@ export default function ULPAgendaBody() {
             <a href="/contact" className="rounded-full bg-accent px-6 py-3 text-sm font-black text-white hover:opacity-90 transition-opacity">Enquire about this course &rarr;</a>
             <PrintButton />
           </div>
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10 border-t border-white/10">
+          {/* The hero gradient fades out to the right, so the last two spec cells would
+              otherwise sit on bright grass. The strip carries its own dark band. */}
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10 border-t border-white/10 bg-foreground/70 -mx-6 px-6 md:-mx-8 md:px-8 print:bg-transparent">
             {spec.map((s) => (
               <div key={s.k} className="spec-cell py-5 md:py-6 px-4 first:pl-0">
                 <p className="text-[10px] font-black uppercase tracking-widest text-white/40">{s.k}</p>
