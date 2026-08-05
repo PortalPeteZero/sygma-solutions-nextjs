@@ -1,4 +1,23 @@
 import FallbackImage from '@/components/FallbackImage';
+
+// Cloudinary crops these, not the browser. The site loader uses c_limit (no crop) and
+// lets object-cover take the middle of the frame -- which on a photo of someone working
+// at a lighting column takes the middle of the road. g_auto finds the subject and keeps
+// it, so the agenda images show what they are captioned as showing.
+const CLOUD = 'https://res.cloudinary.com/dqf1mp7en/image/upload';
+function ShotImage({ id, alt, w = 760, h = 500 }: { id: string; alt: string; w?: number; h?: number }) {
+  const url = (m: number) => `${CLOUD}/f_auto,q_auto,w_${w * m},h_${h * m},c_fill,g_auto/${id}`;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={url(1)}
+      srcSet={`${url(1)} 1x, ${url(2)} 2x`}
+      alt={alt}
+      loading="lazy"
+      className="absolute inset-0 h-full w-full object-cover"
+    />
+  );
+}
 import PrintButton from '@/components/PrintButton';
 import { courseSchema, breadcrumbSchema } from '@/lib/schema';
 import { Eyebrow, PRINT_CSS } from '@/components/agendaShared';
@@ -51,7 +70,7 @@ type Module = { no: string; title: string; tag: string; blurb: string; img: stri
 
 const classroom: Module[] = [
   {
-    no: '01', title: 'What the data says about us', tag: 'Opens the day', img: 'cat-42',
+    no: '01', title: 'What the data says about us', tag: 'Opens the day', img: 'ulp-crew-round-plans',
     blurb: 'The day starts on real recorded data rather than theory, because it is what earns the rest of it.',
     items: [
       'What a CAT download actually records, beyond the coloured dashboard',
@@ -62,7 +81,7 @@ const classroom: Module[] = [
     ],
   },
   {
-    no: '02', title: 'The survey, not the hole', tag: 'The core change', img: 'cat-15',
+    no: '02', title: 'The survey, not the hole', tag: 'The core change', img: 'ulp-street-scene-survey',
     blurb: 'The single habit this course exists to change: thinking from the street inwards rather than from the excavation outwards.',
     items: [
       'Why a metre-by-metre scan of the dig answers the wrong question',
@@ -96,7 +115,7 @@ const classroom: Module[] = [
 
 const practicals = [
   {
-    no: '01', title: 'Transmitter (Genny) applications', tag: 'Genny first', img: 'cat-09',
+    no: '01', title: 'Transmitter (Genny) applications', tag: 'Genny first', img: 'ulp-street-light-locate',
     blurb: 'Every way to apply a signal, and how to confirm it has actually taken. This is the heart of the day and the most time is spent here.',
     items: [
       'Direct connection to a known utility, correct earthing, confirming the connection and the signal',
@@ -111,7 +130,7 @@ const practicals = [
     ],
   },
   {
-    no: '02', title: 'Locating — pinpointing, tracing, depth', tag: 'Find it, prove it', img: 'cat-11-cat-manager',
+    no: '02', title: 'Locating — pinpointing, tracing, depth', tag: 'Find it, prove it', img: 'ulp-depth-reading',
     blurb: 'Turning a signal into a marked, traced, depth-checked line on the ground.',
     items: [
       'Controlling sensitivity to locate, then pinpoint',
@@ -123,7 +142,7 @@ const practicals = [
     ],
   },
   {
-    no: '03', title: 'Technique and strategy across the site', tag: 'Work the whole street', img: 'cat-70',
+    no: '03', title: 'Technique and strategy across the site', tag: 'Work the whole street', img: 'cat-15',
     blurb: 'The judgement that separates a competent operative from someone pressing buttons.',
     items: [
       'Using the plans to apply the transmitter signal in the best place throughout the survey',
@@ -145,7 +164,7 @@ const practicals = [
     ],
   },
   {
-    no: '05', title: 'The two environments', tag: 'Where it is run', img: 'cat-02-genny-first-methodology',
+    no: '05', title: 'The two environments', tag: 'Where it is run', img: 'ulp-trial-hole-services',
     blurb: 'The practical is run across two contrasting types of street, so the method has to transfer rather than the site being learned.',
     items: [
       'An older network — shared ducts, lighting fed off the main, services that pre-date the drawings',
@@ -183,8 +202,10 @@ export default function ULPAgendaBody() {
       {/* ============ HERO ============ */}
       <section className="relative">
         <div className="absolute inset-0">
-          <FallbackImage src="cat-06-hsg47-training" alt="Sygma delegates locating buried services with the Genny and CAT on a live street" fill priority sizes="100vw" className="object-cover object-[center_68%]" />
-          <div className="absolute inset-0 bg-foreground/80" />
+          <FallbackImage src="cat-06-hsg47-training" alt="Sygma delegates locating buried services with the Genny and CAT on a live street" fill priority sizes="100vw" className="object-cover object-[center_60%]" />
+          {/* House agenda gradient: solid behind the copy on the left, fading right so the
+              photograph is actually visible rather than sitting under a flat grey sheet. */}
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-foreground/25" />
         </div>
         <div className="relative container mx-auto px-6 md:px-8 max-w-6xl pt-16 pb-0 md:pt-20">
           <p className="text-xs font-black uppercase tracking-[0.25em] text-accent">Course Agenda</p>
@@ -315,7 +336,7 @@ export default function ULPAgendaBody() {
             <div key={m.no} className="mod-card grid md:grid-cols-12 gap-0 rounded-2xl border border-border bg-card overflow-hidden">
               {m.img ? (
                 <div className="imgbox relative md:col-span-5 h-56 md:h-auto md:min-h-[15rem]">
-                  <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 42vw" className="object-cover" />
+                  <ShotImage id={m.img} alt={`${m.title} — Utility Location in Practice`} />
                 </div>
               ) : null}
               <div className={`p-6 md:p-7 ${m.img ? 'md:col-span-7' : 'md:col-span-12'}`}>
@@ -361,7 +382,7 @@ export default function ULPAgendaBody() {
             {practicals.map((m) => (
               <div key={m.no} className="mod-card grid md:grid-cols-12 gap-0 rounded-2xl border border-border bg-card overflow-hidden">
                 <div className="imgbox relative md:col-span-5 h-60 md:h-auto md:min-h-[17rem]">
-                  <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 42vw" className="object-cover" />
+                  <ShotImage id={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} />
                 </div>
                 <div className="p-6 md:p-7 md:col-span-7">
                   <div className="flex items-baseline gap-3">
@@ -411,7 +432,7 @@ export default function ULPAgendaBody() {
             </ul>
           </div>
           <div className="md:col-span-5 imgbox relative h-64 md:h-80 rounded-2xl overflow-hidden">
-            <FallbackImage src="cat-16" alt="Individual practical assessment on a Sygma utility location course" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover object-[center_35%]" />
+            <ShotImage id="cat-16" alt="Individual practical assessment on a Sygma utility location course" w={720} h={520} />
           </div>
         </div>
       </section>
