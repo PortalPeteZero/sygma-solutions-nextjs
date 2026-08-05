@@ -69,7 +69,7 @@ const classroom: Module[] = [
     ],
   },
   {
-    no: '03', title: 'Visual surveys — thinking inside the box', tag: 'Practical-led', img: 'cat-16',
+    no: '03', title: 'Visual surveys — thinking outside the box', tag: 'Practical-led', img: 'cat-16',
     blurb: 'Every visible asset is fed by something. A lamp column, a bollard, a meter box, a house — each one is telling you a cable is there, and roughly where it has to run.',
     items: [
       'Where does that get its power from? Working backwards from what you can see',
@@ -93,25 +93,64 @@ const classroom: Module[] = [
 
 const practicals = [
   {
-    no: '01', title: 'The older street', img: 'cat-09',
-    blurb: 'Where the network has grown over decades — shared ducts, lighting fed off the main, services that pre-date the drawings.',
+    no: '01', title: 'Transmitter (Genny) applications', tag: 'Genny first', img: 'cat-09',
+    blurb: 'Every way to apply a signal, and how to confirm it has actually taken. This is the heart of the day and the most time is spent here.',
     items: [
-      'Visual survey first, before any sweep',
-      'Clipping the Genny directly to lighting columns and street furniture',
-      'Following a service that leaves the footpath and crosses the road',
-      'Signal strength, sensitivity control, and depth under real conditions',
-      'What the drawings show, against what the ground actually holds',
+      'Direct connection to a known utility, correct earthing, confirming the connection and the signal',
+      'Signal to a street-light cable by direct connection — correct technique and distance',
+      'Signal to a domestic LV service at a property or building',
+      'High-frequency signal using a capacitance technique',
+      'Signal applied using the signal clamp — correct technique and distance',
+      'Induced signal to a known target — correct technique and distance',
+      'Blind induction sweep in two directions across a site',
+      'Nulling out a buried utility',
+      'Checking for airborne signal in every inductive application',
     ],
   },
   {
-    no: '02', title: 'The newer street', img: 'cat-16',
-    blurb: 'Modern housing behaves differently. PME systems, individual moulded services, and cables the signal will not travel to unless you work from the property back.',
+    no: '02', title: 'Locating — pinpointing, tracing, depth', tag: 'Find it, prove it', img: 'cat-50',
+    blurb: 'Turning a signal into a marked, traced, depth-checked line on the ground.',
     items: [
-      'Why a signal applied at the main will not reach the property on a PME system',
-      'Connecting at the property — gas meter, boiler blow-off, outside light, without knocking on a door',
+      'Controlling sensitivity to locate, then pinpoint',
+      'Determining direction, tracing with the correct technique and marking the position',
+      'Identifying sudden signal loss and explaining why it occurs',
+      'Locating a joint — T-connection or bend',
+      'Recognising being too close to the transmitter, and correcting erratic sensitivity',
+      'Depth estimates at the correct distances, knowing when depth is unreliable, and checking it two ways',
+    ],
+  },
+  {
+    no: '03', title: 'Technique and strategy across the site', tag: 'Work the whole street', img: 'cat-42',
+    blurb: 'The judgement that separates a competent operative from someone pressing buttons.',
+    items: [
+      'Using the plans to apply the transmitter signal in the best place throughout the survey',
+      'Transmitter first — exhausting connection before induction, and active before passive',
+      'The limitations of induction, why the signal is not selective, and when to run a blind sweep',
+      'Dual-frequency transmitters and the benefits of each frequency',
+      'The limitations of locating HV cables, and inducing a signal to find them',
+      'Continuously scanning as the excavation progresses, and why',
+      'Strike Alert — what it is for and how to disable it',
+    ],
+  },
+  {
+    no: '04', title: 'Passive — power and radio', tag: 'The final sweep', img: 'cat-70',
+    blurb: 'Catching what an applied signal cannot. Last, never first.',
+    items: [
+      'Power survey using the sensitivity control appropriately and the correct search technique',
+      'Radio survey using the sensitivity control appropriately and the correct search technique',
+      'Why passive comes at the end of the survey and never at the start',
+    ],
+  },
+  {
+    no: '05', title: 'The two environments', tag: 'Where it is run', img: 'cat-15',
+    blurb: 'The practical is run across two contrasting types of street, so the method has to transfer rather than the site being learned.',
+    items: [
+      'An older network — shared ducts, lighting fed off the main, services that pre-date the drawings',
+      'A newer network — PME systems where a signal at the main will not reach the property',
+      'Connecting at the property: gas meter, boiler blow-off, outside light, without knocking on a door',
       'Small moulded services, and why they carry so little of the signal',
-      'Plastic gas, pot ends, and being honest about what will not be found',
-      'Deciding to stop: what a suspected service is, and what to do when it is missing',
+      'Plastic gas and pot ends — being honest about what will not be found',
+      'Exact locations depend on the venue and are agreed with you before the day',
     ],
   },
 ];
@@ -152,7 +191,7 @@ export default function ULPAgendaBody() {
             Utility Location <span className="text-accent">in Practice</span>
           </h1>
           <p className="hero-strapline mt-4 text-lg md:text-xl text-white/80">
-            ULP <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> two streets, one method
+            ULP course <span className="text-accent">·</span> Genny and CAT
           </p>
 
           {/* Co-brand strip — this agenda is written for Severn Trent Water. The logo slot is
@@ -288,8 +327,8 @@ export default function ULPAgendaBody() {
         <div className="mod-grid grid md:grid-cols-2 gap-6">
           {classroom.map((m) => (
             <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-              <div className="imgbox relative h-40">
-                <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+              <div className="imgbox relative h-44 bg-muted/40">
+                <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-contain p-3" />
               </div>
               <div className="p-6">
                 <div className="flex items-baseline gap-3">
@@ -317,23 +356,23 @@ export default function ULPAgendaBody() {
         <div className="container mx-auto px-6 md:px-8 max-w-6xl">
           <div className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8 mb-4">
             <Eyebrow>On the ground · most of the day</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black text-foreground tracking-tight">Two streets, deliberately different</h2>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black text-foreground tracking-tight">Most of the day is on the ground</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              The two practical sessions are run in two different environments, with a short break between them to go
-              over what each pair found. The point is that the method has to transfer — an older network and a newer
-              one behave differently, and a delegate who can only work one of them has not learned the method.
+              Every Genny application, every tracing and depth technique, worked on real streets rather than
+              demonstrated. Run across two contrasting environments with a break between them to go over what each
+              pair found, so the method has to transfer rather than the site being learned.
             </p>
           </div>
           <div className="mb-10 ml-6 md:ml-8 max-w-3xl">
             <p className="text-xs text-muted-foreground leading-relaxed">
-              We choose the two locations to contrast as far as the venue allows. Exactly what is available varies by
-              site, so the specific streets are agreed with you when the course is booked.
+              Exactly what is available varies by site, so the two locations are agreed with you when the course is
+              booked.
             </p>
           </div>
           <div className="mod-grid grid md:grid-cols-2 gap-6">
             {practicals.map((m) => (
               <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-                <div className="imgbox relative h-48">
+                <div className="imgbox relative h-52 bg-muted/40">
                   <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
                 </div>
                 <div className="p-6">
@@ -384,7 +423,7 @@ export default function ULPAgendaBody() {
             </ul>
           </div>
           <div className="md:col-span-5 imgbox relative h-64 md:h-80 rounded-2xl overflow-hidden">
-            <FallbackImage src="cat-50" alt="Individual practical assessment on a Sygma utility location course" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover" />
+            <FallbackImage src="cat-50" alt="Individual practical assessment on a Sygma utility location course" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover object-[center_35%]" />
           </div>
         </div>
       </section>
