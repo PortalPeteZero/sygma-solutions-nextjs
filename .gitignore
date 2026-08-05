@@ -40,3 +40,4 @@ next-env.d.ts
 # sitemap
 public/sitemap*.xml
 public/robots.txt
+.claude-dev.log
