@@ -51,7 +51,7 @@ type Module = { no: string; title: string; tag: string; blurb: string; img: stri
 
 const classroom: Module[] = [
   {
-    no: '01', title: 'What the data says about us', tag: 'Opens the day', img: 'cat-37',
+    no: '01', title: 'What the data says about us', tag: 'Opens the day', img: 'cat-42',
     blurb: 'The day starts on real recorded data rather than theory, because it is what earns the rest of it.',
     items: [
       'What a CAT download actually records, beyond the coloured dashboard',
@@ -62,7 +62,7 @@ const classroom: Module[] = [
     ],
   },
   {
-    no: '02', title: 'The survey, not the hole', tag: 'The core change', img: 'cat-09',
+    no: '02', title: 'The survey, not the hole', tag: 'The core change', img: 'cat-15',
     blurb: 'The single habit this course exists to change: thinking from the street inwards rather than from the excavation outwards.',
     items: [
       'Why a metre-by-metre scan of the dig answers the wrong question',
@@ -72,7 +72,7 @@ const classroom: Module[] = [
     ],
   },
   {
-    no: '03', title: 'Visual surveys — thinking outside the box', tag: 'Practical-led', img: 'cat-16',
+    no: '03', title: 'Visual surveys — thinking outside the box', tag: 'Practical-led', img: 'cat-06-hsg47-training',
     blurb: 'Every visible asset is fed by something. A lamp column, a bollard, a meter box, a house — each one is telling you a cable is there, and roughly where it has to run.',
     items: [
       'Where does that get its power from? Working backwards from what you can see',
@@ -83,7 +83,7 @@ const classroom: Module[] = [
     ],
   },
   {
-    no: '04', title: 'Your own documents', tag: 'Tailored', img: 'cat-50',
+    no: '04', title: 'Your own documents', tag: 'Tailored', img: '',
     blurb: 'Generic paperwork replaced with yours, so the day matches the job the delegates go back to.',
     items: [
       'Your permit to dig, and where it sits in your safe system of work',
@@ -111,7 +111,7 @@ const practicals = [
     ],
   },
   {
-    no: '02', title: 'Locating — pinpointing, tracing, depth', tag: 'Find it, prove it', img: 'cat-50',
+    no: '02', title: 'Locating — pinpointing, tracing, depth', tag: 'Find it, prove it', img: 'cat-11-cat-manager',
     blurb: 'Turning a signal into a marked, traced, depth-checked line on the ground.',
     items: [
       'Controlling sensitivity to locate, then pinpoint',
@@ -123,7 +123,7 @@ const practicals = [
     ],
   },
   {
-    no: '03', title: 'Technique and strategy across the site', tag: 'Work the whole street', img: 'cat-42',
+    no: '03', title: 'Technique and strategy across the site', tag: 'Work the whole street', img: 'cat-70',
     blurb: 'The judgement that separates a competent operative from someone pressing buttons.',
     items: [
       'Using the plans to apply the transmitter signal in the best place throughout the survey',
@@ -136,7 +136,7 @@ const practicals = [
     ],
   },
   {
-    no: '04', title: 'Passive — power and radio', tag: 'The final sweep', img: 'cat-70',
+    no: '04', title: 'Passive — power and radio', tag: 'The final sweep', img: 'cat-50',
     blurb: 'Catching what an applied signal cannot. Last, never first.',
     items: [
       'Power survey using the sensitivity control appropriately and the correct search technique',
@@ -145,7 +145,7 @@ const practicals = [
     ],
   },
   {
-    no: '05', title: 'The two environments', tag: 'Where it is run', img: 'cat-15',
+    no: '05', title: 'The two environments', tag: 'Where it is run', img: 'cat-02-genny-first-methodology',
     blurb: 'The practical is run across two contrasting types of street, so the method has to transfer rather than the site being learned.',
     items: [
       'An older network — shared ducts, lighting fed off the main, services that pre-date the drawings',
@@ -270,13 +270,6 @@ export default function ULPAgendaBody() {
             </div>
           ))}
         </div>
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
-          {['cat-09', 'cat-50', 'cat-42', 'cat-15'].map((im) => (
-            <div key={im} className="imgbox relative h-40 md:h-48 rounded-xl overflow-hidden">
-              <FallbackImage src={im} alt="Sygma Genny and CAT practical training on a live street" fill sizes="(max-width:768px) 50vw, 25vw" className="object-cover object-[center_35%]" />
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* ============ OBJECTIVES ============ */}
@@ -317,13 +310,15 @@ export default function ULPAgendaBody() {
             practicals land — nothing is repeated for the sake of covering it again.
           </p>
         </div>
-        <div className="mod-grid grid md:grid-cols-2 gap-6">
+        <div className="mod-grid space-y-5">
           {classroom.map((m) => (
-            <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-              <div className="imgbox relative h-52">
-                <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-[center_30%]" />
-              </div>
-              <div className="p-6">
+            <div key={m.no} className="mod-card grid md:grid-cols-12 gap-0 rounded-2xl border border-border bg-card overflow-hidden">
+              {m.img ? (
+                <div className="imgbox relative md:col-span-5 h-56 md:h-auto md:min-h-[15rem]">
+                  <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 42vw" className="object-cover" />
+                </div>
+              ) : null}
+              <div className={`p-6 md:p-7 ${m.img ? 'md:col-span-7' : 'md:col-span-12'}`}>
                 <div className="flex items-baseline gap-3">
                   <span className="text-accent font-black text-sm">{m.no}</span>
                   <p className="text-lg font-black text-foreground tracking-tight">{m.title}</p>
@@ -362,13 +357,13 @@ export default function ULPAgendaBody() {
               booked.
             </p>
           </div>
-          <div className="mod-grid grid md:grid-cols-2 gap-6">
+          <div className="mod-grid space-y-5">
             {practicals.map((m) => (
-              <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-                <div className="imgbox relative h-60">
-                  <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-[center_30%]" />
+              <div key={m.no} className="mod-card grid md:grid-cols-12 gap-0 rounded-2xl border border-border bg-card overflow-hidden">
+                <div className="imgbox relative md:col-span-5 h-60 md:h-auto md:min-h-[17rem]">
+                  <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 42vw" className="object-cover" />
                 </div>
-                <div className="p-6">
+                <div className="p-6 md:p-7 md:col-span-7">
                   <div className="flex items-baseline gap-3">
                     <span className="text-accent font-black text-sm">Practical {m.no}</span>
                     <p className="text-lg font-black text-foreground tracking-tight">{m.title}</p>
@@ -416,7 +411,7 @@ export default function ULPAgendaBody() {
             </ul>
           </div>
           <div className="md:col-span-5 imgbox relative h-64 md:h-80 rounded-2xl overflow-hidden">
-            <FallbackImage src="cat-50" alt="Individual practical assessment on a Sygma utility location course" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover object-[center_35%]" />
+            <FallbackImage src="cat-16" alt="Individual practical assessment on a Sygma utility location course" fill sizes="(max-width:768px) 100vw, 40vw" className="object-cover object-[center_35%]" />
           </div>
         </div>
       </section>
