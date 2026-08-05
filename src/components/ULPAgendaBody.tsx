@@ -16,7 +16,7 @@ import AccreditationStrip from '@/components/AccreditationStrip';
 
 /* Cloudinary public_id for the Severn Trent mark. Empty until Severn Trent supply it —
    we do not take a customer's logo from their website. */
-const ST_LOGO = '';
+const ST_LOGO = 'severn-trent-water-logo';
 
 const spec = [
   { k: 'Duration', v: 'One day', s: '08:00 – ~15:00' },
@@ -160,7 +160,6 @@ const practicals = [
 
 const contents = [
   { id: 'objectives', label: 'Objectives' },
-  { id: 'certificates', label: 'Certificate' },
   { id: 'classroom', label: 'Classroom' },
   { id: 'practical', label: 'Practical' },
   { id: 'assessment', label: 'Assessment' },
@@ -271,6 +270,13 @@ export default function ULPAgendaBody() {
             </div>
           ))}
         </div>
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+          {['cat-09', 'cat-50', 'cat-42', 'cat-15'].map((im) => (
+            <div key={im} className="imgbox relative h-40 md:h-48 rounded-xl overflow-hidden">
+              <FallbackImage src={im} alt="Sygma Genny and CAT practical training on a live street" fill sizes="(max-width:768px) 50vw, 25vw" className="object-cover object-[center_35%]" />
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* ============ OBJECTIVES ============ */}
@@ -292,28 +298,12 @@ export default function ULPAgendaBody() {
         </ul>
       </section>
 
-      {/* ============ CERTIFICATE ============ */}
-      <section id="certificates" className="bg-foreground text-white py-12 md:py-14 scroll-mt-24">
-        <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-          <div className="mb-6">
-            <Eyebrow>Certificate</Eyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">Sygma certificate, no registration fee</h2>
-            <p className="mt-3 text-white/70 max-w-2xl text-sm leading-relaxed">
-              This course carries a Sygma certificate of competence. It does not re-issue the qualification the
-              delegate already holds, so there is no awarding-body registration fee on top.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-5 print-cols-2">
-            {cert.map((c) => (
-              <div key={c.name} className="cert-card group relative rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-accent/50 transition-colors pb-keep">
-                <p className="text-[10px] font-black uppercase tracking-widest text-accent">{c.body}</p>
-                <p className="mt-3 text-xl font-black">{c.name}</p>
-                <p className="mt-5 text-[10px] font-black uppercase tracking-widest text-white/40">Certificate</p>
-                <p className="mt-1 text-3xl font-black text-accent">{c.cost} <span className="text-sm font-bold text-white/50">{c.unit}</span></p>
-                <p className="mt-3 text-sm text-white/70 leading-relaxed">{c.note}</p>
-              </div>
-            ))}
-          </div>
+      {/* ============ CERTIFICATE — one line, not a banner ============ */}
+      <section id="certificates" className="container mx-auto px-6 md:px-8 max-w-6xl pb-4 scroll-mt-24">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-xl border border-border bg-card px-5 py-4">
+          <span className="text-[10px] font-black uppercase tracking-widest text-accent">Certificate</span>
+          <span className="text-sm text-foreground"><span className="font-bold">Sygma certificate of competence</span>, issued on completion.</span>
+          <span className="text-sm text-muted-foreground">No awarding-body registration fee — the qualification the delegate already holds is not being re-issued.</span>
         </div>
       </section>
 
@@ -330,8 +320,8 @@ export default function ULPAgendaBody() {
         <div className="mod-grid grid md:grid-cols-2 gap-6">
           {classroom.map((m) => (
             <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-              <div className="imgbox relative h-44 bg-muted/40">
-                <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-contain p-3" />
+              <div className="imgbox relative h-52">
+                <FallbackImage src={m.img} alt={`${m.title} — Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-[center_30%]" />
               </div>
               <div className="p-6">
                 <div className="flex items-baseline gap-3">
@@ -375,8 +365,8 @@ export default function ULPAgendaBody() {
           <div className="mod-grid grid md:grid-cols-2 gap-6">
             {practicals.map((m) => (
               <div key={m.no} className="mod-card rounded-2xl border border-border bg-card overflow-hidden">
-                <div className="imgbox relative h-52 bg-muted/40">
-                  <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+                <div className="imgbox relative h-60">
+                  <FallbackImage src={m.img} alt={`${m.title} — practical session on Utility Location in Practice`} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-[center_30%]" />
                 </div>
                 <div className="p-6">
                   <div className="flex items-baseline gap-3">
