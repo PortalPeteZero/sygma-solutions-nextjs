@@ -14,6 +14,10 @@ import AccreditationStrip from '@/components/AccreditationStrip';
    outside on TWO different streets — because the method has to transfer, not the site
    be learned. Every delegate is assessed individually at the end. */
 
+/* Cloudinary public_id for the Severn Trent mark. Empty until Severn Trent supply it —
+   we do not take a customer's logo from their website. */
+const ST_LOGO = '';
+
 const spec = [
   { k: 'Duration', v: 'One day', s: '08:00 – ~15:00' },
   { k: 'Group size', v: 'Max 8', s: 'Per trainer, per day' },
@@ -150,6 +154,22 @@ export default function ULPAgendaBody() {
           <p className="hero-strapline mt-4 text-lg md:text-xl text-white/80">
             ULP <span className="text-accent">·</span> Genny and CAT <span className="text-accent">·</span> two streets, one method
           </p>
+
+          {/* Co-brand strip — this agenda is written for Severn Trent Water. The logo slot is
+              deliberately empty until Severn Trent supply the asset; we do not lift a customer's
+              mark off their own site. Drop the Cloudinary public_id into ST_LOGO to fill it. */}
+          <div className="mt-6 inline-flex items-center gap-4 rounded-xl border border-white/15 bg-white/[0.06] px-5 py-3.5">
+            {ST_LOGO ? (
+              <span className="relative block h-9 w-28 shrink-0">
+                <FallbackImage src={ST_LOGO} alt="Severn Trent Water" fill sizes="112px" className="object-contain" />
+              </span>
+            ) : null}
+            <span className="text-sm text-white/85 leading-snug">
+              <span className="block text-[10px] font-black uppercase tracking-widest text-accent">Written for</span>
+              <span className="font-bold text-white">Severn Trent Water</span>
+              <span className="text-white/60"> · tailored to your permits, risk assessments and re-scan rule</span>
+            </span>
+          </div>
           <p className="mt-5 max-w-3xl text-white/70 leading-relaxed">
             The second-stage day for people who already hold the one-day Genny and CAT course. Almost all of it is
             spent outside, on two deliberately different types of street, working each one as a survey from start to
