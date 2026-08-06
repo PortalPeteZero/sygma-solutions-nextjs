@@ -462,6 +462,19 @@ export default function CatManager() {
           </div>
         </div>
       </section>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">What the data looks like in practice:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/cat-manager-software-cat4-data" className="text-primary font-semibold hover:underline">
+                  CAT Manager software: getting the data off a CAT4, and telling a real scan from a box ticked
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }

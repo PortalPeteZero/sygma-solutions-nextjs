@@ -716,6 +716,24 @@ export default function CableAvoidanceTraining() {
           </div>
         </div>
       </section>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">The thinking behind this course, on video:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/cat-power-and-radio-modes" className="text-primary font-semibold hover:underline">
+                  CAT power and radio modes: what passive scanning misses on underground cables
+                </Link>
+              </li>
+              <li>
+                <Link href="/knowledge-hub/reading-utility-plans" className="text-primary font-semibold hover:underline">
+                  Reading utility plans: loop-in loop-out, tee'd off, and what the drawings do not tell you
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }

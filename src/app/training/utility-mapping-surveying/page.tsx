@@ -456,6 +456,19 @@ export default function UtilityMappingHub() {
           </div>
         </div>
       </section>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">Background on what is actually under a UK street:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/how-uk-underground-utility-networks-are-built" className="text-primary font-semibold hover:underline">
+                  How UK underground utility networks are built: substations, transformers and reading the records
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }

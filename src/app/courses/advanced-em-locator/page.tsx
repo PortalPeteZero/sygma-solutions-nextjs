@@ -591,6 +591,19 @@ export default function AdvancedEmLocator() {
           </div>
         </div>
       </section>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">See the equipment worked through in full:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/radiodetection-rd8000-rd8100-explained" className="text-primary font-semibold hover:underline">
+                  Radiodetection RD8000 and RD8100 explained: frequencies, connections and current direction
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }

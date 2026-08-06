@@ -673,6 +673,24 @@ export default function GennyCatTraining() {
       >
         Book this course →
       </Link>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">Watch the method before you book it:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/how-to-use-a-cat-and-genny" className="text-primary font-semibold hover:underline">
+                  How to use a Genny and CAT: direct connection, the signal clamp and induction
+                </Link>
+              </li>
+              <li>
+                <Link href="/knowledge-hub/earthing-a-genny-signal-clamp-induction" className="text-primary font-semibold hover:underline">
+                  Earthing a Genny, using a signal clamp, and the limits of induction
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }

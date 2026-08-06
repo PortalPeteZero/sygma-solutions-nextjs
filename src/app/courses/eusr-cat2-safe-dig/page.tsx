@@ -817,6 +817,19 @@ export default function EusCat2SafeDig() {
           </div>
         </div>
       </section>
+
+        <div className="container mx-auto px-6 md:px-8 max-w-3xl pb-12">
+          <div className="border-t border-border pt-8">
+            <p className="text-muted-foreground mb-3">The whole excavation sequence, on video:</p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/knowledge-hub/permit-to-dig-trial-holes-exclusion-zones" className="text-primary font-semibold hover:underline">
+                  Permit to dig, trial holes and exclusion zones: an excavation from plan to safe dig
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
     </>
   );
 }
