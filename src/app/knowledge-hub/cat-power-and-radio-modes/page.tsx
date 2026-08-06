@@ -29,6 +29,14 @@ export default function Page() {
       <p className="text-muted-foreground leading-relaxed mb-8">
         None of this is a criticism of the receiver, and the session says so directly. It is an argument about sequence. If the passive modes are the survey, the survey is at the mercy of load, weather and timing. If the Genny is the survey and the passive modes are the sweep that supports it, you are working with a signal you put there deliberately, at a frequency you chose, on a service you identified. That is a different job, done with the same equipment.
       </p>
+      <h2 className="text-2xl font-black text-foreground mb-4">A Passive Response Can Be in the Wrong Place</h2>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        Even when passive modes do respond, the position they give you is not guaranteed. Where the field around a cable is distorted, the receiver reads the angle it is presented with rather than the truth, and the two aerials no longer see an equal, symmetrical field. The example used in the session is an eleven kilovolt cable read on power mode: from the surface the instrument indicates one position, and once you are down in the hole with it, it indicates another. Neither reading is the cable. Only one of them would have been marked on the road.
+      </p>
+      <h2 className="text-2xl font-black text-foreground mb-4">The Fix Is the Same Fix</h2>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        The remedy for all of this is not a better passive mode, it is applying a signal. Connect a transmitter to the cable, or induce onto it if there is no safe connection, and you know which conductor the field is coming from, at a frequency you selected, on a service you identified. That is why this session ends where it does: passive scanning is a useful sweep and a poor survey, and the difference between the two is the transmitter.
+      </p>
     </VideoArticle>
   );
 }

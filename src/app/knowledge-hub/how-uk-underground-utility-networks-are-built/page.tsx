@@ -33,6 +33,18 @@ export default function Page() {
       <p className="text-muted-foreground leading-relaxed mb-8">
         A great deal is written on the street if you know the notation. Marker plates and posts carry letters indicating the feature, H for a hydrant, SV for a sluice valve, and so on, along with figures giving distances. Old plates still carry the names of organisations that no longer exist, which is a dating tool in itself. None of it is a substitute for a survey, and all of it tells you where to start.
       </p>
+      <h2 className="text-2xl font-black text-foreground mb-4">Yellow Marker Tape Is Not Detectable</h2>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        One assumption worth killing on the spot. The yellow tape laid over a gas main is an identifier, not a conductor. It is not a copper strip and you cannot put a signal into it, and a surprising number of people believe otherwise. Polyethylene pipe itself is porous, which is why in contaminated ground or a high water table a membrane-wrapped pipe is used instead. None of that gives an electromagnetic locator anything to find.
+      </p>
+      <h2 className="text-2xl font-black text-foreground mb-4">Where the Gas Service Runs, and What Gives It Away</h2>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        Every gas company will tell you the same thing: where the service enters a property, it takes the shortest route from the main to that point. If you can see the entry and you know roughly where the main runs, you have the line without instrumentation. The modern independent gas providers are also fitting service indicators, and a green cabinet on a concrete base with a lock on it is a piece of apparatus rather than street furniture, whatever it looks like.
+      </p>
+      <h2 className="text-2xl font-black text-foreground mb-4">A Word on CPS Mode</h2>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        Some manufacturers sell a cathodic protection mode as the way to find high pressure pipelines. In genuinely rural ground it works, but so does a standard receiver on power or radio. Elsewhere it behaves close enough to a power mode that relying on it alone is risky, and transmission crews have been trained on it without being told that. Clipping on and applying a signal remains the more reliable answer.
+      </p>
     </VideoArticle>
   );
 }
