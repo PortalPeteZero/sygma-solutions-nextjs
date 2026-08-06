@@ -119,17 +119,27 @@ export async function POST(request: Request) {
       );
     }
 
-    // Fire GA4 server-side events -- non-blocking, never fails the form.
-    // Forward gclid + ga_client_id from the browser so paid attribution
-    // actually credits the originating ad click instead of landing as
-    // (not set) for no-consent users.
-    fireGA4Conversion({
-      enquiry_type: body.enquiry_type,
-      clientId: typeof body.ga_client_id === 'string' ? body.ga_client_id : undefined,
-      gclid: typeof body.gclid === 'string' ? body.gclid : undefined,
-    }).catch((err) =>
-      console.error('GA4 MP error (non-blocking):', err),
-    );
+    // Fire the GA4 server-side conversion. Forward gclid + ga_client_id from the
+    // browser so paid attribution credits the originating ad click instead of
+    // landing as (not set) for no-consent users.
+    //
+    // AWAITED DELIBERATELY (6 Aug 2026). This was previously fire-and-forget:
+    // the promise was started, .catch()'d, and the response returned immediately.
+    // On Vercel a serverless invocation can be frozen the moment it responds, so
+    // work not awaited is not guaranteed to finish -- and generate_lead was
+    // recording only 14 of 72 real submissions over 60 days (19%). That made the
+    // one consent-proof lead signal useless for Google Ads bidding, which is the
+    // whole reason it exists. Still wrapped so a GA4 outage can NEVER fail a real
+    // enquiry: the submission is already saved and emailed by this point.
+    try {
+      await fireGA4Conversion({
+        enquiry_type: body.enquiry_type,
+        clientId: typeof body.ga_client_id === 'string' ? body.ga_client_id : undefined,
+        gclid: typeof body.gclid === 'string' ? body.gclid : undefined,
+      });
+    } catch (err) {
+      console.error('GA4 MP error (non-blocking):', err);
+    }
 
     return NextResponse.json({ success: true, data });
   } catch (err) {

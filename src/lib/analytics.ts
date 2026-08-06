@@ -25,11 +25,39 @@ export function trackEvent(
   }
 }
 
-// Server-side ping via sendBeacon -- survives page unload (e.g. tel: dialer takeover)
+// Paid-attribution signals for the server-side copy. Same three-source gclid
+// lookup the contact form uses (URL -> _gcl_aw cookie -> localStorage), plus the
+// GA4 client_id from the _ga cookie. Without these every server event lands under
+// one pseudo-user with no ad click attached, which makes the stream unusable for
+// bidding -- the exact reason the phone signal could never be bid on.
+export function gaContext(): { client_id?: string; gclid?: string } {
+  if (typeof window === 'undefined') return {};
+
+  const urlGclid = new URLSearchParams(window.location.search).get('gclid') || '';
+  const gclAwMatch = document.cookie.match(/_gcl_aw=GCL\.[^.]+\.([^;]+)/);
+  const cookieGclid = gclAwMatch ? gclAwMatch[1] : '';
+  let storedGclid = '';
+  try {
+    storedGclid = localStorage.getItem('sygma_gclid') || '';
+  } catch {
+    // localStorage unavailable (private mode quirks) -- fall through
+  }
+
+  const gaCookieMatch = document.cookie.match(/_ga=GA1\.[^.]+\.([^.]+\.[^;]+)/);
+
+  return {
+    client_id: gaCookieMatch ? gaCookieMatch[1] : undefined,
+    gclid: urlGclid || cookieGclid || storedGclid || undefined,
+  };
+}
+
+// Server-side ping via sendBeacon -- survives page unload (e.g. tel: dialer takeover).
+// The route emits the event under a "_server" suffix so it can never collide with the
+// client-side dataLayer event of the same name -- see /api/track-click.
 function fireServerClick(eventName: string, value: string): void {
   if (typeof navigator === 'undefined') return;
 
-  const payload = JSON.stringify({ event: eventName, value });
+  const payload = JSON.stringify({ event: eventName, value, ...gaContext() });
 
   if (typeof navigator.sendBeacon === 'function') {
     navigator.sendBeacon(
