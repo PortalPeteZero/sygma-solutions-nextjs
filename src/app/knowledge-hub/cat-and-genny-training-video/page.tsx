@@ -9,11 +9,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 const YOUTUBE_ID = "tQTrObaCcLE";
 
 export const metadata: Metadata = {
-  title: 'CAT and Genny Training Video: The Full Method in 10 Minut | Sygma',
+  title: 'CAT and Genny Training Video: The Full Method | Sygma',
   description: 'Watch Sygma\'s CAT and Genny training video: pre-use checks, voltstick, direct connection, signal clamp, airborne signal checks, pinpointing and depth in ten minutes.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/cat-and-genny-training-video' },
   openGraph: {
-    title: 'CAT and Genny Training Video: The Full Method in 10 Minut | Sygma',
+    title: 'CAT and Genny Training Video: The Full Method | Sygma',
     description: 'Watch Sygma\'s CAT and Genny training video: pre-use checks, voltstick, direct connection, signal clamp, airborne signal checks, pinpointing and depth in ten minutes.',
     url: 'https://sygma-solutions.com/knowledge-hub/cat-and-genny-training-video',
     siteName: SITE_NAME,

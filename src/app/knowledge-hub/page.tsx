@@ -4,6 +4,7 @@ import InnerPageHero from "@/components/InnerPageHero";
 import Link from "next/link";
 import { knowledgeHubItems } from "@/data/knowledgeHubItems";
 import KnowledgeHubClient from './KnowledgeHubClient';
+import KnowledgeHubStaticList from './KnowledgeHubStaticList';
 import Image from 'next/image';
 import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 import { breadcrumbSchema } from '@/lib/schema';
@@ -55,7 +56,10 @@ export default function KnowledgeHub() {
         </div>
       </section>
 
-      <Suspense fallback={null}>
+      {/* The fallback is NOT decoration: KnowledgeHubClient calls useSearchParams, so this is
+          what the server renders, and it is the only crawlable path to every hub article.
+          It was `null`, which served Googlebot a page with zero article links. */}
+      <Suspense fallback={<KnowledgeHubStaticList items={knowledgeHubItems} />}>
         <KnowledgeHubClient items={knowledgeHubItems} />
       </Suspense>
 

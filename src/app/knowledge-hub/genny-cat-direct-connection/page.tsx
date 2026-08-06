@@ -9,11 +9,11 @@ import { DEFAULT_OG_IMAGE, SITE_NAME } from '@/lib/metadata';
 const YOUTUBE_ID = "TOssiNUyVKQ";
 
 export const metadata: Metadata = {
-  title: 'Genny and CAT Direct Connection: Street Lighting, LV and  | Sygma',
+  title: 'Genny and CAT Direct Connection on Street Lighting | Sygma',
   description: 'Watch Sygma\'s direct connection video: earthing the Genny, connecting at a lighting column, concrete columns, gas risers and telecoms access on a real UK street.',
   alternates: { canonical: 'https://sygma-solutions.com/knowledge-hub/genny-cat-direct-connection' },
   openGraph: {
-    title: 'Genny and CAT Direct Connection: Street Lighting, LV and  | Sygma',
+    title: 'Genny and CAT Direct Connection on Street Lighting | Sygma',
     description: 'Watch Sygma\'s direct connection video: earthing the Genny, connecting at a lighting column, concrete columns, gas risers and telecoms access on a real UK street.',
     url: 'https://sygma-solutions.com/knowledge-hub/genny-cat-direct-connection',
     siteName: SITE_NAME,
