@@ -220,6 +220,9 @@ export function articleSchema(params: {
   });
 }
 
+/** A key moment inside a video: a real section boundary, with the second it starts at. */
+export type VideoKeyMoment = { name: string; startOffset: number; endOffset?: number };
+
 export function videoObjectSchema(params: {
   name: string;
   description: string;
@@ -227,19 +230,45 @@ export function videoObjectSchema(params: {
   youtubeId: string;
   uploadDate: string;
   duration: string;
-  thumbnailUrl: string;
+  /** A single URL still works (the five original pages pass one); an array is preferred —
+   *  Google asks for multiple resolutions and picks the one it wants. */
+  thumbnailUrl: string | string[];
+  /** Key moments. Google surfaces these under the result as jump-to links, which is worth
+   *  most on exactly the videos we have here: the longest in the set runs 3h 45m, and a
+   *  searcher will not sit through it to find the two minutes they came for. */
+  keyMoments?: VideoKeyMoment[];
 }): string {
+  const pageUrl = `${SITE_URL}${params.url}`;
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": "VideoObject",
     "name": params.name,
     "description": params.description,
-    "url": `${SITE_URL}${params.url}`,
+    "url": pageUrl,
     "embedUrl": `https://www.youtube.com/embed/${params.youtubeId}`,
     "contentUrl": `https://www.youtube.com/watch?v=${params.youtubeId}`,
-    "thumbnailUrl": params.thumbnailUrl,
+    "thumbnailUrl": Array.isArray(params.thumbnailUrl)
+      ? params.thumbnailUrl
+      : [
+          params.thumbnailUrl,
+          `https://i.ytimg.com/vi/${params.youtubeId}/sddefault.jpg`,
+          `https://i.ytimg.com/vi/${params.youtubeId}/hqdefault.jpg`,
+        ],
     "uploadDate": /^\d{4}-\d{2}-\d{2}$/.test(params.uploadDate) ? `${params.uploadDate}T00:00:00+00:00` : params.uploadDate,
     "duration": params.duration,
+    "inLanguage": "en-GB",
+    "isFamilyFriendly": true,
     "publisher": ORG,
+    ...(params.keyMoments?.length
+      ? {
+          hasPart: params.keyMoments.map((m) => ({
+            "@type": "Clip",
+            name: m.name,
+            startOffset: m.startOffset,
+            ...(m.endOffset !== undefined ? { endOffset: m.endOffset } : {}),
+            url: `${pageUrl}?t=${m.startOffset}`,
+          })),
+        }
+      : {}),
   });
 }

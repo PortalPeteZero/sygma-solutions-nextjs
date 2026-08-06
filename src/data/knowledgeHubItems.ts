@@ -1,3 +1,5 @@
+import { videoLibrary } from "./videoLibrary";
+
 /**
  * Single source of truth for all Knowledge Hub content.
  *
@@ -27,7 +29,7 @@ export interface KnowledgeItem {
   image?: string;
 }
 
-export const knowledgeHubItems: KnowledgeItem[] = [
+const knowledgeHubItemsBase: KnowledgeItem[] = [
   {
     category: "Site Safety",
     title: "Test Before Touch: Voltsticks on Street Furniture",
@@ -220,4 +222,21 @@ export const knowledgeHubItems: KnowledgeItem[] = [
     type: "article",
     image: "cat-88",
   },
+];
+
+/**
+ * The eight 2026 video pages are DERIVED from videoLibrary rather than retyped here, so a
+ * title fixed in one place is fixed everywhere. They are appended after the hand-written
+ * items above.
+ */
+export const knowledgeHubItems = [
+  ...knowledgeHubItemsBase,
+  ...videoLibrary.map((v) => ({
+    category: v.category,
+    title: v.h1,
+    desc: v.cardDesc,
+    href: `/knowledge-hub/${v.slug}`,
+    type: "video" as const,
+    youtubeId: v.youtubeId,
+  })),
 ];

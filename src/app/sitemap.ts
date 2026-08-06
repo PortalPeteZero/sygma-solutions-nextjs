@@ -100,6 +100,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'morgan-sindall-case-study',
     'qts-group-case-study',
     'severn-trent-water-case-study',
+    // the 2026 video pages
+    'how-to-use-a-cat-and-genny',
+    'permit-to-dig-trial-holes-exclusion-zones',
+    'radiodetection-rd8000-rd8100-explained',
+    'cat-manager-software-cat4-data',
+    'cat-power-and-radio-modes',
+    'reading-utility-plans',
+    'how-uk-underground-utility-networks-are-built',
+    'earthing-a-genny-signal-clamp-induction',
   ];
 
   const knowledgeHubPages: MetadataRoute.Sitemap = [

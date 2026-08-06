@@ -51,6 +51,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'AhrefsBot', disallow: '/_next/' },
     ],
     host: 'https://sygma-solutions.com',
-    sitemap: 'https://sygma-solutions.com/sitemap.xml',
+    // Two sitemaps: the URL sitemap, and the video sitemap carrying the video:video
+    // extension that MetadataRoute.Sitemap cannot express. Both are submitted in GSC.
+    sitemap: [
+      'https://sygma-solutions.com/sitemap.xml',
+      'https://sygma-solutions.com/video-sitemap.xml',
+    ],
   };
 }
